@@ -1,2 +1,2 @@
 -r requirements-build.txt
-pyarrow==19.0.1
+pyarrow==23.0.1
