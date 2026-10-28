@@ -1,0 +1,309 @@
+{
+  "version": "explicit-ces-v1",
+  "notes": "CES pilot: weighted annual policy responses, 2008\u20132021. Missing answers and invalid weights excluded. Question wording and available policies vary by year.",
+  "entries": [
+    {
+      "code": "abortion_scale",
+      "title": "Abortion legality",
+      "question": "Which abortion policy do you favor: never permit, permit in limited circumstances, permit other established needs, or always allow personal choice?",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "family": "ces:abortion_access",
+      "priority": 0,
+      "weight": "weight",
+      "measurement_type": "policy",
+      "rationale": "Explicit policy orientation; +1 liberal, -1 conservative. Intermediate ordinal categories equally spaced.",
+      "question_note": "Wording summarized; question formats vary by year. ",
+      "source_url": "https://doi.org/10.7910/DVN/OSXDQO",
+      "exclude_years": [
+        2006,
+        2007
+      ]
+    },
+    {
+      "code": "abortion_always",
+      "title": "Abortion choice",
+      "question": "Support or oppose always allowing a woman to obtain an abortion as a matter of choice?",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "family": "ces:abortion_access",
+      "priority": 0,
+      "weight": "weight",
+      "measurement_type": "policy",
+      "rationale": "Explicit policy orientation; +1 liberal, -1 conservative. Intermediate ordinal categories equally spaced.",
+      "question_note": "Wording summarized; question formats vary by year. ",
+      "source_url": "https://doi.org/10.7910/DVN/OSXDQO",
+      "exclude_years": [
+        2006,
+        2007
+      ]
+    },
+    {
+      "code": "abortion_20weeks",
+      "title": "Abortion restrictions",
+      "question": "Support or oppose prohibiting abortions after the twentieth week of pregnancy?",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "family": "ces:abortion_20weeks",
+      "priority": 0,
+      "weight": "weight",
+      "measurement_type": "policy",
+      "rationale": "Explicit policy orientation; +1 liberal, -1 conservative. Intermediate ordinal categories equally spaced.",
+      "question_note": "Wording summarized; question formats vary by year. ",
+      "source_url": "https://doi.org/10.7910/DVN/OSXDQO",
+      "exclude_years": [
+        2006,
+        2007
+      ]
+    },
+    {
+      "code": "abortion_coverage",
+      "title": "Abortion insurance coverage",
+      "question": "Support or oppose allowing employers to decline coverage of abortions in insurance plans?",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "family": "ces:abortion_coverage",
+      "priority": 0,
+      "weight": "weight",
+      "measurement_type": "policy",
+      "rationale": "Explicit policy orientation; +1 liberal, -1 conservative. Intermediate ordinal categories equally spaced.",
+      "question_note": "Wording summarized; question formats vary by year. ",
+      "source_url": "https://doi.org/10.7910/DVN/OSXDQO",
+      "exclude_years": [
+        2006,
+        2007
+      ]
+    },
+    {
+      "code": "abortion_prohibition",
+      "title": "Abortion prohibition",
+      "question": "Support or oppose making abortion illegal in all circumstances?",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "family": "ces:abortion_prohibition",
+      "priority": 0,
+      "weight": "weight",
+      "measurement_type": "policy",
+      "rationale": "Explicit policy orientation; +1 liberal, -1 conservative. Intermediate ordinal categories equally spaced.",
+      "question_note": "Wording summarized; question formats vary by year. ",
+      "source_url": "https://doi.org/10.7910/DVN/OSXDQO",
+      "exclude_years": [
+        2006,
+        2007
+      ]
+    },
+    {
+      "code": "guns_scale",
+      "title": "Gun regulation",
+      "question": "Should laws covering the sale of firearms be more strict, less strict, or kept as they are?",
+      "scores": {
+        "1": 1,
+        "2": -1,
+        "3": 0
+      },
+      "family": "ces:guns_scale",
+      "priority": 0,
+      "weight": "weight",
+      "measurement_type": "policy",
+      "rationale": "Explicit policy orientation; +1 liberal, -1 conservative. Intermediate ordinal categories equally spaced.",
+      "question_note": "Wording summarized; question formats vary by year. ",
+      "source_url": "https://doi.org/10.7910/DVN/OSXDQO",
+      "exclude_years": [
+        2006,
+        2007
+      ]
+    },
+    {
+      "code": "guns_bgchecks",
+      "title": "Gun background checks",
+      "question": "Support or oppose requiring background checks for all gun sales, including gun shows and Internet sales?",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "family": "ces:guns_bgchecks",
+      "priority": 0,
+      "weight": "weight",
+      "measurement_type": "policy",
+      "rationale": "Explicit policy orientation; +1 liberal, -1 conservative. Intermediate ordinal categories equally spaced.",
+      "question_note": "Wording summarized; question formats vary by year. ",
+      "source_url": "https://doi.org/10.7910/DVN/OSXDQO",
+      "exclude_years": [
+        2006,
+        2007
+      ]
+    },
+    {
+      "code": "guns_assaultban",
+      "title": "Gun regulation: assault rifles",
+      "question": "Support or oppose banning assault rifles?",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "family": "ces:guns_assaultban",
+      "priority": 0,
+      "weight": "weight",
+      "measurement_type": "policy",
+      "rationale": "Explicit policy orientation; +1 liberal, -1 conservative. Intermediate ordinal categories equally spaced.",
+      "question_note": "Wording summarized; question formats vary by year. ",
+      "source_url": "https://doi.org/10.7910/DVN/OSXDQO",
+      "exclude_years": [
+        2006,
+        2007
+      ]
+    },
+    {
+      "code": "guns_permits",
+      "title": "Gun concealed carry permits",
+      "question": "Support or oppose making concealed-carry permits easier to obtain?",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "family": "ces:guns_permits",
+      "priority": 0,
+      "weight": "weight",
+      "measurement_type": "policy",
+      "rationale": "Explicit policy orientation; +1 liberal, -1 conservative. Intermediate ordinal categories equally spaced.",
+      "question_note": "Wording summarized; question formats vary by year. ",
+      "source_url": "https://doi.org/10.7910/DVN/OSXDQO",
+      "exclude_years": [
+        2006,
+        2007
+      ]
+    },
+    {
+      "code": "healthcare_aca",
+      "title": "Health care: Affordable Care Act",
+      "question": "Support or oppose repealing the Affordable Care Act?",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "family": "ces:healthcare_aca",
+      "priority": 0,
+      "weight": "weight",
+      "measurement_type": "policy",
+      "rationale": "Explicit policy orientation; +1 liberal, -1 conservative. Intermediate ordinal categories equally spaced.",
+      "question_note": "Wording summarized; question formats vary by year. ",
+      "source_url": "https://doi.org/10.7910/DVN/OSXDQO",
+      "exclude_years": [
+        2006,
+        2007
+      ]
+    },
+    {
+      "code": "healthcare_acamandate",
+      "title": "Health care: insurance mandate",
+      "question": "Support or oppose restoring the Affordable Care Act requirement that all individuals purchase health insurance?",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "family": "ces:healthcare_acamandate",
+      "priority": 0,
+      "weight": "weight",
+      "measurement_type": "policy",
+      "rationale": "Explicit policy orientation; +1 liberal, -1 conservative. Intermediate ordinal categories equally spaced.",
+      "question_note": "Wording summarized; question formats vary by year. ",
+      "source_url": "https://doi.org/10.7910/DVN/OSXDQO",
+      "exclude_years": [
+        2006,
+        2007
+      ]
+    },
+    {
+      "code": "healthcare_medicare",
+      "title": "Health care: Medicare for all",
+      "question": "Support or oppose expanding Medicare to cover all Americans?",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "family": "ces:healthcare_medicare",
+      "priority": 0,
+      "weight": "weight",
+      "measurement_type": "policy",
+      "rationale": "Explicit policy orientation; +1 liberal, -1 conservative. Intermediate ordinal categories equally spaced.",
+      "question_note": "Wording summarized; question formats vary by year. ",
+      "source_url": "https://doi.org/10.7910/DVN/OSXDQO",
+      "exclude_years": [
+        2006,
+        2007
+      ]
+    },
+    {
+      "code": "healthcare_medicareage",
+      "title": "Health care: Medicare eligibility",
+      "question": "Support or oppose lowering the Medicare eligibility age from 65 to 50?",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "family": "ces:healthcare_medicareage",
+      "priority": 0,
+      "weight": "weight",
+      "measurement_type": "policy",
+      "rationale": "Explicit policy orientation; +1 liberal, -1 conservative. Intermediate ordinal categories equally spaced.",
+      "question_note": "Wording summarized; question formats vary by year. ",
+      "source_url": "https://doi.org/10.7910/DVN/OSXDQO",
+      "exclude_years": [
+        2006,
+        2007
+      ]
+    },
+    {
+      "code": "gaymarriage_ban",
+      "title": "Gay marriage constitutional ban",
+      "question": "Support or oppose a constitutional amendment banning gay marriage?",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "family": "ces:marriage",
+      "priority": 0,
+      "weight": "weight",
+      "measurement_type": "policy",
+      "rationale": "Explicit policy orientation; +1 liberal, -1 conservative. Intermediate ordinal categories equally spaced.",
+      "question_note": "Wording summarized; question formats vary by year. ",
+      "source_url": "https://doi.org/10.7910/DVN/OSXDQO",
+      "exclude_years": [
+        2006,
+        2007
+      ]
+    },
+    {
+      "code": "gaymarriage_legalize",
+      "title": "Gay marriage legalization",
+      "question": "Favor or oppose allowing gays and lesbians to marry legally?",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "family": "ces:marriage",
+      "priority": 0,
+      "weight": "weight",
+      "measurement_type": "policy",
+      "rationale": "Explicit policy orientation; +1 liberal, -1 conservative. Intermediate ordinal categories equally spaced.",
+      "question_note": "Wording summarized; question formats vary by year. ",
+      "source_url": "https://doi.org/10.7910/DVN/OSXDQO",
+      "exclude_years": [
+        2006,
+        2007
+      ]
+    }
+  ]
+}

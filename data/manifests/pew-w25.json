@@ -1,0 +1,27 @@
+{
+  "release": "Pew American Trends Panel Wave 25 (March 2017)",
+  "source_url": "https://www.pewresearch.org/dataset/american-trends-panel-wave-25-2/",
+  "acquisition": "User download through Pew account; retain original files locally. Checksums recorded after download, not publisher-supplied.",
+  "files": [
+    {
+      "path": "data/raw/pew/W25_Mar17/ATP W25 methodology.doc",
+      "sha256": "c86c6463e1208bd165493e44b931dfe71427ee933a7a0bf2d3173124f6dfc2bb"
+    },
+    {
+      "path": "data/raw/pew/W25_Mar17/ATP W25 que.docx",
+      "sha256": "a6fb601b0a4b6e9e55468813e5653438a340fe0f6819239fa4272340f9e68cc6"
+    },
+    {
+      "path": "data/raw/pew/W25_Mar17/ATP W25 readme.txt",
+      "sha256": "2016ad8572f5ed269c72dafdf4e6b2b1a3d3ee7b16fc70578178b482634acf96"
+    },
+    {
+      "path": "data/raw/pew/W25_Mar17/ATP W25 topline.docx",
+      "sha256": "9da826108d5937059d014075657c4dfee61f53ae5991a5836a40bd636bb25a1b"
+    },
+    {
+      "path": "data/raw/pew/W25_Mar17/ATP W25.sav",
+      "sha256": "ea0d73a29f37079e4124bd17ace31cb872111e7116e5788c503af22b2662de55"
+    }
+  ]
+}

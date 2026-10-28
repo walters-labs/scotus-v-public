@@ -6,7 +6,7 @@ from pathlib import Path
 import tarfile
 import tempfile
 import shutil
-from contextlib import closing
+from contextlib import closing, nullcontext
 from scvpublic.store import connect, metadata
 
 
@@ -14,6 +14,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('artifact', type=Path)
     parser.add_argument('--output', type=Path, default=Path('artifacts/scvpublic-release.tar.gz'))
+    parser.add_argument('--directory', type=Path, help='Write an unpacked release for rsync instead of a tarball')
+    parser.add_argument('--hybrid', type=Path, help='Validated embedding bundle to include')
     args = parser.parse_args()
     with closing(connect(args.artifact)) as db:
         assert metadata(db)['schema_version'] == 1
@@ -22,11 +24,22 @@ def main():
     paths += [p for folder in ('scvpublic', 'deploy') for p in Path(folder).rglob('*')
               if p.is_file() and '__pycache__' not in p.parts and p.suffix != '.pyc']
     paths += [Path('scripts/check_serving.py')]
+    extra = []
+    if args.hybrid:
+        from scvpublic.hybrid import HybridSearch
+        HybridSearch(args.hybrid, args.artifact)
+        paths += [Path('requirements-hybrid.txt'), Path('scripts/check_hybrid_http.py')]
+        extra = [(args.hybrid/name, Path('artifacts/hybrid')/name) for name in
+                 ('manifest.json', 'model.onnx', 'tokenizer.json', 'vectors.npy', 'ids.json', 'README.md')]
+    if args.hybrid and (args.hybrid/'sources.json').exists():
+        extra.append((args.hybrid/'sources.json', Path('artifacts/hybrid/sources.json')))
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    with tempfile.TemporaryDirectory() as temp:
+    if args.directory:
+        args.directory.mkdir(parents=True, exist_ok=False)
+    with (nullcontext(args.directory) if args.directory else tempfile.TemporaryDirectory()) as temp:
         root = Path(temp)
         hashes = {}
-        for source, relative in [(p, p) for p in paths] + [(args.artifact, Path('artifacts/search.sqlite'))]:
+        for source, relative in [(p, p) for p in paths] + [(args.artifact, Path('artifacts/search.sqlite'))] + extra:
             dest = root / relative
             dest.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(source, dest)
@@ -34,7 +47,10 @@ def main():
             with dest.open('rb') as stream:
                 hashes[str(relative)] = hashlib.file_digest(stream, 'sha256').hexdigest()
         (root / 'SHA256SUMS').write_text(''.join(f'{digest}  {name}\n' for name, digest in sorted(hashes.items())))
-        with tarfile.open(args.output, 'w:gz') as archive:
+        if args.directory:
+            print(json.dumps({'release': str(root), 'files': len(hashes)}))
+            return
+        with tarfile.open(args.output, 'w:gz', compresslevel=1) as archive:
             for item in sorted(root.rglob('*')):
                 if item.is_file():
                     archive.add(item, arcname=str(item.relative_to(root)), recursive=False)

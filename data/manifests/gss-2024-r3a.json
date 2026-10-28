@@ -1,0 +1,9 @@
+{
+  "release": "GSS 1972\u20132024 cumulative Release 3a (July 2026)",
+  "url": "https://gss.norc.org/content/dam/gss/get-the-data/documents/stata/GSS_stata.zip",
+  "zip_sha256": "d4fd4e5057d53d6023e55d5114685430321c3ab00ef2bc11099c2358efc65dfe",
+  "dta_member": "GSS_stata/gss7224_r3a.dta",
+  "dta_sha256": "a7622e03d9130e25968943b6f022f44dc0087baf0aa6b5cef150871152827344",
+  "respondents": 75699,
+  "variables": 6943
+}

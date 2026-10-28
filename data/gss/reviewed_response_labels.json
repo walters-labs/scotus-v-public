@@ -1,0 +1,314 @@
+{
+  "marsame": {
+    "response_labels": {
+      "5": "strongly disagree",
+      "3": "neither agree nor disagree",
+      "4": "disagree",
+      "2": "agree",
+      "1": "strongly agree"
+    },
+    "scores": {
+      "1": 1,
+      "2": 0.5,
+      "3": 0,
+      "4": -0.5,
+      "5": -1
+    }
+  },
+  "marsame1": {
+    "response_labels": {
+      "5": "strongly disagree",
+      "2": "agree",
+      "1": "strongly agree",
+      "3": "neither agree nor disagree",
+      "4": "disagree"
+    },
+    "scores": {
+      "1": 1,
+      "2": 0.5,
+      "3": 0,
+      "4": -0.5,
+      "5": -1
+    }
+  },
+  "gunlaw": {
+    "response_labels": {
+      "1": "favor",
+      "2": "oppose"
+    },
+    "scores": {
+      "1": 1,
+      "2": -1
+    }
+  },
+  "abany": {
+    "response_labels": {
+      "1": "yes",
+      "2": "no"
+    },
+    "scores": {
+      "1": 1,
+      "2": -1
+    }
+  },
+  "cappun": {
+    "response_labels": {
+      "1": "favor",
+      "2": "oppose"
+    },
+    "scores": {
+      "1": -1,
+      "2": 1
+    }
+  },
+  "abdefect": {
+    "response_labels": {
+      "1": "yes",
+      "2": "no"
+    },
+    "scores": {
+      "1": 1,
+      "2": -1
+    }
+  },
+  "abnomore": {
+    "response_labels": {
+      "1": "yes",
+      "2": "no"
+    },
+    "scores": {
+      "1": 1,
+      "2": -1
+    }
+  },
+  "abhlth": {
+    "response_labels": {
+      "1": "yes",
+      "2": "no"
+    },
+    "scores": {
+      "1": 1,
+      "2": -1
+    }
+  },
+  "abpoor": {
+    "response_labels": {
+      "1": "yes",
+      "2": "no"
+    },
+    "scores": {
+      "1": 1,
+      "2": -1
+    }
+  },
+  "abrape": {
+    "response_labels": {
+      "1": "yes",
+      "2": "no"
+    },
+    "scores": {
+      "1": 1,
+      "2": -1
+    }
+  },
+  "absingle": {
+    "response_labels": {
+      "1": "yes",
+      "2": "no"
+    },
+    "scores": {
+      "1": 1,
+      "2": -1
+    }
+  },
+  "grass": {
+    "response_labels": {
+      "2": "should not be legal",
+      "1": "should be legal"
+    },
+    "scores": {
+      "1": 1,
+      "2": -1
+    }
+  },
+  "letin1": {
+    "response_labels": {
+      "5": "reduced a lot",
+      "3": "remain the same as it is",
+      "4": "reduced a little",
+      "2": "increased a little",
+      "1": "increased a lot"
+    },
+    "scores": {
+      "1": 1.0,
+      "2": 0.5,
+      "3": 0.0,
+      "4": -0.5,
+      "5": -1.0
+    }
+  },
+  "eqwlth": {
+    "response_labels": {
+      "2": "2.0",
+      "5": "5.0",
+      "4": "4.0",
+      "3": "3.0",
+      "6": "6.0",
+      "7": "the government should not concern itself with reducing income differences",
+      "1": "the government should reduce income differences"
+    },
+    "scores": {
+      "1": 1.0,
+      "2": 0.6666666666666667,
+      "3": 0.33333333333333337,
+      "4": 0.0,
+      "5": -0.33333333333333326,
+      "6": -0.6666666666666667,
+      "7": -1.0
+    }
+  },
+  "helpnot": {
+    "response_labels": {
+      "3": "agree with both",
+      "1": "government should do more",
+      "2": "2.0",
+      "4": "4.0",
+      "5": "government does too much"
+    },
+    "scores": {
+      "1": 1.0,
+      "2": 0.5,
+      "3": 0.0,
+      "4": -0.5,
+      "5": -1.0
+    }
+  },
+  "helpsick": {
+    "response_labels": {
+      "5": "people should care for themselves",
+      "3": "agree with both",
+      "1": "government should help",
+      "4": "4.0",
+      "2": "2.0"
+    },
+    "scores": {
+      "1": 1.0,
+      "2": 0.5,
+      "3": 0.0,
+      "4": -0.5,
+      "5": -1.0
+    }
+  },
+  "helpblk": {
+    "response_labels": {
+      "3": "agree with both",
+      "5": "no special treatment",
+      "1": "government should help",
+      "2": "2.0",
+      "4": "4.0"
+    },
+    "scores": {
+      "1": 1.0,
+      "2": 0.5,
+      "3": 0.0,
+      "4": -0.5,
+      "5": -1.0
+    }
+  },
+  "natenvir": {
+    "response_labels": {
+      "3": "too much",
+      "2": "about right",
+      "1": "too little"
+    },
+    "scores": {
+      "1": 1,
+      "2": 0,
+      "3": -1
+    }
+  },
+  "natheal": {
+    "response_labels": {
+      "1": "too little",
+      "2": "about right",
+      "3": "too much"
+    },
+    "scores": {
+      "1": 1,
+      "2": 0,
+      "3": -1
+    }
+  },
+  "nateduc": {
+    "response_labels": {
+      "1": "too little",
+      "2": "about right",
+      "3": "too much"
+    },
+    "scores": {
+      "1": 1,
+      "2": 0,
+      "3": -1
+    }
+  },
+  "natfare": {
+    "response_labels": {
+      "3": "too much",
+      "1": "too little",
+      "2": "about right"
+    },
+    "scores": {
+      "1": 1,
+      "2": 0,
+      "3": -1
+    }
+  },
+  "natarms": {
+    "response_labels": {
+      "2": "about right",
+      "1": "too little",
+      "3": "too much"
+    },
+    "scores": {
+      "1": -1,
+      "2": 0,
+      "3": 1
+    }
+  },
+  "courts": {
+    "response_labels": {
+      "3": "about right",
+      "2": "not harshly enough",
+      "1": "too harshly"
+    },
+    "scores": {
+      "1": 1,
+      "2": -1,
+      "3": 0
+    }
+  },
+  "prayer": {
+    "response_labels": {
+      "2": "disapprove",
+      "1": "approve"
+    },
+    "scores": {
+      "1": 1,
+      "2": -1
+    }
+  },
+  "pillok": {
+    "response_labels": {
+      "1": "strongly agree",
+      "3": "disagree",
+      "2": "agree",
+      "4": "strongly disagree"
+    },
+    "scores": {
+      "1": 1,
+      "2": 0.3333333333333333,
+      "3": -0.3333333333333333,
+      "4": -1
+    }
+  }
+}

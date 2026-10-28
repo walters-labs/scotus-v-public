@@ -27,7 +27,8 @@ def main():
         timings = list(pool.map(request, terms * 20))
     with closing(connect(args.artifact)) as db:
         assert db.execute('PRAGMA integrity_check').fetchone()[0] == 'ok'
-        hits = {term: {corpus: len(search(db, corpus, [term])) for corpus in ('court', 'public')}
+        corpora = [row[0] for row in db.execute('SELECT DISTINCT corpus FROM documents')]
+        hits = {term: {corpus: len(search(db, corpus, [term])) for corpus in corpora}
                 for term in terms[1:]}
     with app.test_client() as client:
         assert client.get('/healthz').status_code == 200

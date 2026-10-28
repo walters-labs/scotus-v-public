@@ -60,13 +60,24 @@ class AppTests(unittest.TestCase):
                 self.assertEqual([d['id'] for d in result],[p[0] for p in expected])
                 np.testing.assert_allclose([d['score'] for d in result],[p[1] for p in expected])
 
-    def test_legacy_year_overwrite_and_question_means(self):
+    def test_annual_case_average_and_question_means(self):
         court = [dict(cases=[dict(year=2000,polarity=.5),dict(year=2000,polarity=-.3)])]
         public = [dict(years={'2000':.5}),dict(years={'2000':-.1,'2002':.8})]
-        self.assertEqual(series(court,public), ({2000:-.3},{2000:.2,2002:.8}))
+        self.assertEqual(series(court,public), ({2000:.1},{2000:.2,2002:.8}))
         self.assertIn('<circle',chart({2000:.1},{}))
         self.assertEqual(chart({},{}),'')
         self.assertNotIn('nan',chart({2000:0,2002:0},{}))
+
+    def test_court_average_is_order_independent_and_excludes_missing(self):
+        court = [dict(cases=[dict(year=2000, polarity=1)]),
+                 dict(cases=[dict(year=2000, polarity=-1),
+                             dict(year=2000, polarity=0),
+                             dict(year=2001, polarity=.5),
+                             dict(year=2002, polarity=None)])]
+        expected = ({2000: 0, 2001: .5}, {})
+        self.assertEqual(series(court, []), expected)
+        self.assertEqual(series(list(reversed(court)), []), expected)
+        self.assertEqual(series([], []), ({}, {}))
 
     def test_survey_legacy_scaling_and_unlabeled(self):
         book = pd.DataFrame({'vcf_code':['Q','U'],'question':['A question','Unlabeled']})

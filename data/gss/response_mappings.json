@@ -1,0 +1,472 @@
+{
+  "version": "explicit-gss-v1",
+  "notes": "WTSSPS before 2004; WTSSNRPS from 2004. Missing and unmapped responses excluded. One wording variant per family/year. GSS and ANES remain separate series. Survey modes changed from 2021; marijuana, sentencing and school-prayer items are mode-sensitive, and GUNLAW 2021 has a ballot-context caution.",
+  "entries": [
+    {
+      "code": "marsame",
+      "family": "gss:marriage",
+      "question": "Homosexual couples should have the right to marry one another.",
+      "title": "Same-sex marriage",
+      "scores": {
+        "1": 1,
+        "2": 0.5,
+        "3": 0,
+        "4": -0.5,
+        "5": -1
+      },
+      "priority": 10,
+      "weight": "gss_weight",
+      "rationale": "Agreement with equal marriage rights is liberal; disagreement is conservative. Formerly MARHOMO.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://sda.berkeley.edu/sdaweb/docs/gss24rel3/DOC/hcbk0312.htm"
+    },
+    {
+      "code": "marsame1",
+      "family": "gss:marriage",
+      "question": "Homosexual couples have the right to marry one another.",
+      "title": "Same-sex marriage",
+      "scores": {
+        "1": 1,
+        "2": 0.5,
+        "3": 0,
+        "4": -0.5,
+        "5": -1
+      },
+      "priority": 0,
+      "weight": "gss_weight",
+      "rationale": "Same direction as MARSAME; distinct wording retained, formerly MARHOMO1.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://sda.berkeley.edu/sdaweb/docs/gss24rel3/DOC/hcbk0312.htm"
+    },
+    {
+      "code": "gunlaw",
+      "family": "gss:gun_permits",
+      "question": "Would you favor or oppose a law requiring a police permit before a person could buy a gun?",
+      "title": "Gun permits",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "priority": 0,
+      "weight": "gss_weight",
+      "rationale": "Support for a purchase-permit requirement is liberal; opposition is conservative.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://sda.berkeley.edu/sdaweb/docs/gss24rel3/DOC/hcbk0028.htm"
+    },
+    {
+      "code": "abany",
+      "family": "gss:abortion",
+      "question": "Should a pregnant woman be able to obtain a legal abortion if she wants it for any reason?",
+      "title": "Abortion for any reason",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "priority": 0,
+      "weight": "gss_weight",
+      "rationale": "Support for legal abortion is liberal; opposition is conservative.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://gss.norc.org/get-the-data/stata.html"
+    },
+    {
+      "code": "cappun",
+      "family": "gss:death_penalty",
+      "question": "Do you favor or oppose the death penalty for persons convicted of murder?",
+      "title": "Death penalty",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "priority": 0,
+      "weight": "gss_weight",
+      "rationale": "Support for capital punishment is conservative; opposition is liberal.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://sda.berkeley.edu/sdaweb/docs/gss24rel3/DOC/hcbk0028.htm"
+    },
+    {
+      "code": "abdefect",
+      "family": "gss:abdefect",
+      "title": "Abortion: fetal impairment",
+      "question": "Should a woman be able to obtain a legal abortion if there is a strong chance of a serious fetal defect?",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "priority": 0,
+      "weight": "gss_weight",
+      "rationale": "Support for legal abortion in this circumstance is liberal; opposition is conservative. Each circumstance is a distinct question, not a wording variant.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://gss.norc.org/get-the-data/stata.html"
+    },
+    {
+      "code": "abnomore",
+      "family": "gss:abnomore",
+      "title": "Abortion: no more children",
+      "question": "Should a woman be able to obtain a legal abortion if she is married and wants no more children?",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "priority": 0,
+      "weight": "gss_weight",
+      "rationale": "Support for legal abortion in this circumstance is liberal; opposition is conservative. Each circumstance is a distinct question, not a wording variant.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://gss.norc.org/get-the-data/stata.html"
+    },
+    {
+      "code": "abhlth",
+      "family": "gss:abhlth",
+      "title": "Abortion: maternal health",
+      "question": "Should a woman be able to obtain a legal abortion if her health is seriously endangered?",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "priority": 0,
+      "weight": "gss_weight",
+      "rationale": "Support for legal abortion in this circumstance is liberal; opposition is conservative. Each circumstance is a distinct question, not a wording variant.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://gss.norc.org/get-the-data/stata.html"
+    },
+    {
+      "code": "abpoor",
+      "family": "gss:abpoor",
+      "title": "Abortion: financial hardship",
+      "question": "Should a woman be able to obtain a legal abortion if the family has a low income and cannot afford more children?",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "priority": 0,
+      "weight": "gss_weight",
+      "rationale": "Support for legal abortion in this circumstance is liberal; opposition is conservative. Each circumstance is a distinct question, not a wording variant.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://gss.norc.org/get-the-data/stata.html"
+    },
+    {
+      "code": "abrape",
+      "family": "gss:abrape",
+      "title": "Abortion: rape",
+      "question": "Should a woman be able to obtain a legal abortion if the pregnancy resulted from rape?",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "priority": 0,
+      "weight": "gss_weight",
+      "rationale": "Support for legal abortion in this circumstance is liberal; opposition is conservative. Each circumstance is a distinct question, not a wording variant.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://gss.norc.org/get-the-data/stata.html"
+    },
+    {
+      "code": "absingle",
+      "family": "gss:absingle",
+      "title": "Abortion: unmarried women",
+      "question": "Should a woman be able to obtain a legal abortion if she is unmarried and does not want to marry the man?",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "priority": 0,
+      "weight": "gss_weight",
+      "rationale": "Support for legal abortion in this circumstance is liberal; opposition is conservative. Each circumstance is a distinct question, not a wording variant.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://gss.norc.org/get-the-data/stata.html"
+    },
+    {
+      "code": "grass",
+      "family": "gss:grass",
+      "title": "Marijuana legalization",
+      "question": "Should the use of marijuana be legal?",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "priority": 0,
+      "weight": "gss_weight",
+      "rationale": "Legalization is coded liberal; prohibition conservative. Mode-sensitive item; experimental GRASSV/GRASSNV not pooled.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://gss.norc.org/get-the-data/stata.html"
+    },
+    {
+      "code": "letin1",
+      "family": "gss:letin1",
+      "title": "Immigration levels",
+      "question": "Should the number of immigrants allowed into America increase, remain the same, or decrease?",
+      "scores": {
+        "1": 1.0,
+        "2": 0.5,
+        "3": 0.0,
+        "4": -0.5,
+        "5": -1.0
+      },
+      "priority": 0,
+      "weight": "gss_weight",
+      "rationale": "Increasing immigration is coded liberal, decreasing conservative; unchanged is a scale midpoint.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://gss.norc.org/get-the-data/stata.html"
+    },
+    {
+      "code": "eqwlth",
+      "family": "gss:eqwlth",
+      "title": "Income inequality",
+      "question": "Should the federal government reduce income differences between rich and poor, or leave those differences alone?",
+      "scores": {
+        "1": 1.0,
+        "2": 0.6666666666666667,
+        "3": 0.33333333333333337,
+        "4": 0.0,
+        "5": -0.33333333333333326,
+        "6": -0.6666666666666667,
+        "7": -1.0
+      },
+      "priority": 0,
+      "weight": "gss_weight",
+      "rationale": "Government redistribution is liberal; opposition conservative; seven-point scale.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://gss.norc.org/get-the-data/stata.html"
+    },
+    {
+      "code": "helpnot",
+      "family": "gss:helpnot",
+      "title": "Government assistance",
+      "question": "Should government do more to solve national problems, or does it already do too much?",
+      "scores": {
+        "1": 1.0,
+        "2": 0.5,
+        "3": 0.0,
+        "4": -0.5,
+        "5": -1.0
+      },
+      "priority": 0,
+      "weight": "gss_weight",
+      "rationale": "Greater government assistance is coded liberal; opposition conservative; five-point scale.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://gss.norc.org/get-the-data/stata.html"
+    },
+    {
+      "code": "helpsick",
+      "family": "gss:helpsick",
+      "title": "Government medical care assistance",
+      "question": "Should the federal government help pay doctors and hospital bills, or should people pay for their own medical care?",
+      "scores": {
+        "1": 1.0,
+        "2": 0.5,
+        "3": 0.0,
+        "4": -0.5,
+        "5": -1.0
+      },
+      "priority": 0,
+      "weight": "gss_weight",
+      "rationale": "Greater government assistance is coded liberal; opposition conservative; five-point scale.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://gss.norc.org/get-the-data/stata.html"
+    },
+    {
+      "code": "helpblk",
+      "family": "gss:helpblk",
+      "title": "Government assistance for Black Americans",
+      "question": "Does government have a special obligation to improve Black Americans’ living standards because of past discrimination, or should there be no special treatment?",
+      "scores": {
+        "1": 1.0,
+        "2": 0.5,
+        "3": 0.0,
+        "4": -0.5,
+        "5": -1.0
+      },
+      "priority": 0,
+      "weight": "gss_weight",
+      "rationale": "Greater government assistance is coded liberal; opposition conservative; five-point scale.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://gss.norc.org/get-the-data/stata.html"
+    },
+    {
+      "code": "natenvir",
+      "family": "gss:natenvir",
+      "title": "Government spending: environmental protection",
+      "question": "Is the nation spending too little, about the right amount, or too much on environmental protection?",
+      "scores": {
+        "1": 1,
+        "2": 0,
+        "3": -1
+      },
+      "priority": 0,
+      "weight": "gss_weight",
+      "rationale": "Preference for more environmental protection spending is coded liberal. About right is a status-quo midpoint, not necessarily ideological centrism. Alternative Y wording excluded.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://gss.norc.org/get-the-data/stata.html"
+    },
+    {
+      "code": "natheal",
+      "family": "gss:natheal",
+      "title": "Government spending: health",
+      "question": "Is the nation spending too little, about the right amount, or too much on health?",
+      "scores": {
+        "1": 1,
+        "2": 0,
+        "3": -1
+      },
+      "priority": 0,
+      "weight": "gss_weight",
+      "rationale": "Preference for more health spending is coded liberal. About right is a status-quo midpoint, not necessarily ideological centrism. Alternative Y wording excluded.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://gss.norc.org/get-the-data/stata.html"
+    },
+    {
+      "code": "nateduc",
+      "family": "gss:nateduc",
+      "title": "Government spending: education",
+      "question": "Is the nation spending too little, about the right amount, or too much on education?",
+      "scores": {
+        "1": 1,
+        "2": 0,
+        "3": -1
+      },
+      "priority": 0,
+      "weight": "gss_weight",
+      "rationale": "Preference for more education spending is coded liberal. About right is a status-quo midpoint, not necessarily ideological centrism. Alternative Y wording excluded.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://gss.norc.org/get-the-data/stata.html"
+    },
+    {
+      "code": "natfare",
+      "family": "gss:natfare",
+      "title": "Government spending: welfare",
+      "question": "Is the nation spending too little, about the right amount, or too much on welfare?",
+      "scores": {
+        "1": 1,
+        "2": 0,
+        "3": -1
+      },
+      "priority": 0,
+      "weight": "gss_weight",
+      "rationale": "Preference for more welfare spending is coded liberal. About right is a status-quo midpoint, not necessarily ideological centrism. Alternative Y wording excluded.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://gss.norc.org/get-the-data/stata.html"
+    },
+    {
+      "code": "natarms",
+      "family": "gss:natarms",
+      "title": "Government spending: military and defense",
+      "question": "Is the nation spending too little, about the right amount, or too much on military and defense?",
+      "scores": {
+        "1": -1,
+        "2": 0,
+        "3": 1
+      },
+      "priority": 0,
+      "weight": "gss_weight",
+      "rationale": "Preference for more military and defense spending is coded conservative. About right is a status-quo midpoint, not necessarily ideological centrism. Alternative Y wording excluded.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://gss.norc.org/get-the-data/stata.html"
+    },
+    {
+      "code": "courts",
+      "family": "gss:courts",
+      "title": "Criminal sentencing",
+      "question": "Do courts deal too harshly, not harshly enough, or about right with criminals?",
+      "scores": {
+        "1": 1,
+        "2": -1,
+        "3": 0
+      },
+      "priority": 0,
+      "weight": "gss_weight",
+      "rationale": "Preference for more lenient sentencing is liberal; harsher conservative. Numeric codes are not ordered. Mode-sensitive; COURTSV/COURTSNV excluded.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://gss.norc.org/get-the-data/stata.html"
+    },
+    {
+      "code": "prayer",
+      "family": "gss:prayer",
+      "title": "Required prayer in public schools",
+      "question": "Do you approve of the Supreme Court ruling that state and local governments may not require Bible readings or the Lord’s Prayer in public schools?",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "priority": 0,
+      "weight": "gss_weight",
+      "rationale": "Approval of the ban on compulsory school prayer is liberal; disapproval conservative. Does not ask about voluntary prayer. Mode-sensitive; PRAYERV/PRAYERNV excluded.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://gss.norc.org/get-the-data/stata.html"
+    },
+    {
+      "code": "pillok",
+      "family": "gss:pillok",
+      "title": "Teenage access to birth control",
+      "question": "Should birth control be available to teenagers aged 14–16 even without parental approval?",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "priority": 0,
+      "weight": "gss_weight",
+      "rationale": "Support for contraception access is liberal; opposition conservative. Four-point agreement scale has no neutral category; TEENPILL not combined.",
+      "measurement_type": "policy",
+      "question_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "source_url": "https://gss.norc.org/get-the-data/stata.html"
+    }
+  ],
+  "excluded_variants": {
+    "marsamey": "2024 wording experiment; use historical MARSAME arm for this pilot.",
+    "abanyg": "Web grid variant; use ABANY historical format for this pilot.",
+    "cappun2": "Alternative wording; historical CAPPUN available.",
+    "grassv": "Alternative wording/format requires separate comparability review; not pooled with selected historical item.",
+    "grassnv": "Alternative wording/format requires separate comparability review; not pooled with selected historical item.",
+    "courtsv": "Alternative wording/format requires separate comparability review; not pooled with selected historical item.",
+    "courtsnv": "Alternative wording/format requires separate comparability review; not pooled with selected historical item.",
+    "prayerv": "Alternative wording/format requires separate comparability review; not pooled with selected historical item.",
+    "prayernv": "Alternative wording/format requires separate comparability review; not pooled with selected historical item.",
+    "teenpill": "Alternative wording/format requires separate comparability review; not pooled with selected historical item.",
+    "natenviry": "Alternative wording/format requires separate comparability review; not pooled with selected historical item.",
+    "nathealy": "Alternative wording/format requires separate comparability review; not pooled with selected historical item.",
+    "nateducy": "Alternative wording/format requires separate comparability review; not pooled with selected historical item.",
+    "natfarey": "Alternative wording/format requires separate comparability review; not pooled with selected historical item.",
+    "natarmsy": "Alternative wording/format requires separate comparability review; not pooled with selected historical item.",
+    "abdefectg": "Alternative wording/format requires separate comparability review; not pooled with selected historical item.",
+    "abnomoreg": "Alternative wording/format requires separate comparability review; not pooled with selected historical item.",
+    "abhlthg": "Alternative wording/format requires separate comparability review; not pooled with selected historical item.",
+    "abpoorg": "Alternative wording/format requires separate comparability review; not pooled with selected historical item.",
+    "abrapeg": "Alternative wording/format requires separate comparability review; not pooled with selected historical item.",
+    "absingleg": "Alternative wording/format requires separate comparability review; not pooled with selected historical item."
+  },
+  "review_deferred": {
+    "natcrime": "More anti-crime spending has no unambiguous ideological direction.",
+    "natdrug": "Drug spending does not distinguish treatment from enforcement.",
+    "natspac": "Space spending is not unambiguously liberal/conservative.",
+    "natroad": "Infrastructure spending is not unambiguously liberal/conservative.",
+    "natpark": "Parks spending is not unambiguously liberal/conservative.",
+    "tax": "Own tax burden is not a direct policy preference.",
+    "premarsx": "Moral judgment, not direct policy.",
+    "homosex": "Moral judgment, not marriage or other legal rights.",
+    "fepol": "Gender stereotype, not direct policy.",
+    "euthanas": "Candidate name absent; locate and review actual assisted-dying variables."
+  }
+}

@@ -1,0 +1,1230 @@
+{
+  "status": "acquired and joined; response mappings and wave-specific weighting still require review",
+  "policy_respondents": 557456,
+  "policy_items": 54,
+  "matched_weight_records": 557454,
+  "unmatched_weight_records": 2,
+  "years": [
+    {
+      "year": 2006,
+      "respondents": 36421,
+      "unmatched_weights": 0,
+      "positive_pre_weights": 36421,
+      "positive_post_weights": 0
+    },
+    {
+      "year": 2007,
+      "respondents": 10000,
+      "unmatched_weights": 1,
+      "positive_pre_weights": 9999,
+      "positive_post_weights": 0
+    },
+    {
+      "year": 2008,
+      "respondents": 32800,
+      "unmatched_weights": 0,
+      "positive_pre_weights": 32800,
+      "positive_post_weights": 0
+    },
+    {
+      "year": 2009,
+      "respondents": 13800,
+      "unmatched_weights": 0,
+      "positive_pre_weights": 13800,
+      "positive_post_weights": 0
+    },
+    {
+      "year": 2010,
+      "respondents": 55400,
+      "unmatched_weights": 0,
+      "positive_pre_weights": 55259,
+      "positive_post_weights": 0
+    },
+    {
+      "year": 2011,
+      "respondents": 20150,
+      "unmatched_weights": 1,
+      "positive_pre_weights": 20149,
+      "positive_post_weights": 0
+    },
+    {
+      "year": 2012,
+      "respondents": 54535,
+      "unmatched_weights": 0,
+      "positive_pre_weights": 54535,
+      "positive_post_weights": 44835
+    },
+    {
+      "year": 2013,
+      "respondents": 16400,
+      "unmatched_weights": 0,
+      "positive_pre_weights": 16400,
+      "positive_post_weights": 0
+    },
+    {
+      "year": 2014,
+      "respondents": 56200,
+      "unmatched_weights": 0,
+      "positive_pre_weights": 56200,
+      "positive_post_weights": 0
+    },
+    {
+      "year": 2015,
+      "respondents": 14250,
+      "unmatched_weights": 0,
+      "positive_pre_weights": 14250,
+      "positive_post_weights": 0
+    },
+    {
+      "year": 2016,
+      "respondents": 64600,
+      "unmatched_weights": 0,
+      "positive_pre_weights": 64600,
+      "positive_post_weights": 52942
+    },
+    {
+      "year": 2017,
+      "respondents": 18200,
+      "unmatched_weights": 0,
+      "positive_pre_weights": 18200,
+      "positive_post_weights": 0
+    },
+    {
+      "year": 2018,
+      "respondents": 60000,
+      "unmatched_weights": 0,
+      "positive_pre_weights": 60000,
+      "positive_post_weights": 51808
+    },
+    {
+      "year": 2019,
+      "respondents": 18000,
+      "unmatched_weights": 0,
+      "positive_pre_weights": 18000,
+      "positive_post_weights": 0
+    },
+    {
+      "year": 2020,
+      "respondents": 61000,
+      "unmatched_weights": 0,
+      "positive_pre_weights": 61000,
+      "positive_post_weights": 51550
+    },
+    {
+      "year": 2021,
+      "respondents": 25700,
+      "unmatched_weights": 0,
+      "positive_pre_weights": 25700,
+      "positive_post_weights": 0
+    }
+  ],
+  "items": {
+    "abortion_20weeks": {
+      "observed_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 316766
+    },
+    "abortion_always": {
+      "observed_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 316999
+    },
+    "abortion_conditional": {
+      "observed_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 316666
+    },
+    "abortion_coverage": {
+      "observed_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2020
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 273381
+    },
+    "abortion_expenditures": {
+      "observed_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 291147
+    },
+    "abortion_prohibition": {
+      "observed_years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 261293
+    },
+    "abortion_scale": {
+      "observed_years": [
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "observed_codes": [
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "nonmissing_responses": 235179
+    },
+    "enviro_airwateracts": {
+      "observed_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 308399
+    },
+    "enviro_carbon": {
+      "observed_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 308291
+    },
+    "enviro_mpg_raise": {
+      "observed_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2020,
+        2021
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 290410
+    },
+    "enviro_renewable": {
+      "observed_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 308495
+    },
+    "enviro_scale": {
+      "observed_years": [
+        2006,
+        2007,
+        2009,
+        2010,
+        2011,
+        2012
+      ],
+      "observed_codes": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "nonmissing_responses": 165891
+    },
+    "enviro_vs_jobs": {
+      "observed_years": [
+        2006,
+        2007,
+        2008,
+        2010,
+        2012,
+        2013
+      ],
+      "observed_codes": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0
+      ],
+      "nonmissing_responses": 204672
+    },
+    "guns_assaultban": {
+      "observed_years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 332651
+    },
+    "guns_bgchecks": {
+      "observed_years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2021
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 272442
+    },
+    "guns_names": {
+      "observed_years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2020
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 229677
+    },
+    "guns_permits": {
+      "observed_years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 332943
+    },
+    "guns_scale": {
+      "observed_years": [
+        2010,
+        2012
+      ],
+      "observed_codes": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "nonmissing_responses": 109793
+    },
+    "healthcare_aca": {
+      "observed_years": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 384762
+    },
+    "healthcare_acamandate": {
+      "observed_years": [
+        2019,
+        2020,
+        2021
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 104433
+    },
+    "healthcare_medicare": {
+      "observed_years": [
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 164360
+    },
+    "healthcare_medicareage": {
+      "observed_years": [
+        2019,
+        2020
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 78742
+    },
+    "immig_border": {
+      "observed_years": [
+        2007,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2019,
+        2020,
+        2021
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 414258
+    },
+    "immig_deport": {
+      "observed_years": [
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 153250
+    },
+    "immig_employer": {
+      "observed_years": [
+        2007,
+        2010,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 185117
+    },
+    "immig_legalize": {
+      "observed_years": [
+        2007,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2019,
+        2020,
+        2021
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 414287
+    },
+    "immig_police": {
+      "observed_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2017
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 235135
+    },
+    "immig_reduce": {
+      "observed_years": [
+        2018,
+        2019,
+        2020
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 137439
+    },
+    "immig_report": {
+      "observed_years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 182698
+    },
+    "immig_services": {
+      "observed_years": [
+        2012,
+        2013
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 70935
+    },
+    "immig_wall": {
+      "observed_years": [
+        2017,
+        2018,
+        2020,
+        2021
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 164531
+    },
+    "military_democracy": {
+      "observed_years": [
+        2006,
+        2007,
+        2008,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2020
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 369206
+    },
+    "military_genocide": {
+      "observed_years": [
+        2006,
+        2007,
+        2008,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2020
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 369206
+    },
+    "military_helpun": {
+      "observed_years": [
+        2006,
+        2007,
+        2008,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2020
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 369206
+    },
+    "military_oil": {
+      "observed_years": [
+        2006,
+        2007,
+        2008,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2020
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 369206
+    },
+    "military_protectallies": {
+      "observed_years": [
+        2006,
+        2007,
+        2008,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2020
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 369206
+    },
+    "military_terroristcamp": {
+      "observed_years": [
+        2006,
+        2007,
+        2008,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2020
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 369206
+    },
+    "affirmativeaction": {
+      "observed_years": [
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "observed_codes": [
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "nonmissing_responses": 248381
+    },
+    "affirmativeaction_scale": {
+      "observed_years": [
+        2006,
+        2007
+      ],
+      "observed_codes": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0
+      ],
+      "nonmissing_responses": 46239
+    },
+    "gaymarriage_ban": {
+      "observed_years": [
+        2008,
+        2009,
+        2010,
+        2011
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 118328
+    },
+    "gaymarriage_legalize": {
+      "observed_years": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 204001
+    },
+    "gaymarriage_scale": {
+      "observed_years": [
+        2006,
+        2007
+      ],
+      "observed_codes": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "nonmissing_responses": 22266
+    },
+    "incometax_vs_salestax": {
+      "observed_years": [
+        2006,
+        2007,
+        2008,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2020
+      ],
+      "observed_codes": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0,
+        14.0,
+        15.0,
+        16.0,
+        17.0,
+        18.0,
+        19.0,
+        20.0,
+        21.0,
+        22.0,
+        23.0,
+        24.0,
+        25.0,
+        26.0,
+        27.0,
+        28.0,
+        29.0,
+        30.0,
+        31.0,
+        32.0,
+        33.0,
+        34.0,
+        35.0,
+        36.0,
+        37.0,
+        38.0,
+        39.0,
+        40.0,
+        41.0,
+        42.0,
+        43.0,
+        44.0,
+        45.0,
+        46.0,
+        47.0,
+        48.0,
+        49.0,
+        50.0,
+        51.0,
+        52.0,
+        53.0,
+        54.0,
+        55.0,
+        56.0,
+        57.0,
+        58.0,
+        59.0,
+        60.0,
+        61.0,
+        62.0,
+        63.0,
+        64.0,
+        65.0,
+        66.0,
+        67.0,
+        68.0,
+        69.0,
+        70.0,
+        71.0,
+        72.0,
+        73.0,
+        74.0,
+        75.0,
+        76.0,
+        77.0,
+        78.0,
+        79.0,
+        80.0,
+        81.0,
+        82.0,
+        83.0,
+        84.0,
+        85.0,
+        86.0,
+        87.0,
+        88.0,
+        89.0,
+        90.0,
+        91.0,
+        92.0,
+        93.0,
+        94.0,
+        95.0,
+        96.0,
+        97.0,
+        98.0,
+        99.0,
+        100.0,
+        104.0,
+        201.0,
+        997.0,
+        998.0
+      ],
+      "nonmissing_responses": 359756
+    },
+    "spending_cuts_least": {
+      "observed_years": [
+        2006,
+        2007,
+        2008,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2017
+      ],
+      "observed_codes": [
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "nonmissing_responses": 303249
+    },
+    "spending_cuts_most": {
+      "observed_years": [
+        2006,
+        2007,
+        2008,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2017
+      ],
+      "observed_codes": [
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "nonmissing_responses": 305159
+    },
+    "spending_education": {
+      "observed_years": [
+        2014,
+        2016,
+        2018,
+        2020
+      ],
+      "observed_codes": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "nonmissing_responses": 204526
+    },
+    "spending_healthcare": {
+      "observed_years": [
+        2014,
+        2016,
+        2018,
+        2020
+      ],
+      "observed_codes": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "nonmissing_responses": 204597
+    },
+    "spending_infrastructure": {
+      "observed_years": [
+        2014,
+        2016,
+        2018,
+        2020
+      ],
+      "observed_codes": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "nonmissing_responses": 204445
+    },
+    "spending_police": {
+      "observed_years": [
+        2014,
+        2016,
+        2018,
+        2020
+      ],
+      "observed_codes": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "nonmissing_responses": 204411
+    },
+    "spending_vs_tax": {
+      "observed_years": [
+        2006,
+        2007,
+        2008,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2020
+      ],
+      "observed_codes": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0,
+        14.0,
+        15.0,
+        16.0,
+        17.0,
+        18.0,
+        19.0,
+        20.0,
+        21.0,
+        22.0,
+        23.0,
+        24.0,
+        25.0,
+        26.0,
+        27.0,
+        28.0,
+        29.0,
+        30.0,
+        31.0,
+        32.0,
+        33.0,
+        34.0,
+        35.0,
+        36.0,
+        37.0,
+        38.0,
+        39.0,
+        40.0,
+        41.0,
+        42.0,
+        43.0,
+        44.0,
+        45.0,
+        46.0,
+        47.0,
+        48.0,
+        49.0,
+        50.0,
+        51.0,
+        52.0,
+        53.0,
+        54.0,
+        55.0,
+        56.0,
+        57.0,
+        58.0,
+        59.0,
+        60.0,
+        61.0,
+        62.0,
+        63.0,
+        64.0,
+        65.0,
+        66.0,
+        67.0,
+        68.0,
+        69.0,
+        70.0,
+        71.0,
+        72.0,
+        73.0,
+        74.0,
+        75.0,
+        76.0,
+        77.0,
+        78.0,
+        79.0,
+        80.0,
+        81.0,
+        82.0,
+        83.0,
+        84.0,
+        85.0,
+        86.0,
+        87.0,
+        88.0,
+        89.0,
+        90.0,
+        91.0,
+        92.0,
+        93.0,
+        94.0,
+        95.0,
+        96.0,
+        97.0,
+        98.0,
+        99.0,
+        100.0,
+        102.0,
+        104.0,
+        107.0,
+        110.0,
+        192.0,
+        194.0,
+        997.0,
+        998.0
+      ],
+      "nonmissing_responses": 367001
+    },
+    "spending_welfare": {
+      "observed_years": [
+        2014,
+        2016,
+        2018,
+        2020
+      ],
+      "observed_codes": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "nonmissing_responses": 204644
+    },
+    "trade_canmex_except": {
+      "observed_years": [
+        2018,
+        2019,
+        2020
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 137920
+    },
+    "trade_canmex_include": {
+      "observed_years": [
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 163460
+    },
+    "trade_china": {
+      "observed_years": [
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "observed_codes": [
+        1.0,
+        2.0
+      ],
+      "nonmissing_responses": 163690
+    }
+  },
+  "source_hashes": {
+    "ces-policy/responses.dta": "0264338e7298450e42c63a2431273f7ad4b04be90d5075e0ba4b64c48ca5cfdd",
+    "ces-policy/guide.pdf": "3cb04fd6c5e10d7f94139d5c12eaec5fb420a362efad50d5a6f76e85adfc4dbd",
+    "ces-policy/common.feather": "543838b1116aa97e2e3e8976b9c5bf0224253233fa38757805b1cbff43db46ec",
+    "ces-policy/common-guide.pdf": "07ca96d8b2c4ed64f1cfeff4d140dc1a5a4ade4ecf8446ff4e50207c56f7b003"
+  }
+}

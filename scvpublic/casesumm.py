@@ -78,6 +78,15 @@ def select(records, citations, dockets, start, end):
     return [selected[k] for k in sorted(selected)], exclusions, dict(stats)
 
 
+def court_vectorizer():
+    import numpy as np
+    from sklearn.feature_extraction.text import TfidfVectorizer
+    # Common legal terms still carry meaning in queries (e.g. civil rights).
+    # IDF downweights them; a document-frequency ceiling erases them entirely.
+    return TfidfVectorizer(ngram_range=(1, 2), stop_words='english', min_df=.00001,
+                           max_df=1.0, dtype=np.float32)
+
+
 def build(args):
     import pyarrow as pa
     import numpy as np
@@ -98,7 +107,12 @@ def build(args):
     all_ids = set()
     for path in sorted(args.scdb.glob('*.csv')):
         sources[str(path.resolve())] = digest(path)
-        with path.open(encoding='cp1252',newline='') as stream:
+        encoding = 'utf-8-sig'
+        try:
+            path.read_text(encoding=encoding)
+        except UnicodeDecodeError:
+            encoding = 'cp1252'
+        with path.open(encoding=encoding,newline='') as stream:
             for row in csv.DictReader(stream):
                 key = citation_key(row['usCite'])
                 if key: citations[key].append(row)
@@ -112,10 +126,47 @@ def build(args):
                 for batch in pa.ipc.open_stream(stream):
                     yield from batch.to_pylist()
     selected, exclusions, stats = select(records(),citations,dockets,args.start,args.end)
+    supplement = getattr(args, 'supplement', None)
+    if supplement:
+        extra = json.loads(supplement.read_text())
+        if extra.get('format_version') != 1:
+            raise ValueError('Unsupported official supplement format')
+        sources[str(supplement.resolve())] = digest(supplement)
+        for filename, entry in extra['sources'].items():
+            if digest(Path(filename)) != entry['sha256']:
+                raise ValueError(f'Supplement source hash mismatch: {filename}')
+            sources[filename] = entry['sha256']
+        additions, rejected, extra_stats = select([r for r in extra['records'] if not r.get('unscored')], citations, dockets, args.start, args.end)
+        existing = {doc['case_id'] for doc, _ in selected}
+        by_id = {record['case_id']: record for record in extra['records']}
+        for doc, text in additions:
+            if doc['case_id'] in existing:
+                continue
+            record = by_id[doc['case_id']]
+            if doc['cases'][0]['date_decision'] != record['date']:
+                raise ValueError('Official/SCDB decision date mismatch')
+            doc.update(source_url=record['source_url'], text_source='Official SCOTUS principal opinion',
+                       pdf_pages=record['pdf_pages'], pdf_sha256=record['pdf_sha256'])
+            selected.append((doc,text))
+        for record in extra['records']:
+            if not record.get('unscored'):
+                continue
+            year=int(record['date'][:4])
+            if not args.start <= year <= args.end or record['case_id'] in existing:
+                continue
+            doc=dict(name=record['name'],citation='',case_id=record['case_id'],
+                     cases=[dict(name=record['name'],year=year,polarity=None,date_decision=record['date'])],
+                     match_method='official_unscored',short_text=len(record['opinion'].split())<100,
+                     source_url=record['source_url'],text_source='Official SCOTUS principal opinion',
+                     pdf_pages=record['pdf_pages'],pdf_sha256=record['pdf_sha256'])
+            selected.append((doc,record['opinion']))
+        exclusions.extend(rejected)
+        stats['supplement'] = extra_stats
+        stats['supplement_added'] = len(selected) - len(existing)
     if len(selected) < 4:
         raise ValueError('Too few matched documents')
     court = [doc for doc,_ in selected]
-    vectorizer = TfidfVectorizer(stop_words='english',min_df=.00001,max_df=.30,dtype=np.float32)
+    vectorizer = court_vectorizer()
     matrix = vectorizer.fit_transform(text for _,text in selected)
     vocabulary = vectorizer.get_feature_names_out()
     del selected
@@ -128,7 +179,8 @@ def build(args):
     pm = pv.fit_transform(d['title']+' '+d['question'] for d in public['documents'])
     ids = {d['case_id'] for d in court}
     report = dict(revision=REVISION, start=args.start, end=args.end, stats=stats,
-                  court_cases=len(court), scdb_cases_in_range=len(all_ids), unmatched_or_excluded_scdb_cases=sorted(all_ids-ids),
+                  court_max_df=1.0, court_ngram_range=[1, 2],
+                  court_cases=len(court), unscored_cases=sum(d['cases'][0]['polarity'] is None for d in court), scdb_cases_in_range=len(all_ids), unmatched_or_excluded_scdb_cases=sorted(all_ids-ids),
                   match_methods=dict(Counter(d['match_method'] for d in court)),
                   short_text_cases=sum(d['short_text'] for d in court),
                   matrix_shape=list(matrix.shape), nonzeros=matrix.nnz,
@@ -144,11 +196,12 @@ def build(args):
         report['bundle_files']={p.name:digest(p) for p in stage.iterdir()}
         (stage/'manifest.json').write_text(json.dumps(report,indent=2)+'\n')
         os.rename(stage,args.bundle)
-    publish(args.output, f'CaseSumm/SCDB {args.start}–{args.end} · ANES explicit mappings',False,
+    source_label = 'CaseSumm + official SCOTUS' if supplement else 'CaseSumm'
+    publish(args.output, f'{source_label}/SCDB {args.start}–{args.end} · ANES explicit mappings',False,
             (matrix,vocabulary,court,pm,pv.get_feature_names_out(),public['documents'],sources),
             dict(methodology='court-legacy-public-explicit-v1',public_trends_enabled=True,
-                 public_methodology='explicit-anes-v1',court_source='CaseSumm',
-                 coverage_note=f'{len(court):,} matched Court cases from {args.start}–{args.end}. Incomplete coverage; ambiguous matches and conflicting texts excluded. Public data may extend beyond the Court date range.',
+                 public_methodology='explicit-anes-v1',court_source=source_label,
+                 coverage_note=f'{len(court):,} indexed Court cases from {args.start}–{args.end}. Cases without SCDB scores are searchable but excluded from the chart. Incomplete coverage; ambiguous matches and conflicting texts excluded. Public data may extend beyond the Court date range.',
                  casesumm_revision=REVISION,build_manifest_sha256=digest(args.bundle/'manifest.json')))
 
 
@@ -159,6 +212,7 @@ def main():
     parser.add_argument('--public',type=Path,default=Path('data/processed/anes-20260205/public.json'))
     parser.add_argument('--bundle',type=Path,default=Path('artifacts/casesumm-index'))
     parser.add_argument('--output',type=Path,default=Path('artifacts/casesumm.sqlite'))
+    parser.add_argument('--supplement',type=Path,help='Verified official opinion records from scvpublic.modern')
     parser.add_argument('--start',type=int,default=1950)
     parser.add_argument('--end',type=int,default=2016)
     build(parser.parse_args())

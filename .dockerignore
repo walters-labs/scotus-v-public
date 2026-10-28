@@ -3,3 +3,5 @@
 !scvpublic/
 !scvpublic/**
 **/__pycache__
+
+!requirements-hybrid.txt

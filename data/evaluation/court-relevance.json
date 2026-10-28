@@ -1,0 +1,9 @@
+{
+  "description": "Small targeted regression set; unlabeled cases are unjudged, not irrelevant. Case IDs prevent ambiguous name matches. Labels concern topic relevance, not ideological direction.",
+  "queries": {
+    "birth control": {"relevant": ["1964-121", "1971-079", "1976-126", "1982-135", "2013-070", "2019-060"], "irrelevant": ["2000-070", "2013-030", "2008-079", "2016-005"]},
+    "gay marriage": {"relevant": ["2012-077", "2012-079", "2014-070"], "irrelevant": ["1970-053", "1977-007"]},
+    "gun control": {"relevant": ["2007-071", "2013-061", "2021-013"], "irrelevant": ["1960-138", "1985-157"]},
+    "abortion": {"relevant": ["1972-048", "1991-117", "2021-019"], "irrelevant": []}
+  }
+}

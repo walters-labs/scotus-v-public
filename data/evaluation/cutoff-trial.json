@@ -1,0 +1,2152 @@
+{
+  "development": {
+    "split": "development",
+    "artifact_sha256": "749b3c57e04db9c83a1dbf616e7eed1d5fa382befe8436a93556ff676c6be3d5",
+    "bundle_manifest_sha256": "36ccbe266677081b1d6d3641e64c2774b3d8730adc7ac51a3d9fd517cc22c72c",
+    "label_hashes": {
+      "data/evaluation/topic-relevance.json": "33d815f3cd8d409bbf1244978073b32afdbd39828aa8a2de21fad4393cfee662",
+      "data/evaluation/death-penalty-review.json": "18100020e2384d1da44b84b3de2cc038c5535c90216527011ecab6a74590337d"
+    },
+    "definition": "Direct retention is relative to known direct cases in the .30 candidate pool, not corpus recall. Unknowns are not negatives.",
+    "cutoffs": {
+      "0.3": {
+        "queries": {
+          "birth control": {
+            "total": 11,
+            "labels": {
+              "direct": 6,
+              "related": 1,
+              "irrelevant": 0,
+              "unjudged": 4
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "gay marriage": {
+            "total": 25,
+            "labels": {
+              "direct": 4,
+              "related": 1,
+              "irrelevant": 3,
+              "unjudged": 17
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": [
+              "1970-053",
+              "1974-147",
+              "1977-007"
+            ]
+          },
+          "gun control": {
+            "total": 82,
+            "labels": {
+              "direct": 6,
+              "related": 0,
+              "irrelevant": 1,
+              "unjudged": 75
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": [
+              "1960-138"
+            ]
+          },
+          "abortion": {
+            "total": 95,
+            "labels": {
+              "direct": 4,
+              "related": 1,
+              "irrelevant": 0,
+              "unjudged": 90
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "voting rights": {
+            "total": 135,
+            "labels": {
+              "direct": 6,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 129
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "religious freedom": {
+            "total": 119,
+            "labels": {
+              "direct": 5,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 114
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "free speech": {
+            "total": 145,
+            "labels": {
+              "direct": 5,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 140
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "death penalty": {
+            "total": 136,
+            "labels": {
+              "direct": 111,
+              "related": 12,
+              "irrelevant": 13,
+              "unjudged": 0
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": [
+              "1949-087",
+              "1958-048",
+              "1959-023",
+              "1964-012",
+              "1969-112",
+              "1973-042",
+              "1979-146",
+              "1980-114",
+              "1990-005",
+              "1996-091",
+              "2011-069",
+              "2021-019",
+              "2025-002"
+            ]
+          },
+          "immigration": {
+            "total": 144,
+            "labels": {
+              "direct": 5,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 139
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "racial discrimination": {
+            "total": 155,
+            "labels": {
+              "direct": 5,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 150
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "labor unions": {
+            "total": 162,
+            "labels": {
+              "direct": 5,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 157
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "campaign finance": {
+            "total": 75,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 1,
+              "unjudged": 71
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": [
+              "1974-125"
+            ]
+          }
+        },
+        "totals": {
+          "direct": 165,
+          "related": 15,
+          "irrelevant": 18,
+          "unjudged": 1086
+        },
+        "macro_direct_retention": 1.0,
+        "min_topic_direct_retention": 1.0
+      },
+      "0.325": {
+        "queries": {
+          "birth control": {
+            "total": 6,
+            "labels": {
+              "direct": 5,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 1
+            },
+            "direct_retention": 0.8333333333333334,
+            "lost_direct": [
+              "2019-060"
+            ],
+            "retained_irrelevant": []
+          },
+          "gay marriage": {
+            "total": 16,
+            "labels": {
+              "direct": 4,
+              "related": 0,
+              "irrelevant": 2,
+              "unjudged": 10
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": [
+              "1970-053",
+              "1977-007"
+            ]
+          },
+          "gun control": {
+            "total": 57,
+            "labels": {
+              "direct": 6,
+              "related": 0,
+              "irrelevant": 1,
+              "unjudged": 50
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": [
+              "1960-138"
+            ]
+          },
+          "abortion": {
+            "total": 74,
+            "labels": {
+              "direct": 4,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 70
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "voting rights": {
+            "total": 130,
+            "labels": {
+              "direct": 4,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 126
+            },
+            "direct_retention": 0.6666666666666666,
+            "lost_direct": [
+              "1959-081",
+              "1959-105"
+            ],
+            "retained_irrelevant": []
+          },
+          "religious freedom": {
+            "total": 117,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 114
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1987-070",
+              "1992-098"
+            ],
+            "retained_irrelevant": []
+          },
+          "free speech": {
+            "total": 139,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 136
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1950-089",
+              "1970-145"
+            ],
+            "retained_irrelevant": []
+          },
+          "death penalty": {
+            "total": 134,
+            "labels": {
+              "direct": 111,
+              "related": 12,
+              "irrelevant": 11,
+              "unjudged": 0
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": [
+              "1949-087",
+              "1958-048",
+              "1959-023",
+              "1964-012",
+              "1969-112",
+              "1979-146",
+              "1980-114",
+              "1996-091",
+              "2011-069",
+              "2021-019",
+              "2025-002"
+            ]
+          },
+          "immigration": {
+            "total": 135,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 132
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1984-145",
+              "2002-003"
+            ],
+            "retained_irrelevant": []
+          },
+          "racial discrimination": {
+            "total": 155,
+            "labels": {
+              "direct": 5,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 150
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "labor unions": {
+            "total": 156,
+            "labels": {
+              "direct": 4,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 152
+            },
+            "direct_retention": 0.8,
+            "lost_direct": [
+              "1974-139"
+            ],
+            "retained_irrelevant": []
+          },
+          "campaign finance": {
+            "total": 45,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 42
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          }
+        },
+        "totals": {
+          "direct": 155,
+          "related": 12,
+          "irrelevant": 14,
+          "unjudged": 983
+        },
+        "macro_direct_retention": 0.8416666666666667,
+        "min_topic_direct_retention": 0.6
+      },
+      "0.35": {
+        "queries": {
+          "birth control": {
+            "total": 6,
+            "labels": {
+              "direct": 5,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 1
+            },
+            "direct_retention": 0.8333333333333334,
+            "lost_direct": [
+              "2019-060"
+            ],
+            "retained_irrelevant": []
+          },
+          "gay marriage": {
+            "total": 12,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 2,
+              "unjudged": 7
+            },
+            "direct_retention": 0.75,
+            "lost_direct": [
+              "2012-077"
+            ],
+            "retained_irrelevant": [
+              "1970-053",
+              "1977-007"
+            ]
+          },
+          "gun control": {
+            "total": 39,
+            "labels": {
+              "direct": 6,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 33
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "abortion": {
+            "total": 54,
+            "labels": {
+              "direct": 4,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 50
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "voting rights": {
+            "total": 123,
+            "labels": {
+              "direct": 4,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 119
+            },
+            "direct_retention": 0.6666666666666666,
+            "lost_direct": [
+              "1959-081",
+              "1959-105"
+            ],
+            "retained_irrelevant": []
+          },
+          "religious freedom": {
+            "total": 110,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 107
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1987-070",
+              "1992-098"
+            ],
+            "retained_irrelevant": []
+          },
+          "free speech": {
+            "total": 134,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 131
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1950-089",
+              "1970-145"
+            ],
+            "retained_irrelevant": []
+          },
+          "death penalty": {
+            "total": 132,
+            "labels": {
+              "direct": 111,
+              "related": 12,
+              "irrelevant": 9,
+              "unjudged": 0
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": [
+              "1949-087",
+              "1958-048",
+              "1959-023",
+              "1979-146",
+              "1980-114",
+              "1996-091",
+              "2011-069",
+              "2021-019",
+              "2025-002"
+            ]
+          },
+          "immigration": {
+            "total": 108,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 105
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1984-145",
+              "2002-003"
+            ],
+            "retained_irrelevant": []
+          },
+          "racial discrimination": {
+            "total": 152,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 149
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1949-065",
+              "1965-035"
+            ],
+            "retained_irrelevant": []
+          },
+          "labor unions": {
+            "total": 151,
+            "labels": {
+              "direct": 4,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 147
+            },
+            "direct_retention": 0.8,
+            "lost_direct": [
+              "1974-139"
+            ],
+            "retained_irrelevant": []
+          },
+          "campaign finance": {
+            "total": 36,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 33
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          }
+        },
+        "totals": {
+          "direct": 152,
+          "related": 12,
+          "irrelevant": 11,
+          "unjudged": 882
+        },
+        "macro_direct_retention": 0.7875,
+        "min_topic_direct_retention": 0.6
+      },
+      "0.375": {
+        "queries": {
+          "birth control": {
+            "total": 3,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 0
+            },
+            "direct_retention": 0.5,
+            "lost_direct": [
+              "1982-135",
+              "2013-070",
+              "2019-060"
+            ],
+            "retained_irrelevant": []
+          },
+          "gay marriage": {
+            "total": 10,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 2,
+              "unjudged": 5
+            },
+            "direct_retention": 0.75,
+            "lost_direct": [
+              "2012-077"
+            ],
+            "retained_irrelevant": [
+              "1970-053",
+              "1977-007"
+            ]
+          },
+          "gun control": {
+            "total": 26,
+            "labels": {
+              "direct": 6,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 20
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "abortion": {
+            "total": 47,
+            "labels": {
+              "direct": 4,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 43
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "voting rights": {
+            "total": 108,
+            "labels": {
+              "direct": 4,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 104
+            },
+            "direct_retention": 0.6666666666666666,
+            "lost_direct": [
+              "1959-081",
+              "1959-105"
+            ],
+            "retained_irrelevant": []
+          },
+          "religious freedom": {
+            "total": 96,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 93
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1987-070",
+              "1992-098"
+            ],
+            "retained_irrelevant": []
+          },
+          "free speech": {
+            "total": 130,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 127
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1950-089",
+              "1970-145"
+            ],
+            "retained_irrelevant": []
+          },
+          "death penalty": {
+            "total": 129,
+            "labels": {
+              "direct": 109,
+              "related": 12,
+              "irrelevant": 8,
+              "unjudged": 0
+            },
+            "direct_retention": 0.9819819819819819,
+            "lost_direct": [
+              "1983-027",
+              "1992-023"
+            ],
+            "retained_irrelevant": [
+              "1949-087",
+              "1958-048",
+              "1979-146",
+              "1980-114",
+              "1996-091",
+              "2011-069",
+              "2021-019",
+              "2025-002"
+            ]
+          },
+          "immigration": {
+            "total": 75,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 72
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1984-145",
+              "2002-003"
+            ],
+            "retained_irrelevant": []
+          },
+          "racial discrimination": {
+            "total": 151,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 148
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1949-065",
+              "1965-035"
+            ],
+            "retained_irrelevant": []
+          },
+          "labor unions": {
+            "total": 141,
+            "labels": {
+              "direct": 4,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 137
+            },
+            "direct_retention": 0.8,
+            "lost_direct": [
+              "1974-139"
+            ],
+            "retained_irrelevant": []
+          },
+          "campaign finance": {
+            "total": 22,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 19
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          }
+        },
+        "totals": {
+          "direct": 148,
+          "related": 12,
+          "irrelevant": 10,
+          "unjudged": 768
+        },
+        "macro_direct_retention": 0.7582207207207207,
+        "min_topic_direct_retention": 0.5
+      },
+      "0.4": {
+        "queries": {
+          "birth control": {
+            "total": 2,
+            "labels": {
+              "direct": 2,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 0
+            },
+            "direct_retention": 0.3333333333333333,
+            "lost_direct": [
+              "1964-121",
+              "1982-135",
+              "2013-070",
+              "2019-060"
+            ],
+            "retained_irrelevant": []
+          },
+          "gay marriage": {
+            "total": 8,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 2,
+              "unjudged": 3
+            },
+            "direct_retention": 0.75,
+            "lost_direct": [
+              "2012-077"
+            ],
+            "retained_irrelevant": [
+              "1970-053",
+              "1977-007"
+            ]
+          },
+          "gun control": {
+            "total": 21,
+            "labels": {
+              "direct": 6,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 15
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "abortion": {
+            "total": 38,
+            "labels": {
+              "direct": 4,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 34
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "voting rights": {
+            "total": 75,
+            "labels": {
+              "direct": 4,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 71
+            },
+            "direct_retention": 0.6666666666666666,
+            "lost_direct": [
+              "1959-081",
+              "1959-105"
+            ],
+            "retained_irrelevant": []
+          },
+          "religious freedom": {
+            "total": 79,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 76
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1987-070",
+              "1992-098"
+            ],
+            "retained_irrelevant": []
+          },
+          "free speech": {
+            "total": 123,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 120
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1950-089",
+              "1970-145"
+            ],
+            "retained_irrelevant": []
+          },
+          "death penalty": {
+            "total": 121,
+            "labels": {
+              "direct": 104,
+              "related": 11,
+              "irrelevant": 6,
+              "unjudged": 0
+            },
+            "direct_retention": 0.9369369369369369,
+            "lost_direct": [
+              "1969-104",
+              "1983-027",
+              "1985-131",
+              "1986-096",
+              "1990-125",
+              "1992-023",
+              "2001-085"
+            ],
+            "retained_irrelevant": [
+              "1949-087",
+              "1980-114",
+              "1996-091",
+              "2011-069",
+              "2021-019",
+              "2025-002"
+            ]
+          },
+          "immigration": {
+            "total": 44,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 41
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1984-145",
+              "2002-003"
+            ],
+            "retained_irrelevant": []
+          },
+          "racial discrimination": {
+            "total": 146,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 143
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1949-065",
+              "1965-035"
+            ],
+            "retained_irrelevant": []
+          },
+          "labor unions": {
+            "total": 123,
+            "labels": {
+              "direct": 4,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 119
+            },
+            "direct_retention": 0.8,
+            "lost_direct": [
+              "1974-139"
+            ],
+            "retained_irrelevant": []
+          },
+          "campaign finance": {
+            "total": 20,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 17
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          }
+        },
+        "totals": {
+          "direct": 142,
+          "related": 11,
+          "irrelevant": 8,
+          "unjudged": 639
+        },
+        "macro_direct_retention": 0.7405780780780781,
+        "min_topic_direct_retention": 0.3333333333333333
+      },
+      "0.425": {
+        "queries": {
+          "birth control": {
+            "total": 2,
+            "labels": {
+              "direct": 2,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 0
+            },
+            "direct_retention": 0.3333333333333333,
+            "lost_direct": [
+              "1964-121",
+              "1982-135",
+              "2013-070",
+              "2019-060"
+            ],
+            "retained_irrelevant": []
+          },
+          "gay marriage": {
+            "total": 5,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 1,
+              "unjudged": 1
+            },
+            "direct_retention": 0.75,
+            "lost_direct": [
+              "2012-077"
+            ],
+            "retained_irrelevant": [
+              "1977-007"
+            ]
+          },
+          "gun control": {
+            "total": 10,
+            "labels": {
+              "direct": 5,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 5
+            },
+            "direct_retention": 0.8333333333333334,
+            "lost_direct": [
+              "2013-061"
+            ],
+            "retained_irrelevant": []
+          },
+          "abortion": {
+            "total": 34,
+            "labels": {
+              "direct": 4,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 30
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "voting rights": {
+            "total": 50,
+            "labels": {
+              "direct": 4,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 46
+            },
+            "direct_retention": 0.6666666666666666,
+            "lost_direct": [
+              "1959-081",
+              "1959-105"
+            ],
+            "retained_irrelevant": []
+          },
+          "religious freedom": {
+            "total": 61,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 58
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1987-070",
+              "1992-098"
+            ],
+            "retained_irrelevant": []
+          },
+          "free speech": {
+            "total": 102,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 99
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1950-089",
+              "1970-145"
+            ],
+            "retained_irrelevant": []
+          },
+          "death penalty": {
+            "total": 113,
+            "labels": {
+              "direct": 97,
+              "related": 11,
+              "irrelevant": 5,
+              "unjudged": 0
+            },
+            "direct_retention": 0.8738738738738738,
+            "lost_direct": [
+              "1967-187",
+              "1969-089",
+              "1969-104",
+              "1979-086",
+              "1980-085",
+              "1981-034",
+              "1983-027",
+              "1984-024",
+              "1985-131",
+              "1986-096",
+              "1986-152",
+              "1990-125",
+              "1992-023",
+              "2001-085"
+            ],
+            "retained_irrelevant": [
+              "1949-087",
+              "1996-091",
+              "2011-069",
+              "2021-019",
+              "2025-002"
+            ]
+          },
+          "immigration": {
+            "total": 24,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 21
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1984-145",
+              "2002-003"
+            ],
+            "retained_irrelevant": []
+          },
+          "racial discrimination": {
+            "total": 142,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 139
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1949-065",
+              "1965-035"
+            ],
+            "retained_irrelevant": []
+          },
+          "labor unions": {
+            "total": 100,
+            "labels": {
+              "direct": 4,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 96
+            },
+            "direct_retention": 0.8,
+            "lost_direct": [
+              "1974-139"
+            ],
+            "retained_irrelevant": []
+          },
+          "campaign finance": {
+            "total": 16,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 13
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          }
+        },
+        "totals": {
+          "direct": 134,
+          "related": 11,
+          "irrelevant": 6,
+          "unjudged": 508
+        },
+        "macro_direct_retention": 0.721433933933934,
+        "min_topic_direct_retention": 0.3333333333333333
+      },
+      "0.45": {
+        "queries": {
+          "birth control": {
+            "total": 2,
+            "labels": {
+              "direct": 2,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 0
+            },
+            "direct_retention": 0.3333333333333333,
+            "lost_direct": [
+              "1964-121",
+              "1982-135",
+              "2013-070",
+              "2019-060"
+            ],
+            "retained_irrelevant": []
+          },
+          "gay marriage": {
+            "total": 5,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 1,
+              "unjudged": 1
+            },
+            "direct_retention": 0.75,
+            "lost_direct": [
+              "2012-077"
+            ],
+            "retained_irrelevant": [
+              "1977-007"
+            ]
+          },
+          "gun control": {
+            "total": 6,
+            "labels": {
+              "direct": 4,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 2
+            },
+            "direct_retention": 0.6666666666666666,
+            "lost_direct": [
+              "2013-061",
+              "2021-013"
+            ],
+            "retained_irrelevant": []
+          },
+          "abortion": {
+            "total": 30,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 27
+            },
+            "direct_retention": 0.75,
+            "lost_direct": [
+              "1991-117"
+            ],
+            "retained_irrelevant": []
+          },
+          "voting rights": {
+            "total": 32,
+            "labels": {
+              "direct": 4,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 28
+            },
+            "direct_retention": 0.6666666666666666,
+            "lost_direct": [
+              "1959-081",
+              "1959-105"
+            ],
+            "retained_irrelevant": []
+          },
+          "religious freedom": {
+            "total": 48,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 45
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1987-070",
+              "1992-098"
+            ],
+            "retained_irrelevant": []
+          },
+          "free speech": {
+            "total": 72,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 69
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1950-089",
+              "1970-145"
+            ],
+            "retained_irrelevant": []
+          },
+          "death penalty": {
+            "total": 84,
+            "labels": {
+              "direct": 75,
+              "related": 6,
+              "irrelevant": 3,
+              "unjudged": 0
+            },
+            "direct_retention": 0.6756756756756757,
+            "lost_direct": [
+              "1967-148",
+              "1967-187",
+              "1969-089",
+              "1969-104",
+              "1971-180",
+              "1976-019",
+              "1976-071",
+              "1976-087",
+              "1978-004",
+              "1979-086",
+              "1980-084",
+              "1980-085",
+              "1981-034",
+              "1982-161",
+              "1983-010",
+              "1983-027",
+              "1984-024",
+              "1985-131",
+              "1986-082",
+              "1986-096",
+              "1986-152",
+              "1987-100",
+              "1987-132",
+              "1990-119",
+              "1990-125",
+              "1991-044",
+              "1991-119",
+              "1992-023",
+              "1997-018",
+              "1997-078",
+              "1999-073",
+              "2001-085",
+              "2004-003",
+              "2004-020",
+              "2017-039",
+              "2023-055"
+            ],
+            "retained_irrelevant": [
+              "1949-087",
+              "1996-091",
+              "2011-069"
+            ]
+          },
+          "immigration": {
+            "total": 15,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 12
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1984-145",
+              "2002-003"
+            ],
+            "retained_irrelevant": []
+          },
+          "racial discrimination": {
+            "total": 133,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 130
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1949-065",
+              "1965-035"
+            ],
+            "retained_irrelevant": []
+          },
+          "labor unions": {
+            "total": 61,
+            "labels": {
+              "direct": 4,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 57
+            },
+            "direct_retention": 0.8,
+            "lost_direct": [
+              "1974-139"
+            ],
+            "retained_irrelevant": []
+          },
+          "campaign finance": {
+            "total": 15,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 12
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          }
+        },
+        "totals": {
+          "direct": 110,
+          "related": 6,
+          "irrelevant": 4,
+          "unjudged": 383
+        },
+        "macro_direct_retention": 0.6701951951951952,
+        "min_topic_direct_retention": 0.3333333333333333
+      },
+      "0.475": {
+        "queries": {
+          "birth control": {
+            "total": 1,
+            "labels": {
+              "direct": 1,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 0
+            },
+            "direct_retention": 0.16666666666666666,
+            "lost_direct": [
+              "1964-121",
+              "1976-126",
+              "1982-135",
+              "2013-070",
+              "2019-060"
+            ],
+            "retained_irrelevant": []
+          },
+          "gay marriage": {
+            "total": 3,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 0
+            },
+            "direct_retention": 0.75,
+            "lost_direct": [
+              "2012-077"
+            ],
+            "retained_irrelevant": []
+          },
+          "gun control": {
+            "total": 1,
+            "labels": {
+              "direct": 1,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 0
+            },
+            "direct_retention": 0.16666666666666666,
+            "lost_direct": [
+              "1975-021",
+              "2007-071",
+              "2013-061",
+              "2021-013",
+              "2023-012"
+            ],
+            "retained_irrelevant": []
+          },
+          "abortion": {
+            "total": 21,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 18
+            },
+            "direct_retention": 0.75,
+            "lost_direct": [
+              "1991-117"
+            ],
+            "retained_irrelevant": []
+          },
+          "voting rights": {
+            "total": 18,
+            "labels": {
+              "direct": 4,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 14
+            },
+            "direct_retention": 0.6666666666666666,
+            "lost_direct": [
+              "1959-081",
+              "1959-105"
+            ],
+            "retained_irrelevant": []
+          },
+          "religious freedom": {
+            "total": 31,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 28
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1987-070",
+              "1992-098"
+            ],
+            "retained_irrelevant": []
+          },
+          "free speech": {
+            "total": 50,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 47
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1950-089",
+              "1970-145"
+            ],
+            "retained_irrelevant": []
+          },
+          "death penalty": {
+            "total": 64,
+            "labels": {
+              "direct": 60,
+              "related": 4,
+              "irrelevant": 0,
+              "unjudged": 0
+            },
+            "direct_retention": 0.5405405405405406,
+            "lost_direct": [
+              "1967-148",
+              "1967-187",
+              "1969-089",
+              "1969-104",
+              "1970-007",
+              "1971-132",
+              "1971-180",
+              "1976-019",
+              "1976-071",
+              "1976-087",
+              "1976-178",
+              "1978-004",
+              "1979-086",
+              "1980-084",
+              "1980-085",
+              "1981-034",
+              "1981-086",
+              "1982-161",
+              "1983-010",
+              "1983-027",
+              "1984-024",
+              "1985-076",
+              "1985-080",
+              "1985-081",
+              "1985-123",
+              "1985-131",
+              "1986-082",
+              "1986-096",
+              "1986-152",
+              "1987-100",
+              "1987-132",
+              "1988-136",
+              "1988-146",
+              "1990-119",
+              "1990-125",
+              "1991-044",
+              "1991-119",
+              "1992-023",
+              "1994-025",
+              "1997-018",
+              "1997-078",
+              "1999-073",
+              "2000-032",
+              "2001-085",
+              "2004-003",
+              "2004-019",
+              "2004-020",
+              "2012-009",
+              "2015-005",
+              "2017-039",
+              "2023-055"
+            ],
+            "retained_irrelevant": []
+          },
+          "immigration": {
+            "total": 6,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 3
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1984-145",
+              "2002-003"
+            ],
+            "retained_irrelevant": []
+          },
+          "racial discrimination": {
+            "total": 116,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 113
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1949-065",
+              "1965-035"
+            ],
+            "retained_irrelevant": []
+          },
+          "labor unions": {
+            "total": 28,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 25
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1974-139",
+              "2017-045"
+            ],
+            "retained_irrelevant": []
+          },
+          "campaign finance": {
+            "total": 11,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 8
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          }
+        },
+        "totals": {
+          "direct": 90,
+          "related": 4,
+          "irrelevant": 0,
+          "unjudged": 256
+        },
+        "macro_direct_retention": 0.5867117117117117,
+        "min_topic_direct_retention": 0.16666666666666666
+      },
+      "0.5": {
+        "queries": {
+          "birth control": {
+            "total": 0,
+            "labels": {
+              "direct": 0,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 0
+            },
+            "direct_retention": 0.0,
+            "lost_direct": [
+              "1964-121",
+              "1971-079",
+              "1976-126",
+              "1982-135",
+              "2013-070",
+              "2019-060"
+            ],
+            "retained_irrelevant": []
+          },
+          "gay marriage": {
+            "total": 2,
+            "labels": {
+              "direct": 2,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 0
+            },
+            "direct_retention": 0.5,
+            "lost_direct": [
+              "2012-077",
+              "2017-020"
+            ],
+            "retained_irrelevant": []
+          },
+          "gun control": {
+            "total": 0,
+            "labels": {
+              "direct": 0,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 0
+            },
+            "direct_retention": 0.0,
+            "lost_direct": [
+              "1975-021",
+              "2007-071",
+              "2013-061",
+              "2021-013",
+              "2023-012",
+              "2024-005"
+            ],
+            "retained_irrelevant": []
+          },
+          "abortion": {
+            "total": 15,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 12
+            },
+            "direct_retention": 0.75,
+            "lost_direct": [
+              "1991-117"
+            ],
+            "retained_irrelevant": []
+          },
+          "voting rights": {
+            "total": 15,
+            "labels": {
+              "direct": 4,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 11
+            },
+            "direct_retention": 0.6666666666666666,
+            "lost_direct": [
+              "1959-081",
+              "1959-105"
+            ],
+            "retained_irrelevant": []
+          },
+          "religious freedom": {
+            "total": 21,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 18
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1987-070",
+              "1992-098"
+            ],
+            "retained_irrelevant": []
+          },
+          "free speech": {
+            "total": 35,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 32
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1950-089",
+              "1970-145"
+            ],
+            "retained_irrelevant": []
+          },
+          "death penalty": {
+            "total": 39,
+            "labels": {
+              "direct": 36,
+              "related": 3,
+              "irrelevant": 0,
+              "unjudged": 0
+            },
+            "direct_retention": 0.32432432432432434,
+            "lost_direct": [
+              "1957-099",
+              "1967-148",
+              "1967-187",
+              "1969-089",
+              "1969-104",
+              "1970-007",
+              "1970-094",
+              "1971-132",
+              "1971-180",
+              "1975-174",
+              "1975-176",
+              "1976-019",
+              "1976-071",
+              "1976-087",
+              "1976-123",
+              "1976-178",
+              "1977-154",
+              "1978-004",
+              "1979-086",
+              "1980-084",
+              "1980-085",
+              "1981-034",
+              "1981-086",
+              "1982-161",
+              "1983-010",
+              "1983-027",
+              "1983-107",
+              "1984-024",
+              "1984-122",
+              "1985-076",
+              "1985-080",
+              "1985-081",
+              "1985-123",
+              "1985-131",
+              "1986-030",
+              "1986-080",
+              "1986-082",
+              "1986-096",
+              "1986-152",
+              "1987-018",
+              "1987-100",
+              "1987-132",
+              "1987-153",
+              "1988-096",
+              "1988-136",
+              "1988-145",
+              "1988-146",
+              "1989-043",
+              "1989-057",
+              "1990-119",
+              "1990-125",
+              "1991-044",
+              "1991-119",
+              "1992-023",
+              "1993-074",
+              "1993-095",
+              "1994-025",
+              "1997-018",
+              "1997-078",
+              "1998-079",
+              "1999-073",
+              "2000-032",
+              "2001-077",
+              "2001-085",
+              "2002-012",
+              "2004-003",
+              "2004-019",
+              "2004-020",
+              "2004-032",
+              "2004-049",
+              "2012-009",
+              "2015-005",
+              "2017-039",
+              "2018-020",
+              "2023-055"
+            ],
+            "retained_irrelevant": []
+          },
+          "immigration": {
+            "total": 2,
+            "labels": {
+              "direct": 2,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 0
+            },
+            "direct_retention": 0.4,
+            "lost_direct": [
+              "1984-145",
+              "2002-003",
+              "2020-058"
+            ],
+            "retained_irrelevant": []
+          },
+          "racial discrimination": {
+            "total": 81,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 78
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1949-065",
+              "1965-035"
+            ],
+            "retained_irrelevant": []
+          },
+          "labor unions": {
+            "total": 14,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 11
+            },
+            "direct_retention": 0.6,
+            "lost_direct": [
+              "1974-139",
+              "2017-045"
+            ],
+            "retained_irrelevant": []
+          },
+          "campaign finance": {
+            "total": 5,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 2
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          }
+        },
+        "totals": {
+          "direct": 62,
+          "related": 3,
+          "irrelevant": 0,
+          "unjudged": 164
+        },
+        "macro_direct_retention": 0.503415915915916,
+        "min_topic_direct_retention": 0.0
+      }
+    }
+  },
+  "validation": {
+    "split": "validation",
+    "artifact_sha256": "749b3c57e04db9c83a1dbf616e7eed1d5fa382befe8436a93556ff676c6be3d5",
+    "bundle_manifest_sha256": "36ccbe266677081b1d6d3641e64c2774b3d8730adc7ac51a3d9fd517cc22c72c",
+    "label_hashes": {
+      "data/evaluation/topic-relevance.json": "33d815f3cd8d409bbf1244978073b32afdbd39828aa8a2de21fad4393cfee662",
+      "data/evaluation/death-penalty-review.json": "18100020e2384d1da44b84b3de2cc038c5535c90216527011ecab6a74590337d"
+    },
+    "definition": "Direct retention is relative to known direct cases in the .30 candidate pool, not corpus recall. Unknowns are not negatives.",
+    "cutoffs": {
+      "0.3": {
+        "queries": {
+          "privacy": {
+            "total": 129,
+            "labels": {
+              "direct": 4,
+              "related": 1,
+              "irrelevant": 0,
+              "unjudged": 124
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "search and seizure": {
+            "total": 144,
+            "labels": {
+              "direct": 6,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 138
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "environmental protection": {
+            "total": 121,
+            "labels": {
+              "direct": 3,
+              "related": 1,
+              "irrelevant": 0,
+              "unjudged": 117
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "disability rights": {
+            "total": 143,
+            "labels": {
+              "direct": 2,
+              "related": 1,
+              "irrelevant": 1,
+              "unjudged": 139
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": [
+              "1978-082"
+            ]
+          },
+          "school segregation": {
+            "total": 136,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 2,
+              "unjudged": 131
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": [
+              "1988-060",
+              "2005-007"
+            ]
+          },
+          "health care": {
+            "total": 52,
+            "labels": {
+              "direct": 3,
+              "related": 1,
+              "irrelevant": 0,
+              "unjudged": 48
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "criminal sentencing": {
+            "total": 165,
+            "labels": {
+              "direct": 5,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 160
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "property rights": {
+            "total": 157,
+            "labels": {
+              "direct": 4,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 153
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          }
+        },
+        "totals": {
+          "direct": 30,
+          "related": 4,
+          "irrelevant": 3,
+          "unjudged": 1010
+        },
+        "macro_direct_retention": 1.0,
+        "min_topic_direct_retention": 1.0
+      },
+      "0.35": {
+        "queries": {
+          "privacy": {
+            "total": 118,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 115
+            },
+            "direct_retention": 0.75,
+            "lost_direct": [
+              "1985-144"
+            ],
+            "retained_irrelevant": []
+          },
+          "search and seizure": {
+            "total": 138,
+            "labels": {
+              "direct": 4,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 134
+            },
+            "direct_retention": 0.6666666666666666,
+            "lost_direct": [
+              "1976-122",
+              "1989-123"
+            ],
+            "retained_irrelevant": []
+          },
+          "environmental protection": {
+            "total": 110,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 107
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "disability rights": {
+            "total": 131,
+            "labels": {
+              "direct": 2,
+              "related": 1,
+              "irrelevant": 0,
+              "unjudged": 128
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "school segregation": {
+            "total": 130,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 127
+            },
+            "direct_retention": 1.0,
+            "lost_direct": [],
+            "retained_irrelevant": []
+          },
+          "health care": {
+            "total": 16,
+            "labels": {
+              "direct": 2,
+              "related": 1,
+              "irrelevant": 0,
+              "unjudged": 13
+            },
+            "direct_retention": 0.6666666666666666,
+            "lost_direct": [
+              "1987-154"
+            ],
+            "retained_irrelevant": []
+          },
+          "criminal sentencing": {
+            "total": 164,
+            "labels": {
+              "direct": 4,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 160
+            },
+            "direct_retention": 0.8,
+            "lost_direct": [
+              "1992-019"
+            ],
+            "retained_irrelevant": []
+          },
+          "property rights": {
+            "total": 137,
+            "labels": {
+              "direct": 3,
+              "related": 0,
+              "irrelevant": 0,
+              "unjudged": 134
+            },
+            "direct_retention": 0.75,
+            "lost_direct": [
+              "1983-159"
+            ],
+            "retained_irrelevant": []
+          }
+        },
+        "totals": {
+          "direct": 24,
+          "related": 2,
+          "irrelevant": 0,
+          "unjudged": 918
+        },
+        "macro_direct_retention": 0.8291666666666666,
+        "min_topic_direct_retention": 0.6666666666666666
+      }
+    }
+  }
+}

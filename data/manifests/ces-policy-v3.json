@@ -1,0 +1,77 @@
+{
+  "description": "CES policy V3 (2006\u20132021) and common-content V12 weights (2006\u20132025); verified inputs for the CES policy pilot.",
+  "datasets": [
+    {
+      "doi": "10.7910/DVN/OSXDQO",
+      "version": 3,
+      "license": {
+        "name": "CC0 1.0",
+        "uri": "http://creativecommons.org/publicdomain/zero/1.0",
+        "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png",
+        "rightsIdentifier": "CC0-1.0",
+        "rightsIdentifierScheme": "SPDX",
+        "schemeUri": "https://spdx.org/licenses/",
+        "languageCode": "en"
+      }
+    },
+    {
+      "doi": "10.7910/DVN/II2DB6",
+      "version": 12,
+      "license": {
+        "name": "CC0 1.0",
+        "uri": "http://creativecommons.org/publicdomain/zero/1.0",
+        "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png",
+        "rightsIdentifier": "CC0-1.0",
+        "rightsIdentifierScheme": "SPDX",
+        "schemeUri": "https://spdx.org/licenses/",
+        "languageCode": "en"
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "ces-policy/responses.dta",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/6898233?format=original",
+      "sha256": "0264338e7298450e42c63a2431273f7ad4b04be90d5075e0ba4b64c48ca5cfdd",
+      "bytes": 134951701,
+      "publisher_checksum": {
+        "type": "MD5",
+        "value": "aece03350d7b480d5e159f2c740a6ea0"
+      },
+      "dataset_doi": "10.7910/DVN/OSXDQO"
+    },
+    {
+      "path": "ces-policy/guide.pdf",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/6898232",
+      "sha256": "3cb04fd6c5e10d7f94139d5c12eaec5fb420a362efad50d5a6f76e85adfc4dbd",
+      "bytes": 269363,
+      "publisher_checksum": {
+        "type": "MD5",
+        "value": "f333bdead4cb56481772eed51029e2ae"
+      },
+      "dataset_doi": "10.7910/DVN/OSXDQO"
+    },
+    {
+      "path": "ces-policy/common.feather",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/14076522",
+      "sha256": "543838b1116aa97e2e3e8976b9c5bf0224253233fa38757805b1cbff43db46ec",
+      "bytes": 143996970,
+      "publisher_checksum": {
+        "type": "MD5",
+        "value": "f6dc08617b87949433dea7e74a251ef9"
+      },
+      "dataset_doi": "10.7910/DVN/II2DB6"
+    },
+    {
+      "path": "ces-policy/common-guide.pdf",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/14076560",
+      "sha256": "07ca96d8b2c4ed64f1cfeff4d140dc1a5a4ade4ecf8446ff4e50207c56f7b003",
+      "bytes": 131598,
+      "publisher_checksum": {
+        "type": "MD5",
+        "value": "526b30decd01a4edfed88640b2c80f65"
+      },
+      "dataset_doi": "10.7910/DVN/II2DB6"
+    }
+  ]
+}

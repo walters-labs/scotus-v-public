@@ -1,0 +1,10 @@
+{
+  "source": "https://scdb.la.psu.edu/data/2026-release-01/",
+  "files": [
+    {
+      "path": "scdb-2026/release.zip",
+      "url": "https://scdb.la.psu.edu/?jet_download=69e2a3e7da8f9782e65de282ff4742e4116bae7e",
+      "sha256": "4d8f34d56363f8c140917bb556c530ee120aaaed6ed564a27866c0e5155e73f7"
+    }
+  ]
+}

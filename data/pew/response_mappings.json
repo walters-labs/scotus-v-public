@@ -1,0 +1,356 @@
+{
+  "version": "explicit-pew-v1",
+  "year": 2017,
+  "notes": "Pew pilot: 11 gun-policy items from March 2017 only; standalone Wave 25 survey weights. No Pew trend line until additional years are imported.",
+  "entries": [
+    {
+      "code": "GUNSTRICT_W25",
+      "title": "Gun policy: gun laws",
+      "question": "Which of the following statements comes closest to your overall view of gun laws in this country?",
+      "family": "pew:GUNSTRICT",
+      "priority": 0,
+      "weight": "WEIGHT_W25",
+      "scores": {
+        "1": 1,
+        "2": 0,
+        "3": -1
+      },
+      "measurement_type": "policy",
+      "rationale": "Greater firearm restrictions mapped liberal; fewer restrictions conservative. This is a policy-direction convention, not respondent party identification.",
+      "question_note": "March 2017 only. Wording summarized; standalone Wave 25 weight. Strong/somewhat responses use evenly spaced scores.",
+      "source_url": "https://www.pewresearch.org/dataset/american-trends-panel-wave-25-2/",
+      "expected_labels": {
+        "1": "Gun laws should be MORE strict than they are today",
+        "2": "Gun laws are about right",
+        "3": "Gun laws should be LESS strict than they are today",
+        "99": "Refused"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 30,
+        "3": 18,
+        "99": 0
+      }
+    },
+    {
+      "code": "GUNPRIORITY1A_W25",
+      "title": "Gun policy: barring gun purchases by people on the federal no-fly or watch lists?",
+      "question": "Do you favor or oppose barring gun purchases by people on the federal no-fly or watch lists?",
+      "family": "pew:GUNPRIORITY1A",
+      "priority": 0,
+      "weight": "WEIGHT_W25",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "measurement_type": "policy",
+      "rationale": "Greater firearm restrictions mapped liberal; fewer restrictions conservative. This is a policy-direction convention, not respondent party identification.",
+      "question_note": "March 2017 only. Wording summarized; standalone Wave 25 weight. Strong/somewhat responses use evenly spaced scores.",
+      "source_url": "https://www.pewresearch.org/dataset/american-trends-panel-wave-25-2/",
+      "expected_labels": {
+        "1": "Strongly favor",
+        "2": "Somewhat favor",
+        "3": "Somewhat oppose",
+        "4": "Strongly oppose",
+        "99": "Refused"
+      },
+      "published_percentages": {
+        "1": 66,
+        "2": 17,
+        "3": 9,
+        "4": 7,
+        "99": 1
+      }
+    },
+    {
+      "code": "GUNPRIORITY1B_W25",
+      "title": "Gun policy: preventing people with mental illnesses from purchasing guns?",
+      "question": "Do you favor or oppose preventing people with mental illnesses from purchasing guns?",
+      "family": "pew:GUNPRIORITY1B",
+      "priority": 0,
+      "weight": "WEIGHT_W25",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "measurement_type": "policy",
+      "rationale": "Greater firearm restrictions mapped liberal; fewer restrictions conservative. This is a policy-direction convention, not respondent party identification.",
+      "question_note": "March 2017 only. Wording summarized; standalone Wave 25 weight. Strong/somewhat responses use evenly spaced scores.",
+      "source_url": "https://www.pewresearch.org/dataset/american-trends-panel-wave-25-2/",
+      "expected_labels": {
+        "1": "Strongly favor",
+        "2": "Somewhat favor",
+        "3": "Somewhat oppose",
+        "4": "Strongly oppose",
+        "99": "Refused"
+      },
+      "published_percentages": {
+        "1": 72,
+        "2": 16,
+        "3": 5,
+        "4": 6,
+        "99": 1
+      }
+    },
+    {
+      "code": "GUNPRIORITY1C_W25",
+      "title": "Gun policy: banning assault-style weapons?",
+      "question": "Do you favor or oppose banning assault-style weapons?",
+      "family": "pew:GUNPRIORITY1C",
+      "priority": 0,
+      "weight": "WEIGHT_W25",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "measurement_type": "policy",
+      "rationale": "Greater firearm restrictions mapped liberal; fewer restrictions conservative. This is a policy-direction convention, not respondent party identification.",
+      "question_note": "March 2017 only. Wording summarized; standalone Wave 25 weight. Strong/somewhat responses use evenly spaced scores.",
+      "source_url": "https://www.pewresearch.org/dataset/american-trends-panel-wave-25-2/",
+      "expected_labels": {
+        "1": "Strongly favor",
+        "2": "Somewhat favor",
+        "3": "Somewhat oppose",
+        "4": "Strongly oppose",
+        "99": "Refused"
+      },
+      "published_percentages": {
+        "1": 53,
+        "2": 15,
+        "3": 13,
+        "4": 17,
+        "99": 1
+      }
+    },
+    {
+      "code": "GUNPRIORITY1D_W25",
+      "title": "Gun policy: creating a federal government database to track all gun sales?",
+      "question": "Do you favor or oppose creating a federal government database to track all gun sales?",
+      "family": "pew:GUNPRIORITY1D",
+      "priority": 0,
+      "weight": "WEIGHT_W25",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "measurement_type": "policy",
+      "rationale": "Greater firearm restrictions mapped liberal; fewer restrictions conservative. This is a policy-direction convention, not respondent party identification.",
+      "question_note": "March 2017 only. Wording summarized; standalone Wave 25 weight. Strong/somewhat responses use evenly spaced scores.",
+      "source_url": "https://www.pewresearch.org/dataset/american-trends-panel-wave-25-2/",
+      "expected_labels": {
+        "1": "Strongly favor",
+        "2": "Somewhat favor",
+        "3": "Somewhat oppose",
+        "4": "Strongly oppose",
+        "99": "Refused"
+      },
+      "published_percentages": {
+        "1": 49,
+        "2": 22,
+        "3": 14,
+        "4": 15,
+        "99": 0
+      }
+    },
+    {
+      "code": "GUNPRIORITY1E_W25",
+      "title": "Gun policy: banning high-capacity ammunition magazines that hold more than 10 rounds?",
+      "question": "Do you favor or oppose banning high-capacity ammunition magazines that hold more than 10 rounds?",
+      "family": "pew:GUNPRIORITY1E",
+      "priority": 0,
+      "weight": "WEIGHT_W25",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "measurement_type": "policy",
+      "rationale": "Greater firearm restrictions mapped liberal; fewer restrictions conservative. This is a policy-direction convention, not respondent party identification.",
+      "question_note": "March 2017 only. Wording summarized; standalone Wave 25 weight. Strong/somewhat responses use evenly spaced scores.",
+      "source_url": "https://www.pewresearch.org/dataset/american-trends-panel-wave-25-2/",
+      "expected_labels": {
+        "1": "Strongly favor",
+        "2": "Somewhat favor",
+        "3": "Somewhat oppose",
+        "4": "Strongly oppose",
+        "99": "Refused"
+      },
+      "published_percentages": {
+        "1": 46,
+        "2": 18,
+        "3": 16,
+        "4": 20,
+        "99": 1
+      }
+    },
+    {
+      "code": "GUNPRIORITY1F_W25",
+      "title": "Gun policy: making private gun sales and sales at gun shows subject to background checks?",
+      "question": "Do you favor or oppose making private gun sales and sales at gun shows subject to background checks?",
+      "family": "pew:GUNPRIORITY1F",
+      "priority": 0,
+      "weight": "WEIGHT_W25",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "measurement_type": "policy",
+      "rationale": "Greater firearm restrictions mapped liberal; fewer restrictions conservative. This is a policy-direction convention, not respondent party identification.",
+      "question_note": "March 2017 only. Wording summarized; standalone Wave 25 weight. Strong/somewhat responses use evenly spaced scores.",
+      "source_url": "https://www.pewresearch.org/dataset/american-trends-panel-wave-25-2/",
+      "expected_labels": {
+        "1": "Strongly favor",
+        "2": "Somewhat favor",
+        "3": "Somewhat oppose",
+        "4": "Strongly oppose",
+        "99": "Refused"
+      },
+      "published_percentages": {
+        "1": 64,
+        "2": 20,
+        "3": 8,
+        "4": 7,
+        "99": 1
+      }
+    },
+    {
+      "code": "GUNPRIORITY2G_W25",
+      "title": "Gun policy: allowing people to carry concealed guns in more places?",
+      "question": "Do you favor or oppose allowing people to carry concealed guns in more places?",
+      "family": "pew:GUNPRIORITY2G",
+      "priority": 0,
+      "weight": "WEIGHT_W25",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "measurement_type": "policy",
+      "rationale": "Greater firearm restrictions mapped liberal; fewer restrictions conservative. This is a policy-direction convention, not respondent party identification.",
+      "question_note": "March 2017 only. Wording summarized; standalone Wave 25 weight. Strong/somewhat responses use evenly spaced scores.",
+      "source_url": "https://www.pewresearch.org/dataset/american-trends-panel-wave-25-2/",
+      "expected_labels": {
+        "1": "Strongly favor",
+        "2": "Somewhat favor",
+        "3": "Somewhat oppose",
+        "4": "Strongly oppose",
+        "99": "Refused"
+      },
+      "published_percentages": {
+        "1": 18,
+        "2": 28,
+        "3": 24,
+        "4": 29,
+        "99": 0
+      }
+    },
+    {
+      "code": "GUNPRIORITY2H_W25",
+      "title": "Gun policy: allowing people to carry concealed guns without a permit?",
+      "question": "Do you favor or oppose allowing people to carry concealed guns without a permit?",
+      "family": "pew:GUNPRIORITY2H",
+      "priority": 0,
+      "weight": "WEIGHT_W25",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "measurement_type": "policy",
+      "rationale": "Greater firearm restrictions mapped liberal; fewer restrictions conservative. This is a policy-direction convention, not respondent party identification.",
+      "question_note": "March 2017 only. Wording summarized; standalone Wave 25 weight. Strong/somewhat responses use evenly spaced scores.",
+      "source_url": "https://www.pewresearch.org/dataset/american-trends-panel-wave-25-2/",
+      "expected_labels": {
+        "1": "Strongly favor",
+        "2": "Somewhat favor",
+        "3": "Somewhat oppose",
+        "4": "Strongly oppose",
+        "99": "Refused"
+      },
+      "published_percentages": {
+        "1": 9,
+        "2": 10,
+        "3": 15,
+        "4": 65,
+        "99": 1
+      }
+    },
+    {
+      "code": "GUNPRIORITY2I_W25",
+      "title": "Gun policy: allowing teachers and school officials to carry guns in K-12 schools?",
+      "question": "Do you favor or oppose allowing teachers and school officials to carry guns in K-12 schools?",
+      "family": "pew:GUNPRIORITY2I",
+      "priority": 0,
+      "weight": "WEIGHT_W25",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "measurement_type": "policy",
+      "rationale": "Greater firearm restrictions mapped liberal; fewer restrictions conservative. This is a policy-direction convention, not respondent party identification.",
+      "question_note": "March 2017 only. Wording summarized; standalone Wave 25 weight. Strong/somewhat responses use evenly spaced scores.",
+      "source_url": "https://www.pewresearch.org/dataset/american-trends-panel-wave-25-2/",
+      "expected_labels": {
+        "1": "Strongly favor",
+        "2": "Somewhat favor",
+        "3": "Somewhat oppose",
+        "4": "Strongly oppose",
+        "99": "Refused"
+      },
+      "published_percentages": {
+        "1": 18,
+        "2": 27,
+        "3": 19,
+        "4": 35,
+        "99": 0
+      }
+    },
+    {
+      "code": "GUNPRIORITY2J_W25",
+      "title": "Gun policy: shortening waiting periods for people who want to buy guns legally?",
+      "question": "Do you favor or oppose shortening waiting periods for people who want to buy guns legally?",
+      "family": "pew:GUNPRIORITY2J",
+      "priority": 0,
+      "weight": "WEIGHT_W25",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "measurement_type": "policy",
+      "rationale": "Greater firearm restrictions mapped liberal; fewer restrictions conservative. This is a policy-direction convention, not respondent party identification.",
+      "question_note": "March 2017 only. Wording summarized; standalone Wave 25 weight. Strong/somewhat responses use evenly spaced scores.",
+      "source_url": "https://www.pewresearch.org/dataset/american-trends-panel-wave-25-2/",
+      "expected_labels": {
+        "1": "Strongly favor",
+        "2": "Somewhat favor",
+        "3": "Somewhat oppose",
+        "4": "Strongly oppose",
+        "99": "Refused"
+      },
+      "published_percentages": {
+        "1": 14,
+        "2": 23,
+        "3": 23,
+        "4": 38,
+        "99": 1
+      }
+    }
+  ]
+}

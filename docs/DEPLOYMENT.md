@@ -1,3 +1,9 @@
+# Current hybrid release
+
+Use [the hybrid deployment instructions](HYBRID_SEARCH.md) and
+`deploy/install-release.sh` for new releases. The dated instructions below
+document the original TF-IDF deployment and its rollback history.
+
 # Deploy to svp.walterslabs.dev
 
 The inspected VPS is Ubuntu 24.04 with Python 3.12, Nginx and Certbot, about
@@ -116,3 +122,55 @@ choose one deployment route. Recreate the container after replacing a mounted
 artifact because a bind mount can retain the old inode. The base image is
 version-tagged rather than digest-locked. Local Docker validation requires a
 Docker installation; the native acceptance check does not validate containers.
+
+## Private VPS acceptance — 2026-10-22
+
+Release `20261022-1` is staged at
+`/home/jackson/scvpublic/releases/20261022-1`. All bundle checksums passed;
+only serving requirements were installed into its own Python 3.12 venv.
+The artifact passed 160 concurrent Flask acceptance requests on Linux
+(42.6 MiB peak process RSS).
+
+A temporary user service, `scvpublic-preview`, serves only `127.0.0.1:8010`.
+210 actual HTTP requests with two concurrent clients passed: p95 16.3 ms,
+maximum 161 ms. Systemd reported peak service memory 32,411,648 bytes
+(30.9 MiB), including Gunicorn master and worker, below the 192 MiB cap.
+These are short smoke checks, not a sustained capacity test.
+
+The user unit is at `~/.config/systemd/user/scvpublic-preview.service`.
+It uses the release path and omits system-level filesystem isolation settings
+that require administrator access. It is not enabled at boot; user lingering
+is disabled, so it is a temporary preview rather than a durable deployment.
+Manage it with `systemctl --user status|restart|stop scvpublic-preview`.
+No DNS, Nginx or TLS changes were made.
+
+Administrator sudo authentication is required for the final system service.
+Before starting that service on port 8010, stop the preview:
+`systemctl --user stop scvpublic-preview`. Follow the installation instructions
+above to create the release under `/opt`, then run its health/memory checks
+again with the full system-service isolation settings.
+
+## Permanent service verified — 2026-10-22
+
+After the administrator ran `deploy/install-service.sh`, the system-wide
+`scvpublic.service` was verified active and enabled at boot, using
+`/opt/scvpublic/releases/20261022-1` through the `current` symlink.
+DynamicUser is enabled and the memory cap is 192 MiB. The temporary user
+preview is inactive. The only listener is `127.0.0.1:8010`.
+
+Health passed and 210 additional HTTP searches with two concurrent clients
+passed under the permanent service: p95 22.7 ms, maximum 179 ms.
+Boot enablement was inspected; the VPS was not rebooted for this check.
+DNS, Nginx and public HTTPS activation remain outstanding.
+
+## Public activation verified — 2026-10-22
+
+Public HTTPS at https://svp.walterslabs.dev is active. Certificate verification
+passed using curl (without disabling TLS verification), HTTP redirects to HTTPS
+with status 301, and the health endpoint reports the expected CaseSumm/ANES
+artifact. Abortion, gay marriage and gun control searches all returned HTTP 200.
+Both Nginx and the boot-enabled system service are active with zero automatic
+restarts. Cloudflare DNS and the VPS resolve the correct address; the development
+machine's local resolver still had a cached NXDOMAIN during verification, so
+external checks used curl --resolve with the correct hostname and VPS address.
+The VPS also successfully checked HTTPS using ordinary DNS resolution.
