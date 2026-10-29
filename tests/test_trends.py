@@ -21,9 +21,9 @@ class TrendTests(unittest.TestCase):
         self.assertEqual(court_counts([{'cases': [{'year': 2000, 'polarity': 0},
                                                    {'year': 2000, 'polarity': 1},
                                                    {'year': 2001, 'polarity': None}]}]), {2000: 2})
-        self.assertIn('Court linear best fit', chart({2000: 0, 2002: 1}, {}))
-        self.assertNotIn('linear best fit', chart({2000: 0}, {}))
-        self.assertEqual(chart({2000: 0, 2002: 1}, {2000: 1, 2004: 0}).count('linear best fit'), 2)
+        self.assertIn('Court connected observations', chart({2000: 0, 2002: 1}, {}))
+        self.assertNotIn('connected observations', chart({2000: 0}, {}))
+        self.assertEqual(chart({2000: 0, 2002: 1}, {2000: 1, 2004: 0}).count('connected observations'), 2)
         self.assertIn('stroke-width="2"', chart({2000: 0, 2001: 1}, {}))
         self.assertIn('2 cases', chart({2000: 0}, {}, counts={2000: 2}))
 

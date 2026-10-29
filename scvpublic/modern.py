@@ -47,17 +47,32 @@ def principal(text):
             continue
         running_header = lines[1] if len(lines)>1 else ''
         separate=bool(re.search(r'\b(concurring|dissenting)\b', running_header, re.I))
-        main=bool(re.search(r'Opinion of (?:the Court|[A-Z])|Per Curiam', ' '.join(lines[:3])))
+        main=bool(re.search(r'Opinion of the Court|Per Curiam', ' '.join(lines[:3])))
+        # Pluralities have an authored header; require an explicit judgment
+        # announcement at the opening, not just any justice's opinion header.
+        if re.search(r'Opinion of [A-Z]', running_header):
+            opening = ' '.join(lines[2:8])
+            main = main or bool(re.match(
+                r'(?:Chief )?Justice [A-Za-z]+ announced the judgment of the Court', opening))
         # In edited Reports, a separate opinion can begin midway down the last
         # majority page. Keep the majority prefix rather than the separate text.
-        boundary=re.search(r'(?m)^\s*(?:Justice|Chief Justice) [A-Za-z ,.’]+(?:\n[A-Za-z ,.’]+)?\b(?:concurring|dissenting)\b', page)
+        boundary=re.search(r'(?m)^\s*(?:Justice|Chief Justice) [A-Za-z]+(?: and Justice [A-Za-z]+)?,[A-Za-z ,.’]*(?:\n[A-Za-z ,.’]+){0,3}\b(?:concurring|dissenting)\b', page)
         if not started:
-            if separate or not main:
+            if not main:
                 continue
             started=True
         elif 'Syllabus' in running_header:
             break
-        if separate:
+        if separate and not main:
+            # Watermarks can split an author's name. On a mixed page, the
+            # Court's formal closing still identifies the end of its text.
+            closing = re.search(r'(?m)^\s*It is so ordered\.\s*$', page)
+            separate_opening = page[closing.end():closing.end()+500] if closing else ''
+            watermark_boundary = (re.search(r'Justice', separate_opening) and
+                                  re.search(r'\b(?:concurring|dissenting)\b', separate_opening))
+            if closing and not boundary and watermark_boundary:
+                chosen.append((number, page[:closing.end()]))
+                break
             if boundary and len(page[:boundary.start()].split())>30:
                 chosen.append((number,page[:boundary.start()]))
             break
@@ -65,7 +80,7 @@ def principal(text):
             chosen.append((number,page[:boundary.start()]))
             break
         chosen.append((number,page))
-    if not chosen or len(' '.join(p for _,p in chosen).split())<100:
+    if not chosen or len(' '.join(p for _,p in chosen).split())<20:
         raise ValueError('no_confident_principal_opinion')
     return '\n'.join(p for _,p in chosen), [n for n,_ in chosen]
 

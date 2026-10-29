@@ -55,7 +55,7 @@ class CESTests(unittest.TestCase):
             attach(base,source,output,corpus='ces')
             html=create_app(output).test_client().get('/?q1=gun&view=all').get_data(as_text=True)
             self.assertIn('CES 2014: 0.500',html)
-            self.assertIn('CES linear best fit',html)
+            self.assertIn('CES connected observations',html)
             self.assertIn('source-heading">CES',html)
             client = create_app(output).test_client()
             combined = client.get('/?q1=gun').get_data(as_text=True)

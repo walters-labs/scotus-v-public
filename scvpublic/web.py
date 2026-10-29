@@ -4,7 +4,7 @@ import sqlite3
 from pathlib import Path
 from flask import Flask, render_template, request
 from .chart import chart, combine_sources
-from .store import connect, metadata, search, survey_search, series, court_counts
+from .store import connect, metadata, search, survey_search, series, court_counts, survey_items
 
 
 def create_app(artifact=None, hybrid_dir=None):
@@ -94,7 +94,12 @@ def create_app(artifact=None, hybrid_dir=None):
                 source_series['WVS'] = series([], wvs)[1]
             combined, contributors = combine_sources(source_series)
             contribution_rows = [(year, combined[year], names) for year, names in contributors.items()]
+            question_ids = {name: {year: [code for code, _ in items]
+                                   for year, items in survey_items(questions).items()}
+                            for name, questions in [('ANES', public), ('GSS', gss),
+                                                    ('CES', ces), ('Pew', pew), ('WVS', wvs)]}
             svg = chart(*series(trend_court, public), counts=counts, view=view,
+                        question_ids=question_ids,
                         gss=series([], gss)[1] if info.get('gss_documents') else None,
                         ces=series([], ces)[1] if info.get('ces_documents') else None,
                         pew=series([], pew)[1] if info.get('pew_documents') else None,

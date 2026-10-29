@@ -27,7 +27,7 @@ def select_text(syllabus, opinion):
     return syllabus, 'syllabus'
 
 
-def source_texts(artifact):
+def source_texts(artifact, official=Path('data/processed/modern/official.json')):
     with closing(connect(artifact)) as db:
         docs = [dict(json.loads(p), doc_id=i) for i,p in db.execute("SELECT id,payload FROM documents WHERE corpus='court' ORDER BY id")]
         source_hashes = json.loads(db.execute("SELECT value FROM meta WHERE key='sources'").fetchone()[0])
@@ -51,8 +51,9 @@ def source_texts(artifact):
                     if doc and doc['case_id'] in wanted:
                         texts[doc['case_id']], origins[doc['case_id']] = select_text(
                             record['syllabus'], record['opinion'])
-    official = Path('data/processed/modern/official.json')
-    if digest(official) != source_hashes[str(official.resolve())]: raise ValueError('Supplement checksum mismatch')
+    official = Path(official)
+    if digest(official) != source_hashes.get(str(official.resolve())):
+        raise ValueError('Supplement checksum mismatch or source absent from artifact manifest')
     for record in json.loads(official.read_text())['records']:
         if record.get('unscored'): key = record['case_id']
         else:

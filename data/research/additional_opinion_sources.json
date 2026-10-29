@@ -1,0 +1,58 @@
+[
+  {
+    "case_id": "1987-012",
+    "url": "https://www.govinfo.gov/content/pkg/USREPORTS-484/pdf/USREPORTS-484-171.pdf",
+    "path": "data/raw/research-opinions/USREPORTS-484-171.pdf",
+    "sha256": "f1ea8f72adad9f14fe1b46550aff2f0418dddd6c63f0dcc8ae24399dccfb5779",
+    "retrieved": "2026-10-29",
+    "status": "downloaded; review and extraction pending"
+  },
+  {
+    "case_id": "1991-120",
+    "url": "https://www.govinfo.gov/content/pkg/USREPORTS-505/pdf/USREPORTS-505-1084.pdf",
+    "path": "data/raw/research-opinions/USREPORTS-505-1084.pdf",
+    "sha256": "5d4cddd81fcef30aa7e90b7e4c9f263e48e49f0c16f573b497299747fc51eb5b",
+    "retrieved": "2026-10-29",
+    "status": "downloaded; review and extraction pending"
+  },
+  {
+    "case_id": "1996-042",
+    "url": "https://www.govinfo.gov/content/pkg/USREPORTS-520/pdf/USREPORTS-520-292.pdf",
+    "path": "data/raw/research-opinions/USREPORTS-520-292.pdf",
+    "sha256": "81bbfd4ce21b56c57e34be75d236c6dd1b5248d274514284a70d896c49931c42",
+    "retrieved": "2026-10-29",
+    "status": "downloaded; review and extraction pending"
+  },
+  {
+    "case_id": "1996-074",
+    "url": "https://www.govinfo.gov/content/pkg/USREPORTS-520/pdf/USREPORTS-520-968.pdf",
+    "path": "data/raw/research-opinions/USREPORTS-520-968.pdf",
+    "sha256": "c6f6d548c39281251822e2c8dcb3b47b57c001bef9417cb8baecec3d6d3e02f7",
+    "retrieved": "2026-10-29",
+    "status": "downloaded; review and extraction pending"
+  },
+  {
+    "case_id": "1991-117",
+    "url": "https://www.govinfo.gov/content/pkg/USREPORTS-505/pdf/USREPORTS-505-833.pdf",
+    "path": "data/raw/research-opinions/USREPORTS-505-833.pdf",
+    "sha256": "be482b0459b5a2bb85e0c0fa98fa96410c69daf2db11104eaab9a86b2853d134",
+    "retrieved": "2026-10-29",
+    "status": "downloaded; review pending"
+  },
+  {
+    "case_id": "1993-016",
+    "url": "https://www.govinfo.gov/content/pkg/USREPORTS-510/pdf/USREPORTS-510-249.pdf",
+    "path": "data/raw/research-opinions/USREPORTS-510-249.pdf",
+    "sha256": "3070e6f77ca4186ea5d76732b342c7c5080c04a3acc905e725ff093a02044995",
+    "retrieved": "2026-10-29",
+    "status": "downloaded; review pending"
+  },
+  {
+    "case_id": "2002-021",
+    "url": "https://www.govinfo.gov/content/pkg/USREPORTS-537/pdf/USREPORTS-537-393.pdf",
+    "path": "data/raw/research-opinions/USREPORTS-537-393.pdf",
+    "sha256": "a900e51601866b731f785ee0b819a7d3fa6323b267e26d1bee3be998d1bec26c",
+    "retrieved": "2026-10-29",
+    "status": "downloaded; review pending"
+  }
+]

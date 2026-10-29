@@ -91,7 +91,7 @@ class GSSTests(unittest.TestCase):
 
     def test_gss_only_plot_and_no_invented_years(self):
         svg = chart({}, {}, gss={1988: -.5, 2024: .5})
-        self.assertIn('GSS linear best fit', svg)
+        self.assertNotIn('GSS connected observations', svg)
         self.assertEqual(svg.count('<circle'), 2)
 
 

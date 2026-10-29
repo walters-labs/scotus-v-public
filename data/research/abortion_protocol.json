@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "status": "exploratory cohort specification; not preregistered",
+  "topic": "abortion",
+  "court_issue_code": "50020",
+  "court_scope": "All cases assigned the SCDB abortion issue code; includes procedural and speech disputes, not only merits decisions about abortion access.",
+  "court_direction": {
+    "1": 0,
+    "2": 1
+  },
+  "court_exclusions": "Unknown direction, conflicting duplicate case rows, missing decision dates. Report exclusions explicitly.",
+  "survey_codes": {
+    "ANES": [
+      "VCF0837",
+      "VCF0838"
+    ],
+    "GSS": [
+      "abnomore",
+      "abany",
+      "abrape",
+      "abhlth",
+      "abpoor",
+      "abdefect",
+      "absingle"
+    ],
+    "CES": [
+      "abortion_prohibition",
+      "abortion_always",
+      "abortion_scale",
+      "abortion_20weeks",
+      "abortion_coverage"
+    ]
+  },
+  "survey_exclusions": "Exclude anti-abortion movement thermometers and moral-acceptability questions from primary legal-policy analysis. Preserve them for separate sensitivity analyses.",
+  "aggregation": "Existing respondent weighting and family selection within each source; equal available source weights. Analyze individual questions as a sensitivity check because circumstances and wording differ.",
+  "temporal_rule": "Latest observed survey year strictly before decision year, at most five years old. No interpolation. This guarantees earlier fieldwork year, not historical public availability of the dataset.",
+  "prediction_gate": "No real-time forecasting claim until historical data availability is verified. Chronological held-out evaluation required; compare against training-only majority and historical liberal-rate baselines.",
+  "review_gate": "Review procedural versus substantive cases before treating SCDB ideological direction as abortion-access direction. Do not select cases based on observed alignment.",
+  "sources": [
+    "https://scdb.la.psu.edu/online-codebook/issue/",
+    "https://scdb.la.psu.edu/online-codebook/decision-direction/"
+  ],
+  "retrospective_evaluation": {
+    "unit": "case, grouped by decision calendar year",
+    "minimum_training_cases": 20,
+    "training_window": "expanding; strictly earlier decision years",
+    "models": [
+      "Laplace-smoothed training liberal rate",
+      "L2 logistic regression on prior survey sentiment, C=1, no tuning"
+    ],
+    "metrics": [
+      "Brier score",
+      "log loss",
+      "accuracy with probability threshold 0.5"
+    ],
+    "status": "Exploratory; evaluated with modern revised datasets. Not a historically deployable forecast or abortion-access outcome analysis."
+  }
+}

@@ -26,12 +26,14 @@ def main():
     parser.add_argument('--artifact',type=Path,default=Path('artifacts/gss-bigram.sqlite'))
     parser.add_argument('--model',type=Path,default=Path('artifacts/semantic-model'))
     parser.add_argument('--output',type=Path,default=Path('artifacts/semantic-full'))
+    parser.add_argument('--supplement',type=Path,default=Path('data/processed/modern/official.json'),
+                        help='Official source used to build the artifact; path and checksum must match its manifest')
     a=parser.parse_args()
     if a.output.exists(): raise FileExistsError(a.output)
     model=json.loads(Path('data/manifests/semantic-model.json').read_text())
     for name,checksum in model['files'].items():
         if digest(a.model/name)!=checksum: raise ValueError('Model checksum mismatch')
-    docs,texts,origins=source_texts(a.artifact)
+    docs,texts,origins=source_texts(a.artifact, official=a.supplement)
     tokenizer=Tokenizer.from_file(str(a.model/'tokenizer.json'))
     tokenizer.no_truncation();tokenizer.no_padding()
     windows=[]; ids=[]; token_count=0

@@ -113,6 +113,14 @@ def series(court, public):
     sc = {year: fsum(value * weight for value, weight in scores) /
                 fsum(weight for _, weight in scores)
           for year, scores in court_values.items()}
+    values = survey_items(public)
+    po = {year: sum(value for _, value in items) / len(items)
+          for year, items in values.items()}
+    return dict(sorted(sc.items())), dict(sorted(po.items()))
+
+
+def survey_items(public):
+    """Selected question identities and values, using the same rules as the mean."""
     values = {}
     families = {}
     superseded = {(int(year), code) for q in public for year in q['years']
@@ -128,8 +136,7 @@ def series(court, public):
                     families[key] = (rank, value)
             continue
         for year, value in question['years'].items():
-            values.setdefault(int(year), []).append(value)
-    for (year, _), (_, value) in families.items():
-        values.setdefault(year, []).append(value)
-    po = {year: sum(v) / len(v) for year, v in values.items()}
-    return dict(sorted(sc.items())), dict(sorted(po.items()))
+            values.setdefault(int(year), []).append((question.get('code'), value))
+    for (year, _), (rank, value) in families.items():
+        values.setdefault(year, []).append((rank[1], value))
+    return dict(sorted(values.items()))

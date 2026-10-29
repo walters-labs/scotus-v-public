@@ -48,7 +48,7 @@ class PewTests(unittest.TestCase):
             html=client.get('/?q1=gun&view=pew').get_data(as_text=True)
             self.assertIn('Pew 2017: 0.250',html)
             self.assertIn('source-heading">Pew',html)
-            self.assertNotIn('Pew linear best fit',html)
+            self.assertNotIn('Pew connected observations',html)
             html=client.get('/?q1=gun').get_data(as_text=True)
             self.assertIn('sources: Pew; equal weight 1/1 each',html)
             svg=chart({}, {2017:-.25},pew={2017:.75},view='combined')

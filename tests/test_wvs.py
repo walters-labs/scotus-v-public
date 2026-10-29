@@ -52,7 +52,7 @@ class WVSTests(unittest.TestCase):
             html=client.get('/?q1=abortion&view=wvs').get_data(as_text=True)
             self.assertIn('WVS 2017: 0.200',html)
             self.assertIn('Moral acceptability, not support for a particular law.',html)
-            self.assertIn('WVS linear best fit',html)
+            self.assertNotIn('WVS connected observations',html)
             combined=client.get('/?q1=abortion').get_data(as_text=True)
             self.assertIn('sources: WVS; equal weight 1/1 each',combined)
             self.assertIn('Combined 2017: 0.000',chart({}, {2017:-.2},wvs={2017:.2},view='combined'))

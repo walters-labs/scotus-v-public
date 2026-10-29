@@ -1,0 +1,132 @@
+{
+  "status": "paused at user request",
+  "coverage": {
+    "required_evidence": [
+      "Topic-specific coverage by source and year",
+      "Reviewed court relevance and policy direction",
+      "Question-level measurement definitions",
+      "Survey design and uncertainty availability",
+      "Source overlap and duplication audit"
+    ],
+    "completed_evidence": [
+      "scripts/audit_topic_coverage.py",
+      "scripts/audit_measurement.py",
+      "data/research/official-extraction-review.json",
+      "artifacts/extraction-hybrid-comparison.json",
+      "scripts/gss_uncertainty.py",
+      "scripts/validate_gss_uncertainty.py"
+    ],
+    "remaining": [
+      "Review court and question cohorts",
+      "Investigate missing corpus records",
+      "Import Nationscape when available",
+      "Assess uncertainty from original respondent data"
+    ],
+    "gss_uncertainty_status": "Offline Taylor pilot preserves shared-respondent covariance. All 701 item-year and 34 composite-year means match existing artifacts. Independent samplics 0.4.31 comparison passes 642 supported item-year ratios and 30 composite linearized-total standard errors within 1e-10. Composite validation checks variance aggregation, not independent derivation. Missing-design years and singleton strata remain unsupported; cross-source uncertainty remains."
+  },
+  "alignment": {
+    "required_evidence": [
+      "Explicit estimand and coding conventions",
+      "Reviewed topic cohorts",
+      "Uncertainty and sensitivity analyses"
+    ],
+    "completed_evidence": [
+      "data/research/abortion_protocol.json",
+      "scripts/build_research_cohort.py",
+      "scripts/describe_alignment.py",
+      "scripts/audit_question_composition.py"
+    ],
+    "remaining": [
+      "Independent review of provisional case classifications",
+      "Review question comparability and survey sampling uncertainty",
+      "Quantify alignment beyond sign agreement using stable policy items and defensible uncertainty"
+    ],
+    "preliminary_finding": "All 47 matched prior composite values have positive signs. Sign agreement is 20/47 (42.6%), equal to the liberal share of court outcomes. Fourteen individual-item diagnostics reveal differing signs and coverage; composite agreement is not evidence of temporal tracking.",
+    "case_review": "data/research/abortion_case_review.json",
+    "case_review_status": "Provisional AI review covers all 49 cases; no unresolved missing or truncated review sources. Independent review pending. Not yet applied to primary analyses.",
+    "scope_sensitivity": {
+      "direct_access_scdb": {
+        "cases": 22,
+        "directional_cases": 21,
+        "aligned_cases": 11,
+        "sign_agreement": 0.5238095238095238
+      },
+      "direct_access_unambiguous": {
+        "cases": 17,
+        "directional_cases": 17,
+        "aligned_cases": 9,
+        "sign_agreement": 0.5294117647058824
+      },
+      "broad_access_and_funding_scdb": {
+        "cases": 29,
+        "directional_cases": 28,
+        "aligned_cases": 11,
+        "sign_agreement": 0.39285714285714285
+      }
+    },
+    "composition_finding": "CES 2014\u20132015 full abortion mean rises 0.151 while common items decline 0.033; adding a question reverses the observed direction. GSS seven-item set is present in 29 survey years, 1977\u20132024. Fixed codes still require wording/mode/population review. Audit is descriptive and leaves production unchanged."
+  },
+  "prediction": {
+    "required_evidence": [
+      "Chronological out-of-sample evaluation",
+      "Historical input availability audit",
+      "Training-only baselines",
+      "Calibration and uncertainty",
+      "No-data and no-improvement outcomes reported"
+    ],
+    "completed_evidence": [
+      "tests/test_research_cohort.py",
+      "scripts/evaluate_research_cohort.py",
+      "artifacts/abortion-retrospective-evaluation.json"
+    ],
+    "remaining": [
+      "Complete substantive cohort review before interpreting policy alignment",
+      "Audit historical publication dates",
+      "Quantify uncertainty and calibration",
+      "Evaluate additional prespecified topic cohorts without tuning on held-out outcomes"
+    ],
+    "preliminary_finding": "Exploratory abortion cohort: 27 chronologically evaluated cases across 19 years; sentiment-only model did not improve Brier score over training-only baseline (0.2573 vs 0.2558). This is not a validated forecasting result.",
+    "preliminary_uncertainty": {
+      "status": "exploratory conditional interval",
+      "metric": "sentiment Brier minus baseline Brier; negative favors sentiment",
+      "estimate": 0.0015724219384206887,
+      "percentile_95": [
+        -0.0015904396839186582,
+        0.004824458030269527
+      ],
+      "clusters": 19,
+      "repetitions": 10000,
+      "seed": 20261029,
+      "limitations": "Fixed predictions; no refitting. Assumes exchangeable decision-year clusters. Does not capture serial dependence, survey sampling error, source composition uncertainty, or model-selection uncertainty."
+    },
+    "stable_item_sensitivity": "Stable seven-item GSS series, identical common-case training/evaluation coverage: 37 eligible cases, 17 evaluated cases over 12 years. Baseline Brier 0.2599; original-index and GSS models both 0.2617. Fixed-GSS minus baseline interval approximately [-0.0017, 0.0054]. Exploratory post-audit sensitivity, not independent validation; original 27-case evaluation retained."
+  },
+  "blog": {
+    "remaining": [
+      "Author review of development narrative",
+      "Complete substantive cohort review and uncertainty analysis",
+      "Update verified results after hybrid candidate evaluation",
+      "Check end-to-end reproduction from documented inputs",
+      "Final editorial review before publication"
+    ],
+    "draft": "docs/METHODOLOGY_BLOG_DRAFT.md"
+  },
+  "publication": {
+    "remaining": [
+      "Evidence review",
+      "Accessible presentation",
+      "Final release verification",
+      "User-approved promotion"
+    ]
+  },
+  "feedback": {
+    "remaining": [
+      "Recruit at least five people with user-approved outreach",
+      "Collect actual feedback",
+      "Implement and document a revision"
+    ],
+    "guide": "docs/USER_TESTING.md"
+  },
+  "next_step": "User review of current changes, then one bounded data-coverage task. Do not pursue all goals concurrently. External testing deferred.",
+  "handoff": "docs/PAUSED_HANDOFF.md"
+}
