@@ -1,0 +1,9 @@
+{
+  "release": "WVS Time Series 1981\u20132022 v5.0 (U.S. subset)",
+  "path": "data/raw/wvs/WVS_Time_Series_1981-2022_stata_v5_0.dta",
+  "sha256": "0d2359a13bf5022299a18a1d34f059badd6f7b3f15ff92a9d87fc484f4c66f36",
+  "country_code": 840,
+  "weight": "S017",
+  "source_url": "https://www.worldvaluessurvey.org/WVSDocumentationWVL.jsp",
+  "weight_documentation": "https://www.worldvaluessurvey.org/WVSContents.jsp?CMSID=Faqs"
+}

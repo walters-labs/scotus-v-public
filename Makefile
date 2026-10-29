@@ -90,3 +90,10 @@ pew:
 pew-pilot:
 	$(PY) -m scvpublic.pew --base-artifact artifacts/ces-pilot.sqlite
 	PYTHONPATH=. $(PY) scripts/rebind_hybrid.py --old artifacts/ces-pilot.sqlite --new artifacts/pew-pilot.sqlite --bundle artifacts/semantic-ces-pilot --output artifacts/semantic-pew-pilot
+
+.PHONY: wvs wvs-pilot
+wvs:
+	$(PY) -m scvpublic.wvs
+wvs-pilot:
+	$(PY) -m scvpublic.wvs --base-artifact artifacts/pew-pilot.sqlite
+	PYTHONPATH=. $(PY) scripts/rebind_hybrid.py --old artifacts/pew-pilot.sqlite --new artifacts/wvs-pilot.sqlite --bundle artifacts/semantic-pew-pilot --output artifacts/semantic-wvs-pilot

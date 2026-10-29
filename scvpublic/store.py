@@ -41,7 +41,7 @@ def search(db, corpus, terms, limit=10, relative_cutoff=0):
     for phrase in terms:
         words = re.findall(r'(?u)\b\w+\b', phrase.lower())
         expanded = list(words)
-        if corpus in ('court', 'public', 'gss', 'ces', 'pew'):
+        if corpus in ('court', 'public', 'gss', 'ces', 'pew', 'wvs'):
             expanded += [' '.join(pair) for pair in zip(words, words[1:])]
         for term in expanded:
             clauses.append('SELECT doc,weight FROM postings WHERE corpus=? AND term=?')

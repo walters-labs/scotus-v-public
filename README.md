@@ -132,3 +132,12 @@ verified downloads, scoring, artifact assembly, and a separate local preview.
 Pew Wave 25 adds 11 gun-policy questions from March 2017, validated against its
 weighted topline. See [Pew setup and methodology](docs/PEW.md). Pew is available
 as a separate view and contributes to the combined index in its observed year.
+
+### World Values Survey
+
+The optional WVS import adds 21 reviewed U.S. policy/social-attitude variables (20 families,
+70 question-year observations, 1995–2017). Download the cumulative Stata v5.0 file into
+`data/raw/wvs/`, then run `make wvs` or `make wvs-pilot` to attach it to the Pew pilot and
+rebind the existing court embeddings. WVS appears in the selector and combined index.
+See [WVS review and reproduction notes](data/wvs/README.md) for weights, exclusions,
+validation, and the distinction between moral acceptance and legal-policy support.
