@@ -56,3 +56,25 @@ class PRRITests(unittest.TestCase):
             combined=client.get('/?q1=marriage').get_data(as_text=True)
             self.assertIn('sources: PRRI; equal weight 1/1 each',combined)
             self.assertIn('Combined 2024: 0.000',chart({}, {2024:-.3},prri={2024:.3},view='combined'))
+
+    def test_four_point_scale_excludes_missing_from_score_only(self):
+        entry = next(e for e in json.loads(Path('data/prri/response_mappings.json').read_text())['entries'] if e['code']=='prri_abortion')
+        wave=copy.deepcopy(entry['waves'][-1])
+        c,w=wave['source_code'],wave['weight']
+        # A hand-calculable distribution with both skipped and system-missing answers.
+        frame=pd.DataFrame({c:[1,2,3,4,-1,float('nan')],w:[30,20,10,20,10,10]})
+        wave['published_percentages']={'1':30,'2':20,'3':10,'4':20}
+        mean,n,total,_=summarize(frame,wave,entry['scores'],{c:wave['expected_label']},wave['expected_labels'])
+        self.assertAlmostEqual(mean,1/6)
+        self.assertEqual((n,total),(4,80))
+
+    def test_abortion_defers_unreproduced_year(self):
+        spec=json.loads(Path('data/prri/response_mappings.json').read_text())
+        entry=next(e for e in spec['entries'] if e['code']=='prri_abortion')
+        self.assertNotIn(2022,[w['year'] for w in entry['waves']])
+        self.assertTrue(any(d['year']==2022 and d['code']==entry['code'] for d in spec['deferred']))
+        wave=copy.deepcopy(self.wave)
+        wave['published_percentages']={'1':29,'2':71}
+        frame=pd.DataFrame({'Q':[1,2],'W':[28.427,71.573]})
+        with self.assertRaisesRegex(ValueError,'topline mismatch'):
+            self.run_summary(wave=wave,frame=frame)

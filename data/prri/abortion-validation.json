@@ -1,0 +1,116 @@
+{
+  "questions": 3,
+  "question_years": 14,
+  "added_question": "prri_abortion",
+  "observations": [
+    {
+      "question": "prri_abortion",
+      "year": "2019",
+      "respondents": 2491,
+      "weighted_percentages": {
+        "1": 24.474628909105828,
+        "2": 34.47102188641172,
+        "3": 28.755472530358922,
+        "4": 10.940991199205085
+      },
+      "published_percentages": {
+        "1": 24,
+        "2": 34,
+        "3": 29,
+        "4": 11
+      }
+    },
+    {
+      "question": "prri_abortion",
+      "year": "2020",
+      "respondents": 2510,
+      "weighted_percentages": {
+        "1": 21.925188671662177,
+        "2": 37.646613828002614,
+        "3": 26.639891874206626,
+        "4": 12.567184162708735
+      },
+      "published_percentages": {
+        "1": 22,
+        "2": 38,
+        "3": 27,
+        "4": 13
+      }
+    },
+    {
+      "question": "prri_abortion",
+      "year": "2021",
+      "respondents": 2462,
+      "weighted_percentages": {
+        "1": 27.240397266442724,
+        "2": 32.77711310457251,
+        "3": 26.88121456488387,
+        "4": 10.941150942859077
+      },
+      "published_percentages": {
+        "1": 27,
+        "2": 33,
+        "3": 27,
+        "4": 11
+      }
+    },
+    {
+      "question": "prri_abortion",
+      "year": "2023",
+      "respondents": 2474,
+      "weighted_percentages": {
+        "1": 26.382387511949013,
+        "2": 33.83632621205083,
+        "3": 28.257988031917474,
+        "4": 8.925792573487051
+      },
+      "published_percentages": {
+        "1": 26,
+        "2": 34,
+        "3": 28,
+        "4": 9
+      }
+    },
+    {
+      "question": "prri_abortion",
+      "year": "2024",
+      "respondents": 5222,
+      "weighted_percentages": {
+        "1": 25.098071184645505,
+        "2": 37.179494198183995,
+        "3": 27.306987158626317,
+        "4": 7.05136446707181
+      },
+      "published_percentages": {
+        "1": 25,
+        "2": 37,
+        "3": 27,
+        "4": 7
+      }
+    }
+  ],
+  "scores": {
+    "2019": 0.1565134821259271,
+    "2020": 0.13187952748482829,
+    "2021": 0.18667793343734787,
+    "2023": 0.19831156410822212,
+    "2024": 0.22080343476787542
+  },
+  "unchanged_existing_questions": true,
+  "deferred": [
+    {
+      "code": "prri_abortion",
+      "year": 2022,
+      "source_code": "Q27",
+      "weight": "KP_WEIGHT",
+      "questionnaire_page": 24,
+      "reason": "Weighted illegal-in-most-cases percentage is 28.427%, versus published 29%; exceeds the unchanged 0.51 percentage-point tolerance. Excluding two system-missing responses from the denominator still does not reproduce 29%. Do not substitute published totals for microdata or infer the reason.",
+      "published_percentages": {
+        "1": 27,
+        "2": 35,
+        "3": 29,
+        "4": 8
+      }
+    }
+  ]
+}

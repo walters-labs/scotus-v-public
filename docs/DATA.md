@@ -673,3 +673,39 @@ The processed payload `data/processed/prri-avs/public.json` includes validation
 percentages and annual provenance. Only its indexed aggregates and embeddings
 are served; respondent files are not deployed. Credit PRRI as collector and ARDA
 as distributor. Try `immigration` and `gay marriage`, selecting PRRI or Combined.
+
+### PRRI abortion expansion (local candidate)
+
+Adds one general abortion-legality question with five observations: September
+2019, 2020, 2021, 2023 and 2024. PRRI now has three reviewed questions and 14
+question-years. Existing immigration and marriage documents are unchanged.
+
+The four substantive categories map to +1 (legal in all cases), +1/3 (legal in
+most), −1/3 (illegal in most), and −1 (illegal in all). Refused, skipped, don't
+know and system-missing values are excluded from scores. Original full-sample
+weights are used. These questions were not restricted to one form: form
+instructions in 2019/2020 rotate order. 2019 explicitly reads the four categories;
+2024 places abortion first in a legality battery. Annual wording and questionnaire
+PDF page numbers are retained in provenance. This is general policy support,
+not issue importance, voting motivation, or support for any particular restriction.
+
+The 2022 Q27 record is **deferred**, not silently accepted: `KP_WEIGHT` gives
+28.427% illegal in most cases against 29% in the original questionnaire (PDF
+page 24), outside the unchanged 0.51 percentage-point tolerance. The two
+system-missing answers do not explain it. This is an unresolved source/weight
+validation discrepancy; no claim is made about its cause. The app discloses the
+omission. Earlier years remain outside this bounded review. Published historical
+rows and pooled AVA totals are not imported as additional observations.
+
+`data/prri/abortion-validation.json` records the verified weighted percentages,
+counts and scores. Every included category reproduces the published annual
+rounded percentage within tolerance. The original checksums remain pinned.
+
+Build this candidate without overwriting the deployed artifacts:
+
+```sh
+.venv/bin/python -m scvpublic.prri --output data/processed/prri-abortion/public.json --base-artifact artifacts/prri-pilot.sqlite --artifact artifacts/prri-abortion.sqlite
+PYTHONPATH=. .venv/bin/python scripts/rebind_hybrid.py --old artifacts/prri-pilot.sqlite --new artifacts/prri-abortion.sqlite --bundle artifacts/semantic-prri-pilot --output artifacts/semantic-prri-abortion-court
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_embeddings.py --artifact artifacts/prri-abortion.sqlite --bundle artifacts/semantic-prri-abortion-court --output artifacts/semantic-prri-abortion --phrases
+SCVPO_ARTIFACT=artifacts/prri-abortion.sqlite SCVPO_HYBRID=artifacts/semantic-prri-abortion OPENBLAS_NUM_THREADS=1 .venv/bin/gunicorn 'scvpublic.web:create_app()' --bind 127.0.0.1:8015 --workers 1 --threads 2
+```

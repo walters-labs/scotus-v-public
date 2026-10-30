@@ -66,9 +66,11 @@ def build(manifest, documents_manifest, mappings, output):
             mean, n, weight_sum, percentages = summarize(frame, wave, entry['scores'], meta.column_names_to_labels, values)
             d['years'][year], d['respondents'][year], d['weight_sums'][year] = mean, n, weight_sum
             d['year_provenance'][year] = {k:wave[k] for k in ('source_code','weight','question','doi','wave')}
+            if 'questionnaire_page' in wave:
+                d['year_provenance'][year]['questionnaire_page'] = wave['questionnaire_page']
             audit.append(dict(question=entry['code'], year=year, respondents=n, weighted_percentages=percentages, published_percentages=wave['published_percentages']))
         documents.append(d)
-    payload = prepare(dict(methodology=mapping['version'], release='PRRI AVS 2018–2024 pilot', notes=mapping['notes'], sources=sources, documents=documents, validation=audit))
+    payload = prepare(dict(methodology=mapping['version'], release=mapping.get('release', 'PRRI AVS 2018–2024 pilot'), notes=mapping['notes'], sources=sources, documents=documents, validation=audit))
     output.parent.mkdir(parents=True, exist_ok=True)
     temporary = output.with_suffix('.tmp')
     temporary.write_text(json.dumps(payload, indent=2, allow_nan=False)+'\n')

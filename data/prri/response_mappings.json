@@ -1,6 +1,6 @@
 {
   "version": "explicit-prri-v1",
-  "notes": "PRRI American Values Survey, distributed by ARDA. Pilot: immigration 2018\u20132024 and marriage 2023\u20132024. Valid answers use original annual full-sample weights; missing responses excluded. Other acquired questions remain unreviewed.",
+  "notes": "PRRI American Values Survey, distributed by ARDA. Reviewed coverage: immigration 2018–2024, marriage 2023–2024, and abortion legality 2019–2021 and 2023–2024. Valid answers use original annual full-sample weights; missing responses excluded. Abortion 2022 is deferred because its weighted distribution does not reproduce a published topline. Other acquired questions remain unreviewed.",
   "entries": [
     {
       "code": "prri_immigration",
@@ -220,6 +220,157 @@
           "wave": "Annual American Values Survey"
         }
       ]
+    },
+    {
+      "code": "prri_abortion",
+      "family": "prri_abortion",
+      "title": "Abortion legality",
+      "question": "Do you think abortion should be legal or illegal?",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_note": "Legal in all/most cases = +1/+1/3; illegal in most/all cases = −1/3/−1. General legality, not a particular restriction. 2022 omitted pending a published-topline discrepancy; wording and question context vary by year.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive?fid=AVS2024",
+      "waves": [
+        {
+          "year": 2019,
+          "source_code": "Q51",
+          "weight": "weight",
+          "expected_label": "On different topic, Do you think abortion should be legal in all cases, legal in",
+          "expected_labels": {
+            "1": "Legal in all cases",
+            "2": "Legal in most cases",
+            "3": "Illegal in most cases",
+            "4": "Illegal in all cases",
+            "9": "Don't know/Refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 24,
+            "2": 34,
+            "3": 29,
+            "4": 11
+          },
+          "doi": "10.17605/OSF.IO/PH68V",
+          "question": "Do you think abortion should be legal in all cases, legal in most cases, illegal in most cases, or illegal in all cases?",
+          "wave": "September annual American Values Survey",
+          "questionnaire_page": 44
+        },
+        {
+          "year": 2020,
+          "source_code": "Q48",
+          "weight": "weight",
+          "expected_label": "Turning to another subject, do you think abortion should be legal or illegal? [F",
+          "expected_labels": {
+            "1": "Legal in all cases",
+            "2": "Legal in most cases",
+            "3": "Illegal in most cases",
+            "4": "Illegal in all cases",
+            "77": "Don't know",
+            "98": "Skipped on web",
+            "99": "Refused"
+          },
+          "published_percentages": {
+            "1": 22,
+            "2": 38,
+            "3": 27,
+            "4": 13
+          },
+          "doi": "10.17605/OSF.IO/8RH32",
+          "question": "Do you think abortion should be legal or illegal?",
+          "wave": "September annual American Values Survey",
+          "questionnaire_page": 39
+        },
+        {
+          "year": 2021,
+          "source_code": "Q31",
+          "weight": "KP_WEIGHT",
+          "expected_label": "Do you think abortion should be legal or illegal?",
+          "expected_labels": {
+            "-1": "Skipped/Refused",
+            "1": "Legal in all cases",
+            "2": "Legal in most cases",
+            "3": "Illegal in most cases",
+            "4": "Illegal in all cases"
+          },
+          "published_percentages": {
+            "1": 27,
+            "2": 33,
+            "3": 27,
+            "4": 11
+          },
+          "doi": "10.17605/OSF.IO/AXG4M",
+          "question": "Do you think abortion should be legal or illegal?",
+          "wave": "September annual American Values Survey",
+          "questionnaire_page": 30
+        },
+        {
+          "year": 2023,
+          "source_code": "Q38",
+          "weight": "KP_WEIGHT",
+          "expected_label": "Do you think abortion should be legal or illegal?",
+          "expected_labels": {
+            "1": "Legal in all cases",
+            "2": "Legal in most cases",
+            "3": "Illegal in most cases",
+            "4": "Illegal in all cases",
+            "99": "Skipped"
+          },
+          "published_percentages": {
+            "1": 26,
+            "2": 34,
+            "3": 28,
+            "4": 9
+          },
+          "doi": "10.17605/OSF.IO/WVUGF",
+          "question": "Do you think abortion should be legal or illegal?",
+          "wave": "September annual American Values Survey",
+          "questionnaire_page": 26
+        },
+        {
+          "year": 2024,
+          "source_code": "Q11A_A",
+          "weight": "weight",
+          "expected_label": "Do you think the following should be legal or illegal? - Abortion",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Legal in all cases",
+            "2": "Legal in most cases",
+            "3": "Illegal in most cases",
+            "4": "Illegal in all cases"
+          },
+          "published_percentages": {
+            "1": 25,
+            "2": 37,
+            "3": 27,
+            "4": 7
+          },
+          "doi": "10.17605/OSF.IO/UDPSG",
+          "question": "Do you think the following should be legal or illegal? Abortion.",
+          "wave": "September annual American Values Survey",
+          "questionnaire_page": 30
+        }
+      ]
+    }
+  ],
+  "release": "PRRI AVS 2018–2024",
+  "deferred": [
+    {
+      "code": "prri_abortion",
+      "year": 2022,
+      "source_code": "Q27",
+      "weight": "KP_WEIGHT",
+      "questionnaire_page": 24,
+      "reason": "Weighted illegal-in-most-cases percentage is 28.427%, versus published 29%; exceeds the unchanged 0.51 percentage-point tolerance. Excluding two system-missing responses from the denominator still does not reproduce 29%. Do not substitute published totals for microdata or infer the reason.",
+      "published_percentages": {
+        "1": 27,
+        "2": 35,
+        "3": 29,
+        "4": 8
+      }
     }
   ]
 }
