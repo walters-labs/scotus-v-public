@@ -709,3 +709,60 @@ PYTHONPATH=. .venv/bin/python scripts/rebind_hybrid.py --old artifacts/prri-pilo
 PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_embeddings.py --artifact artifacts/prri-abortion.sqlite --bundle artifacts/semantic-prri-abortion-court --output artifacts/semantic-prri-abortion --phrases
 SCVPO_ARTIFACT=artifacts/prri-abortion.sqlite SCVPO_HYBRID=artifacts/semantic-prri-abortion OPENBLAS_NUM_THREADS=1 .venv/bin/gunicorn 'scvpublic.web:create_app()' --bind 127.0.0.1:8015 --workers 1 --threads 2
 ```
+
+## Nationscape healthcare import (local candidate, October 30)
+
+The user supplied the December 2021 weekly release in `data/raw/nationscape/`.
+This supersedes the access-blocked acquisition note above. Import only the 77
+weekly DTA files in phases 1, 2 and 3 (`v20210301`); exclude the three parallel
+collections and duplicate SAV-format files. VOTER is also present but is not
+part of this update.
+
+The first item is `gov_insurance`: “Provide government-run health insurance to
+all Americans.” Agree = +1, disagree = −1; not sure (999) and system-missing
+answers do not contribute to polarity. This wording does not specify banning
+private insurance, and should not be described as that policy.
+
+`data/manifests/nationscape-healthcare.json` pins all 77 data files, codebooks
+and bannerbooks with SHA-256 hashes, variable labels, response codes, original
+PDF page numbers, published category percentages and unweighted counts. The
+full question was checked in every codebook. Every weekly weighted mean is
+cross-checked against separately grouped weighted response frequencies.
+
+**Weights:** use the `weight` column (2016-vote calibration) throughout the
+plotted series. The nine post-election bannerbooks explicitly say “2020 weights”
+on their covers, so published-table validation uses `weight_2020` in those waves;
+the earlier 68 use `weight`. All 231 rounded category percentages agree within
+0.51 percentage points and all 77 published unweighted counts match. Published
+percentages include “not sure” but exclude skipped responses. The choice of
+validation weights follows the documented covers, not a best-fit search. The
+post-election plotted score consequently does not use the same weights as its
+bannerbook. Alternative weighting is a methodological sensitivity to consider
+before drawing substantive conclusions.
+
+**Annual aggregation:** equal weight per observed weekly estimate, grouped by
+wave start year, not respondent-weight totals pooled across weeks. The 2019
+point represents 24 waves beginning July 18; 2020 has 52 waves; 2021 is only the
+January 12 wave. These are observed-period averages, not full-year estimates.
+A wave crossing New Year remains assigned to its starting year. Preserve all
+77 weekly values, respondent counts, weight sums, validation percentages, weight
+names, wave dates, and actual first/last response timestamps in the processed
+payload and SQLite document. Counts are responses, not necessarily unique
+people. Parallel studies and historical tables are not extra observations.
+
+The new source participates once per year in the existing equal-source combined
+index. UI notes expose the partial-year coverage and weekly counts. The plot
+remains annual; no interpolation or weekly chart change is included here.
+Raw respondent data and build dependencies stay off the server.
+
+Rebuild from the supplied files (output paths must not exist):
+
+```sh
+.venv/bin/python -m scvpublic.nationscape --base-artifact artifacts/prri-abortion.sqlite
+PYTHONPATH=. .venv/bin/python scripts/rebind_hybrid.py --old artifacts/prri-abortion.sqlite --new artifacts/nationscape-healthcare.sqlite --bundle artifacts/semantic-prri-abortion --output artifacts/semantic-nationscape-court
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_embeddings.py --artifact artifacts/nationscape-healthcare.sqlite --bundle artifacts/semantic-nationscape-court --output artifacts/semantic-nationscape-healthcare --phrases
+SCVPO_ARTIFACT=artifacts/nationscape-healthcare.sqlite SCVPO_HYBRID=artifacts/semantic-nationscape-healthcare OPENBLAS_NUM_THREADS=1 .venv/bin/gunicorn 'scvpublic.web:create_app()' --bind 127.0.0.1:8016 --workers 1 --threads 2
+```
+
+Credit Democracy Fund + UCLA Nationscape and its investigators Chris
+Tausanovitch and Lynn Vavreck. Source: https://www.voterstudygroup.org/data/nationscape.

@@ -82,7 +82,7 @@ def build(source, mappings, output, manifest):
 
 def attach(artifact, source, output, corpus="gss"):
     """Copy an artifact and replace an explicitly mapped optional survey corpus."""
-    if corpus not in ("gss", "ces", "pew", "wvs", "prri"):
+    if corpus not in ("gss", "ces", "pew", "wvs", "prri", "nationscape"):
         raise ValueError("Unsupported survey corpus")
     from sklearn.feature_extraction.text import TfidfVectorizer
     import numpy as np

@@ -1,0 +1,2011 @@
+{
+  "source_url": "https://www.voterstudygroup.org/data/nationscape",
+  "release": "Weekly DTA December 2021, phase 1/2/3 v20210301",
+  "selection": "77 weekly DTA files; excludes three parallel surveys and alternate SAV copies.",
+  "primary_weight": "weight",
+  "weight_policy": "Keep 2016-vote calibrated weight throughout the series. Validate published tables using their explicitly stated cover-page weights: weight before November 2020, weight_2020 after. Never choose weights by goodness of fit.",
+  "waves": [
+    {
+      "wave": "ns20190718",
+      "date": "2019-07-18",
+      "rows": 6422,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190718/ns20190718.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 52,
+        "2": 28,
+        "999": 20
+      },
+      "published_n": 6386,
+      "banner_page": 268,
+      "codebook_page": 154,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190718/ns20190718.dta": "a70ec2cfb98e1e5e35325fccfc4f5d7c3a254d02236601323a7896be80efba7d",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190718/bannerbook_ns20190718.pdf": "b56de6de549878008deba910a9233132add8938a0e426994f4c274f900ff1bb7",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190718/codebook_ns20190718.pdf": "8e839ef697fdd9591f5bfafbdef9d4521bafc936483cd5b8e4203cebd34bb175"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20190725",
+      "date": "2019-07-25",
+      "rows": 6270,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190725/ns20190725.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 29,
+        "999": 20
+      },
+      "published_n": 6241,
+      "banner_page": 256,
+      "codebook_page": 149,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190725/ns20190725.dta": "a1980b8154afe0c3a067813ee7770a8ca7852a5d341f948ff4009077569f26c6",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190725/bannerbook_ns20190725.pdf": "01667fbd196e79ec9611ede98986d50fbc73a35246302d75f3e7a156fb4729ee",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190725/codebook_ns20190725.pdf": "571b7a8e0b5c8b938d3678282d9f5cf372a969703cd6fdc59991d688ee746a75"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20190801",
+      "date": "2019-08-01",
+      "rows": 6537,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190801/ns20190801.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 50,
+        "2": 30,
+        "999": 20
+      },
+      "published_n": 6500,
+      "banner_page": 256,
+      "codebook_page": 149,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190801/ns20190801.dta": "50766d836eaea4a97f7fb7f51868912ff853acc01834dbae02e5f132b435d5a8",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190801/bannerbook_ns20190801.pdf": "fc6a5465927bcf00efee232da0f9fa60abce43f69affda0abc695d58ee6e5b19",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190801/codebook_ns20190801.pdf": "9ac3702231d028246feee39647d4ab242ab70d97001d59f972a447226e0e29ff"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20190808",
+      "date": "2019-08-08",
+      "rows": 6160,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190808/ns20190808.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 28,
+        "999": 21
+      },
+      "published_n": 6130,
+      "banner_page": 256,
+      "codebook_page": 149,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190808/ns20190808.dta": "c6f63f05456506496f455e977ca779918d999ff751f5969fd58e84ad8f5a6d2f",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190808/bannerbook_ns20190808.pdf": "c89cc9686220932d6c18ee7671793eace1af5b1ab610539210477388c8b52a8b",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190808/codebook_ns20190808.pdf": "07be1759e72ec9451627cd89675b3c4604ad356bab2711625e00a6a5ea9ebb56"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20190815",
+      "date": "2019-08-15",
+      "rows": 6260,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190815/ns20190815.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 52,
+        "2": 29,
+        "999": 20
+      },
+      "published_n": 6221,
+      "banner_page": 255,
+      "codebook_page": 149,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190815/ns20190815.dta": "8cf53b3b82b1f27635a6ea3ecde5313ade95aef18424bea03fa5cf8675429b8b",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190815/bannerbook_ns20190815.pdf": "4c41bcfe2a2e3fe4a8e7767d049987df64ae3d71239a610480cbffea0e0f8206",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190815/codebook_ns20190815.pdf": "9214bb959a9d4c1b41260ce4d549766fa24892360061704367e02d77e187fc91"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20190822",
+      "date": "2019-08-22",
+      "rows": 6034,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190822/ns20190822.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 29,
+        "999": 20
+      },
+      "published_n": 5993,
+      "banner_page": 255,
+      "codebook_page": 149,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190822/ns20190822.dta": "d64017537a76f0b263a485078d72259216fc16c0e1b6f966cd83eb71c15fe5fd",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190822/bannerbook_ns20190822.pdf": "0474f0305763a0a5246af6678088ec65e8581ad34fdd351010ffb349a406667e",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190822/codebook_ns20190822.pdf": "85c75fe7d0af6d88c6487a88d93906e2ae9cc5108ef97ffaacb041d0c39a7109"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20190829",
+      "date": "2019-08-29",
+      "rows": 6047,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190829/ns20190829.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 53,
+        "2": 28,
+        "999": 19
+      },
+      "published_n": 6014,
+      "banner_page": 256,
+      "codebook_page": 149,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190829/ns20190829.dta": "540bf27aa8fa656ee2a7cca341adc0a477ed032aa57545d8b6cc244919f18b80",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190829/bannerbook_ns20190829.pdf": "51ef1fc964f5a67db02549886800c9d0dd426d089bc6655dac5b1824d504a71a",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190829/codebook_ns20190829.pdf": "a10076d6116eeabc5276a0f68e15b96534a8373e88332eadeca1bfa1197aa1a6"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20190905",
+      "date": "2019-09-05",
+      "rows": 6013,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190905/ns20190905.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 53,
+        "2": 29,
+        "999": 19
+      },
+      "published_n": 5980,
+      "banner_page": 256,
+      "codebook_page": 149,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190905/ns20190905.dta": "da9d96c975f6da934005b43f3cc4ee9f60ff0e472a9dc5f3b896be64b4ddf24d",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190905/bannerbook_ns20190905.pdf": "d2b359219ce031f16553afeb98d399454562ba4d08481c4378a119d9abc50b83",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190905/codebook_ns20190905.pdf": "632c585fe7f17cadcd416b6db991d0f4b941335da9720fac92b67c7e052c73f6"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20190912",
+      "date": "2019-09-12",
+      "rows": 6162,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190912/ns20190912.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 53,
+        "2": 28,
+        "999": 19
+      },
+      "published_n": 6114,
+      "banner_page": 256,
+      "codebook_page": 149,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190912/ns20190912.dta": "f0107578ed15d2011c0e78b6cda29a62b8eaa5424d4b75ac9ccabe26186b3316",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190912/bannerbook_ns20190912.pdf": "6863cf54c6148e230dad7822d9fa618437143bedb049147ca111361c337a17c8",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190912/codebook_ns20190912.pdf": "a1dab2a5c7660941b39c67a3d9880f9ad3e5bbc47e59e71f15c251369586f747"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20190919",
+      "date": "2019-09-19",
+      "rows": 6503,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190919/ns20190919.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 52,
+        "2": 28,
+        "999": 20
+      },
+      "published_n": 6469,
+      "banner_page": 244,
+      "codebook_page": 143,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190919/ns20190919.dta": "29f61c8f557de9a21ac777615050ea9a3cc335cabd4294a6c0957ea708c9134a",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190919/bannerbook_ns20190919.pdf": "5db8fad9b77c16e3846aa1f92657dbf4aed2f498dbb7d0609df1c32b65eb9a7e",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190919/codebook_ns20190919.pdf": "fb3fbdf42006dee8a3c05903c843d7937460e6fd9ec09f42c055bd75faafab10"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20190926",
+      "date": "2019-09-26",
+      "rows": 6173,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190926/ns20190926.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 29,
+        "999": 20
+      },
+      "published_n": 6145,
+      "banner_page": 244,
+      "codebook_page": 143,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190926/ns20190926.dta": "a9692a992c69a0ded4ff9b2f5dba007b2111cffe918ac33cdc1358ab1df4c7ea",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190926/bannerbook_ns20190926.pdf": "a1e13fe641d994c68bd96a2259973b3f93bf57c11104722b49185c355cb06f68",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20190926/codebook_ns20190926.pdf": "461b577a88e8772a9ffb510595e9731b7d55ba84d1a25a8f7b2cb5506d34ccbc"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20191003",
+      "date": "2019-10-03",
+      "rows": 6146,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191003/ns20191003.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 27,
+        "999": 21
+      },
+      "published_n": 6116,
+      "banner_page": 265,
+      "codebook_page": 153,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191003/ns20191003.dta": "2074ad1bb2e9522c8911d45e30ebb1f895d499bcebcec612aa1f799530529219",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191003/bannerbook_ns20191003.pdf": "f655b7ac11e1cfac6ec8683c1497414e668daa3ddcc157f83ee7885aaf478bc7",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191003/codebook_ns20191003.pdf": "c6d9931d6b1dca8f02e7d9e6ff672ca2243336f2779319bf8d0792230cc85828"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20191010",
+      "date": "2019-10-10",
+      "rows": 6131,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191010/ns20191010.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 30,
+        "999": 19
+      },
+      "published_n": 6086,
+      "banner_page": 432,
+      "codebook_page": 202,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191010/ns20191010.dta": "cd78080e8cd44acbee0da647425b1ec6312839a87275e11eaead19c710923f5b",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191010/bannerbook_ns20191010.pdf": "4ebcaf6783a1d7a01fa4929cd230f9bf67b12ad79a67aa8b2eeb3756a607e659",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191010/codebook_ns20191010.pdf": "c4429f88df47d94d60f4ae32c9a26b25ccf0fd9a292246d1597d5808a34c881c"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20191017",
+      "date": "2019-10-17",
+      "rows": 6485,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191017/ns20191017.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 52,
+        "2": 29,
+        "999": 20
+      },
+      "published_n": 6454,
+      "banner_page": 433,
+      "codebook_page": 202,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191017/ns20191017.dta": "301bd080955cc4a755564a5bc9ba4bb1fcb5cc0a83cea9552d9fbec2950b1da6",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191017/bannerbook_ns20191017.pdf": "80d1c7d33756bb723c034f6e0d2f428bfe5559134ee509e49320aa0370a28641",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191017/codebook_ns20191017.pdf": "d649810800d9f88580d97d382bd07bae377be2d44527541f80fd00dfbcfcc660"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20191024",
+      "date": "2019-10-24",
+      "rows": 6245,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191024/ns20191024.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 50,
+        "2": 29,
+        "999": 22
+      },
+      "published_n": 6210,
+      "banner_page": 432,
+      "codebook_page": 202,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191024/ns20191024.dta": "b7cdf98ec736511daed9e4e6e66b35f674003292fdbe33279523915f64918e52",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191024/bannerbook_ns20191024.pdf": "6b1292d31bdf8ccafd5382371b043773f46a05f6fa5f066766a2fc539bcf43be",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191024/codebook_ns20191024.pdf": "0a4e2c6567b7d278d6f9d10ed08b8a89cce2384a30fb792f776e834176bbaa5f"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20191031",
+      "date": "2019-10-31",
+      "rows": 6173,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191031/ns20191031.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 28,
+        "999": 21
+      },
+      "published_n": 6131,
+      "banner_page": 432,
+      "codebook_page": 202,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191031/ns20191031.dta": "071dcff9711bea4cb6ca81f24fce4197582d886671c1278758eb1a9b2a375b62",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191031/bannerbook_ns20191031.pdf": "f938ed98f8121c1fd39c2039b1764ec9d211e08715c5520c22f24a714ad8caf2",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191031/codebook_ns20191031.pdf": "e37b70e906a92e22617d6ac6f96ecc4b401cfb64a944d70b47ef7dba709139c0"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20191107",
+      "date": "2019-11-07",
+      "rows": 6215,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191107/ns20191107.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 50,
+        "2": 29,
+        "999": 20
+      },
+      "published_n": 6176,
+      "banner_page": 436,
+      "codebook_page": 204,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191107/ns20191107.dta": "247007c7b4365bf59b2ddf4e99ba8c17a2bef79c1504e2060e65f3f3b63cba44",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191107/bannerbook_ns20191107.pdf": "80b6509c954d10575a4787165f7425253e3bd5cbbc2e8754f96191fee5ab260a",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191107/codebook_ns20191107.pdf": "73ae02e46d9b26740c2d0469f8a5d64a9fdd06f11f27b261cefa0deb47e971f8"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20191114",
+      "date": "2019-11-14",
+      "rows": 6307,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191114/ns20191114.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 50,
+        "2": 29,
+        "999": 21
+      },
+      "published_n": 6270,
+      "banner_page": 436,
+      "codebook_page": 204,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191114/ns20191114.dta": "2b6268efabc1bda30d00b32fd53cc37d9ac44dffecf19251d7e0ad873dfdeb00",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191114/bannerbook_ns20191114.pdf": "34948e2fa41cd77911556f48dadf70b0caf4eb5dd596d70b1947f26c84b92c37",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191114/codebook_ns20191114.pdf": "a18dab159721816c97c099e43592a65a473c57bc89636b649175779628a6c310"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20191121",
+      "date": "2019-11-21",
+      "rows": 6138,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191121/ns20191121.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 50,
+        "2": 29,
+        "999": 21
+      },
+      "published_n": 6098,
+      "banner_page": 436,
+      "codebook_page": 204,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191121/ns20191121.dta": "dab1ac168ed8aa1258821b94889a5a1613ce691a8afc9ebed1e43c81ea334cc0",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191121/bannerbook_ns20191121.pdf": "f6ae455160ea41e399d7d8a249aec5327838ede329456dc61448a000cacac54b",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191121/codebook_ns20191121.pdf": "a1337a443a65bc94761949dc1e50407278e9e0e673931f8f0e11ded2aef0dd0f"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20191128",
+      "date": "2019-11-28",
+      "rows": 6144,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191128/ns20191128.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 28,
+        "999": 21
+      },
+      "published_n": 6103,
+      "banner_page": 436,
+      "codebook_page": 204,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191128/ns20191128.dta": "db70db5e15cffca2ebb1e4ca6c5077709679f0189227457b92dd20838a5fa4d6",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191128/bannerbook_ns20191128.pdf": "7200d795573240e62db7975548eebe924700f8d2d0996d4a98765cd7dc0b9f68",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191128/codebook_ns20191128.pdf": "3a8af34e43e5ae4c3d6f9f121e26d2862192a8b284a6be2ea17b95ecab9a08c8"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20191205",
+      "date": "2019-12-05",
+      "rows": 6225,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191205/ns20191205.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 29,
+        "999": 20
+      },
+      "published_n": 6184,
+      "banner_page": 424,
+      "codebook_page": 197,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191205/ns20191205.dta": "f45134709672f1b54a134e462b3b145da1acd9a7e8d3cf6945e500155f0016d3",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191205/bannerbook_ns20191205.pdf": "775933a93c12c8b43573a7e8c051fd077cc98ea48dac4c22a625952b7acd9c75",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191205/codebook_ns20191205.pdf": "54913ffcf4960efd41579637bb3aa5b20909093041e072199f26e02c4c9af425"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20191212",
+      "date": "2019-12-12",
+      "rows": 6267,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191212/ns20191212.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 28,
+        "999": 21
+      },
+      "published_n": 6216,
+      "banner_page": 428,
+      "codebook_page": 199,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191212/ns20191212.dta": "ea787767cc6a570c097c3ef11b428f9cdede2db5ad5076f3e3c81effcdfc92f5",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191212/bannerbook_ns20191212.pdf": "887ec6d0ed4632cabdf974056ffbe18a808bc656b7bebf31f0407c9d88c19664",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191212/codebook_ns20191212.pdf": "c84cb6f44adbef53700c61918ad07088d230f2b94fc23a1d8290641e6bba4c4b"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20191219",
+      "date": "2019-12-19",
+      "rows": 6105,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191219/ns20191219.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 50,
+        "2": 29,
+        "999": 21
+      },
+      "published_n": 6070,
+      "banner_page": 428,
+      "codebook_page": 199,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191219/ns20191219.dta": "31e584dc2aff8c82779f57f85fb6bbe564edcbe2557a3f776a200d9005260d30",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191219/bannerbook_ns20191219.pdf": "96383fcc534cd418d0b460077b351b8a452b23031d7759fe354faeeac4881af9",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191219/codebook_ns20191219.pdf": "eda83fe71c95d7017da071c42804e1701c1aa0482760aeb51bbf26ae614e3134"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20191226",
+      "date": "2019-12-26",
+      "rows": 7998,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191226/ns20191226.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 28,
+        "999": 20
+      },
+      "published_n": 7942,
+      "banner_page": 428,
+      "codebook_page": 199,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191226/ns20191226.dta": "a5cc6e7ba6ae963b432f36320f189cd4c90170f212f353a0c150befeadc18256",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191226/bannerbook_ns20191226.pdf": "cdaf3394d16bd21fb1340e2bff4e4eacba07474d3947b44dd15ff94f19586e9b",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_1_v20210301/ns20191226/codebook_ns20191226.pdf": "33104405953a2593765a6bd4a51e5828bb560e6fba2573300b37edb748d8003e"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200102",
+      "date": "2020-01-02",
+      "rows": 6018,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200102/ns20200102.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 50,
+        "2": 30,
+        "999": 20
+      },
+      "published_n": 5981,
+      "banner_page": 428,
+      "codebook_page": 199,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200102/ns20200102.dta": "c390392d744e37b68e1a955993736744ca98edd03958bb043047799ba08f3b75",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200102/bannerbook_ns20200102.pdf": "391dac5ed073fbe804a1de78f464e65483777ec4cb12f86f70b58cd97d7e883e",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200102/codebook_ns20200102.pdf": "86437edc6e229592f235dc2a2c025225d7ed10e786ac454d2c412a333f778406"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200109",
+      "date": "2020-01-09",
+      "rows": 5916,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200109/ns20200109.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 52,
+        "2": 28,
+        "999": 19
+      },
+      "published_n": 5879,
+      "banner_page": 428,
+      "codebook_page": 199,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200109/ns20200109.dta": "368942b2e32054c546f44750c09afbdee1f33f765d397a15a95949938b47be97",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200109/bannerbook_ns20200109.pdf": "2cef531c3071a297a35ac43a2816e294086b37aec73cbd0a81908900e1ca7c1d",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200109/codebook_ns20200109.pdf": "1480550da8482aa530f5bd5b8fab2af8ad07bb4601eb3dc6795abb5e387a485f"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200116",
+      "date": "2020-01-16",
+      "rows": 6175,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200116/ns20200116.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 27,
+        "999": 22
+      },
+      "published_n": 6136,
+      "banner_page": 430,
+      "codebook_page": 199,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200116/ns20200116.dta": "53407953e3aa5b4dcfc64d99455393550b714b7ea423e134a5fb2afb780cea51",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200116/bannerbook_ns20200116.pdf": "11a9668166cd5fbf2f1b5e37959d92441b62ed6e59f32cf2b258e46d36b77c1e",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200116/codebook_ns20200116.pdf": "a3a6025714a8c316db5bae888f38a842663d7f2abe0f43cf9d1440c15a16de84"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200123",
+      "date": "2020-01-23",
+      "rows": 6031,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200123/ns20200123.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 52,
+        "2": 28,
+        "999": 20
+      },
+      "published_n": 6003,
+      "banner_page": 431,
+      "codebook_page": 200,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200123/ns20200123.dta": "0bc9149f44583abb1497a95337d4bece0c3fe97e9bc6493007038abb663adbf8",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200123/bannerbook_ns20200123.pdf": "2800df6ce57979a520cc6a25ebde68fd1f7c02bdc2939f579de7ad7e5240a1f6",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200123/codebook_ns20200123.pdf": "51f135fa5a0f45f2a4def121d34d944ca867215f50d9949aed9a3b4c797d004b"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200130",
+      "date": "2020-01-30",
+      "rows": 6020,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200130/ns20200130.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 53,
+        "2": 28,
+        "999": 19
+      },
+      "published_n": 5972,
+      "banner_page": 430,
+      "codebook_page": 200,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200130/ns20200130.dta": "d3e64bca08bf7a565e77e4e6b47232ddc688dccf3ef4cc6b1d4d318806474509",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200130/bannerbook_ns20200130.pdf": "842713b91d7e76a7cba0802c726de445a2f7e2f849139a98bebb6e94afe53ca1",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200130/codebook_ns20200130.pdf": "61def1275c83d642ad492f108f3b2810437bd05f33b7ac42fb9f8379a2355727"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200206",
+      "date": "2020-02-06",
+      "rows": 6172,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200206/ns20200206.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 28,
+        "999": 21
+      },
+      "published_n": 6133,
+      "banner_page": 430,
+      "codebook_page": 200,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200206/ns20200206.dta": "1ff8a4dc6b2f5d353c31211c441103fe7ab874ebc22537f046d033c26461cc9b",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200206/bannerbook_ns20200206.pdf": "a4b47765c1077a659b2d5ff39bc9e8f59a2341c3cbb928881686e8c44fb7d7f7",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200206/codebook_ns20200206.pdf": "85a987f1002abce11fe9091fcad533a5171190cc21824ca6ac803f1fd9941eb3"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200213",
+      "date": "2020-02-13",
+      "rows": 5869,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200213/ns20200213.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 52,
+        "2": 29,
+        "999": 19
+      },
+      "published_n": 5839,
+      "banner_page": 434,
+      "codebook_page": 202,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200213/ns20200213.dta": "e0dd9605fd97874222a63a7422554b2d8342a94c87606defabf0160b013cf2c6",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200213/bannerbook_ns20200213.pdf": "4c2ed2540fe1acee31754e63a73c0ef4aa1bb8db01ab4ddcabd638731789370a",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200213/codebook_ns20200213.pdf": "2742eb1f1c18c1e0752a2818b3bb973c4288c8f19b6811ae9bed0a83a5a19009"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200220",
+      "date": "2020-02-20",
+      "rows": 6036,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200220/ns20200220.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 30,
+        "999": 19
+      },
+      "published_n": 5999,
+      "banner_page": 433,
+      "codebook_page": 202,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200220/ns20200220.dta": "8110c3467ca5d0ad14fdb0529bcdf581ffac08f312f10f8c6ed08024ab2717ec",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200220/bannerbook_ns20200220.pdf": "d6aa0770ab2d95c86919abf3a7e2a7d2baba089608b39eece70ba57618ab2f84",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200220/codebook_ns20200220.pdf": "4a5861ba0ba99c6ef89054e6bb4bc1bc9b0f95e50b3c8a890b834209f028ba21"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200227",
+      "date": "2020-02-27",
+      "rows": 6000,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200227/ns20200227.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 49,
+        "2": 31,
+        "999": 20
+      },
+      "published_n": 5970,
+      "banner_page": 435,
+      "codebook_page": 202,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200227/ns20200227.dta": "c4a5cfad37da805361ccf6c92236789531f11c2739c5d9766bef0c9cd80ce356",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200227/bannerbook_ns20200227.pdf": "daf45be01dcbb3f87e2d70ad86a0055a98d6a28b04c2aef5f997c5536fca6247",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200227/codebook_ns20200227.pdf": "a29960b355f1bb149bd4f088f7f5dbe5a0b811223e6040cef1eb55acf87d3093"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200305",
+      "date": "2020-03-05",
+      "rows": 5663,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200305/ns20200305.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 50,
+        "2": 30,
+        "999": 20
+      },
+      "published_n": 5628,
+      "banner_page": 418,
+      "codebook_page": 196,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200305/ns20200305.dta": "ddeede5aac12d9c98b9a7378d321245ae3c8147b4aed63b915d702d039dc175f",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200305/bannerbook_ns20200305.pdf": "5a29f2ac09e15dbc99cadfa058ff6cc9d15e6dd2ef4c914b26c7311949e81a6a",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200305/codebook_ns20200305.pdf": "a629ff4f043a2c03c7ff23a4c0e7458d0929c52dc92e731854107de22dfc0ab9"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200312",
+      "date": "2020-03-12",
+      "rows": 5634,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200312/ns20200312.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 50,
+        "2": 28,
+        "999": 22
+      },
+      "published_n": 5600,
+      "banner_page": 411,
+      "codebook_page": 194,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200312/ns20200312.dta": "933b22db506e985128ebedfb124463c58991e6bf303cc444a5f8864ec829f835",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200312/bannerbook_ns20200312.pdf": "bde1f752f6e071086f6b9db383ca7d7a3644d0413bbf25ad6285de5600f30d46",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200312/codebook_ns20200312.pdf": "b7acf79588698b40910e1a66e694f900078724b0ca3b314f76c1aecf75c2b363"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200319",
+      "date": "2020-03-19",
+      "rows": 6168,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200319/ns20200319.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 29,
+        "999": 20
+      },
+      "published_n": 6131,
+      "banner_page": 265,
+      "codebook_page": 143,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200319/ns20200319.dta": "e69d05cad3386332c552ae7e4036174aee06cbad59526d9db438c97607bfa48c",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200319/bannerbook_ns20200319.pdf": "ad16f5eefbfa687ed0fcf9c328bb3dd85ec376d016caae8bc477ed0084d5bb12",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200319/codebook_ns20200319.pdf": "3ea8f858d5396b7ab219c6674ed837def81788236035ff2175cb767f6f55e340"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200326",
+      "date": "2020-03-26",
+      "rows": 6143,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200326/ns20200326.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 53,
+        "2": 29,
+        "999": 18
+      },
+      "published_n": 6120,
+      "banner_page": 274,
+      "codebook_page": 148,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200326/ns20200326.dta": "234162407df636159cd36bb0582b689182801d70c578c2559003d7c179b10d14",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200326/bannerbook_ns20200326.pdf": "c970d958252c0f4ed665d47ffae96552948da0ebee29c6cd770cd2b9b4d98ce4",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200326/codebook_ns20200326.pdf": "e4af296156e2e705f6d357fca2fcb06c913b4d9352a27ee7486fb1644c64c9fc"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200402",
+      "date": "2020-04-02",
+      "rows": 5980,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200402/ns20200402.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 28,
+        "999": 20
+      },
+      "published_n": 5938,
+      "banner_page": 422,
+      "codebook_page": 198,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200402/ns20200402.dta": "ccf82b7909a68edff3f2792f318b714392b0c75a235b6c99b0e0434e151a038a",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200402/bannerbook_ns20200402.pdf": "51e533febfdbc033223f4fb523d2e5b7544f558507813ad35e9cee93f68b7b9c",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200402/codebook_ns20200402.pdf": "48b20f71b2a6f80e7337eb5035c2d46be6bbe9a6664e5a9bb5a7060fb94263b9"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200409",
+      "date": "2020-04-09",
+      "rows": 5811,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200409/ns20200409.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 53,
+        "2": 28,
+        "999": 20
+      },
+      "published_n": 5777,
+      "banner_page": 419,
+      "codebook_page": 196,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200409/ns20200409.dta": "4f12c3d1b4ee947fb1bedb8385f22bc2bc61acebde457f999f1635e862f9338d",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200409/bannerbook_ns20200409.pdf": "0e5c8da9fa53530d788b55f52cd657ee5d3fef369de704ea5b24f6f7c3bd0e19",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200409/codebook_ns20200409.pdf": "45277e9f3e0889b9a318328e19c2d9baebb8d90337363c7bbddd250d6e6bdd77"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200416",
+      "date": "2020-04-16",
+      "rows": 5668,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200416/ns20200416.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 29,
+        "999": 21
+      },
+      "published_n": 5636,
+      "banner_page": 422,
+      "codebook_page": 196,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200416/ns20200416.dta": "755a580028a077f5d257822c4e873b07c2e5a2ef910a1abc8ea75cb845d9e576",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200416/bannerbook_ns20200416.pdf": "4710a651463549517c5f8305a5ed2da9c347b19d36d969b83979a429eb2f3fac",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200416/codebook_ns20200416.pdf": "db6bf8ff963410f2a4a78c146777fd288372bf084b8801939d8209a988588909"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200423",
+      "date": "2020-04-23",
+      "rows": 6350,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200423/ns20200423.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 29,
+        "999": 20
+      },
+      "published_n": 6312,
+      "banner_page": 422,
+      "codebook_page": 196,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200423/ns20200423.dta": "24a21eb962363df7ef0ac9398c0a91eaf6e15c56d0bb46744e0106547cadd4c3",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200423/bannerbook_ns20200423.pdf": "0ee0d7c9f895fe23bccd932224128fd5ca778c04cad06b143c97f4658a78400f",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200423/codebook_ns20200423.pdf": "b19a8bfb96071ca28fcdc91cb05a65b6fd27e14dd1f0cfc4e343dcc50722c036"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200430",
+      "date": "2020-04-30",
+      "rows": 6156,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200430/ns20200430.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 50,
+        "2": 28,
+        "999": 22
+      },
+      "published_n": 6116,
+      "banner_page": 404,
+      "codebook_page": 188,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200430/ns20200430.dta": "9162b9e6b115c04de9cfa9d76d9bc57dd2c655352a1b1e6bd0f3dd8d49d2104c",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200430/bannerbook_ns20200430.pdf": "a0b6b627c59d86479809f76c685ea187c868bb393e1e5e953c1aa719b0875076",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200430/codebook_ns20200430.pdf": "3d4815c5a1a39d32e23b3d7bf008424ddaf2d3b7941b62a77642ba03c03e9502"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200507",
+      "date": "2020-05-07",
+      "rows": 4398,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200507/ns20200507.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 28,
+        "999": 21
+      },
+      "published_n": 4355,
+      "banner_page": 404,
+      "codebook_page": 188,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200507/ns20200507.dta": "7c8d56b40d46b396770b13b949a286ad85c4c86f25fcaf9bf3f53f1985b71b84",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200507/bannerbook_ns20200507.pdf": "42ee8113d62f999f417aa8703b122303724e86a38cf73b69ed5b91983858169f",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200507/codebook_ns20200507.pdf": "56443d5cba4f56f8b43409fadba7dcb58dd2487a6fec77860336c72d48b046cd"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200514",
+      "date": "2020-05-14",
+      "rows": 6292,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200514/ns20200514.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 29,
+        "999": 20
+      },
+      "published_n": 6249,
+      "banner_page": 404,
+      "codebook_page": 188,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200514/ns20200514.dta": "e6a1d15911d47ad2be6e334ba522f286b2b086f32a766b0078fb06ec0d9756e5",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200514/bannerbook_ns20200514.pdf": "1b2e679cd7bf630bb23ffe373c2cfcca8bcf5ccf0bdf669bdb12065476340465",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200514/codebook_ns20200514.pdf": "d0c103283b83b9012ad45bfab8c5dda623f4640f5c05edaa826a3901ea4d4589"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200521",
+      "date": "2020-05-21",
+      "rows": 6134,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200521/ns20200521.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 53,
+        "2": 27,
+        "999": 20
+      },
+      "published_n": 6089,
+      "banner_page": 403,
+      "codebook_page": 188,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200521/ns20200521.dta": "7d7de0658e12adfaee4be3ba6f78d9a8e791f9702f3b0a8e40235e1a3a8863aa",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200521/bannerbook_ns20200521.pdf": "33050174d4bbb12ac384b54311eedeec7400ed7fdff8168538d86ded30d42c2e",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200521/codebook_ns20200521.pdf": "c681ac884086498f21ba5a0ee99853041afafc943d27ce61a6a46f98ea096bec"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200528",
+      "date": "2020-05-28",
+      "rows": 5989,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200528/ns20200528.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 52,
+        "2": 27,
+        "999": 21
+      },
+      "published_n": 5948,
+      "banner_page": 403,
+      "codebook_page": 188,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200528/ns20200528.dta": "b0f5fca49c63909f7bea7a901c2fe5f89a410a5ed44fde01cc2490a2d8127e27",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200528/bannerbook_ns20200528.pdf": "6b39c8ce07e9f926505f36f4608a5b8299f40cc607a2ccd3e7f4ebecb8a1db22",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200528/codebook_ns20200528.pdf": "e9611d3665116598760bdb58d46b2ab4655be6634c5096a24f64a4786bd94c6f"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200604",
+      "date": "2020-06-04",
+      "rows": 6224,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200604/ns20200604.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 28,
+        "999": 21
+      },
+      "published_n": 6188,
+      "banner_page": 397,
+      "codebook_page": 185,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200604/ns20200604.dta": "6988fc7f7294ab02674e223e004bbfcec46afb91f877d52505ea3d61936dd397",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200604/bannerbook_ns20200604.pdf": "e6988c5500adc7a689d44c35a9d37a292c4b79ed0ad9256f38b74fca04e89a2c",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200604/codebook_ns20200604.pdf": "2a3cf4ddce3cfbcfdb18425d54f22ec99ae68a8bf22d18d658ab200fc448a6a5"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200611",
+      "date": "2020-06-11",
+      "rows": 6560,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200611/ns20200611.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 53,
+        "2": 27,
+        "999": 20
+      },
+      "published_n": 6522,
+      "banner_page": 397,
+      "codebook_page": 185,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200611/ns20200611.dta": "73c3013f2f942d322ee7f4ca3656362fbf2a20568abaa7b9a9a9d245eff46cb8",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200611/bannerbook_ns20200611.pdf": "7ce3cee7c31bd2086bfea0f34369fab574cca49289974c3d446a4bac1d983e5a",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200611/codebook_ns20200611.pdf": "35f416b267fed76a9ae990e864f22d502e257262177d58042b25d84c20a11a15"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200618",
+      "date": "2020-06-18",
+      "rows": 6165,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200618/ns20200618.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 28,
+        "999": 21
+      },
+      "published_n": 6118,
+      "banner_page": 401,
+      "codebook_page": 187,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200618/ns20200618.dta": "5950700fabb5e397c90ace85778e18ec2e4ded69121e57732d962f3fc04396c8",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200618/bannerbook_ns20200618.pdf": "2ebe7c96fd7b8a4303949ad953ab40f0a6040e8c1ef47f270432297c62e3facb",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200618/codebook_ns20200618.pdf": "131563e78de2a574d94a7836f1d23947d63c759276d8da1db0e4ff89e51d57d0"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200625",
+      "date": "2020-06-25",
+      "rows": 6046,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200625/ns20200625.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 53,
+        "2": 27,
+        "999": 20
+      },
+      "published_n": 6003,
+      "banner_page": 400,
+      "codebook_page": 187,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200625/ns20200625.dta": "c082e22d406306a43f89bbcbe612699d18ab9ef8f83b03598cc473440ced8368",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200625/bannerbook_ns20200625.pdf": "6c94eb3d799e908dcb948cc103e1bfdf755e73b1a0a0830714aec8c66e8d43ed",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_2_v20210301/ns20200625/codebook_ns20200625.pdf": "2ddc359ba3b1b42594597871c928bc08c39023fe901e4e792639a9b5717aec83"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200702",
+      "date": "2020-07-02",
+      "rows": 5629,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200702/ns20200702.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 53,
+        "2": 25,
+        "999": 22
+      },
+      "published_n": 5589,
+      "banner_page": 403,
+      "codebook_page": 188,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200702/ns20200702.dta": "08be9c95ae1c791cddc9639a793588159b7b3719bffca4bf1cb6b56070a46d0e",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200702/bannerbook_ns20200702.pdf": "b958557e75521a52a1038535d2a557c10e290bbbd234c229b2e380d728c802c8",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200702/codebook_ns20200702.pdf": "9132e638e3ad8803a694811d88cdcb7a2cb062baac2e0a115758111f4b2b25b2"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200709",
+      "date": "2020-07-09",
+      "rows": 5876,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200709/ns20200709.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 52,
+        "2": 28,
+        "999": 21
+      },
+      "published_n": 5833,
+      "banner_page": 408,
+      "codebook_page": 188,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200709/ns20200709.dta": "7c32a45d36676c262af54602997462e906df0ee174090d115ad10fac9bb5cda6",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200709/bannerbook_ns20200709.pdf": "8a652c33e99e7bd2d00afeddd4b89298ae69484b9d40b1631bc364f5b5f3c538",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200709/codebook_ns20200709.pdf": "e59eac4cb3ad31cd186fe27613b3d6a8d60b1247de2a11e2482bf66e1eb9377e"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200716",
+      "date": "2020-07-16",
+      "rows": 5502,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200716/ns20200716.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 53,
+        "2": 27,
+        "999": 20
+      },
+      "published_n": 5469,
+      "banner_page": 412,
+      "codebook_page": 190,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200716/ns20200716.dta": "7215029d214e55adaebff2a3f3ab4bd39ed3f133b241d1645ea76e32fec4173f",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200716/bannerbook_ns20200716.pdf": "da4142e970ae0a44eb2c3b057ee04b482689a57fa7808a6de3a676fc010226eb",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200716/codebook_ns20200716.pdf": "299d472801955268be36deda248a2020494c71318030de972010ae679fcb8952"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200723",
+      "date": "2020-07-23",
+      "rows": 6166,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200723/ns20200723.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 54,
+        "2": 27,
+        "999": 19
+      },
+      "published_n": 6125,
+      "banner_page": 412,
+      "codebook_page": 190,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200723/ns20200723.dta": "0c0a6537f7ac0c2cda84b20213f4c56e14e4d265a48b88d0c3cfbea1d675650f",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200723/bannerbook_ns20200723.pdf": "c4bd59e841822346aef92a2aa1f5b3bd486b63fa34bdbf84958cf2f0b8878822",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200723/codebook_ns20200723.pdf": "08f6f1ee60eecf11b74c6ee6dfac963541e7ee4dad91d2ca86badac4fc9ac214"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200730",
+      "date": "2020-07-30",
+      "rows": 5146,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200730/ns20200730.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 53,
+        "2": 27,
+        "999": 20
+      },
+      "published_n": 5104,
+      "banner_page": 410,
+      "codebook_page": 191,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200730/ns20200730.dta": "1e1ed70267a613dff2d6f3a97d09e3ee72e4bb0f798de19312def3dae94ab21c",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200730/bannerbook_ns20200730.pdf": "39bd4896af6b180435516b8f0d3ebd08f32a298e7a21f97d9191b9ec1bfe10fa",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200730/codebook_ns20200730.pdf": "53c067cdd8dc88f816cd263c6143a4316bda2133425ab61157ca67db38c3c970"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200806",
+      "date": "2020-08-06",
+      "rows": 6002,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200806/ns20200806.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 28,
+        "999": 21
+      },
+      "published_n": 5951,
+      "banner_page": 408,
+      "codebook_page": 191,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200806/ns20200806.dta": "2b7d41b8b0f371b0b774faa32fba767560eee056ffe08899cd1495fc4603b0cc",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200806/bannerbook_ns20200806.pdf": "003a67a2d76a9bb69dc091c19f12e213b3af65ad3e5c3c96abe148d6ae07e668",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200806/codebook_ns20200806.pdf": "3858a8c1adab817c898e8dee9d8dac48530d8f82f32fe79080a70f52742a2e69"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200813",
+      "date": "2020-08-13",
+      "rows": 5849,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200813/ns20200813.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 28,
+        "999": 21
+      },
+      "published_n": 5802,
+      "banner_page": 408,
+      "codebook_page": 190,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200813/ns20200813.dta": "0b89375724da8c6d146a051ed4c6be4897b7b311dd6105265e43540935da54e6",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200813/bannerbook_ns20200813.pdf": "cf8757e471f508fdeef55f4a21aba2aaf425ec8619ea0bf37a08d051f81e87a7",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200813/codebook_ns20200813.pdf": "96f1c92c08a4559f4cbd43e563566984a5079da3a5285753622f45095bac0166"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200820",
+      "date": "2020-08-20",
+      "rows": 5893,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200820/ns20200820.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 28,
+        "999": 21
+      },
+      "published_n": 5847,
+      "banner_page": 408,
+      "codebook_page": 190,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200820/ns20200820.dta": "cac20a126e8bacbe06fe21ac2497aa0a46e0da66ddac21e48ed553852f4544e9",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200820/bannerbook_ns20200820.pdf": "6586f3504019f834af3476483f8dbdaf47d760e95fa0b415b030741c19b07aab",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200820/codebook_ns20200820.pdf": "2b92a94260b05affbd5993765430de92b0499f6915218b5323527a3856fca9e7"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200827",
+      "date": "2020-08-27",
+      "rows": 5972,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200827/ns20200827.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 29,
+        "999": 20
+      },
+      "published_n": 5928,
+      "banner_page": 413,
+      "codebook_page": 190,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200827/ns20200827.dta": "9d4a553d725a78eedb19e88c5d5c3deb66b005e2d18369ee3cf142a4f8e5f491",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200827/bannerbook_ns20200827.pdf": "2e4328d11791700749c568d4857250ec725a4b4c0788707b2aaf7e997bc481bb",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200827/codebook_ns20200827.pdf": "8dfb9e35f74a095978274581c9a4a261cc4d925a196659c19436ac450ca29b00"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200903",
+      "date": "2020-09-03",
+      "rows": 5690,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200903/ns20200903.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 29,
+        "999": 20
+      },
+      "published_n": 5644,
+      "banner_page": 354,
+      "codebook_page": 171,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200903/ns20200903.dta": "82460da5de9f85a2bbe6d6a7dc8ce4f96dfb733c5d33330977f43051c87b11c4",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200903/bannerbook_ns20200903.pdf": "3a001df7396c337b8e69384940fa0caa70cbeba8986a669d54685bb5080d90e0",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200903/codebook_ns20200903.pdf": "674b5860bf0505ce50dc30b0e8ec879264c6c2c6b7b988dff02f8d82df459260"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200910",
+      "date": "2020-09-10",
+      "rows": 6118,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200910/ns20200910.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 28,
+        "999": 21
+      },
+      "published_n": 6068,
+      "banner_page": 356,
+      "codebook_page": 171,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200910/ns20200910.dta": "d54b11c58544bb386b17331c541f0fbe292733e4019f2788d1939e366223fcf8",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200910/bannerbook_ns20200910.pdf": "8de464a709a9e4c78d84cc6517391c6f33acfd80a12e252035c7f7c4fa22fe8c",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200910/codebook_ns20200910.pdf": "0f31b191115e840f4329556aa4d44b595c00c8b4b65a1957c5cae495732bac59"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200917",
+      "date": "2020-09-17",
+      "rows": 5614,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200917/ns20200917.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 53,
+        "2": 27,
+        "999": 20
+      },
+      "published_n": 5584,
+      "banner_page": 347,
+      "codebook_page": 170,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200917/ns20200917.dta": "661008bdab37d24937257e382d4c9464eb89717c738c5d1960c4431c2ee8817c",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200917/bannerbook_ns20200917.pdf": "6edce23e11d975c0ec65ab7b3335eacc18e73b3c0205ff93bea1ca01230fb585",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200917/codebook_ns20200917.pdf": "8222e614dc2c558df5975afd42fea9907e5a26b5f04b15d8b3f6bc0bea79dd99"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20200924",
+      "date": "2020-09-24",
+      "rows": 5601,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200924/ns20200924.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 52,
+        "2": 28,
+        "999": 20
+      },
+      "published_n": 5553,
+      "banner_page": 351,
+      "codebook_page": 172,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200924/ns20200924.dta": "31357cf41d6ccc2def5d236122d2f7d233fe0caa4f24f76d99201700f4eedfbb",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200924/bannerbook_ns20200924.pdf": "2af855c885cc9d0a90702041fd000e70ba3c1decac8518e170a96bad9ef7d5ad",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20200924/codebook_ns20200924.pdf": "e8985c6eeea4ea7150fff259e2c55192ed08a8190b61ea788bef52d09052f588"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20201001",
+      "date": "2020-10-01",
+      "rows": 5890,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201001/ns20201001.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 50,
+        "2": 28,
+        "999": 21
+      },
+      "published_n": 5849,
+      "banner_page": 351,
+      "codebook_page": 172,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201001/ns20201001.dta": "2a9a4b26c6628f63ff95f9ca9bf35006cc553d641e3c3c773086683eccad3edd",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201001/bannerbook_ns20201001.pdf": "0a509c4d8fac11ff3cb58519652c92c40317574c22084eb770fb2b67706ac060",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201001/codebook_ns20201001.pdf": "23c936b409bbb43848f8cfec6700ebd83bb1dc5f95ab5e5d4ae54f3f3bdf5f10"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20201008",
+      "date": "2020-10-08",
+      "rows": 5805,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201008/ns20201008.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 29,
+        "999": 20
+      },
+      "published_n": 5762,
+      "banner_page": 352,
+      "codebook_page": 173,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201008/ns20201008.dta": "3120192d234e81a82658366801a678e952ac1430bb2036cc29131f27d67e84be",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201008/bannerbook_ns20201008.pdf": "d1a94ad22670b1a625aeb7fb3c98d8614fe5fcf3e9bcfd3cf63443aa50df58de",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201008/codebook_ns20201008.pdf": "15fc3828aad1c66bd19bbb124029387a5035b49d4538f5f3eb22d2c76b3b8d5c"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20201015",
+      "date": "2020-10-15",
+      "rows": 5597,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201015/ns20201015.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 53,
+        "2": 28,
+        "999": 19
+      },
+      "published_n": 5565,
+      "banner_page": 352,
+      "codebook_page": 173,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201015/ns20201015.dta": "690995b9a53f9061c86d45c193d0e76313f28016574729bed195908bbf896075",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201015/bannerbook_ns20201015.pdf": "4bdb916ae3ed331b6c5b301eb73c214dc4b33de29e8706b5d04fe4de6a460ec1",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201015/codebook_ns20201015.pdf": "a75c2b52e117e777b73c0f6245374e402fead64ea04f2bb9948ce5d07196a0b4"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20201022",
+      "date": "2020-10-22",
+      "rows": 6516,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201022/ns20201022.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 52,
+        "2": 28,
+        "999": 20
+      },
+      "published_n": 6469,
+      "banner_page": 361,
+      "codebook_page": 173,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201022/ns20201022.dta": "bfa834e391178b9f795521546e951b452127c24c71964ee523fcf3a7f064d1e5",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201022/bannerbook_ns20201022.pdf": "04c2d0965e5f084b54007773071eb30a61deb7ab05a260e837f9e2f2b8a9eaae",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201022/codebook_ns20201022.pdf": "84796ab1448930e3bc724d2e24e872a4139c9fab0bd321a6f075be8977e755db"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20201029",
+      "date": "2020-10-29",
+      "rows": 5741,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201029/ns20201029.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 52,
+        "2": 28,
+        "999": 20
+      },
+      "published_n": 5699,
+      "banner_page": 365,
+      "codebook_page": 173,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201029/ns20201029.dta": "9fd3d4642f9d72f7619d7c3959dc7ee595a6126275512727786761a12fde7131",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201029/bannerbook_ns20201029.pdf": "78738d945e79c60ebf101c1e4d0a11876256b739b69a4cbe88df9362c4298be9",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201029/codebook_ns20201029.pdf": "0102789fcabe55a4590cee77f50ac5a29dafbd4148fb429901cb2f59d0b44928"
+      },
+      "validation_weight": "weight"
+    },
+    {
+      "wave": "ns20201105",
+      "date": "2020-11-05",
+      "rows": 5960,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201105/ns20201105.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 30,
+        "999": 19
+      },
+      "published_n": 5886,
+      "banner_page": 329,
+      "codebook_page": 173,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201105/ns20201105.dta": "f8d0f5941c9ae2e141d50f335b23ef74ca5e8466be8ae55dd259c6edfa01a8d1",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201105/bannerbook_ns20201105.pdf": "3ae9d661f45cf9e4036cd3859bb4598260097f08d79dcb1b405b7f87389a355c",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201105/codebook_ns20201105.pdf": "acac3759a117c388c12dd7884c82feae6938c3bc06a963404cba51cd33bc7cff"
+      },
+      "validation_weight": "weight_2020"
+    },
+    {
+      "wave": "ns20201112",
+      "date": "2020-11-12",
+      "rows": 6271,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201112/ns20201112.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 49,
+        "2": 32,
+        "999": 19
+      },
+      "published_n": 6194,
+      "banner_page": 321,
+      "codebook_page": 173,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201112/ns20201112.dta": "13a404f2a279b0d322520c37701b423db7478ff9890a95819f4e072b53dbeec0",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201112/bannerbook_ns20201112.pdf": "860fe6c7b70899ffaeaa2071ea70ba1a22410fe818b421cc15b7a835567b1ffa",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201112/codebook_ns20201112.pdf": "6d2273daf492565b12c29d160776d3bde3a281fbe84868c9219305b309c39e5b"
+      },
+      "validation_weight": "weight_2020"
+    },
+    {
+      "wave": "ns20201119",
+      "date": "2020-11-19",
+      "rows": 5060,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201119/ns20201119.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 50,
+        "2": 31,
+        "999": 20
+      },
+      "published_n": 4989,
+      "banner_page": 324,
+      "codebook_page": 174,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201119/ns20201119.dta": "cadaffe327ea7f53460b5d0c063d6e206476f13198ae25ed33bfaf7d94227f8f",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201119/bannerbook_ns20201119.pdf": "0b39ef2d08d49f752b0e325461e62c09a235a6e8118bc89f73c92bfe444555ae",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201119/codebook_ns20201119.pdf": "2ea3103725f33676e58ed21ba6ad524373d69f53d64492e130df6f01c46cc3bb"
+      },
+      "validation_weight": "weight_2020"
+    },
+    {
+      "wave": "ns20201126",
+      "date": "2020-11-26",
+      "rows": 7220,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201126/ns20201126.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 50,
+        "2": 29,
+        "999": 20
+      },
+      "published_n": 7133,
+      "banner_page": 324,
+      "codebook_page": 174,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201126/ns20201126.dta": "2063768a9e9168c3f9c95953f367bf18f1ad7eec30c7a5db2da21973f9b91f0c",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201126/bannerbook_ns20201126.pdf": "87abf1afe3175fe1cf0ef46c86f183154a12845d9763f01d2869d385d19199d0",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201126/codebook_ns20201126.pdf": "2d7e012dc185cd38f334cc83b2a457ca26b6537e1d084d91ed65f0f319d53e8c"
+      },
+      "validation_weight": "weight_2020"
+    },
+    {
+      "wave": "ns20201203",
+      "date": "2020-12-03",
+      "rows": 5727,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201203/ns20201203.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 49,
+        "2": 32,
+        "999": 20
+      },
+      "published_n": 5664,
+      "banner_page": 324,
+      "codebook_page": 174,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201203/ns20201203.dta": "358e78a18afed4e192a73e185c843aac517a29c0f5fa7f8ec049ac7d3a4d67f5",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201203/bannerbook_ns20201203.pdf": "7ba76ae7f4b229502add4190acee155eca0f5543872085d1cc222dfbebe6111b",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201203/codebook_ns20201203.pdf": "5336a9a98801dae4402a8a2ba40d690a3573624fcf7378725ffda0d10b8d777a"
+      },
+      "validation_weight": "weight_2020"
+    },
+    {
+      "wave": "ns20201210",
+      "date": "2020-12-10",
+      "rows": 6417,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201210/ns20201210.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 51,
+        "2": 30,
+        "999": 19
+      },
+      "published_n": 6340,
+      "banner_page": 324,
+      "codebook_page": 174,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201210/ns20201210.dta": "c21954c4caccf14f5045234b92ef5e36727f953b918c26102d213e26a482226d",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201210/bannerbook_ns20201210.pdf": "2302f0af9855ebd8ff954878d8ad66f72f1f5018b4ec991bd8f274a8fca8fb97",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201210/codebook_ns20201210.pdf": "6dd239b224f15760c58d7924f7f928d550bc525e5aa940e55e1b0b46501153e9"
+      },
+      "validation_weight": "weight_2020"
+    },
+    {
+      "wave": "ns20201217",
+      "date": "2020-12-17",
+      "rows": 6427,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201217/ns20201217.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 48,
+        "2": 31,
+        "999": 21
+      },
+      "published_n": 6350,
+      "banner_page": 365,
+      "codebook_page": 174,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201217/ns20201217.dta": "1561f9ff2e9f3a3e69c299dc405aa240d4789a35e199e29a9a894c34a68ab120",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201217/bannerbook_ns20201217.pdf": "ec4a94eababfdc1126a08f7f8238bad7e8960f73ebf9822db7082005407e6841",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201217/codebook_ns20201217.pdf": "cf10b8b64369ecaf87265fa226ebe5948c2b0ccc5631edffe0b725d82e4af659"
+      },
+      "validation_weight": "weight_2020"
+    },
+    {
+      "wave": "ns20201224",
+      "date": "2020-12-24",
+      "rows": 6692,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201224/ns20201224.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 49,
+        "2": 31,
+        "999": 20
+      },
+      "published_n": 6614,
+      "banner_page": 365,
+      "codebook_page": 174,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201224/ns20201224.dta": "c7f2ffc64e88088928653a6ab50a4b59c4858920c4e317463075889c38911932",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201224/bannerbook_ns20201224.pdf": "d35c6d145f6f20e21d0f25d6b5696254495c7769293b99245f118ba971fc8508",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20201224/codebook_ns20201224.pdf": "6ae776b149af4407a19b7fb0461a61b91a4702df7bf61f55a4a889cff4e976b2"
+      },
+      "validation_weight": "weight_2020"
+    },
+    {
+      "wave": "ns20210112",
+      "date": "2021-01-12",
+      "rows": 4138,
+      "path": "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20210112/ns20210112.dta",
+      "expected_label": "Finally, what ab...Provide government-run health insurance to all Americans",
+      "expected_labels": {
+        "1": "Agree",
+        "2": "Disagree",
+        "999": "Not sure"
+      },
+      "published_percentages": {
+        "1": 46,
+        "2": 36,
+        "999": 18
+      },
+      "published_n": 4106,
+      "banner_page": 332,
+      "codebook_page": 173,
+      "files": {
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20210112/ns20210112.dta": "6d1d3475b20e62649c730903e13429645e57270c1c69136f1dbaef77bb455734",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20210112/bannerbook_ns20210112.pdf": "01fa10d52e0cfdfb4869c613473ed24a060305e37a4dd773dbabbedc16643d11",
+        "data/raw/nationscape/Nationscape-Weekly-Materials-DTA-2021Dec/phase_3_v20210301/ns20210112/codebook_ns20210112.pdf": "2a2f2dc13b4e3c82c80f03ad2c012911e6e9fd22c133551b08151e2ab33e0fef"
+      },
+      "validation_weight": "weight_2020"
+    }
+  ]
+}
