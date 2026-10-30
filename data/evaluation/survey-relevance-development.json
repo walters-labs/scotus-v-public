@@ -180,6 +180,60 @@
       ],
       "reason": "Enforcement of the Clean Water Act is directly relevant; firearm bans are not.",
       "review_phase": "wording reviewed before semantic ranking for this query"
+    },
+    {
+      "query": "taxes",
+      "corpus": "public",
+      "relevant": [],
+      "irrelevant": [
+        "VCF9046",
+        "VCF0894",
+        "VCF9049",
+        "VCF0887"
+      ],
+      "reason": "Spending/program questions do not directly measure tax policy.",
+      "review_phase": "Added after inspecting survey hybrid development results; not held out"
+    },
+    {
+      "query": "healthcare",
+      "corpus": "wvs",
+      "relevant": [],
+      "irrelevant": [
+        "F122",
+        "E037"
+      ],
+      "reason": "Euthanasia permissibility and general government responsibility do not directly measure healthcare provision.",
+      "review_phase": "Added after inspecting survey hybrid development results; not held out"
+    },
+    {
+      "query": "minimum wage",
+      "corpus": "public",
+      "relevant": [],
+      "irrelevant": [
+        "VCF0809"
+      ],
+      "reason": "Government responsibility for employment is not a minimum-wage policy question.",
+      "review_phase": "Added after inspecting survey hybrid development results; not held out"
+    },
+    {
+      "query": "contraception",
+      "corpus": "ces",
+      "relevant": [],
+      "irrelevant": [
+        "abortion_20weeks"
+      ],
+      "reason": "Abortion restrictions do not measure contraceptive access.",
+      "review_phase": "Added after inspecting survey hybrid development results; not held out"
+    },
+    {
+      "query": "contraception",
+      "corpus": "wvs",
+      "relevant": [],
+      "irrelevant": [
+        "F120"
+      ],
+      "reason": "Abortion permissibility is not contraceptive access.",
+      "review_phase": "Added after inspecting survey hybrid development results; not held out"
     }
   ],
   "limitations": [

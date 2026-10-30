@@ -1,7 +1,7 @@
 PYTHON ?= python3.12
 VENV ?= .venv
 PY = $(VENV)/bin/python
-ARTIFACT ?= artifacts/casesumm.sqlite
+ARTIFACT ?= artifacts/ces-2023-candidate.sqlite
 
 .PHONY: setup test demo build serve inspect
 setup:
@@ -47,9 +47,9 @@ gss:
 gss-pilot: gss
 	$(PY) -m scvpublic.gss --base-artifact $(ARTIFACT) --artifact artifacts/gss-pilot.sqlite
 
-HYBRID_ARTIFACT ?= artifacts/gss-pilot.sqlite
-HYBRID_BUNDLE ?= artifacts/semantic-full
-HYBRID_PORT ?= 8004
+HYBRID_ARTIFACT ?= $(ARTIFACT)
+HYBRID_BUNDLE ?= artifacts/semantic-surveys-v1
+HYBRID_PORT ?= 8012
 .PHONY: serve-hybrid
 serve-hybrid:
 	SCVPO_ARTIFACT=$(HYBRID_ARTIFACT) SCVPO_HYBRID=$(HYBRID_BUNDLE) OPENBLAS_NUM_THREADS=1 TOKENIZERS_PARALLELISM=false $(VENV)/bin/gunicorn --bind 127.0.0.1:$(HYBRID_PORT) --workers 1 --threads 2 --timeout 90 'scvpublic.web:create_app()'

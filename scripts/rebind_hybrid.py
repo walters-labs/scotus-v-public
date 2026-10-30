@@ -32,6 +32,11 @@ def rebind(old, new, bundle, output):
     for name, expected in manifest['files'].items():
         if Path(name).name != name or digest(bundle/name) != expected:
             raise ValueError('Invalid bundle file: '+name)
+    # Survey vectors are invalidated by survey-only updates. Rebuild explicitly.
+    for name in ('survey-vectors.npy', 'survey-ids.json'):
+        manifest['files'].pop(name, None)
+    manifest.pop('survey_documents', None)
+    manifest.pop('survey_text', None)
     manifest['rebound_from_artifact_sha256'] = manifest['artifact_sha256']
     manifest['court_content_sha256'] = fingerprint
     manifest['artifact_sha256'] = digest(new)

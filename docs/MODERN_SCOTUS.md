@@ -1,3 +1,9 @@
+# Current deployment note
+
+The one-off modern-corpus installer has been removed. Use
+`deploy/install-release.sh` and `docs/HYBRID_SEARCH.md` for deployments.
+Older deployment commands below are retained only as historical audit notes.
+
 # Extend the Court corpus through current decisions
 
 The existing 1950–2016 artifact remains intact. The candidate build combines

@@ -12,12 +12,18 @@ def main():
     p.add_argument('--artifact', type=Path, default=Path('artifacts/ces-gapfill-candidate.sqlite'))
     p.add_argument('--judgments', type=Path, default=Path('data/evaluation/survey-relevance-development.json'))
     p.add_argument('--experiment', type=Path)
+    p.add_argument('--hybrid', type=Path, help='Evaluate the survey embedding bundle')
     p.add_argument('--output', type=Path, required=True)
     args = p.parse_args()
     judgments = json.loads(args.judgments.read_text())
     experiment = json.loads(args.experiment.read_text()) if args.experiment else None
     if experiment:
         assert experiment['artifact_sha256'] == digest(args.artifact)
+    engine = None
+    if args.hybrid:
+        from scvpublic.encoding import Encoder
+        from scvpublic.survey_search import SurveySearch
+        engine = SurveySearch(args.hybrid, args.artifact, Encoder(args.hybrid))
     results = []
     with connect(args.artifact) as db:
         for case in judgments['cases']:
@@ -29,7 +35,7 @@ def main():
             assert not relevant & irrelevant
             assert (relevant | irrelevant) <= docs.keys()
             selected = (experiment['results'][corpus+':'+query]['after'] if experiment else
-                        [d['code'] for d in survey_search(db, corpus, [query])])
+                        [d['code'] for d in (engine.search([query]).get(corpus, []) if engine else survey_search(db, corpus, [query]))])
             hits = set(selected)
             results.append(dict(query=query, corpus=corpus, selected=selected,
                 missed_relevant=sorted(relevant-hits), retrieved_irrelevant=sorted(irrelevant & hits),
@@ -40,7 +46,8 @@ def main():
         retrieved_irrelevant=sum(len(r['retrieved_irrelevant']) for r in results),
         sources={str(path): digest(path) for path in
             [args.artifact, args.judgments, Path(__file__), Path('scvpublic/store.py')] +
-            ([args.experiment] if args.experiment else [])},
+            ([args.experiment] if args.experiment else []) +
+            ([args.hybrid/'manifest.json', Path('scvpublic/survey_search.py')] if args.hybrid else [])},
         limitations=['Partial labels: unjudged matches are neither correct nor incorrect by default.',
                      'Development examples selected after observing failures; no general precision/recall claim.'])
     args.output.write_text(json.dumps(report, indent=2)+'\n')

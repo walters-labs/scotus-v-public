@@ -1,6 +1,0 @@
-each vcf_code has a question which will be classified into 1 of 3 categories:
-
-+1 = Affirmative answer indicates LIBERAL
-0 = neutral/undecidable
--1 = Affirmative answer indicates CONSERVATIVE
-

@@ -1,3 +1,9 @@
+# Historical architecture audit
+
+This audit describes the original repository before cleanup. The unused root
+scripts, duplicated `flask/` app, and CNN files described below are now removed;
+tracked originals remain in Git history. See README.md for the current layout.
+
 # Audit of the historical application
 
 Inspected 2026-10-22, starting revision `92d18da`.

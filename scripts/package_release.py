@@ -21,18 +21,29 @@ def main():
         assert metadata(db)['schema_version'] == 1
         assert db.execute('PRAGMA integrity_check').fetchone()[0] == 'ok'
     paths = [Path('requirements.txt'), Path('LICENSE')]
-    paths += [p for folder in ('scvpublic', 'deploy') for p in Path(folder).rglob('*')
-              if p.is_file() and '__pycache__' not in p.parts and p.suffix != '.pyc']
+    # Keep acquisition, mapping, and research code on the build workstation.
+    paths += [Path('scvpublic')/name for name in
+              ('__init__.py', 'web.py', 'store.py', 'chart.py', 'build.py',
+               'hybrid.py', 'encoding.py', 'survey_search.py')]
+    paths += [p for folder in ('scvpublic/templates', 'scvpublic/static')
+              for p in Path(folder).rglob('*') if p.is_file()]
+    paths += [Path('deploy')/name for name in
+              ('install-release.sh', 'scvpublic.service', 'activate-public.sh',
+               'svp.walterslabs.dev.conf', 'prune-releases.sh')]
     paths += [Path('scripts/check_serving.py')]
     extra = []
     if args.hybrid:
         from scvpublic.hybrid import HybridSearch
-        HybridSearch(args.hybrid, args.artifact)
+        engine = HybridSearch(args.hybrid, args.artifact)
         paths += [Path('requirements-hybrid.txt'), Path('scripts/check_hybrid_http.py')]
         extra = [(args.hybrid/name, Path('artifacts/hybrid')/name) for name in
                  ('manifest.json', 'model.onnx', 'tokenizer.json', 'vectors.npy', 'ids.json', 'README.md')]
     if args.hybrid and (args.hybrid/'sources.json').exists():
         extra.append((args.hybrid/'sources.json', Path('artifacts/hybrid/sources.json')))
+    if args.hybrid and 'survey_documents' in json.loads((args.hybrid/'manifest.json').read_text()):
+        from scvpublic.survey_search import SurveySearch, SURVEY_FILES
+        SurveySearch(args.hybrid, args.artifact, engine.encoder)
+        extra.extend((args.hybrid/name, Path('artifacts/hybrid')/name) for name in SURVEY_FILES)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     if args.directory:
         args.directory.mkdir(parents=True, exist_ok=False)

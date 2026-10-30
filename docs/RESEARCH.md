@@ -298,7 +298,10 @@ before treating keyword variants as interchangeable. Do not patch this with a
 single-topic exception or count these false matches as evidence.
 
 
-### Offline survey stemming experiment
+### Historical offline survey stemming experiment
+
+The experiment script was removed during cleanup. This section records prior
+findings; the commands below are historical, not current instructions.
 
 `scripts/experiment_survey_stemming.py` evaluates English Snowball stemming
 with `snowballstemmer==3.0.1`, installed only under
@@ -368,7 +371,11 @@ wording in `year_provenance` is also currently omitted from survey indexing;
 adding that source text is another general retrieval improvement to evaluate.
 
 
-### Offline survey semantic rankings
+### Historical offline survey semantic rankings
+
+The experiment script was removed. Use `scripts/build_survey_embeddings.py` and
+`scripts/evaluate_survey_relevance.py --hybrid` for the current implementation.
+The command and findings below describe the earlier experiment.
 
 ```sh
 PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/experiment_survey_semantics.py
@@ -407,7 +414,10 @@ latter also admits the former. Relative ranking and policy specificity need
 review; semantic ranking alone is not a validated filter. No serving changes.
 
 
-### Cross-source semantic filter diagnostic
+### Historical cross-source semantic filter diagnostic
+
+The parameter-sweep script was removed; the deployed implementation is documented
+in `docs/HYBRID_SEARCH.md`.
 
 `scripts/evaluate_survey_semantics.py` evaluates a small declared grid of global
 best-score ratios (.5/.6/.7), per-source best-score ratios (.7/.8/.9), and a

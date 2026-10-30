@@ -1,23 +1,27 @@
-# SCOTUS versus public opinion
+# SCOTUS v. Public Opinion
 
-A rebuilt 2018 Data Incubator capstone: search Supreme Court opinions and ANES
-survey questions locally, then compare descriptive liberal/conservative trends.
-Flask serves a precomputed SQLite search index; no API or model training runs
-on a request.
+A rebuilt 2018 Data Incubator capstone comparing descriptive Supreme Court and
+public-opinion trends. The live app is <https://svp.walterslabs.dev>.
 
-## Run locally
+Court and survey search combine TF-IDF with precomputed embeddings. Sources
+include SCOTUS/SCDB, ANES, GSS, CES, Pew Wave 25, and WVS. Flask serves local
+artifacts; acquisition and data processing run separately on a workstation.
 
-Python 3.12 is required. With the current locally built artifact:
+## Local development
+
+Python 3.12 is required. With the current artifacts already built:
 
 ```sh
 make setup
+make setup-hybrid
 make test
-make check-serving
-make serve
+make serve-hybrid
 ```
 
-Open http://127.0.0.1:8000/?q1=abortion. The default artifact is
-`artifacts/casesumm.sqlite`. For a fresh checkout without downloaded data:
+Open <http://127.0.0.1:8012>. Defaults are
+`artifacts/ces-2023-candidate.sqlite` and `artifacts/semantic-surveys-v1`.
+Override `HYBRID_ARTIFACT`, `HYBRID_BUNDLE`, and `HYBRID_PORT` as needed.
+For a fresh checkout without source data:
 
 ```sh
 make setup
@@ -25,119 +29,70 @@ make demo
 make serve ARTIFACT=artifacts/demo.sqlite
 ```
 
-Demo data are synthetic. For serving alone, install `requirements.txt`; `make
-setup` installs the larger build dependencies including Arrow.
+The demo is synthetic and uses lexical search. Build dependencies are separate
+from `requirements-hybrid.txt`, which contains the deployed serving dependencies.
 
-## Rebuild the data
+## Reproduction and validation
 
-See [CaseSumm acquisition and matching](docs/CASESUMM_REVIEW.md) and
-[ANES mappings](docs/ANES_REVIEW.md) for source versions, download instructions,
-checksums and exclusions. Raw downloads and generated artifacts are ignored by
-Git. Keep the source archives and build manifests for reproducibility.
+Raw downloads and generated artifacts are ignored by Git. Keep raw data,
+checksum manifests, reviewed mappings, and processed source documents; Git
+history cannot recover ignored files. Build large artifacts on a workstation.
 
-The current workflow, once those raw sources are present, is:
+- [Data sources and acquisition](docs/DATA.md)
+- [Current hybrid retrieval, survey vectors, and deployment](docs/HYBRID_SEARCH.md)
+- [CES coverage and mappings](docs/CES.md)
+- [Court corpus through 2026](docs/MODERN_SCOTUS.md)
+- [Research methodology and limitations](docs/RESEARCH.md)
+
+The current CES reproduction targets are `make ces-research-data`,
+`make ces-research-index`, and `make ces-research-check`. These build new outputs
+and refuse to overwrite existing ones. Source-specific Makefile targets build
+ANES, GSS, CES, Pew, and WVS. Rebuild survey vectors after any survey-data update;
+see the hybrid-search documentation for the complete bundle commands.
 
 ```sh
-make public       # ANES respondents + reviewed response mappings -> public.json
-make casesumm     # CaseSumm opinions + SCDB votes + public.json -> SQLite
-make inspect
-make check-serving
+make test
+make check-hybrid
+make release-hybrid
 ```
 
-CaseSumm refuses to overwrite its index bundle. For another complete build use
-`python -m scvpublic.casesumm --bundle artifacts/casesumm-index-v2 --output
-artifacts/casesumm-v2.sqlite`. To update only ANES, use `make refresh-public`,
-then restart the serving process. Build on a workstation, not the VPS.
-`make build` is the historical pipeline and requires its original inputs;
-it does not produce the current reviewed ANES methodology.
+Release packaging includes serving modules, templates, static assets, deployment
+scripts, and validated artifacts. It excludes offline importers, research code,
+raw respondent files, credentials, and experimental packages.
 
-The current artifact contains 7,018 matched cases from 1950–2016 and 127 ANES
-variables in 98 question families. ANES observations extend beyond Court
-coverage. Not every ANES variable measures a political attitude; some included
-measures are explicitly labeled partisan or movement proxies.
+## Interpretation
 
-## Methodology
+Court direction comes from SCDB, scaled by the vote margin. Survey answers use
+explicit mappings from −1 (conservative) to +1 (liberal), documented respondent
+weights, and question-family deduplication. The combined index weights available
+survey sources equally within each observed year.
 
-Search sums TF-IDF weights and returns up to ten results per corpus. Phrases
-are split into words; public searches also boost adjacent bigrams. This is
-partial-word-set matching, not an exact phrase requirement. Very common Court
-terms removed during TF-IDF construction may return no Court results.
+Dots show observed annual values; straight segments connect nearby observations
+with breaks across long gaps. Changes in contributing questions or sources are
+marked. Search cutoffs are development heuristics, not relevance probabilities.
+Related policies are not interchangeable, and synonyms may still be missed.
+These plots do not establish causality or validated predictive power.
 
-SCDB direction supplies the sign of the Court score, multiplied by the absolute
-vote margin divided by total votes. CaseSumm matches use citations or unique
-term/docket identifiers; ambiguous records are excluded. The Court
-series averages all scored cases in the retrieved results within each year,
-weighted by their TF-IDF relevance: sum(relevance × case score) / sum(relevance). The displayed list keeps the top ten opinions; the Court trend uses every match
-scoring at least 20% of the strongest match, using a fixed cutoff. This relative cutoff is an
-exploratory word-match heuristic, not a validated topic classifier. Years without scored cases remain absent.
+## Repository layout
 
-ANES response codes have explicit reviewed mappings to [-1, 1], with +1 liberal.
-Missing answers are excluded and documented survey weights applied. Retrieved
-variants are deduplicated by question family per year; selected comparative
-indices supersede their components. Question-family means are equally weighted
-in the displayed public series. Dots show annual scores, with a separate linear best-fit line for each series
-that has at least two observed years. Fits weight observed years equally and
-span only that series' observed range. Court counts are shown by year; public
-retrieval remains limited to ten questions. These fits are not
-causal estimates or a validated general ideology measure.
+- `scvpublic/`: serving and offline data-processing modules.
+- `scripts/`: acquisition, validation, current research, and packaging tools.
+- `data/`: source manifests, reviewed mappings, and evaluation judgments.
+- `tests/`: regression and pipeline checks.
+- `deploy/`: systemd, Nginx, installation, and release pruning.
+- `docs/`: setup, source reviews, and research notes.
 
-## Code layout
+The unused original app, CNN assets, presentation files, and retired search
+experiments have been removed. Their tracked versions remain in Git history;
+no separate archive is maintained. Research results and reproducibility inputs
+remain because they support the ongoing analysis.
 
-- `scvpublic/anes.py`, `public.py`, `casesumm.py`: offline processing and builds.
-- `scvpublic/store.py`, `web.py`, `chart.py`: read-only search and Flask serving.
-- `scripts/`: source audits, mapping maintenance, release and acceptance tools.
-- `deploy/`: systemd and Nginx configuration for `svp.walterslabs.dev`.
-- `tests/`: scoring, acquisition, matching, search and request regression tests.
+## VPS maintenance
 
-Original root scripts and notebooks are retained as historical references.
-The CNN is not used by the rebuilt pipeline.
+Use `deploy/install-release.sh` to activate a packaged release. It rolls back to
+the preceding release if activation checks fail. After verifying a successful
+release, `sudo bash deploy/prune-releases.sh` previews removal of older installed
+releases; add `--apply` to retain only the live release. Pruning removes local
+rollback copies, so an older version would need rebuilding/reinstalling.
 
-## Deployment
-
-Run `make release` to check the real artifact and produce an allowlisted bundle.
-See [deployment and rollback](docs/DEPLOYMENT.md) for the existing Ubuntu/Nginx
-VPS, or the optional Docker route. Only pinned serving dependencies and the
-precomputed index are needed at runtime.
-
-Project code uses [LICENSE](LICENSE). Data retain their own terms. CaseSumm's
-published license statements conflict; resolve those terms before public
-hosting of the derived artifact (details in the CaseSumm review).
-
-## Modern Court coverage
-
-A separate candidate pipeline extends coverage through 2026 using refreshed SCDB
-and official opinion PDFs. See [modern corpus setup and limitations](docs/MODERN_SCOTUS.md).
-
-An optional [GSS pilot](docs/GSS.md) adds 24 policy question families across
-1972–2024 as a separate public-opinion series. Run `make gss-pilot
-ARTIFACT=artifacts/modern.sqlite`, then `make serve ARTIFACT=artifacts/gss-pilot.sqlite`.
-The existing deployed artifact is preserved until the candidate is activated.
-
-See [hybrid search and deployment](docs/HYBRID_SEARCH.md) for the current
-TF-IDF + embedding pipeline. `make serve-hybrid` runs it locally;
-`make release-hybrid` packages the complete production bundle. `/healthz`
-reports the active mode. `make serve` retains a lightweight TF-IDF fallback.
-
-Search quality is tracked by the [20-topic relevance benchmark](docs/SEARCH_BENCHMARK.md).
-Run `make check-relevance` against the local production artifacts.
-
-### CES public-opinion pilot
-
-A third survey source is available locally: 15 explicitly mapped policy variables
-(13 families), 2008–2021. See [CES setup and methodology](docs/CES.md) for
-verified downloads, scoring, artifact assembly, and a separate local preview.
-
-### Pew public-opinion pilot
-
-Pew Wave 25 adds 11 gun-policy questions from March 2017, validated against its
-weighted topline. See [Pew setup and methodology](docs/PEW.md). Pew is available
-as a separate view and contributes to the combined index in its observed year.
-
-### World Values Survey
-
-The optional WVS import adds 21 reviewed U.S. policy/social-attitude variables (20 families,
-70 question-year observations, 1995–2017). Download the cumulative Stata v5.0 file into
-`data/raw/wvs/`, then run `make wvs` or `make wvs-pilot` to attach it to the Pew pilot and
-rebind the existing court embeddings. WVS appears in the selector and combined index.
-See [WVS review and reproduction notes](data/wvs/README.md) for weights, exclusions,
-validation, and the distinction between moral acceptance and legal-policy support.
+Code is covered by [LICENSE](LICENSE); datasets retain their own terms.

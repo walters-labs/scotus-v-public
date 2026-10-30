@@ -124,3 +124,54 @@ make check-relevance HYBRID_BUNDLE=artifacts/semantic-source-repair RELEVANCE_SP
 
 The output directory must not already exist. The production bundle remains
 `semantic-full` until evaluation and activation of a replacement.
+
+## Optional survey hybrid search (local review, October 30, 2026)
+
+Court retrieval is unchanged. Survey retrieval can now reuse the loaded court
+encoder with precomputed vectors for each question's title and question text.
+No model is downloaded at serving time. Older bundles retain lexical survey
+search; `/healthz` reports `survey_search_mode` independently of court search.
+
+Build a new bundle without modifying the original:
+
+```bash
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_embeddings.py \
+  --artifact artifacts/ces-2023-candidate.sqlite \
+  --bundle artifacts/semantic-ces-2023-candidate \
+  --output artifacts/semantic-surveys-v1
+```
+
+Use that output for `SCVPO_HYBRID`; the SQLite artifact is unchanged. The builder
+refuses an existing output directory. Packaging validates and includes the two
+additional files. Survey-only artifact rebinding drops the survey vectors, which
+must then be regenerated; it never silently reuses stale question embeddings.
+
+Ranking combines 90% semantic similarity and 10% source-normalized TF-IDF.
+Candidates require similarity >= 0.30 and >= 60% of the best survey similarity
+across sources. Without a keyword match, similarity must also reach 0.40.
+Each source returns up to ten candidates within 90% of its best accepted score.
+These development thresholds are conservative heuristics, not calibrated
+probabilities. Source composition can change the cross-source floor. Broad
+queries may omit relevant policy subtopics. Different synonyms can still return
+different results, and texts longer than 256 encoder tokens are truncated.
+
+Validation on the current 213 questions:
+
+```bash
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/evaluate_survey_relevance.py \
+  --artifact artifacts/ces-2023-candidate.sqlite \
+  --hybrid artifacts/semantic-surveys-v1 \
+  --output artifacts/survey-hybrid-development.json
+```
+
+The 20 partially labeled development cases yield zero labeled irrelevant hits
+(previously three) and one missed labeled relevant item (previously three).
+The remaining miss is GSS contraceptive access for “contraception”; “birth control”
+retrieves it. Development labels include examples inspected while choosing the
+rules, so these counts are regression checks, not independent precision/recall.
+The vectors add 327,168 bytes, plus a small ID map. A 160-request macOS full-hybrid
+check peaked at 223.5 MiB for the test process, excluding Gunicorn/OS overhead;
+Linux deployment memory has not yet been measured for this change.
+
+Preview: <http://127.0.0.1:8012/?q1=environmental+regulation&view=combined>.
+This survey-search change has not been deployed.

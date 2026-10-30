@@ -1,3 +1,4 @@
+import json
 import os
 from contextlib import closing
 import sqlite3
@@ -24,6 +25,12 @@ def create_app(artifact=None, hybrid_dir=None):
         hybrid = HybridSearch(hybrid_dir, path)
         info['hybrid_search'] = True
         info['court_chart_cutoff'] = CHART_CUTOFF
+    survey_hybrid = None
+    if hybrid and 'survey_documents' in json.loads((Path(hybrid_dir)/'manifest.json').read_text()):
+        from .survey_search import SurveySearch
+        survey_hybrid = SurveySearch(hybrid_dir, path, hybrid.encoder)
+        info['survey_hybrid_search'] = True
+    app.config['SURVEY_SEARCH_MODE'] = 'hybrid' if survey_hybrid else 'tfidf'
     app.config['SEARCH_MODE'] = 'hybrid' if hybrid else 'tfidf'
     @app.after_request
     def headers(response):
@@ -37,7 +44,7 @@ def create_app(artifact=None, hybrid_dir=None):
         try:
             with closing(connect(path)) as db:
                 db.execute('SELECT 1 FROM meta LIMIT 1').fetchone()
-            return {'status': 'ok', 'dataset': info.get('dataset'), 'search_mode': app.config['SEARCH_MODE']}
+            return {'status': 'ok', 'dataset': info.get('dataset'), 'search_mode': app.config['SEARCH_MODE'], 'survey_search_mode': app.config['SURVEY_SEARCH_MODE']}
         except sqlite3.Error:
             return {'status': 'unavailable'}, 503
 
@@ -64,8 +71,11 @@ def create_app(artifact=None, hybrid_dir=None):
         if any(len(t) > 100 for t in terms):
             error = 'Each keyword or phrase must be at most 100 characters.'
         elif any(terms):
+            survey_matches = survey_hybrid.search(terms) if survey_hybrid else None
             with closing(connect(path)) as db:
-                public = survey_search(db, 'public', terms)
+                def questions(corpus):
+                    return survey_matches.get(corpus, []) if survey_matches is not None else survey_search(db, corpus, terms)
+                public = questions('public')
                 if hybrid:
                     from .hybrid import chart_matches
                     candidates = hybrid.search(terms)
@@ -75,13 +85,13 @@ def create_app(artifact=None, hybrid_dir=None):
                     court = search(db, 'court', terms)
                     trend_court = search(db, 'court', terms, limit=None, relative_cutoff=0.20)
                 if info.get('gss_documents'):
-                    gss = survey_search(db, 'gss', terms)
+                    gss = questions('gss')
                 if info.get('ces_documents'):
-                    ces = survey_search(db, 'ces', terms)
+                    ces = questions('ces')
                 if info.get('pew_documents'):
-                    pew = survey_search(db, 'pew', terms)
+                    pew = questions('pew')
                 if info.get('wvs_documents'):
-                    wvs = survey_search(db, 'wvs', terms)
+                    wvs = questions('wvs')
             counts = court_counts(trend_court)
             source_series = {'ANES': series([], public)[1]}
             if info.get('gss_documents'):
