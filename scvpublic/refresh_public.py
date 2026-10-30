@@ -13,6 +13,9 @@ def refresh(artifact, source):
     from sklearn.feature_extraction.text import TfidfVectorizer
     import numpy as np
     payload=json.loads(source.read_text())
+    if 'schema_version' in payload:
+        from .survey_schema import validate
+        validate(payload)
     if payload['methodology'] != 'explicit-anes-v1':
         raise ValueError('Unsupported public methodology')
     docs=payload['documents']

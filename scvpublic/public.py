@@ -50,11 +50,13 @@ def build(source, mappings, output):
             family=entry['family'], priority=entry['priority'],
             years={year: values[0]/values[1] for year,values in by_year.items()},
             respondents={year:values[2] for year,values in by_year.items()},
-            weight=entry['weight'], rationale=entry['rationale'],
+            weight=entry['weight'], scores=entry['scores'], rationale=entry['rationale'],
             measurement_type=entry.get('measurement_type','policy_or_self_placement'),
             supersedes=entry.get('supersedes',[])))
     payload=dict(methodology=mapping['version'], sources={str(p.resolve()):digest(p) for p in [source,mappings]},
                  documents=documents, notes='Weighted within question; one preferred variant per family/year; equal family means. Unmapped answers excluded.')
+    from .survey_schema import prepare
+    prepare(payload)
     output.parent.mkdir(parents=True,exist_ok=True)
     temporary=output.with_suffix('.tmp');temporary.write_text(json.dumps(payload,indent=2,allow_nan=False)+'\n');temporary.replace(output)
     print(json.dumps({'output':str(output),'questions':len(documents),'plottable':sum(bool(d['years']) for d in documents),'bytes':output.stat().st_size},indent=2))

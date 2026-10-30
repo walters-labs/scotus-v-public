@@ -77,6 +77,8 @@ def build(source, mappings, output, manifest, audit):
                               respondents={y:t[2] for y,t in by_year.items()}, weight_sums={y:t[1] for y,t in by_year.items()}))
     payload = dict(methodology=mapping['version'], documents=documents, release=spec['release'],
                    notes=mapping['notes'], sources={str(p):digest(p) for p in (source, mappings, manifest)})
+    from .survey_schema import prepare
+    prepare(payload)
     output.parent.mkdir(parents=True, exist_ok=True)
     temporary = output.with_suffix('.tmp')
     temporary.write_text(json.dumps(payload, indent=2, allow_nan=False)+'\n')

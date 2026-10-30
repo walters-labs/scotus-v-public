@@ -175,3 +175,142 @@ Linux deployment memory has not yet been measured for this change.
 
 Preview: <http://127.0.0.1:8012/?q1=environmental+regulation&view=combined>.
 This survey-search change has not been deployed.
+
+## Synonym consistency checks
+
+Run the small, explicitly labeled development check with:
+
+```sh
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/evaluate_survey_synonyms.py \
+  --artifact artifacts/ces-2023-candidate.sqlite \
+  --bundle artifacts/semantic-surveys-v1 \
+  --output artifacts/survey-synonym-baseline.json
+```
+
+The current baseline differs on contraception/birth control and healthcare/health
+care. In ANES, the latter spelling also selects a child-care spending question.
+Capital punishment/death penalty agree on the GSS item. Overlap is reported
+alongside direct-question misses and known irrelevant hits: identical empty or
+irrelevant result sets do not constitute success. These labels are development
+judgments, not independent validation.
+
+A bounded experiment averaged normalized title-only and existing full-question
+embeddings (renormalizing their sum, leaving all selection rules unchanged).
+On the 20-case relevance development set it recovered the missing contraception
+item but introduced three labeled irrelevant selections, including abortion
+items. It was rejected; no serving code, production vectors, or thresholds were
+changed. The temporary experiment is not an additional maintained search path.
+
+### Offline topic-phrase experiment
+
+`scripts/experiment_survey_phrases.py` tests automatic phrase expansion without
+changing serving code. It extracts contiguous one-to-three-word phrases within
+sentence boundaries, excludes stopwords, and retains eight top-TF-IDF phrases
+per question. It embeds these with the existing model. For each original query,
+up to five phrases must exceed both 0.65 cosine similarity and 90% of the best
+phrase similarity. Accepted phrases add lexical evidence only; the query's
+original semantic representation and all deployed selection rules remain intact.
+There are no topic-specific aliases. These thresholds were fixed before viewing
+results; sentence-boundary extraction was corrected before the final run.
+
+```sh
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/experiment_survey_phrases.py \
+  --artifact artifacts/ces-2023-candidate.sqlite \
+  --bundle artifacts/semantic-surveys-v1 \
+  --output artifacts/survey-phrase-experiment.json
+```
+
+The 994 phrases occupy 1,526,784 vector bytes. On the 20-case relevance set,
+missed positives improve from one to zero, with zero labeled irrelevant hits.
+However, the separate synonym checks expose a regression: “healthcare” expands
+to “health care” and “medical care” and newly selects ANES child-care spending.
+Across the paired queries, labeled irrelevant selections increase from one to
+two. “Contraception” correctly expands to “birth control,” yielding the same GSS
+item; capital punishment/death penalty remain consistent. Healthcare-pair overlap
+improves, but that is not a success when an irrelevant item is propagated.
+
+Other additions include environmental spending for environmental regulation and
+two gun-policy questions for gun control; their broader scope needs review.
+All output codes, expansions, before/after results, source hashes, and unjudged
+selections are saved in the report. This is development evidence only. The
+experiment fails the no-new-labeled-errors criterion and is NOT deployed.
+
+### Confidence-weighted phrase expansion
+
+Use the same experiment command with `--weighted` and a separate output such as
+`artifacts/survey-weighted-phrase-experiment.json`. Each expansion contributes
+its phrase/query cosine similarity times its lexical score. For each question,
+the maximum original/expanded contribution is used, rather than summing multiple
+similar aliases. Normalization uses the strongest **unweighted** contribution,
+so a synonym-only query preserves its confidence discount instead of rescaling
+the best synonym to 1. Similarity weights are heuristics, not probabilities.
+The original query embedding and all acceptance thresholds remain unchanged.
+
+On the same development sets, relevance misses improve 1 -> 0, with labeled
+irrelevant hits unchanged at zero. Paired-query misses improve 2 -> 1; paired
+irrelevant selections stay at one (the existing ANES child-care result for
+“health care”). Unlike unweighted expansion, “healthcare” does not inherit that
+error. “Contraception” retrieves GSS `pillok` with expansion weight about 0.709
+and final score about 0.422. Healthcare spellings still do not fully agree.
+
+The report includes returned question scores and semantic/lexical components,
+as well as expansion similarities, to inspect strength rather than only binary
+membership. These are small, partially labeled development checks. Weighted
+expansion is still offline; the serving engine's extracted `lexical_weights`
+method preserves its previous default behavior and permits controlled experiments.
+No phrase vectors have been installed in the serving bundle or deployed.
+
+### Weighted phrase preview
+
+Build a separate opt-in bundle with:
+
+```sh
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_embeddings.py \
+  --artifact artifacts/ces-2023-candidate.sqlite --bundle artifacts/semantic-surveys-v1 \
+  --output artifacts/semantic-survey-phrases-v1 --phrases
+make serve-hybrid HYBRID_BUNDLE=artifacts/semantic-survey-phrases-v1 HYBRID_PORT=8013
+```
+
+The flag embeds the extracted phrases offline. The manifest opts into weighted
+expansion; original bundles retain their existing behavior. Serving shares the
+existing encoder and loads only the precomputed phrase vectors and text list.
+The preview shows final, semantic, and lexical scores in expandable question
+match details; these scores are not probabilities. The existing healthcare
+wording inconsistency remains. Full-phrase versus partial-word scoring has not
+been changed in this preview. Production and Makefile defaults remain unchanged.
+
+Packaging includes and validates the extra phrase files when present. Rebinding
+an updated survey artifact invalidates them along with the survey vectors;
+rebuild with `--phrases` after a data update.
+
+### Clean survey search-text candidate
+
+`experiment_clean_survey_text.py` creates a separate SQLite artifact with an
+additional `search_text` field and rebuilds only survey postings. Original
+payload fields remain identical, including all annual scores and provenance.
+The embedding builder uses `search_text` when present, otherwise the existing
+title/question text. Court postings are verified unchanged by bundle rebinding.
+
+```sh
+PYTHONPATH=. .venv/bin/python scripts/experiment_clean_survey_text.py \
+  --artifact artifacts/ces-2023-candidate.sqlite --output artifacts/survey-clean-text.sqlite
+PYTHONPATH=. .venv/bin/python scripts/rebind_hybrid.py \
+  --old artifacts/ces-2023-candidate.sqlite --new artifacts/survey-clean-text.sqlite \
+  --bundle artifacts/semantic-survey-phrases-v1 --output artifacts/semantic-clean-court
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_embeddings.py \
+  --artifact artifacts/survey-clean-text.sqlite --bundle artifacts/semantic-clean-court \
+  --output artifacts/semantic-clean-surveys --phrases
+```
+
+The conservative heuristic normalizes ligatures, removes some administrative
+annotations and introductory sentences, and deduplicates exact sentences. It is
+not a reviewed summary or a complete ANES parser: year-containing parentheses
+can include substantive wording variants, so the extracted text needs review
+before adoption. All originals are preserved for that review.
+
+Development result: 20-case relevance check has zero labeled misses/errors.
+The three synonym pairs have no missed expected positives, but the existing
+child-care false positive remains for “health care.” Medical-care questions now
+rank ahead of it. Cleanup helps ranking but does not resolve acceptance. Reports:
+`artifacts/clean-survey-relevance.json` and `artifacts/clean-survey-synonyms.json`.
+This candidate is offline; port 8013 and production are unchanged.

@@ -62,6 +62,8 @@ def build(manifest, mappings, output, audit):
                               respondents={year:total[2]},weight_sums={year:total[1]}))
     payload=dict(methodology=mapping['version'],documents=documents,release=spec['release'],notes=mapping['notes'],
                  sources={r['path']:r['sha256'] for r in spec['files']} | {str(mappings):digest(mappings),str(manifest):digest(manifest)})
+    from .survey_schema import prepare
+    prepare(payload)
     output.parent.mkdir(parents=True,exist_ok=True)
     temporary=output.with_suffix('.tmp');temporary.write_text(json.dumps(payload,indent=2,allow_nan=False)+'\n');temporary.replace(output)
     audit.parent.mkdir(parents=True,exist_ok=True)

@@ -1,0 +1,9 @@
+{
+  "status": "development judgments, not independent validation",
+  "pairs": [
+    {"queries": ["contraception", "birth control"], "corpus": "gss", "relevant": ["pillok"], "irrelevant": ["absingle", "abhlth", "gunlaw"]},
+    {"queries": ["healthcare", "health care"], "corpus": "public", "relevant": ["VCF0806"], "irrelevant": ["VCF0887"]},
+    {"queries": ["capital punishment", "death penalty"], "corpus": "gss", "relevant": ["cappun"], "irrelevant": ["gunlaw"]}
+  ],
+  "limitations": ["Equivalent wording need not produce identical ranks, but should retain direct policy matches.", "Selected development examples cannot establish general synonym accuracy."]
+}

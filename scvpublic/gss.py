@@ -69,6 +69,8 @@ def build(source, mappings, output, manifest):
     payload = dict(methodology=mapping['version'], documents=documents,
         sources={str(p.resolve()): digest(p) for p in [source, mappings, manifest]},
         release=specification['release'], notes=mapping['notes'])
+    from .survey_schema import prepare
+    prepare(payload)
     output.parent.mkdir(parents=True, exist_ok=True)
     temporary = output.with_suffix('.tmp')
     temporary.write_text(json.dumps(payload, indent=2, allow_nan=False)+'\n')
@@ -85,6 +87,9 @@ def attach(artifact, source, output, corpus="gss"):
     from sklearn.feature_extraction.text import TfidfVectorizer
     import numpy as np
     payload = json.loads(source.read_text())
+    if 'schema_version' in payload:
+        from .survey_schema import validate
+        validate(payload)
     if payload['methodology'] != f'explicit-{corpus}-v1':
         raise ValueError('Unsupported survey methodology')
     if not artifact.is_file():

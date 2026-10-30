@@ -171,6 +171,9 @@ def build(args):
     vocabulary = vectorizer.get_feature_names_out()
     del selected
     public = json.loads(args.public.read_text())
+    if 'schema_version' in public:
+        from .survey_schema import validate
+        validate(public)
     if public['methodology'] != 'explicit-anes-v1':
         raise ValueError('Unsupported public methodology')
     sources.update(public['sources'])

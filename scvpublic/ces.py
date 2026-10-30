@@ -66,6 +66,8 @@ def build(manifest, mappings, output):
         release='CES Policy Preferences V3 (2008–2021 pilot)', notes=mapping['notes'],
         sources={str(p): digest(p) for p in paths+[manifest, mappings]},
         join_audit=dict(rows=len(frame), unmatched=int((frame['_merge'] != 'both').sum())))
+    from .survey_schema import prepare
+    prepare(payload)
     output.parent.mkdir(parents=True, exist_ok=True)
     temporary = output.with_suffix('.tmp')
     temporary.write_text(json.dumps(payload, indent=2, allow_nan=False)+'\n')

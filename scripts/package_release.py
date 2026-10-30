@@ -44,6 +44,8 @@ def main():
         from scvpublic.survey_search import SurveySearch, SURVEY_FILES
         SurveySearch(args.hybrid, args.artifact, engine.encoder)
         extra.extend((args.hybrid/name, Path('artifacts/hybrid')/name) for name in SURVEY_FILES)
+    if args.hybrid and json.loads((args.hybrid/'manifest.json').read_text()).get('survey_phrase_expansion'):
+        extra.extend((args.hybrid/name, Path('artifacts/hybrid')/name) for name in ('survey-phrases.json', 'survey-phrase-vectors.npy'))
     args.output.parent.mkdir(parents=True, exist_ok=True)
     if args.directory:
         args.directory.mkdir(parents=True, exist_ok=False)

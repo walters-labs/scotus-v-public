@@ -508,3 +508,79 @@ weight sums for 2022–2024, validates historical estimates, audits composition,
 and runs serving and hybrid checks. The 2023–2024 abortion comparison reverses
 direction between the full and common-item averages; this is a documented
 coverage limitation, not evidence of a public-opinion reversal.
+
+## Shared survey format: current storage and next step
+
+Public-opinion data currently have three layers:
+
+1. Original Stata/CSV downloads under `data/raw/`, pinned by source manifests.
+2. Source-specific processing into `data/processed/.../public.json`, containing
+   question documents with IDs, families, original wording, orientation mappings,
+   annual weighted means, respondent counts, and available provenance.
+3. A read-only SQLite serving artifact. `documents` stores question payloads as
+   JSON; `postings` stores TF-IDF weights; `meta` records build/source metadata.
+   Embeddings are separate checksum-bound files, not respondent-level records.
+
+SQLite already provides the database-file deployment requested by this design.
+The next bounded pipeline improvement should be a versioned shared document
+schema and validator used by every importer, rather than a new database server.
+Validate source/release identity, stable question/family IDs, original versus
+search wording, response coding, year/score/count/weight fields, and provenance.
+Some sources lack weight sums or per-year provenance; represent absence explicitly
+instead of inventing metadata. Do not confuse a question family with a stable
+wording across years. Keep respondent data offline for reproducibility.
+
+If cross-source analytical queries later justify it, normalized question and
+question-year tables can be generated in SQLite from those validated records.
+That migration is not implemented as part of the search-text experiment.
+
+### Implemented shared contract: survey-documents-v1
+
+`scvpublic/survey_schema.py` is the executable contract for processed survey
+JSON. ANES, GSS, CES (including annual extensions), Pew, and WVS builders validate
+before writing and tag new outputs with `schema_version: survey-documents-v1`.
+This version is separate from SQLite's integer `schema_version` metadata.
+
+Required top-level fields: recognized `methodology` (which identifies the
+source), nonempty `sources` mapping input paths to SHA-256 checksums, and a
+`documents` list. Release descriptions and source-specific audit metadata remain
+preserved extensions, not fabricated common fields.
+
+Each document requires nonempty `code`, `family`, `title`, `question`, and
+`weight`; `years` maps four-digit year strings to finite scores in [-1,1];
+`respondents` has exactly the same year keys and positive integer counts.
+Question codes are unique per source. Shared family identifiers are allowed:
+they identify variants, not duplicate records. Empty observation maps are allowed
+for documented questions without usable data.
+
+Optional fields are validated when supplied:
+
+- `search_text`: nonempty separate retrieval text, never a replacement for
+  original question wording.
+- `scores`: response-code-to-orientation map, finite values in [-1,1]. New ANES
+  builds now retain it as other builders already do; existing ANES files can
+  still rely on their checksum-pinned mapping input.
+- `weight_sums`: positive finite values for observed years; unavailable years
+  stay absent rather than becoming zeros.
+- `year_provenance`: observed-year entries with source variable, weight,
+  question wording, and DOI. Wave is optional but must be nonempty if supplied.
+
+Missing optional fields mean unavailable/not recorded, never zero. Unknown
+fields are preserved for source-specific metadata. Original inputs and processed
+files are not rewritten by validation. Existing unversioned files are accepted
+by the audit CLI; explicitly unknown schema versions fail. Import-to-index
+boundaries enforce validation for versioned documents, retaining compatibility
+with historical unversioned artifacts. This is structural validation, not a
+check that substantive policy coding or survey design is correct.
+
+```sh
+make validate-surveys
+# Or validate one or more specific processed JSON files:
+.venv/bin/python -m scvpublic.survey_schema path/to/public.json
+```
+
+For a new source, register its methodology, produce these fields, and call
+`prepare(payload)` before serialization. No database migration or live rebuild
+is required. The five current files validate as 213 questions and 2,280 annual
+question observations. Checksums are checked for format here; acquisition and
+build commands remain responsible for checking actual source-file contents.

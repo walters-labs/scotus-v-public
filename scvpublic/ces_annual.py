@@ -109,6 +109,8 @@ def main():
     result = extend_documents(base, frame, crosswalk)
     result['sources'].update({str(p): digest(p) for p in paths+
         [args.base, args.manifest, args.crosswalk, Path(__file__)]})
+    from .survey_schema import prepare
+    prepare(result)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, indent=2, allow_nan=False)+'\n')
     print(json.dumps(result['annual_import_audit'], indent=2))

@@ -30,6 +30,7 @@ def create_app(artifact=None, hybrid_dir=None):
         from .survey_search import SurveySearch
         survey_hybrid = SurveySearch(hybrid_dir, path, hybrid.encoder)
         info['survey_hybrid_search'] = True
+        info['survey_phrase_expansion'] = survey_hybrid.phrase_vectors is not None
     app.config['SURVEY_SEARCH_MODE'] = 'hybrid' if survey_hybrid else 'tfidf'
     app.config['SEARCH_MODE'] = 'hybrid' if hybrid else 'tfidf'
     @app.after_request

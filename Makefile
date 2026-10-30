@@ -128,3 +128,9 @@ research-audits:
 	PYTHONPATH=. $(PY) scripts/audit_gss_weight_availability.py
 	PYTHONPATH=. $(PY) scripts/audit_gss_weight_sensitivity.py
 	PYTHONPATH=. $(PY) scripts/describe_alignment_uncertainty.py
+
+# Validate existing processed inputs without rebuilding or modifying them.
+SURVEY_INPUTS ?= data/processed/anes-20260205/public.json data/processed/gss-grid-candidate/public.json data/processed/ces-2023-candidate/public.json data/processed/pew-w25/public.json data/processed/wvs-v5/public.json
+.PHONY: validate-surveys
+validate-surveys:
+	$(PY) -m scvpublic.survey_schema $(SURVEY_INPUTS)
