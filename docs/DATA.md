@@ -766,3 +766,46 @@ SCVPO_ARTIFACT=artifacts/nationscape-healthcare.sqlite SCVPO_HYBRID=artifacts/se
 
 Credit Democracy Fund + UCLA Nationscape and its investigators Chris
 Tausanovitch and Lynn Vavreck. Source: https://www.voterstudygroup.org/data/nationscape.
+
+### Nationscape immigration expansion (local candidate)
+
+Adds three distinct items, each present in all 77 weekly waves:
+
+- `path_to_citizenship`: create a path to citizenship for all undocumented immigrants.
+- `dreamers`: create a path to citizenship for undocumented immigrants brought here as children.
+- `deportation`: deport all undocumented immigrants.
+
+Agree/disagree map to +1/−1 for both citizenship items and −1/+1 for deportation.
+Not sure and skipped remain excluded from polarity. Each item has its own
+question family and preserves its 77 weekly observations. No topic-specific
+search overrides were added; the existing relevance filter determines which
+items contribute to a particular query. Selected question families receive the
+existing equal-family weighting within Nationscape, and Nationscape remains
+one source in the combined index, not three independent sources.
+
+`data/manifests/nationscape-policy.json` pins the four-item specification and
+codebook/bannerbook evidence for every wave. The 231 added item-waves reproduce
+all 693 rounded category percentages within 0.51 percentage points and match
+all published unweighted counts. `data/nationscape/policy-validation.json`
+records maximum errors and annual scores. The healthcare document reproduces
+exactly; all other survey documents remain unchanged. The importer now supports
+explicit per-question orientations while retaining the old healthcare manifest.
+
+Weight selection, annual aggregation, partial-year limitations and parallel-file
+exclusions are unchanged from the first import. In particular, 2021 still
+represents only one January weekly wave. Data-source coverage is not a full-year
+estimate. Weekly estimates remain available in the processed payload and SQLite.
+
+```sh
+.venv/bin/python -m scvpublic.nationscape --manifest data/manifests/nationscape-policy.json --output data/processed/nationscape-policy/public.json --base-artifact artifacts/nationscape-healthcare.sqlite --artifact artifacts/nationscape-policy.sqlite
+PYTHONPATH=. .venv/bin/python scripts/rebind_hybrid.py --old artifacts/nationscape-healthcare.sqlite --new artifacts/nationscape-policy.sqlite --bundle artifacts/semantic-nationscape-healthcare --output artifacts/semantic-nationscape-policy-court
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_embeddings.py --artifact artifacts/nationscape-policy.sqlite --bundle artifacts/semantic-nationscape-policy-court --output artifacts/semantic-nationscape-policy --phrases
+SCVPO_ARTIFACT=artifacts/nationscape-policy.sqlite SCVPO_HYBRID=artifacts/semantic-nationscape-policy OPENBLAS_NUM_THREADS=1 .venv/bin/gunicorn 'scvpublic.web:create_app()' --bind 127.0.0.1:8017 --workers 1 --threads 2
+```
+
+Preview checks: `immigration` retrieves the general citizenship and deportation
+items; `citizenship` retrieves both citizenship items; `deportation` retrieves
+that item, and `healthcare` still retrieves the original question. The standalone
+query `dreamers` currently returns no Nationscape result under the existing
+search thresholds. This known vocabulary gap was not addressed by adding a
+special-case search rule in a data-only expansion.

@@ -1,0 +1,46 @@
+{
+  "healthcare_unchanged": true,
+  "other_surveys_unchanged": true,
+  "questions": [
+    {
+      "code": "nationscape_gov_insurance",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.4971904942192893,
+      "annual_scores": {
+        "2019": 0.28270888493390134,
+        "2020": 0.29347505983578576,
+        "2021": 0.1940336493297858
+      }
+    },
+    {
+      "code": "nationscape_path_to_citizenship",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49666046570247246,
+      "annual_scores": {
+        "2019": 0.2957329858872487,
+        "2020": 0.3323460448556355,
+        "2021": 0.26635893326957993
+      }
+    },
+    {
+      "code": "nationscape_dreamers",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49987245455929497,
+      "annual_scores": {
+        "2019": 0.6393678005779073,
+        "2020": 0.6406473087141085,
+        "2021": 0.5736125034416416
+      }
+    },
+    {
+      "code": "nationscape_deportation",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49739396529193414,
+      "annual_scores": {
+        "2019": 0.14885440565288896,
+        "2020": 0.15974094180075632,
+        "2021": 0.10439967984525932
+      }
+    }
+  ]
+}

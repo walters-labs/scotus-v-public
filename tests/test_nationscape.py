@@ -38,3 +38,11 @@ class NationscapeTests(unittest.TestCase):
         result=summarize(self.frame,expected,check)
         self.assertEqual(result['score'],.5)
         self.assertEqual(result['percentages']['1'],20)
+
+    def test_deportation_reverses_polarity_without_changing_validation(self):
+        frame=self.frame.rename(columns={'gov_insurance':'deportation'})
+        result=summarize(frame,self.expected,code='deportation',score_map={1:-1,2:1})
+        self.assertEqual(result['score'],-.5)
+        self.assertEqual(result['percentages'],{'1':60,'2':20,'999':20})
+        with self.assertRaisesRegex(ValueError,'response mapping'):
+            summarize(frame,self.expected,code='deportation',score_map={1:1,2:1})
