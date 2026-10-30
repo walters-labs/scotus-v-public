@@ -1,0 +1,274 @@
+{
+  "status": "Provisional reviewed extension; independent substantive review pending",
+  "year": 2023,
+  "wave": "post-election-only",
+  "weight": "commonweight",
+  "population": "US adults",
+  "doi": "10.7910/DVN/JQJTCC",
+  "sources": {
+    "data/raw/ces-2023-v2/questionnaire.pdf": "0fcd7928b1d3d10a649c747973b941db889df6a4c56132ba63c403ddefcd3502",
+    "data/raw/ces-2023-v2/dataverse-metadata.json": "919e5b26b758b7a53af473a00ed0c84ca45210f3f143b8a568ea6529f5f796ef",
+    "data/research/ces_2024_historical_crosswalk.json": "f45c410fc94c6fbdc3814591d80131c7d9148fa7f4d8eb91a15b043eecda7346",
+    "data/research/ces_historical_environment_mappings.json": "ae52d0300cf5539e5947dbe906b2d8b427dab3b3503a85c11af6211a47d00f17"
+  },
+  "response_codes": {
+    "1": "Support",
+    "2": "Oppose",
+    "8": "Skipped; exclude",
+    "9": "Not Asked; exclude"
+  },
+  "entries": [
+    {
+      "source_code": "CC23_321a",
+      "code": "guns_assaultban",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "harmonization": "same substantive proposal",
+      "existing_item": true,
+      "family": "ces:guns_assaultban",
+      "question_text": "Ban assault rifles",
+      "reviewed_questionnaire_page": 37
+    },
+    {
+      "source_code": "CC23_321b",
+      "code": "guns_permits",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "harmonization": "same substantive proposal",
+      "existing_item": true,
+      "family": "ces:guns_permits",
+      "question_text": "Make it easier for people to obtain concealed-carry permit",
+      "reviewed_questionnaire_page": 37
+    },
+    {
+      "source_code": "CC23_321c",
+      "code": "guns_bgchecks",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "harmonization": "same universal-sales scope; older display text explicitly mentions gun shows and Internet sales",
+      "existing_item": true,
+      "family": "ces:guns_bgchecks",
+      "question_text": "Require criminal background checks on all gun sales",
+      "reviewed_questionnaire_page": 37
+    },
+    {
+      "source_code": "CC23_324a",
+      "code": "abortion_always",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "harmonization": "same substantive proposal",
+      "existing_item": true,
+      "family": "ces:abortion_access",
+      "question_text": "Always allow a woman the right to obtain an abortion as a matter of choice",
+      "reviewed_questionnaire_page": 39
+    },
+    {
+      "source_code": "CC23_324c",
+      "code": "abortion_prohibition",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "harmonization": "same substantive proposal",
+      "existing_item": true,
+      "family": "ces:abortion_prohibition",
+      "question_text": "Make abortions illegal in all circumstances",
+      "reviewed_questionnaire_page": 39
+    },
+    {
+      "source_code": "CC23_324d",
+      "code": "abortion_expand_access",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "harmonization": "distinct bundled access proposal",
+      "existing_item": true,
+      "family": "ces:abortion_expand_access",
+      "question_text": "Expand access to abortion, including making it more affordable, broadening the types of providers who can offer care, and protecting access to abortion clinics",
+      "reviewed_questionnaire_page": 39
+    },
+    {
+      "source_code": "CC23_323a",
+      "code": "immig_legalize",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "title": "Immigration: conditional legal status",
+      "harmonization": "Legalization is the liberal endpoint; historical checkbox forms require separate comparability review.",
+      "existing_item": true,
+      "family": "ces:immig_legalize",
+      "question_text": "Grant legal status to all illegal immigrants who have held jobs and paid taxes for at least 3 years, and not been convicted of any felony crimes",
+      "reviewed_questionnaire_page": 38
+    },
+    {
+      "source_code": "CC23_323b",
+      "code": "immig_border",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "title": "Immigration: border patrols",
+      "harmonization": "Increased immigration enforcement is the conservative endpoint; historical checkbox forms require separate review.",
+      "existing_item": true,
+      "family": "ces:immig_border",
+      "question_text": "Increase the number of border patrols on the US-Mexican border",
+      "reviewed_questionnaire_page": 38
+    },
+    {
+      "source_code": "CC23_323c",
+      "code": "immig_wall_only",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "title": "Immigration: border wall",
+      "harmonization": "Border-wall support is the conservative endpoint. Distinct from historical bundled border-spending-and-wall question.",
+      "existing_item": true,
+      "family": "ces:immig_wall_only",
+      "question_text": "Build a wall between the U.S. and Mexico",
+      "reviewed_questionnaire_page": 38
+    },
+    {
+      "source_code": "CC23_323d",
+      "code": "immig_dreamers",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "title": "Immigration: Dreamers legal status",
+      "harmonization": "Legal status and pathway to citizenship are the liberal endpoint.",
+      "existing_item": true,
+      "family": "ces:immig_dreamers",
+      "question_text": "Provide permanent resident status to children of immigrants who were brought to the United States by their parents (also known as Dreamers). Provide these immigrants a pathway to citizenship if they meet the citizenship requirements and have committed no crimes",
+      "reviewed_questionnaire_page": 38
+    },
+    {
+      "source_code": "CC23_326a",
+      "code": "enviro_carbon",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "title": "Environment: carbon emissions regulation",
+      "harmonization": "Support for carbon-emission regulation is the liberal endpoint. Harmonized with the reviewed cumulative CES identity enviro_carbon. See historical review for year-specific wording and excluded 2014 Air-only enforcement question.",
+      "existing_item": true,
+      "family": "ces:enviro_carbon",
+      "question_text": "Give the Environmental Protection Agency power to regulate carbon dioxide emissions",
+      "reviewed_questionnaire_page": 40
+    },
+    {
+      "source_code": "CC23_326b",
+      "code": "enviro_renewable",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "title": "Environment: renewable electricity",
+      "harmonization": "Matches historical minimum-renewables proposal with explicit price tradeoff; distinct from 2024 fixed 20 percent proposal.",
+      "existing_item": true,
+      "family": "ces:enviro_renewable",
+      "question_text": "Require that each state use a minimum amount of renewable fuels (wind, solar, and hydroelectric) in the generation of electricity even if electricity prices increase.",
+      "reviewed_questionnaire_page": 40
+    },
+    {
+      "source_code": "CC23_326c",
+      "code": "enviro_airwateracts",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "title": "Environment: clean air and water enforcement",
+      "harmonization": "Support for environmental enforcement despite the stated employment tradeoff is the liberal endpoint; retain tradeoff wording. Harmonized with the reviewed cumulative CES identity enviro_airwateracts. See historical review for year-specific wording and excluded 2014 Air-only enforcement question.",
+      "existing_item": true,
+      "family": "ces:enviro_airwateracts",
+      "question_text": "Strengthen the Environmental Protection Agency enforcement of the Clean Air Act and Clean Water Act even if it costs U.S. jobs",
+      "reviewed_questionnaire_page": 40
+    },
+    {
+      "source_code": "CC23_326d",
+      "code": "environment_fossil_production",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "title": "Environment: fossil fuel production",
+      "harmonization": "Support for expanded fossil-fuel production is the conservative endpoint.",
+      "existing_item": true,
+      "family": "ces:environment_fossil_production",
+      "question_text": "Increase fossil fuel production in the U.S.",
+      "reviewed_questionnaire_page": 40
+    },
+    {
+      "source_code": "CC23_326e",
+      "code": "environment_federal_leases",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "title": "Environment: oil and gas leases",
+      "harmonization": "Support for restricting fossil-fuel leases is the liberal endpoint.",
+      "existing_item": true,
+      "family": "ces:environment_federal_leases",
+      "question_text": "Halt new oil and gas leases on federal lands",
+      "reviewed_questionnaire_page": 40
+    },
+    {
+      "source_code": "CC23_328c",
+      "code": "healthcare_medicaid_work",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "title": "Health care: Medicaid work requirements",
+      "harmonization": "Support for work requirements restricting Medicaid eligibility is the conservative endpoint.",
+      "existing_item": true,
+      "family": "ces:healthcare_medicaid_work",
+      "question_text": "Require able-bodied adults under 64 years of age who do not have dependents to have a job in order to receive Medicaid.",
+      "reviewed_questionnaire_page": 41
+    },
+    {
+      "source_code": "CC23_328d",
+      "code": "healthcare_aca",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "title": "Health care: Affordable Care Act",
+      "harmonization": "Same repeal proposal as the existing item; opposition is the liberal endpoint.",
+      "existing_item": true,
+      "family": "ces:healthcare_aca",
+      "question_text": "Repeal the Affordable Care Act",
+      "reviewed_questionnaire_page": 41
+    },
+    {
+      "source_code": "CC23_328e",
+      "code": "healthcare_medicaid_expand",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "title": "Health care: Medicaid expansion",
+      "harmonization": "Support for expanded public health coverage at the specified thresholds is the liberal endpoint.",
+      "existing_item": true,
+      "family": "ces:healthcare_medicaid_expand",
+      "question_text": "Expand Medicaid to cover individuals making less than $25,000 and families making less than $40,000 a year.",
+      "reviewed_questionnaire_page": 41
+    }
+  ],
+  "deferred": [
+    {
+      "source_code": "CC23_324b",
+      "reason": "Questionnaire truncates life-endangerment clause; do not infer missing wording."
+    }
+  ]
+}

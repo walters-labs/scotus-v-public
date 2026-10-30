@@ -1,0 +1,68 @@
+{
+  "status": "source recovery feasibility; not a revised analysis protocol",
+  "reviewed_on": "2026-10-30",
+  "official_archive": "https://electionstudies.org/replication-archive/",
+  "findings": [
+    "Official archive lists individual-study vintages for 2020 including 20210211 and 20211118.",
+    "No cumulative-file archive is listed on this page; absence here does not establish unavailability elsewhere.",
+    "Listed 2016 archive link returned HTTP 404 through web retrieval; individual 2020 Stata link returned cache miss, not a verified missing file.",
+    "Individual-study data require their own variable and weight review; they cannot be substituted blindly for cumulative variables."
+  ],
+  "listed_2020_stata_url": "https://electionstudies.org/anes_timeseries_2020_stata_20210211/",
+  "cohort_path": "artifacts/abortion-research-cohort.json",
+  "cohort_sha256": "cf8b0d3de39ee35c7c25232ce74c96deefe5932ec321d0362df17ddf16851a5e",
+  "cases_since_2017": [
+    {
+      "case_id": "2017-041",
+      "date": "2018-06-26",
+      "sources": [
+        "CES"
+      ]
+    },
+    {
+      "case_id": "2018-078",
+      "date": "2019-05-28",
+      "sources": [
+        "GSS",
+        "CES"
+      ]
+    },
+    {
+      "case_id": "2019-040",
+      "date": "2020-06-29",
+      "sources": [
+        "CES"
+      ]
+    },
+    {
+      "case_id": "2021-019",
+      "date": "2022-06-24",
+      "sources": [
+        "GSS",
+        "CES"
+      ]
+    },
+    {
+      "case_id": "2023-049",
+      "date": "2024-06-13",
+      "sources": [
+        "GSS"
+      ]
+    },
+    {
+      "case_id": "2023-060",
+      "date": "2024-06-27",
+      "sources": [
+        "GSS"
+      ]
+    }
+  ],
+  "case_count_since_2017": 6,
+  "implication": "A recent-only abortion evaluation has just six cases in this cohort, and current matched features use CES/GSS. ANES-only substitution would change the estimator and needs a separate protocol; it would not repair the existing evaluation.",
+  "next_required_evidence": [
+    "Recover historic CES policy responses AND contemporaneous weights or verify equivalence.",
+    "Recover GSS vintages for years used by test and training cases.",
+    "Verify court-label availability for historical training cutoffs.",
+    "Keep retrospective descriptive analysis distinct from prospective predictive claims."
+  ]
+}

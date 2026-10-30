@@ -1,0 +1,189 @@
+{
+  "status": "provisional development judgments; not independent test set",
+  "criterion": "Directly measures the searched policy, not merely a related policy or shared word.",
+  "cases": [
+    {
+      "query": "environmental regulation",
+      "corpus": "ces",
+      "relevant": [
+        "enviro_carbon"
+      ],
+      "irrelevant": [
+        "guns_scale",
+        "guns_assaultban"
+      ],
+      "reason": "Environmental regulation is directly addressed by EPA carbon regulation, not firearm regulation."
+    },
+    {
+      "query": "gay marriage",
+      "corpus": "public",
+      "relevant": [],
+      "irrelevant": [
+        "VCF0876",
+        "VCF0877",
+        "VCF0878"
+      ],
+      "reason": "Job discrimination, military service, and adoption are related civil-rights questions but do not directly ask about marriage. No positive example specified in this small judgment set."
+    },
+    {
+      "query": "gun control",
+      "corpus": "gss",
+      "relevant": [
+        "gunlaw"
+      ],
+      "irrelevant": [
+        "pillok"
+      ],
+      "reason": "Gun purchase permits directly address firearms regulation; contraceptive access does not."
+    },
+    {
+      "query": "birth control",
+      "corpus": "gss",
+      "relevant": [
+        "pillok"
+      ],
+      "irrelevant": [
+        "gunlaw"
+      ],
+      "reason": "Contraceptive access directly addresses birth control; firearms permits do not."
+    },
+    {
+      "query": "gay marriage",
+      "corpus": "ces",
+      "relevant": [
+        "gaymarriage_ban"
+      ],
+      "irrelevant": [],
+      "reason": "Constitutional ban directly addresses marriage legality."
+    },
+    {
+      "query": "abortion",
+      "corpus": "ces",
+      "relevant": [
+        "abortion_always",
+        "abortion_prohibition"
+      ],
+      "irrelevant": [
+        "guns_assaultban"
+      ],
+      "reason": "Abortion access/prohibition are directly relevant; firearm bans are unrelated."
+    },
+    {
+      "query": "death penalty",
+      "corpus": "gss",
+      "relevant": [
+        "cappun"
+      ],
+      "irrelevant": [
+        "gunlaw"
+      ],
+      "reason": "Capital punishment for murder directly addresses the query; gun purchase permits do not."
+    },
+    {
+      "query": "cannabis legalization",
+      "corpus": "gss",
+      "relevant": [
+        "grass"
+      ],
+      "irrelevant": [
+        "gunlaw",
+        "pillok"
+      ],
+      "reason": "Marijuana legality is directly about cannabis legalization; firearms and contraception are unrelated.",
+      "review_phase": "wording reviewed before semantic ranking for this query"
+    },
+    {
+      "query": "capital punishment",
+      "corpus": "gss",
+      "relevant": [
+        "cappun"
+      ],
+      "irrelevant": [
+        "gunlaw"
+      ],
+      "reason": "Capital punishment denotes the death penalty, not gun permits.",
+      "review_phase": "wording reviewed before semantic ranking for this query"
+    },
+    {
+      "query": "contraception",
+      "corpus": "gss",
+      "relevant": [
+        "pillok"
+      ],
+      "irrelevant": [
+        "abany",
+        "gunlaw",
+        "absingle",
+        "abhlth"
+      ],
+      "reason": "Contraceptive availability is direct; abortion and gun permits are distinct policies.",
+      "review_phase": "wording reviewed before semantic ranking for this query",
+      "additional_review": "Abortion for unmarried women and health endangerment are not contraception; added after inspection of cross-source experiment output."
+    },
+    {
+      "query": "school prayer",
+      "corpus": "gss",
+      "relevant": [
+        "prayer"
+      ],
+      "irrelevant": [
+        "grass"
+      ],
+      "reason": "Required public-school religious observances directly concern school prayer.",
+      "review_phase": "wording reviewed before semantic ranking for this query"
+    },
+    {
+      "query": "Medicaid expansion",
+      "corpus": "ces",
+      "relevant": [
+        "healthcare_medicaid_expand"
+      ],
+      "irrelevant": [
+        "healthcare_medicaid_work"
+      ],
+      "reason": "Expanding income eligibility differs from imposing employment conditions.",
+      "review_phase": "wording reviewed before semantic ranking for this query"
+    },
+    {
+      "query": "background checks",
+      "corpus": "ces",
+      "relevant": [
+        "guns_bgchecks"
+      ],
+      "irrelevant": [
+        "guns_permits"
+      ],
+      "reason": "Gun-sale screening differs from concealed-carry permitting.",
+      "review_phase": "wording reviewed before semantic ranking for this query"
+    },
+    {
+      "query": "concealed carry",
+      "corpus": "pew",
+      "relevant": [
+        "GUNPRIORITY2G_W25",
+        "GUNPRIORITY2H_W25"
+      ],
+      "irrelevant": [
+        "GUNPRIORITY1F_W25"
+      ],
+      "reason": "Carrying concealed guns differs from background checks on sales.",
+      "review_phase": "wording reviewed before semantic ranking for this query"
+    },
+    {
+      "query": "clean water enforcement",
+      "corpus": "ces",
+      "relevant": [
+        "enviro_airwateracts"
+      ],
+      "irrelevant": [
+        "guns_assaultban"
+      ],
+      "reason": "Enforcement of the Clean Water Act is directly relevant; firearm bans are not.",
+      "review_phase": "wording reviewed before semantic ranking for this query"
+    }
+  ],
+  "limitations": [
+    "Tiny diagnosis set selected after observing failures; cannot estimate general precision or recall.",
+    "Broad gun-control queries may legitimately include concealed-carry questions; changing that mix is a stability issue, not automatically an irrelevant result."
+  ]
+}

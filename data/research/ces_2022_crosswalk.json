@@ -1,0 +1,198 @@
+{
+  "year": 2022,
+  "wave": "pre-election",
+  "weight": "commonweight",
+  "doi": "10.7910/DVN/PR4L8P",
+  "status": "reviewed candidate",
+  "entries": [
+    {
+      "source_code": "CC22_330b",
+      "code": "guns_assaultban",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "family": "ces:guns_assaultban",
+      "existing_item": true,
+      "question_text": "Ban assault rifles",
+      "reviewed_pdf_pages": [
+        37
+      ],
+      "harmonization": "Explicit support/opposition; wording reviewed against existing policy identity. Retain restrictions and tradeoffs."
+    },
+    {
+      "source_code": "CC22_330c",
+      "code": "guns_permits",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "family": "ces:guns_permits",
+      "existing_item": true,
+      "question_text": "Make it easier for people to obtain concealed-carry permit",
+      "reviewed_pdf_pages": [
+        37
+      ],
+      "harmonization": "Explicit support/opposition; wording reviewed against existing policy identity. Retain restrictions and tradeoffs."
+    },
+    {
+      "source_code": "CC22_331a",
+      "code": "immig_legalize",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "family": "ces:immig_legalize",
+      "existing_item": true,
+      "question_text": "Grant legal status to all illegal immigrants who have held jobs and paid taxes for at least 3 years, and not been convicted of any felony crimes",
+      "reviewed_pdf_pages": [
+        38
+      ],
+      "harmonization": "Explicit support/opposition; wording reviewed against existing policy identity. Retain restrictions and tradeoffs."
+    },
+    {
+      "source_code": "CC22_331b",
+      "code": "immig_border",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "family": "ces:immig_border",
+      "existing_item": true,
+      "question_text": "Increase the number of border patrols on the US-Mexican border",
+      "reviewed_pdf_pages": [
+        38
+      ],
+      "harmonization": "Explicit support/opposition; wording reviewed against existing policy identity. Retain restrictions and tradeoffs."
+    },
+    {
+      "source_code": "CC22_332a",
+      "code": "abortion_always",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "family": "ces:abortion_access",
+      "existing_item": true,
+      "question_text": "Always allow a woman to obtain an abortion as a matter of choice",
+      "reviewed_pdf_pages": [
+        39
+      ],
+      "harmonization": "Explicit support/opposition; wording reviewed against existing policy identity. Retain restrictions and tradeoffs."
+    },
+    {
+      "source_code": "CC22_332b",
+      "code": "abortion_exceptions_only",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "family": "ces:abortion_exceptions_only",
+      "existing_item": true,
+      "question_text": "Permit abortion only in case of rape, incest or when the woman's life is in danger",
+      "reviewed_pdf_pages": [
+        39
+      ],
+      "harmonization": "Explicit support/opposition; wording reviewed against existing policy identity. Retain restrictions and tradeoffs."
+    },
+    {
+      "source_code": "CC22_332c",
+      "code": "abortion_20weeks",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "family": "ces:abortion_20weeks",
+      "existing_item": true,
+      "question_text": "Prohibit all abortions after the 20th week of pregnancy",
+      "reviewed_pdf_pages": [
+        39
+      ],
+      "harmonization": "Explicit support/opposition; wording reviewed against existing policy identity. Retain restrictions and tradeoffs."
+    },
+    {
+      "source_code": "CC22_332d",
+      "code": "abortion_coverage",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "family": "ces:abortion_coverage",
+      "existing_item": true,
+      "question_text": "Allow employers to decline coverage of abortions in insurance plans",
+      "reviewed_pdf_pages": [
+        39
+      ],
+      "harmonization": "Explicit support/opposition; wording reviewed against existing policy identity. Retain restrictions and tradeoffs."
+    },
+    {
+      "source_code": "CC22_332f",
+      "code": "abortion_prohibition",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "family": "ces:abortion_prohibition",
+      "existing_item": true,
+      "question_text": "Make abortions illegal in all circumstances",
+      "reviewed_pdf_pages": [
+        39
+      ],
+      "harmonization": "Explicit support/opposition; wording reviewed against existing policy identity. Retain restrictions and tradeoffs."
+    },
+    {
+      "source_code": "CC22_333a",
+      "code": "enviro_carbon",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "family": "ces:enviro_carbon",
+      "existing_item": true,
+      "question_text": "Give the Environmental Protection Agency power to regulate carbon dioxide emissions",
+      "reviewed_pdf_pages": [
+        41
+      ],
+      "harmonization": "Explicit support/opposition; wording reviewed against existing policy identity. Retain restrictions and tradeoffs."
+    },
+    {
+      "source_code": "CC22_333b",
+      "code": "enviro_renewable",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "family": "ces:enviro_renewable",
+      "existing_item": true,
+      "question_text": "Require that each state use a minimum amount of renewable fuels (wind, solar, and hydroelectric) in the generation of electricity even if electricity prices increase a little",
+      "reviewed_pdf_pages": [
+        41
+      ],
+      "harmonization": "Explicit support/opposition; wording reviewed against existing policy identity. Retain restrictions and tradeoffs."
+    },
+    {
+      "source_code": "CC22_333c",
+      "code": "enviro_airwateracts",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "family": "ces:enviro_airwateracts",
+      "existing_item": true,
+      "question_text": "Strengthen the Environmental Protection Agency enforcement of the Clean Air Act and Clean Water Act even if it costs U.S. jobs",
+      "reviewed_pdf_pages": [
+        41
+      ],
+      "harmonization": "Explicit support/opposition; wording reviewed against existing policy identity. Retain restrictions and tradeoffs."
+    }
+  ],
+  "sources": {
+    "data/raw/ces-2022-v4/guide.pdf": "4ee48162508bfa5a53017a4f87373f53e83a206934ff9755de890e37595a3460",
+    "data/raw/ces-2022-v4/pre-election-questionnaire.pdf": "0e01ab38d1dd2ee9a9c4a4529032ab96c34c5f4661d3be61389ac8701f20cfbf"
+  },
+  "deferred_items": {
+    "CC22_330e": "Under-21 background checks differs from general background-check item.",
+    "CC22_331d": "Border spending and wall bundle differs from wall-only question.",
+    "CC22_333e": "Fossil production and LNG export bundle differs from production-only question."
+  }
+}

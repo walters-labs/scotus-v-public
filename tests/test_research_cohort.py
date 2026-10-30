@@ -82,3 +82,14 @@ class ResearchCohortTests(unittest.TestCase):
         changed=evaluate(altered,minimum=4)
         self.assertEqual([r['sentiment_model'] for r in result['predictions']],
                          [r['sentiment_model'] for r in changed['predictions']])
+
+    def test_alignment_interval_preserves_ambiguity_and_direction(self):
+        from scripts.describe_alignment_uncertainty import interval_alignment
+        estimate=dict(mean=.5,standard_error=.01,design_df=20)
+        self.assertEqual(interval_alignment(estimate,1)['status'],'aligned')
+        self.assertEqual(interval_alignment(estimate,0)['status'],'opposed')
+        self.assertEqual(interval_alignment(dict(estimate,mean=-.5),0)['status'],'aligned')
+        self.assertEqual(interval_alignment(dict(estimate,mean=0),0)['status'],
+                         'direction unresolved by marginal interval')
+        self.assertEqual(interval_alignment(dict(estimate,standard_error=None),1)['status'],
+                         'sampling uncertainty unsupported')

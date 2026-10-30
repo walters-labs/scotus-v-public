@@ -1,0 +1,38 @@
+{
+  "status": "documented historical weight introduction; not a corrected evaluation",
+  "source_url": "https://gss.norc.org/content/dam/gss/get-documentation/pdf/other/Release%20Notes%207221.pdf",
+  "local_source": "data/raw/gss-release-history/release-notes-7221.pdf",
+  "sha256": "1eedba3bac31f68917c93df95f130ba79f48848ec2f4e2f994c1b6bd77496e65",
+  "page": 4,
+  "release": "GSS 1972-2021 Release 3, November 2022",
+  "release_lower_bound": "2022-11-01",
+  "documented_added_weights": {
+    "WTSSPS": [
+      2000,
+      2002,
+      2004,
+      2006,
+      2008,
+      2010,
+      2012,
+      2014,
+      2018
+    ],
+    "WTSSNRPS": [
+      2004,
+      2006,
+      2008,
+      2010,
+      2012,
+      2014,
+      2018
+    ]
+  },
+  "current_importer": "WTSSPS before 2004; WTSSNRPS from 2004",
+  "limitations": [
+    "Only years explicitly listed in the release-note table are included; 2016 and earlier years require separate evidence.",
+    "This establishes later weight availability, not the numerical size or direction of its effect.",
+    "Need historical weights and source records to rebuild a valid as-of evaluation."
+  ],
+  "derived_report": "artifacts/gss-weight-availability-audit.json"
+}

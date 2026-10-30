@@ -174,3 +174,17 @@ restarts. Cloudflare DNS and the VPS resolve the correct address; the developmen
 machine's local resolver still had a cached NXDOMAIN during verification, so
 external checks used curl --resolve with the correct hostname and VPS address.
 The VPS also successfully checked HTTPS using ordinary DNS resolution.
+
+## Measuring the full hybrid application locally
+
+The default serving check measures lexical mode. To include the embedding model:
+
+```sh
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 TOKENIZERS_PARALLELISM=false .venv/bin/python scripts/check_serving.py artifacts/ces-2023-candidate.sqlite --hybrid artifacts/semantic-ces-2023-candidate
+```
+
+The October 30 candidate peaked at 222.4 MiB across 160 two-thread test-client
+requests on macOS. This is a single-process peak, excluding Gunicorn's master,
+other services, kernel/cache overhead, and platform differences. It is evidence
+for feasibility, not a Linux memory-limit test. The reported hit counts are a
+separate lexical diagnostic; request timing and memory use the selected mode.

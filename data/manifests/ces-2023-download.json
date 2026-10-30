@@ -1,0 +1,27 @@
+{
+  "description": "Exact CES 2023 V2 inputs and original questionnaire for deferred-item review. Run with destination repository root.",
+  "doi": "10.7910/DVN/JQJTCC",
+  "version": 2,
+  "files": [
+    {
+      "path": "data/raw/ces-2023-v2/responses.dta",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/10164312?format=original",
+      "sha256": "8f328f29d75ac94ba03ab4b2612796cdb5ae070789c90a4557020503fea20c37"
+    },
+    {
+      "path": "data/raw/ces-2023-v2/questionnaire.pdf",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/11035458",
+      "sha256": "0fcd7928b1d3d10a649c747973b941db889df6a4c56132ba63c403ddefcd3502"
+    },
+    {
+      "path": "data/raw/ces-2023-v2/dataverse-metadata.json",
+      "url": "https://dataverse.harvard.edu/api/datasets/:persistentId/versions/2.0?persistentId=doi:10.7910/DVN/JQJTCC",
+      "sha256": "919e5b26b758b7a53af473a00ed0c84ca45210f3f143b8a568ea6529f5f796ef"
+    },
+    {
+      "path": "data/raw/ces-2023-v2/questionnaire-original.pdf",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/10164313",
+      "sha256": "b31f0ae3d663e02babddcc1de13ad85eb312097741b0095a382c61bf4f9acc67"
+    }
+  ]
+}

@@ -12,10 +12,28 @@ from .build import digest, write_index
 from .public import aggregate, validate
 
 
+def merge_variants(frame, entries):
+    """Coalesce explicitly reviewed variants; never count a respondent twice."""
+    frame = frame.copy()
+    for entry in entries:
+        code = entry['code']
+        valid_codes = [int(k) for k in entry['scores']]
+        for variant in entry.get('variants', []):
+            eligible = frame['year'].isin(variant['years'])
+            primary_valid = frame[code].isin(valid_codes)
+            variant_valid = frame[variant['code']].isin(valid_codes) & eligible
+            conflicts = primary_valid & variant_valid & (frame[code] != frame[variant['code']])
+            if conflicts.any():
+                raise ValueError(f'Conflicting GSS responses: {code}/{variant["code"]}')
+            use = variant_valid & ~primary_valid
+            frame.loc[use, code] = frame.loc[use, variant['code']]
+    return frame
+
+
 def aggregate_gss(frame, entries, totals):
     # Choose the recommended weight by survey year, never by individual response.
     # Missing modern weights must not fall back to a different weighting scheme.
-    frame = frame.copy()
+    frame = merge_variants(frame, entries)
     frame['VCF0004'] = frame['year']
     frame['gss_weight'] = frame['wtssps'].astype(float).where(
         frame['year'] < 2004, frame['wtssnrps'].astype(float))
@@ -36,6 +54,7 @@ def build(source, mappings, output, manifest):
         raise ValueError('Unexpected GSS weight')
     totals = defaultdict(lambda: [0., 0., 0])
     columns = ['year', 'wtssps', 'wtssnrps'] + [e['code'] for e in entries]
+    columns += sorted({v['code'] for e in entries for v in e.get('variants', [])})
     with pd.read_stata(source, convert_categoricals=False, columns=columns, chunksize=2000) as reader:
         for frame in reader:
             aggregate_gss(frame, entries, totals)

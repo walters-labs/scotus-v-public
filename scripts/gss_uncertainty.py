@@ -63,14 +63,23 @@ def estimate_composite(frame, columns):
 
 
 def main():
+    import argparse
+    from scvpublic.gss import merge_variants
+    from scvpublic.store import series
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--grid-candidate',action='store_true')
+    args=parser.parse_args()
     source=Path('data/raw/gss-2024-r3a/gss7224_r3a.dta')
     manifest=Path('data/manifests/gss-2024-r3a.json')
-    mappings=Path('data/gss/response_mappings.json')
+    mappings=Path('data/research/gss_grid_candidate_mappings.json' if args.grid_candidate
+                  else 'data/gss/response_mappings.json')
     if digest(source)!=json.loads(manifest.read_text())['dta_sha256']:
         raise ValueError('GSS source checksum mismatch')
     entries=json.loads(mappings.read_text())['entries']
     columns=['year','vstrat','vpsu','wtssps','wtssnrps']+[e['code'] for e in entries]
+    columns+=sorted({v['code'] for e in entries for v in e.get('variants',[])})
     frame=pd.read_stata(source,convert_categoricals=False,columns=columns)
+    frame=merge_variants(frame,entries)
     results=[];composites=[]
     protocol=Path('data/research/abortion_protocol.json')
     abortion_codes=json.loads(protocol.read_text())['survey_codes']['GSS']
@@ -88,7 +97,8 @@ def main():
             composites.append(dict(year=int(year),**composite))
     report=dict(status='offline pilot; not deployed; independent comparison is a separate report',
         method='With-replacement stratified PSU Taylor linearization of weighted response mean; full positive-weight year sample retains zero contributions for unanswered items.',
-        sources={str(p):digest(p) for p in [source,manifest,mappings,protocol,Path(__file__)]},
+        mappings_path=str(mappings),
+        sources={str(p):digest(p) for p in [source,manifest,mappings,protocol,Path(__file__),Path('scvpublic/gss.py')]},
         documentation=['https://gss.norc.org/content/dam/gss/get-documentation/pdf/reports/methodological-reports/GSS%20MR137%20Poststratification%20Weights.pdf'],
         limitations=['No adjustment for singleton strata yet; no standard error for those years.',
                     'Missing design identifiers prevent variance estimates.',
@@ -97,22 +107,34 @@ def main():
         estimates=results,abortion_composite=composites)
     artifact=Path('artifacts/wvs-pilot.sqlite')
     cohort_path=Path('artifacts/abortion-research-cohort.json')
-    cohort=json.loads(cohort_path.read_text())
-    db=connect(artifact)
-    try:
-        questions={q['code']:q for payload, in db.execute("SELECT payload FROM documents WHERE corpus='gss'")
-                   for q in [json.loads(payload)]}
-    finally:
-        db.close()
+    if args.grid_candidate:
+        artifact=Path('data/processed/gss-grid-candidate/public.json')
+        payload=json.loads(artifact.read_text())
+        if payload['sources'][str(mappings.resolve())]!=digest(mappings):
+            raise ValueError('Candidate mappings differ')
+        questions={q['code']:q for q in payload['documents']}
+        composite_series=series([], [questions[c] for c in abortion_codes])[1]
+        validation_paths=[artifact]
+    else:
+        cohort=json.loads(cohort_path.read_text())
+        db=connect(artifact)
+        try:
+            questions={q['code']:q for payload, in db.execute("SELECT payload FROM documents WHERE corpus='gss'")
+                       for q in [json.loads(payload)]}
+        finally:
+            db.close()
+        composite_series={int(y):v for y,v in cohort['survey_series']['GSS'].items()}
+        validation_paths=[artifact,cohort_path]
     for row in results:
         if abs(row['mean']-questions[row['code']]['years'][str(row['year'])])>1e-10:
             raise ValueError('Point estimate differs from serving artifact')
     for row in composites:
-        if abs(row['mean']-cohort['survey_series']['GSS'][str(row['year'])])>1e-10:
+        if abs(row['mean']-composite_series[row['year']])>1e-10:
             raise ValueError('Composite estimate differs from research cohort')
     report['point_validation']=dict(item_years=len(results),composite_years=len(composites),
-        hashes={str(p):digest(p) for p in [artifact,cohort_path]},tolerance=1e-10)
-    Path('artifacts/gss-uncertainty.json').write_text(json.dumps(report,indent=2,allow_nan=False)+'\n')
+        hashes={str(p):digest(p) for p in validation_paths},tolerance=1e-10)
+    output=Path('artifacts/gss-grid-uncertainty.json' if args.grid_candidate else 'artifacts/gss-uncertainty.json')
+    output.write_text(json.dumps(report,indent=2,allow_nan=False)+'\n')
     from collections import Counter
     print(dict(Counter(r['status'] for r in results)))
 

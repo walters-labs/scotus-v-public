@@ -13,8 +13,9 @@ from scvpublic.web import create_app
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('artifact')
+    parser.add_argument('--hybrid', help='Load the embedding bundle and measure the full hybrid application')
     args = parser.parse_args()
-    app = create_app(args.artifact)
+    app = create_app(args.artifact, args.hybrid)
     terms = ['', 'abortion', 'gay marriage', 'gun control', 'government', 'court', 'rights', 'zzzznomatchzzzz']
     def request(term):
         start = time.perf_counter()
@@ -31,12 +32,21 @@ def main():
         hits = {term: {corpus: len(search(db, corpus, [term])) for corpus in corpora}
                 for term in terms[1:]}
     with app.test_client() as client:
-        assert client.get('/healthz').status_code == 200
+        health = client.get('/healthz')
+        assert health.status_code == 200
+        if args.hybrid:
+            assert health.json['search_mode'] == 'hybrid'
         assert client.get('/', query_string={'q1': 'x' * 101}).status_code == 400
-    scientific = {'numpy', 'scipy', 'pandas', 'sklearn', 'pyarrow'} & sys.modules.keys()
+    forbidden = {'scipy', 'pandas', 'sklearn', 'pyarrow'}
+    if not args.hybrid:
+        forbidden.add('numpy')
+    scientific = forbidden & sys.modules.keys()
     assert not scientific, scientific
     rss = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
-    print(json.dumps(dict(requests=len(timings), threads=2, max_seconds=max(timings),
+    print(json.dumps(dict(mode='hybrid' if args.hybrid else 'lexical',
+        platform=sys.platform, memory_scope='single-process Flask test client; excludes gunicorn master and OS overhead',
+        hit_counts_scope='lexical diagnostic only; request timings exercise selected application mode',
+        requests=len(timings), threads=2, max_seconds=max(timings),
         p95_seconds=sorted(timings)[int(len(timings)*.95)],
         peak_rss_mib=rss / (1024**2 if sys.platform == 'darwin' else 1024), hits=hits), indent=2))
 

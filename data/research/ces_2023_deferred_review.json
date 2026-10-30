@@ -1,0 +1,20 @@
+{
+  "variable": "CC23_324b",
+  "status": "remain excluded; missing wording not recovered",
+  "review_date": "2026-10-30",
+  "current_questionnaire": {
+    "path": "data/raw/ces-2023-v2/questionnaire.pdf",
+    "file_id": 11035458,
+    "page": 39,
+    "visual_review": "Rendered page confirms visible wording ends at the incomplete life-endangerment clause; not merely a text-extraction error."
+  },
+  "original_questionnaire": {
+    "path": "data/raw/ces-2023-v2/questionnaire-original.pdf",
+    "file_id": 10164313,
+    "url": "https://dataverse.harvard.edu/api/access/datafile/10164313",
+    "sha256": "b31f0ae3d663e02babddcc1de13ad85eb312097741b0095a382c61bf4f9acc67",
+    "text_review": "The original version contains the same incomplete clause."
+  },
+  "decision": "Do not infer missing wording from 2022/2024 questionnaires. Keep 2023 estimate excluded pending authoritative clarification.",
+  "effect": "2023/2024 selected abortion composites contain different items; use common-item comparison for descriptive change."
+}

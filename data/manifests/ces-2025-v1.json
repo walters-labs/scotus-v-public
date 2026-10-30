@@ -1,0 +1,43 @@
+{
+  "doi": "10.7910/DVN/DFUGJR",
+  "version": 1,
+  "release_time": "2026-03-25T16:45:57Z",
+  "license": {
+    "name": "CC0 1.0",
+    "uri": "http://creativecommons.org/publicdomain/zero/1.0",
+    "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png",
+    "rightsIdentifier": "CC0-1.0",
+    "rightsIdentifierScheme": "SPDX",
+    "schemeUri": "https://spdx.org/licenses/",
+    "languageCode": "en"
+  },
+  "rows": 17000,
+  "files": [
+    {
+      "path": "data/raw/ces-2025-v1/questionnaire.pdf",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/13600925",
+      "sha256": "9a6d7f39ee926f6a1d7abc24cb50c826c0806a82e4e5b293ad18e18b676680d8",
+      "bytes": 1196517,
+      "publisher_checksum": {
+        "type": "MD5",
+        "value": "03046dad1f0d8e0a75def5660171dde9"
+      }
+    },
+    {
+      "path": "data/raw/ces-2025-v1/responses.dta",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/13600926?format=original",
+      "sha256": "516135d80d9fb5dbcbcea9c952c56b0847b644791d918c4ea6f1255d785033e5",
+      "bytes": 59374305,
+      "publisher_checksum": {
+        "type": "MD5",
+        "value": "3b67b7f24a05934be143599d97db8c3c"
+      }
+    }
+  ],
+  "status": "acquired and checksummed; not yet imported",
+  "wave": "post-election-only",
+  "notes": [
+    "Abortion uses a four-category item instead of the 2022\u20132024 support/oppose battery.",
+    "CC25_328e concerns ACA tax credits, not Medicaid expansion. Do not match by variable suffix alone."
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "status": "paused at user request",
+  "status": "Local GSS/CES release candidate packaged and verified; not deployed; research incomplete",
   "coverage": {
     "required_evidence": [
       "Topic-specific coverage by source and year",
@@ -22,7 +22,19 @@
       "Import Nationscape when available",
       "Assess uncertainty from original respondent data"
     ],
-    "gss_uncertainty_status": "Offline Taylor pilot preserves shared-respondent covariance. All 701 item-year and 34 composite-year means match existing artifacts. Independent samplics 0.4.31 comparison passes 642 supported item-year ratios and 30 composite linearized-total standard errors within 1e-10. Composite validation checks variance aggregation, not independent derivation. Missing-design years and singleton strata remain unsupported; cross-source uncertainty remains."
+    "gss_uncertainty_status": "Offline Taylor pilot preserves shared-respondent covariance. All 701 item-year and 34 composite-year means match existing artifacts. Independent samplics 0.4.31 comparison passes 642 supported item-year ratios and 30 composite linearized-total standard errors within 1e-10. Composite validation checks variance aggregation, not independent derivation. Missing-design years and singleton strata remain unsupported; cross-source uncertainty remains.",
+    "gss_grid_candidate": "Seven abortion items include reviewed grid responses without duplicate respondents; 21 affected question-years independently verified. Combined candidate includes this expansion. Supported sampling-error calculations independently checked; default mappings and production unchanged.",
+    "ces_2024_candidate": "Consolidated CES candidate includes 29 question identities and 145 question-years: 19 reviewed 2024 observations, 12 reviewed 2022 observations, and 23 newly mapped historical environment observations. Carbon and joint Air/Water enforcement explicitly harmonized; renewable mandates remain distinct. Independent counts and means validated. Production unchanged.",
+    "ces_2023_candidate": {
+      "questions": 29,
+      "question_years": 163,
+      "added_2023_observations": 18,
+      "artifact": "artifacts/ces-2023-candidate.sqlite",
+      "bundle": "artifacts/semantic-ces-2023-candidate",
+      "source": "data/processed/ces-2023-candidate/public.json",
+      "status": "Attached and serving checks passed; not deployed",
+      "deferred": "Exceptions-only abortion item has truncated questionnaire wording"
+    }
   },
   "alignment": {
     "required_evidence": [
@@ -99,7 +111,8 @@
       "seed": 20261029,
       "limitations": "Fixed predictions; no refitting. Assumes exchangeable decision-year clusters. Does not capture serial dependence, survey sampling error, source composition uncertainty, or model-selection uncertainty."
     },
-    "stable_item_sensitivity": "Stable seven-item GSS series, identical common-case training/evaluation coverage: 37 eligible cases, 17 evaluated cases over 12 years. Baseline Brier 0.2599; original-index and GSS models both 0.2617. Fixed-GSS minus baseline interval approximately [-0.0017, 0.0054]. Exploratory post-audit sensitivity, not independent validation; original 27-case evaluation retained."
+    "stable_item_sensitivity": "Stable seven-item GSS series, identical common-case training/evaluation coverage: 37 eligible cases, 17 evaluated cases over 12 years. Baseline Brier 0.2599; original-index and GSS models both 0.2617. Fixed-GSS minus baseline interval approximately [-0.0017, 0.0054]. Exploratory post-audit sensitivity, not independent validation; original 27-case evaluation retained.",
+    "availability_audit": "ANES/GSS/CES audit: all 27 evaluated cases use a later current vintage in training or test inputs; zero verified as-of. ANES/GSS hashes bound to original artifact; GSS July 2026 date uses month lower bound only. Earlier-version equivalence and court-label availability remain unverified. Retrospective metrics unchanged."
   },
   "blog": {
     "remaining": [
@@ -127,6 +140,23 @@
     ],
     "guide": "docs/USER_TESTING.md"
   },
-  "next_step": "User review of current changes, then one bounded data-coverage task. Do not pursue all goals concurrently. External testing deferred.",
-  "handoff": "docs/PAUSED_HANDOFF.md"
+  "next_step": "Review the consolidated release candidate and consolidate research-only experiments before further expansion. Public-question matching has known false positives; experimental semantic/stemming alternatives are not deployed. CES 2023 is a subsequent bounded task. Nationscape email pending; user testing and publication deferred.",
+  "handoff": "docs/PAUSED_HANDOFF.md",
+  "release_candidate": {
+    "directory": "artifacts/release-20261030-ces2023",
+    "validation": "artifacts/release-20261030-ces2023-validation.json",
+    "processed_ces": "data/processed/ces-2023-candidate/public.json",
+    "artifact": "artifacts/ces-2023-candidate.sqlite",
+    "hybrid_bundle": "artifacts/semantic-ces-2023-candidate",
+    "status": "47 packaged checksums, 160 packaged serving requests, four packaged hybrid queries passed locally; not deployed.",
+    "remaining": [
+      "User review of expanded data and annual question wording",
+      "Fresh Linux/VPS verification when deployment is authorized"
+    ],
+    "excluded": [
+      "Offline survey-search experiments",
+      "Research results and blog drafts",
+      "Raw respondent data and credentials"
+    ]
+  }
 }

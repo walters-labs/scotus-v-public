@@ -54,7 +54,9 @@ def build():
     sources={name:series([],qs)[1] for name,qs in questions.items()}
     combined,contributors=combine_sources(sources)
     cases,excluded=assemble_cases(groups,protocol,combined,contributors)
-    report=dict(protocol=protocol,hashes={str(p):digest(p) for p in [protocol_path,scdb,artifact]},
+    report=dict(analysis_type='retrospective chronological diagnostic',
+        historical_input_availability_verified=False,
+        protocol=protocol,hashes={str(p):digest(p) for p in [protocol_path,scdb,artifact]},
         cases=sorted(cases,key=lambda c:(c['date'],c['case_id'])),excluded=excluded,
         survey_series=sources,combined=combined,
         summary=dict(cases=len(cases),matched_to_prior_sentiment=sum(c['survey_year'] is not None for c in cases),

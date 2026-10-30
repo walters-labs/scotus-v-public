@@ -1,0 +1,48 @@
+{
+  "doi": "10.7910/DVN/X11EP6",
+  "version": 9,
+  "license": {
+    "name": "CC0 1.0",
+    "uri": "http://creativecommons.org/publicdomain/zero/1.0",
+    "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png",
+    "rightsIdentifier": "CC0-1.0",
+    "rightsIdentifierScheme": "SPDX",
+    "schemeUri": "https://spdx.org/licenses/",
+    "languageCode": "en"
+  },
+  "status": "acquired and checksummed; not mapped or imported",
+  "rows": 60000,
+  "columns": 694,
+  "files": [
+    {
+      "path": "data/raw/ces-2024-v9/responses.csv",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/12050325",
+      "bytes": 183679005,
+      "sha256": "8a5e9fbc982961ad910bad9aed8d521fa0a85e85cded43fb308cce0ab22ba5d9",
+      "publisher_checksum": {
+        "type": "MD5",
+        "value": "b740b9305fee50e1a34656b513f55c57"
+      }
+    },
+    {
+      "path": "data/raw/ces-2024-v9/guide.pdf",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/12050326",
+      "bytes": 1162260,
+      "sha256": "48ef8f229980b4778dd26f321062e9d9e089abdd849cc8db2529377f3e8b0c10",
+      "publisher_checksum": {
+        "type": "MD5",
+        "value": "b1b24ed55a20193bb0301bc84cf6da9a"
+      }
+    },
+    {
+      "path": "data/raw/ces-2024-v9/pre-election-questionnaire.docx",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/11032062",
+      "bytes": 183194,
+      "sha256": "fe8d9acec0a8f312fbde3a95d3d2190e6be8f992c9de41f40954f1875abfdca8",
+      "publisher_checksum": {
+        "type": "MD5",
+        "value": "58b5c075e1c6ccaaa4498043b375af78"
+      }
+    }
+  ]
+}

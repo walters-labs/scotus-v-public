@@ -1,0 +1,342 @@
+{
+  "status": "Reviewed annual extension for historical environment candidate",
+  "year": 2024,
+  "wave": "pre-election",
+  "weight": "commonweight",
+  "population": "US adults",
+  "doi": "10.7910/DVN/X11EP6",
+  "response_codes": {
+    "1": "Support",
+    "2": "Oppose",
+    "8": "Skipped; exclude",
+    "9": "Not Asked; exclude"
+  },
+  "missing": "Exclude blank/NaN and any response outside explicit score mapping",
+  "sources": {
+    "data/raw/ces-2024-v9/pre-election-questionnaire.docx": "fe8d9acec0a8f312fbde3a95d3d2190e6be8f992c9de41f40954f1875abfdca8",
+    "data/raw/ces-2024-v9/guide.pdf": "48ef8f229980b4778dd26f321062e9d9e089abdd849cc8db2529377f3e8b0c10",
+    "data/ces/response_mappings.json": "3e94bb88ecdc3e4230f316929257471f8078aa1ee809652463321c51e7f02a54",
+    "data/research/ces_historical_environment_mappings.json": "ae52d0300cf5539e5947dbe906b2d8b427dab3b3503a85c11af6211a47d00f17",
+    "data/research/ces_historical_policy_review.json": "7677eac4d07b36f1e28eda2f29b4eb59581f456c2f1ee7170315e1a054df9fc0"
+  },
+  "entries": [
+    {
+      "source_code": "CC24_321a",
+      "code": "guns_assaultban",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "question_text_2024": "Ban assault rifles",
+      "harmonization": "same substantive proposal",
+      "existing_item": true,
+      "family": "ces:guns_assaultban",
+      "reviewed_render_pages": [
+        31,
+        32
+      ]
+    },
+    {
+      "source_code": "CC24_321b",
+      "code": "guns_permits",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "question_text_2024": "Make it easier for people to obtain concealed-carry permit",
+      "harmonization": "same substantive proposal",
+      "existing_item": true,
+      "family": "ces:guns_permits",
+      "reviewed_render_pages": [
+        31,
+        32
+      ]
+    },
+    {
+      "source_code": "CC24_321c",
+      "code": "guns_bgchecks",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "question_text_2024": "Require criminal background checks on all gun sales",
+      "harmonization": "same universal-sales scope; older display text explicitly mentions gun shows and Internet sales",
+      "existing_item": true,
+      "family": "ces:guns_bgchecks",
+      "reviewed_render_pages": [
+        31,
+        32
+      ]
+    },
+    {
+      "source_code": "CC24_324a",
+      "code": "abortion_always",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "question_text_2024": "Always allow a woman the right to obtain an abortion as a matter of choice",
+      "harmonization": "same substantive proposal",
+      "existing_item": true,
+      "family": "ces:abortion_access",
+      "reviewed_render_pages": [
+        33,
+        34
+      ]
+    },
+    {
+      "source_code": "CC24_324c",
+      "code": "abortion_prohibition",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "question_text_2024": "Make abortions illegal in all circumstances",
+      "harmonization": "same substantive proposal",
+      "existing_item": true,
+      "family": "ces:abortion_prohibition",
+      "reviewed_render_pages": [
+        33,
+        34
+      ]
+    },
+    {
+      "source_code": "CC24_324b",
+      "code": "abortion_exceptions_only",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "question_text_2024": "Permit abortion only in case of rape, incest or when the woman's life is in danger",
+      "harmonization": "distinct restrictive proposal; opposition need not uniquely imply support for broader access",
+      "existing_item": false,
+      "family": "ces:abortion_exceptions_only",
+      "reviewed_render_pages": [
+        33,
+        34
+      ]
+    },
+    {
+      "source_code": "CC24_324d",
+      "code": "abortion_expand_access",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "question_text_2024": "Expand access to abortion, including making it more affordable, broadening the types of providers who can offer care, and protecting access to abortion clinics",
+      "harmonization": "distinct bundled access proposal",
+      "existing_item": false,
+      "family": "ces:abortion_expand_access",
+      "reviewed_render_pages": [
+        33,
+        34
+      ]
+    },
+    {
+      "source_code": "CC24_323a",
+      "code": "immig_legalize",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "title": "Immigration: conditional legal status",
+      "question_text_2024": "Grant legal status to all illegal immigrants who have held jobs and paid taxes for at least 3 years, and not been convicted of any felony crimes",
+      "harmonization": "Legalization is the liberal endpoint; historical checkbox forms require separate comparability review.",
+      "existing_item": false,
+      "family": "ces:immig_legalize",
+      "reviewed_render_pages": [
+        32,
+        33
+      ]
+    },
+    {
+      "source_code": "CC24_323b",
+      "code": "immig_border",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "title": "Immigration: border patrols",
+      "question_text_2024": "Increase the number of border patrols on the US-Mexican border",
+      "harmonization": "Increased immigration enforcement is the conservative endpoint; historical checkbox forms require separate review.",
+      "existing_item": false,
+      "family": "ces:immig_border",
+      "reviewed_render_pages": [
+        32,
+        33
+      ]
+    },
+    {
+      "source_code": "CC24_323c",
+      "code": "immig_wall_only",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "title": "Immigration: border wall",
+      "question_text_2024": "Build a wall between the U.S. and Mexico",
+      "harmonization": "Border-wall support is the conservative endpoint. Distinct from historical bundled border-spending-and-wall question.",
+      "existing_item": false,
+      "family": "ces:immig_wall_only",
+      "reviewed_render_pages": [
+        32,
+        33
+      ]
+    },
+    {
+      "source_code": "CC24_323d",
+      "code": "immig_dreamers",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "title": "Immigration: Dreamers legal status",
+      "question_text_2024": "Provide permanent resident status to children of immigrants who were brought to the United States by their parents (also known as Dreamers). Provide these immigrants a pathway to citizenship if they meet the citizenship requirements and have committed no crimes",
+      "harmonization": "Legal status and pathway to citizenship are the liberal endpoint.",
+      "existing_item": false,
+      "family": "ces:immig_dreamers",
+      "reviewed_render_pages": [
+        32,
+        33
+      ]
+    },
+    {
+      "source_code": "CC24_326a",
+      "code": "enviro_carbon",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "title": "Environment: carbon emissions regulation",
+      "question_text_2024": "Give the Environmental Protection Agency power to regulate carbon dioxide emissions",
+      "harmonization": "Support for carbon-emission regulation is the liberal endpoint. Harmonized with the reviewed cumulative CES identity enviro_carbon. See historical review for year-specific wording and excluded 2014 Air-only enforcement question.",
+      "existing_item": true,
+      "family": "ces:enviro_carbon",
+      "reviewed_render_pages": [
+        35
+      ]
+    },
+    {
+      "source_code": "CC24_326b",
+      "code": "environment_renewables",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "title": "Environment: renewable electricity",
+      "question_text_2024": "Require that at least 20 percent of electricity be generated with renewable sources such as wind, solar, or hydroelectric power",
+      "harmonization": "Support for renewable-energy mandates is the liberal endpoint.",
+      "existing_item": false,
+      "family": "ces:environment_renewables",
+      "reviewed_render_pages": [
+        35
+      ]
+    },
+    {
+      "source_code": "CC24_326c",
+      "code": "enviro_airwateracts",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "title": "Environment: clean air and water enforcement",
+      "question_text_2024": "Strengthen the Environmental Protection Agency enforcement of the Clean Air Act and Clean Water Act even if it costs U.S. jobs",
+      "harmonization": "Support for environmental enforcement despite the stated employment tradeoff is the liberal endpoint; retain tradeoff wording. Harmonized with the reviewed cumulative CES identity enviro_airwateracts. See historical review for year-specific wording and excluded 2014 Air-only enforcement question.",
+      "existing_item": true,
+      "family": "ces:enviro_airwateracts",
+      "reviewed_render_pages": [
+        35
+      ]
+    },
+    {
+      "source_code": "CC24_326d",
+      "code": "environment_fossil_production",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "title": "Environment: fossil fuel production",
+      "question_text_2024": "Increase fossil fuel production in the U.S.",
+      "harmonization": "Support for expanded fossil-fuel production is the conservative endpoint.",
+      "existing_item": false,
+      "family": "ces:environment_fossil_production",
+      "reviewed_render_pages": [
+        35
+      ]
+    },
+    {
+      "source_code": "CC24_326e",
+      "code": "environment_federal_leases",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "title": "Environment: oil and gas leases",
+      "question_text_2024": "Halt new oil and gas leases on federal lands",
+      "harmonization": "Support for restricting fossil-fuel leases is the liberal endpoint.",
+      "existing_item": false,
+      "family": "ces:environment_federal_leases",
+      "reviewed_render_pages": [
+        35
+      ]
+    },
+    {
+      "source_code": "CC24_328c",
+      "code": "healthcare_medicaid_work",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "title": "Health care: Medicaid work requirements",
+      "question_text_2024": "Require able-bodied adults under 64 years of age who do not have dependents to have a job in order to receive Medicaid.",
+      "harmonization": "Support for work requirements restricting Medicaid eligibility is the conservative endpoint.",
+      "existing_item": false,
+      "family": "ces:healthcare_medicaid_work",
+      "reviewed_render_pages": [
+        36
+      ]
+    },
+    {
+      "source_code": "CC24_328d",
+      "code": "healthcare_aca",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "title": "Health care: Affordable Care Act",
+      "question_text_2024": "Repeal the Affordable Care Act",
+      "harmonization": "Same repeal proposal as the existing item; opposition is the liberal endpoint.",
+      "existing_item": true,
+      "family": "ces:healthcare_aca",
+      "reviewed_render_pages": [
+        36
+      ]
+    },
+    {
+      "source_code": "CC24_328e",
+      "code": "healthcare_medicaid_expand",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "title": "Health care: Medicaid expansion",
+      "question_text_2024": "Expand Medicaid to cover individuals making less than $25,000 and families making less than $40,000 a year.",
+      "harmonization": "Support for expanded public health coverage at the specified thresholds is the liberal endpoint.",
+      "existing_item": false,
+      "family": "ces:healthcare_medicaid_expand",
+      "reviewed_render_pages": [
+        36
+      ]
+    }
+  ],
+  "deferred_items": [
+    {
+      "source_code": "CC24_326f",
+      "reason": "Gas-stove-ban framing needs a separate interpretation review; not treated as a general climate-policy measure."
+    },
+    {
+      "source_code": "CC24_328a",
+      "reason": "Zoning liberalization is not assigned a unidimensional partisan direction in this pass."
+    }
+  ]
+}

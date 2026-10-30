@@ -1,0 +1,93 @@
+{
+  "status": "rendered historical environment wording reviewed; candidate aggregation",
+  "sources": {
+    "data/raw/ces-policy/guide.pdf": "3cb04fd6c5e10d7f94139d5c12eaec5fb420a362efad50d5a6f76e85adfc4dbd",
+    "data/raw/ces-policy/responses.dta": "0264338e7298450e42c63a2431273f7ad4b04be90d5075e0ba4b64c48ca5cfdd",
+    "data/research/ces_2024_crosswalk.json": "fa760b140607f530ce853c542eed307f7d3c215964a1306611655bda724ec0c3"
+  },
+  "entries": [
+    {
+      "source_code": "enviro_carbon",
+      "years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "response_scores": {
+        "1": 1,
+        "2": -1
+      },
+      "guide_tables": [
+        17,
+        18
+      ],
+      "candidate_2024_identity": "environment_carbon",
+      "decision": "Candidate for extension; EPA carbon regulation wording reviewed in year-specific guide tables. Verify against rendered guide before import."
+    },
+    {
+      "source_code": "enviro_renewable",
+      "years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "response_scores": {
+        "1": 1,
+        "2": -1
+      },
+      "guide_tables": [
+        21,
+        22
+      ],
+      "candidate_2024_identity": null,
+      "decision": "Keep distinct from 2024 20-percent requirement. Historical item specifies minimum renewables despite increased electricity prices; magnitude of price wording varies."
+    },
+    {
+      "source_code": "enviro_airwateracts",
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "response_scores": {
+        "1": 1,
+        "2": -1
+      },
+      "guide_tables": [
+        23,
+        24
+      ],
+      "candidate_2024_identity": "environment_enforcement_jobs",
+      "decision": "Candidate for 2015-2021 extension. Keep 2014 Clean Air Act-only item separate from combined Air and Water Acts question."
+    }
+  ],
+  "deferred": [
+    {
+      "source_codes": [
+        "immig_legalize",
+        "immig_border"
+      ],
+      "reason": "Earlier select-all-that-apply formats were harmonized to support/oppose in source file. Labels alone do not establish explicit opposition. Review annual questionnaires and later 2019-2021 formats before joining to 2024."
+    }
+  ],
+  "next_step": "Visually verify guide tables, then construct separate historical mapping and candidate output. Do not alter production or currently served candidate.",
+  "rendered_guide_pages_reviewed": [
+    19,
+    21,
+    22
+  ]
+}

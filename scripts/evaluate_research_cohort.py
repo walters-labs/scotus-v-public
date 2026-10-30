@@ -115,6 +115,9 @@ if __name__=='__main__':
     result['paired_brier_uncertainty']=paired_brier_interval(result['predictions'])
     result['stable_gss_sensitivity']=stable_gss_sensitivity(cohort)
     result.update(cohort_sha256=digest(path),settings=settings,
+        analysis_type='retrospective chronological diagnostic',
+        historical_input_availability_verified=False,
+        forecasting_claim_supported=False,
         evaluator_sha256=digest(Path(__file__)),
         helper_hashes={str(p):digest(p) for p in [Path('scripts/describe_alignment.py'),
                                                Path('scvpublic/store.py')]},

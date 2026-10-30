@@ -17,18 +17,25 @@ from scvpublic.build import digest
 
 
 def main():
+    import argparse
+    from scvpublic.gss import merge_variants
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--grid-candidate',action='store_true')
+    args=parser.parse_args()
     if version('samplics') != '0.4.31':
         raise ValueError('Validation requires samplics 0.4.31')
-    pilot_path = Path('artifacts/gss-uncertainty.json')
+    pilot_path = Path('artifacts/gss-grid-uncertainty.json' if args.grid_candidate else 'artifacts/gss-uncertainty.json')
     pilot = json.loads(pilot_path.read_text())
     for path, checksum in pilot['sources'].items():
         if digest(Path(path)) != checksum:
             raise ValueError(f'Pilot input changed: {path}')
     source = Path('data/raw/gss-2024-r3a/gss7224_r3a.dta')
-    entries = json.loads(Path('data/gss/response_mappings.json').read_text())['entries']
+    entries = json.loads(Path(pilot['mappings_path']).read_text())['entries']
     mappings = {e['code']: {int(k): v for k, v in e['scores'].items()} for e in entries}
+    variants=sorted({v['code'] for e in entries for v in e.get('variants',[])})
     frame = pd.read_stata(source, convert_categoricals=False,
-                          columns=['year', 'vstrat', 'vpsu', 'wtssps', 'wtssnrps', *mappings])
+                          columns=['year', 'vstrat', 'vpsu', 'wtssps', 'wtssnrps', *mappings, *variants])
+    frame=merge_variants(frame,entries)
     item_rows = {(r['year'], r['code']): r for r in pilot['estimates']}
     composite_rows = {r['year']: r for r in pilot['abortion_composite']}
     checks = []
@@ -76,13 +83,15 @@ def main():
                   versions={p: version(p) for p in ['samplics', 'numpy', 'pandas', 'scipy']},
                   sources={str(p): digest(p) for p in [pilot_path, Path(__file__)]},
                   limitations=['Only years with supported design identifiers and no singleton strata.',
+                               'Variant coalescing is shared with the importer; scripts/audit_gss_variants.py separately checks candidate respondent unions.',
                                'Composite check validates aggregation of supplied linearizations, not an independent derivation.',
                                'Composite totals add one per PSU to avoid a zero-total coefficient-of-variation error; this leaves within-stratum variance unchanged.',
                                'Agreement between implementations does not validate survey measurement assumptions.'],
                   item_checks=sum(r['kind'] == 'item ratio' for r in checks),
                   composite_checks=sum(r['kind'] != 'item ratio' for r in checks),
                   checks=checks, failures=failures)
-    Path('artifacts/gss-uncertainty-validation.json').write_text(json.dumps(report, indent=2, allow_nan=False) + '\n')
+    output=Path('artifacts/gss-grid-uncertainty-validation.json' if args.grid_candidate else 'artifacts/gss-uncertainty-validation.json')
+    output.write_text(json.dumps(report, indent=2, allow_nan=False) + '\n')
     print({k: report[k] for k in ['status', 'item_checks', 'composite_checks']})
     if failures:
         raise AssertionError(f'{len(failures)} survey validation discrepancies')

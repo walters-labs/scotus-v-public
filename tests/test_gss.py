@@ -7,13 +7,26 @@ import unittest
 
 import pandas as pd
 
-from scvpublic.gss import aggregate_gss, attach
+from scvpublic.gss import aggregate_gss, attach, merge_variants
 from scvpublic.chart import chart
 from scvpublic.store import SCHEMA, search, series
 from scvpublic.web import create_app
 
 
 class GSSTests(unittest.TestCase):
+    def test_variants_are_coalesced_once_only_in_reviewed_years(self):
+        entry = dict(code='a', scores={'1': 1, '2': -1},
+                     variants=[dict(code='ag', years=[2021, 2024])])
+        frame = pd.DataFrame(dict(year=[2021, 2024, 2024, 2018],
+                                  a=[float('nan'), 1., 9., float('nan')], ag=[2., 1., 9., 1.]))
+        result = merge_variants(frame, [entry])
+        self.assertEqual(result.a.iloc[:3].tolist(), [2., 1., 9.])
+        self.assertTrue(pd.isna(result.a.iloc[3]))
+        self.assertTrue(pd.isna(frame.a.iloc[0]))
+        frame.loc[1, 'ag'] = 2.
+        with self.assertRaisesRegex(ValueError, 'Conflicting GSS responses'):
+            merge_variants(frame, [entry])
+
     def setUp(self):
         self.mapping = json.loads(Path('data/gss/response_mappings.json').read_text())
         self.entries = {e['code']: e for e in self.mapping['entries']}

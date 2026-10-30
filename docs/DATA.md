@@ -212,3 +212,299 @@ The historical CNN (`train_cnn_model.py`) learned Biden/Trump tweet labels.
 `classify_questions.py` only runs example phrases. The app used
 `data/anes/classified_questions.csv` directly; the notes describe ANES classifier
 training/export as unfinished. TensorFlow is unnecessary for parsing or serving.
+## CES 2024 extension (reviewed local candidate)
+
+The cumulative CES policy file remains version 3, ending in 2021. The
+[official 2024 common-content release](https://doi.org/10.7910/DVN/X11EP6)
+is separately available under CC0. Version 9 CSV, guide, and pre-election
+questionnaire are downloaded to `data/raw/ces-2024-v9/`; publisher MD5 checks
+pass and SHA-256 checksums are recorded in `data/manifests/ces-2024-v9.json`.
+The CSV contains 60,000 records and 694 columns, approximately 184 MB.
+
+Before importing, review exact question wording, response codes, wave, and
+comparability with existing CES item identities. The guide distinguishes
+`commonweight` for adult pre-election estimates from `commonpostweight` for
+post-election estimates; voter-validation weights target a different population.
+Do not treat 2024 as already harmonized with the cumulative policy file, merge
+year-specific item codes by guesswork, or replace the existing CES series.
+The reviewed candidate crosswalk is now in
+`data/research/ces_2024_crosswalk.json`. Five abortion/gun-policy items extend
+existing CES identities; two distinct abortion proposals receive separate
+identities. Their response labels and rendered questionnaire pages were checked.
+
+```sh
+.venv/bin/python -m scvpublic.ces_annual
+```
+
+This builds `data/processed/ces-2024-candidate/public.json` from the existing CES
+policy output and the annual CSV, without overwriting the historical output.
+The importer checks input checksums, respondent uniqueness, response codes,
+and identity/scoring consistency, and refuses existing years or output files.
+Seven 2024 estimates contain 59,964–59,998 valid responses each. All previous
+question-year values remain unchanged. Per-year provenance records source
+codes, exact 2024 wording, weight, and harmonization notes. The app now has
+a separate candidate artifact containing these estimates and the GSS grid
+extension. Production and the original artifacts remain unchanged.
+
+```sh
+.venv/bin/python -c "from pathlib import Path; from scvpublic.gss import attach; attach(Path('artifacts/gss-grid-candidate.sqlite'), Path('data/processed/ces-2024-candidate/public.json'), Path('artifacts/ces-2024-candidate.sqlite'), corpus='ces')"
+PYTHONPATH=. .venv/bin/python scripts/rebind_hybrid.py --old artifacts/gss-grid-candidate.sqlite --new artifacts/ces-2024-candidate.sqlite --bundle artifacts/semantic-gss-grid-candidate --output artifacts/semantic-ces-2024-candidate
+PYTHONPATH=. .venv/bin/python scripts/check_serving.py artifacts/ces-2024-candidate.sqlite
+```
+
+Build commands refuse existing destinations. This candidate passes 160 serving
+requests, and CES searches for abortion, gun control, and background checks
+include 2024. It adds one observed year for these selected questions; it does
+not fill the 2022–2023 gap or establish a new independent survey source.
+
+### Additional CES immigration review
+
+The annual crosswalk now also includes four 2024 immigration items: conditional
+legal status, increased border patrols, a border wall, and legal status/pathway
+to citizenship for Dreamers. Each has 59,991–59,999 valid responses with
+`commonweight`. They are separate policy proposals and should not be presented
+as one unqualified position on immigration.
+
+The intermediate immigration candidate contains 11 annual observations and was built with:
+
+```sh
+.venv/bin/python -m scvpublic.ces_annual --output data/processed/ces-2024-immigration-candidate/public.json
+```
+
+The previously built SQLite candidate still contains the original seven-item
+extension. The four immigration items are not yet attached to it. Historical
+CES immigration variables exist but require further review: some years asked
+respondents to select all applicable options, so an unchecked option is not
+automatically equivalent to explicit opposition. Historical wall wording also
+bundles border spending with wall construction; the 2024 wall-only question
+receives its own identity. The guide's year-specific wording tables provide
+the evidence for this distinction.
+
+### Consolidated 2024 policy candidate
+
+The crosswalk now contains 19 reviewed questions: three gun-policy, four
+abortion, four immigration, five environment, and three healthcare items.
+Six extend existing item identities; thirteen receive distinct identities.
+Environment items cover carbon regulation, renewable electricity, enforcement,
+fossil-fuel production, and federal leases. Healthcare items cover Medicaid
+work requirements, ACA repeal, and Medicaid expansion. These are specific
+policy positions, not interchangeable measures of a single ideology.
+Gas-stove and zoning proposals remain deferred with reasons in the crosswalk.
+
+```sh
+.venv/bin/python -m scvpublic.ces_annual --output data/processed/ces-2024-policy-candidate/public.json
+```
+
+This is the current processed candidate; the earlier seven-item SQLite and
+11-item JSON are intermediate artifacts. A separate standard-library CSV
+recalculation checked all 19 weighted means and respondent counts, and confirmed
+that every historical mean, response count, and weight sum remains unchanged.
+The consolidated candidate is attached at
+`artifacts/ces-2024-policy-candidate.sqlite`, with its verified court embedding
+bundle at `artifacts/semantic-ces-2024-policy-candidate`. Court documents and
+postings match the source artifact exactly; other survey documents and postings
+are unchanged. The 160-request serving check passes. Port 8009 previews the GSS expansion only. The consolidated GSS/CES
+preview now runs at http://127.0.0.1:8010/. Production is unchanged.
+
+Reproduce the hybrid integration check:
+
+```sh
+PYTHONPATH=. .venv/bin/python scripts/check_ces_annual_app.py --artifact artifacts/ces-2024-policy-candidate.sqlite --bundle artifacts/semantic-ces-2024-policy-candidate --source data/processed/ces-2024-policy-candidate/public.json
+```
+
+Next: review the consolidated candidate locally before any deployment. These additions supply 2024 observations;
+they do not fill missing years or add an independent survey source.
+
+## Nationscape acquisition lead (not imported)
+
+As checked October 29, 2026, no Nationscape dataset was found in the project's
+raw-data directory. The user previously requested access; the user confirmed on October 29 that no email has arrived. Do not submit another request or contact the provider
+on the user's behalf without instruction.
+
+The [official download page](https://www.voterstudygroup.org/data/nationscape)
+describes 494,796 cases across weekly surveys and parallel collections,
+covering July 2019 through February 2021. Phase 3 includes re-releases of
+Phases 1 and 2. Import one consistent release and review identifiers rather
+than concatenating overlapping releases. Additional parallel collections need
+separate identification and appropriate weighting.
+
+The [initial release announcement](https://www.voterstudygroup.org/newsroom/new-data-democracy-fund-and-nationscape-release-first-wave-of-data-from-nationscape)
+describes more than 40 policy measures. This makes Nationscape a candidate for
+broader issue coverage in a short period, not an extension of the app's long
+historical timeline. Annual aggregation would contribute at most three calendar
+years, regardless of the number of weekly waves.
+
+Before implementation, inspect the actual archive, release version, respondent
+and wave identifiers, field dates, weights, questionnaire assignments, response
+codes, and use terms. Record a checksum manifest. Do not invent a schema from
+the promotional description. The public guide/variable download links returned
+HTTP 403 to the research browser during this check; their contents were not
+verified in this session. Access remains the next dependency.
+
+
+### Historical CES policy coverage review
+
+`data/research/ces_historical_policy_review.json` records the next candidate
+block and source hashes. The downloaded cumulative file contains three
+support/oppose environment items for 2014–2021 (24 item-years before exclusions).
+Carbon regulation is a candidate for continuation through 2024. Historical
+renewable requirements include a price tradeoff and remain distinct from the
+2024 20% requirement. The 2014 enforcement item mentions Clean Air only;
+2015 onward includes both Air and Water Acts. Earlier immigration check-all
+formats must not be interpreted as explicit opposition based only on harmonized
+value labels. These historical items are reviewed candidates, not imported data;
+rendered guide verification and weighted aggregation remain to be completed.
+
+
+The historical environment candidate has now been aggregated after visual
+review of guide pages 19, 21, and 22:
+
+```sh
+.venv/bin/python -m scvpublic.ces --mappings data/research/ces_historical_environment_mappings.json --output data/processed/ces-historical-environment-candidate/public.json
+```
+
+It adds 23 question-year estimates: carbon and renewables for 2014–2021,
+and combined Clean Air/Water enforcement for 2015–2021. The 2014 Air-only
+question is deliberately excluded from this identity. All 15 existing
+historical documents remain identical. An independent row-loop calculation
+using weights keyed by year/respondent ID agrees with every new response
+count and weighted mean within 1e-10. The source join reports two unmatched
+respondents; invalid/missing weights are excluded by the existing importer.
+This output remains separate from the 2024 candidate and is not served.
+Next: explicitly harmonize the carbon and enforcement identities with the
+annual extension, retaining separate renewable-policy identities.
+
+
+### Current expanded CES processed candidate
+
+The historical and annual candidates are now joined reproducibly:
+
+```sh
+.venv/bin/python -m scvpublic.ces_annual --base data/processed/ces-historical-environment-candidate/public.json --crosswalk data/research/ces_2024_historical_crosswalk.json --output data/processed/ces-expanded-candidate/public.json
+```
+
+This is the current expanded processed candidate: 29 question identities and
+133 observed question-years, including all 19 reviewed 2024 estimates and 23
+new historical environment estimates. Carbon regulation uses `enviro_carbon`
+across 2014–2021 and 2024; joint Air/Water enforcement uses `enviro_airwateracts`
+across 2015–2021 and 2024. Their earlier annual-only candidate identities are
+replaced, not retained as duplicates. Historical renewables with a price
+tradeoff and the 2024 fixed-percentage mandate retain separate identities.
+All means, response counts, and weight sums from both input candidates were
+checked for preservation. The 2022–2023 gap remains unfilled.
+
+The 2024-only and historical-only processed outputs are intermediate artifacts.
+The expanded output is attached at `artifacts/ces-expanded-candidate.sqlite`
+with verified court embeddings in `artifacts/semantic-ces-expanded-candidate`.
+Validation passes 160 serving requests, 63 hybrid requests, and all 102 unit
+tests. Port 8010 still serves the preceding annual extension without this
+historical addition. Production is unchanged.
+
+Independent historical validation is reproducible:
+
+```sh
+PYTHONPATH=. .venv/bin/python scripts/validate_ces_history.py --candidate data/processed/ces-expanded-candidate/public.json
+PYTHONPATH=. .venv/bin/python scripts/check_ces_annual_app.py --artifact artifacts/ces-expanded-candidate.sqlite --bundle artifacts/semantic-ces-expanded-candidate --source data/processed/ces-expanded-candidate/public.json
+```
+
+Reports are `artifacts/ces-expanded-history-validation.json`,
+`artifacts/ces-expanded-app-validation.json`, and
+`artifacts/ces-expanded-composition-audit.json`. The environmental search
+changes item composition between 2021 and 2024; see `RESEARCH.md` before
+interpreting the plotted difference as a trend.
+
+
+### Reproduce the current research candidate
+
+Use the existing pinned environment and verified raw CES files. The historical
+CES baseline and GSS grid candidate (including its matching court embedding
+bundle) are prerequisites, built with the commands above. From a fresh candidate
+output location, run these targets in order:
+
+```sh
+make ces-research-data
+make ces-research-index
+make ces-research-check
+```
+
+The data and index build targets refuse existing annual/index destinations;
+they are not refresh commands. The historical intermediate is regenerated by
+the data target. To check the already-built candidate, run only
+`make ces-research-check`. No target deploys or changes running services.
+The current artifact is `artifacts/ces-2023-candidate.sqlite`; earlier
+`ces-2024-*` artifacts are intermediate previews and should not be mistaken for
+the complete current candidate. See `PAUSED_HANDOFF.md` for runtime status.
+
+
+### CES 2022 gap-fill acquisition
+
+Official common-content V4 (`doi:10.7910/DVN/PR4L8P`) has been downloaded to
+`data/raw/ces-2022-v4/`: the CSV, guide, and pre-election questionnaire. All
+publisher MD5 checksums match; SHA-256 hashes and dimensions are recorded in
+`data/manifests/ces-2022-v4.json`. The CSV is 192,995,406 bytes. This acquisition
+is not yet mapped, imported, or served. Initial questionnaire inspection finds
+candidate environment and abortion items; exact question/weight review and
+crosswalk validation remain required. The 2023 release is not yet verified.
+
+
+### CES 2022 reviewed gap-fill candidate
+
+Twelve comparable questions are mapped in `data/research/ces_2022_crosswalk.json`:
+two gun-policy, two immigration, five abortion, and three environment items.
+Questionnaire PDF pages 37–39 and 41 (printed pages 38–40 and 42) were visually
+reviewed. Adult pre-election estimates use `commonweight` as specified by the
+guide. Under-21 background checks, wall-plus-spending, and fossil-plus-export
+bundles are not silently equated with their broader/narrower existing items.
+
+```sh
+.venv/bin/python -m scvpublic.ces_annual --manifest data/manifests/ces-2022-v4.json --base data/processed/ces-expanded-candidate/public.json --crosswalk data/research/ces_2022_crosswalk.json --output data/processed/ces-gapfill-candidate/public.json
+```
+
+This processed candidate has 29 question identities and 145 question-years.
+An independent CSV row-loop verifies all 12 new weighted means and counts;
+all previous observations are preserved. The annual importer now accepts
+year-neutral question text and rejects a mismatched year-specific text key.
+The gap-fill output is not yet attached to SQLite or served. Existing
+`ces-research-*` Make targets still refer to the preceding expanded candidate;
+consolidating the gap-fill into those targets and serving validation is next.
+
+
+### Current consolidated serving candidate (October 30)
+
+The `ces-research-*` targets now include the 2022 and 2023 additions. Current
+source: `data/processed/ces-2023-candidate/public.json`; index:
+`artifacts/ces-2023-candidate.sqlite`; court bundle:
+`artifacts/semantic-ces-2023-candidate`. Earlier paths above describe intermediate
+snapshots. The local preview on port 8011 uses this candidate; production does not.
+
+### CES 2023 acquisition and import
+
+CES Common Content 2023 V2 (`doi:10.7910/DVN/JQJTCC`) includes 24,500 adult
+respondents. Its odd-year wave is post-election-only, using `commonweight`.
+The reviewed extension adds 18 observations to existing question identities,
+for 29 identities and 163 question-years. The exceptions-only abortion item is
+excluded because both versions of the questionnaire truncate its wording.
+See `data/research/ces_2023_deferred_review.json` for the evidence.
+
+Download the checksum-pinned inputs from the repository root:
+
+```sh
+.venv/bin/python -m scvpublic.download data/manifests/ces-2023-download.json --destination .
+```
+
+This uses the original Stata file, rather than silently substituting Dataverse's
+converted tabular export. Verified cached files are reused; differing existing
+files or changed downloads cause an error. The manifest also pins the version
+metadata and both questionnaire versions used in review.
+
+To extend an existing gap-fill processed candidate into a new output:
+
+```sh
+.venv/bin/python -m scvpublic.ces_annual --manifest data/manifests/ces-2023-v2.json --crosswalk data/research/ces_2023_crosswalk.json --base data/processed/ces-gapfill-candidate/public.json --output data/processed/ces-2023-candidate/public.json
+```
+
+`make ces-research-check` independently recalculates annual means, counts and
+weight sums for 2022–2024, validates historical estimates, audits composition,
+and runs serving and hybrid checks. The 2023–2024 abortion comparison reverses
+direction between the full and common-item averages; this is a documented
+coverage limitation, not evidence of a public-opinion reversal.

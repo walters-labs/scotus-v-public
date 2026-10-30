@@ -1,0 +1,31 @@
+{
+  "dataset": "CES Common Content, 2023",
+  "doi": "10.7910/DVN/JQJTCC",
+  "version": 2,
+  "release_time": "2025-03-28T17:55:46Z",
+  "license": "CC0-1.0",
+  "files": [
+    {
+      "path": "data/raw/ces-2023-v2/responses.dta",
+      "file_id": 10164312,
+      "bytes": 125964402,
+      "sha256": "8f328f29d75ac94ba03ab4b2612796cdb5ae070789c90a4557020503fea20c37",
+      "publisher_md5": "28a17b12f39312a3647fcaa16a8f5762"
+    },
+    {
+      "path": "data/raw/ces-2023-v2/questionnaire.pdf",
+      "file_id": 11035458,
+      "bytes": 336587,
+      "sha256": "0fcd7928b1d3d10a649c747973b941db889df6a4c56132ba63c403ddefcd3502",
+      "publisher_md5": "e9f5547835b4e9a9b458c5756def4883"
+    }
+  ],
+  "weight": "commonweight",
+  "wave": "post-election-only",
+  "status": "acquired and checksum verified; question crosswalk and weighting documentation review pending",
+  "notes": [
+    "Odd-year common-content survey. Preserve its distinct wave label.",
+    "Questionnaire truncates the exceptions-only abortion item; omitted pending verification."
+  ],
+  "rows": 24500
+}
