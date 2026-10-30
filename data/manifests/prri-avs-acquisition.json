@@ -1,0 +1,448 @@
+{
+  "source": "PRRI American Values Survey via ARDA",
+  "catalog_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+  "status": "acquisition only; not mapped or integrated",
+  "selection": "Main annual study, pre-election when separate pre/post releases exist; supplements excluded.",
+  "attribution": "Credit PRRI as original collector and ARDA as distributor in resulting publications/presentations.",
+  "files": [
+    {
+      "path": "data/raw/prri-avs-2010/responses.dta",
+      "url": "https://osf.io/download/rebxn",
+      "bytes": 488044,
+      "sha256": "886034e73663d5b7ac9ce35ae34558ea22d1a49b65d7fc0fca554bf95895e005"
+    },
+    {
+      "path": "data/raw/prri-avs-2010/summary.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS10",
+      "bytes": 257600,
+      "sha256": "be616eaadd79587d3598c7842265d40494658c8773e19996e49bab428c2d1a69"
+    },
+    {
+      "path": "data/raw/prri-avs-2010/downloads.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS10&tab=3",
+      "bytes": 254515,
+      "sha256": "9d26c4aab43e8afb1270a1452d7eb9903bced1d40e61249e80bad15260f0a2dc"
+    },
+    {
+      "path": "data/raw/prri-avs-2011/responses.dta",
+      "url": "https://osf.io/download/8y23r",
+      "bytes": 447272,
+      "sha256": "91538b9adfa34dede12cba29d822d0c65c33de66e23d24b1d2a388094062cb9f"
+    },
+    {
+      "path": "data/raw/prri-avs-2011/summary.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS11",
+      "bytes": 257327,
+      "sha256": "d1e99798d7c259854a27f14b814ad6032b6ef3403681b9f5a85d30adcad5cb86"
+    },
+    {
+      "path": "data/raw/prri-avs-2011/downloads.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS11&tab=3",
+      "bytes": 254515,
+      "sha256": "bcce4d6fccb8ebf6ea5d7cd812fc0525dbb9769c4438c2293d13eefa81812d8d"
+    },
+    {
+      "path": "data/raw/prri-avs-2012/responses.dta",
+      "url": "https://osf.io/download/tdgc8",
+      "bytes": 641087,
+      "sha256": "431b288014767c8ef7cadb1735720d4006fb202ce8bc07a678a22c1ec1f3eb4f"
+    },
+    {
+      "path": "data/raw/prri-avs-2012/summary.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS12PR",
+      "bytes": 257088,
+      "sha256": "210aa057891d082cf75edc60a05b5827e3ea0ffb5a165884983f84948a072bbe"
+    },
+    {
+      "path": "data/raw/prri-avs-2012/downloads.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS12PR&tab=3",
+      "bytes": 254681,
+      "sha256": "52cb2e84037d0ca8c3382b65e1f06833ec8fd7285bdb396a3da41496076589b4"
+    },
+    {
+      "path": "data/raw/prri-avs-2013/responses.dta",
+      "url": "https://osf.io/download/3b47p",
+      "bytes": 1763447,
+      "sha256": "27825ad6d63e2f89890856c724761b6f594d071f5472b35728659356efc6f5a8"
+    },
+    {
+      "path": "data/raw/prri-avs-2013/summary.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS2013",
+      "bytes": 256961,
+      "sha256": "9731b6d35d3b3ffd7c770b3702c803754532de2d45aefd2ca7b0c43831fe1cf8"
+    },
+    {
+      "path": "data/raw/prri-avs-2013/downloads.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS2013&tab=3",
+      "bytes": 254541,
+      "sha256": "f0131d43bbdb1de24f884586180c6ba2dba48f5c713ba857eb09954e7e4ac93b"
+    },
+    {
+      "path": "data/raw/prri-avs-2014/responses.dta",
+      "url": "https://osf.io/download/yj89v",
+      "bytes": 886400,
+      "sha256": "30ff1348b3dc04349cad2d0f5784c1f0f60ca83777d403f8004781e12223b80c"
+    },
+    {
+      "path": "data/raw/prri-avs-2014/summary.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS14",
+      "bytes": 257866,
+      "sha256": "a7687a7e2c56f6c4273af3d8a2ff85d5939c3c9c37658e8162dd1b4275620ab1"
+    },
+    {
+      "path": "data/raw/prri-avs-2014/downloads.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS14&tab=3",
+      "bytes": 254515,
+      "sha256": "bd7677be5e1dcf940cba58ff3ea0da12e1088820babffbcbc9a4e25babd813f9"
+    },
+    {
+      "path": "data/raw/prri-avs-2015/responses.dta",
+      "url": "https://osf.io/download/ts5dq",
+      "bytes": 1253941,
+      "sha256": "4cc0c08e8be18b9a21615930ca09f53e06eb9f1283e30bf427f9053c8ef4457b"
+    },
+    {
+      "path": "data/raw/prri-avs-2015/summary.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS15",
+      "bytes": 258398,
+      "sha256": "b744ecb859db1b07735c896fef6afc20899372636d154bcc4fc12c97ada0a771"
+    },
+    {
+      "path": "data/raw/prri-avs-2015/downloads.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS15&tab=3",
+      "bytes": 254515,
+      "sha256": "1f82f8a499fc88a539749cf46b3eee76095445482003faab7ae0a70e10cfcf11"
+    },
+    {
+      "path": "data/raw/prri-avs-2016/responses.dta",
+      "url": "https://osf.io/download/tjzf7",
+      "bytes": 1172695,
+      "sha256": "38ca1f4e84b5c6dcb163bfec30baf1aa8a13e37dabf7ba270b12288d2eb08877"
+    },
+    {
+      "path": "data/raw/prri-avs-2016/summary.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS16",
+      "bytes": 258777,
+      "sha256": "11052ddcc0e04eb71b997f474c4d48d1519fc0b96b6527978862c0579fce33fc"
+    },
+    {
+      "path": "data/raw/prri-avs-2016/downloads.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS16&tab=3",
+      "bytes": 254515,
+      "sha256": "e8edc14aa37779fec7a8091dfcc8ee1843636a6edd7bb1f627ce14fdfe79185c"
+    },
+    {
+      "path": "data/raw/prri-avs-2017/responses.dta",
+      "url": "https://osf.io/download/63qzy",
+      "bytes": 569650,
+      "sha256": "1eff0c20975a2a92f40e93655760ebef186561ab8041497e1c07e6cd5b28ba89"
+    },
+    {
+      "path": "data/raw/prri-avs-2017/summary.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS17",
+      "bytes": 257895,
+      "sha256": "b6abfcb8703dcb85658d86f2b024ec548d4b750276a5e5dd2cb33fb4e793338d"
+    },
+    {
+      "path": "data/raw/prri-avs-2017/downloads.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS17&tab=3",
+      "bytes": 254515,
+      "sha256": "7f01d555016c238d48bacbff2f3deca009f733a73768c1d63bfa04c895aa4d04"
+    },
+    {
+      "path": "data/raw/prri-avs-2018/responses.dta",
+      "url": "https://osf.io/download/29pfa",
+      "bytes": 955471,
+      "sha256": "ea5bff514867599dd002780e1ced8fc2a174ecebab73e71baff51410cc77aab0"
+    },
+    {
+      "path": "data/raw/prri-avs-2018/summary.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS18",
+      "bytes": 259284,
+      "sha256": "d502ee3eb3873fc8062384327b6db30c9afee31aa61229a38bf99afa60c628b7"
+    },
+    {
+      "path": "data/raw/prri-avs-2018/downloads.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS18&tab=3",
+      "bytes": 254515,
+      "sha256": "d8ed45cad7d7c9cf90ddefa1998eb4e17f6995a24d6d26ebfe8a0ecdfb185d27"
+    },
+    {
+      "path": "data/raw/prri-avs-2019/responses.dta",
+      "url": "https://osf.io/download/q8vh4",
+      "bytes": 1427603,
+      "sha256": "15f5cdf2a243adf7b93fc0fa5390876b639c000214abb9abfd3efc102d3dcf74"
+    },
+    {
+      "path": "data/raw/prri-avs-2019/summary.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS19",
+      "bytes": 259185,
+      "sha256": "c6ddecd597cfaebf99803d2eaeb6bd6b0faca0742a07d7e82a27e729aae7ed9e"
+    },
+    {
+      "path": "data/raw/prri-avs-2019/downloads.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS19&tab=3",
+      "bytes": 254515,
+      "sha256": "68b13fbdd403a2d6b6bf0a384588ab63d68e7dd1028092241d16a403fb4760ab"
+    },
+    {
+      "path": "data/raw/prri-avs-2020/responses.dta",
+      "url": "https://osf.io/download/ehvgt",
+      "bytes": 1208301,
+      "sha256": "4cb1b4cb6788c9edd5e452d66b1243696b2067638ce899a1e85cf96ade990636"
+    },
+    {
+      "path": "data/raw/prri-avs-2020/summary.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS20",
+      "bytes": 258904,
+      "sha256": "a1795f74e0add4b90d20c6f0b2dd7a2f7daccedb7891c6d96423bc4563c417da"
+    },
+    {
+      "path": "data/raw/prri-avs-2020/downloads.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS20&tab=3",
+      "bytes": 254515,
+      "sha256": "f6ab33bd0d8e60d14f86a9b5b6e4ab7f5ffeb9d25fe37fc9862df652305db63e"
+    },
+    {
+      "path": "data/raw/prri-avs-2021/responses.dta",
+      "url": "https://osf.io/download/7tu9e",
+      "bytes": 867886,
+      "sha256": "f5c0af1dee38c51016065ba2976c4c46d565f819aff019e12b21beed236328bc"
+    },
+    {
+      "path": "data/raw/prri-avs-2021/summary.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS2021",
+      "bytes": 258020,
+      "sha256": "9eb6582f269ebf77043c14ff13775fe79af38d04b3d3b02e511395d8f2d7975d"
+    },
+    {
+      "path": "data/raw/prri-avs-2021/downloads.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS2021&tab=3",
+      "bytes": 254541,
+      "sha256": "dda472a412e1818be18bac7d093c908c678bbf2f55329545d3bab8e66ac3b0cf"
+    },
+    {
+      "path": "data/raw/prri-avs-2022/responses.dta",
+      "url": "https://osf.io/download/f78ag",
+      "bytes": 1106954,
+      "sha256": "0e1bb6ea24659e1f153a4d3e0f1b8626668b7ca65f40ceefa2ea3ca9fe8c5a29"
+    },
+    {
+      "path": "data/raw/prri-avs-2022/summary.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS2022",
+      "bytes": 257436,
+      "sha256": "ba58410c45443d3789f69d8414126658bafe822c02d251674f0aeb52d0a43cda"
+    },
+    {
+      "path": "data/raw/prri-avs-2022/downloads.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS2022&tab=3",
+      "bytes": 254541,
+      "sha256": "a4b905e21a70a1f313e5f277478e694900b3f39e72de8071117c7a6a4542329b"
+    },
+    {
+      "path": "data/raw/prri-avs-2023/responses.dta",
+      "url": "https://osf.io/download/6huyx",
+      "bytes": 1112821,
+      "sha256": "77f8a295839f16997f037214a79c80139158afdceaf2045ee18cd07725a9b539"
+    },
+    {
+      "path": "data/raw/prri-avs-2023/summary.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS2023",
+      "bytes": 257287,
+      "sha256": "582bdeb7b8690e30da7f83497d1db93bd97ca3b418c60bce507cad9e84ce303e"
+    },
+    {
+      "path": "data/raw/prri-avs-2023/downloads.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS2023&tab=3",
+      "bytes": 254541,
+      "sha256": "354e2a398d80c2a4e3795051c1a88cf767067ed305d917e815cda671179d4360"
+    },
+    {
+      "path": "data/raw/prri-avs-2024/responses.dta",
+      "url": "https://osf.io/download/34a2b",
+      "bytes": 1460844,
+      "sha256": "f7560d89700dc19c8bfcb6751fb9936b748b5d35dd90292102dce645ebb34326"
+    },
+    {
+      "path": "data/raw/prri-avs-2024/summary.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS2024",
+      "bytes": 257466,
+      "sha256": "29734e1ea78a0e9ebf50745c0debb3b1fe7d3b1ce477bcde593b7c14cfc733fd"
+    },
+    {
+      "path": "data/raw/prri-avs-2024/downloads.html",
+      "url": "https://www.thearda.com/data-archive?fid=AVS2024&tab=3",
+      "bytes": 254541,
+      "sha256": "e020cdedef5c6d2f31a18e12c9636539ba89e8b55b7572e878f9c823b8002cca"
+    }
+  ],
+  "studies": [
+    {
+      "year": 2010,
+      "title": "PRRI American Values Survey, 2010",
+      "summary_url": "https://www.thearda.com/data-archive?fid=AVS10",
+      "doi": "10.17605/OSF.IO/S2EQG",
+      "rows": 3013,
+      "columns": 95,
+      "weight_candidates": [
+        "weight"
+      ]
+    },
+    {
+      "year": 2011,
+      "title": "PRRI American Values Survey, 2011",
+      "summary_url": "https://www.thearda.com/data-archive?fid=AVS11",
+      "doi": "10.17605/OSF.IO/D5KRA",
+      "rows": 1505,
+      "columns": 92,
+      "weight_candidates": [
+        "weight"
+      ]
+    },
+    {
+      "year": 2012,
+      "title": "PRRI American Values Survey, 2012, Pre-Election",
+      "summary_url": "https://www.thearda.com/data-archive?fid=AVS12PR",
+      "doi": "10.17605/OSF.IO/TKX63",
+      "rows": 3003,
+      "columns": 97,
+      "weight_candidates": [
+        "weight"
+      ]
+    },
+    {
+      "year": 2013,
+      "title": "PRRI American Values Survey, 2013",
+      "summary_url": "https://www.thearda.com/data-archive?fid=AVS2013",
+      "doi": "10.17605/OSF.IO/VT6YU",
+      "rows": 2317,
+      "columns": 225,
+      "weight_candidates": [
+        "weight"
+      ]
+    },
+    {
+      "year": 2014,
+      "title": "PRRI American Values Survey, 2014",
+      "summary_url": "https://www.thearda.com/data-archive?fid=AVS14",
+      "doi": "10.17605/OSF.IO/4VE6R",
+      "rows": 4507,
+      "columns": 108,
+      "weight_candidates": [
+        "weight"
+      ]
+    },
+    {
+      "year": 2015,
+      "title": "PRRI American Values Survey, 2015",
+      "summary_url": "https://www.thearda.com/data-archive?fid=AVS15",
+      "doi": "10.17605/OSF.IO/473WX",
+      "rows": 2695,
+      "columns": 175,
+      "weight_candidates": [
+        "weight"
+      ]
+    },
+    {
+      "year": 2016,
+      "title": "PRRI American Values Survey, 2016",
+      "summary_url": "https://www.thearda.com/data-archive?fid=AVS16",
+      "doi": "10.17605/OSF.IO/FPKYN",
+      "rows": 2010,
+      "columns": 162,
+      "weight_candidates": [
+        "weight"
+      ]
+    },
+    {
+      "year": 2017,
+      "title": "PRRI American Values Survey, 2017",
+      "summary_url": "https://www.thearda.com/data-archive?fid=AVS17",
+      "doi": "10.17605/OSF.IO/VCTH2",
+      "rows": 2019,
+      "columns": 118,
+      "weight_candidates": [
+        "weight"
+      ]
+    },
+    {
+      "year": 2018,
+      "title": "PRRI American Values Survey, 2018",
+      "summary_url": "https://www.thearda.com/data-archive?fid=AVS18",
+      "doi": "10.17605/OSF.IO/8W3TH",
+      "rows": 2509,
+      "columns": 159,
+      "weight_candidates": [
+        "weight"
+      ]
+    },
+    {
+      "year": 2019,
+      "title": "PRRI American Values Survey, 2019",
+      "summary_url": "https://www.thearda.com/data-archive?fid=AVS19",
+      "doi": "10.17605/OSF.IO/PH68V",
+      "rows": 2527,
+      "columns": 256,
+      "weight_candidates": [
+        "weight",
+        "WEIGHT2"
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "PRRI American Values Survey, 2020",
+      "summary_url": "https://www.thearda.com/data-archive?fid=AVS20",
+      "doi": "10.17605/OSF.IO/8RH32",
+      "rows": 2538,
+      "columns": 242,
+      "weight_candidates": [
+        "weight",
+        "WEIGHT2"
+      ]
+    },
+    {
+      "year": 2021,
+      "title": "PRRI American Values Survey, 2021",
+      "summary_url": "https://www.thearda.com/data-archive?fid=AVS2021",
+      "doi": "10.17605/OSF.IO/AXG4M",
+      "rows": 2508,
+      "columns": 195,
+      "weight_candidates": [
+        "KP_WEIGHT"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "PRRI American Values Survey, 2022",
+      "summary_url": "https://www.thearda.com/data-archive?fid=AVS2022",
+      "doi": "10.17605/OSF.IO/2CMYK",
+      "rows": 2523,
+      "columns": 171,
+      "weight_candidates": [
+        "KP_WEIGHT"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "PRRI American Values Survey, 2023",
+      "summary_url": "https://www.thearda.com/data-archive?fid=AVS2023",
+      "doi": "10.17605/OSF.IO/WVUGF",
+      "rows": 2525,
+      "columns": 184,
+      "weight_candidates": [
+        "KP_WEIGHT"
+      ]
+    },
+    {
+      "year": 2024,
+      "title": "PRRI American Values Survey, 2024",
+      "summary_url": "https://www.thearda.com/data-archive?fid=AVS2024",
+      "doi": "10.17605/OSF.IO/UDPSG",
+      "rows": 5352,
+      "columns": 173,
+      "weight_candidates": [
+        "weight"
+      ]
+    }
+  ]
+}

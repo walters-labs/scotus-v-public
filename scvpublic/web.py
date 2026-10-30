@@ -61,6 +61,8 @@ def create_app(artifact=None, hybrid_dir=None):
             views['pew'] = 'Pew'
         if info.get('wvs_documents'):
             views['wvs'] = 'WVS'
+        if info.get('prri_documents'):
+            views['prri'] = 'PRRI'
         views['all'] = 'All sources'
         view = request.args.get('view', 'combined')
         if view not in views:
@@ -68,7 +70,7 @@ def create_app(artifact=None, hybrid_dir=None):
         contribution_rows = []
         counts = {}
         error = None
-        court, public, gss, ces, pew, wvs, svg = [], [], [], [], [], [], ''
+        court, public, gss, ces, pew, wvs, prri, svg = [], [], [], [], [], [], [], ''
         if any(len(t) > 100 for t in terms):
             error = 'Each keyword or phrase must be at most 100 characters.'
         elif any(terms):
@@ -93,6 +95,8 @@ def create_app(artifact=None, hybrid_dir=None):
                     pew = questions('pew')
                 if info.get('wvs_documents'):
                     wvs = questions('wvs')
+                if info.get('prri_documents'):
+                    prri = questions('prri')
             counts = court_counts(trend_court)
             source_series = {'ANES': series([], public)[1]}
             if info.get('gss_documents'):
@@ -103,20 +107,23 @@ def create_app(artifact=None, hybrid_dir=None):
                 source_series['Pew'] = series([], pew)[1]
             if info.get('wvs_documents'):
                 source_series['WVS'] = series([], wvs)[1]
+            if info.get('prri_documents'):
+                source_series['PRRI'] = series([], prri)[1]
             combined, contributors = combine_sources(source_series)
             contribution_rows = [(year, combined[year], names) for year, names in contributors.items()]
             question_ids = {name: {year: [code for code, _ in items]
                                    for year, items in survey_items(questions).items()}
                             for name, questions in [('ANES', public), ('GSS', gss),
-                                                    ('CES', ces), ('Pew', pew), ('WVS', wvs)]}
+                                                    ('CES', ces), ('Pew', pew), ('WVS', wvs), ('PRRI', prri)]}
             svg = chart(*series(trend_court, public), counts=counts, view=view,
                         question_ids=question_ids,
                         gss=series([], gss)[1] if info.get('gss_documents') else None,
                         ces=series([], ces)[1] if info.get('ces_documents') else None,
                         pew=series([], pew)[1] if info.get('pew_documents') else None,
-                        wvs=series([], wvs)[1] if info.get('wvs_documents') else None)
+                        wvs=series([], wvs)[1] if info.get('wvs_documents') else None,
+                        prri=series([], prri)[1] if info.get('prri_documents') else None)
         return render_template('index.html', terms=terms, court=court, public=public,
                                svg=svg, info=info, error=error, searched=any(terms),
-                               counts=counts, gss=gss, ces=ces, pew=pew, wvs=wvs, view=view, views=views,
+                               counts=counts, gss=gss, ces=ces, pew=pew, wvs=wvs, prri=prri, view=view, views=views,
                                contribution_rows=contribution_rows), (400 if error else 200)
     return app

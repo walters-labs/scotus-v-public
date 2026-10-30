@@ -1,0 +1,44 @@
+[
+  {
+    "year": 2018,
+    "path": "data/raw/prri-avs-2018/questionnaire.pdf",
+    "url": "https://www.thearda.com/ARDA/pdf/originalCodebooks/AVS18%20Questionnaire.pdf",
+    "sha256": "46d8d733fc6be736ff94f402ae219d2cb5232822e9db7181b93a30f670d9b9e1"
+  },
+  {
+    "year": 2019,
+    "path": "data/raw/prri-avs-2019/questionnaire.pdf",
+    "url": "https://www.thearda.com/ARDA/pdf/originalCodebooks/AVS19%20Topline.pdf",
+    "sha256": "8ac113a34d6d8c1a6c707530a25ebd54370d2324af8605f0fb5d6d6092d08693"
+  },
+  {
+    "year": 2020,
+    "path": "data/raw/prri-avs-2020/questionnaire.pdf",
+    "url": "https://www.thearda.com/ARDA/pdf/originalCodebooks/AVS2020.pdf",
+    "sha256": "5674cd715b5e6cf76b776f271e1bbc062ae532fe7ed325397da8aad9b40b70c6"
+  },
+  {
+    "year": 2021,
+    "path": "data/raw/prri-avs-2021/questionnaire.pdf",
+    "url": "https://www.thearda.com/ARDA/pdf/originalCodebooks/AVS%20November%202021%20Topline.pdf",
+    "sha256": "bdc3ae644145bbd1fe7ba2c1045b90fa15dc1564c876a52394671892aca4878d"
+  },
+  {
+    "year": 2022,
+    "path": "data/raw/prri-avs-2022/questionnaire.pdf",
+    "url": "https://www.thearda.com/ARDA/pdf/originalCodebooks/AVS2022.pdf",
+    "sha256": "8e1a157a3621691a64c495c0ceb905a0b3ff652ba71ccdf60732696bd16d96be"
+  },
+  {
+    "year": 2023,
+    "path": "data/raw/prri-avs-2023/questionnaire.pdf",
+    "url": "https://www.thearda.com/ARDA/pdf/originalCodebooks/AVS2023.pdf",
+    "sha256": "41c2f758938dcccbf9c6742a3807d3326ceda4e4509dc1381a8905912cdf9028"
+  },
+  {
+    "year": 2024,
+    "path": "data/raw/prri-avs-2024/questionnaire.pdf",
+    "url": "https://www.thearda.com/ARDA/pdf/originalCodebooks/AVS2024.pdf",
+    "sha256": "7b7c9a1ba8d0b4f7dec3fd5adb5288b8a51e60995caf0ec1372c0497bd667707"
+  }
+]

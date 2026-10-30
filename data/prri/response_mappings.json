@@ -1,0 +1,225 @@
+{
+  "version": "explicit-prri-v1",
+  "notes": "PRRI American Values Survey, distributed by ARDA. Pilot: immigration 2018\u20132024 and marriage 2023\u20132024. Valid answers use original annual full-sample weights; missing responses excluded. Other acquired questions remain unreviewed.",
+  "entries": [
+    {
+      "code": "prri_immigration",
+      "family": "prri_immigration",
+      "title": "Immigration: citizenship, legal residency or deportation",
+      "question": "Which statement comes closest to your view about how the immigration system should deal with immigrants who are currently living in the U.S. illegally?",
+      "scores": {
+        "1": 1,
+        "2": 0,
+        "3": -1
+      },
+      "question_note": "Citizenship = +1; permanent legal residency without citizenship = 0; deportation = -1. The midpoint is a scoring convention, not ideological neutrality.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2018,
+          "source_code": "Q36",
+          "weight": "weight",
+          "expected_label": "Which statement comes closest to your view about how the immigration system shou",
+          "expected_labels": {
+            "1": "Allow them a way to become citizens provided they meet certain requirements",
+            "2": "Allow them to become permanent legal residents, but not citizens",
+            "3": "Identify and deport them",
+            "98": "Skipped on web",
+            "99": "Refused"
+          },
+          "published_percentages": {
+            "1": 62,
+            "2": 16,
+            "3": 21
+          },
+          "doi": "10.17605/OSF.IO/8W3TH",
+          "question": "Which statement comes closest to your view about how the immigration system should deal with immigrants who are currently living in the U.S. illegally?",
+          "wave": "Annual American Values Survey"
+        },
+        {
+          "year": 2019,
+          "source_code": "Q40",
+          "weight": "weight",
+          "expected_label": "Which statement comes closest to your view about how the immigration system shou",
+          "expected_labels": {
+            "1": "Allow them a way to become citizens provided they meet certain requirements",
+            "2": "Allow them to become permanent legal residents, but not citizens",
+            "3": "Identify and deport them",
+            "9": "Refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 67,
+            "2": 13,
+            "3": 20
+          },
+          "doi": "10.17605/OSF.IO/PH68V",
+          "question": "Which statement comes closest to your view about how the immigration system should deal with immigrants who are currently living in the U.S. illegally?",
+          "wave": "Annual American Values Survey"
+        },
+        {
+          "year": 2020,
+          "source_code": "Q44",
+          "weight": "weight",
+          "expected_label": "Which statement comes closest to your view about how the immigration system shou",
+          "expected_labels": {
+            "1": "Allow them a way to become citizens provided they meet certain requirements",
+            "2": "Allow them to become permanent legal residents but not citizens",
+            "3": "Identify and deport them",
+            "77": "Don't know",
+            "98": "Skipped on web"
+          },
+          "published_percentages": {
+            "1": 64,
+            "2": 16,
+            "3": 19
+          },
+          "doi": "10.17605/OSF.IO/8RH32",
+          "question": "Which statement comes closest to your view about how the immigration system should deal with immigrants who are currently living in the U.S. illegally?",
+          "wave": "Annual American Values Survey"
+        },
+        {
+          "year": 2021,
+          "source_code": "Q27",
+          "weight": "KP_WEIGHT",
+          "expected_label": "Which statement comes closest to your view about how the immigration system shou",
+          "expected_labels": {
+            "-1": "Don't know/Skipped",
+            "1": "Allow them a way to become citizens provided they meet certain requirements",
+            "2": "Allow them to become permanent legal residents, but not citizens",
+            "3": "Identify and deport them"
+          },
+          "published_percentages": {
+            "1": 62,
+            "2": 14,
+            "3": 22
+          },
+          "doi": "10.17605/OSF.IO/AXG4M",
+          "question": "Which statement comes closest to your view about how the immigration system should deal with immigrants who are currently living in the U.S. illegally?",
+          "wave": "Annual American Values Survey"
+        },
+        {
+          "year": 2022,
+          "source_code": "Q25",
+          "weight": "KP_WEIGHT",
+          "expected_label": "Which statement comes closest to your view about how the immigration system shou",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Allow them a way to become citizens provided they meet certain requirements",
+            "2": "Allow them to become permanent legal residents but not citizens",
+            "3": "Identify and deport them"
+          },
+          "published_percentages": {
+            "1": 57,
+            "2": 13,
+            "3": 25
+          },
+          "doi": "10.17605/OSF.IO/2CMYK",
+          "question": "Which statement comes closest to your view about how the immigration system should deal with immigrants who are currently living in the U.S. illegally?",
+          "wave": "Annual American Values Survey"
+        },
+        {
+          "year": 2023,
+          "source_code": "Q36",
+          "weight": "KP_WEIGHT",
+          "expected_label": "Which statement comes closest to your view about how the immigration system shou",
+          "expected_labels": {
+            "1": "Allow them a way to become citizens provided they meet certain requirements",
+            "2": "Allow them to become permanent legal residents but not citizens",
+            "3": "Identify and deport them",
+            "99": "Skipped"
+          },
+          "published_percentages": {
+            "1": 60,
+            "2": 13,
+            "3": 25
+          },
+          "doi": "10.17605/OSF.IO/WVUGF",
+          "question": "Which statement comes closest to your view about how the immigration system should deal with immigrants who are currently living in the U.S. illegally?",
+          "wave": "Annual American Values Survey"
+        },
+        {
+          "year": 2024,
+          "source_code": "Q31",
+          "weight": "weight",
+          "expected_label": "Which statement comes closest to your view about how the immigration system shou",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Allow them a way to become citizens provided they meet certain requirements",
+            "2": "Allow them to become permanent legal residents but not citizens",
+            "3": "Identify and deport them"
+          },
+          "published_percentages": {
+            "1": 56,
+            "2": 11,
+            "3": 31
+          },
+          "doi": "10.17605/OSF.IO/UDPSG",
+          "question": "Which statement comes closest to your view about how the immigration system should deal with immigrants who are currently living in the U.S. illegally?",
+          "wave": "Annual American Values Survey"
+        }
+      ]
+    },
+    {
+      "code": "prri_marriage",
+      "family": "prri_marriage",
+      "title": "Same-sex marriage legality",
+      "question": "How much do you favor or oppose each of the following? Allowing same-sex couples to marry legally.",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_note": "Strongly favor = +1; favor = +1/3; oppose = -1/3; strongly oppose = -1.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2023,
+          "source_code": "Q40_E",
+          "weight": "KP_WEIGHT",
+          "expected_label": "How much do you favor or oppose each of the following? Allowing same-sex couples",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "99": "Skipped"
+          },
+          "published_percentages": {
+            "1": 35,
+            "2": 31,
+            "3": 15,
+            "4": 15
+          },
+          "doi": "10.17605/OSF.IO/WVUGF",
+          "question": "How much do you favor or oppose each of the following? Allowing same-sex couples to marry legally.",
+          "wave": "Annual American Values Survey"
+        },
+        {
+          "year": 2024,
+          "source_code": "Q10_C",
+          "weight": "weight",
+          "expected_label": "How much do you favor or oppose each of the following? Allowing same-sex couples",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose"
+          },
+          "published_percentages": {
+            "1": 37,
+            "2": 29,
+            "3": 16,
+            "4": 14
+          },
+          "doi": "10.17605/OSF.IO/UDPSG",
+          "question": "How much do you favor or oppose each of the following? Allowing same-sex couples to marry legally.",
+          "wave": "Annual American Values Survey"
+        }
+      ]
+    }
+  ]
+}

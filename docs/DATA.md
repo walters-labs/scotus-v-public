@@ -584,3 +584,92 @@ For a new source, register its methodology, produce these fields, and call
 is required. The five current files validate as 213 questions and 2,280 annual
 question observations. Checksums are checked for format here; acquisition and
 build commands remain responsible for checking actual source-file contents.
+
+## Acquired candidate: PRRI American Values Survey (2010–2024)
+
+Selected the annual PRRI AVS series distributed by the Association of Religion
+Data Archives (ARDA), distinct from PRRI's American Values Atlas. The public
+catalog is https://www.thearda.com/data-archive/browse-alphabetically . Annual
+summary/download pages and their actual Stata download URLs are recorded in
+`data/manifests/prri-avs-acquisition.json` alongside SHA-256 hashes, byte sizes,
+DOIs, record counts, and candidate weight-variable names.
+
+Acquisition completed October 30, 2026: 15 annual files, 41,551 respondent records
+across years, 15,362,416 bytes of Stata data. These are records, not necessarily
+unique people across years. Raw data and archive pages are under
+`data/raw/prri-avs-YYYY/`. Every file was parsed with pyreadstat and its checksum
+verified. `scripts/acquire_prri_avs.py` discovers main annual surveys from the
+catalog and downloads them; it excludes supplements and separate post-election
+releases, selecting the pre-election release when labeled separately. This is
+an acquisition/discovery tool; the saved checksum manifest pins this snapshot.
+
+ARDA provides annual full-dataset downloads, not one cumulative file. Access
+worked without an email request. Its download agreement requires responsible use
+and attribution to ARDA and the original collectors, disclaims warranties, and
+specifies Indiana jurisdiction. Preserve the saved download pages as the
+retrieved terms. Cite PRRI as collector and ARDA as distributor in publication.
+No credentials or user contact details were submitted.
+
+Why this source: national U.S. policy coverage, repeated annual collection, and
+published survey weights. The 2010 archive documents economic/social policy and
+immigration topics; 2023 data also include direct immigration-policy items.
+Issue-importance, party preference, and religious identification variables must
+not be automatically treated as liberal/conservative policy questions.
+
+Before integration:
+
+- Review full questionnaires and repeated policy wording across years; Stata
+  variable labels can be truncated. Do not equate identical variable codes with
+  identical questions.
+- Verify national weights, subsamples, and split forms. 2019/2020 contain both
+  `weight` and `WEIGHT2`; later waves use `KP_WEIGHT` or `weight`.
+- Account for the collection-mode change: older telephone samples versus later
+  Ipsos KnowledgePanel online samples. Do not assume an uninterrupted comparable
+  measurement simply because all years are present.
+- Preserve individual annual source versions and citations in the shared schema.
+- Verify archive summary discrepancies against original questionnaires: for
+  example, the 2024 page's prose says 2,525 respondents, while its table and the
+  downloaded data have 5,352. The downloaded 2023 file has 184 columns (180
+  original plus four ARDA-added variables), not 184 usable policy questions.
+
+The first local PRRI import is described below; it has not been deployed. VOTER remains a form-based alternative; Nationscape's
+previous email request remained unresolved at the user's last report.
+
+
+### PRRI first reviewed import
+
+The first bounded import contains **two questions and nine question-years**:
+immigration policy (2018–2024) and same-sex marriage legality (2023–2024).
+These are annual AVS samples, not pooled American Values Atlas releases.
+Earlier questions and split-form marriage items remain deferred for review.
+
+`data/prri/response_mappings.json` pins each annual variable label, answer labels,
+weight, DOI, response mapping and published rounded percentages. Original
+questionnaires are pinned in `data/manifests/prri-policy-documents.json`.
+The importer rejects checksum changes, label drift, unknown response codes and
+weighted percentages that differ from published toplines by over 0.51 percentage
+points. Published percentages include skipped responses in their denominator;
+polarity excludes them. Every mean is independently checked against grouped
+weighted response frequencies. Counts and weight sums are retained per year.
+
+Immigration maps citizenship to +1, permanent legal residency without citizenship
+to 0, and deportation to −1. The midpoint is an explicit modeling convention,
+not ideological neutrality. Marriage maps strongly favor/favor/oppose/strongly
+oppose to +1, +1/3, −1/3, −1. Neither scale establishes comparability with court
+vote margins. PRRI has equal source weight in the combined view when present.
+
+Reproduce from the repository root with the build dependencies installed
+(outputs must not already exist):
+
+```sh
+.venv/bin/python scripts/acquire_prri_avs.py --restore
+.venv/bin/python -m scvpublic.prri --base-artifact artifacts/ces-2023-candidate.sqlite
+PYTHONPATH=. .venv/bin/python scripts/rebind_hybrid.py --old artifacts/ces-2023-candidate.sqlite --new artifacts/prri-pilot.sqlite --bundle artifacts/semantic-survey-phrases-v1 --output artifacts/semantic-prri-court
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_embeddings.py --artifact artifacts/prri-pilot.sqlite --bundle artifacts/semantic-prri-court --output artifacts/semantic-prri-pilot --phrases
+SCVPO_ARTIFACT=artifacts/prri-pilot.sqlite SCVPO_HYBRID=artifacts/semantic-prri-pilot OPENBLAS_NUM_THREADS=1 .venv/bin/gunicorn 'scvpublic.web:create_app()' --bind 127.0.0.1:8014 --workers 1 --threads 2
+```
+
+The processed payload `data/processed/prri-avs/public.json` includes validation
+percentages and annual provenance. Only its indexed aggregates and embeddings
+are served; respondent files are not deployed. Credit PRRI as collector and ARDA
+as distributor. Try `immigration` and `gay marriage`, selecting PRRI or Combined.
