@@ -1,0 +1,76 @@
+{
+  "existing_nationscape_questions_unchanged": true,
+  "other_surveys_unchanged": true,
+  "questions": [
+    {
+      "code": "nationscape_gov_insurance",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.4971904942192893,
+      "annual_scores": {
+        "2019": 0.28270888493390134,
+        "2020": 0.29347505983578576,
+        "2021": 0.1940336493297858
+      }
+    },
+    {
+      "code": "nationscape_path_to_citizenship",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49666046570247246,
+      "annual_scores": {
+        "2019": 0.2957329858872487,
+        "2020": 0.3323460448556355,
+        "2021": 0.26635893326957993
+      }
+    },
+    {
+      "code": "nationscape_dreamers",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49987245455929497,
+      "annual_scores": {
+        "2019": 0.6393678005779073,
+        "2020": 0.6406473087141085,
+        "2021": 0.5736125034416416
+      }
+    },
+    {
+      "code": "nationscape_deportation",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49739396529193414,
+      "annual_scores": {
+        "2019": 0.14885440565288896,
+        "2020": 0.15974094180075632,
+        "2021": 0.10439967984525932
+      }
+    },
+    {
+      "code": "nationscape_guns_bg",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49753185779795217,
+      "annual_scores": {
+        "2019": 0.8657585094124794,
+        "2020": 0.8340947813484278,
+        "2021": 0.7628430261711193
+      }
+    },
+    {
+      "code": "nationscape_ban_guns",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49650293095477593,
+      "annual_scores": {
+        "2019": -0.5633971608458036,
+        "2020": -0.5454916122614586,
+        "2021": -0.47359444101407266
+      }
+    },
+    {
+      "code": "nationscape_limit_magazines",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49993712282847724,
+      "annual_scores": {
+        "2019": 0.27423439522670795,
+        "2020": 0.2585663230168577,
+        "2021": 0.25402267987558036
+      }
+    }
+  ]
+}

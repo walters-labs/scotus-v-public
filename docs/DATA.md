@@ -809,3 +809,40 @@ that item, and `healthcare` still retrieves the original question. The standalon
 query `dreamers` currently returns no Nationscape result under the existing
 search thresholds. This known vocabulary gap was not addressed by adding a
 special-case search rule in a data-only expansion.
+
+### Nationscape gun-policy expansion (local candidate, November 2)
+
+Adds three separate policies: `guns_bg` (background checks for all gun purchases),
+`ban_guns` (ban all guns), and `limit_magazines` (limit gun magazines to 10 bullets).
+Agree maps to +1 and disagree to −1; not sure and skipped are excluded from
+polarity. A blanket gun ban is not relabeled as an assault-weapons ban or as
+generic support for gun regulation. Each policy has a distinct family, so the
+existing search results show which policies contribute to a query's average.
+
+The registry item (`gun_registry`) is deferred: 311,196 downloaded weekly records
+have code 888, “Not Asked.” Assignment and subset weighting need a separate
+review. The three included questions have no “Not Asked” responses in these
+77 waves. No search rules, model, weighting method, or chart behavior changed.
+
+`data/manifests/nationscape-gun-policy.json` extends the reviewed four-question
+manifest with original labels, codebook/bannerbook page numbers, published
+counts and category percentages. `data/nationscape/gun-policy-validation.json`
+records validation and preservation checks. As before, the trend uses `weight`
+consistently, while published-table validation uses each cover's specified
+weight. Partial-year coverage remains 24/52/1 waves in 2019/2020/2021.
+
+```sh
+.venv/bin/python -m scvpublic.nationscape --manifest data/manifests/nationscape-gun-policy.json --output data/processed/nationscape-gun-policy/public.json --base-artifact artifacts/nationscape-policy.sqlite --artifact artifacts/nationscape-gun-policy.sqlite
+PYTHONPATH=. .venv/bin/python scripts/rebind_hybrid.py --old artifacts/nationscape-policy.sqlite --new artifacts/nationscape-gun-policy.sqlite --bundle artifacts/semantic-nationscape-policy --output artifacts/semantic-nationscape-gun-policy-court
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_embeddings.py --artifact artifacts/nationscape-gun-policy.sqlite --bundle artifacts/semantic-nationscape-gun-policy-court --output artifacts/semantic-nationscape-gun-policy --phrases
+SCVPO_ARTIFACT=artifacts/nationscape-gun-policy.sqlite SCVPO_HYBRID=artifacts/semantic-nationscape-gun-policy OPENBLAS_NUM_THREADS=1 .venv/bin/gunicorn 'scvpublic.web:create_app()' --bind 127.0.0.1:8018 --workers 1 --threads 2
+```
+
+Validation completed for all 231 added question-weeks: all 693 rounded category
+percentages reproduce within 0.51 percentage points, and all published response
+counts match. Existing four Nationscape documents and other survey documents
+are unchanged. The local preview passes 136 unit tests and 42 HTTP checks.
+`gun control` currently selects the blanket-ban and magazine-limit items under
+the unchanged relative relevance cutoff; `background checks` selects that item.
+Thus a broad query is not a census of all related policies. `healthcare` and
+`immigration` remain retrievable, and `contraception` has no Nationscape match.
