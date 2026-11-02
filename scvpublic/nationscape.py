@@ -14,11 +14,16 @@ def summarize(frame, expected, validation_weights=None, code='gov_insurance', sc
     if set(score_map) != {1,2} or set(score_map.values()) != {-1,1}:
         raise ValueError('Invalid Nationscape response mapping')
     answer, weight = frame[code], frame.weight
-    if set(answer.dropna()) - {1, 2, 999}:
+    allowed = {1, 2, 999}
+    if expected.get('assignment') == 'random_subset':
+        if not expected.get('randomization') or '888' not in expected.get('expected_labels', {}):
+            raise ValueError('Missing randomized-assignment evidence')
+        allowed.add(888)
+    if set(answer.dropna()) - allowed:
         raise ValueError('Unknown Nationscape answer')
     if not (weight.notna() & weight.gt(0) & weight.lt(float('inf'))).all():
         raise ValueError('Invalid Nationscape weight')
-    answered = answer.notna()
+    answered = answer.isin([1, 2, 999])
     if int(answered.sum()) != expected['published_n']:
         raise ValueError('Nationscape published count mismatch')
     sums = {str(int(k)):float(v) for k,v in frame.loc[answered].groupby(code).weight.sum().items()}
@@ -74,6 +79,8 @@ def build(manifest, output):
         code=entry['source_code']
         score_map={int(k):v for k,v in entry['scores'].items()}
         for wave in spec['waves']:
+            if 'wave_ids' in entry and wave['wave'] not in entry['wave_ids']:
+                continue
             if 'parallel' in wave['path']:
                 raise ValueError('Parallel samples are not part of this import')
             for file,checksum in wave['files'].items():
@@ -93,9 +100,14 @@ def build(manifest, output):
             if len(frame)!=wave['rows'] or frame.start_date.isna().any():
                 raise ValueError('Nationscape rows/dates changed')
             result=summarize(frame,expected,frame[wave['validation_weight']],code,score_map)
+            if expected.get('assignment') == 'random_subset':
+                result['not_asked'] = int(frame[code].eq(888).sum())
+                result['assignment'] = 'random_subset'
+            if expected.get('question'):
+                result['question'] = expected['question']
             observations.append(dict(wave=wave['wave'],date=wave['date'],first_response=frame.start_date.min().isoformat(),last_response=frame.start_date.max().isoformat(),weight='weight',validation_weight=wave['validation_weight'],**result))
         years=annualize(observations)
-        doc={k:v for k,v in entry.items() if k!='source_code'}
+        doc={k:v for k,v in entry.items() if k not in ('source_code', 'wave_ids')}
         doc.update(years=years,respondents={y:sum(w['respondents'] for w in observations if w['date'].startswith(y)) for y in years},weekly_observations=observations,weekly_counts={y:sum(w['date'].startswith(y) for w in observations) for y in years},dataset='Nationscape')
         documents.append(doc)
     notes=spec.get('notes','Democracy Fund + UCLA Nationscape. One reviewed health-insurance question; 77 weekly surveys, July 2019–January 2021. Three parallel surveys excluded. Annual estimates describe observed weeks, not full calendar years. Counts are responses, not necessarily unique people.')

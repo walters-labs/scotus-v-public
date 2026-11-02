@@ -46,3 +46,14 @@ class NationscapeTests(unittest.TestCase):
         self.assertEqual(result['percentages'],{'1':60,'2':20,'999':20})
         with self.assertRaisesRegex(ValueError,'response mapping'):
             summarize(frame,self.expected,code='deportation',score_map={1:1,2:1})
+
+    def test_random_assignment_excludes_not_asked(self):
+        frame=pd.DataFrame({'gov_insurance':[1,2,999,888,float('nan')], 'weight':[3.,1.,1.,1000.,1000.]})
+        expected=dict(self.expected,assignment='random_subset',randomization='Respondents asked 8 policy questions at random',expected_labels={'1':'Agree','2':'Disagree','888':'Not Asked','999':'Not sure'})
+        result=summarize(frame,expected)
+        self.assertEqual(result['score'],.5)
+        self.assertEqual(result['respondents'],2)
+        self.assertEqual(result['percentages'],{'1':60,'2':20,'999':20})
+        with self.assertRaisesRegex(ValueError,'Unknown'):summarize(frame,self.expected)
+        expected.pop('randomization')
+        with self.assertRaisesRegex(ValueError,'assignment evidence'):summarize(frame,expected)

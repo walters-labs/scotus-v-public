@@ -1,0 +1,438 @@
+{
+  "existing_seven_questions_unchanged": true,
+  "other_surveys_unchanged": true,
+  "total_questions": 43,
+  "total_question_weeks": 3191,
+  "total_question_years": 127,
+  "max_error": 0.499974251261861,
+  "questions": [
+    {
+      "code": "nationscape_gov_insurance",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.4971904942192893,
+      "annual_scores": {
+        "2019": 0.28270888493390134,
+        "2020": 0.29347505983578576,
+        "2021": 0.1940336493297858
+      }
+    },
+    {
+      "code": "nationscape_path_to_citizenship",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49666046570247246,
+      "annual_scores": {
+        "2019": 0.2957329858872487,
+        "2020": 0.3323460448556355,
+        "2021": 0.26635893326957993
+      }
+    },
+    {
+      "code": "nationscape_dreamers",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49987245455929497,
+      "annual_scores": {
+        "2019": 0.6393678005779073,
+        "2020": 0.6406473087141085,
+        "2021": 0.5736125034416416
+      }
+    },
+    {
+      "code": "nationscape_deportation",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49739396529193414,
+      "annual_scores": {
+        "2019": 0.14885440565288896,
+        "2020": 0.15974094180075632,
+        "2021": 0.10439967984525932
+      }
+    },
+    {
+      "code": "nationscape_guns_bg",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49753185779795217,
+      "annual_scores": {
+        "2019": 0.8657585094124794,
+        "2020": 0.8340947813484278,
+        "2021": 0.7628430261711193
+      }
+    },
+    {
+      "code": "nationscape_ban_guns",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49650293095477593,
+      "annual_scores": {
+        "2019": -0.5633971608458036,
+        "2020": -0.5454916122614586,
+        "2021": -0.47359444101407266
+      }
+    },
+    {
+      "code": "nationscape_limit_magazines",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49993712282847724,
+      "annual_scores": {
+        "2019": 0.27423439522670795,
+        "2020": 0.2585663230168577,
+        "2021": 0.25402267987558036
+      }
+    },
+    {
+      "code": "nationscape_abolish_priv_insurance",
+      "question_weeks": 66,
+      "max_percentage_point_error": 0.4969762022326094,
+      "annual_scores": {
+        "2019": -0.23616566905556355,
+        "2020": -0.22462158539808433,
+        "2021": -0.23149324126936613
+      }
+    },
+    {
+      "code": "nationscape_abortion_any_time",
+      "question_weeks": 66,
+      "max_percentage_point_error": 0.497684188741605,
+      "annual_scores": {
+        "2019": -0.47949061948485217,
+        "2020": -0.44501768880420917,
+        "2021": -0.33118692311642456
+      }
+    },
+    {
+      "code": "nationscape_abortion_conditions",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.4996933748038863,
+      "annual_scores": {
+        "2019": 0.3670086941217509,
+        "2020": 0.3480765436380088,
+        "2021": 0.34367727543836785
+      }
+    },
+    {
+      "code": "nationscape_abortion_insurance",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49968667016609913,
+      "annual_scores": {
+        "2019": 0.08729032398031263,
+        "2020": 0.07917128775352192,
+        "2021": 0.07623227895773386
+      }
+    },
+    {
+      "code": "nationscape_abortion_never",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49851950194872074,
+      "annual_scores": {
+        "2019": 0.5294517696205493,
+        "2020": 0.48013617147009013,
+        "2021": 0.408229595997577
+      }
+    },
+    {
+      "code": "nationscape_abortion_waiting",
+      "question_weeks": 1,
+      "max_percentage_point_error": 0.43576196340737994,
+      "annual_scores": {
+        "2019": -0.022263942267722298
+      }
+    },
+    {
+      "code": "nationscape_ban_assault_rifles",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.4983525609978585,
+      "annual_scores": {
+        "2019": 0.3378584696619917,
+        "2020": 0.32155876611126405,
+        "2021": 0.31957813012544417
+      }
+    },
+    {
+      "code": "nationscape_cap_carbon",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49295191048934583,
+      "annual_scores": {
+        "2019": 0.57226739350882,
+        "2020": 0.5684991798629748,
+        "2021": 0.4542098050890617
+      }
+    },
+    {
+      "code": "nationscape_college",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49965341441639666,
+      "annual_scores": {
+        "2019": 0.4215764580754051,
+        "2020": 0.4061434008360751,
+        "2021": 0.2591733837175225
+      }
+    },
+    {
+      "code": "nationscape_criminal_immigration",
+      "question_weeks": 66,
+      "max_percentage_point_error": 0.49925731084277913,
+      "annual_scores": {
+        "2019": -0.0033051023938690132,
+        "2020": 0.014512859689282858,
+        "2021": -0.08178514169162696
+      }
+    },
+    {
+      "code": "nationscape_environment",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.4983279322904295,
+      "annual_scores": {
+        "2019": 0.6318740782422497,
+        "2020": 0.6132269425277606,
+        "2021": 0.5254750259134531
+      }
+    },
+    {
+      "code": "nationscape_estate_tax",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.4982888299957118,
+      "annual_scores": {
+        "2019": -0.41699309189141637,
+        "2020": -0.4135379663777251,
+        "2021": -0.44687495143989053
+      }
+    },
+    {
+      "code": "nationscape_green_new_deal",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49193915761971496,
+      "annual_scores": {
+        "2019": 0.22453883402987573,
+        "2020": 0.25647468210221586,
+        "2021": 0.09654798771775333
+      }
+    },
+    {
+      "code": "nationscape_guaranteed_jobs",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.4988892827311666,
+      "annual_scores": {
+        "2019": 0.4546578776280013,
+        "2020": 0.4761780231764884,
+        "2021": 0.48537015726393223
+      }
+    },
+    {
+      "code": "nationscape_gun_registry",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49480380569564275,
+      "annual_scores": {
+        "2019": 0.3850140929114619,
+        "2020": 0.3703791310885277,
+        "2021": 0.31776478913285344
+      }
+    },
+    {
+      "code": "nationscape_health_subsidies",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.4984149765661954,
+      "annual_scores": {
+        "2019": 0.6097798431557314,
+        "2020": 0.6240349996018909,
+        "2021": 0.5704054208115307
+      }
+    },
+    {
+      "code": "nationscape_immigration_insurance",
+      "question_weeks": 66,
+      "max_percentage_point_error": 0.49625350251563916,
+      "annual_scores": {
+        "2019": -0.4959377066965619,
+        "2020": -0.39419983251259627,
+        "2021": -0.3245351988988351
+      }
+    },
+    {
+      "code": "nationscape_immigration_separation",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49959846474077096,
+      "annual_scores": {
+        "2019": 0.5555885528257621,
+        "2020": 0.5693969077575842,
+        "2021": 0.5136994499534391
+      }
+    },
+    {
+      "code": "nationscape_immigration_wire",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.4994990728895061,
+      "annual_scores": {
+        "2019": -0.2883045172074223,
+        "2020": -0.27972521173289067,
+        "2021": -0.2847708172779844
+      }
+    },
+    {
+      "code": "nationscape_late_term_abortion",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49897880847380804,
+      "annual_scores": {
+        "2019": -0.43393408274971246,
+        "2020": -0.41933602672278636,
+        "2021": -0.3529206880819798
+      }
+    },
+    {
+      "code": "nationscape_marijuana",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.4998771379029989,
+      "annual_scores": {
+        "2019": 0.37077549619316974,
+        "2020": 0.3487799281710048,
+        "2021": 0.30579863401492735
+      }
+    },
+    {
+      "code": "nationscape_maternityleave",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.4962227911790187,
+      "annual_scores": {
+        "2019": 0.613467152517357,
+        "2020": 0.6270613588731858,
+        "2021": 0.5341298719427786
+      }
+    },
+    {
+      "code": "nationscape_medicare_for_all",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.4986395776592403,
+      "annual_scores": {
+        "2019": 0.262347523322494,
+        "2020": 0.27796068011295233,
+        "2021": 0.17450667668562428
+      }
+    },
+    {
+      "code": "nationscape_military_size",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.4997265074171686,
+      "annual_scores": {
+        "2019": -0.5252698622245673,
+        "2020": -0.4810389558591224,
+        "2021": -0.38344867907825037
+      }
+    },
+    {
+      "code": "nationscape_minwage",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.491408283876698,
+      "annual_scores": {
+        "2019": 0.3980372272066917,
+        "2020": 0.46820981556980706,
+        "2021": 0.36573641191520573
+      }
+    },
+    {
+      "code": "nationscape_muslimban",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.499974251261861,
+      "annual_scores": {
+        "2019": 0.4832216116222952,
+        "2020": 0.46607155699970654,
+        "2021": 0.361636557014526
+      }
+    },
+    {
+      "code": "nationscape_oil_and_gas",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49649519771780604,
+      "annual_scores": {
+        "2019": 0.009750455921466632,
+        "2020": 0.02219395806960225,
+        "2021": -0.06679185558119187
+      }
+    },
+    {
+      "code": "nationscape_public_option",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49091672878063264,
+      "annual_scores": {
+        "2019": 0.5580140226290305,
+        "2020": 0.5577587928871919,
+        "2021": 0.4573033650408837
+      }
+    },
+    {
+      "code": "nationscape_raise_upper_tax",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.4984437118662228,
+      "annual_scores": {
+        "2019": 0.49215553481283325,
+        "2020": 0.5105727884439367,
+        "2021": 0.5062649792841687
+      }
+    },
+    {
+      "code": "nationscape_reparations",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49835197499952955,
+      "annual_scores": {
+        "2019": -0.4057336140214116,
+        "2020": -0.3472840893043679,
+        "2021": -0.34355146206586473
+      }
+    },
+    {
+      "code": "nationscape_right_to_work",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.49909487057133006,
+      "annual_scores": {
+        "2019": -0.16630210167215007,
+        "2020": -0.18628818489316265,
+        "2021": -0.33931541754340827
+      }
+    },
+    {
+      "code": "nationscape_ten_commandments",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.4981733273810036,
+      "annual_scores": {
+        "2019": -0.3205011769359191,
+        "2020": -0.2816859268288476,
+        "2021": -0.3194734876957212
+      }
+    },
+    {
+      "code": "nationscape_trans_military",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.4999329670861883,
+      "annual_scores": {
+        "2019": 0.4407906761421018,
+        "2020": 0.4668018230385999,
+        "2021": 0.45875721451285323
+      }
+    },
+    {
+      "code": "nationscape_uctaxes2",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.4973125292875977,
+      "annual_scores": {
+        "2019": 0.13079452226684946,
+        "2020": 0.15517048475629794,
+        "2021": 0.1451338265824348
+      }
+    },
+    {
+      "code": "nationscape_vouchers",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.4985326220386952,
+      "annual_scores": {
+        "2019": 0.12918182590951105,
+        "2020": 0.09492306718984166,
+        "2021": -0.026528665299666344
+      }
+    },
+    {
+      "code": "nationscape_wall",
+      "question_weeks": 77,
+      "max_percentage_point_error": 0.4989181919972552,
+      "annual_scores": {
+        "2019": 0.13763903474683284,
+        "2020": 0.13852136252587302,
+        "2021": 0.053199225169693824
+      }
+    }
+  ]
+}

@@ -846,3 +846,76 @@ are unchanged. The local preview passes 136 unit tests and 42 HTTP checks.
 the unchanged relative relevance cutoff; `background checks` selects that item.
 Thus a broad query is not a census of all related policies. `healthcare` and
 `immigration` remain retrievable, and `contraception` has no Nationscape match.
+
+### Nationscape broad policy batch (local candidate, November 2)
+
+The agree/disagree policy inventory across all 77 weekly files contains 51
+respondent-policy items, plus 20 separate perceptions of party leaders' views.
+This batch includes 43 policy questions (36 additions to the seven-question
+candidate). Eight are excluded because a stable single liberal/conservative
+orientation is not defensible here: middle-income tax cuts, family-versus-merit
+immigration criteria, general trade limits, China tariffs, military support for
+Israel/Saudi Arabia/Egypt, and impeachment of a specific president. Perceived
+party positions are not respondent policy preferences and are not imported.
+The inventory covers this policy battery, not every attitude variable in the
+survey. The orientation choices are explicit project conventions, not inferred
+individual ideology.
+
+The new questions span climate, energy, taxation, education, abortion, health
+insurance, labor, immigration, gun regulation, marijuana, reparations, religion
+in public institutions, and military policy. Every item retains its own wording,
+response orientation and family. The existing equal-family average can still
+be sensitive to how many related policies a questionnaire asks; these are not
+independent sources. Nationscape contributes once to the combined source index.
+
+**Randomized questions:** codebooks explicitly document random subsets (eight,
+or nine in one wave, for the main rotating battery; one or two for the later
+battery). The importer accepts 888 only with pinned assignment evidence and
+response labels. It excludes 888 from both score and published-response
+percentage denominators, preserving the not-asked counts per wave. Published
+unweighted counts must equal the number of substantive/unsure answers; skipped
+answers are excluded. Within a wave the assignment probability is common to
+respondents for an item, so it cancels in the weighted response ratio. We retain
+the documented original survey weight and validate against the publisher's
+specified validation weight. No zeros are imputed for unasked questions.
+
+Questions introduced later contribute only their observed waves. Four included
+items begin in October 2019 (66 waves). The abortion waiting-period/ultrasound
+item is retained only for July 18, 2019: later codebooks contain it but the
+supplied published tables do not, so those 76 item-waves remain excluded. The
+app discloses that its 2019 point is a single weekly estimate. Environmental
+investment wording explicitly mentions government in the first wave and omits
+that word later; this change is disclosed and exact weekly wording retained.
+2021 remains just one January wave where available.
+
+`data/manifests/nationscape-policy-batch.json` contains reviewed orientations,
+per-wave assignment text, labels, codebook/table pages, published response counts
+and percentages, and pinned source hashes. `data/nationscape/batch-review.json`
+records the complete policy inventory, reasons for exclusion, and validation
+results. `data/nationscape/batch-validation.json` records the final artifact
+checks. Existing seven Nationscape documents and other survey documents must
+remain unchanged. All accepted item-waves meet the existing 0.51 percentage-point
+rounding tolerance; no tolerance or search-threshold changes are included.
+
+```sh
+.venv/bin/python -m scvpublic.nationscape --manifest data/manifests/nationscape-policy-batch.json --output data/processed/nationscape-policy-batch/public.json --base-artifact artifacts/nationscape-gun-policy.sqlite --artifact artifacts/nationscape-policy-batch.sqlite
+PYTHONPATH=. .venv/bin/python scripts/rebind_hybrid.py --old artifacts/nationscape-gun-policy.sqlite --new artifacts/nationscape-policy-batch.sqlite --bundle artifacts/semantic-nationscape-gun-policy --output artifacts/semantic-nationscape-policy-batch-court
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_embeddings.py --artifact artifacts/nationscape-policy-batch.sqlite --bundle artifacts/semantic-nationscape-policy-batch-court --output artifacts/semantic-nationscape-policy-batch --phrases
+SCVPO_ARTIFACT=artifacts/nationscape-policy-batch.sqlite SCVPO_HYBRID=artifacts/semantic-nationscape-policy-batch OPENBLAS_NUM_THREADS=1 .venv/bin/gunicorn 'scvpublic.web:create_app()' --bind 127.0.0.1:8019 --workers 1 --threads 2
+```
+
+Completed validation: 43 questions, 3,191 question-weeks and 127 question-years;
+36 new questions contribute 2,652 validated question-weeks. The seven existing
+Nationscape documents reproduce exactly and other survey documents are unchanged.
+All 9,573 included category percentages reproduce within 0.51 percentage points
+(maximum observed discrepancy 0.499975). The app passes 137 unit tests, 160
+concurrent serving requests and 42 HTTP checks. Local macOS test-process peak
+RSS was 231.8 MiB (not a measurement of the deployed Linux service).
+
+Eleven topic/view pairs were checked, including climate change, minimum wage,
+marijuana, paid maternity leave, abortion, healthcare, gun control, immigration,
+union dues, transgender military service and school vouchers. Search remains
+selective: for example, `gun control` now selects the blanket-ban item; more
+specific queries are needed for other gun policies. Additional documents change
+corpus TF-IDF and phrase-expansion rankings even with unchanged thresholds.
+No claim is made that a broad query retrieves every related policy.
