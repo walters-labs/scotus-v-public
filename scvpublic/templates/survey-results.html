@@ -1,0 +1,52 @@
+<section class="survey-results">
+  <h2>Public opinion</h2>
+  {% set sources = [('ANES', 'public', public), ('GSS', 'gss', gss), ('CES', 'ces', ces), ('Pew', 'pew', pew), ('WVS', 'wvs', wvs), ('PRRI', 'prri', prri), ('Nationscape', 'nationscape', nationscape), ('VOTER', 'voter', voter)] %}
+  {% set found = namespace(any=false) %}
+  {% for label, key, questions in sources if questions %}
+    {% set found.any = true %}
+    <div class="survey-source">
+      <h3 class="source-heading">{{ label }} <span>{{ questions|length }} question{{ 's' if questions|length != 1 else '' }}</span></h3>
+      {% if info.get(key ~ '_notes') %}
+      <details class="source-notes"><summary>About this source</summary><p>{{ info[key ~ '_notes'] }}</p></details>
+      {% endif %}
+      {% for question in questions %}
+      <article class="survey-question">
+        <h4{% if question['question']|length > 300 %} class="long-question"{% endif %}>{{ question['question'] }}</h4>
+        {% set years = question['years']|sort %}
+        <p class="question-meta">
+          {% if years %}{{ years|length }} observed year{{ 's' if years|length != 1 else '' }} · {{ years[0] }}{% if years|length > 1 %}–{{ years[-1] }}{% endif %}{% else %}Not included in the chart{% endif %}
+          {% if question.get('source_url') %} · <a href="{{ question['source_url'] }}">Source</a>{% endif %}
+        </p>
+        {% if question.get('measurement_type') in ['partisan_proxy','movement_proxy'] %}<p>Group or partisan attitudes; not a direct policy question.</p>{% endif %}
+        <details class="question-details">
+          <summary>Question details</summary>
+          {% if question['question']|length > 300 %}<p>{{ question['question'] }}</p>{% endif %}
+          <p>Question ID: {{ question['code'] }}</p>
+          {% if years %}<p>Observed years: {{ years|join(', ') }}.</p>{% endif %}
+          {% if question.get('question_note') %}<p>{{ question['question_note'] }}</p>{% endif %}
+          {% if question.get('weight') %}<p>Weight: {{ question['weight'] }}.</p>{% endif %}
+          {% if info.get('survey_phrase_expansion') %}
+          <p>Match strength: {{ '%.3f'|format(question['score']) }} · Meaning: {{ '%.3f'|format(question['semantic_score']) }} · Keyword evidence: {{ '%.3f'|format(question['lexical_score']) }}. Ranking scores, not probabilities; includes confidence-weighted phrase expansion.</p>
+          {% endif %}
+          {% if question.get('year_provenance') %}
+          <ul>{% for year, provenance in question['year_provenance']|dictsort %}
+            <li>{{ year }}{% if provenance.get('wave') %} ({{ provenance['wave'] }}){% endif %}: {{ provenance['question'] }}
+              {% if provenance.get('source_code') %} · {{ provenance['source_code'] }}{% endif %}
+              {% if provenance.get('weight') %} · {{ provenance['weight'] }}{% endif %}
+              {% if question.get('respondents', {}).get(year) %} · {{ question['respondents'][year] }} valid responses{% endif %}
+              {% if provenance.get('doi') %} · <a href="https://doi.org/{{ provenance['doi'] }}">Annual source</a>{% endif %}
+            </li>{% endfor %}</ul>
+          {% endif %}
+          {% if question.get('weekly_counts') %}<p>Observed weekly surveys: {% for year, count in question['weekly_counts'].items() %}{{ year }}: {{ count }}{% if not loop.last %} · {% endif %}{% endfor %}.</p>{% endif %}
+          {% if question.get('wave_provenance') %}
+          <ul>{% for year, observations in question['wave_provenance'].items() %}{% for provenance in ([observations] if observations is mapping else observations) %}
+            <li>{{ year }}: {{ provenance['source_code'] }} · {{ provenance['weight'] }} · {{ provenance['respondents'] }} valid responses · guide page {{ provenance['guide_page'] }}</li>
+          {% endfor %}{% endfor %}</ul>
+          {% endif %}
+        </details>
+      </article>
+      {% endfor %}
+    </div>
+  {% endfor %}
+  {% if not found.any %}<p class="hint">No matching public opinion questions. Try another keyword or phrase.</p>{% endif %}
+</section>

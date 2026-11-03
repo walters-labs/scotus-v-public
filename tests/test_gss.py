@@ -96,7 +96,7 @@ class GSSTests(unittest.TestCase):
                         if self.depth == self.survey_depth: self.survey_depth = None
                         self.depth -= 1
                 def handle_data(self, data):
-                    if data == 'GSS' and self.survey_depth is not None: self.gss_in_survey = True
+                    if data.strip() == 'GSS' and self.survey_depth is not None: self.gss_in_survey = True
             layout = Columns(); layout.feed(html)
             self.assertTrue(layout.gss_in_survey)
             with self.assertRaises(FileExistsError):

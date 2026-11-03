@@ -18,3 +18,16 @@ details { margin: 1rem 0; }
 .nationscape{color:#697329}
 
 .voter{color:#765642}
+
+.survey-source{margin-top:26px}
+.survey-source .source-heading{display:flex;align-items:baseline;gap:10px;margin:0 0 4px}
+.source-heading span{font-size:12px;font-weight:400;color:#5b686e}
+.survey-results .source-notes{margin:0 0 10px;font-size:12px;color:#5b686e}
+.survey-question{padding:16px 0;border-color:#e0e3dc}
+.survey-question h4{font-size:15px;font-weight:500;line-height:1.55;margin:0}
+.survey-question .question-meta{margin:7px 0;color:#5b686e}
+.survey-results .question-details{margin:6px 0 0;font-size:12px;color:#5b686e}
+.survey-results summary{cursor:pointer;width:fit-content}
+.survey-results summary:focus-visible{outline:2px solid #64766d;outline-offset:3px}
+.survey-results details p,.survey-results details ul{font-size:12px;line-height:1.6}
+.survey-question .long-question{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden}
