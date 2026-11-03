@@ -22,6 +22,7 @@
           <summary>Question details</summary>
           {% if question['question']|length > 300 %}<p>{{ question['question'] }}</p>{% endif %}
           <p>Question ID: {{ question['code'] }}</p>
+          {% if question.get('topic_match') %}<p>Included through reviewed topic: {{ question['topic_match'] }}. This topic label is search metadata; the wording above is the survey question.</p>{% endif %}
           {% if years %}<p>Observed years: {{ years|join(', ') }}.</p>{% endif %}
           {% if question.get('question_note') %}<p>{{ question['question_note'] }}</p>{% endif %}
           {% if question.get('weight') %}<p>Weight: {{ question['weight'] }}.</p>{% endif %}

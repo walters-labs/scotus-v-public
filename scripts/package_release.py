@@ -24,7 +24,7 @@ def main():
     # Keep acquisition, mapping, and research code on the build workstation.
     paths += [Path('scvpublic')/name for name in
               ('__init__.py', 'web.py', 'store.py', 'chart.py', 'build.py',
-               'hybrid.py', 'encoding.py', 'survey_search.py')]
+               'hybrid.py', 'encoding.py', 'survey_search.py', 'survey_topics.py')]
     paths += [p for folder in ('scvpublic/templates', 'scvpublic/static')
               for p in Path(folder).rglob('*') if p.is_file()]
     paths += [Path('deploy')/name for name in
@@ -46,6 +46,8 @@ def main():
         extra.extend((args.hybrid/name, Path('artifacts/hybrid')/name) for name in SURVEY_FILES)
     if args.hybrid and json.loads((args.hybrid/'manifest.json').read_text()).get('survey_phrase_expansion'):
         extra.extend((args.hybrid/name, Path('artifacts/hybrid')/name) for name in ('survey-phrases.json', 'survey-phrase-vectors.npy'))
+    if args.hybrid and json.loads((args.hybrid/'manifest.json').read_text()).get('survey_topic_routing'):
+        extra.append((args.hybrid/'survey-topic-metadata.json', Path('artifacts/hybrid/survey-topic-metadata.json')))
     args.output.parent.mkdir(parents=True, exist_ok=True)
     if args.directory:
         args.directory.mkdir(parents=True, exist_ok=False)

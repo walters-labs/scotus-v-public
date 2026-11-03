@@ -60,10 +60,22 @@ class SurveySearch:
             if self.phrase_vectors.shape != (len(self.phrases), 384) or not np.isfinite(self.phrase_vectors).all():
                 raise ValueError('Invalid phrase vectors')
         self.lock = threading.Lock()
+        self.topic_router = None
+        if manifest.get('survey_topic_routing'):
+            if manifest['survey_topic_routing'] != 'reviewed-phrases-v1':
+                raise ValueError('Unsupported survey topic routing')
+            from .survey_topics import TopicSearch
+            name = 'survey-topic-metadata.json'
+            checksum = manifest['files'].get(name)
+            if not checksum:
+                raise ValueError('Missing topic metadata checksum')
+            self.topic_router = TopicSearch(self, folder/name, checksum)
 
     def search(self, terms):
         with self.lock:
-            return {source: list(hits) for source, hits in self._cached(tuple(terms)).items()}
+            base = self._cached(tuple(terms))
+            result = self.topic_router._route(tuple(terms), base) if self.topic_router else base
+            return {source: list(hits) for source, hits in result.items()}
 
     @lru_cache(maxsize=32)
     def expansions(self, terms):

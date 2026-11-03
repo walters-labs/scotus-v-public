@@ -1,0 +1,2132 @@
+{
+  "status": "Development experiment; partial judgments, not independent validation",
+  "gate": "Retrieve five judged CES climate matches, lose no baseline judged positives, and add no judged negatives. Unjudged changes still need review.",
+  "sources": {
+    "/Users/jackson/GitHub/scotus-v-public/scripts/experiment_survey_title_ranking.py": "445947b1c8a8c11bf2dd51bcf337e7c6bb4b65cc136dbd928e7d6304822ab83c",
+    "data/evaluation/survey-relevance-development.json": "f9bc6ee9b55cb64bd4e1ee77d8d216354fb5f2865fd40771419b6bf1bd3d26ff",
+    "data/evaluation/survey-synonyms.json": "317be1d67c7875ce97bc6d9c93d476a28bddd703e86917565798a6ac6d5daaed",
+    "data/evaluation/survey-climate-relevance.json": "92a661f3ea2040f87494ad84c808dd43c345953214243fb695130c3bc6232086",
+    "scvpublic/survey_search.py": "41826eb82be352f217727344c1dbf96e6fa651473a3ddc7314103cae36c69db9"
+  },
+  "artifact_sha256": "0319c92c8f04495f33ff84bce47320a64169bd547261f42109b217f9643e4623",
+  "bundle_manifest_sha256": "ba3eca2c39f144097d0341464399baa2ca53624df8af32e9bd90c6f83d116d6e",
+  "configs": [
+    {
+      "name": "baseline"
+    },
+    {
+      "name": "title-0.35-cutoff-0.9",
+      "title_weight": 0.35,
+      "cutoff": 0.9,
+      "floor_ratio": 0.6
+    },
+    {
+      "name": "title-0.35-cutoff-0.75",
+      "title_weight": 0.35,
+      "cutoff": 0.75,
+      "floor_ratio": 0.6
+    },
+    {
+      "name": "title-0.35-cutoff-0.55",
+      "title_weight": 0.35,
+      "cutoff": 0.55,
+      "floor_ratio": 0.6
+    },
+    {
+      "name": "title-0.7-cutoff-0.9",
+      "title_weight": 0.7,
+      "cutoff": 0.9,
+      "floor_ratio": 0.6
+    },
+    {
+      "name": "title-0.7-cutoff-0.75",
+      "title_weight": 0.7,
+      "cutoff": 0.75,
+      "floor_ratio": 0.6
+    },
+    {
+      "name": "title-0.7-cutoff-0.55",
+      "title_weight": 0.7,
+      "cutoff": 0.55,
+      "floor_ratio": 0.6
+    },
+    {
+      "name": "title-only-broad",
+      "title_weight": 1.0,
+      "cutoff": 0.5,
+      "floor_ratio": 0.45
+    }
+  ],
+  "metrics": {
+    "baseline": {
+      "missed": 4,
+      "false_matches": 3,
+      "cases": [
+        {
+          "query": "environmental regulation",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gay marriage",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gun control",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "birth control",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gay marriage",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "abortion",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "death penalty",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "cannabis legalization",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "capital punishment",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "contraception",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "school prayer",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "medicaid expansion",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "background checks",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "concealed carry",
+          "corpus": "pew",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "clean water enforcement",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "taxes",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "healthcare",
+          "corpus": "wvs",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "minimum wage",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "contraception",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "contraception",
+          "corpus": "wvs",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "healthcare",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "health care",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": [
+            "VCF0887"
+          ]
+        },
+        {
+          "query": "climate change",
+          "corpus": "ces",
+          "missed": [
+            "enviro_carbon",
+            "enviro_renewable",
+            "environment_renewables",
+            "paris_climate_agreement"
+          ],
+          "false_matches": []
+        },
+        {
+          "query": "climate change",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "carbon emissions",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "renewable energy",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "fuel efficiency",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "health care",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": [
+            "prri_collective_bargaining"
+          ]
+        },
+        {
+          "query": "healthcare",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": [
+            "prri_collective_bargaining"
+          ]
+        },
+        {
+          "query": "child care",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gun control",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "immigration",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "marijuana",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        }
+      ],
+      "regressions": [],
+      "climate_missing": [
+        "enviro_carbon",
+        "enviro_renewable",
+        "environment_renewables",
+        "paris_climate_agreement"
+      ],
+      "passes_gate": false
+    },
+    "title-0.35-cutoff-0.9": {
+      "missed": 5,
+      "false_matches": 2,
+      "cases": [
+        {
+          "query": "environmental regulation",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gay marriage",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gun control",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "birth control",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gay marriage",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "abortion",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "death penalty",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "cannabis legalization",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "capital punishment",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "contraception",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "school prayer",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "medicaid expansion",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "background checks",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "concealed carry",
+          "corpus": "pew",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "clean water enforcement",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "taxes",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "healthcare",
+          "corpus": "wvs",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "minimum wage",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "contraception",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": [
+            "abortion_20weeks"
+          ]
+        },
+        {
+          "query": "contraception",
+          "corpus": "wvs",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "healthcare",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "health care",
+          "corpus": "public",
+          "missed": [
+            "VCF0806"
+          ],
+          "false_matches": [
+            "VCF0887"
+          ]
+        },
+        {
+          "query": "climate change",
+          "corpus": "ces",
+          "missed": [
+            "enviro_carbon",
+            "enviro_renewable",
+            "environment_renewables",
+            "paris_climate_agreement"
+          ],
+          "false_matches": []
+        },
+        {
+          "query": "climate change",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "carbon emissions",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "renewable energy",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "fuel efficiency",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "health care",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "healthcare",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "child care",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gun control",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "immigration",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "marijuana",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        }
+      ],
+      "regressions": [
+        {
+          "query": "contraception",
+          "corpus": "ces",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "abortion_20weeks"
+          ]
+        },
+        {
+          "query": "health care",
+          "corpus": "public",
+          "lost_relevant": [
+            "VCF0806"
+          ],
+          "added_irrelevant": []
+        }
+      ],
+      "climate_missing": [
+        "enviro_carbon",
+        "enviro_renewable",
+        "environment_renewables",
+        "paris_climate_agreement"
+      ],
+      "passes_gate": false
+    },
+    "title-0.35-cutoff-0.75": {
+      "missed": 4,
+      "false_matches": 2,
+      "cases": [
+        {
+          "query": "environmental regulation",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gay marriage",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gun control",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "birth control",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gay marriage",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "abortion",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "death penalty",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "cannabis legalization",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "capital punishment",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "contraception",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "school prayer",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "medicaid expansion",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "background checks",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "concealed carry",
+          "corpus": "pew",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "clean water enforcement",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "taxes",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "healthcare",
+          "corpus": "wvs",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "minimum wage",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "contraception",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": [
+            "abortion_20weeks"
+          ]
+        },
+        {
+          "query": "contraception",
+          "corpus": "wvs",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "healthcare",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "health care",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": [
+            "VCF0887"
+          ]
+        },
+        {
+          "query": "climate change",
+          "corpus": "ces",
+          "missed": [
+            "enviro_carbon",
+            "enviro_renewable",
+            "environment_renewables",
+            "paris_climate_agreement"
+          ],
+          "false_matches": []
+        },
+        {
+          "query": "climate change",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "carbon emissions",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "renewable energy",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "fuel efficiency",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "health care",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "healthcare",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "child care",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gun control",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "immigration",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "marijuana",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        }
+      ],
+      "regressions": [
+        {
+          "query": "contraception",
+          "corpus": "ces",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "abortion_20weeks"
+          ]
+        }
+      ],
+      "climate_missing": [
+        "enviro_carbon",
+        "enviro_renewable",
+        "environment_renewables",
+        "paris_climate_agreement"
+      ],
+      "passes_gate": false
+    },
+    "title-0.35-cutoff-0.55": {
+      "missed": 3,
+      "false_matches": 4,
+      "cases": [
+        {
+          "query": "environmental regulation",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gay marriage",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gun control",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "birth control",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gay marriage",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "abortion",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "death penalty",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "cannabis legalization",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "capital punishment",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "contraception",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "school prayer",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "medicaid expansion",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": [
+            "healthcare_medicaid_work"
+          ]
+        },
+        {
+          "query": "background checks",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "concealed carry",
+          "corpus": "pew",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "clean water enforcement",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "taxes",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "healthcare",
+          "corpus": "wvs",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "minimum wage",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "contraception",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": [
+            "abortion_20weeks"
+          ]
+        },
+        {
+          "query": "contraception",
+          "corpus": "wvs",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "healthcare",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "health care",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": [
+            "VCF0887"
+          ]
+        },
+        {
+          "query": "climate change",
+          "corpus": "ces",
+          "missed": [
+            "enviro_carbon",
+            "enviro_renewable",
+            "environment_renewables"
+          ],
+          "false_matches": []
+        },
+        {
+          "query": "climate change",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "carbon emissions",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "renewable energy",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "fuel efficiency",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": [
+            "environment_fossil_production"
+          ]
+        },
+        {
+          "query": "health care",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "healthcare",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "child care",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gun control",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "immigration",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "marijuana",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        }
+      ],
+      "regressions": [
+        {
+          "query": "medicaid expansion",
+          "corpus": "ces",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "healthcare_medicaid_work"
+          ]
+        },
+        {
+          "query": "contraception",
+          "corpus": "ces",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "abortion_20weeks"
+          ]
+        },
+        {
+          "query": "fuel efficiency",
+          "corpus": "ces",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "environment_fossil_production"
+          ]
+        }
+      ],
+      "climate_missing": [
+        "enviro_carbon",
+        "enviro_renewable",
+        "environment_renewables"
+      ],
+      "passes_gate": false
+    },
+    "title-0.7-cutoff-0.9": {
+      "missed": 7,
+      "false_matches": 3,
+      "cases": [
+        {
+          "query": "environmental regulation",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gay marriage",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": [
+            "VCF0876"
+          ]
+        },
+        {
+          "query": "gun control",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "birth control",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gay marriage",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "abortion",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "death penalty",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "cannabis legalization",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "capital punishment",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "contraception",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "school prayer",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "medicaid expansion",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "background checks",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "concealed carry",
+          "corpus": "pew",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "clean water enforcement",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "taxes",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "healthcare",
+          "corpus": "wvs",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "minimum wage",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "contraception",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": [
+            "abortion_20weeks"
+          ]
+        },
+        {
+          "query": "contraception",
+          "corpus": "wvs",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "healthcare",
+          "corpus": "public",
+          "missed": [
+            "VCF0806"
+          ],
+          "false_matches": []
+        },
+        {
+          "query": "health care",
+          "corpus": "public",
+          "missed": [
+            "VCF0806"
+          ],
+          "false_matches": []
+        },
+        {
+          "query": "climate change",
+          "corpus": "ces",
+          "missed": [
+            "enviro_carbon",
+            "enviro_renewable",
+            "environment_renewables",
+            "paris_climate_agreement"
+          ],
+          "false_matches": []
+        },
+        {
+          "query": "climate change",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": [
+            "VCF0229"
+          ]
+        },
+        {
+          "query": "carbon emissions",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "renewable energy",
+          "corpus": "ces",
+          "missed": [
+            "enviro_renewable"
+          ],
+          "false_matches": []
+        },
+        {
+          "query": "fuel efficiency",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "health care",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "healthcare",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "child care",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gun control",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "immigration",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "marijuana",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        }
+      ],
+      "regressions": [
+        {
+          "query": "gay marriage",
+          "corpus": "public",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "VCF0876"
+          ]
+        },
+        {
+          "query": "contraception",
+          "corpus": "ces",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "abortion_20weeks"
+          ]
+        },
+        {
+          "query": "healthcare",
+          "corpus": "public",
+          "lost_relevant": [
+            "VCF0806"
+          ],
+          "added_irrelevant": []
+        },
+        {
+          "query": "health care",
+          "corpus": "public",
+          "lost_relevant": [
+            "VCF0806"
+          ],
+          "added_irrelevant": []
+        },
+        {
+          "query": "climate change",
+          "corpus": "public",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "VCF0229"
+          ]
+        },
+        {
+          "query": "renewable energy",
+          "corpus": "ces",
+          "lost_relevant": [
+            "enviro_renewable"
+          ],
+          "added_irrelevant": []
+        }
+      ],
+      "climate_missing": [
+        "enviro_carbon",
+        "enviro_renewable",
+        "environment_renewables",
+        "paris_climate_agreement"
+      ],
+      "passes_gate": false
+    },
+    "title-0.7-cutoff-0.75": {
+      "missed": 4,
+      "false_matches": 5,
+      "cases": [
+        {
+          "query": "environmental regulation",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gay marriage",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": [
+            "VCF0876"
+          ]
+        },
+        {
+          "query": "gun control",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "birth control",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gay marriage",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "abortion",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "death penalty",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "cannabis legalization",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "capital punishment",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "contraception",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": [
+            "abhlth",
+            "absingle"
+          ]
+        },
+        {
+          "query": "school prayer",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "medicaid expansion",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "background checks",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "concealed carry",
+          "corpus": "pew",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "clean water enforcement",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "taxes",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "healthcare",
+          "corpus": "wvs",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "minimum wage",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "contraception",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": [
+            "abortion_20weeks"
+          ]
+        },
+        {
+          "query": "contraception",
+          "corpus": "wvs",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "healthcare",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "health care",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "climate change",
+          "corpus": "ces",
+          "missed": [
+            "enviro_carbon",
+            "enviro_renewable",
+            "environment_renewables",
+            "paris_climate_agreement"
+          ],
+          "false_matches": []
+        },
+        {
+          "query": "climate change",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": [
+            "VCF0229"
+          ]
+        },
+        {
+          "query": "carbon emissions",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "renewable energy",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "fuel efficiency",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "health care",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "healthcare",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "child care",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gun control",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "immigration",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "marijuana",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        }
+      ],
+      "regressions": [
+        {
+          "query": "gay marriage",
+          "corpus": "public",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "VCF0876"
+          ]
+        },
+        {
+          "query": "contraception",
+          "corpus": "gss",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "abhlth",
+            "absingle"
+          ]
+        },
+        {
+          "query": "contraception",
+          "corpus": "ces",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "abortion_20weeks"
+          ]
+        },
+        {
+          "query": "climate change",
+          "corpus": "public",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "VCF0229"
+          ]
+        }
+      ],
+      "climate_missing": [
+        "enviro_carbon",
+        "enviro_renewable",
+        "environment_renewables",
+        "paris_climate_agreement"
+      ],
+      "passes_gate": false
+    },
+    "title-0.7-cutoff-0.55": {
+      "missed": 3,
+      "false_matches": 7,
+      "cases": [
+        {
+          "query": "environmental regulation",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gay marriage",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": [
+            "VCF0876"
+          ]
+        },
+        {
+          "query": "gun control",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "birth control",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gay marriage",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "abortion",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "death penalty",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "cannabis legalization",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "capital punishment",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "contraception",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": [
+            "abhlth",
+            "absingle"
+          ]
+        },
+        {
+          "query": "school prayer",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "medicaid expansion",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": [
+            "healthcare_medicaid_work"
+          ]
+        },
+        {
+          "query": "background checks",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "concealed carry",
+          "corpus": "pew",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "clean water enforcement",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "taxes",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "healthcare",
+          "corpus": "wvs",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "minimum wage",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "contraception",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": [
+            "abortion_20weeks"
+          ]
+        },
+        {
+          "query": "contraception",
+          "corpus": "wvs",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "healthcare",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "health care",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "climate change",
+          "corpus": "ces",
+          "missed": [
+            "enviro_carbon",
+            "enviro_renewable",
+            "environment_renewables"
+          ],
+          "false_matches": []
+        },
+        {
+          "query": "climate change",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": [
+            "VCF0229"
+          ]
+        },
+        {
+          "query": "carbon emissions",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "renewable energy",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "fuel efficiency",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": [
+            "environment_fossil_production"
+          ]
+        },
+        {
+          "query": "health care",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "healthcare",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "child care",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gun control",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "immigration",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "marijuana",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        }
+      ],
+      "regressions": [
+        {
+          "query": "gay marriage",
+          "corpus": "public",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "VCF0876"
+          ]
+        },
+        {
+          "query": "contraception",
+          "corpus": "gss",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "abhlth",
+            "absingle"
+          ]
+        },
+        {
+          "query": "medicaid expansion",
+          "corpus": "ces",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "healthcare_medicaid_work"
+          ]
+        },
+        {
+          "query": "contraception",
+          "corpus": "ces",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "abortion_20weeks"
+          ]
+        },
+        {
+          "query": "climate change",
+          "corpus": "public",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "VCF0229"
+          ]
+        },
+        {
+          "query": "fuel efficiency",
+          "corpus": "ces",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "environment_fossil_production"
+          ]
+        }
+      ],
+      "climate_missing": [
+        "enviro_carbon",
+        "enviro_renewable",
+        "environment_renewables"
+      ],
+      "passes_gate": false
+    },
+    "title-only-broad": {
+      "missed": 2,
+      "false_matches": 13,
+      "cases": [
+        {
+          "query": "environmental regulation",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": [
+            "guns_scale"
+          ]
+        },
+        {
+          "query": "gay marriage",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": [
+            "VCF0876",
+            "VCF0877"
+          ]
+        },
+        {
+          "query": "gun control",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "birth control",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "gay marriage",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "abortion",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "death penalty",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "cannabis legalization",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "capital punishment",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "contraception",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": [
+            "abany",
+            "abhlth",
+            "absingle"
+          ]
+        },
+        {
+          "query": "school prayer",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "medicaid expansion",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": [
+            "healthcare_medicaid_work"
+          ]
+        },
+        {
+          "query": "background checks",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "concealed carry",
+          "corpus": "pew",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "clean water enforcement",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "taxes",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "healthcare",
+          "corpus": "wvs",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "minimum wage",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "contraception",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": [
+            "abortion_20weeks"
+          ]
+        },
+        {
+          "query": "contraception",
+          "corpus": "wvs",
+          "missed": [],
+          "false_matches": [
+            "F120"
+          ]
+        },
+        {
+          "query": "healthcare",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "health care",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": [
+            "VCF0887"
+          ]
+        },
+        {
+          "query": "climate change",
+          "corpus": "ces",
+          "missed": [
+            "enviro_renewable",
+            "environment_renewables"
+          ],
+          "false_matches": []
+        },
+        {
+          "query": "climate change",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": [
+            "VCF0229"
+          ]
+        },
+        {
+          "query": "carbon emissions",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "renewable energy",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "fuel efficiency",
+          "corpus": "ces",
+          "missed": [],
+          "false_matches": [
+            "environment_fossil_production"
+          ]
+        },
+        {
+          "query": "health care",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "healthcare",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "child care",
+          "corpus": "public",
+          "missed": [],
+          "false_matches": [
+            "VCF0805"
+          ]
+        },
+        {
+          "query": "gun control",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "immigration",
+          "corpus": "prri",
+          "missed": [],
+          "false_matches": []
+        },
+        {
+          "query": "marijuana",
+          "corpus": "gss",
+          "missed": [],
+          "false_matches": []
+        }
+      ],
+      "regressions": [
+        {
+          "query": "environmental regulation",
+          "corpus": "ces",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "guns_scale"
+          ]
+        },
+        {
+          "query": "gay marriage",
+          "corpus": "public",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "VCF0876",
+            "VCF0877"
+          ]
+        },
+        {
+          "query": "contraception",
+          "corpus": "gss",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "abany",
+            "abhlth",
+            "absingle"
+          ]
+        },
+        {
+          "query": "medicaid expansion",
+          "corpus": "ces",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "healthcare_medicaid_work"
+          ]
+        },
+        {
+          "query": "contraception",
+          "corpus": "ces",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "abortion_20weeks"
+          ]
+        },
+        {
+          "query": "contraception",
+          "corpus": "wvs",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "F120"
+          ]
+        },
+        {
+          "query": "climate change",
+          "corpus": "public",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "VCF0229"
+          ]
+        },
+        {
+          "query": "fuel efficiency",
+          "corpus": "ces",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "environment_fossil_production"
+          ]
+        },
+        {
+          "query": "child care",
+          "corpus": "public",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "VCF0805"
+          ]
+        }
+      ],
+      "climate_missing": [
+        "enviro_renewable",
+        "environment_renewables"
+      ],
+      "passes_gate": false
+    }
+  },
+  "decision": "Reject all candidates; serving code and deployed ranking remain unchanged."
+}

@@ -1,0 +1,124 @@
+{
+  "decision": "Do not promote any candidate; strict variants lose a judged relevant match, and broad retention adds judged irrelevant matches.",
+  "questions_described": 36,
+  "queries": 34,
+  "judged_query_source_pairs": 45,
+  "variants": {
+    "survey-description-evaluation": {
+      "summary": {
+        "baseline": {
+          "missed": 5,
+          "false_matches": 4
+        },
+        "candidate": {
+          "missed": 6,
+          "false_matches": 0
+        }
+      },
+      "regressions": [
+        {
+          "query": "government medical bills",
+          "source": "public",
+          "lost_relevant": [
+            "VCF0806"
+          ],
+          "added_irrelevant": []
+        }
+      ],
+      "sources": {
+        "data/evaluation/survey-relevance-development.json": "f9bc6ee9b55cb64bd4e1ee77d8d216354fb5f2865fd40771419b6bf1bd3d26ff",
+        "data/evaluation/survey-climate-relevance.json": "92a661f3ea2040f87494ad84c808dd43c345953214243fb695130c3bc6232086",
+        "data/evaluation/survey-description-checks.json": "45d1997c55b8b26f3646ed120fde3985793318c66ee1da275a30c775802ff0ad",
+        "data/evaluation/survey-synonyms.json": "317be1d67c7875ce97bc6d9c93d476a28bddd703e86917565798a6ac6d5daaed",
+        "artifacts/ces-climate-batch.sqlite": "0319c92c8f04495f33ff84bce47320a64169bd547261f42109b217f9643e4623",
+        "artifacts/semantic-ces-climate-batch/manifest.json": "ba3eca2c39f144097d0341464399baa2ca53624df8af32e9bd90c6f83d116d6e",
+        "artifacts/semantic-survey-description-pilot/manifest.json": "c48c6d3cea011a95b2f561309e7b5be7aed2d9d1d46a0cc2e6a716f7884ee02d",
+        "artifacts/semantic-survey-description-pilot/survey-descriptions.json": "08b22c19de647a609fa0aebdfcfea7e116e0cf00b15221294a20a3e9b540d0c8",
+        "/Users/jackson/GitHub/scotus-v-public/scripts/evaluate_survey_description_pilot.py": "c6b1ef4eaadb0ad4af9b35295d1b7b77c9c93c2cf29c748fffa2dc40880f5f8d",
+        "scvpublic/survey_search.py": "41826eb82be352f217727344c1dbf96e6fa651473a3ddc7314103cae36c69db9"
+      },
+      "multi_field": false,
+      "retention": 0.9
+    },
+    "survey-description-fields-evaluation": {
+      "summary": {
+        "baseline": {
+          "missed": 5,
+          "false_matches": 4
+        },
+        "candidate": {
+          "missed": 6,
+          "false_matches": 0
+        }
+      },
+      "regressions": [
+        {
+          "query": "government medical bills",
+          "source": "public",
+          "lost_relevant": [
+            "VCF0806"
+          ],
+          "added_irrelevant": []
+        }
+      ],
+      "sources": {
+        "data/evaluation/survey-relevance-development.json": "f9bc6ee9b55cb64bd4e1ee77d8d216354fb5f2865fd40771419b6bf1bd3d26ff",
+        "data/evaluation/survey-climate-relevance.json": "92a661f3ea2040f87494ad84c808dd43c345953214243fb695130c3bc6232086",
+        "data/evaluation/survey-description-checks.json": "45d1997c55b8b26f3646ed120fde3985793318c66ee1da275a30c775802ff0ad",
+        "data/evaluation/survey-synonyms.json": "317be1d67c7875ce97bc6d9c93d476a28bddd703e86917565798a6ac6d5daaed",
+        "artifacts/ces-climate-batch.sqlite": "0319c92c8f04495f33ff84bce47320a64169bd547261f42109b217f9643e4623",
+        "artifacts/semantic-ces-climate-batch/manifest.json": "ba3eca2c39f144097d0341464399baa2ca53624df8af32e9bd90c6f83d116d6e",
+        "artifacts/semantic-survey-description-fields/manifest.json": "fefb2a9dbbe6e8c324f530b2ef392329439b1a3f4967bde6b048db6f94a91a86",
+        "artifacts/semantic-survey-description-fields/survey-descriptions.json": "08b22c19de647a609fa0aebdfcfea7e116e0cf00b15221294a20a3e9b540d0c8",
+        "/Users/jackson/GitHub/scotus-v-public/scripts/evaluate_survey_description_pilot.py": "49073795d2c9dba5134551814983d3b9db178d6993f3896673596d0f59d777f7",
+        "scvpublic/survey_search.py": "41826eb82be352f217727344c1dbf96e6fa651473a3ddc7314103cae36c69db9"
+      },
+      "multi_field": true,
+      "retention": 0.9
+    },
+    "survey-description-broad-evaluation": {
+      "summary": {
+        "baseline": {
+          "missed": 5,
+          "false_matches": 4
+        },
+        "candidate": {
+          "missed": 0,
+          "false_matches": 3
+        }
+      },
+      "regressions": [
+        {
+          "query": "medicaid expansion",
+          "source": "ces",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "healthcare_medicaid_work"
+          ]
+        },
+        {
+          "query": "fuel efficiency",
+          "source": "ces",
+          "lost_relevant": [],
+          "added_irrelevant": [
+            "environment_fossil_production"
+          ]
+        }
+      ],
+      "sources": {
+        "data/evaluation/survey-relevance-development.json": "f9bc6ee9b55cb64bd4e1ee77d8d216354fb5f2865fd40771419b6bf1bd3d26ff",
+        "data/evaluation/survey-climate-relevance.json": "92a661f3ea2040f87494ad84c808dd43c345953214243fb695130c3bc6232086",
+        "data/evaluation/survey-description-checks.json": "45d1997c55b8b26f3646ed120fde3985793318c66ee1da275a30c775802ff0ad",
+        "data/evaluation/survey-synonyms.json": "317be1d67c7875ce97bc6d9c93d476a28bddd703e86917565798a6ac6d5daaed",
+        "artifacts/ces-climate-batch.sqlite": "0319c92c8f04495f33ff84bce47320a64169bd547261f42109b217f9643e4623",
+        "artifacts/semantic-ces-climate-batch/manifest.json": "ba3eca2c39f144097d0341464399baa2ca53624df8af32e9bd90c6f83d116d6e",
+        "artifacts/semantic-survey-description-fields/manifest.json": "fefb2a9dbbe6e8c324f530b2ef392329439b1a3f4967bde6b048db6f94a91a86",
+        "artifacts/semantic-survey-description-fields/survey-descriptions.json": "08b22c19de647a609fa0aebdfcfea7e116e0cf00b15221294a20a3e9b540d0c8",
+        "/Users/jackson/GitHub/scotus-v-public/scripts/evaluate_survey_description_pilot.py": "85a87425cb6cc3ec8fca21b6cf01cde00aa500bd6c80cd885c50300b7ea93d46",
+        "scvpublic/survey_search.py": "41826eb82be352f217727344c1dbf96e6fa651473a3ddc7314103cae36c69db9"
+      },
+      "multi_field": true,
+      "retention": 0.6
+    }
+  }
+}

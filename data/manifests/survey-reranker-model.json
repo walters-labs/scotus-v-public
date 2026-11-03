@@ -1,0 +1,12 @@
+{
+  "model": "cross-encoder/ms-marco-MiniLM-L2-v2",
+  "revision": "1b5cd67b15209f24824c50370e0397743aa9b787",
+  "onnx_source": "onnx/model_quint8_avx2.onnx",
+  "license": "Apache-2.0",
+  "files": {
+    "model.onnx": "2c7f4c682cf9320acb3748c619b2e21d24ef460e2f96b98b0ab6b190c5eb2ca9",
+    "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+    "config.json": "7868e36c3024c21f7a3ac64e058b36898a331035784cce7ec1496b434aa44c4f",
+    "README.md": "3dc8fbdadf2bdc0030dba643e163c12356965825f8c1053111eab404bdf6fade"
+  }
+}

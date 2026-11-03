@@ -1,0 +1,17 @@
+{
+  "status": "Development judgments from reviewed question wording; not independent validation",
+  "criterion": "Broad climate queries should retrieve explicit mitigation policies; narrower queries must retain their specific policy. Related general environmental attitudes are not automatically climate policy.",
+  "cases": [
+    {"query":"climate change","corpus":"ces","relevant":["climate_action_scale","enviro_carbon","enviro_renewable","environment_renewables","paris_climate_agreement"],"irrelevant":["guns_scale","healthcare_aca"]},
+    {"query":"climate change","corpus":"public","relevant":[],"irrelevant":["VCF0229","VCF0424","VCF0413","VCF0426"]},
+    {"query":"carbon emissions","corpus":"ces","relevant":["enviro_carbon"],"irrelevant":["guns_scale","healthcare_aca"]},
+    {"query":"renewable energy","corpus":"ces","relevant":["enviro_renewable","environment_renewables"],"irrelevant":["guns_scale","healthcare_aca"]},
+    {"query":"fuel efficiency","corpus":"ces","relevant":["fuel_efficiency_35","fuel_efficiency_lower","fuel_efficiency_54"],"irrelevant":["environment_fossil_production","guns_scale"]},
+    {"query":"health care","corpus":"prri","relevant":[],"irrelevant":["prri_collective_bargaining"]},
+    {"query":"healthcare","corpus":"prri","relevant":[],"irrelevant":["prri_collective_bargaining"]},
+    {"query":"child care","corpus":"public","relevant":["VCF0887"],"irrelevant":["VCF0806","VCF0805"]},
+    {"query":"gun control","corpus":"prri","relevant":["prri_gun_control"],"irrelevant":["prri_abortion"]},
+    {"query":"immigration","corpus":"prri","relevant":["prri_immigration"],"irrelevant":["prri_abortion"]},
+    {"query":"marijuana","corpus":"gss","relevant":["grass"],"irrelevant":["pillok","gunlaw"]}
+  ]
+}

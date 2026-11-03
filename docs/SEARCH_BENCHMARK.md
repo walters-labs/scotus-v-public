@@ -157,3 +157,212 @@ repair and a mixed chart-level result, not an automatic deployment approval.
 The subsequent [fixed-cutoff trial](CUTOFF_EVALUATION.md) reviews all 136
 death-penalty candidates and compares stricter cutoffs across both splits.
 It leaves the global cutoff unchanged.
+
+## Survey climate retrieval experiment (2026-11-03)
+
+Tested the deployed CES climate artifact against seven title-aware ranking
+candidates. Six blend title embeddings with question embeddings (35% or 70%
+title weight; 90%, 75% or 55% per-source retention); one uses titles alone and
+broader retention. All use the existing encoder and lexical scoring. No candidate
+was installed in serving code.
+
+The development gate requires five reviewed CES climate matches, no loss of
+baseline judged positives and no new judged negatives. Existing relevance and
+synonym judgments are merged with `data/evaluation/survey-climate-relevance.json`;
+duplicate query/source judgments are counted once. Labels are partial and
+development-selected, not independent validation or a precision estimate.
+
+All seven candidates fail. Baseline misses four judged matches and retrieves
+three judged negatives. The broad title-only candidate reduces misses to two,
+but increases judged negatives to thirteen, including abortion questions for
+contraception and generic environmentalist affect for climate change. The 35%
+title/75% retention candidate removes two collective-bargaining mismatches but
+introduces an abortion restriction for contraception and still misses all four
+target climate policies. Lower aggregate error alone is not the acceptance rule.
+
+The baseline itself still returns childcare for `health care`. The experiment
+does not resolve that known defect. Existing climate-action and Nationscape
+matches remain available, while carbon and renewable policies still require more
+specific queries. Serving code, artifacts and deployment are unchanged.
+
+Reproduce with:
+
+```sh
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/experiment_survey_title_ranking.py --artifact artifacts/ces-climate-batch.sqlite --bundle artifacts/semantic-ces-climate-batch --output artifacts/survey-title-ranking-experiment.json
+```
+
+The full local report includes every added/removed match for manual review.
+`data/evaluation/survey-title-ranking-summary.json` retains the input hashes,
+configurations, per-case errors and rejection decision.
+
+## Structured survey descriptions pilot (2026-11-03)
+
+`data/evaluation/survey-description-pilot.json` contains 36 assistant-reviewed
+descriptions covering climate/energy, healthcare, childcare, contraception and
+public employee bargaining. Each records a topic, policy, scope, equivalent
+terminology, original title/question and a source-text checksum. These are
+interpretive search metadata, not revised survey wording or new observations.
+This is a bounded pilot rather than a review of all 337 question records.
+
+The builder copies the existing bundle and replaces only those 36 question
+vectors. The other 301 vectors, court vectors, lexical index, phrase expansion,
+source wording and annual estimates are unchanged. It refuses stale wording or
+duplicate descriptions. The experimental multi-field variant takes the maximum
+similarity across original, descriptive and topic-only vectors; it is implemented
+only inside the evaluator, not the serving engine.
+
+Across 34 query strings and 45 partially judged query/source pairs:
+
+| Variant | Missed judged matches | Judged false matches |
+|---|---:|---:|
+| Deployed baseline | 5 | 4 |
+| Description vectors, existing retention | 6 | 0 |
+| Maximum over three fields, existing retention | 6 | 0 |
+| Maximum over three fields, 60% retention | 0 | 3 |
+
+The strict variants remove healthcare/childcare and bargaining false matches,
+but lose ANES government health insurance for `government medical bills` and
+still miss the target climate policies. The broad variant recovers all five
+missing judged matches but introduces Medicaid work requirements for `Medicaid
+expansion` and fossil production for `fuel efficiency`; childcare also returns
+for medical bills. All variants are rejected for deployment. Lower total error
+is insufficient when a previously correct search regresses.
+
+The fresh phrasings in `survey-description-checks.json` were written before
+inspecting pilot results, but were written by the same assistant as the
+descriptions. They are not independent validation. Unjudged additions and
+removals are retained in full local reports for review, not counted as correct.
+`data/evaluation/survey-description-summary.json` preserves results and hashes.
+
+```sh
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_description_bundle.py --artifact artifacts/ces-climate-batch.sqlite --bundle artifacts/semantic-ces-climate-batch --descriptions data/evaluation/survey-description-pilot.json --output artifacts/semantic-survey-description-fields
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/evaluate_survey_description_pilot.py --artifact artifacts/ces-climate-batch.sqlite --baseline-bundle artifacts/semantic-ces-climate-batch --candidate-bundle artifacts/semantic-survey-description-fields --output artifacts/survey-description-evaluation.json
+# Add --multi-field to test maximum field similarity; additionally use
+# --retention .6 to reproduce the broader experiment, with a separate output.
+```
+
+Serving code and deployment are unchanged. The description metadata is retained
+as reusable reviewed material; no runtime model or dependency was added.
+
+## Small survey cross-encoder trial (2026-11-03)
+
+Tested [cross-encoder/ms-marco-MiniLM-L2-v2](https://huggingface.co/cross-encoder/ms-marco-MiniLM-L2-v2),
+revision `1b5cd67b15209f24824c50370e0397743aa9b787`, using the publisher's
+`onnx/model_quint8_avx2.onnx` (about 16 MB). The pinned files and SHA256 values
+are in `data/manifests/survey-reranker-model.json`. Existing ONNX/tokenizer
+dependencies suffice; no serving dependency or application code was changed.
+The two Berlin examples in the model card produced logits +8.775 and -5.201,
+confirming expected pair-tokenization and score ordering after quantization.
+
+History review of commits `c886a2c` and `3e79be2` confirmed an earlier abandoned
+cross-encoder, but did not establish a failure reason or benchmark. This trial
+does not attribute that earlier decision to memory or relevance without evidence.
+
+Candidates are the union of the top 60 question-embedding hits, top 40 positive
+weighted lexical hits, and current deployed selections. No judged positives are
+injected. Across 35 queries (34 reviewed phrasings plus nonsense), actual pools
+contained 60–74 questions and included every judged relevant item. The model
+sees query/question pairs using existing cleaned search text where available,
+otherwise title plus original question. It uses four pairs per batch and a
+512-token limit. Structured pilot descriptions are not used in this trial.
+
+Two raw-logit cutoffs, 0 and 3, were fixed before evaluation; neither is a
+calibrated relevance probability. Up to ten accepted questions per source remain.
+
+| Selection | Missed judged matches | Judged false matches |
+|---|---:|---:|
+| Deployed baseline | 5 | 4 |
+| Reranker logit >= 0 | 26 | 0 |
+| Reranker logit >= 3 | 36 | 0 |
+
+The model clearly separates Medicaid expansion (+8.41) from work requirements
+(-6.88), and fuel-efficiency proposals (+5.14 to +6.20) from fossil production
+(-9.78). However, for `climate change`, EPA carbon regulation scores -11.65 and
+renewable requirements approximately -11.6. Contraception and several other
+synonyms also regress. These are reranking losses, not candidate-retrieval misses.
+
+A subsequent **post-hoc diagnostic**, not held-out calibration, checked all
+2,141 distinct score thresholds: none retained all baseline judged positives
+without adding a judged negative. At -12 all judged positives survive, but
+42 judged negatives are selected. This model is rejected for deployment; the
+result does not rule out other rerankers or task-specific training.
+
+An isolated VPS test loaded the existing Flask app and both models, then
+performed each normal request plus reranking of saved candidates. With
+MemoryMax=320M, MemorySwapMax=0, CPUQuota=100% and a 180-second runtime cap,
+all 35 requests completed: peak process RSS **287.4 MiB**, p95 **1.88 seconds**,
+maximum **2.15 seconds**. This is a sequential single-process test, not concurrent
+Gunicorn capacity validation. The live service remained healthy on
+`20261103-ces-climate`. Local macOS peak RSS for the equivalent test was 447.5 MiB;
+platform measurements should not be interchanged.
+
+The compact audit is `data/evaluation/survey-reranker-summary.json`; full rankings
+are in the local `artifacts/survey-reranker-evaluation.json`. Judgment sets remain
+partial and assistant-authored development examples, not general precision/recall.
+
+```sh
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/experiment_survey_reranker.py --artifact artifacts/ces-climate-batch.sqlite --bundle artifacts/semantic-ces-climate-batch --model artifacts/survey-reranker-model --output artifacts/survey-reranker-evaluation.json --requests artifacts/survey-reranker-requests.json
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/experiment_survey_reranker.py --profile-only --artifact artifacts/ces-climate-batch.sqlite --bundle artifacts/semantic-ces-climate-batch --model artifacts/survey-reranker-model --requests artifacts/survey-reranker-requests.json --output artifacts/survey-reranker-local-profile.json
+```
+
+Acquire each model file from the pinned Hugging Face revision in the manifest;
+save the specified ONNX export as `model.onnx` and copy the tracked manifest into
+the model folder as `manifest.json`. All file checksums are verified at load time.
+No model download occurs during serving.
+
+## Reviewed topic routing candidate (2026-11-03)
+
+This candidate uses the 36 reviewed topic descriptions as explicit metadata,
+without new embeddings, a reranker, query-specific code, or looser semantic
+thresholds. A single input phrase must match a contiguous whole phrase in a
+reviewed topic label, allowing spacing/hyphen variants. At least two distinct
+source-specific families must support the route. Single-word fragments do not
+activate it unless they name a complete label component. Additional qualifiers
+that are absent from the labels keep the query on normal retrieval. Multiple
+input boxes also retain the baseline behavior.
+
+On a supported route, matching reviewed questions become eligible outside the
+usual similarity cutoffs, ranked by the existing score and capped at ten per
+source. Baseline matches to a complete parent topic are retained. Reviewed
+questions with neither relationship are excluded; **unreviewed means unknown**
+and retains baseline selection. Thus `climate change` reaches carbon regulation,
+renewable electricity and the Paris agreement, while `Medicaid expansion`
+retains its original specific-policy search. This is explicit label recognition,
+not a general classifier of arbitrary query intent. Coverage is partial and
+depends on the reviewed metadata; unsupported synonyms can still be missed.
+
+The additional checks caught two edge cases before preview: single-word `health`
+could otherwise drop general health spending, and `climate change mitigation`
+could drop an existing broader climate-attitudes match. The fragment and parent
+rules preserve these cases. Topic-based inclusions are identified in question
+details, with an explanation in the collapsed search methodology.
+
+Using the actual opt-in serving bundle across the same 34 queries and 45 judged
+query/source pairs, misses fall **5 → 1** and known false matches **4 → 1**, with
+no lost baseline judged positives or new judged negatives. All changed question
+sets were reviewed. Sixteen additional/equivalent query checks preserve all
+result fields except the optional explanation, and two multiple-input searches
+remain identical. These are development checks, not a guarantee for every query.
+Remaining benchmark gaps: `solar power` still misses one CES renewable question;
+`government medical bills` still includes ANES childcare. Both retain baseline
+behavior. Climate coverage increases from six to thirteen observed years, with
+question-composition differences explicitly retained in the chart.
+
+157 unit tests, 160 local serving requests and 42 HTTP regression requests pass.
+The local serving test peaks at approximately 228 MiB RSS with p95 0.017 seconds;
+this excludes Gunicorn master/OS overhead and is not a VPS load measurement.
+The original artifact and every original bundle asset remain byte-identical.
+Only an 8,372-byte metadata file and manifest enable the new path. Bundles without
+the flag retain the existing search. Startup verifies the metadata checksum,
+question identities and source-wording checksums. The release packager includes
+the routing module and optional metadata; no new dependencies are needed.
+
+```sh
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_topic_bundle.py --artifact artifacts/ces-climate-batch.sqlite --bundle artifacts/semantic-ces-climate-batch --descriptions data/evaluation/survey-description-pilot.json --output artifacts/semantic-survey-topic-routing
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/evaluate_survey_description_pilot.py --artifact artifacts/ces-climate-batch.sqlite --baseline-bundle artifacts/semantic-ces-climate-batch --candidate-bundle artifacts/semantic-survey-topic-routing --output artifacts/survey-topic-routing-final-evaluation.json
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/check_survey_topic_routing.py --artifact artifacts/ces-climate-batch.sqlite --baseline artifacts/semantic-ces-climate-batch --candidate artifacts/semantic-survey-topic-routing --output artifacts/survey-topic-routing-parity.json
+```
+
+The compact result is `data/evaluation/survey-topic-routing-summary.json`.
+The candidate runs locally on port 8024. No production activation is part of
+this experiment.

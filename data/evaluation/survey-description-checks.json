@@ -1,0 +1,17 @@
+{
+ "status":"Fresh query phrasings selected before inspecting this pilot's results; assistant-written development judgments, not blind validation",
+ "cases":[
+  {"query":"greenhouse gas regulation","corpus":"ces","relevant":["enviro_carbon"],"irrelevant":["guns_scale","healthcare_aca"]},
+  {"query":"solar power","corpus":"ces","relevant":["enviro_renewable","environment_renewables"],"irrelevant":["healthcare_aca","fuel_efficiency_35"]},
+  {"query":"government medical bills","corpus":"public","relevant":["VCF0805","VCF0806"],"irrelevant":["VCF0887"]},
+  {"query":"daycare funding","corpus":"public","relevant":["VCF0887"],"irrelevant":["VCF0805","VCF0806"]},
+  {"query":"public employee unions","corpus":"prri","relevant":["prri_collective_bargaining"],"irrelevant":["prri_abortion"]},
+  {"query":"contraceptive access","corpus":"gss","relevant":["pillok"],"irrelevant":["gunlaw","abhlth","abany"]},
+  {"query":"health insurance","corpus":"public","relevant":["VCF0806"],"irrelevant":["VCF0887"]},
+  {"query":"vehicle mileage standards","corpus":"ces","relevant":["fuel_efficiency_35","fuel_efficiency_lower","fuel_efficiency_54"],"irrelevant":["environment_fossil_production"]},
+  {"query":"prayer in schools","corpus":"gss","relevant":["prayer"],"irrelevant":["pillok","gunlaw"]},
+  {"query":"minimum wage","corpus":"prri","relevant":["prri_minimum_wage_10","prri_minimum_wage_15"],"irrelevant":["prri_collective_bargaining"]},
+  {"query":"health care","corpus":"gss","relevant":["helpsick","natheal"],"irrelevant":["pillok","abhlth"]},
+  {"query":"climate change","corpus":"nationscape","relevant":["nationscape_cap_carbon"],"irrelevant":["nationscape_gov_insurance"]}
+ ]
+}
