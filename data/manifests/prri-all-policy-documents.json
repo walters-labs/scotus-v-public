@@ -1,0 +1,92 @@
+[
+  {
+    "year": 2010,
+    "path": "data/raw/prri-avs-2010/questionnaire.pdf",
+    "url": "https://www.thearda.com/ARDA/pdf/originalCodebooks/AVS10%20Questionnaire.pdf",
+    "sha256": "3c46103dba0e109940776b2956848f9a63675e150ec36d4e80610728a48172a8"
+  },
+  {
+    "year": 2011,
+    "path": "data/raw/prri-avs-2011/questionnaire.pdf",
+    "url": "https://www.thearda.com/ARDA/pdf/originalCodebooks/PRRI%202011%20American%20Value%20Survey.pdf",
+    "sha256": "618717fc5998c73bce0a57dbb290f5609c5b5cd727c40840effe0d66b8da17ed"
+  },
+  {
+    "year": 2012,
+    "path": "data/raw/prri-avs-2012/questionnaire.pdf",
+    "url": "https://www.thearda.com/ARDA/pdf/originalCodebooks/American%20Values%20Survey%20Pre-election%202012.pdf",
+    "sha256": "456aa2ab9bde7e06d443bed125e6a0e8fabf95fa5e3898665ad5b45dbeecdf71"
+  },
+  {
+    "year": 2013,
+    "path": "data/raw/prri-avs-2013/questionnaire.pdf",
+    "url": "https://www.thearda.com/ARDA/pdf/originalCodebooks/AVS2013.pdf",
+    "sha256": "6cb4e20b5e128b499a8487996c548a8d1f5be631f78d0c63411681acd0397467"
+  },
+  {
+    "year": 2014,
+    "path": "data/raw/prri-avs-2014/questionnaire.pdf",
+    "url": "https://www.thearda.com/ARDA/pdf/originalCodebooks/2014%20AVS%20Questionnaire.pdf",
+    "sha256": "9ea6063bb9f18e642f946b0690e335ae8b00f8a21368965b4ea4bed7df0ff24a"
+  },
+  {
+    "year": 2015,
+    "path": "data/raw/prri-avs-2015/questionnaire.pdf",
+    "url": "https://www.thearda.com/ARDA/pdf/originalCodebooks/AVS15%20Questionnaire.pdf",
+    "sha256": "caf7c8af41e7c65fbecc54469bb7582d4d1099b4e614cf3a10a22c8e6e30262d"
+  },
+  {
+    "year": 2016,
+    "path": "data/raw/prri-avs-2016/questionnaire.pdf",
+    "url": "https://www.thearda.com/ARDA/pdf/originalCodebooks/AVS16%20Questionnaire.pdf",
+    "sha256": "d11673fe787677dec3fb40a1204b67eab771137816622b48ed6a3bbc93be7447"
+  },
+  {
+    "year": 2017,
+    "path": "data/raw/prri-avs-2017/questionnaire.pdf",
+    "url": "https://www.thearda.com/ARDA/pdf/originalCodebooks/2017%20American%20Values%20Survey.pdf",
+    "sha256": "770de64e0f4be49edfc656ad807bea7dd6890398aad013fb18552915f3c2b0bb"
+  },
+  {
+    "year": 2018,
+    "path": "data/raw/prri-avs-2018/questionnaire.pdf",
+    "url": "https://www.thearda.com/ARDA/pdf/originalCodebooks/AVS18%20Questionnaire.pdf",
+    "sha256": "46d8d733fc6be736ff94f402ae219d2cb5232822e9db7181b93a30f670d9b9e1"
+  },
+  {
+    "year": 2019,
+    "path": "data/raw/prri-avs-2019/questionnaire.pdf",
+    "url": "https://www.thearda.com/ARDA/pdf/originalCodebooks/AVS19%20Topline.pdf",
+    "sha256": "8ac113a34d6d8c1a6c707530a25ebd54370d2324af8605f0fb5d6d6092d08693"
+  },
+  {
+    "year": 2020,
+    "path": "data/raw/prri-avs-2020/questionnaire.pdf",
+    "url": "https://www.thearda.com/ARDA/pdf/originalCodebooks/AVS2020.pdf",
+    "sha256": "5674cd715b5e6cf76b776f271e1bbc062ae532fe7ed325397da8aad9b40b70c6"
+  },
+  {
+    "year": 2021,
+    "path": "data/raw/prri-avs-2021/questionnaire.pdf",
+    "url": "https://www.thearda.com/ARDA/pdf/originalCodebooks/AVS%20November%202021%20Topline.pdf",
+    "sha256": "bdc3ae644145bbd1fe7ba2c1045b90fa15dc1564c876a52394671892aca4878d"
+  },
+  {
+    "year": 2022,
+    "path": "data/raw/prri-avs-2022/questionnaire.pdf",
+    "url": "https://www.thearda.com/ARDA/pdf/originalCodebooks/AVS2022.pdf",
+    "sha256": "8e1a157a3621691a64c495c0ceb905a0b3ff652ba71ccdf60732696bd16d96be"
+  },
+  {
+    "year": 2023,
+    "path": "data/raw/prri-avs-2023/questionnaire.pdf",
+    "url": "https://www.thearda.com/ARDA/pdf/originalCodebooks/AVS2023.pdf",
+    "sha256": "41c2f758938dcccbf9c6742a3807d3326ceda4e4509dc1381a8905912cdf9028"
+  },
+  {
+    "year": 2024,
+    "path": "data/raw/prri-avs-2024/questionnaire.pdf",
+    "url": "https://www.thearda.com/ARDA/pdf/originalCodebooks/AVS2024.pdf",
+    "sha256": "7b7c9a1ba8d0b4f7dec3fd5adb5288b8a51e60995caf0ec1372c0497bd667707"
+  }
+]

@@ -78,3 +78,30 @@ class PRRITests(unittest.TestCase):
         frame=pd.DataFrame({'Q':[1,2],'W':[28.427,71.573]})
         with self.assertRaisesRegex(ValueError,'topline mismatch'):
             self.run_summary(wave=wave,frame=frame)
+
+    def test_policy_batch_coding_and_deferred_candidates(self):
+        spec=json.loads(Path('data/prri/policy-batch-mappings.json').read_text())
+        entries={e['code']:e for e in spec['entries']}
+        self.assertEqual(entries['prri_death_penalty']['scores']['1'],-1)
+        self.assertEqual(entries['prri_marijuana_legality']['scores']['1'],1)
+        self.assertEqual(entries['prri_collective_bargaining']['scores']['1'],-1)
+        self.assertEqual(entries['prri_border_wall']['scores']['4'],1)
+        included={(w['year'],w['source_code']) for e in entries.values() for w in e['waves']}
+        for item in spec['deferred']:
+            self.assertNotIn((item['year'],item['source_code']),included)
+        for e in entries.values():
+            self.assertEqual(len(e['waves']),len({w['year'] for w in e['waves']}))
+            for w in e['waves']:
+                self.assertEqual(set(e['scores']),set(w['published_percentages']))
+                for code in e['scores']:
+                    self.assertFalse(any(x in w['expected_labels'][code].lower() for x in ['skipped','refused','know']))
+
+    def test_policy_batch_preserves_original_mappings(self):
+        original=json.loads(Path('data/prri/response_mappings.json').read_text())
+        batch=json.loads(Path('data/prri/policy-batch-mappings.json').read_text())
+        entries={e['code']:e for e in batch['entries']}
+        for old in original['entries']:
+            new=entries[old['code']]
+            self.assertEqual(old['scores'],new['scores'])
+            for wave in old['waves']:
+                self.assertIn(wave,new['waves'])

@@ -1,0 +1,2630 @@
+{
+  "version": "explicit-prri-v1",
+  "notes": "PRRI American Values Survey via ARDA, reviewed annual policy questions from 2010–2024. Full-sample respondent weights; missing answers excluded. Related policies and differently framed questions are not independent evidence. Coverage varies by question; split-form and unmatched-topline candidates are deferred. See annual question wording and sources. Display wording may omit introductory prompts; original annual questionnaires are authoritative.",
+  "entries": [
+    {
+      "code": "prri_immigration",
+      "family": "prri_immigration",
+      "title": "Immigration: citizenship, legal residency or deportation",
+      "question": "Which statement comes closest to your view about how the immigration system should deal with immigrants who are currently living in the U.S. illegally?",
+      "scores": {
+        "1": 1,
+        "2": 0,
+        "3": -1
+      },
+      "question_note": "Citizenship = +1; permanent legal residency without citizenship = 0; deportation = -1. The midpoint is a scoring convention, not ideological neutrality.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2018,
+          "source_code": "Q36",
+          "weight": "weight",
+          "expected_label": "Which statement comes closest to your view about how the immigration system shou",
+          "expected_labels": {
+            "1": "Allow them a way to become citizens provided they meet certain requirements",
+            "2": "Allow them to become permanent legal residents, but not citizens",
+            "3": "Identify and deport them",
+            "98": "Skipped on web",
+            "99": "Refused"
+          },
+          "published_percentages": {
+            "1": 62,
+            "2": 16,
+            "3": 21
+          },
+          "doi": "10.17605/OSF.IO/8W3TH",
+          "question": "Which statement comes closest to your view about how the immigration system should deal with immigrants who are currently living in the U.S. illegally?",
+          "wave": "Annual American Values Survey"
+        },
+        {
+          "year": 2019,
+          "source_code": "Q40",
+          "weight": "weight",
+          "expected_label": "Which statement comes closest to your view about how the immigration system shou",
+          "expected_labels": {
+            "1": "Allow them a way to become citizens provided they meet certain requirements",
+            "2": "Allow them to become permanent legal residents, but not citizens",
+            "3": "Identify and deport them",
+            "9": "Refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 67,
+            "2": 13,
+            "3": 20
+          },
+          "doi": "10.17605/OSF.IO/PH68V",
+          "question": "Which statement comes closest to your view about how the immigration system should deal with immigrants who are currently living in the U.S. illegally?",
+          "wave": "Annual American Values Survey"
+        },
+        {
+          "year": 2020,
+          "source_code": "Q44",
+          "weight": "weight",
+          "expected_label": "Which statement comes closest to your view about how the immigration system shou",
+          "expected_labels": {
+            "1": "Allow them a way to become citizens provided they meet certain requirements",
+            "2": "Allow them to become permanent legal residents but not citizens",
+            "3": "Identify and deport them",
+            "77": "Don't know",
+            "98": "Skipped on web"
+          },
+          "published_percentages": {
+            "1": 64,
+            "2": 16,
+            "3": 19
+          },
+          "doi": "10.17605/OSF.IO/8RH32",
+          "question": "Which statement comes closest to your view about how the immigration system should deal with immigrants who are currently living in the U.S. illegally?",
+          "wave": "Annual American Values Survey"
+        },
+        {
+          "year": 2021,
+          "source_code": "Q27",
+          "weight": "KP_WEIGHT",
+          "expected_label": "Which statement comes closest to your view about how the immigration system shou",
+          "expected_labels": {
+            "-1": "Don't know/Skipped",
+            "1": "Allow them a way to become citizens provided they meet certain requirements",
+            "2": "Allow them to become permanent legal residents, but not citizens",
+            "3": "Identify and deport them"
+          },
+          "published_percentages": {
+            "1": 62,
+            "2": 14,
+            "3": 22
+          },
+          "doi": "10.17605/OSF.IO/AXG4M",
+          "question": "Which statement comes closest to your view about how the immigration system should deal with immigrants who are currently living in the U.S. illegally?",
+          "wave": "Annual American Values Survey"
+        },
+        {
+          "year": 2022,
+          "source_code": "Q25",
+          "weight": "KP_WEIGHT",
+          "expected_label": "Which statement comes closest to your view about how the immigration system shou",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Allow them a way to become citizens provided they meet certain requirements",
+            "2": "Allow them to become permanent legal residents but not citizens",
+            "3": "Identify and deport them"
+          },
+          "published_percentages": {
+            "1": 57,
+            "2": 13,
+            "3": 25
+          },
+          "doi": "10.17605/OSF.IO/2CMYK",
+          "question": "Which statement comes closest to your view about how the immigration system should deal with immigrants who are currently living in the U.S. illegally?",
+          "wave": "Annual American Values Survey"
+        },
+        {
+          "year": 2023,
+          "source_code": "Q36",
+          "weight": "KP_WEIGHT",
+          "expected_label": "Which statement comes closest to your view about how the immigration system shou",
+          "expected_labels": {
+            "1": "Allow them a way to become citizens provided they meet certain requirements",
+            "2": "Allow them to become permanent legal residents but not citizens",
+            "3": "Identify and deport them",
+            "99": "Skipped"
+          },
+          "published_percentages": {
+            "1": 60,
+            "2": 13,
+            "3": 25
+          },
+          "doi": "10.17605/OSF.IO/WVUGF",
+          "question": "Which statement comes closest to your view about how the immigration system should deal with immigrants who are currently living in the U.S. illegally?",
+          "wave": "Annual American Values Survey"
+        },
+        {
+          "year": 2024,
+          "source_code": "Q31",
+          "weight": "weight",
+          "expected_label": "Which statement comes closest to your view about how the immigration system shou",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Allow them a way to become citizens provided they meet certain requirements",
+            "2": "Allow them to become permanent legal residents but not citizens",
+            "3": "Identify and deport them"
+          },
+          "published_percentages": {
+            "1": 56,
+            "2": 11,
+            "3": 31
+          },
+          "doi": "10.17605/OSF.IO/UDPSG",
+          "question": "Which statement comes closest to your view about how the immigration system should deal with immigrants who are currently living in the U.S. illegally?",
+          "wave": "Annual American Values Survey"
+        }
+      ]
+    },
+    {
+      "code": "prri_marriage",
+      "family": "prri_marriage",
+      "title": "Same-sex marriage legality",
+      "question": "How much do you favor or oppose each of the following? Allowing same-sex couples to marry legally.",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_note": "Strongly favor = +1; favor = +1/3; oppose = -1/3; strongly oppose = -1.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2011,
+          "source_code": "Q8B",
+          "weight": "weight",
+          "expected_label": "Now, I'd like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 24,
+            "2": 24,
+            "3": 20,
+            "4": 26
+          },
+          "doi": "10.17605/OSF.IO/D5KRA",
+          "question": "Allowing gay and lesbian couples to marry legally.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 4
+        },
+        {
+          "year": 2012,
+          "source_code": "legssm",
+          "weight": "weight",
+          "expected_label": "We would like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused"
+          },
+          "published_percentages": {
+            "1": 24,
+            "2": 25,
+            "3": 18,
+            "4": 27
+          },
+          "doi": "10.17605/OSF.IO/TKX63",
+          "question": "Allowing gay and lesbian couples to marry legally.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 6
+        },
+        {
+          "year": 2013,
+          "source_code": "Q14A",
+          "weight": "weight",
+          "expected_label": "We would like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Refused"
+          },
+          "published_percentages": {
+            "1": 25,
+            "2": 27,
+            "3": 19,
+            "4": 25
+          },
+          "doi": "10.17605/OSF.IO/VT6YU",
+          "question": "Allowing gay and lesbian couples to marry legally.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 15
+        },
+        {
+          "year": 2014,
+          "source_code": "Q12B",
+          "weight": "weight",
+          "expected_label": "What about [INSERT NEXT]? [READ AS NECESSARY: Do you strongly favor, favor, oppo",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused"
+          },
+          "published_percentages": {
+            "1": 24,
+            "2": 25,
+            "3": 20,
+            "4": 22
+          },
+          "doi": "10.17605/OSF.IO/4VE6R",
+          "question": "Allowing gay and lesbian couples to marry legally.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 4
+        },
+        {
+          "year": 2015,
+          "source_code": "Q9A",
+          "weight": "weight",
+          "expected_label": "Now, we would like to get your views on some issues that are being discussed in",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 31,
+            "2": 29,
+            "3": 17,
+            "4": 22
+          },
+          "doi": "10.17605/OSF.IO/473WX",
+          "question": "Allowing gay and lesbian couples to marry legally.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 8
+        },
+        {
+          "year": 2016,
+          "source_code": "Q22E",
+          "weight": "weight",
+          "expected_label": "Now, we would like to get your views on some issues that are being discussed in",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 34,
+            "2": 30,
+            "3": 16,
+            "4": 18
+          },
+          "doi": "10.17605/OSF.IO/FPKYN",
+          "question": "Allowing gay and lesbian couples to marry legally.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 11
+        },
+        {
+          "year": 2017,
+          "source_code": "Q17A",
+          "weight": "weight",
+          "expected_label": "We would like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 31,
+            "2": 30,
+            "3": 17,
+            "4": 16
+          },
+          "doi": "10.17605/OSF.IO/VCTH2",
+          "question": "Allowing gay and lesbian couples to marry legally.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 9
+        },
+        {
+          "year": 2023,
+          "source_code": "Q40_E",
+          "weight": "KP_WEIGHT",
+          "expected_label": "How much do you favor or oppose each of the following? Allowing same-sex couples",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "99": "Skipped"
+          },
+          "published_percentages": {
+            "1": 35,
+            "2": 31,
+            "3": 15,
+            "4": 15
+          },
+          "doi": "10.17605/OSF.IO/WVUGF",
+          "question": "How much do you favor or oppose each of the following? Allowing same-sex couples to marry legally.",
+          "wave": "Annual American Values Survey"
+        },
+        {
+          "year": 2024,
+          "source_code": "Q10_C",
+          "weight": "weight",
+          "expected_label": "How much do you favor or oppose each of the following? Allowing same-sex couples",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose"
+          },
+          "published_percentages": {
+            "1": 37,
+            "2": 29,
+            "3": 16,
+            "4": 14
+          },
+          "doi": "10.17605/OSF.IO/UDPSG",
+          "question": "How much do you favor or oppose each of the following? Allowing same-sex couples to marry legally.",
+          "wave": "Annual American Values Survey"
+        }
+      ]
+    },
+    {
+      "code": "prri_abortion",
+      "family": "prri_abortion",
+      "title": "Abortion legality",
+      "question": "Do you think abortion should be legal or illegal?",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_note": "Legal in all/most cases = +1/+1/3; illegal in most/all cases = −1/3/−1. General legality, not a particular restriction. 2022 omitted pending a published-topline discrepancy; wording and question context vary by year.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive?fid=AVS2024",
+      "waves": [
+        {
+          "year": 2019,
+          "source_code": "Q51",
+          "weight": "weight",
+          "expected_label": "On different topic, Do you think abortion should be legal in all cases, legal in",
+          "expected_labels": {
+            "1": "Legal in all cases",
+            "2": "Legal in most cases",
+            "3": "Illegal in most cases",
+            "4": "Illegal in all cases",
+            "9": "Don't know/Refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 24,
+            "2": 34,
+            "3": 29,
+            "4": 11
+          },
+          "doi": "10.17605/OSF.IO/PH68V",
+          "question": "Do you think abortion should be legal in all cases, legal in most cases, illegal in most cases, or illegal in all cases?",
+          "wave": "September annual American Values Survey",
+          "questionnaire_page": 44
+        },
+        {
+          "year": 2020,
+          "source_code": "Q48",
+          "weight": "weight",
+          "expected_label": "Turning to another subject, do you think abortion should be legal or illegal? [F",
+          "expected_labels": {
+            "1": "Legal in all cases",
+            "2": "Legal in most cases",
+            "3": "Illegal in most cases",
+            "4": "Illegal in all cases",
+            "77": "Don't know",
+            "98": "Skipped on web",
+            "99": "Refused"
+          },
+          "published_percentages": {
+            "1": 22,
+            "2": 38,
+            "3": 27,
+            "4": 13
+          },
+          "doi": "10.17605/OSF.IO/8RH32",
+          "question": "Do you think abortion should be legal or illegal?",
+          "wave": "September annual American Values Survey",
+          "questionnaire_page": 39
+        },
+        {
+          "year": 2021,
+          "source_code": "Q31",
+          "weight": "KP_WEIGHT",
+          "expected_label": "Do you think abortion should be legal or illegal?",
+          "expected_labels": {
+            "-1": "Skipped/Refused",
+            "1": "Legal in all cases",
+            "2": "Legal in most cases",
+            "3": "Illegal in most cases",
+            "4": "Illegal in all cases"
+          },
+          "published_percentages": {
+            "1": 27,
+            "2": 33,
+            "3": 27,
+            "4": 11
+          },
+          "doi": "10.17605/OSF.IO/AXG4M",
+          "question": "Do you think abortion should be legal or illegal?",
+          "wave": "September annual American Values Survey",
+          "questionnaire_page": 30
+        },
+        {
+          "year": 2023,
+          "source_code": "Q38",
+          "weight": "KP_WEIGHT",
+          "expected_label": "Do you think abortion should be legal or illegal?",
+          "expected_labels": {
+            "1": "Legal in all cases",
+            "2": "Legal in most cases",
+            "3": "Illegal in most cases",
+            "4": "Illegal in all cases",
+            "99": "Skipped"
+          },
+          "published_percentages": {
+            "1": 26,
+            "2": 34,
+            "3": 28,
+            "4": 9
+          },
+          "doi": "10.17605/OSF.IO/WVUGF",
+          "question": "Do you think abortion should be legal or illegal?",
+          "wave": "September annual American Values Survey",
+          "questionnaire_page": 26
+        },
+        {
+          "year": 2024,
+          "source_code": "Q11A_A",
+          "weight": "weight",
+          "expected_label": "Do you think the following should be legal or illegal? - Abortion",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Legal in all cases",
+            "2": "Legal in most cases",
+            "3": "Illegal in most cases",
+            "4": "Illegal in all cases"
+          },
+          "published_percentages": {
+            "1": 25,
+            "2": 37,
+            "3": 27,
+            "4": 7
+          },
+          "doi": "10.17605/OSF.IO/UDPSG",
+          "question": "Do you think the following should be legal or illegal? Abortion.",
+          "wave": "September annual American Values Survey",
+          "questionnaire_page": 30
+        }
+      ]
+    },
+    {
+      "code": "prri_minimum_wage_10",
+      "family": "prri_minimum_wage_10",
+      "title": "Minimum wage: $7.25 to $10",
+      "question": "Increasing the minimum wage from $7.25 an hour to $10.00 an hour.",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_note": "Support is coded liberal (+1 to −1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2010,
+          "source_code": "Q9D",
+          "weight": "weight",
+          "expected_label": "Now, I'd like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 35,
+            "2": 32,
+            "3": 21,
+            "4": 10
+          },
+          "doi": "10.17605/OSF.IO/S2EQG",
+          "question": "Increasing the minimum wage from $7.25 an hour to $10.00 an hour.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 3
+        },
+        {
+          "year": 2011,
+          "source_code": "Q8C",
+          "weight": "weight",
+          "expected_label": "Now, I'd like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 35,
+            "2": 32,
+            "3": 19,
+            "4": 11
+          },
+          "doi": "10.17605/OSF.IO/D5KRA",
+          "question": "Increasing the minimum wage from $7.25 an hour to $10.00 an hour.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 4
+        },
+        {
+          "year": 2013,
+          "source_code": "Q14B",
+          "weight": "weight",
+          "expected_label": "We would like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Refused"
+          },
+          "published_percentages": {
+            "1": 35,
+            "2": 36,
+            "3": 17,
+            "4": 7
+          },
+          "doi": "10.17605/OSF.IO/VT6YU",
+          "question": "Increasing the minimum wage from $7.25 an hour to $10.00 an hour.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 15
+        }
+      ]
+    },
+    {
+      "code": "prri_minimum_wage_15",
+      "family": "prri_minimum_wage_15",
+      "title": "Minimum wage: $7.25 to $15",
+      "question": "Increasing the minimum wage from $7.25 an hour to $15 an hour.",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_note": "Support is coded liberal (+1 to −1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2016,
+          "source_code": "Q22A",
+          "weight": "weight",
+          "expected_label": "Now, we would like to get your views on some issues that are being discussed in",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 32,
+            "2": 28,
+            "3": 25,
+            "4": 14
+          },
+          "doi": "10.17605/OSF.IO/FPKYN",
+          "question": "Increasing the minimum wage from $7.25 an hour to $15 an hour.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 11
+        }
+      ]
+    },
+    {
+      "code": "prri_marijuana_support",
+      "family": "prri_marijuana_support",
+      "title": "Marijuana legalization",
+      "question": "Making the use of marijuana legal.",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_note": "Support is coded liberal (+1 to −1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2012,
+          "source_code": "legm",
+          "weight": "weight",
+          "expected_label": "We would like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused"
+          },
+          "published_percentages": {
+            "1": 18,
+            "2": 25,
+            "3": 24,
+            "4": 28
+          },
+          "doi": "10.17605/OSF.IO/TKX63",
+          "question": "Making the use of marijuana legal.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 6
+        },
+        {
+          "year": 2013,
+          "source_code": "Q14F",
+          "weight": "weight",
+          "expected_label": "We would like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Refused"
+          },
+          "published_percentages": {
+            "1": 19,
+            "2": 32,
+            "3": 25,
+            "4": 19
+          },
+          "doi": "10.17605/OSF.IO/VT6YU",
+          "question": "Making the use of marijuana legal.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 15
+        },
+        {
+          "year": 2014,
+          "source_code": "Q12A",
+          "weight": "weight",
+          "expected_label": "Now, we would like to get your views on some issues that are being discussed in",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused"
+          },
+          "published_percentages": {
+            "1": 18,
+            "2": 26,
+            "3": 26,
+            "4": 24
+          },
+          "doi": "10.17605/OSF.IO/4VE6R",
+          "question": "Making the use of marijuana legal.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 4
+        },
+        {
+          "year": 2016,
+          "source_code": "Q22F",
+          "weight": "weight",
+          "expected_label": "Now, we would like to get your views on some issues that are being discussed in",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 31,
+            "2": 32,
+            "3": 19,
+            "4": 17
+          },
+          "doi": "10.17605/OSF.IO/FPKYN",
+          "question": "Making the use of marijuana legal.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 11
+        }
+      ]
+    },
+    {
+      "code": "prri_tax_million",
+      "family": "prri_tax_million",
+      "title": "Taxes on incomes above $1 million",
+      "question": "Increasing the tax rate on Americans earning more than $1 million dollars a year.",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_note": "Support is coded liberal (+1 to −1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2011,
+          "source_code": "Q8E",
+          "weight": "weight",
+          "expected_label": "Now, I'd like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 43,
+            "2": 27,
+            "3": 16,
+            "4": 11
+          },
+          "doi": "10.17605/OSF.IO/D5KRA",
+          "question": "Increasing the tax rate on Americans earning more than $1 million dollars a year.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 4
+        }
+      ]
+    },
+    {
+      "code": "prri_tax_250k",
+      "family": "prri_tax_250k",
+      "title": "Taxes on incomes above $250,000",
+      "question": "Increasing the tax rate on Americans earning more than $250,000 a year.",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_note": "Support is coded liberal (+1 to −1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2012,
+          "source_code": "inctax",
+          "weight": "weight",
+          "expected_label": "We would like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused"
+          },
+          "published_percentages": {
+            "1": 33,
+            "2": 28,
+            "3": 19,
+            "4": 17
+          },
+          "doi": "10.17605/OSF.IO/TKX63",
+          "question": "Increasing the tax rate on Americans earning more than $250,000 a year.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 6
+        },
+        {
+          "year": 2016,
+          "source_code": "Q22D",
+          "weight": "weight",
+          "expected_label": "Now, we would like to get your views on some issues that are being discussed in",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 41,
+            "2": 31,
+            "3": 19,
+            "4": 8
+          },
+          "doi": "10.17605/OSF.IO/FPKYN",
+          "question": "Increasing the tax rate on Americans earning more than $250,000 a year.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 11
+        }
+      ]
+    },
+    {
+      "code": "prri_collective_bargaining",
+      "family": "prri_collective_bargaining",
+      "title": "Public employee collective bargaining",
+      "question": "Eliminating the rights of public employees to collectively bargain over health care, pensions and other benefits.",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "question_note": "Support is coded conservative (−1 to +1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2011,
+          "source_code": "Q8A",
+          "weight": "weight",
+          "expected_label": "Now, I'd like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 16,
+            "2": 28,
+            "3": 26,
+            "4": 23
+          },
+          "doi": "10.17605/OSF.IO/D5KRA",
+          "question": "Eliminating the rights of public employees to collectively bargain over health care, pensions and other benefits.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 4
+        }
+      ]
+    },
+    {
+      "code": "prri_gay_job_protection",
+      "family": "prri_gay_job_protection",
+      "title": "Gay and lesbian employment protections",
+      "question": "Laws that would protect gay and lesbian people against job discrimination.",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_note": "Support is coded liberal (+1 to −1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2010,
+          "source_code": "Q9C",
+          "weight": "weight",
+          "expected_label": "Now, I'd like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 29,
+            "2": 39,
+            "3": 17,
+            "4": 10
+          },
+          "doi": "10.17605/OSF.IO/S2EQG",
+          "question": "Laws that would protect gay and lesbian people against job discrimination.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 3
+        }
+      ]
+    },
+    {
+      "code": "prri_environment_costs",
+      "family": "prri_environment_costs",
+      "title": "Environmental regulation with economic costs",
+      "question": "Tougher laws and regulations to protect the environment even if it raises prices or costs jobs.",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_note": "Support is coded liberal (+1 to −1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2013,
+          "source_code": "Q14C",
+          "weight": "weight",
+          "expected_label": "We would like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Refused"
+          },
+          "published_percentages": {
+            "1": 11,
+            "2": 41,
+            "3": 33,
+            "4": 10
+          },
+          "doi": "10.17605/OSF.IO/VT6YU",
+          "question": "Tougher laws and regulations to protect the environment even if it raises prices or costs jobs.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 15
+        }
+      ]
+    },
+    {
+      "code": "prri_abortion_difficult",
+      "family": "prri_abortion_difficult",
+      "title": "Restricting abortion access",
+      "question": "Making it more difficult for a woman to get an abortion.",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "question_note": "Support is coded conservative (−1 to +1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2013,
+          "source_code": "Q14E",
+          "weight": "weight",
+          "expected_label": "We would like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Refused"
+          },
+          "published_percentages": {
+            "1": 16,
+            "2": 23,
+            "3": 31,
+            "4": 26
+          },
+          "doi": "10.17605/OSF.IO/VT6YU",
+          "question": "Making it more difficult for a woman to get an abortion.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 15
+        }
+      ]
+    },
+    {
+      "code": "prri_assisted_dying_support",
+      "family": "prri_assisted_dying_support",
+      "title": "Assisted dying: support",
+      "question": "Allowing doctors to legally prescribe lethal drugs to help terminally ill patients end their own lives.",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_note": "Support is coded liberal (+1 to −1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2013,
+          "source_code": "Q14G",
+          "weight": "weight",
+          "expected_label": "We would like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Refused"
+          },
+          "published_percentages": {
+            "1": 15,
+            "2": 35,
+            "3": 27,
+            "4": 18
+          },
+          "doi": "10.17605/OSF.IO/VT6YU",
+          "question": "Allowing doctors to legally prescribe lethal drugs to help terminally ill patients end their own lives.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 15
+        }
+      ]
+    },
+    {
+      "code": "prri_gun_control",
+      "family": "prri_gun_control",
+      "title": "Stricter gun control laws",
+      "question": "Passing stricter gun control laws.",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_note": "Support is coded liberal (+1 to −1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2015,
+          "source_code": "Q9B",
+          "weight": "weight",
+          "expected_label": "Now, we would like to get your views on some issues that are being discussed in",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 37,
+            "2": 23,
+            "3": 19,
+            "4": 21
+          },
+          "doi": "10.17605/OSF.IO/473WX",
+          "question": "Passing stricter gun control laws.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 8
+        }
+      ]
+    },
+    {
+      "code": "prri_border_wall",
+      "family": "prri_border_wall",
+      "title": "U.S.–Mexico border wall",
+      "question": "Building a wall along the U.S. border with Mexico.",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "question_note": "Support is coded conservative (−1 to +1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2016,
+          "source_code": "Q22B",
+          "weight": "weight",
+          "expected_label": "Now, we would like to get your views on some issues that are being discussed in",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 20,
+            "2": 21,
+            "3": 24,
+            "4": 34
+          },
+          "doi": "10.17605/OSF.IO/FPKYN",
+          "question": "Building a wall along the U.S. border with Mexico.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 11
+        },
+        {
+          "year": 2017,
+          "source_code": "Q17D",
+          "weight": "weight",
+          "expected_label": "We would like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 19,
+            "2": 17,
+            "3": 21,
+            "4": 42
+          },
+          "doi": "10.17605/OSF.IO/VCTH2",
+          "question": "Building a wall along the U.S. border with Mexico.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 9
+        },
+        {
+          "year": 2018,
+          "source_code": "Q35B",
+          "weight": "weight",
+          "expected_label": "We would like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "77": "Don't know (VOL.)",
+            "98": "Skipped on web",
+            "99": "Refused"
+          },
+          "published_percentages": {
+            "1": 21,
+            "2": 20,
+            "3": 19,
+            "4": 39
+          },
+          "doi": "10.17605/OSF.IO/8W3TH",
+          "question": "Building a wall along the U.S. border with Mexico.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 27
+        },
+        {
+          "year": 2019,
+          "source_code": "Q38_B",
+          "weight": "weight",
+          "expected_label": "Turning to the issue of immigration, do you strongly favor, favor, oppose or str",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 24,
+            "2": 18,
+            "3": 19,
+            "4": 37
+          },
+          "doi": "10.17605/OSF.IO/PH68V",
+          "question": "Building a wall along the U.S. border with Mexico.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 34
+        },
+        {
+          "year": 2020,
+          "source_code": "Q42B",
+          "weight": "weight",
+          "expected_label": "Turning to the issue of immigration, how much do you favor or oppose each of the",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "77": "Don't know",
+            "98": "Skipped on web"
+          },
+          "published_percentages": {
+            "1": 23,
+            "2": 19,
+            "3": 23,
+            "4": 34
+          },
+          "doi": "10.17605/OSF.IO/8RH32",
+          "question": "Building a wall along the U.S. border with Mexico.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 32
+        },
+        {
+          "year": 2021,
+          "source_code": "Q30_C",
+          "weight": "KP_WEIGHT",
+          "expected_label": "How much do you favor or oppose each of the following? Building a wall along the",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose"
+          },
+          "published_percentages": {
+            "1": 27,
+            "2": 18,
+            "3": 17,
+            "4": 36
+          },
+          "doi": "10.17605/OSF.IO/AXG4M",
+          "question": "Building a wall along the U.S. border with Mexico.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 28
+        },
+        {
+          "year": 2023,
+          "source_code": "Q37_B",
+          "weight": "KP_WEIGHT",
+          "expected_label": "Turning to the issue of immigration, do you strongly favor, favor, oppose or str",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "99": "Skipped"
+          },
+          "published_percentages": {
+            "1": 26,
+            "2": 21,
+            "3": 24,
+            "4": 26
+          },
+          "doi": "10.17605/OSF.IO/WVUGF",
+          "question": "Building a wall along the U.S. border with Mexico.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 25
+        },
+        {
+          "year": 2024,
+          "source_code": "Q30_B",
+          "weight": "weight",
+          "expected_label": "Turning to other issues, how much do you strongly favor, favor, oppose, or stron",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose"
+          },
+          "published_percentages": {
+            "1": 28,
+            "2": 23,
+            "3": 25,
+            "4": 21
+          },
+          "doi": "10.17605/OSF.IO/UDPSG",
+          "question": "Building a wall along the U.S. border with Mexico.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 15
+        }
+      ]
+    },
+    {
+      "code": "prri_muslim_entry_ban",
+      "family": "prri_muslim_entry_ban",
+      "title": "Muslim entry ban",
+      "question": "Temporarily banning Muslims from other countries from entering the U.S.",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "question_note": "Support is coded conservative (−1 to +1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2016,
+          "source_code": "Q22C",
+          "weight": "weight",
+          "expected_label": "Now, we would like to get your views on some issues that are being discussed in",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 20,
+            "2": 23,
+            "3": 30,
+            "4": 26
+          },
+          "doi": "10.17605/OSF.IO/FPKYN",
+          "question": "Temporarily banning Muslims from other countries from entering the U.S.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 11
+        }
+      ]
+    },
+    {
+      "code": "prri_muslim_country_ban",
+      "family": "prri_muslim_country_ban",
+      "title": "Entry restrictions on majority-Muslim countries",
+      "question": "Temporarily preventing people from some majority Muslim countries from entering the U.S.",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "question_note": "Support is coded conservative (−1 to +1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2017,
+          "source_code": "Q17E",
+          "weight": "weight",
+          "expected_label": "We would like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 16,
+            "2": 24,
+            "3": 30,
+            "4": 25
+          },
+          "doi": "10.17605/OSF.IO/VCTH2",
+          "question": "Temporarily preventing people from some majority Muslim countries from entering the U.S.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 9
+        },
+        {
+          "year": 2018,
+          "source_code": "Q35D",
+          "weight": "weight",
+          "expected_label": "We would like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "77": "Don't know (VOL.)",
+            "98": "Skipped on web",
+            "99": "Refused"
+          },
+          "published_percentages": {
+            "1": 19,
+            "2": 30,
+            "3": 29,
+            "4": 21
+          },
+          "doi": "10.17605/OSF.IO/8W3TH",
+          "question": "Temporarily preventing people from some majority Muslim countries from entering the U.S.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 27
+        }
+      ]
+    },
+    {
+      "code": "prri_dreamers_conditional",
+      "family": "prri_dreamers_conditional",
+      "title": "Conditional legal residency for childhood arrivals",
+      "question": "Allowing illegal immigrants brought to the U.S. as children to gain legal resident status if they join the military or go to college.",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_note": "Support is coded liberal (+1 to −1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2017,
+          "source_code": "Q17F",
+          "weight": "weight",
+          "expected_label": "We would like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 34,
+            "2": 38,
+            "3": 13,
+            "4": 12
+          },
+          "doi": "10.17605/OSF.IO/VCTH2",
+          "question": "Allowing illegal immigrants brought to the U.S. as children to gain legal resident status if they join the military or go to college.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 9
+        }
+      ]
+    },
+    {
+      "code": "prri_dreamers",
+      "family": "prri_dreamers",
+      "title": "Legal residency for childhood arrivals",
+      "question": "Allowing immigrants brought illegally to the U.S. as children to gain legal resident status.",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_note": "Support is coded liberal (+1 to −1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2018,
+          "source_code": "Q35F",
+          "weight": "weight",
+          "expected_label": "We would like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "77": "Don't know (VOL.)",
+            "98": "Skipped on web",
+            "99": "Refused"
+          },
+          "published_percentages": {
+            "1": 25,
+            "2": 37,
+            "3": 21,
+            "4": 14
+          },
+          "doi": "10.17605/OSF.IO/8W3TH",
+          "question": "Allowing immigrants brought illegally to the U.S. as children to gain legal resident status.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 27
+        },
+        {
+          "year": 2019,
+          "source_code": "Q38_F",
+          "weight": "weight",
+          "expected_label": "Turning to the issue of immigration, do you strongly favor, favor, oppose or str",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 27,
+            "2": 36,
+            "3": 22,
+            "4": 14
+          },
+          "doi": "10.17605/OSF.IO/PH68V",
+          "question": "Allowing immigrants brought illegally to the U.S. as children to gain legal resident status.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 34
+        },
+        {
+          "year": 2020,
+          "source_code": "Q42A",
+          "weight": "weight",
+          "expected_label": "Turning to the issue of immigration, how much do you favor or oppose each of the",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "77": "Don't know",
+            "98": "Skipped on web",
+            "99": "Refused"
+          },
+          "published_percentages": {
+            "1": 26,
+            "2": 40,
+            "3": 22,
+            "4": 11
+          },
+          "doi": "10.17605/OSF.IO/8RH32",
+          "question": "Allowing immigrants brought illegally to the U.S. as children to gain legal resident status.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 32
+        },
+        {
+          "year": 2021,
+          "source_code": "Q30_D",
+          "weight": "KP_WEIGHT",
+          "expected_label": "How much do you favor or oppose each of the following? Allowing immigrants broug",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose"
+          },
+          "published_percentages": {
+            "1": 31,
+            "2": 33,
+            "3": 18,
+            "4": 16
+          },
+          "doi": "10.17605/OSF.IO/AXG4M",
+          "question": "Allowing immigrants brought illegally to the U.S. as children to gain legal resident status.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 28
+        },
+        {
+          "year": 2024,
+          "source_code": "Q30_A",
+          "weight": "weight",
+          "expected_label": "Turning to other issues, how much do you strongly favor, favor, oppose, or stron",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose"
+          },
+          "published_percentages": {
+            "1": 17,
+            "2": 35,
+            "3": 24,
+            "4": 20
+          },
+          "doi": "10.17605/OSF.IO/UDPSG",
+          "question": "Allowing immigrants brought illegally to the U.S. as children to gain legal resident status.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 15
+        }
+      ]
+    },
+    {
+      "code": "prri_refugee_ban",
+      "family": "prri_refugee_ban",
+      "title": "Refugee entry ban",
+      "question": "Passing a law to prevent refugees from entering the U.S.",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "question_note": "Support is coded conservative (−1 to +1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2017,
+          "source_code": "Q17G",
+          "weight": "weight",
+          "expected_label": "We would like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 14,
+            "2": 22,
+            "3": 31,
+            "4": 28
+          },
+          "doi": "10.17605/OSF.IO/VCTH2",
+          "question": "Passing a law to prevent refugees from entering the U.S.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 9
+        },
+        {
+          "year": 2018,
+          "source_code": "Q35C",
+          "weight": "weight",
+          "expected_label": "We would like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "77": "Don't know (VOL.)",
+            "98": "Skipped on web",
+            "99": "Refused"
+          },
+          "published_percentages": {
+            "1": 14,
+            "2": 23,
+            "3": 34,
+            "4": 26
+          },
+          "doi": "10.17605/OSF.IO/8W3TH",
+          "question": "Passing a law to prevent refugees from entering the U.S.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 27
+        },
+        {
+          "year": 2019,
+          "source_code": "Q38_C",
+          "weight": "weight",
+          "expected_label": "Turning to the issue of immigration, do you strongly favor, favor, oppose or str",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 15,
+            "2": 20,
+            "3": 37,
+            "4": 27
+          },
+          "doi": "10.17605/OSF.IO/PH68V",
+          "question": "Passing a law to prevent refugees from entering the U.S.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 34
+        },
+        {
+          "year": 2020,
+          "source_code": "Q42C",
+          "weight": "weight",
+          "expected_label": "Turning to the issue of immigration, how much do you favor or oppose each of the",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "77": "Don't know",
+            "98": "Skipped on web"
+          },
+          "published_percentages": {
+            "1": 13,
+            "2": 23,
+            "3": 38,
+            "4": 24
+          },
+          "doi": "10.17605/OSF.IO/8RH32",
+          "question": "Passing a law to prevent refugees from entering the U.S.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 32
+        },
+        {
+          "year": 2023,
+          "source_code": "Q37_C",
+          "weight": "KP_WEIGHT",
+          "expected_label": "Turning to the issue of immigration, do you strongly favor, favor, oppose or str",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "99": "Skipped"
+          },
+          "published_percentages": {
+            "1": 14,
+            "2": 23,
+            "3": 39,
+            "4": 20
+          },
+          "doi": "10.17605/OSF.IO/WVUGF",
+          "question": "Passing a law to prevent refugees from entering the U.S.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 25
+        }
+      ]
+    },
+    {
+      "code": "prri_legal_immigration_limits",
+      "family": "prri_legal_immigration_limits",
+      "title": "Limits on legal immigration",
+      "question": "Passing a law that places stricter limits on the number of LEGAL immigrants coming to the U.S.",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "question_note": "Support is coded conservative (−1 to +1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2018,
+          "source_code": "Q35A",
+          "weight": "weight",
+          "expected_label": "We would like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "77": "Don't know (VOL.)",
+            "98": "Skipped on web",
+            "99": "Refused"
+          },
+          "published_percentages": {
+            "1": 20,
+            "2": 31,
+            "3": 30,
+            "4": 17
+          },
+          "doi": "10.17605/OSF.IO/8W3TH",
+          "question": "Passing a law that places stricter limits on the number of LEGAL immigrants coming to the U.S.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 27
+        },
+        {
+          "year": 2019,
+          "source_code": "Q38_A",
+          "weight": "weight",
+          "expected_label": "Turning to the issue of immigration, do you strongly favor, favor, oppose or str",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 18,
+            "2": 30,
+            "3": 31,
+            "4": 19
+          },
+          "doi": "10.17605/OSF.IO/PH68V",
+          "question": "Passing a law that places stricter limits on the number of LEGAL immigrants coming to the U.S.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 34
+        },
+        {
+          "year": 2023,
+          "source_code": "Q37_A",
+          "weight": "KP_WEIGHT",
+          "expected_label": "Turning to the issue of immigration, do you strongly favor, favor, oppose or str",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "99": "Skipped"
+          },
+          "published_percentages": {
+            "1": 20,
+            "2": 30,
+            "3": 31,
+            "4": 15
+          },
+          "doi": "10.17605/OSF.IO/WVUGF",
+          "question": "Passing a law that places stricter limits on the number of LEGAL immigrants coming to the U.S.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 25
+        }
+      ]
+    },
+    {
+      "code": "prri_family_separation",
+      "family": "prri_family_separation",
+      "title": "Immigration family separation",
+      "question": "An immigration border policy that separates children from their parents and charges parents as criminals when they enter the country without permission.",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "question_note": "Support is coded conservative (−1 to +1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2018,
+          "source_code": "Q35E",
+          "weight": "weight",
+          "expected_label": "We would like to get your views on some issues that are being discussed in the c",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "77": "Don't know (VOL.)",
+            "98": "Skipped on web",
+            "99": "Refused"
+          },
+          "published_percentages": {
+            "1": 11,
+            "2": 15,
+            "3": 25,
+            "4": 47
+          },
+          "doi": "10.17605/OSF.IO/8W3TH",
+          "question": "An immigration border policy that separates children from their parents and charges parents as criminals when they enter the country without permission.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 27
+        },
+        {
+          "year": 2019,
+          "source_code": "Q38_E",
+          "weight": "weight",
+          "expected_label": "Turning to the issue of immigration, do you strongly favor, favor, oppose or str",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "9": "Don't know/Refused (VOL.)"
+          },
+          "published_percentages": {
+            "1": 8,
+            "2": 15,
+            "3": 29,
+            "4": 46
+          },
+          "doi": "10.17605/OSF.IO/PH68V",
+          "question": "An immigration border policy that separates children from their parents and charges parents as criminals when they enter the country without permission.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 34
+        },
+        {
+          "year": 2020,
+          "source_code": "Q42D",
+          "weight": "weight",
+          "expected_label": "Turning to the issue of immigration, how much do you favor or oppose each of the",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "77": "Don't know",
+            "98": "Skipped on web",
+            "99": "Refused"
+          },
+          "published_percentages": {
+            "1": 6,
+            "2": 17,
+            "3": 31,
+            "4": 45
+          },
+          "doi": "10.17605/OSF.IO/8RH32",
+          "question": "An immigration border policy that separates children from their parents and charges parents as criminals when they enter the country without permission.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 32
+        }
+      ]
+    },
+    {
+      "code": "prri_lgbt_protections",
+      "family": "prri_lgbt_protections",
+      "title": "LGBT nondiscrimination protections",
+      "question": "Laws that would protect gay, lesbian, bisexual, and transgender people against discrimination in jobs, public accommodations, and housing.",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_note": "Support is coded liberal (+1 to −1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2022,
+          "source_code": "Q19_3",
+          "weight": "KP_WEIGHT",
+          "expected_label": "How much do you favor or oppose each of the following? Laws that would protect g",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Strongly favor",
+            "2": "Somewhat favor",
+            "3": "Somewhat oppose",
+            "4": "Strongly oppose"
+          },
+          "published_percentages": {
+            "1": 47,
+            "2": 29,
+            "3": 11,
+            "4": 9
+          },
+          "doi": "10.17605/OSF.IO/2CMYK",
+          "question": "Laws that would protect gay, lesbian, bisexual, and transgender people against discrimination in jobs, public accommodations, and housing.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 14
+        },
+        {
+          "year": 2023,
+          "source_code": "Q40_C",
+          "weight": "KP_WEIGHT",
+          "expected_label": "How much do you favor or oppose each of the following? Laws that would protect g",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "99": "Skipped"
+          },
+          "published_percentages": {
+            "1": 34,
+            "2": 37,
+            "3": 15,
+            "4": 9
+          },
+          "doi": "10.17605/OSF.IO/WVUGF",
+          "question": "Laws that would protect gay, lesbian, bisexual, and transgender people against discrimination in jobs, public accommodations, and housing.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 28
+        },
+        {
+          "year": 2024,
+          "source_code": "Q10_A",
+          "weight": "weight",
+          "expected_label": "How much do you favor or oppose each of the following? Laws that would protect g",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose"
+          },
+          "published_percentages": {
+            "1": 36,
+            "2": 37,
+            "3": 14,
+            "4": 9
+          },
+          "doi": "10.17605/OSF.IO/UDPSG",
+          "question": "Laws that would protect gay, lesbian, bisexual, and transgender people against discrimination in jobs, public accommodations, and housing.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 25
+        }
+      ]
+    },
+    {
+      "code": "prri_asylum_third_country",
+      "family": "prri_asylum_third_country",
+      "title": "Asylum restrictions through third countries",
+      "question": "Passing a law that prevents asylum seekers from coming to the U.S. if they haven’t first sought protection in some other country.",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "question_note": "Support is coded conservative (−1 to +1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2023,
+          "source_code": "Q37_D",
+          "weight": "KP_WEIGHT",
+          "expected_label": "Turning to the issue of immigration, do you strongly favor, favor, oppose or str",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "99": "Skipped"
+          },
+          "published_percentages": {
+            "1": 18,
+            "2": 29,
+            "3": 34,
+            "4": 14
+          },
+          "doi": "10.17605/OSF.IO/WVUGF",
+          "question": "Passing a law that prevents asylum seekers from coming to the U.S. if they haven’t first sought protection in some other country.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 25
+        }
+      ]
+    },
+    {
+      "code": "prri_dangerous_border_barriers",
+      "family": "prri_dangerous_border_barriers",
+      "title": "Dangerous border deterrents",
+      "question": "Installing deterrents such as walls, floating barriers in rivers, and razor wire to prevent immigrants from entering the country illegally, even if they endanger or kill some people.",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "question_note": "Support is coded conservative (−1 to +1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2023,
+          "source_code": "Q37_E",
+          "weight": "KP_WEIGHT",
+          "expected_label": "Turning to the issue of immigration, do you strongly favor, favor, oppose or str",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "99": "Skipped"
+          },
+          "published_percentages": {
+            "1": 23,
+            "2": 21,
+            "3": 24,
+            "4": 28
+          },
+          "doi": "10.17605/OSF.IO/WVUGF",
+          "question": "Installing deterrents such as walls, floating barriers in rivers, and razor wire to prevent immigrants from entering the country illegally, even if they endanger or kill some people.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 25
+        }
+      ]
+    },
+    {
+      "code": "prri_wealth_tax_spending",
+      "family": "prri_wealth_tax_spending",
+      "title": "Taxes on wealthy people and corporations for public spending",
+      "question": "Raising taxes on wealthy people and corporations to spend more on education and the nation’s infrastructure.",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_note": "Support is coded liberal (+1 to −1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2024,
+          "source_code": "Q30_D",
+          "weight": "weight",
+          "expected_label": "Turning to other issues, how much do you strongly favor, favor, oppose, or stron",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose"
+          },
+          "published_percentages": {
+            "1": 36,
+            "2": 32,
+            "3": 20,
+            "4": 9
+          },
+          "doi": "10.17605/OSF.IO/UDPSG",
+          "question": "Raising taxes on wealthy people and corporations to spend more on education and the nation’s infrastructure.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 15
+        }
+      ]
+    },
+    {
+      "code": "prri_deportation_camps",
+      "family": "prri_deportation_camps",
+      "title": "Deportation using military-guarded encampments",
+      "question": "Rounding up and deporting immigrants who are in the country illegally, even if it takes setting up encampments guarded by the U.S. military.",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "question_note": "Support is coded conservative (−1 to +1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2024,
+          "source_code": "Q30_E",
+          "weight": "weight",
+          "expected_label": "Turning to other issues, how much do you strongly favor, favor, oppose, or stron",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose"
+          },
+          "published_percentages": {
+            "1": 22,
+            "2": 25,
+            "3": 28,
+            "4": 22
+          },
+          "doi": "10.17605/OSF.IO/UDPSG",
+          "question": "Rounding up and deporting immigrants who are in the country illegally, even if it takes setting up encampments guarded by the U.S. military.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 15
+        }
+      ]
+    },
+    {
+      "code": "prri_fertilization_personhood",
+      "family": "prri_fertilization_personhood",
+      "title": "Legal personhood at fertilization",
+      "question": "Laws that declare that human life begins at the moment of fertilization.",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "question_note": "Support is coded conservative (−1 to +1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2024,
+          "source_code": "Q34_A",
+          "weight": "weight",
+          "expected_label": "How much do you favor or oppose each of the following? Laws that declare that hu",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose"
+          },
+          "published_percentages": {
+            "1": 19,
+            "2": 20,
+            "3": 25,
+            "4": 31
+          },
+          "doi": "10.17605/OSF.IO/UDPSG",
+          "question": "Laws that declare that human life begins at the moment of fertilization.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 21
+        }
+      ]
+    },
+    {
+      "code": "prri_abortion_providers",
+      "family": "prri_abortion_providers",
+      "title": "Local access to abortion providers",
+      "question": "Ensuring at least some health care professionals in your community provide legal abortions.",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_note": "Support is coded liberal (+1 to −1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2024,
+          "source_code": "Q34_C",
+          "weight": "weight",
+          "expected_label": "How much do you favor or oppose each of the following? Ensuring at least some he",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose"
+          },
+          "published_percentages": {
+            "1": 34,
+            "2": 31,
+            "3": 16,
+            "4": 14
+          },
+          "doi": "10.17605/OSF.IO/UDPSG",
+          "question": "Ensuring at least some health care professionals in your community provide legal abortions.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 21
+        }
+      ]
+    },
+    {
+      "code": "prri_abortion_medication_ban",
+      "family": "prri_abortion_medication_ban",
+      "title": "Abortion medication bans",
+      "question": "Laws that make it illegal to use or receive through the mail FDA-approved drugs, also known as the abortion pill, for a medical abortion.",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "question_note": "Support is coded conservative (−1 to +1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2024,
+          "source_code": "Q34_D",
+          "weight": "weight",
+          "expected_label": "How much do you favor or oppose each of the following? Laws that make it illegal",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose"
+          },
+          "published_percentages": {
+            "1": 12,
+            "2": 17,
+            "3": 28,
+            "4": 40
+          },
+          "doi": "10.17605/OSF.IO/UDPSG",
+          "question": "Laws that make it illegal to use or receive through the mail FDA-approved drugs, also known as the abortion pill, for a medical abortion.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 21
+        }
+      ]
+    },
+    {
+      "code": "prri_gender_care_ban",
+      "family": "prri_gender_care_ban",
+      "title": "Bans on gender-transition care for minors",
+      "question": "Laws that prevent parents from allowing their child to receive medical care for a gender transition.",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "question_note": "Support is coded conservative (−1 to +1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2022,
+          "source_code": "Q19_2",
+          "weight": "KP_WEIGHT",
+          "expected_label": "How much do you favor or oppose each of the following? Laws that prevent parents",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Strongly favor",
+            "2": "Somewhat favor",
+            "3": "Somewhat oppose",
+            "4": "Strongly oppose"
+          },
+          "published_percentages": {
+            "1": 27,
+            "2": 17,
+            "3": 23,
+            "4": 30
+          },
+          "doi": "10.17605/OSF.IO/2CMYK",
+          "question": "Laws that prevent parents from allowing their child to receive medical care for a gender transition.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 14
+        },
+        {
+          "year": 2023,
+          "source_code": "Q40_B",
+          "weight": "KP_WEIGHT",
+          "expected_label": "How much do you favor or oppose each of the following? Laws that prevent parents",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose",
+            "99": "Skipped"
+          },
+          "published_percentages": {
+            "1": 27,
+            "2": 22,
+            "3": 26,
+            "4": 21
+          },
+          "doi": "10.17605/OSF.IO/WVUGF",
+          "question": "Laws that prevent parents from allowing their child to receive medical care for a gender transition.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 28
+        },
+        {
+          "year": 2024,
+          "source_code": "Q10_D",
+          "weight": "weight",
+          "expected_label": "How much do you favor or oppose each of the following? Laws that prevent parents",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose"
+          },
+          "published_percentages": {
+            "1": 26,
+            "2": 21,
+            "3": 24,
+            "4": 25
+          },
+          "doi": "10.17605/OSF.IO/UDPSG",
+          "question": "Laws that prevent parents from allowing their child to receive medical care for a gender transition.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 25
+        }
+      ]
+    },
+    {
+      "code": "prri_gender_id",
+      "family": "prri_gender_id",
+      "title": "Sex-at-birth requirements on government ID",
+      "question": "Laws that require driver’s licenses or government ID to display the person’s sex at birth rather than their gender identity.",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "question_note": "Support is coded conservative (−1 to +1). Four response categories are spaced evenly; unknown, refused and missing responses are excluded. Question wording and context may vary by year; see annual sources. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2024,
+          "source_code": "Q10_E",
+          "weight": "weight",
+          "expected_label": "How much do you favor or oppose each of the following? Laws that require driver'",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Strongly favor",
+            "2": "Favor",
+            "3": "Oppose",
+            "4": "Strongly oppose"
+          },
+          "published_percentages": {
+            "1": 29,
+            "2": 28,
+            "3": 23,
+            "4": 15
+          },
+          "doi": "10.17605/OSF.IO/UDPSG",
+          "question": "Laws that require driver’s licenses or government ID to display the person’s sex at birth rather than their gender identity.",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 25
+        }
+      ]
+    },
+    {
+      "code": "prri_death_penalty",
+      "family": "prri_death_penalty",
+      "title": "Capital punishment legality",
+      "question": "Do you think capital punishment, also known as the death penalty, should be legal or illegal?",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "question_note": "Legal in all/most cases and illegal in most/all cases map to −1, −1/3, +1/3, +1 respectively. Unknown and missing answers are excluded. Coding is an analytical convention, not respondent ideology. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2024,
+          "source_code": "Q11A_B",
+          "weight": "weight",
+          "expected_label": "Do you think the following should be legal or illegal? - Capital punishment, als",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Legal in all cases",
+            "2": "Legal in most cases",
+            "3": "Illegal in most cases",
+            "4": "Illegal in all cases"
+          },
+          "published_percentages": {
+            "1": 16,
+            "2": 45,
+            "3": 24,
+            "4": 12
+          },
+          "doi": "10.17605/OSF.IO/UDPSG",
+          "question": "Do you think capital punishment, also known as the death penalty, should be legal or illegal?",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 30
+        }
+      ]
+    },
+    {
+      "code": "prri_marijuana_legality",
+      "family": "prri_marijuana_legality",
+      "title": "Marijuana legality",
+      "question": "Do you think use of marijuana or cannabis should be legal or illegal?",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_note": "Legal in all/most cases and illegal in most/all cases map to +1, +1/3, −1/3, −1 respectively. Unknown and missing answers are excluded. Coding is an analytical convention, not respondent ideology. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2024,
+          "source_code": "Q11A_D",
+          "weight": "weight",
+          "expected_label": "Do you think the following should be legal or illegal? - Use of marijuana or can",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Legal in all cases",
+            "2": "Legal in most cases",
+            "3": "Illegal in most cases",
+            "4": "Illegal in all cases"
+          },
+          "published_percentages": {
+            "1": 31,
+            "2": 35,
+            "3": 20,
+            "4": 10
+          },
+          "doi": "10.17605/OSF.IO/UDPSG",
+          "question": "Do you think use of marijuana or cannabis should be legal or illegal?",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 30
+        }
+      ]
+    },
+    {
+      "code": "prri_assisted_dying_legality",
+      "family": "prri_assisted_dying_legality",
+      "title": "Assisted dying legality",
+      "question": "Do you think allowing doctors to legally prescribe lethal drugs to help terminally ill patients end their own lives should be legal or illegal?",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_note": "Legal in all/most cases and illegal in most/all cases map to +1, +1/3, −1/3, −1 respectively. Unknown and missing answers are excluded. Coding is an analytical convention, not respondent ideology. Display wording omits introductory prompts; consult the annual questionnaire for exact wording.",
+      "weight": "Annual full-sample survey weight; see year provenance",
+      "source_url": "https://www.thearda.com/data-archive/browse-alphabetically",
+      "waves": [
+        {
+          "year": 2024,
+          "source_code": "Q11A_C",
+          "weight": "weight",
+          "expected_label": "Do you think the following should be legal or illegal? - Allowing doctors to leg",
+          "expected_labels": {
+            "-1": "Skipped",
+            "1": "Legal in all cases",
+            "2": "Legal in most cases",
+            "3": "Illegal in most cases",
+            "4": "Illegal in all cases"
+          },
+          "published_percentages": {
+            "1": 15,
+            "2": 44,
+            "3": 21,
+            "4": 16
+          },
+          "doi": "10.17605/OSF.IO/UDPSG",
+          "question": "Do you think allowing doctors to legally prescribe lethal drugs to help terminally ill patients end their own lives should be legal or illegal?",
+          "wave": "Annual American Values Survey",
+          "question_wording": "Reviewed policy wording; introductory prompts omitted",
+          "questionnaire_section_page": 30
+        }
+      ]
+    }
+  ],
+  "release": "PRRI AVS 2010–2024 reviewed policy batch",
+  "deferred": [
+    {
+      "code": "prri_abortion",
+      "year": 2022,
+      "source_code": "Q27",
+      "weight": "KP_WEIGHT",
+      "questionnaire_page": 24,
+      "reason": "Weighted illegal-in-most-cases percentage is 28.427%, versus published 29%; exceeds the unchanged 0.51 percentage-point tolerance. Excluding two system-missing responses from the denominator still does not reproduce 29%. Do not substitute published totals for microdata or infer the reason.",
+      "published_percentages": {
+        "1": 27,
+        "2": 35,
+        "3": 29,
+        "4": 8
+      }
+    },
+    {
+      "question": "prri_gay_adoption",
+      "year": 2010,
+      "source_code": "Q9B",
+      "reason": "PRRI topline mismatch: 2010 Q9B 3",
+      "published_percentages": {
+        "1": 19,
+        "2": 34,
+        "3": 20,
+        "4": 22
+      }
+    },
+    {
+      "question": "prri_lgbt_protections",
+      "year": 2017,
+      "source_code": "Q17C",
+      "reason": "PRRI topline mismatch: 2017 Q17C 1",
+      "published_percentages": {
+        "1": 38,
+        "2": 32,
+        "3": 15,
+        "4": 11
+      }
+    },
+    {
+      "question": "prri_service_refusal",
+      "year": 2017,
+      "source_code": "Q17B",
+      "reason": "PRRI topline mismatch: 2017 Q17B 1",
+      "published_percentages": {
+        "1": 13,
+        "2": 19,
+        "3": 29,
+        "4": 34
+      }
+    }
+  ]
+}

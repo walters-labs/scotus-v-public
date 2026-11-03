@@ -1006,3 +1006,52 @@ can overlap substantively and are not independent evidence.
 PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/rebind_hybrid.py --old artifacts/voter-pilot.sqlite --new artifacts/voter-policy-batch.sqlite --bundle artifacts/semantic-voter-pilot --output artifacts/semantic-voter-policy-batch-court
 PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_embeddings.py --artifact artifacts/voter-policy-batch.sqlite --bundle artifacts/semantic-voter-policy-batch-court --output artifacts/semantic-voter-policy-batch --phrases
 ```
+
+### PRRI broad policy batch (2010–2024)
+
+The reviewed batch in `data/prri/policy-batch-mappings.json` contains **35 question
+families and 83 question-year observations**, expanding the previous 3 families and
+14 observations. It retains the original estimates and adds historical marriage
+coverage (2011–2017), minimum-wage proposals, marijuana, high-income taxes,
+collective bargaining, gun control, environmental regulation, immigration policies,
+LGBT protections, abortion-access policies, assisted dying and capital punishment.
+
+All 15 raw annual files are inventoried in `data/prri/batch-review.json`. This is
+not an exhaustive substantive review of every item: selected direct-policy
+batteries have been validated, while other records are explicitly not reviewed,
+not selected or deferred. Split-form questions have not been pooled or scored as
+if they were asked of the full sample. The new historical questionnaires are
+pinned in `data/manifests/prri-all-policy-documents.json`; they are available from
+the original-questionnaire links on each saved ARDA study summary page.
+
+Each included answer category reproduces the rounded annual published percentage
+within the existing 0.51 percentage-point tolerance. The original annual
+full-sample weight is used, not a party-adjusted alternative. Grouped weighted
+category totals independently reproduce response-level scores. Display wording
+may omit introductory prompts; annual questionnaires remain authoritative.
+`data/prri/batch-validation.json` records the added estimates and deferred cases.
+Three new candidates fail validation: 2010 gay adoption, 2017 LGBT protections,
+and 2017 religious service refusal. The existing 2022 abortion discrepancy also
+remains deferred. Do not widen tolerances or substitute published totals for raw
+responses to admit these cases.
+The 2017 ARDA full codebook also pairs the Q17B/Q17C labels with distributions
+that appear reversed relative to the questionnaire toplines. This is unresolved
+source metadata, not grounds to swap response columns based on statistical fit.
+
+Positive scores denote the stated liberal policy direction by convention, not
+respondent party identification. Support for restrictive policies is reversed;
+capital-punishment legality is reversed relative to marijuana or assisted-dying
+legality. Different minimum-wage amounts, conditional childhood-arrival residency,
+religious entry bans and support-versus-legality questions remain explicitly named.
+Related policies can overlap and should not be interpreted as independent evidence.
+The number of retained matches, question composition and source coverage can change
+annual combined scores even when public attitudes do not change.
+
+```sh
+.venv/bin/python -m scvpublic.prri --documents-manifest data/manifests/prri-all-policy-documents.json --mappings data/prri/policy-batch-mappings.json --output data/processed/prri-policy-batch/public.json --base-artifact artifacts/voter-policy-batch.sqlite --artifact artifacts/prri-policy-batch.sqlite
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/rebind_hybrid.py --old artifacts/voter-policy-batch.sqlite --new artifacts/prri-policy-batch.sqlite --bundle artifacts/semantic-voter-policy-batch --output artifacts/semantic-prri-policy-batch-court
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_embeddings.py --artifact artifacts/prri-policy-batch.sqlite --bundle artifacts/semantic-prri-policy-batch-court --output artifacts/semantic-prri-policy-batch --phrases
+```
+
+The artifact replaces PRRI only. Other sources and court postings are preserved;
+raw responses, questionnaires, mapping and audit files are excluded from deployment.

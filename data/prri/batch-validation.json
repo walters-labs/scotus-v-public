@@ -1,0 +1,1236 @@
+{
+  "validated": [
+    {
+      "question": "prri_marriage",
+      "year": 2011,
+      "source_code": "Q8B",
+      "weighted_percentages": {
+        "1": 23.773542767810614,
+        "2": 24.40538226755006,
+        "3": 19.681009454328887,
+        "4": 25.663478001935534
+      },
+      "published_percentages": {
+        "1": 24,
+        "2": 24,
+        "3": 20,
+        "4": 26
+      }
+    },
+    {
+      "question": "prri_marriage",
+      "year": 2012,
+      "source_code": "legssm",
+      "weighted_percentages": {
+        "1": 23.72133071085486,
+        "2": 24.718688535660924,
+        "3": 17.998446772409952,
+        "4": 26.80119530992799
+      },
+      "published_percentages": {
+        "1": 24,
+        "2": 25,
+        "3": 18,
+        "4": 27
+      }
+    },
+    {
+      "question": "prri_marriage",
+      "year": 2013,
+      "source_code": "Q14A",
+      "weighted_percentages": {
+        "1": 25.198387260641123,
+        "2": 26.657564072083076,
+        "3": 18.91563157014443,
+        "4": 24.92490769832592
+      },
+      "published_percentages": {
+        "1": 25,
+        "2": 27,
+        "3": 19,
+        "4": 25
+      }
+    },
+    {
+      "question": "prri_marriage",
+      "year": 2014,
+      "source_code": "Q12B",
+      "weighted_percentages": {
+        "1": 23.722823183262882,
+        "2": 24.918098571574124,
+        "3": 20.411421052463417,
+        "4": 22.098158261791337
+      },
+      "published_percentages": {
+        "1": 24,
+        "2": 25,
+        "3": 20,
+        "4": 22
+      }
+    },
+    {
+      "question": "prri_marriage",
+      "year": 2015,
+      "source_code": "Q9A",
+      "weighted_percentages": {
+        "1": 30.833678709414624,
+        "2": 28.643747279917886,
+        "3": 17.21889609374741,
+        "4": 21.970544380952635
+      },
+      "published_percentages": {
+        "1": 31,
+        "2": 29,
+        "3": 17,
+        "4": 22
+      }
+    },
+    {
+      "question": "prri_marriage",
+      "year": 2016,
+      "source_code": "Q22E",
+      "weighted_percentages": {
+        "1": 33.70979755775779,
+        "2": 30.4648942179775,
+        "3": 16.298133672597935,
+        "4": 18.426633299020292
+      },
+      "published_percentages": {
+        "1": 34,
+        "2": 30,
+        "3": 16,
+        "4": 18
+      }
+    },
+    {
+      "question": "prri_marriage",
+      "year": 2017,
+      "source_code": "Q17A",
+      "weighted_percentages": {
+        "1": 31.402320516025963,
+        "2": 30.45012103026093,
+        "3": 16.801041823097304,
+        "4": 16.15024414076043
+      },
+      "published_percentages": {
+        "1": 31,
+        "2": 30,
+        "3": 17,
+        "4": 16
+      }
+    },
+    {
+      "question": "prri_minimum_wage_10",
+      "year": 2010,
+      "source_code": "Q9D",
+      "weighted_percentages": {
+        "1": 34.74901684351117,
+        "2": 32.31616828671069,
+        "3": 20.920828077465313,
+        "4": 9.631223566075537
+      },
+      "published_percentages": {
+        "1": 35,
+        "2": 32,
+        "3": 21,
+        "4": 10
+      }
+    },
+    {
+      "question": "prri_minimum_wage_10",
+      "year": 2011,
+      "source_code": "Q8C",
+      "weighted_percentages": {
+        "1": 34.85632397826249,
+        "2": 32.374562644234345,
+        "3": 18.708590783890415,
+        "4": 10.821298295243057
+      },
+      "published_percentages": {
+        "1": 35,
+        "2": 32,
+        "3": 19,
+        "4": 11
+      }
+    },
+    {
+      "question": "prri_minimum_wage_10",
+      "year": 2013,
+      "source_code": "Q14B",
+      "weighted_percentages": {
+        "1": 35.50632617220707,
+        "2": 36.428012469538025,
+        "3": 16.770002094152545,
+        "4": 7.147345229686374
+      },
+      "published_percentages": {
+        "1": 35,
+        "2": 36,
+        "3": 17,
+        "4": 7
+      }
+    },
+    {
+      "question": "prri_minimum_wage_15",
+      "year": 2016,
+      "source_code": "Q22A",
+      "weighted_percentages": {
+        "1": 32.284496390982014,
+        "2": 28.17865488163478,
+        "3": 24.638479796605814,
+        "4": 14.446415730061082
+      },
+      "published_percentages": {
+        "1": 32,
+        "2": 28,
+        "3": 25,
+        "4": 14
+      }
+    },
+    {
+      "question": "prri_marijuana_support",
+      "year": 2012,
+      "source_code": "legm",
+      "weighted_percentages": {
+        "1": 18.393928906071935,
+        "2": 25.041574162396692,
+        "3": 23.937009868060073,
+        "4": 28.205009158977905
+      },
+      "published_percentages": {
+        "1": 18,
+        "2": 25,
+        "3": 24,
+        "4": 28
+      }
+    },
+    {
+      "question": "prri_marijuana_support",
+      "year": 2013,
+      "source_code": "Q14F",
+      "weighted_percentages": {
+        "1": 19.21681286569916,
+        "2": 32.03936764886798,
+        "3": 25.161791426553304,
+        "4": 19.22548666584651
+      },
+      "published_percentages": {
+        "1": 19,
+        "2": 32,
+        "3": 25,
+        "4": 19
+      }
+    },
+    {
+      "question": "prri_marijuana_support",
+      "year": 2014,
+      "source_code": "Q12A",
+      "weighted_percentages": {
+        "1": 17.87489301094794,
+        "2": 26.340380676898565,
+        "3": 25.613454190580562,
+        "4": 24.058935658177475
+      },
+      "published_percentages": {
+        "1": 18,
+        "2": 26,
+        "3": 26,
+        "4": 24
+      }
+    },
+    {
+      "question": "prri_marijuana_support",
+      "year": 2016,
+      "source_code": "Q22F",
+      "weighted_percentages": {
+        "1": 30.85007441969382,
+        "2": 32.38000630179791,
+        "3": 18.943720642821155,
+        "4": 17.032257978403724
+      },
+      "published_percentages": {
+        "1": 31,
+        "2": 32,
+        "3": 19,
+        "4": 17
+      }
+    },
+    {
+      "question": "prri_tax_million",
+      "year": 2011,
+      "source_code": "Q8E",
+      "weighted_percentages": {
+        "1": 43.16050026055237,
+        "2": 27.306819027767435,
+        "3": 16.358036179557804,
+        "4": 10.842700811434526
+      },
+      "published_percentages": {
+        "1": 43,
+        "2": 27,
+        "3": 16,
+        "4": 11
+      }
+    },
+    {
+      "question": "prri_tax_250k",
+      "year": 2012,
+      "source_code": "inctax",
+      "weighted_percentages": {
+        "1": 32.50508597621198,
+        "2": 28.281404320336307,
+        "3": 19.03083663253505,
+        "4": 16.556224306323493
+      },
+      "published_percentages": {
+        "1": 33,
+        "2": 28,
+        "3": 19,
+        "4": 17
+      }
+    },
+    {
+      "question": "prri_tax_250k",
+      "year": 2016,
+      "source_code": "Q22D",
+      "weighted_percentages": {
+        "1": 40.921852925333106,
+        "2": 31.360367155390204,
+        "3": 18.736651350990368,
+        "4": 7.8260208984060124
+      },
+      "published_percentages": {
+        "1": 41,
+        "2": 31,
+        "3": 19,
+        "4": 8
+      }
+    },
+    {
+      "question": "prri_collective_bargaining",
+      "year": 2011,
+      "source_code": "Q8A",
+      "weighted_percentages": {
+        "1": 15.820181642224373,
+        "2": 28.166641852155134,
+        "3": 25.661616913571056,
+        "4": 23.43668577384054
+      },
+      "published_percentages": {
+        "1": 16,
+        "2": 28,
+        "3": 26,
+        "4": 23
+      }
+    },
+    {
+      "question": "prri_gay_job_protection",
+      "year": 2010,
+      "source_code": "Q9C",
+      "weighted_percentages": {
+        "1": 29.234992950953476,
+        "2": 38.751205757958004,
+        "3": 17.194108481115975,
+        "4": 10.12280181049195
+      },
+      "published_percentages": {
+        "1": 29,
+        "2": 39,
+        "3": 17,
+        "4": 10
+      }
+    },
+    {
+      "question": "prri_environment_costs",
+      "year": 2013,
+      "source_code": "Q14C",
+      "weighted_percentages": {
+        "1": 11.359010834302081,
+        "2": 41.131505868465105,
+        "3": 33.29679221445228,
+        "4": 9.970641259919578
+      },
+      "published_percentages": {
+        "1": 11,
+        "2": 41,
+        "3": 33,
+        "4": 10
+      }
+    },
+    {
+      "question": "prri_abortion_difficult",
+      "year": 2013,
+      "source_code": "Q14E",
+      "weighted_percentages": {
+        "1": 15.6386327257296,
+        "2": 22.590981597720894,
+        "3": 30.537357469766103,
+        "4": 26.315359330313512
+      },
+      "published_percentages": {
+        "1": 16,
+        "2": 23,
+        "3": 31,
+        "4": 26
+      }
+    },
+    {
+      "question": "prri_assisted_dying_support",
+      "year": 2013,
+      "source_code": "Q14G",
+      "weighted_percentages": {
+        "1": 15.031112506444876,
+        "2": 35.366953581691995,
+        "3": 26.938101896071977,
+        "4": 18.344318419004676
+      },
+      "published_percentages": {
+        "1": 15,
+        "2": 35,
+        "3": 27,
+        "4": 18
+      }
+    },
+    {
+      "question": "prri_gun_control",
+      "year": 2015,
+      "source_code": "Q9B",
+      "weighted_percentages": {
+        "1": 36.65585405705095,
+        "2": 23.00378727802564,
+        "3": 18.559258740709293,
+        "4": 21.071235709735
+      },
+      "published_percentages": {
+        "1": 37,
+        "2": 23,
+        "3": 19,
+        "4": 21
+      }
+    },
+    {
+      "question": "prri_border_wall",
+      "year": 2016,
+      "source_code": "Q22B",
+      "weighted_percentages": {
+        "1": 19.85131026186571,
+        "2": 20.715388205681414,
+        "3": 24.435581844138202,
+        "4": 34.32624626106609
+      },
+      "published_percentages": {
+        "1": 20,
+        "2": 21,
+        "3": 24,
+        "4": 34
+      }
+    },
+    {
+      "question": "prri_border_wall",
+      "year": 2017,
+      "source_code": "Q17D",
+      "weighted_percentages": {
+        "1": 18.523667567575067,
+        "2": 16.844880374395395,
+        "3": 20.900176681595518,
+        "4": 41.58415714082502
+      },
+      "published_percentages": {
+        "1": 19,
+        "2": 17,
+        "3": 21,
+        "4": 42
+      }
+    },
+    {
+      "question": "prri_border_wall",
+      "year": 2018,
+      "source_code": "Q35B",
+      "weighted_percentages": {
+        "1": 20.912426925277217,
+        "2": 19.57128736411587,
+        "3": 18.895259052268,
+        "4": 38.80692583522122
+      },
+      "published_percentages": {
+        "1": 21,
+        "2": 20,
+        "3": 19,
+        "4": 39
+      }
+    },
+    {
+      "question": "prri_border_wall",
+      "year": 2019,
+      "source_code": "Q38_B",
+      "weighted_percentages": {
+        "1": 24.25848659871017,
+        "2": 17.885990077386502,
+        "3": 19.492352927829206,
+        "4": 37.15632778796608
+      },
+      "published_percentages": {
+        "1": 24,
+        "2": 18,
+        "3": 19,
+        "4": 37
+      }
+    },
+    {
+      "question": "prri_border_wall",
+      "year": 2020,
+      "source_code": "Q42B",
+      "weighted_percentages": {
+        "1": 22.694304382383827,
+        "2": 18.804214849384362,
+        "3": 23.06238585742625,
+        "4": 34.29334679927355
+      },
+      "published_percentages": {
+        "1": 23,
+        "2": 19,
+        "3": 23,
+        "4": 34
+      }
+    },
+    {
+      "question": "prri_border_wall",
+      "year": 2021,
+      "source_code": "Q30_C",
+      "weighted_percentages": {
+        "1": 26.959404376253037,
+        "2": 17.5218024374328,
+        "3": 17.044505672529265,
+        "4": 35.53872062329839
+      },
+      "published_percentages": {
+        "1": 27,
+        "2": 18,
+        "3": 17,
+        "4": 36
+      }
+    },
+    {
+      "question": "prri_border_wall",
+      "year": 2023,
+      "source_code": "Q37_B",
+      "weighted_percentages": {
+        "1": 26.210442909825755,
+        "2": 20.80133249937931,
+        "3": 23.537503554951485,
+        "4": 26.118074567387012
+      },
+      "published_percentages": {
+        "1": 26,
+        "2": 21,
+        "3": 24,
+        "4": 26
+      }
+    },
+    {
+      "question": "prri_border_wall",
+      "year": 2024,
+      "source_code": "Q30_B",
+      "weighted_percentages": {
+        "1": 28.290306438971577,
+        "2": 22.654312393898415,
+        "3": 25.356138941043277,
+        "4": 21.1179854399621
+      },
+      "published_percentages": {
+        "1": 28,
+        "2": 23,
+        "3": 25,
+        "4": 21
+      }
+    },
+    {
+      "question": "prri_muslim_entry_ban",
+      "year": 2016,
+      "source_code": "Q22C",
+      "weighted_percentages": {
+        "1": 19.907675408875644,
+        "2": 22.89461721217838,
+        "3": 29.98016378651493,
+        "4": 25.680282231909036
+      },
+      "published_percentages": {
+        "1": 20,
+        "2": 23,
+        "3": 30,
+        "4": 26
+      }
+    },
+    {
+      "question": "prri_muslim_country_ban",
+      "year": 2017,
+      "source_code": "Q17E",
+      "weighted_percentages": {
+        "1": 15.79433513396142,
+        "2": 24.263189405919526,
+        "3": 30.39207246837938,
+        "4": 24.647196492202674
+      },
+      "published_percentages": {
+        "1": 16,
+        "2": 24,
+        "3": 30,
+        "4": 25
+      }
+    },
+    {
+      "question": "prri_muslim_country_ban",
+      "year": 2018,
+      "source_code": "Q35D",
+      "weighted_percentages": {
+        "1": 18.631157518042727,
+        "2": 29.524253748816996,
+        "3": 28.64615425475391,
+        "4": 20.912686903316267
+      },
+      "published_percentages": {
+        "1": 19,
+        "2": 30,
+        "3": 29,
+        "4": 21
+      }
+    },
+    {
+      "question": "prri_dreamers_conditional",
+      "year": 2017,
+      "source_code": "Q17F",
+      "weighted_percentages": {
+        "1": 34.43482790879759,
+        "2": 38.41101571511271,
+        "3": 12.661793030923441,
+        "4": 11.866384097626192
+      },
+      "published_percentages": {
+        "1": 34,
+        "2": 38,
+        "3": 13,
+        "4": 12
+      }
+    },
+    {
+      "question": "prri_dreamers",
+      "year": 2018,
+      "source_code": "Q35F",
+      "weighted_percentages": {
+        "1": 25.48731034452845,
+        "2": 36.93854082525854,
+        "3": 20.991854368916652,
+        "4": 14.259808966459019
+      },
+      "published_percentages": {
+        "1": 25,
+        "2": 37,
+        "3": 21,
+        "4": 14
+      }
+    },
+    {
+      "question": "prri_dreamers",
+      "year": 2019,
+      "source_code": "Q38_F",
+      "weighted_percentages": {
+        "1": 26.594079371867323,
+        "2": 36.185193943356175,
+        "3": 21.695850634413393,
+        "4": 13.687035173632392
+      },
+      "published_percentages": {
+        "1": 27,
+        "2": 36,
+        "3": 22,
+        "4": 14
+      }
+    },
+    {
+      "question": "prri_dreamers",
+      "year": 2020,
+      "source_code": "Q42A",
+      "weighted_percentages": {
+        "1": 25.994152311312316,
+        "2": 40.16474043261665,
+        "3": 21.77017268569599,
+        "4": 10.586124059607013
+      },
+      "published_percentages": {
+        "1": 26,
+        "2": 40,
+        "3": 22,
+        "4": 11
+      }
+    },
+    {
+      "question": "prri_dreamers",
+      "year": 2021,
+      "source_code": "Q30_D",
+      "weighted_percentages": {
+        "1": 31.09132322758929,
+        "2": 32.805633845047964,
+        "3": 17.716316040585973,
+        "4": 15.700458301545046
+      },
+      "published_percentages": {
+        "1": 31,
+        "2": 33,
+        "3": 18,
+        "4": 16
+      }
+    },
+    {
+      "question": "prri_dreamers",
+      "year": 2024,
+      "source_code": "Q30_A",
+      "weighted_percentages": {
+        "1": 17.459526805775024,
+        "2": 35.22925509808445,
+        "3": 24.442935435807584,
+        "4": 19.758986412065024
+      },
+      "published_percentages": {
+        "1": 17,
+        "2": 35,
+        "3": 24,
+        "4": 20
+      }
+    },
+    {
+      "question": "prri_refugee_ban",
+      "year": 2017,
+      "source_code": "Q17G",
+      "weighted_percentages": {
+        "1": 14.398212738271516,
+        "2": 22.00099930698338,
+        "3": 30.868689794428846,
+        "4": 28.00546924436622
+      },
+      "published_percentages": {
+        "1": 14,
+        "2": 22,
+        "3": 31,
+        "4": 28
+      }
+    },
+    {
+      "question": "prri_refugee_ban",
+      "year": 2018,
+      "source_code": "Q35C",
+      "weighted_percentages": {
+        "1": 13.799647492146605,
+        "2": 23.331910709747635,
+        "3": 34.37010004868619,
+        "4": 26.48668411168312
+      },
+      "published_percentages": {
+        "1": 14,
+        "2": 23,
+        "3": 34,
+        "4": 26
+      }
+    },
+    {
+      "question": "prri_refugee_ban",
+      "year": 2019,
+      "source_code": "Q38_C",
+      "weighted_percentages": {
+        "1": 14.537061172294568,
+        "2": 20.23684465845422,
+        "3": 36.982438009248284,
+        "4": 26.554582503125744
+      },
+      "published_percentages": {
+        "1": 15,
+        "2": 20,
+        "3": 37,
+        "4": 27
+      }
+    },
+    {
+      "question": "prri_refugee_ban",
+      "year": 2020,
+      "source_code": "Q42C",
+      "weighted_percentages": {
+        "1": 13.160389977378468,
+        "2": 23.037811560421847,
+        "3": 38.01049983302946,
+        "4": 24.173601463561873
+      },
+      "published_percentages": {
+        "1": 13,
+        "2": 23,
+        "3": 38,
+        "4": 24
+      }
+    },
+    {
+      "question": "prri_refugee_ban",
+      "year": 2023,
+      "source_code": "Q37_C",
+      "weighted_percentages": {
+        "1": 14.069552415321462,
+        "2": 23.445103529335633,
+        "3": 38.62496912375382,
+        "4": 19.584227211468928
+      },
+      "published_percentages": {
+        "1": 14,
+        "2": 23,
+        "3": 39,
+        "4": 20
+      }
+    },
+    {
+      "question": "prri_legal_immigration_limits",
+      "year": 2018,
+      "source_code": "Q35A",
+      "weighted_percentages": {
+        "1": 20.35019550461611,
+        "2": 30.523414785441588,
+        "3": 30.23925970956712,
+        "4": 16.918029551477055
+      },
+      "published_percentages": {
+        "1": 20,
+        "2": 31,
+        "3": 30,
+        "4": 17
+      }
+    },
+    {
+      "question": "prri_legal_immigration_limits",
+      "year": 2019,
+      "source_code": "Q38_A",
+      "weighted_percentages": {
+        "1": 18.367090041786824,
+        "2": 30.339223072752564,
+        "3": 31.276215977168572,
+        "4": 18.74286219620301
+      },
+      "published_percentages": {
+        "1": 18,
+        "2": 30,
+        "3": 31,
+        "4": 19
+      }
+    },
+    {
+      "question": "prri_legal_immigration_limits",
+      "year": 2023,
+      "source_code": "Q37_A",
+      "weighted_percentages": {
+        "1": 19.6168371214994,
+        "2": 30.4196638787187,
+        "3": 30.823208545047915,
+        "4": 15.225101250523117
+      },
+      "published_percentages": {
+        "1": 20,
+        "2": 30,
+        "3": 31,
+        "4": 15
+      }
+    },
+    {
+      "question": "prri_family_separation",
+      "year": 2018,
+      "source_code": "Q35E",
+      "weighted_percentages": {
+        "1": 10.626898843340639,
+        "2": 15.493054642451677,
+        "3": 25.05415204530454,
+        "4": 46.878890358226464
+      },
+      "published_percentages": {
+        "1": 11,
+        "2": 15,
+        "3": 25,
+        "4": 47
+      }
+    },
+    {
+      "question": "prri_family_separation",
+      "year": 2019,
+      "source_code": "Q38_E",
+      "weighted_percentages": {
+        "1": 8.184077328125625,
+        "2": 14.956504782547697,
+        "3": 28.73094984508786,
+        "4": 46.36572465464698
+      },
+      "published_percentages": {
+        "1": 8,
+        "2": 15,
+        "3": 29,
+        "4": 46
+      }
+    },
+    {
+      "question": "prri_family_separation",
+      "year": 2020,
+      "source_code": "Q42D",
+      "weighted_percentages": {
+        "1": 6.364644153139506,
+        "2": 16.56387327430857,
+        "3": 31.048094097174733,
+        "4": 44.78805068461362
+      },
+      "published_percentages": {
+        "1": 6,
+        "2": 17,
+        "3": 31,
+        "4": 45
+      }
+    },
+    {
+      "question": "prri_lgbt_protections",
+      "year": 2022,
+      "source_code": "Q19_3",
+      "weighted_percentages": {
+        "1": 46.735328326462216,
+        "2": 28.97711632523114,
+        "3": 11.30735856269492,
+        "4": 9.049252685147184
+      },
+      "published_percentages": {
+        "1": 47,
+        "2": 29,
+        "3": 11,
+        "4": 9
+      }
+    },
+    {
+      "question": "prri_lgbt_protections",
+      "year": 2023,
+      "source_code": "Q40_C",
+      "weighted_percentages": {
+        "1": 33.61969248862763,
+        "2": 37.42911928728059,
+        "3": 15.354717128040393,
+        "4": 9.013341112609417
+      },
+      "published_percentages": {
+        "1": 34,
+        "2": 37,
+        "3": 15,
+        "4": 9
+      }
+    },
+    {
+      "question": "prri_lgbt_protections",
+      "year": 2024,
+      "source_code": "Q10_A",
+      "weighted_percentages": {
+        "1": 36.28480524860467,
+        "2": 36.95777917110807,
+        "3": 14.124886983949736,
+        "4": 8.577142104100682
+      },
+      "published_percentages": {
+        "1": 36,
+        "2": 37,
+        "3": 14,
+        "4": 9
+      }
+    },
+    {
+      "question": "prri_asylum_third_country",
+      "year": 2023,
+      "source_code": "Q37_D",
+      "weighted_percentages": {
+        "1": 17.837288113307597,
+        "2": 29.23864968992269,
+        "3": 33.976326250862726,
+        "4": 14.05446726262459
+      },
+      "published_percentages": {
+        "1": 18,
+        "2": 29,
+        "3": 34,
+        "4": 14
+      }
+    },
+    {
+      "question": "prri_dangerous_border_barriers",
+      "year": 2023,
+      "source_code": "Q37_E",
+      "weighted_percentages": {
+        "1": 22.65103598246542,
+        "2": 21.380350481681322,
+        "3": 24.131598769156096,
+        "4": 28.418102927790912
+      },
+      "published_percentages": {
+        "1": 23,
+        "2": 21,
+        "3": 24,
+        "4": 28
+      }
+    },
+    {
+      "question": "prri_wealth_tax_spending",
+      "year": 2024,
+      "source_code": "Q30_D",
+      "weighted_percentages": {
+        "1": 36.16647390091337,
+        "2": 32.3179052158263,
+        "3": 19.876323739813937,
+        "4": 9.183421399078211
+      },
+      "published_percentages": {
+        "1": 36,
+        "2": 32,
+        "3": 20,
+        "4": 9
+      }
+    },
+    {
+      "question": "prri_deportation_camps",
+      "year": 2024,
+      "source_code": "Q30_E",
+      "weighted_percentages": {
+        "1": 21.934817590707546,
+        "2": 25.062378021187687,
+        "3": 27.51174779292539,
+        "4": 22.48066346272116
+      },
+      "published_percentages": {
+        "1": 22,
+        "2": 25,
+        "3": 28,
+        "4": 22
+      }
+    },
+    {
+      "question": "prri_fertilization_personhood",
+      "year": 2024,
+      "source_code": "Q34_A",
+      "weighted_percentages": {
+        "1": 18.95220843671437,
+        "2": 20.243808428216614,
+        "3": 25.471327541473098,
+        "4": 31.40049394196228
+      },
+      "published_percentages": {
+        "1": 19,
+        "2": 20,
+        "3": 25,
+        "4": 31
+      }
+    },
+    {
+      "question": "prri_abortion_providers",
+      "year": 2024,
+      "source_code": "Q34_C",
+      "weighted_percentages": {
+        "1": 34.250139849450456,
+        "2": 31.17683945492356,
+        "3": 16.426121625851156,
+        "4": 14.442360511115341
+      },
+      "published_percentages": {
+        "1": 34,
+        "2": 31,
+        "3": 16,
+        "4": 14
+      }
+    },
+    {
+      "question": "prri_abortion_medication_ban",
+      "year": 2024,
+      "source_code": "Q34_D",
+      "weighted_percentages": {
+        "1": 11.679186864781318,
+        "2": 16.55472015321061,
+        "3": 28.147744920955144,
+        "4": 39.92883751441726
+      },
+      "published_percentages": {
+        "1": 12,
+        "2": 17,
+        "3": 28,
+        "4": 40
+      }
+    },
+    {
+      "question": "prri_gender_care_ban",
+      "year": 2022,
+      "source_code": "Q19_2",
+      "weighted_percentages": {
+        "1": 26.65470999895165,
+        "2": 16.84447420619782,
+        "3": 22.65661963072129,
+        "4": 29.58182512521306
+      },
+      "published_percentages": {
+        "1": 27,
+        "2": 17,
+        "3": 23,
+        "4": 30
+      }
+    },
+    {
+      "question": "prri_gender_care_ban",
+      "year": 2023,
+      "source_code": "Q40_B",
+      "weighted_percentages": {
+        "1": 27.192150112675282,
+        "2": 21.82124565341464,
+        "3": 25.758533873652954,
+        "4": 20.592235411708828
+      },
+      "published_percentages": {
+        "1": 27,
+        "2": 22,
+        "3": 26,
+        "4": 21
+      }
+    },
+    {
+      "question": "prri_gender_care_ban",
+      "year": 2024,
+      "source_code": "Q10_D",
+      "weighted_percentages": {
+        "1": 25.676237652455242,
+        "2": 20.988179888386885,
+        "3": 23.980727373345466,
+        "4": 24.607942746245037
+      },
+      "published_percentages": {
+        "1": 26,
+        "2": 21,
+        "3": 24,
+        "4": 25
+      }
+    },
+    {
+      "question": "prri_gender_id",
+      "year": 2024,
+      "source_code": "Q10_E",
+      "weighted_percentages": {
+        "1": 29.107430069249,
+        "2": 28.047784257612747,
+        "3": 22.72771478757691,
+        "4": 15.08097161264022
+      },
+      "published_percentages": {
+        "1": 29,
+        "2": 28,
+        "3": 23,
+        "4": 15
+      }
+    },
+    {
+      "question": "prri_death_penalty",
+      "year": 2024,
+      "source_code": "Q11A_B",
+      "weighted_percentages": {
+        "1": 15.59374016314969,
+        "2": 45.087827173863225,
+        "3": 23.55833055695965,
+        "4": 12.040726118115018
+      },
+      "published_percentages": {
+        "1": 16,
+        "2": 45,
+        "3": 24,
+        "4": 12
+      }
+    },
+    {
+      "question": "prri_marijuana_legality",
+      "year": 2024,
+      "source_code": "Q11A_D",
+      "weighted_percentages": {
+        "1": 31.01346704570715,
+        "2": 35.36005280114353,
+        "3": 19.974673791896283,
+        "4": 10.266764870356164
+      },
+      "published_percentages": {
+        "1": 31,
+        "2": 35,
+        "3": 20,
+        "4": 10
+      }
+    },
+    {
+      "question": "prri_assisted_dying_legality",
+      "year": 2024,
+      "source_code": "Q11A_C",
+      "weighted_percentages": {
+        "1": 15.328837585418686,
+        "2": 43.58285482265872,
+        "3": 21.174766026483567,
+        "4": 16.177924935911406
+      },
+      "published_percentages": {
+        "1": 15,
+        "2": 44,
+        "3": 21,
+        "4": 16
+      }
+    }
+  ],
+  "deferred": [
+    {
+      "question": "prri_gay_adoption",
+      "year": 2010,
+      "source_code": "Q9B",
+      "reason": "PRRI topline mismatch: 2010 Q9B 3",
+      "published_percentages": {
+        "1": 19,
+        "2": 34,
+        "3": 20,
+        "4": 22
+      },
+      "weighted_percentages": {
+        "1": 18.850634414187134,
+        "2": 33.73432514654596,
+        "3": 20.60083846553387,
+        "4": 21.66747050530533
+      },
+      "max_difference_pp": 0.6008384655338688
+    },
+    {
+      "question": "prri_lgbt_protections",
+      "year": 2017,
+      "source_code": "Q17C",
+      "reason": "PRRI topline mismatch: 2017 Q17C 1",
+      "published_percentages": {
+        "1": 38,
+        "2": 32,
+        "3": 15,
+        "4": 11
+      },
+      "weighted_percentages": {
+        "1": 13.069009636061272,
+        "2": 18.82830364667802,
+        "3": 29.09471187507157,
+        "4": 34.10318835193198
+      },
+      "max_difference_pp": 24.930990363938726
+    },
+    {
+      "question": "prri_service_refusal",
+      "year": 2017,
+      "source_code": "Q17B",
+      "reason": "PRRI topline mismatch: 2017 Q17B 1",
+      "published_percentages": {
+        "1": 13,
+        "2": 19,
+        "3": 29,
+        "4": 34
+      },
+      "weighted_percentages": {
+        "1": 38.45565169119433,
+        "2": 31.995961167295164,
+        "3": 14.715459025441913,
+        "4": 10.716274677077633
+      },
+      "max_difference_pp": 25.455651691194333
+    }
+  ]
+}
