@@ -1055,3 +1055,54 @@ PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_embedd
 
 The artifact replaces PRRI only. Other sources and court postings are preserved;
 raw responses, questionnaires, mapping and audit files are excluded from deployment.
+
+### CES climate batch
+
+`data/ces/climate-mappings.json` adds four families, represented by six question
+records and 13 question-year observations. CES grows from 29 to 35 records,
+27 to 31 families, and 163 to 176 question-year observations:
+
+- Climate belief and willingness to act: 2010, 2012, 2022. Five ordered responses
+  map to +1, +0.5, 0, -0.5, -1. This mixes beliefs with willingness to act;
+  the midpoint means more research before action, not measured ideological neutrality.
+- Vehicle fuel efficiency: 2014–2018 and 2020–2022. Separate records preserve
+  the 35-mpg increase, 2018 reduction to 25 mpg (reverse scored), and later 54.5-mpg
+  increase. They share one family and have no overlapping years.
+- Rejoining the Paris Climate Agreement: 2022.
+- Federal clean-energy purchasing, electric vehicles and efficient buildings: 2022.
+
+The last two are evaluations of specific executive decisions. Support is coded
+liberal by the project's explicit policy convention. They are not repeated
+general climate-attitude measurements.
+
+The builder verifies pinned source hashes, cumulative response labels, all
+13 published unweighted category-count tables, unique respondent/weight joins,
+and weighted means calculated both by response and grouped category totals.
+The cumulative `weight` and annual pre-election `commonweight` retain positive
+finite weights; skipped/missing answers are excluded. Count agreement checks
+the import, not sampling uncertainty or ideological validity. Results are in
+`data/ces/climate-batch-validation.json`.
+
+Reviewed source pages: cumulative guide tables 15–16 and 19–20 (PDF pages
+17–20); 2022 pre-election questionnaire PDF pages 40, 41 and 48. Its guide
+confirms `commonweight` for pre-election adult population estimates.
+2006–2007 remain outside this batch's weighting/scale review; 2009 and 2011
+climate-scale wording is incomplete in the cumulative guide and remains deferred.
+The ANES cumulative metadata contains no additional explicitly climate-focused
+item; its broad environmental questions are already mapped.
+
+The earlier coverage summary understated climate-related content: existing CES
+carbon-regulation and renewable-energy items already span 2014–2024, but were
+not selected by the literal search `climate change`. Search-selected coverage
+must not be interpreted as a complete inventory of related policy content.
+This batch adds data without changing retrieval thresholds or adding query aliases.
+
+```sh
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_ces_climate.py --base-artifact artifacts/prri-policy-batch.sqlite --artifact artifacts/ces-climate-batch.sqlite --output data/processed/ces-climate-batch/public.json --audit data/ces/climate-batch-validation.json
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/rebind_hybrid.py --old artifacts/prri-policy-batch.sqlite --new artifacts/ces-climate-batch.sqlite --bundle artifacts/semantic-prri-policy-batch --output artifacts/semantic-ces-climate-batch-court
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_embeddings.py --artifact artifacts/ces-climate-batch.sqlite --bundle artifacts/semantic-ces-climate-batch-court --output artifacts/semantic-ces-climate-batch --phrases
+```
+
+Use a fresh audit output path when rebuilding: the builder refuses to overwrite
+existing outputs. The base artifact preserves every existing source, including
+the deployed PRRI expansion; no historical CES estimates are replaced.

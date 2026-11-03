@@ -1,0 +1,192 @@
+{
+  "sources": {
+    "data/raw/ces-policy/responses.dta": "0264338e7298450e42c63a2431273f7ad4b04be90d5075e0ba4b64c48ca5cfdd",
+    "data/raw/ces-policy/guide.pdf": "3cb04fd6c5e10d7f94139d5c12eaec5fb420a362efad50d5a6f76e85adfc4dbd",
+    "data/raw/ces-policy/common.feather": "543838b1116aa97e2e3e8976b9c5bf0224253233fa38757805b1cbff43db46ec",
+    "data/raw/ces-policy/common-guide.pdf": "07ca96d8b2c4ed64f1cfeff4d140dc1a5a4ade4ecf8446ff4e50207c56f7b003",
+    "artifacts/prri-policy-batch.sqlite": "0e9fe8e78d6e2022d08502df9362df595b23037e9dc769b53134c24c3f06afb8",
+    "data/ces/climate-mappings.json": "a592ff98365b40ac6d346efc9cdfcc9dc1f9437ea2017d5148383385ba8b5bcb",
+    "data/manifests/ces-policy-v3.json": "dbe3b0f0bae8bdb19c91b241de1bcd58e5e6550d2adce820618745fcb21d15e8",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/build_ces_climate.py": "823d038289f0e59566bb76a76e81055b2073afcfaf5c0a6fc81d7e4f592f49de",
+    "data/raw/ces-2022-v4/responses.csv": "dcdaeba631e0bdf50f3d7dcf4dcde7cc980e4281ff5dab87efcaa7353ca089bc",
+    "data/raw/ces-2022-v4/pre-election-questionnaire.pdf": "0e01ab38d1dd2ee9a9c4a4529032ab96c34c5f4661d3be61389ac8701f20cfbf",
+    "data/raw/ces-2022-v4/guide.pdf": "4ee48162508bfa5a53017a4f87373f53e83a206934ff9755de890e37595a3460",
+    "data/manifests/ces-2022-v4.json": "a6f45f23fa66e5982e44b170a225ef97a37ecc7b54faa360f2a6f27a31a2b6d9"
+  },
+  "checks": [
+    {
+      "code": "climate_action_scale",
+      "year": 2010,
+      "frequencies": {
+        "1": 15409,
+        "2": 13853,
+        "4": 11095,
+        "3": 10730,
+        "5": 4201
+      },
+      "weighted_mean": 0.2695075019326726,
+      "valid_responses": 55149,
+      "invalid_weight_responses": 139
+    },
+    {
+      "code": "climate_action_scale",
+      "year": 2012,
+      "frequencies": {
+        "2": 16378,
+        "1": 14764,
+        "3": 11461,
+        "4": 8693,
+        "5": 3075
+      },
+      "weighted_mean": 0.30881405613622703,
+      "valid_responses": 54371,
+      "invalid_weight_responses": 0
+    },
+    {
+      "code": "fuel_efficiency_35",
+      "year": 2014,
+      "frequencies": {
+        "1": 39160,
+        "2": 16279
+      },
+      "weighted_mean": 0.38735880697028435,
+      "valid_responses": 55439,
+      "invalid_weight_responses": 0
+    },
+    {
+      "code": "fuel_efficiency_35",
+      "year": 2015,
+      "frequencies": {
+        "1": 9634,
+        "2": 4430
+      },
+      "weighted_mean": 0.3717684000027464,
+      "valid_responses": 14064,
+      "invalid_weight_responses": 0
+    },
+    {
+      "code": "fuel_efficiency_35",
+      "year": 2016,
+      "frequencies": {
+        "1": 45022,
+        "2": 19522
+      },
+      "weighted_mean": 0.3613372391395033,
+      "valid_responses": 64544,
+      "invalid_weight_responses": 0
+    },
+    {
+      "code": "fuel_efficiency_35",
+      "year": 2017,
+      "frequencies": {
+        "1": 12533,
+        "2": 5654
+      },
+      "weighted_mean": 0.3783380978840023,
+      "valid_responses": 18187,
+      "invalid_weight_responses": 0
+    },
+    {
+      "code": "fuel_efficiency_lower",
+      "year": 2018,
+      "frequencies": {
+        "2": 34966,
+        "1": 16535
+      },
+      "weighted_mean": 0.32198442224851154,
+      "valid_responses": 51501,
+      "invalid_weight_responses": 0
+    },
+    {
+      "code": "fuel_efficiency_54",
+      "year": 2020,
+      "frequencies": {
+        "1": 41788,
+        "2": 19187
+      },
+      "weighted_mean": 0.3077841977435469,
+      "valid_responses": 60975,
+      "invalid_weight_responses": 0
+    },
+    {
+      "code": "fuel_efficiency_54",
+      "year": 2021,
+      "frequencies": {
+        "1": 16967,
+        "2": 8733
+      },
+      "weighted_mean": 0.2763587007458028,
+      "valid_responses": 25700,
+      "invalid_weight_responses": 0
+    },
+    {
+      "code": "climate_action_scale",
+      "year": 2022,
+      "frequencies": {
+        "1": 27298,
+        "2": 12667,
+        "3": 9098,
+        "4": 7144,
+        "5": 3685
+      },
+      "weighted_mean": 0.39383228965202827,
+      "valid_responses": 59892,
+      "invalid_weight_responses": 0
+    },
+    {
+      "code": "fuel_efficiency_54",
+      "year": 2022,
+      "frequencies": {
+        "1": 40788,
+        "2": 19208
+      },
+      "weighted_mean": 0.33258354376060195,
+      "valid_responses": 59996,
+      "invalid_weight_responses": 0
+    },
+    {
+      "code": "paris_climate_agreement",
+      "year": 2022,
+      "frequencies": {
+        "1": 37955,
+        "2": 21797
+      },
+      "weighted_mean": 0.197031433144139,
+      "valid_responses": 59752,
+      "invalid_weight_responses": 0
+    },
+    {
+      "code": "federal_clean_energy",
+      "year": 2022,
+      "frequencies": {
+        "1": 36897,
+        "2": 22903
+      },
+      "weighted_mean": 0.1759417538487129,
+      "valid_responses": 59800,
+      "invalid_weight_responses": 0
+    }
+  ],
+  "deferred": [
+    {
+      "source_code": "enviro_scale",
+      "years": [
+        2006,
+        2007
+      ],
+      "reason": "Earlier four-category format and prior wave-specific weighting review remain outside this batch."
+    },
+    {
+      "source_code": "enviro_scale",
+      "years": [
+        2009,
+        2011
+      ],
+      "reason": "Guide table 16 gives topic labels only, not full annual wording."
+    },
+    {
+      "source": "ANES cumulative",
+      "reason": "No unused explicitly climate-focused variables identified in current cumulative metadata; broad environmental items already mapped."
+    }
+  ]
+}

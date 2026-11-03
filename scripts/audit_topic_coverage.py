@@ -7,24 +7,33 @@ from scvpublic.build import digest
 from scvpublic.hybrid import HybridSearch, chart_matches, CHART_CUTOFF
 from scvpublic.store import connect, survey_search, series, court_counts
 from scvpublic.chart import combine_sources
+from scvpublic.survey_search import SurveySearch
 
-TOPICS = ['abortion', 'gun control', 'gay marriage', 'death penalty', 'immigration', 'environmental regulation']
-CORPORA = {'public':'ANES', 'gss':'GSS', 'ces':'CES', 'pew':'Pew', 'wvs':'WVS'}
+TOPICS = ['abortion', 'gun control', 'gay marriage', 'death penalty', 'immigration', 'environmental regulation', 'climate change', 'healthcare', 'contraception', 'minimum wage', 'marijuana', 'civil rights', 'taxes', 'education']
+CORPORA = {'public':'ANES', 'gss':'GSS', 'ces':'CES', 'pew':'Pew', 'wvs':'WVS', 'prri':'PRRI', 'nationscape':'Nationscape', 'voter':'VOTER'}
 
 
 def audit(artifact, bundle):
     engine = HybridSearch(bundle, artifact)
+    surveys = SurveySearch(bundle, artifact, engine.encoder)
     results = {}
+    inventory = {}
     with closing(connect(artifact)) as db:
         available = {c for c, in db.execute('SELECT DISTINCT corpus FROM documents')}
+        for corpus, name in CORPORA.items():
+            docs = [json.loads(p) for p, in db.execute('SELECT payload FROM documents WHERE corpus=?', (corpus,))]
+            years = sorted({int(y) for d in docs for y in d.get('years', {})})
+            inventory[name] = dict(questions=len(docs), families=len({d.get('family', d['code']) for d in docs}),
+                question_years=sum(len(d.get('years', {})) for d in docs), years=years)
         for topic in TOPICS:
+            matches = surveys.search([topic])
             courts = chart_matches(engine.search([topic]))
             court_series = series(courts, [])[0]
             sources, details = {}, {}
             for corpus, name in CORPORA.items():
                 if corpus not in available:
                     continue
-                hits = survey_search(db, corpus, [topic])
+                hits = matches.get(corpus, [])
                 sources[name] = series([], hits)[1]
                 details[name] = dict(matched_variables=len(hits),
                     matched_families=len({h.get('family',h['code']) for h in hits}),
@@ -42,7 +51,7 @@ def audit(artifact, bundle):
                     for a,b in zip(years,years[1:]) if set(contributors[a])!=set(contributors[b])],
                 gaps_over_five_years=[[a,b] for a,b in zip(years,years[1:]) if b-a>5])
     return dict(artifact_sha256=digest(artifact), bundle_manifest_sha256=digest(bundle/'manifest.json'),
-        court_threshold=CHART_CUTOFF, survey_limit_per_source=10, topics=results,
+        court_threshold=CHART_CUTOFF, survey_search="deployed hybrid", survey_limit_per_source=10, inventory=inventory, topics=results,
         limitations=['Counts are search-conditioned, not a complete topic census.',
             'Question respondent counts are not independent samples and must not be summed across items.',
             'Court polarity includes vote margin and is not a binary liberal/conservative outcome.',

@@ -1,0 +1,290 @@
+{
+  "version": "explicit-ces-v1",
+  "notes": "Reviewed cumulative CES climate-action and fuel-efficiency extension. Preserve existing CES estimates. Full sample pre-election/single-wave weights; invalid weights and missing responses excluded. Fuel-efficiency variants share one family and do not overlap in year.",
+  "entries": [
+    {
+      "code": "climate_action_scale",
+      "source_code": "enviro_scale",
+      "title": "Climate change: belief and willingness to act",
+      "question": "From what you know about global climate change or global warming, which statement comes closest to your opinion: immediate action is necessary; some action should be taken; more research is necessary before taking action; concern is exaggerated and no action is necessary; or climate change is not occurring?",
+      "scores": {
+        "1": 1,
+        "2": 0.5,
+        "3": 0,
+        "4": -0.5,
+        "5": -1
+      },
+      "family": "ces:climate_action",
+      "priority": 0,
+      "weight": "weight",
+      "measurement_type": "belief_and_policy",
+      "rationale": "Five ordered responses mapped to equally spaced scores from +1 (immediate action) to -1 (climate change not occurring). This mixes belief and willingness to act, not support for one specific policy. More research is the scale midpoint, not an observed ideological neutrality. Guide tables 15\u201316, pages 17\u201318.",
+      "question_note": "Five ordered responses mapped to equally spaced scores from +1 (immediate action) to -1 (climate change not occurring). This mixes belief and willingness to act, not support for one specific policy. More research is the scale midpoint, not an observed ideological neutrality. Guide tables 15\u201316, pages 17\u201318.",
+      "source_url": "https://doi.org/10.7910/DVN/OSXDQO",
+      "years": [
+        2010,
+        2012
+      ],
+      "published_counts": {
+        "2010": {
+          "1": 15409,
+          "2": 13853,
+          "3": 10730,
+          "4": 11095,
+          "5": 4201
+        },
+        "2012": {
+          "1": 14764,
+          "2": 16378,
+          "3": 11461,
+          "4": 8693,
+          "5": 3075
+        }
+      },
+      "expected_labels": {
+        "1": "Immediate action",
+        "2": "Some action",
+        "3": "More research needed",
+        "4": "No action necessary",
+        "5": "Climate change not occurring"
+      },
+      "original_codes": {
+        "2010": "cc321",
+        "2012": "CC321"
+      }
+    },
+    {
+      "code": "fuel_efficiency_35",
+      "source_code": "enviro_mpg_raise",
+      "title": "Vehicle fuel-efficiency standards: 35 mpg",
+      "question": "Support or oppose raising required fuel efficiency for the average automobile from 25 mpg to 35 mpg?",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "family": "ces:fuel_efficiency",
+      "priority": 0,
+      "weight": "weight",
+      "measurement_type": "policy",
+      "rationale": "Support for higher fuel-efficiency standards is coded liberal. Guide tables 19\u201320, pages 19\u201320.",
+      "question_note": "Support for higher fuel-efficiency standards is coded liberal. Guide tables 19\u201320, pages 19\u201320.",
+      "source_url": "https://doi.org/10.7910/DVN/OSXDQO",
+      "years": [
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "published_counts": {
+        "2014": {
+          "1": 39160,
+          "2": 16279
+        },
+        "2015": {
+          "1": 9634,
+          "2": 4430
+        },
+        "2016": {
+          "1": 45022,
+          "2": 19522
+        },
+        "2017": {
+          "1": 12533,
+          "2": 5654
+        }
+      },
+      "expected_labels": {
+        "1": "Support",
+        "2": "Oppose"
+      },
+      "original_codes": {
+        "2014": "CC14_326_2",
+        "2015": "CC15_323_2",
+        "2016": "CC16_333b",
+        "2017": "CC17_333b"
+      }
+    },
+    {
+      "code": "fuel_efficiency_lower",
+      "source_code": "enviro_mpg_raise",
+      "title": "Vehicle fuel-efficiency standards: lowering to 25 mpg",
+      "question": "Support or oppose lowering required fuel efficiency for the average automobile from 35 mpg to 25 mpg?",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "family": "ces:fuel_efficiency",
+      "priority": 0,
+      "weight": "weight",
+      "measurement_type": "policy",
+      "rationale": "2018 asks about LOWERING standards. Support is coded conservative, the reverse of the other years. Guide tables 19\u201320, pages 19\u201320.",
+      "question_note": "2018 asks about LOWERING standards. Support is coded conservative, the reverse of the other years. Guide tables 19\u201320, pages 19\u201320.",
+      "source_url": "https://doi.org/10.7910/DVN/OSXDQO",
+      "years": [
+        2018
+      ],
+      "published_counts": {
+        "2018": {
+          "1": 16535,
+          "2": 34966
+        }
+      },
+      "expected_labels": {
+        "1": "Support",
+        "2": "Oppose"
+      },
+      "original_codes": {
+        "2018": "CC18_415b"
+      }
+    },
+    {
+      "code": "fuel_efficiency_54",
+      "source_code": "enviro_mpg_raise",
+      "title": "Vehicle fuel-efficiency standards: 54.5 mpg",
+      "question": "Support or oppose raising average fuel efficiency for all cars and trucks in the US from 40 mpg to 54.5 mpg by 2025?",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "family": "ces:fuel_efficiency",
+      "priority": 0,
+      "weight": "weight",
+      "measurement_type": "policy",
+      "rationale": "Support for higher fuel-efficiency standards is coded liberal. Different target and vehicle scope from 2014\u20132018. Guide tables 19\u201320, pages 19\u201320.",
+      "question_note": "Support for higher fuel-efficiency standards is coded liberal. Different target and vehicle scope from 2014\u20132018. Guide tables 19\u201320, pages 19\u201320.",
+      "source_url": "https://doi.org/10.7910/DVN/OSXDQO",
+      "years": [
+        2020,
+        2021
+      ],
+      "published_counts": {
+        "2020": {
+          "1": 41788,
+          "2": 19187
+        },
+        "2021": {
+          "1": 16967,
+          "2": 8733
+        }
+      },
+      "expected_labels": {
+        "1": "Support",
+        "2": "Oppose"
+      },
+      "original_codes": {
+        "2020": "CC20_333d",
+        "2021": "CC21_324d"
+      }
+    }
+  ],
+  "deferred": [
+    {
+      "source_code": "enviro_scale",
+      "years": [
+        2006,
+        2007
+      ],
+      "reason": "Earlier four-category format and prior wave-specific weighting review remain outside this batch."
+    },
+    {
+      "source_code": "enviro_scale",
+      "years": [
+        2009,
+        2011
+      ],
+      "reason": "Guide table 16 gives topic labels only, not full annual wording."
+    },
+    {
+      "source": "ANES cumulative",
+      "reason": "No unused explicitly climate-focused variables identified in current cumulative metadata; broad environmental items already mapped."
+    }
+  ],
+  "annual": {
+    "year": 2022,
+    "doi": "10.7910/DVN/PR4L8P",
+    "wave": "pre-election",
+    "weight": "commonweight",
+    "manifest": "data/manifests/ces-2022-v4.json",
+    "entries": [
+      {
+        "source_code": "CC22_333",
+        "code": "climate_action_scale",
+        "title": "Climate change: belief and willingness to act",
+        "question_text": "From what you know about global climate change or global warming, which statement comes closest to your opinion: immediate action is necessary; some action should be taken; more research is necessary before taking action; concern is exaggerated and no action is necessary; or climate change is not occurring?",
+        "scores": {
+          "1": 1,
+          "2": 0.5,
+          "3": 0,
+          "4": -0.5,
+          "5": -1
+        },
+        "family": "ces:climate_action",
+        "existing_item": true,
+        "harmonization": "Five ordered responses mapped to equally spaced scores from +1 (immediate action) to -1 (climate change not occurring). This mixes belief and willingness to act, not support for one specific policy. More research is the scale midpoint, not an observed ideological neutrality. Guide tables 15\u201316, pages 17\u201318.",
+        "published_counts": {
+          "1": 27298,
+          "2": 12667,
+          "3": 9098,
+          "4": 7144,
+          "5": 3685
+        }
+      },
+      {
+        "source_code": "CC22_333d",
+        "code": "fuel_efficiency_54",
+        "title": "Vehicle fuel-efficiency standards: 54.5 mpg",
+        "question_text": "Raise the average fuel efficiency for all cars and trucks in the US from 40 miles per gallon to 54.5 miles per gallon by 2025",
+        "scores": {
+          "1": 1,
+          "2": -1
+        },
+        "family": "ces:fuel_efficiency",
+        "existing_item": true,
+        "harmonization": "Support for higher fuel-efficiency standards is coded liberal. Different target and vehicle scope from 2014\u20132018. Guide tables 19\u201320, pages 19\u201320.",
+        "published_counts": {
+          "1": 40788,
+          "2": 19208
+        }
+      },
+      {
+        "source_code": "CC22_355a",
+        "code": "paris_climate_agreement",
+        "title": "Paris Climate Agreement",
+        "question_text": "The United States re-joins the Paris Climate Agreement",
+        "scores": {
+          "1": 1,
+          "2": -1
+        },
+        "family": "ces:paris_climate_agreement",
+        "existing_item": false,
+        "harmonization": "Support for this climate/clean-energy policy is coded liberal; opposition conservative. This is support for a specific 2022 executive decision, not a general climate belief.",
+        "published_counts": {
+          "1": 37955,
+          "2": 21797
+        }
+      },
+      {
+        "source_code": "CC22_355c",
+        "code": "federal_clean_energy",
+        "title": "Federal clean-energy purchasing",
+        "question_text": "Order all federal agencies to buy clean energy, purchase electric vehicles, and make federal buildings energy efficient",
+        "scores": {
+          "1": 1,
+          "2": -1
+        },
+        "family": "ces:federal_clean_energy",
+        "existing_item": false,
+        "harmonization": "Support for this climate/clean-energy policy is coded liberal; opposition conservative. This is support for a specific 2022 executive decision, not a general climate belief.",
+        "published_counts": {
+          "1": 36897,
+          "2": 22903
+        }
+      }
+    ],
+    "reviewed_questionnaire_pdf_pages": [
+      40,
+      41,
+      48
+    ]
+  }
+}
