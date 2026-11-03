@@ -14,9 +14,9 @@ def combine_sources(sources):
 
 
 def chart(court, public, counts=None, gss=None, ces=None, view="all", pew=None, wvs=None,
-          question_ids=None, prri=None, nationscape=None):
+          question_ids=None, prri=None, nationscape=None, voter=None):
     sources = {'ANES': public}
-    colors = {'ANES': '#2467ad', 'GSS': '#28734f', 'CES': '#8051a4', 'Pew': '#9c620b', 'WVS': '#007f89', 'PRRI': '#a34376', 'Nationscape': '#697329'}
+    colors = {'ANES': '#2467ad', 'GSS': '#28734f', 'CES': '#8051a4', 'Pew': '#9c620b', 'WVS': '#007f89', 'PRRI': '#a34376', 'Nationscape': '#697329', 'VOTER': '#765642'}
     if gss is not None:
         sources['GSS'] = gss
     if ces is not None:
@@ -29,6 +29,8 @@ def chart(court, public, counts=None, gss=None, ces=None, view="all", pew=None, 
         sources['PRRI'] = prri
     if nationscape is not None:
         sources['Nationscape'] = nationscape
+    if voter is not None:
+        sources['VOTER'] = voter
     combined, contributors = combine_sources(sources)
     datasets = [(court, '#bd493d', 'Court')]
     if view == 'combined':

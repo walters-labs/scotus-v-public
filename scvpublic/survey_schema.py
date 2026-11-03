@@ -6,7 +6,7 @@ from pathlib import Path
 import re
 
 VERSION = 'survey-documents-v1'
-METHODOLOGIES = {f'explicit-{source}-v1' for source in ('anes', 'gss', 'ces', 'pew', 'wvs', 'prri', 'nationscape')}
+METHODOLOGIES = {f'explicit-{source}-v1' for source in ('anes', 'gss', 'ces', 'pew', 'wvs', 'prri', 'nationscape', 'voter')}
 
 
 def validate(payload):

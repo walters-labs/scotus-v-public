@@ -1,0 +1,164 @@
+{
+  "method": "Exact guide frequencies in the weighted wave sample; respondent-level weighted means cross-checked against category totals",
+  "sources": {
+    "data/raw/voter/VOTER Panel Data Files/voter_panel.dta": "29382b5993748020e21dc0ef0749c65d76d87f729cac1fb2bdd11aab55d6e1f2",
+    "data/raw/voter/guide.pdf": "3a4fb03bcfe208937c5723a4f30239a9155930a818c21a708c8ac93395a981e5",
+    "data/manifests/voter-pilot.json": "fc63a571dc7c4b803d51549e5af7ab45934ea032aca1f412c9a4256903a0621e"
+  },
+  "results": {
+    "voter_abortion": {
+      "2016": {
+        "source_code": "view_abortlegal_2016",
+        "weight": "weight_genpop_2016",
+        "question": "Do you think abortion should be...",
+        "guide_page": 368,
+        "score": 0.16121055951989624,
+        "respondents": 7651,
+        "weight_sum": 7531.652161662839,
+        "published_counts": {
+          "2": 3890,
+          "1": 2737,
+          "3": 1024,
+          "8": 328,
+          "98": 21
+        },
+        "category_weight_sums": {
+          "1": 2439.502333838033,
+          "2": 3866.829353077675,
+          "3": 1225.3204747471307,
+          "8": 419.52023618869083,
+          "98": 48.827602148468664,
+          "99": 0.0
+        },
+        "excluded_unweighted_answers": 33
+      },
+      "2020": {
+        "source_code": "view_abortlegal_2020Nov",
+        "weight": "weight_genpop_2020Nov",
+        "question": "Do you think abortion should be...",
+        "guide_page": 39,
+        "score": 0.17926525137210939,
+        "respondents": 4643,
+        "weight_sum": 4549.000617487985,
+        "published_counts": {
+          "2": 2266,
+          "1": 1756,
+          "3": 621,
+          "4": 300
+        },
+        "category_weight_sums": {
+          "1": 1543.8838201601525,
+          "2": 2276.7107163535456,
+          "3": 728.4060809742879,
+          "4": 393.99938251201405,
+          "8": 0.0,
+          "9": 0.0
+        },
+        "excluded_unweighted_answers": 0
+      }
+    },
+    "voter_marriage": {
+      "2016": {
+        "source_code": "view_gaymar_2016",
+        "weight": "weight_genpop_2016",
+        "question": "Do you favor or oppose allowing gays and lesbians to marry legally?",
+        "guide_page": 368,
+        "score": 0.17422041721234144,
+        "respondents": 7022,
+        "weight_sum": 6805.798609903293,
+        "published_counts": {
+          "1": 4213,
+          "2": 2809,
+          "8": 956,
+          "98": 22
+        },
+        "category_weight_sums": {
+          "1": 3995.7538415919093,
+          "2": 2810.044768311384,
+          "8": 1167.0016837755672,
+          "98": 27.19970632113767,
+          "99": 0.0
+        },
+        "excluded_unweighted_answers": 32
+      },
+      "2020": {
+        "source_code": "view_gaymar_2020Nov",
+        "weight": "weight_genpop_2020Nov",
+        "question": "Do you favor or oppose allowing gays and lesbians to marry legally?",
+        "guide_page": 40,
+        "score": 0.323495470803054,
+        "respondents": 4345,
+        "weight_sum": 4213.633755318547,
+        "published_counts": {
+          "1": 3038,
+          "2": 1307,
+          "3": 598
+        },
+        "category_weight_sums": {
+          "1": 2788.36259539348,
+          "2": 1425.2711599250665,
+          "3": 729.3662446814533,
+          "8": 0.0,
+          "9": 0.0
+        },
+        "excluded_unweighted_answers": 0
+      }
+    },
+    "voter_guns": {
+      "2019": {
+        "source_code": "guncontrollaw_2019Nov",
+        "weight": "weight_genpop_2019Nov",
+        "question": "Do you think gun control laws should be made more or less strict than they are now?",
+        "guide_page": 126,
+        "score": 0.45499632326131073,
+        "respondents": 5476,
+        "weight_sum": 5361.743853957842,
+        "published_counts": {
+          "1": 3349,
+          "2": 1435,
+          "3": 692,
+          "4": 423,
+          "8": 1
+        },
+        "category_weight_sums": {
+          "1": 3182.6390783142406,
+          "2": 1436.0394371491084,
+          "3": 743.0653384944926,
+          "4": 537.2612714024687,
+          "8": 0.994874639689938,
+          "9": 0.0
+        },
+        "excluded_unweighted_answers": 0
+      }
+    },
+    "voter_health_mandate": {
+      "2019": {
+        "source_code": "requirehealth_2019Jan",
+        "weight": "weight_genpop_2019Jan",
+        "question": "As you may know, the Affordable Care Act required nearly all Americans to have health insurance, or else pay a fine. Congress passed a law repealing this requirement starting in January 2019. Do you favor or oppose requiring all Americans have health insurance?",
+        "guide_page": 193,
+        "score": 0.01563958712252027,
+        "respondents": 6161,
+        "weight_sum": 5903.545824693298,
+        "published_counts": {
+          "1": 2015,
+          "4": 1944,
+          "2": 1218,
+          "3": 984,
+          "8": 609,
+          "98": 9
+        },
+        "category_weight_sums": {
+          "1": 1860.9626252545015,
+          "2": 1230.689907038663,
+          "3": 949.5445760847379,
+          "4": 1862.348716315395,
+          "8": 867.8063534363037,
+          "98": 7.647821870399042,
+          "99": 0.0
+        },
+        "excluded_unweighted_answers": 0
+      }
+    }
+  }
+}

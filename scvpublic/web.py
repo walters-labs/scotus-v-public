@@ -65,6 +65,8 @@ def create_app(artifact=None, hybrid_dir=None):
             views['prri'] = 'PRRI'
         if info.get('nationscape_documents'):
             views['nationscape'] = 'Nationscape'
+        if info.get('voter_documents'):
+            views['voter'] = 'VOTER'
         views['all'] = 'All sources'
         view = request.args.get('view', 'combined')
         if view not in views:
@@ -72,7 +74,7 @@ def create_app(artifact=None, hybrid_dir=None):
         contribution_rows = []
         counts = {}
         error = None
-        court, public, gss, ces, pew, wvs, prri, nationscape, svg = [], [], [], [], [], [], [], [], ''
+        court, public, gss, ces, pew, wvs, prri, nationscape, voter, svg = [], [], [], [], [], [], [], [], [], ''
         if any(len(t) > 100 for t in terms):
             error = 'Each keyword or phrase must be at most 100 characters.'
         elif any(terms):
@@ -101,6 +103,8 @@ def create_app(artifact=None, hybrid_dir=None):
                     prri = questions('prri')
                 if info.get('nationscape_documents'):
                     nationscape = questions('nationscape')
+                if info.get('voter_documents'):
+                    voter = questions('voter')
             counts = court_counts(trend_court)
             source_series = {'ANES': series([], public)[1]}
             if info.get('gss_documents'):
@@ -115,12 +119,14 @@ def create_app(artifact=None, hybrid_dir=None):
                 source_series['PRRI'] = series([], prri)[1]
             if info.get('nationscape_documents'):
                 source_series['Nationscape'] = series([], nationscape)[1]
+            if info.get('voter_documents'):
+                source_series['VOTER'] = series([], voter)[1]
             combined, contributors = combine_sources(source_series)
             contribution_rows = [(year, combined[year], names) for year, names in contributors.items()]
             question_ids = {name: {year: [code for code, _ in items]
                                    for year, items in survey_items(questions).items()}
                             for name, questions in [('ANES', public), ('GSS', gss),
-                                                    ('CES', ces), ('Pew', pew), ('WVS', wvs), ('PRRI', prri), ('Nationscape', nationscape)]}
+                                                    ('CES', ces), ('Pew', pew), ('WVS', wvs), ('PRRI', prri), ('Nationscape', nationscape), ('VOTER', voter)]}
             svg = chart(*series(trend_court, public), counts=counts, view=view,
                         question_ids=question_ids,
                         gss=series([], gss)[1] if info.get('gss_documents') else None,
@@ -128,9 +134,10 @@ def create_app(artifact=None, hybrid_dir=None):
                         pew=series([], pew)[1] if info.get('pew_documents') else None,
                         wvs=series([], wvs)[1] if info.get('wvs_documents') else None,
                         prri=series([], prri)[1] if info.get('prri_documents') else None,
-                        nationscape=series([], nationscape)[1] if info.get('nationscape_documents') else None)
+                        nationscape=series([], nationscape)[1] if info.get('nationscape_documents') else None,
+                        voter=series([], voter)[1] if info.get('voter_documents') else None)
         return render_template('index.html', terms=terms, court=court, public=public,
                                svg=svg, info=info, error=error, searched=any(terms),
-                               counts=counts, gss=gss, ces=ces, pew=pew, wvs=wvs, prri=prri, nationscape=nationscape, view=view, views=views,
+                               counts=counts, gss=gss, ces=ces, pew=pew, wvs=wvs, prri=prri, nationscape=nationscape, voter=voter, view=view, views=views,
                                contribution_rows=contribution_rows), (400 if error else 200)
     return app

@@ -919,3 +919,90 @@ selective: for example, `gun control` now selects the blanket-ban item; more
 specific queries are needed for other gun policies. Additional documents change
 corpus TF-IDF and phrase-expansion rankings even with unchanged thresholds.
 No claim is made that a broad query retrieves every related policy.
+
+## VOTER Survey pilot (December 2021 release)
+
+The VOTER pilot adds four policy question families and six question-years:
+abortion legality and same-sex marriage (2016, November 2020), gun-control laws
+(November 2019), and the health-insurance mandate (January 2019).
+The January 2019 wave was fielded November 17, 2018–January 7, 2019; its point uses
+the named wave year. These are observed wave estimates, not full-calendar-year averages.
+
+Place `voter_panel.dta` in `data/raw/voter/VOTER Panel Data Files/` and the
+[December 2021 guide](https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf)
+in `data/raw/voter/guide.pdf`. The SAV and CSV are alternate formats of the same
+panel, not additional samples. Raw data stay out of Git and deployment bundles.
+`data/manifests/voter-pilot.json` pins SHA-256 hashes, exact labels, question wording,
+response mappings, guide pages and published unweighted frequencies.
+
+Use each wave's `weight_genpop_*` for cross-sectional estimates (guide page 4).
+Zero/missing weights exclude records outside that weighted wave sample, including
+34 extra 2016 records described in the guide's 2018 sample footnote. Negative or
+infinite weights fail validation. Unknown codes and changed labels also fail.
+All response frequencies within each weighted sample must exactly match the guide;
+weighted means are independently recalculated from weighted category totals.
+These checks validate extraction and aggregation, not external representativeness.
+
+Conditional abortion legality and unchanged gun laws map to zero as category
+midpoints, not proven ideological neutrality. Support for the insurance mandate
+maps toward liberal, but is not interchangeable with support for public insurance.
+Unknown, skipped and not-asked answers never contribute to polarity. Repeated
+panelists do not provide independent observations across years. This pilot does not
+estimate individual change, uncertainty, or causal effects. It excludes 2011–12
+items pending weighting review, issue importance, party evaluations and all other
+unreviewed questions. No claim of complete VOTER coverage is made.
+
+Build from the deployed Nationscape batch:
+
+```sh
+.venv/bin/python -m scvpublic.voter --base-artifact artifacts/nationscape-policy-batch.sqlite
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/rebind_hybrid.py --old artifacts/nationscape-policy-batch.sqlite --new artifacts/voter-pilot.sqlite --bundle artifacts/semantic-nationscape-policy-batch --output artifacts/semantic-voter-pilot-court
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_embeddings.py --artifact artifacts/voter-pilot.sqlite --bundle artifacts/semantic-voter-pilot-court --output artifacts/semantic-voter-pilot --phrases
+```
+
+Outputs refuse overwrite. The importer uses Windows-1252 to decode this Stata
+release. Per-wave scores, sample counts, weighted category totals and documentation
+pages are retained in processed JSON and SQLite. Serving reads only precomputed
+artifacts. VOTER appears as a separate source and contributes once per observed
+year to the combined index, using the existing equal-source weighting rule.
+
+### VOTER policy expansion
+
+`data/manifests/voter-policy-batch.json` expands the pilot to **40 question
+families, 69 question-wave observations and 68 question-years**, covering 2016–2020.
+The original four questions retain identical annual scores and respondent counts.
+New topics include immigration, health coverage, high-income taxes, business/bank
+regulation, redistribution, labor organizing, minimum wage, paid leave, police
+reform, affirmative action, reparations, transgender restroom access, marijuana,
+flag burning, religious profiling and the death penalty.
+
+`data/voter/batch-review.json` inventories all 1,797 variables with inclusion,
+exclusion or deferral reasons. Label screening identified candidates; only the
+included items received full wording, coding and frequency validation. Deferred
+items are not necessarily unusable. Examples include conditional Medicare-for-all
+follow-ups, pandemic restrictions, institutional reforms and framed party-promise
+questions. Factual beliefs, group evaluations and issue importance are outside this
+direct-policy batch. This is not a claim that all useful VOTER content is exhausted.
+
+Every included question-wave reproduces the guide's unweighted category counts
+within its weighted wave sample. Weighted response-level means are cross-checked
+against weighted category totals; see `data/voter/batch-validation.json`.
+For universal health coverage in 2019, January and November wave scores receive
+one-half weight each, independently of sample size. Both waves and their original
+weights are retained under each year's `wave_provenance` list. Summed respondent
+counts are responses and can include the same person twice. No missing waves or
+years are interpolated. The importer rejects duplicate wave codes.
+
+Two coding details matter: `aca_favor_2017` actually asks about the proposed ACA
+**repeal and replacement** plan, so favorability is coded conservative. For
+`govtreg_banks` and `income_redistribution`, category **3** means "the same" and
+maps to zero; category 2 means "less" and maps to −1. The complete answer mappings
+and orientation rationales are explicit in the manifest. These conventions are
+analytical judgments, not measured party affiliation. Related question families
+can overlap substantively and are not independent evidence.
+
+```sh
+.venv/bin/python -m scvpublic.voter --manifest data/manifests/voter-policy-batch.json --output data/processed/voter-policy-batch/public.json --base-artifact artifacts/voter-pilot.sqlite --artifact artifacts/voter-policy-batch.sqlite
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/rebind_hybrid.py --old artifacts/voter-pilot.sqlite --new artifacts/voter-policy-batch.sqlite --bundle artifacts/semantic-voter-pilot --output artifacts/semantic-voter-policy-batch-court
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_embeddings.py --artifact artifacts/voter-policy-batch.sqlite --bundle artifacts/semantic-voter-policy-batch-court --output artifacts/semantic-voter-policy-batch --phrases
+```

@@ -1,0 +1,2220 @@
+{
+  "release": "VOTER Survey December 2021 release",
+  "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+  "raw_path": "data/raw/voter/VOTER Panel Data Files/voter_panel.dta",
+  "encoding": "WINDOWS-1252",
+  "sources": {
+    "data/raw/voter/VOTER Panel Data Files/voter_panel.dta": "29382b5993748020e21dc0ef0749c65d76d87f729cac1fb2bdd11aab55d6e1f2",
+    "data/raw/voter/guide.pdf": "3a4fb03bcfe208937c5723a4f30239a9155930a818c21a708c8ac93395a981e5"
+  },
+  "notes": "Reviewed VOTER policy questions, 2016–2020. Wave-specific cross-sectional weights; multiple waves within a year are averaged equally. January 2019 includes late-2018 interviews. Counts across waves are responses, not unique people. Earlier 2011–12 records and unreviewed or ambiguous items are excluded. Coding conventions do not establish respondent ideology.",
+  "entries": [
+    {
+      "code": "voter_abortion",
+      "family": "voter_abortion",
+      "title": "Abortion legality",
+      "question": "Do you think abortion should be...",
+      "scores": {
+        "1": 1,
+        "2": 0,
+        "3": -1
+      },
+      "question_note": "Legal in all cases = +1; legal in some cases = 0; illegal in all cases = −1. The midpoint represents conditional legality, not necessarily ideological centrism. Unknown, skipped and not-asked answers are excluded. Wave-specific cross-sectional weights are used.",
+      "weight": "wave-specific weight_genpop",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "view_abortlegal_2016",
+          "year": "2016",
+          "weight": "weight_genpop_2016",
+          "question": "Do you think abortion should be...",
+          "guide_page": 368,
+          "expected_label": "View on the legality of abortion",
+          "expected_labels": {
+            "1": "Legal in all cases",
+            "2": "Legal/Illegal in some cases",
+            "3": "Illegal in all cases",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 2737,
+            "2": 3890,
+            "3": 1024,
+            "8": 328,
+            "98": 21
+          }
+        },
+        {
+          "code": "view_abortlegal_2020Nov",
+          "year": "2020",
+          "weight": "weight_genpop_2020Nov",
+          "question": "Do you think abortion should be...",
+          "guide_page": 39,
+          "expected_label": "View on the legality of abortion",
+          "expected_labels": {
+            "1": "Legal in all cases",
+            "2": "Legal in some cases and illegal in others",
+            "3": "Illegal in all cases",
+            "4": "Don’t know",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 1756,
+            "2": 2266,
+            "3": 621,
+            "4": 300
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_marriage",
+      "family": "voter_marriage",
+      "title": "Same-sex marriage",
+      "question": "Do you favor or oppose allowing gays and lesbians to marry legally?",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "question_note": "Favor legal same-sex marriage = +1; oppose = −1. Unknown, skipped and not-asked answers are excluded. Wave-specific cross-sectional weights are used.",
+      "weight": "wave-specific weight_genpop",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "view_gaymar_2016",
+          "year": "2016",
+          "weight": "weight_genpop_2016",
+          "question": "Do you favor or oppose allowing gays and lesbians to marry legally?",
+          "guide_page": 368,
+          "expected_label": "View on the legality of gay marriage",
+          "expected_labels": {
+            "1": "Favor",
+            "2": "Oppose",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 4213,
+            "2": 2809,
+            "8": 956,
+            "98": 22
+          }
+        },
+        {
+          "code": "view_gaymar_2020Nov",
+          "year": "2020",
+          "weight": "weight_genpop_2020Nov",
+          "question": "Do you favor or oppose allowing gays and lesbians to marry legally?",
+          "guide_page": 40,
+          "expected_label": "View on the legality of gay marriage",
+          "expected_labels": {
+            "1": "Favor",
+            "2": "Oppose",
+            "3": "Don’t know",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 3038,
+            "2": 1307,
+            "3": 598
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_guns",
+      "family": "voter_guns",
+      "title": "Gun control laws",
+      "question": "Do you think gun control laws should be made more or less strict than they are now?",
+      "scores": {
+        "1": 1,
+        "2": 0,
+        "3": -1
+      },
+      "question_note": "More strict = +1; no change = 0; less strict = −1. No change is a status-quo answer, not necessarily ideological centrism. Unknown, skipped and not-asked answers are excluded. Wave-specific cross-sectional weights are used.",
+      "weight": "wave-specific weight_genpop",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "guncontrollaw_2019Nov",
+          "year": "2019",
+          "weight": "weight_genpop_2019Nov",
+          "question": "Do you think gun control laws should be made more or less strict than they are now?",
+          "guide_page": 126,
+          "expected_label": "Make gun control laws more or less strict",
+          "expected_labels": {
+            "1": "More strict",
+            "2": "No change",
+            "3": "Less strict",
+            "4": "Not sure",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 3349,
+            "2": 1435,
+            "3": 692,
+            "4": 423,
+            "8": 1
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_health_mandate",
+      "family": "voter_health_mandate",
+      "title": "Health insurance mandate",
+      "question": "As you may know, the Affordable Care Act required nearly all Americans to have health insurance, or else pay a fine. Congress passed a law repealing this requirement starting in January 2019. Do you favor or oppose requiring all Americans have health insurance?",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_note": "Strongly favor = +1; somewhat favor = +1/3; somewhat oppose = −1/3; strongly oppose = −1. This asks about an insurance requirement, not government-run insurance. The January 2019 wave was fielded November 17, 2018–January 7, 2019 and is plotted under its named wave year. Unknown, skipped and not-asked answers are excluded. Wave-specific cross-sectional weights are used.",
+      "weight": "wave-specific weight_genpop",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "requirehealth_2019Jan",
+          "year": "2019",
+          "weight": "weight_genpop_2019Jan",
+          "question": "As you may know, the Affordable Care Act required nearly all Americans to have health insurance, or else pay a fine. Congress passed a law repealing this requirement starting in January 2019. Do you favor or oppose requiring all Americans have health insurance?",
+          "guide_page": 193,
+          "expected_label": "Require all Americans to have health insurance",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Somewhat favor",
+            "3": "Somewhat oppose",
+            "4": "Strongly oppose",
+            "8": "Don't know",
+            "98": "skipped",
+            "99": "not asked"
+          },
+          "published_counts": {
+            "1": 2015,
+            "2": 1218,
+            "3": 984,
+            "4": 1944,
+            "8": 609,
+            "98": 9
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_taxdoug",
+      "family": "voter_taxdoug",
+      "title": "Raise taxes for the wealthy ($200K+)",
+      "question": "Do you favor raising taxes on families with incomes over $200,000 per year?",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "question_note": "Support for higher taxes on high-income families is coded liberal. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples. The January 2019 wave includes late-2018 interviews.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "taxdoug_2016",
+          "year": "2016",
+          "weight": "weight_genpop_2016",
+          "question": "Do you favor raising taxes on families with incomes over $200,000 per year?",
+          "guide_page": 371,
+          "expected_label": "Raise taxes for the wealthy ($200K+)",
+          "expected_labels": {
+            "1": "Yes",
+            "2": "No",
+            "3": "Don't know",
+            "8": "Skipped",
+            "9": "Not Asked"
+          },
+          "published_counts": {
+            "1": 4865,
+            "2": 2312,
+            "3": 791,
+            "8": 32
+          }
+        },
+        {
+          "code": "taxdoug_2017",
+          "year": "2017",
+          "weight": "weight_genpop_2017",
+          "question": "Do you favor raising taxes on families with incomes over $200,000 per year?",
+          "guide_page": 313,
+          "expected_label": "Raise taxes for the wealthy ($200K+)",
+          "expected_labels": {
+            "1": "Yes",
+            "2": "No",
+            "3": "Don't know",
+            "8": "Skipped",
+            "9": "Not Asked"
+          },
+          "published_counts": {
+            "1": 3018,
+            "2": 1464,
+            "3": 513,
+            "8": 5
+          }
+        },
+        {
+          "code": "taxdoug_2018",
+          "year": "2018",
+          "weight": "weight_genpop_2018",
+          "question": "Do you favor raising taxes on families with incomes over $200,000 per year?",
+          "guide_page": 244,
+          "expected_label": "Raise taxes for the wealthy ($200K+)",
+          "expected_labels": {
+            "1": "Yes",
+            "2": "No",
+            "3": "Don't know",
+            "8": "Skipped",
+            "9": "Not Asked"
+          },
+          "published_counts": {
+            "1": 3471,
+            "2": 1674,
+            "3": 844,
+            "8": 16
+          }
+        },
+        {
+          "code": "taxdoug_2019Jan",
+          "year": "2019",
+          "weight": "weight_genpop_2019Jan",
+          "question": "Do you favor raising taxes on families with incomes over $200,000 per year?",
+          "guide_page": 195,
+          "expected_label": "Raise taxes for the wealthy ($200K+)",
+          "expected_labels": {
+            "1": "Yes",
+            "2": "No",
+            "3": "Don't know",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 3976,
+            "2": 1989,
+            "3": 813,
+            "8": 1
+          }
+        },
+        {
+          "code": "taxdoug_2020Nov",
+          "year": "2020",
+          "weight": "weight_genpop_2020Nov",
+          "question": "Do you favor raising taxes on families with incomes over $200,000 per year?",
+          "guide_page": 38,
+          "expected_label": "Raise taxes for the wealthy ($200K+)",
+          "expected_labels": {
+            "1": "Yes",
+            "2": "No",
+            "3": "Don’t Know",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 2752,
+            "2": 1568,
+            "3": 623
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_immi_naturalize",
+      "family": "voter_immi_naturalize",
+      "title": "Provide way for illegal immigrants already in the US to gain citizenship",
+      "question": "Do you favor or oppose providing a legal way for illegal immigrants already in the United States to become U.S. citizens?",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "question_note": "Support for a path to citizenship is coded liberal. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples. The January 2019 wave includes late-2018 interviews.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "immi_naturalize_2016",
+          "year": "2016",
+          "weight": "weight_genpop_2016",
+          "question": "Do you favor or oppose providing a legal way for illegal immigrants already in the United States to become U.S. citizens?",
+          "guide_page": 367,
+          "expected_label": "Provide way for illegal immigrants already in the US to gain citizenship",
+          "expected_labels": {
+            "1": "Favor",
+            "2": "Oppose",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 4143,
+            "2": 2718,
+            "8": 1112,
+            "98": 27
+          }
+        },
+        {
+          "code": "immi_naturalize_2017",
+          "year": "2017",
+          "weight": "weight_genpop_2017",
+          "question": "Do you favor or oppose providing a legal way for illegal immigrants already in the United States to become U.S. citizens?",
+          "guide_page": 307,
+          "expected_label": "Provide way for illegal immigrants already in the US to gain citizenship",
+          "expected_labels": {
+            "1": "Favor",
+            "2": "Oppose",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 2657,
+            "2": 1654,
+            "8": 685,
+            "98": 4
+          }
+        },
+        {
+          "code": "immi_naturalize_2018",
+          "year": "2018",
+          "weight": "weight_genpop_2018",
+          "question": "Do you favor or oppose providing a legal way for illegal immigrants already in the United States to become U.S. citizens?",
+          "guide_page": 236,
+          "expected_label": "Provide way for illegal immigrants already in the US to gain citizenship",
+          "expected_labels": {
+            "1": "Favor",
+            "2": "Oppose",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 3392,
+            "2": 1739,
+            "8": 855,
+            "98": 19
+          }
+        },
+        {
+          "code": "immi_naturalize_2019Jan",
+          "year": "2019",
+          "weight": "weight_genpop_2019Jan",
+          "question": "Do you favor or oppose providing a legal way for illegal immigrants already in the United States to become U.S. citizens?",
+          "guide_page": 191,
+          "expected_label": "Provide way for illegal immigrants already in the US to gain citizenship",
+          "expected_labels": {
+            "1": "Favor",
+            "2": "Oppose",
+            "8": "Don't know",
+            "98": "skipped",
+            "99": "not asked"
+          },
+          "published_counts": {
+            "1": 3813,
+            "2": 2118,
+            "8": 839,
+            "98": 9
+          }
+        },
+        {
+          "code": "immi_naturalize_2020Nov",
+          "year": "2020",
+          "weight": "weight_genpop_2020Nov",
+          "question": "Do you favor or oppose providing a legal way for illegal immigrants already in the United States to become U.S. citizens?",
+          "guide_page": 38,
+          "expected_label": "Provide way for illegal immigrants already in the US to gain citizenship",
+          "expected_labels": {
+            "1": "Favor",
+            "2": "Oppose",
+            "3": "Don’t know",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 3016,
+            "2": 1301,
+            "3": 626
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_immi_muslim",
+      "family": "voter_immi_muslim",
+      "title": "Temporarily ban Muslims from entering the US",
+      "question": "Do you favor or oppose temporarily banning Muslims from other countries from entering the United States?",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "question_note": "Opposition to a religious entry ban is coded liberal. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples. The January 2019 wave includes late-2018 interviews.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "immi_muslim_2016",
+          "year": "2016",
+          "weight": "weight_genpop_2016",
+          "question": "Do you favor or oppose temporarily banning Muslims from other countries from entering the United States?",
+          "guide_page": 367,
+          "expected_label": "Temporarily ban Muslims from entering the US",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Somewhat favor",
+            "3": "Somewhat oppose",
+            "4": "Strongly oppose",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 2085,
+            "2": 1514,
+            "3": 1223,
+            "4": 2438,
+            "8": 702,
+            "98": 38
+          }
+        },
+        {
+          "code": "immi_muslim_2017",
+          "year": "2017",
+          "weight": "weight_genpop_2017",
+          "question": "Do you favor or oppose temporarily banning Muslims from other countries from entering the United States?",
+          "guide_page": 308,
+          "expected_label": "Temporarily ban Muslims from entering the US",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Somewhat favor",
+            "3": "Somewhat oppose",
+            "4": "Strongly oppose",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 1593,
+            "2": 811,
+            "3": 788,
+            "4": 1420,
+            "8": 379,
+            "98": 9
+          }
+        },
+        {
+          "code": "immi_muslim_2018",
+          "year": "2018",
+          "weight": "weight_genpop_2018",
+          "question": "Do you favor or oppose temporarily banning Muslims from other countries from entering the United States?",
+          "guide_page": 237,
+          "expected_label": "Temporarily ban Muslims from entering the US",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Somewhat favor",
+            "3": "Somewhat oppose",
+            "4": "Strongly oppose",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 1394,
+            "2": 1042,
+            "3": 1025,
+            "4": 1792,
+            "8": 715,
+            "98": 37
+          }
+        },
+        {
+          "code": "immi_muslim_2019Jan",
+          "year": "2019",
+          "weight": "weight_genpop_2019Jan",
+          "question": "Do you favor or oppose temporarily banning Muslims from other countries from entering the United States?",
+          "guide_page": 192,
+          "expected_label": "Temporarily ban Muslims from entering the US",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Somewhat favor",
+            "3": "Somewhat oppose",
+            "4": "Strongly oppose",
+            "8": "Don't know",
+            "98": "skipped",
+            "99": "not asked"
+          },
+          "published_counts": {
+            "1": 1597,
+            "2": 1179,
+            "3": 1119,
+            "4": 2119,
+            "8": 751,
+            "98": 14
+          }
+        },
+        {
+          "code": "immi_muslim_2020Nov",
+          "year": "2020",
+          "weight": "weight_genpop_2020Nov",
+          "question": "Do you favor or oppose temporarily banning Muslims from other countries from entering the United States?",
+          "guide_page": 39,
+          "expected_label": "Temporarily ban Muslims from entering the US",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Somewhat favor",
+            "3": "Somewhat oppose",
+            "4": "Strongly oppose",
+            "5": "Don’t know",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 826,
+            "2": 721,
+            "3": 892,
+            "4": 1743,
+            "5": 761
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_immi_makedifficult",
+      "family": "voter_immi_makedifficult",
+      "title": "Change difficulty of legal immigration process to US",
+      "question": "Do you think it should be easier or harder for foreigners to immigrate to the US legally than it is currently?",
+      "scores": {
+        "1": 1,
+        "2": 0.5,
+        "3": 0,
+        "4": -0.5,
+        "5": -1
+      },
+      "question_note": "Easier legal immigration is coded liberal; unchanged policy is the midpoint. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples. The January 2019 wave includes late-2018 interviews.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "immi_makedifficult_2016",
+          "year": "2016",
+          "weight": "weight_genpop_2016",
+          "question": "Do you think it should be easier or harder for foreigners to immigrate to the US legally than it is currently?",
+          "guide_page": 367,
+          "expected_label": "Change difficulty of legal immigration process to US",
+          "expected_labels": {
+            "1": "Much easier",
+            "2": "Slightly easier",
+            "3": "No change",
+            "4": "Slightly harder",
+            "5": "Much harder",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 643,
+            "2": 1245,
+            "3": 2175,
+            "4": 1546,
+            "5": 1916,
+            "8": 446,
+            "98": 29
+          }
+        },
+        {
+          "code": "immi_makedifficult_2017",
+          "year": "2017",
+          "weight": "weight_genpop_2017",
+          "question": "Do you think it should be easier or harder for foreigners to immigrate to the US legally than it is currently?",
+          "guide_page": 308,
+          "expected_label": "Change difficulty of legal immigration process to US",
+          "expected_labels": {
+            "1": "Much easier",
+            "2": "Slightly easier",
+            "3": "No change",
+            "4": "Slightly harder",
+            "5": "Much harder",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 449,
+            "2": 779,
+            "3": 1394,
+            "4": 972,
+            "5": 1125,
+            "8": 278,
+            "98": 3
+          }
+        },
+        {
+          "code": "immi_makedifficult_2018",
+          "year": "2018",
+          "weight": "weight_genpop_2018",
+          "question": "Do you think it should be easier or harder for foreigners to immigrate to the US legally than it is currently?",
+          "guide_page": 237,
+          "expected_label": "Change difficulty of legal immigration process to US",
+          "expected_labels": {
+            "1": "Much easier",
+            "2": "Slightly easier",
+            "3": "No change",
+            "4": "Slightly harder",
+            "5": "Much harder",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 661,
+            "2": 1061,
+            "3": 1478,
+            "4": 1086,
+            "5": 1281,
+            "8": 423,
+            "98": 15
+          }
+        },
+        {
+          "code": "immi_makedifficult_2019Jan",
+          "year": "2019",
+          "weight": "weight_genpop_2019Jan",
+          "question": "Do you think it should be easier or harder for foreigners to immigrate to the US legally than it is currently?",
+          "guide_page": 191,
+          "expected_label": "Change difficulty of legal immigration process to US",
+          "expected_labels": {
+            "1": "Much easier",
+            "2": "Slightly easier",
+            "3": "No change",
+            "4": "Slightly harder",
+            "5": "Much harder",
+            "8": "Don't know",
+            "98": "skipped",
+            "99": "not asked"
+          },
+          "published_counts": {
+            "1": 885,
+            "2": 1340,
+            "3": 1666,
+            "4": 1054,
+            "5": 1427,
+            "8": 402,
+            "98": 5
+          }
+        },
+        {
+          "code": "immi_makedifficult_2020Nov",
+          "year": "2020",
+          "weight": "weight_genpop_2020Nov",
+          "question": "Do you think it should be easier or harder for foreigners to immigrate to the US legally than it is currently?",
+          "guide_page": 39,
+          "expected_label": "Change difficulty of legal immigration process to US",
+          "expected_labels": {
+            "1": "Much easier",
+            "2": "Slightly easier",
+            "3": "No change",
+            "4": "Slightly harder",
+            "5": "Much harder",
+            "6": "Don’t know",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 772,
+            "2": 999,
+            "3": 1152,
+            "4": 720,
+            "5": 778,
+            "6": 522
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_univhealthcov",
+      "family": "voter_univhealthcov",
+      "title": "Federal responsibility to ensure health care coverage",
+      "question": "Do you think it is the responsibility of the federal government to see to it that everyone has health care coverage?",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "question_note": "Federal responsibility for universal coverage is coded liberal; this does not specify a single-payer system. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples. The January 2019 wave includes late-2018 interviews.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "univhealthcov_2016",
+          "year": "2016",
+          "weight": "weight_genpop_2016",
+          "question": "Do you think it is the responsibility of the federal government to see to it that everyone has health care coverage?",
+          "guide_page": 370,
+          "expected_label": "Federal responsibility to ensure health care coverage",
+          "expected_labels": {
+            "1": "Yes",
+            "2": "No",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 3654,
+            "2": 3670,
+            "8": 645,
+            "98": 31
+          }
+        },
+        {
+          "code": "univhealthcov_2017",
+          "year": "2017",
+          "weight": "weight_genpop_2017",
+          "question": "Do you think it is the responsibility of the federal government to see to it that everyone has health care coverage?",
+          "guide_page": 312,
+          "expected_label": "Federal responsibility to ensure health care coverage",
+          "expected_labels": {
+            "1": "Yes",
+            "2": "No",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 2442,
+            "2": 2175,
+            "8": 377,
+            "98": 6
+          }
+        },
+        {
+          "code": "univhealthcov_2019Jan",
+          "year": "2019",
+          "weight": "weight_genpop_2019Jan",
+          "question": "Do you think it is the responsibility of the federal government to see to it that everyone has health care coverage?",
+          "guide_page": 193,
+          "expected_label": "Federal responsibility to ensure health care coverage",
+          "expected_labels": {
+            "1": "Yes",
+            "2": "No",
+            "8": "Don't know",
+            "98": "skipped",
+            "99": "not asked"
+          },
+          "published_counts": {
+            "1": 3326,
+            "2": 2890,
+            "8": 556,
+            "98": 7
+          }
+        },
+        {
+          "code": "univhealthcov_2019Nov",
+          "year": "2019",
+          "weight": "weight_genpop_2019Nov",
+          "question": "Do you think it is the responsibility of the federal government to see to it that everyone has health care coverage?",
+          "guide_page": 128,
+          "expected_label": "Federal responsibility to ensure health care coverage",
+          "expected_labels": {
+            "1": "Yes",
+            "2": "No",
+            "3": "Don't Know",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 2933,
+            "2": 2199,
+            "3": 768
+          }
+        },
+        {
+          "code": "univhealthcov_2020Nov",
+          "year": "2020",
+          "weight": "weight_genpop_2020Nov",
+          "question": "Do you think it is the responsibility of the federal government to see to it that everyone has health care coverage?",
+          "guide_page": 39,
+          "expected_label": "Federal responsibility to ensure health care coverage",
+          "expected_labels": {
+            "1": "Yes",
+            "2": "No",
+            "3": "Don’t know",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 2609,
+            "2": 1788,
+            "3": 546
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_roevwade",
+      "family": "voter_roevwade",
+      "title": "Overturn Roe v. Wade",
+      "question": "As you may know, the 1973 Supreme Court Case Roe v. Wade established a woman's constitutional right to have an abortion. Would you like to see the Supreme Court overturn its Roe v. Wade decision, or not?",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "question_note": "Opposition to overturning Roe v. Wade is coded liberal in this pre-Dobbs question. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "roevwade_2020Nov",
+          "year": "2020",
+          "weight": "weight_genpop_2020Nov",
+          "question": "As you may know, the 1973 Supreme Court Case Roe v. Wade established a woman's constitutional right to have an abortion. Would you like to see the Supreme Court overturn its Roe v. Wade decision, or not?",
+          "guide_page": 40,
+          "expected_label": "Overturn Roe v. Wade",
+          "expected_labels": {
+            "1": "Yes, would like to see Roe v. Wade overturned",
+            "2": "No, would not like to see Roe v. Wade overturned (maintain abortion rights in al",
+            "3": "Not sure",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 1178,
+            "2": 3024,
+            "3": 740,
+            "8": 1
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_view_transgender",
+      "family": "voter_view_transgender",
+      "title": "View on public restroom usage by transgender people",
+      "question": "Which of the following comes closest to your view? - Transgender people should be allowed to use the public restrooms of the gender which with they currently identify OR Transgender people should be required to use the public restrooms of the gender they were born into.",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "question_note": "Restroom access consistent with gender identity is coded liberal. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "view_transgender_2016",
+          "year": "2016",
+          "weight": "weight_genpop_2016",
+          "question": "Which of the following comes closest to your view? - Transgender people should be allowed to use the public restrooms of the gender which with they currently identify OR Transgender people should be required to use the public restrooms of the gender they were born into.",
+          "guide_page": 368,
+          "expected_label": "View on public restroom usage by transgender people",
+          "expected_labels": {
+            "1": "Should be allow to us the restrooms of the gender with which they currently iden",
+            "2": "Should be required to use the restrooms of the gender they were born into",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 3094,
+            "2": 3525,
+            "8": 1342,
+            "98": 39
+          }
+        },
+        {
+          "code": "view_transgender_2020Nov",
+          "year": "2020",
+          "weight": "weight_genpop_2020Nov",
+          "question": "Which of the following comes closest to your view? - Transgender people should be allowed to use the public restrooms of the gender which with they currently identify OR Transgender people should be required to use the public restrooms of the gender they were born into.",
+          "guide_page": 40,
+          "expected_label": "View on public restroom usage by transgender people",
+          "expected_labels": {
+            "1": "Transgender people should be allowed to use the public restrooms of the gender w",
+            "2": "Transgender people should be required to use the public restrooms of the gender",
+            "3": "Don’t know",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 2109,
+            "2": 1845,
+            "3": 989
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_affirmativeaction",
+      "family": "voter_affirmativeaction",
+      "title": "Favor affirmative action for women and racial minorities",
+      "question": "Do you generally favor or oppose affirmative action programs for women and racial minorities?",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "question_note": "Support for the stated equality or police-reform policy is coded liberal. Distinct policies remain separate questions. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "affirmativeaction_2016",
+          "year": "2016",
+          "weight": "weight_genpop_2016",
+          "question": "Do you generally favor or oppose affirmative action programs for women and racial minorities?",
+          "guide_page": 371,
+          "expected_label": "Favor affirmative action for women and racial minorities",
+          "expected_labels": {
+            "1": "Favor",
+            "2": "Oppose",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 2737,
+            "2": 3640,
+            "8": 1588,
+            "98": 35
+          }
+        },
+        {
+          "code": "affirmativeaction_2020Sep",
+          "year": "2020",
+          "weight": "weight_genpop_2020Sep",
+          "question": "Do you generally favor or oppose affirmative action programs for women and racial minorities?",
+          "guide_page": 81,
+          "expected_label": "Favor affirmative action for women and racial minorities",
+          "expected_labels": {
+            "1": "Favor",
+            "2": "Oppose",
+            "3": "Don't know",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 2731,
+            "2": 1998,
+            "3": 1170,
+            "8": 1
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_reparations",
+      "family": "voter_reparations",
+      "title": "Grant reparations to descendants of slaves",
+      "question": "Do you generally favor or oppose the following policies? -- Grant reparations payments to the descendants of enslaved people",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "question_note": "Support for the stated equality or police-reform policy is coded liberal. Distinct policies remain separate questions. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "reparations_2020Sep",
+          "year": "2020",
+          "weight": "weight_genpop_2020Sep",
+          "question": "Do you generally favor or oppose the following policies? -- Grant reparations payments to the descendants of enslaved people",
+          "guide_page": 82,
+          "expected_label": "Grant reparations to descendants of slaves",
+          "expected_labels": {
+            "1": "Favor",
+            "2": "Oppose",
+            "3": "Don't know",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 1389,
+            "2": 3304,
+            "3": 1206,
+            "8": 1
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_defundpolice",
+      "family": "voter_defundpolice",
+      "title": "Defund the police",
+      "question": "Do you generally favor or oppose the following policies? -- Defund the police",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "question_note": "Support for the stated equality or police-reform policy is coded liberal. Distinct policies remain separate questions. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "defundpolice_2020Sep",
+          "year": "2020",
+          "weight": "weight_genpop_2020Sep",
+          "question": "Do you generally favor or oppose the following policies? -- Defund the police",
+          "guide_page": 82,
+          "expected_label": "Defund the police",
+          "expected_labels": {
+            "1": "Favor",
+            "2": "Oppose",
+            "3": "Don't know",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 1285,
+            "2": 3709,
+            "3": 905,
+            "8": 1
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_decreasepolice",
+      "family": "voter_decreasepolice",
+      "title": "Decrease size of police force and scope of their work",
+      "question": "Do you generally favor or oppose the following policies? -- Decrease the size of police forces and the scope of their work",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "question_note": "Support for the stated equality or police-reform policy is coded liberal. Distinct policies remain separate questions. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "decreasepolice_2020Sep",
+          "year": "2020",
+          "weight": "weight_genpop_2020Sep",
+          "question": "Do you generally favor or oppose the following policies? -- Decrease the size of police forces and the scope of their work",
+          "guide_page": 82,
+          "expected_label": "Decrease size of police force and scope of their work",
+          "expected_labels": {
+            "1": "Favor",
+            "2": "Oppose",
+            "3": "Don't know",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 1685,
+            "2": 3246,
+            "3": 969
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_eliminateprotection",
+      "family": "voter_eliminateprotection",
+      "title": "Eliminate protections that keep police officers from being sued",
+      "question": "Do you generally favor or oppose the following policies? -- Eliminate protections that keep police officers from being sued in some circumstances",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "question_note": "Support for the stated equality or police-reform policy is coded liberal. Distinct policies remain separate questions. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "eliminateprotection_2020Sep",
+          "year": "2020",
+          "weight": "weight_genpop_2020Sep",
+          "question": "Do you generally favor or oppose the following policies? -- Eliminate protections that keep police officers from being sued in some circumstances",
+          "guide_page": 82,
+          "expected_label": "Eliminate protections that keep police officers from being sued",
+          "expected_labels": {
+            "1": "Favor",
+            "2": "Oppose",
+            "3": "Don't know",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 2952,
+            "2": 1825,
+            "3": 1123
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_banchokehold",
+      "family": "voter_banchokehold",
+      "title": "Ban police officers from using chokeholds",
+      "question": "Do you generally favor or oppose the following policies? -- Ban police officers from using chokeholds",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "question_note": "Support for the stated equality or police-reform policy is coded liberal. Distinct policies remain separate questions. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "banchokehold_2020Sep",
+          "year": "2020",
+          "weight": "weight_genpop_2020Sep",
+          "question": "Do you generally favor or oppose the following policies? -- Ban police officers from using chokeholds",
+          "guide_page": 83,
+          "expected_label": "Ban police officers from using chokeholds",
+          "expected_labels": {
+            "1": "Favor",
+            "2": "Oppose",
+            "3": "Don't know",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 3929,
+            "2": 1113,
+            "3": 858
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_civilianoversight",
+      "family": "voter_civilianoversight",
+      "title": "Give civilian oversight the ability to investigate/discipline police misconduct",
+      "question": "Do you generally favor or oppose the following policies? -- Give civilian oversight boards the power to investigate and discipline police officers accused of inappropriate use of force or other misconduct",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "question_note": "Support for the stated equality or police-reform policy is coded liberal. Distinct policies remain separate questions. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "civilianoversight_2020Sep",
+          "year": "2020",
+          "weight": "weight_genpop_2020Sep",
+          "question": "Do you generally favor or oppose the following policies? -- Give civilian oversight boards the power to investigate and discipline police officers accused of inappropriate use of force or other misconduct",
+          "guide_page": 83,
+          "expected_label": "Give civilian oversight the ability to investigate/discipline police misconduct",
+          "expected_labels": {
+            "1": "Favor",
+            "2": "Oppose",
+            "3": "Don't know",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 3596,
+            "2": 1219,
+            "3": 1084,
+            "8": 1
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_medicareforall",
+      "family": "voter_medicareforall",
+      "title": "Support for Medicare for All government health care plan",
+      "question": "Would you support or oppose a national health plan, sometimes called 'Medicare-for-all,' in which Americans would get their insurance from a single government plan?",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_note": "Support for the stated public-insurance or immigrant-protection policy is coded liberal. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "medicareforall_2019Nov",
+          "year": "2019",
+          "weight": "weight_genpop_2019Nov",
+          "question": "Would you support or oppose a national health plan, sometimes called 'Medicare-for-all,' in which Americans would get their insurance from a single government plan?",
+          "guide_page": 128,
+          "expected_label": "Support for Medicare for All government health care plan",
+          "expected_labels": {
+            "1": "Strongly support",
+            "2": "Somewhat support",
+            "3": "Somewhat oppose",
+            "4": "Strongly oppose",
+            "5": "Don't know",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 1467,
+            "2": 1234,
+            "3": 599,
+            "4": 1868,
+            "5": 732
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_immi_stay",
+      "family": "voter_immi_stay",
+      "title": "Allow young adults brought to US illegally to stay and work legally",
+      "question": "Do you favor or oppose allowing young adults who were brought to the United States illegally as children to stay and work here legally?",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_note": "Support for the stated public-insurance or immigrant-protection policy is coded liberal. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples. The January 2019 wave includes late-2018 interviews.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "immi_stay_2018",
+          "year": "2018",
+          "weight": "weight_genpop_2018",
+          "question": "Do you favor or oppose allowing young adults who were brought to the United States illegally as children to stay and work here legally?",
+          "guide_page": 237,
+          "expected_label": "Allow young adults brought to US illegally to stay and work legally",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Somewhat favor",
+            "3": "Somewhat oppose",
+            "4": "Strongly oppose",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 2398,
+            "2": 1514,
+            "3": 832,
+            "4": 776,
+            "8": 457,
+            "98": 28
+          }
+        },
+        {
+          "code": "immi_stay_2019Jan",
+          "year": "2019",
+          "weight": "weight_genpop_2019Jan",
+          "question": "Do you favor or oppose allowing young adults who were brought to the United States illegally as children to stay and work here legally?",
+          "guide_page": 192,
+          "expected_label": "Allow young adults brought to US illegally to stay and work legally",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Somewhat favor",
+            "3": "Somewhat oppose",
+            "4": "Strongly oppose",
+            "8": "Don't know",
+            "98": "skipped",
+            "99": "not asked"
+          },
+          "published_counts": {
+            "1": 2636,
+            "2": 1663,
+            "3": 1039,
+            "4": 948,
+            "8": 481,
+            "98": 12
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_immi_separate",
+      "family": "voter_immi_separate",
+      "title": "Appropriate to separate undocumented immigrant parents from children to discoura",
+      "question": "Please tell us whether you agree or disagree with the statement: It is appropriate to separate undocumented immigrant parents from their children when they cross the border in order to discourage others from crossing the border illegally.",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "question_note": "Opposition to family separation as an immigration deterrent is coded liberal. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples. The January 2019 wave includes late-2018 interviews.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "immi_separate_2019Jan",
+          "year": "2019",
+          "weight": "weight_genpop_2019Jan",
+          "question": "Please tell us whether you agree or disagree with the statement: It is appropriate to separate undocumented immigrant parents from their children when they cross the border in order to discourage others from crossing the border illegally.",
+          "guide_page": 192,
+          "expected_label": "Appropriate to separate undocumented immigrant parents from children to discoura",
+          "expected_labels": {
+            "1": "Strongly agree",
+            "2": "Somewhat agree",
+            "3": "Somewhat disagree",
+            "4": "Strongly disagree",
+            "8": "Don't know",
+            "98": "skipped",
+            "99": "not asked"
+          },
+          "published_counts": {
+            "1": 1170,
+            "2": 957,
+            "3": 736,
+            "4": 3330,
+            "8": 565,
+            "98": 21
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_healthreformbill",
+      "family": "voter_healthreformbill",
+      "title": "Change in health care reform bill passed in 2010",
+      "question": "Do you think the health care reform bill that passed in 2010 should be expanded, kept the same, or repealed?",
+      "scores": {
+        "1": 1,
+        "2": 0,
+        "3": -1
+      },
+      "question_note": "Expanding the 2010 health reform is coded liberal; repeal conservative; keeping it unchanged is a status-quo midpoint. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples. The January 2019 wave includes late-2018 interviews.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "healthreformbill_2016",
+          "year": "2016",
+          "weight": "weight_genpop_2016",
+          "question": "Do you think the health care reform bill that passed in 2010 should be expanded, kept the same, or repealed?",
+          "guide_page": 370,
+          "expected_label": "Change in health care reform bill passed in 2010",
+          "expected_labels": {
+            "1": "Expanded",
+            "2": "Kept the same",
+            "3": "Repealed",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 3132,
+            "2": 449,
+            "3": 3729,
+            "8": 663,
+            "98": 27
+          }
+        },
+        {
+          "code": "healthreformbill_2017",
+          "year": "2017",
+          "weight": "weight_genpop_2017",
+          "question": "Do you think the health care reform bill that passed in 2010 should be expanded, kept the same, or repealed?",
+          "guide_page": 312,
+          "expected_label": "Change in health care reform bill passed in 2010",
+          "expected_labels": {
+            "1": "Expanded",
+            "2": "Kept the same",
+            "3": "Repealed",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 2131,
+            "2": 311,
+            "3": 2141,
+            "8": 410,
+            "98": 7
+          }
+        },
+        {
+          "code": "healthreformbill_2019Jan",
+          "year": "2019",
+          "weight": "weight_genpop_2019Jan",
+          "question": "Do you think the health care reform bill that passed in 2010 should be expanded, kept the same, or repealed?",
+          "guide_page": 193,
+          "expected_label": "Change in health care reform bill passed in 2010",
+          "expected_labels": {
+            "1": "Expanded",
+            "2": "Kept the same",
+            "3": "Repealed",
+            "8": "Don't know",
+            "98": "skipped",
+            "99": "not asked"
+          },
+          "published_counts": {
+            "1": 2891,
+            "2": 489,
+            "3": 2620,
+            "8": 767,
+            "98": 12
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_incomediff",
+      "family": "voter_incomediff",
+      "title": "Government responsibility to reduce differences in income",
+      "question": "How much do you agree or disagree with this statement? - It is the responsibility of the government to reduce the differences in income between people with high incomes and those with low incomes.",
+      "scores": {
+        "1": 1,
+        "2": 0.5,
+        "3": 0,
+        "4": -0.5,
+        "5": -1
+      },
+      "question_note": "Support for the stated redistribution, labor protection or banking intervention is coded liberal. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples. The January 2019 wave includes late-2018 interviews.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "incomediff_2019Jan",
+          "year": "2019",
+          "weight": "weight_genpop_2019Jan",
+          "question": "How much do you agree or disagree with this statement? - It is the responsibility of the government to reduce the differences in income between people with high incomes and those with low incomes.",
+          "guide_page": 204,
+          "expected_label": "Government responsibility to reduce differences in income",
+          "expected_labels": {
+            "1": "Strongly agree",
+            "2": "Somewhat agree",
+            "3": "Neither agree nor disagree",
+            "4": "Somewhat disagree",
+            "5": "Strongly disagree",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 983,
+            "2": 1302,
+            "3": 1429,
+            "4": 720,
+            "5": 2308,
+            "8": 37
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_econpolicy_union",
+      "family": "voter_econpolicy_union",
+      "title": "Make it easier for workers to unionize",
+      "question": "Do you support or oppose the following policies? - Making it easier for workers to unionize.",
+      "scores": {
+        "1": 1,
+        "2": 0.5,
+        "3": 0,
+        "4": -0.5,
+        "5": -1
+      },
+      "question_note": "Support for the stated redistribution, labor protection or banking intervention is coded liberal. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples. The January 2019 wave includes late-2018 interviews.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "econpolicy_union_2019Jan",
+          "year": "2019",
+          "weight": "weight_genpop_2019Jan",
+          "question": "Do you support or oppose the following policies? - Making it easier for workers to unionize.",
+          "guide_page": 205,
+          "expected_label": "Make it easier for workers to unionize",
+          "expected_labels": {
+            "1": "Strongly support",
+            "2": "Somewhat support",
+            "3": "Neither support nor oppose",
+            "4": "Somewhat oppose",
+            "5": "Strongly oppose",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 1885,
+            "2": 1125,
+            "3": 1833,
+            "4": 752,
+            "5": 1120,
+            "8": 64
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_econpolicy_bigbanks",
+      "family": "voter_econpolicy_bigbanks",
+      "title": "Break up big banks",
+      "question": "Do you support or oppose the following policies? - Breaking up big banks.",
+      "scores": {
+        "1": 1,
+        "2": 0.5,
+        "3": 0,
+        "4": -0.5,
+        "5": -1
+      },
+      "question_note": "Support for the stated redistribution, labor protection or banking intervention is coded liberal. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples. The January 2019 wave includes late-2018 interviews.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "econpolicy_bigbanks_2019Jan",
+          "year": "2019",
+          "weight": "weight_genpop_2019Jan",
+          "question": "Do you support or oppose the following policies? - Breaking up big banks.",
+          "guide_page": 206,
+          "expected_label": "Break up big banks",
+          "expected_labels": {
+            "1": "Strongly support",
+            "2": "Somewhat support",
+            "3": "Neither support nor oppose",
+            "4": "Somewhat oppose",
+            "5": "Strongly oppose",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 1815,
+            "2": 1768,
+            "3": 2101,
+            "4": 663,
+            "5": 364,
+            "8": 68
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_econpolicy_minwage",
+      "family": "voter_econpolicy_minwage",
+      "title": "Raise the minimum wage",
+      "question": "Do you support or oppose the following policies? - Raising the minimum wage.",
+      "scores": {
+        "1": 1,
+        "2": 0.5,
+        "3": 0,
+        "4": -0.5,
+        "5": -1
+      },
+      "question_note": "Support for the stated redistribution, labor protection or banking intervention is coded liberal. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples. The January 2019 wave includes late-2018 interviews.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "econpolicy_minwage_2019Jan",
+          "year": "2019",
+          "weight": "weight_genpop_2019Jan",
+          "question": "Do you support or oppose the following policies? - Raising the minimum wage.",
+          "guide_page": 206,
+          "expected_label": "Raise the minimum wage",
+          "expected_labels": {
+            "1": "Strongly support",
+            "2": "Somewhat support",
+            "3": "Neither support nor oppose",
+            "4": "Somewhat oppose",
+            "5": "Strongly oppose",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 2668,
+            "2": 1395,
+            "3": 1009,
+            "4": 727,
+            "5": 920,
+            "8": 60
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_econpolicy_paidleave",
+      "family": "voter_econpolicy_paidleave",
+      "title": "Require the provision of paid leave for parents and caretakers",
+      "question": "Do you support or oppose the following policies? - Requiring employers to provide paid leave for parents and caretakers.",
+      "scores": {
+        "1": 1,
+        "2": 0.5,
+        "3": 0,
+        "4": -0.5,
+        "5": -1
+      },
+      "question_note": "Support for the stated redistribution, labor protection or banking intervention is coded liberal. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples. The January 2019 wave includes late-2018 interviews.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "econpolicy_paidleave_2019Jan",
+          "year": "2019",
+          "weight": "weight_genpop_2019Jan",
+          "question": "Do you support or oppose the following policies? - Requiring employers to provide paid leave for parents and caretakers.",
+          "guide_page": 206,
+          "expected_label": "Require the provision of paid leave for parents and caretakers",
+          "expected_labels": {
+            "1": "Strongly support",
+            "2": "Somewhat support",
+            "3": "Neither support nor oppose",
+            "4": "Somewhat oppose",
+            "5": "Strongly oppose",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 2422,
+            "2": 1837,
+            "3": 1371,
+            "4": 615,
+            "5": 486,
+            "8": 48
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_econpolicy_govreg",
+      "family": "voter_econpolicy_govreg",
+      "title": "Reduce government regulation of businesses",
+      "question": "Do you support or oppose the following policies? - Reducing government regulation of businesses.",
+      "scores": {
+        "1": -1,
+        "2": -0.5,
+        "3": 0,
+        "4": 0.5,
+        "5": 1
+      },
+      "question_note": "Support for reducing business regulation is coded conservative. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples. The January 2019 wave includes late-2018 interviews.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "econpolicy_govreg_2019Jan",
+          "year": "2019",
+          "weight": "weight_genpop_2019Jan",
+          "question": "Do you support or oppose the following policies? - Reducing government regulation of businesses.",
+          "guide_page": 206,
+          "expected_label": "Reduce government regulation of businesses",
+          "expected_labels": {
+            "1": "Strongly support",
+            "2": "Somewhat support",
+            "3": "Neither support nor oppose",
+            "4": "Somewhat oppose",
+            "5": "Strongly oppose",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 1852,
+            "2": 1356,
+            "3": 1392,
+            "4": 1098,
+            "5": 1027,
+            "8": 54
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_immi_num",
+      "family": "voter_immi_num",
+      "title": "Number of immigrants that should be allowed into country",
+      "question": "Currently the federal government caps the number of immigrants it allows into the country each year. Do you think the government should increase the number of immigrants it allows in each year, decrease the number, or keep it about the same?",
+      "scores": {
+        "1": 1,
+        "2": 0,
+        "3": -1
+      },
+      "question_note": "Increasing immigration is coded liberal; unchanged levels are the midpoint. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "immi_num_2017",
+          "year": "2017",
+          "weight": "weight_genpop_2017",
+          "question": "Currently the federal government caps the number of immigrants it allows into the country each year. Do you think the government should increase the number of immigrants it allows in each year, decrease the number, or keep it about the same?",
+          "guide_page": 308,
+          "expected_label": "Number of immigrants that should be allowed into country",
+          "expected_labels": {
+            "1": "Increase",
+            "2": "Keep about the same",
+            "3": "Decrease",
+            "8": "Skipped",
+            "9": "Not Asked"
+          },
+          "published_counts": {
+            "1": 762,
+            "2": 2420,
+            "3": 1804,
+            "8": 14
+          }
+        },
+        {
+          "code": "immi_num_2018",
+          "year": "2018",
+          "weight": "weight_genpop_2018",
+          "question": "Currently the federal government caps the number of immigrants it allows into the country each year. Do you think the government should increase the number of immigrants it allows in each year, decrease the number, or keep it about the same?",
+          "guide_page": 238,
+          "expected_label": "Number of immigrants that should be allowed into country",
+          "expected_labels": {
+            "1": "Increase",
+            "2": "Keep about the same",
+            "3": "Decrease",
+            "8": "Skipped",
+            "9": "Not Asked"
+          },
+          "published_counts": {
+            "1": 1033,
+            "2": 2914,
+            "3": 2023,
+            "8": 35
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_marij",
+      "family": "voter_marij",
+      "title": "Legality of marijuana use",
+      "question": "Do you think the use of marijuana should be legal, or not?",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "question_note": "Legal marijuana use is coded liberal. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "marij_2018",
+          "year": "2018",
+          "weight": "weight_genpop_2018",
+          "question": "Do you think the use of marijuana should be legal, or not?",
+          "guide_page": 245,
+          "expected_label": "Legality of marijuana use",
+          "expected_labels": {
+            "1": "Should be legal",
+            "2": "Should not be legal",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 3220,
+            "2": 2009,
+            "8": 753,
+            "98": 23
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_flagburn",
+      "family": "voter_flagburn",
+      "title": "Support for amendment to make burning the US flag illegal",
+      "question": "Do you favor or oppose a constitutional amendment that would allow Congress and state governments to make it illegal to burn the American flag?",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "question_note": "Opposition to prohibiting flag burning is coded liberal under the civil-liberties convention. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "flagburn_2018",
+          "year": "2018",
+          "weight": "weight_genpop_2018",
+          "question": "Do you favor or oppose a constitutional amendment that would allow Congress and state governments to make it illegal to burn the American flag?",
+          "guide_page": 246,
+          "expected_label": "Support for amendment to make burning the US flag illegal",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Somewhat favor",
+            "3": "Somewhat oppose",
+            "4": "Strongly oppose",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 2040,
+            "2": 820,
+            "3": 772,
+            "4": 1672,
+            "8": 678,
+            "98": 23
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_aca_favor",
+      "family": "voter_aca_favor",
+      "title": "Proposed ACA repeal and replacement plan",
+      "question": "As you may know, Congress is currently discussing a healthcare plan that would repeal and replace the Affordable Care Act. Given what you know about the proposed new health care plan, do you have a generally favorable or generally unfavorable opinion of it?",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "question_note": "Despite its short variable label, the question asks about the proposed repeal-and-replacement plan, not favorability toward the ACA. Opposition to that proposal is coded liberal. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "aca_favor_2017",
+          "year": "2017",
+          "weight": "weight_genpop_2017",
+          "question": "As you may know, Congress is currently discussing a healthcare plan that would repeal and replace the Affordable Care Act. Given what you know about the proposed new health care plan, do you have a generally favorable or generally unfavorable opinion of it?",
+          "guide_page": 312,
+          "expected_label": "Opinion of ACA",
+          "expected_labels": {
+            "1": "Very favorable",
+            "2": "Somewhat favorable",
+            "3": "Somewhat unfavorable",
+            "4": "Very unfavorable",
+            "5": "Don't know",
+            "8": "Skipped",
+            "9": "Not Asked"
+          },
+          "published_counts": {
+            "1": 302,
+            "2": 876,
+            "3": 658,
+            "4": 2441,
+            "5": 722,
+            "8": 1
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_govtreg_business",
+      "family": "voter_govtreg_business",
+      "title": "Amount of regulation of business by government",
+      "question": "In general, do you think there is too much or too little regulation of business by the government?",
+      "scores": {
+        "1": -1,
+        "2": 0,
+        "3": 1
+      },
+      "question_note": "Too little business regulation is coded liberal; too much conservative; right amount is a status-quo midpoint. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "govtreg_business_2016",
+          "year": "2016",
+          "weight": "weight_genpop_2016",
+          "question": "In general, do you think there is too much or too little regulation of business by the government?",
+          "guide_page": 371,
+          "expected_label": "Amount of regulation of business by government",
+          "expected_labels": {
+            "1": "Too much",
+            "2": "About the right amount",
+            "3": "Too little",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 3473,
+            "2": 1628,
+            "3": 1999,
+            "8": 871,
+            "98": 29
+          }
+        },
+        {
+          "code": "govtreg_business_2017",
+          "year": "2017",
+          "weight": "weight_genpop_2017",
+          "question": "In general, do you think there is too much or too little regulation of business by the government?",
+          "guide_page": 313,
+          "expected_label": "Amount of regulation of business by government",
+          "expected_labels": {
+            "1": "Too much",
+            "2": "About the right amount",
+            "3": "Too little",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 1992,
+            "2": 1194,
+            "3": 1244,
+            "8": 562,
+            "98": 8
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_govtreg_banks",
+      "family": "voter_govtreg_banks",
+      "title": "More or less regulation of banks",
+      "question": "When it comes to regulating the activities of banks, should the government be doing more, less, or the same as it is now?",
+      "scores": {
+        "1": 1,
+        "2": -1,
+        "3": 0
+      },
+      "question_note": "More banking regulation or redistribution is coded liberal; less conservative; same is the midpoint. Category 3, not category 2, is the midpoint. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "govtreg_banks_2017",
+          "year": "2017",
+          "weight": "weight_genpop_2017",
+          "question": "When it comes to regulating the activities of banks, should the government be doing more, less, or the same as it is now?",
+          "guide_page": 313,
+          "expected_label": "More or less regulation of banks",
+          "expected_labels": {
+            "1": "More",
+            "2": "Less",
+            "3": "The same",
+            "8": "Skipped",
+            "9": "Not Asked"
+          },
+          "published_counts": {
+            "1": 2461,
+            "2": 850,
+            "3": 1657,
+            "8": 32
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_income_redistribution",
+      "family": "voter_income_redistribution",
+      "title": "Government role in reducing income differences",
+      "question": "When it comes to reducing income differences between rich and poor, should the government be doing more, less, or the same as it is now?",
+      "scores": {
+        "1": 1,
+        "2": -1,
+        "3": 0
+      },
+      "question_note": "More banking regulation or redistribution is coded liberal; less conservative; same is the midpoint. Category 3, not category 2, is the midpoint. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "income_redistribution_2017",
+          "year": "2017",
+          "weight": "weight_genpop_2017",
+          "question": "When it comes to reducing income differences between rich and poor, should the government be doing more, less, or the same as it is now?",
+          "guide_page": 314,
+          "expected_label": "Government role in reducing income differences",
+          "expected_labels": {
+            "1": "More",
+            "2": "Less",
+            "3": "The same",
+            "8": "Skipped",
+            "9": "Not Asked"
+          },
+          "published_counts": {
+            "1": 2324,
+            "2": 1583,
+            "3": 1061,
+            "8": 32
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_govt_moreorless",
+      "family": "voter_govt_moreorless",
+      "title": "Government should do more or do less to leave things to businesses/individuals",
+      "question": "Which is closer to your view? - Government should do more to solve problems, OR Government is doing too many things better left to businesses and individuals.",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "question_note": "Greater government action to solve problems is coded liberal; this is a general policy orientation, not a specific intervention. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "govt_moreorless_2017",
+          "year": "2017",
+          "weight": "weight_genpop_2017",
+          "question": "Which is closer to your view? - Government should do more to solve problems, OR Government is doing too many things better left to businesses and individuals.",
+          "guide_page": 315,
+          "expected_label": "Government should do more or do less to leave things to businesses/individuals",
+          "expected_labels": {
+            "1": "Government should do more to solve problems",
+            "2": "Government is doing too many things better left to businesses and individuals",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 2046,
+            "2": 2316,
+            "8": 626,
+            "98": 12
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_muslim_distrust_mosque",
+      "family": "voter_muslim_distrust_mosque",
+      "title": "Increase surveillance of mosques in the U.S.",
+      "question": "How much do you agree or disagree with each of these proposals? - Increase surveillance of mosques in the U.S. and other places where Muslims may congregate.",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "question_note": "Opposition to religion-based surveillance or screening is coded liberal under the civil-liberties convention. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "muslim_distrust_mosque_2017",
+          "year": "2017",
+          "weight": "weight_genpop_2017",
+          "question": "How much do you agree or disagree with each of these proposals? - Increase surveillance of mosques in the U.S. and other places where Muslims may congregate.",
+          "guide_page": 317,
+          "expected_label": "Increase surveillance of mosques in the U.S.",
+          "expected_labels": {
+            "1": "Strongly Agree",
+            "2": "Somewhat Agree",
+            "3": "Somewhat Disagree",
+            "4": "Strongly Disagree",
+            "8": "Skipped",
+            "9": "Not Asked"
+          },
+          "published_counts": {
+            "1": 1314,
+            "2": 1345,
+            "3": 1119,
+            "4": 1195,
+            "8": 27
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_muslim_distrust_airport",
+      "family": "voter_muslim_distrust_airport",
+      "title": "Target Muslims at U.S. airport screenings",
+      "question": "How much do you agree or disagree with each of these proposals? - Target Muslims at U.S. airport screenings to ensure the safety of flights.",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "question_note": "Opposition to religion-based surveillance or screening is coded liberal under the civil-liberties convention. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "muslim_distrust_airport_2017",
+          "year": "2017",
+          "weight": "weight_genpop_2017",
+          "question": "How much do you agree or disagree with each of these proposals? - Target Muslims at U.S. airport screenings to ensure the safety of flights.",
+          "guide_page": 317,
+          "expected_label": "Target Muslims at U.S. airport screenings",
+          "expected_labels": {
+            "1": "Strongly Agree",
+            "2": "Somewhat Agree",
+            "3": "Somewhat Disagree",
+            "4": "Strongly Disagree",
+            "8": "Skipped",
+            "9": "Not Asked"
+          },
+          "published_counts": {
+            "1": 1129,
+            "2": 1382,
+            "3": 1211,
+            "4": 1253,
+            "8": 25
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_view_deathpen",
+      "family": "voter_view_deathpen",
+      "title": "View on death penalty for those convicted of murder",
+      "question": "Are you in favor or opposed to the death penalty for persons convicted of murder?",
+      "scores": {
+        "1": -1,
+        "2": 1
+      },
+      "question_note": "Opposition to the death penalty is coded liberal. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "view_deathpen_2016",
+          "year": "2016",
+          "weight": "weight_genpop_2016",
+          "question": "Are you in favor or opposed to the death penalty for persons convicted of murder?",
+          "guide_page": 368,
+          "expected_label": "View on death penalty for those convicted of murder",
+          "expected_labels": {
+            "1": "Favor the death penalty",
+            "2": "Opposed to the death penalty",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 4603,
+            "2": 2293,
+            "8": 1071,
+            "98": 33
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_view_deathpenfreq",
+      "family": "voter_view_deathpenfreq",
+      "title": "View on frequency of death penalty imposition",
+      "question": "Do you think the death penalty is imposed too often or not often enough?",
+      "scores": {
+        "1": 1,
+        "2": 0,
+        "3": -1
+      },
+      "question_note": "Death penalty imposed too often is coded liberal; not often enough conservative; about right is a status-quo midpoint. Response categories are mapped explicitly to −1 through +1. Unknown, skipped and not-asked answers are excluded. Annual values average available wave estimates equally; repeated panelists are not independent samples.",
+      "weight": "wave-specific weight_genpop; equal weight per observed wave within year",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "view_deathpenfreq_2016",
+          "year": "2016",
+          "weight": "weight_genpop_2016",
+          "question": "Do you think the death penalty is imposed too often or not often enough?",
+          "guide_page": 369,
+          "expected_label": "View on frequency of death penalty imposition",
+          "expected_labels": {
+            "1": "Too often",
+            "2": "About right",
+            "3": "Not often enough",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 1893,
+            "2": 1271,
+            "3": 3337,
+            "8": 1476,
+            "98": 23
+          }
+        }
+      ]
+    }
+  ]
+}

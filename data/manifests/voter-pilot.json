@@ -1,0 +1,211 @@
+{
+  "release": "VOTER Survey December 2021 release",
+  "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+  "raw_path": "data/raw/voter/VOTER Panel Data Files/voter_panel.dta",
+  "encoding": "WINDOWS-1252",
+  "sources": {
+    "data/raw/voter/VOTER Panel Data Files/voter_panel.dta": "29382b5993748020e21dc0ef0749c65d76d87f729cac1fb2bdd11aab55d6e1f2",
+    "data/raw/voter/guide.pdf": "3a4fb03bcfe208937c5723a4f30239a9155930a818c21a708c8ac93395a981e5"
+  },
+  "notes": "Four reviewed policy questions from the VOTER panel, 2016–2020. Wave-specific cross-sectional estimates; repeated panelists are not independent samples. January 2019 includes late-2018 interviews. No missing years are estimated. Earlier 2011 responses and other questions are not included in this pilot.",
+  "entries": [
+    {
+      "code": "voter_abortion",
+      "family": "voter_abortion",
+      "title": "Abortion legality",
+      "question": "Do you think abortion should be...",
+      "scores": {
+        "1": 1,
+        "2": 0,
+        "3": -1
+      },
+      "question_note": "Legal in all cases = +1; legal in some cases = 0; illegal in all cases = −1. The midpoint represents conditional legality, not necessarily ideological centrism. Unknown, skipped and not-asked answers are excluded. Wave-specific cross-sectional weights are used.",
+      "weight": "wave-specific weight_genpop",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "view_abortlegal_2016",
+          "year": "2016",
+          "weight": "weight_genpop_2016",
+          "question": "Do you think abortion should be...",
+          "guide_page": 368,
+          "expected_label": "View on the legality of abortion",
+          "expected_labels": {
+            "1": "Legal in all cases",
+            "2": "Legal/Illegal in some cases",
+            "3": "Illegal in all cases",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 2737,
+            "2": 3890,
+            "3": 1024,
+            "8": 328,
+            "98": 21
+          }
+        },
+        {
+          "code": "view_abortlegal_2020Nov",
+          "year": "2020",
+          "weight": "weight_genpop_2020Nov",
+          "question": "Do you think abortion should be...",
+          "guide_page": 39,
+          "expected_label": "View on the legality of abortion",
+          "expected_labels": {
+            "1": "Legal in all cases",
+            "2": "Legal in some cases and illegal in others",
+            "3": "Illegal in all cases",
+            "4": "Don’t know",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 1756,
+            "2": 2266,
+            "3": 621,
+            "4": 300
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_marriage",
+      "family": "voter_marriage",
+      "title": "Same-sex marriage",
+      "question": "Do you favor or oppose allowing gays and lesbians to marry legally?",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "question_note": "Favor legal same-sex marriage = +1; oppose = −1. Unknown, skipped and not-asked answers are excluded. Wave-specific cross-sectional weights are used.",
+      "weight": "wave-specific weight_genpop",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "view_gaymar_2016",
+          "year": "2016",
+          "weight": "weight_genpop_2016",
+          "question": "Do you favor or oppose allowing gays and lesbians to marry legally?",
+          "guide_page": 368,
+          "expected_label": "View on the legality of gay marriage",
+          "expected_labels": {
+            "1": "Favor",
+            "2": "Oppose",
+            "8": "Don't know",
+            "98": "Skipped",
+            "99": "Not Asked"
+          },
+          "published_counts": {
+            "1": 4213,
+            "2": 2809,
+            "8": 956,
+            "98": 22
+          }
+        },
+        {
+          "code": "view_gaymar_2020Nov",
+          "year": "2020",
+          "weight": "weight_genpop_2020Nov",
+          "question": "Do you favor or oppose allowing gays and lesbians to marry legally?",
+          "guide_page": 40,
+          "expected_label": "View on the legality of gay marriage",
+          "expected_labels": {
+            "1": "Favor",
+            "2": "Oppose",
+            "3": "Don’t know",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 3038,
+            "2": 1307,
+            "3": 598
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_guns",
+      "family": "voter_guns",
+      "title": "Gun control laws",
+      "question": "Do you think gun control laws should be made more or less strict than they are now?",
+      "scores": {
+        "1": 1,
+        "2": 0,
+        "3": -1
+      },
+      "question_note": "More strict = +1; no change = 0; less strict = −1. No change is a status-quo answer, not necessarily ideological centrism. Unknown, skipped and not-asked answers are excluded. Wave-specific cross-sectional weights are used.",
+      "weight": "wave-specific weight_genpop",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "guncontrollaw_2019Nov",
+          "year": "2019",
+          "weight": "weight_genpop_2019Nov",
+          "question": "Do you think gun control laws should be made more or less strict than they are now?",
+          "guide_page": 126,
+          "expected_label": "Make gun control laws more or less strict",
+          "expected_labels": {
+            "1": "More strict",
+            "2": "No change",
+            "3": "Less strict",
+            "4": "Not sure",
+            "8": "skipped",
+            "9": "not asked"
+          },
+          "published_counts": {
+            "1": 3349,
+            "2": 1435,
+            "3": 692,
+            "4": 423,
+            "8": 1
+          }
+        }
+      ]
+    },
+    {
+      "code": "voter_health_mandate",
+      "family": "voter_health_mandate",
+      "title": "Health insurance mandate",
+      "question": "As you may know, the Affordable Care Act required nearly all Americans to have health insurance, or else pay a fine. Congress passed a law repealing this requirement starting in January 2019. Do you favor or oppose requiring all Americans have health insurance?",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_note": "Strongly favor = +1; somewhat favor = +1/3; somewhat oppose = −1/3; strongly oppose = −1. This asks about an insurance requirement, not government-run insurance. The January 2019 wave was fielded November 17, 2018–January 7, 2019 and is plotted under its named wave year. Unknown, skipped and not-asked answers are excluded. Wave-specific cross-sectional weights are used.",
+      "weight": "wave-specific weight_genpop",
+      "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf",
+      "waves": [
+        {
+          "code": "requirehealth_2019Jan",
+          "year": "2019",
+          "weight": "weight_genpop_2019Jan",
+          "question": "As you may know, the Affordable Care Act required nearly all Americans to have health insurance, or else pay a fine. Congress passed a law repealing this requirement starting in January 2019. Do you favor or oppose requiring all Americans have health insurance?",
+          "guide_page": 193,
+          "expected_label": "Require all Americans to have health insurance",
+          "expected_labels": {
+            "1": "Strongly favor",
+            "2": "Somewhat favor",
+            "3": "Somewhat oppose",
+            "4": "Strongly oppose",
+            "8": "Don't know",
+            "98": "skipped",
+            "99": "not asked"
+          },
+          "published_counts": {
+            "1": 2015,
+            "2": 1218,
+            "3": 984,
+            "4": 1944,
+            "8": 609,
+            "98": 9
+          }
+        }
+      ]
+    }
+  ]
+}
