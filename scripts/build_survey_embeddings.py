@@ -13,14 +13,37 @@ from scvpublic.store import connect
 from scvpublic.survey_search import SurveySearch, SURVEY_FILES
 
 
-def build(artifact, bundle, output, phrases=False):
+def build(artifact, bundle, output, phrases=False, reuse_artifact=None, reuse_bundle=None):
     if output.exists():
         raise FileExistsError(output)
     engine = HybridSearch(bundle, artifact)
     with closing(connect(artifact)) as db:
         rows = list(db.execute("SELECT corpus,id,payload FROM documents WHERE corpus != 'court' ORDER BY corpus,id"))
     texts = [d.get('search_text') or (d.get('title', '')+'. '+d['question']) for _, _, payload in rows for d in [json.loads(payload)]]
-    vectors = np.concatenate([engine.encoder.encode(texts[i:i+16]) for i in range(0, len(texts), 16)]) if texts else np.empty((0,384), dtype=np.float32)
+    if (reuse_artifact is None) != (reuse_bundle is None):
+        raise ValueError('Both reuse artifact and bundle are required')
+    if reuse_bundle is not None:
+        old = SurveySearch(reuse_bundle, reuse_artifact, engine.encoder)
+        old_manifest = json.loads((reuse_bundle/'manifest.json').read_text())
+        new_manifest = json.loads((bundle/'manifest.json').read_text())
+        for name in ('model.onnx', 'tokenizer.json'):
+            if old_manifest['files'][name] != new_manifest['files'][name]:
+                raise ValueError('Cannot reuse vectors from a different encoder')
+        with closing(connect(reuse_artifact)) as db:
+            previous = {}
+            for i, (source, doc_id) in enumerate(old.keys):
+                doc = json.loads(db.execute('SELECT payload FROM documents WHERE corpus=? AND id=?',
+                                           (source, doc_id)).fetchone()[0])
+                previous[source, doc['code']] = (doc, old.vectors[i])
+        current = {(source, json.loads(payload)['code']): json.loads(payload)
+                   for source, _, payload in rows}
+        if not previous.keys() <= current.keys() or any(current[k] != d for k, (d, _) in previous.items()):
+            raise ValueError('Append-only reuse requires every existing survey record unchanged')
+        vectors = np.stack([previous[source, json.loads(payload)['code']][1]
+            if (source, json.loads(payload)['code']) in previous else engine.encoder.encode([text])[0]
+            for (source, _, payload), text in zip(rows, texts)])
+    else:
+        vectors = np.concatenate([engine.encoder.encode(texts[i:i+16]) for i in range(0, len(texts), 16)]) if texts else np.empty((0,384), dtype=np.float32)
     output.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(dir=output.parent) as temporary:
         target = Path(temporary)/'bundle'
@@ -35,7 +58,17 @@ def build(artifact, bundle, output, phrases=False):
             (target/name).unlink(missing_ok=True)
             manifest['files'].pop(name, None)
         manifest.pop('survey_phrase_expansion', None)
-        if phrases:
+        if phrases and reuse_bundle is not None:
+            # Freeze expansion vocabulary as well as document vectors. Rebuilding
+            # quantized batches can change scores for otherwise unchanged text.
+            for name in ('survey-phrases.json', 'survey-phrase-vectors.npy'):
+                shutil.copyfile(reuse_bundle/name, target/name)
+                manifest['files'][name] = digest(target/name)
+            manifest['survey_phrase_expansion'] = old_manifest['survey_phrase_expansion']
+            manifest['survey_vector_reuse'] = dict(artifact_sha256=digest(reuse_artifact),
+                manifest_sha256=digest(reuse_bundle/'manifest.json'),
+                preserved_documents=len(previous), phrase_vocabulary='preserved')
+        elif phrases:
             from sklearn.feature_extraction.text import TfidfVectorizer
             from scripts.experiment_survey_phrases import phrases as extract_phrases
             vectorizer = TfidfVectorizer(analyzer=extract_phrases, dtype=np.float32)
@@ -64,5 +97,7 @@ if __name__ == '__main__':
     for name in ('artifact', 'bundle', 'output'):
         parser.add_argument('--'+name, type=Path, required=True)
     parser.add_argument('--phrases', action='store_true')
+    parser.add_argument('--reuse-artifact', type=Path)
+    parser.add_argument('--reuse-bundle', type=Path)
     args = parser.parse_args()
-    build(args.artifact, args.bundle, args.output, args.phrases)
+    build(args.artifact, args.bundle, args.output, args.phrases, args.reuse_artifact, args.reuse_bundle)

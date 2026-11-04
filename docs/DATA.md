@@ -1106,3 +1106,55 @@ PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_embedd
 Use a fresh audit output path when rebuilding: the builder refuses to overwrite
 existing outputs. The base artifact preserves every existing source, including
 the deployed PRRI expansion; no historical CES estimates are replaced.
+
+### Minimum-wage coverage (November 4 candidate)
+
+The CES 2022 common questionnaire contains one additional wage-floor item:
+`CC22_355d`, increasing the minimum wage paid to **federal contractors** to
+$15/hour. Questionnaire PDF page 48 supplies the support/oppose codes; guide
+PDF page 53 reports 43,164 support and 16,680 oppose responses. The importer
+checks these unweighted counts before applying `commonweight`, excluding missing
+answers and invalid weights, and independently checks the weighted mean using
+grouped category totals. All 59,844 substantive responses have usable weights;
+the resulting score is +0.4014546943. Support is coded +1 and opposition -1 by
+the project's policy-direction convention.
+
+This is a separate family, not an extension of a nationwide $15 proposal.
+The policy cumulative metadata/guide and downloaded 2023, 2024 and 2025 common
+questionnaires were screened for minimum-wage items; no additional item was
+identified there. This is not an exhaustive review of CES team modules or other
+annual releases. The candidate adds one question-year, not a continuous series.
+
+The previously imported VOTER 2019 minimum-wage question scored 0.46273 against
+a 0.46560 semantic floor for `minimum wage`. The existing reviewed-topic mechanism
+now includes all five explicitly reviewed wage-floor records across CES, PRRI,
+Nationscape and VOTER, using `data/evaluation/survey-topics-minimum-wage.json`.
+The original 36-record pilot remains intact for reproducibility. No search
+threshold or model changes are needed. Dollar amounts and contractor scope remain
+in the original displayed questions. Broader coverage still combines different
+proposals, not a fixed-question trend.
+
+Rebuild into fresh paths:
+
+```sh
+PYTHONPATH=. .venv/bin/python -m scvpublic.ces_annual --base data/processed/ces-climate-batch/public.json --manifest data/manifests/ces-2022-v4.json --crosswalk data/ces/minimum-wage-2022-crosswalk.json --output data/processed/ces-minimum-wage/public.json
+PYTHONPATH=. .venv/bin/python -c "from pathlib import Path; from scvpublic.gss import attach; attach(Path('artifacts/ces-climate-batch.sqlite'), Path('data/processed/ces-minimum-wage/public.json'), Path('artifacts/ces-minimum-wage.sqlite'), corpus='ces')"
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/rebind_hybrid.py --old artifacts/ces-climate-batch.sqlite --new artifacts/ces-minimum-wage.sqlite --bundle artifacts/semantic-ces-climate-batch --output artifacts/semantic-minimum-wage-court
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_embeddings.py --artifact artifacts/ces-minimum-wage.sqlite --bundle artifacts/semantic-minimum-wage-court --output artifacts/semantic-minimum-wage-stable-base --phrases --reuse-artifact artifacts/ces-climate-batch.sqlite --reuse-bundle artifacts/semantic-survey-topic-routing
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_topic_bundle.py --artifact artifacts/ces-minimum-wage.sqlite --bundle artifacts/semantic-minimum-wage-stable-base --descriptions data/evaluation/survey-topics-minimum-wage.json --output artifacts/semantic-minimum-wage-stable
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/check_minimum_wage.py --baseline-artifact artifacts/ces-climate-batch.sqlite --baseline-bundle artifacts/semantic-survey-topic-routing --artifact artifacts/ces-minimum-wage.sqlite --bundle artifacts/semantic-minimum-wage-stable --output artifacts/minimum-wage-validation.json
+```
+
+The append-only embedding build preserves all 337 existing document vectors and
+the phrase vocabulary exactly, encoding only the new item. A full rebuild was
+rejected because batch-dependent quantized embeddings changed unrelated search
+results. `--reuse-artifact` and `--reuse-bundle` require unchanged existing records
+and the same encoder. New phrase expansion vocabulary is intentionally deferred.
+
+Validation: 158 unit tests, 160 serving requests, and 42 HTTP checks pass.
+Across 42 search queries (49 partially judged cases), only `minimum wage` changes
+its result identities; all 41 other selections remain unchanged. Coverage rises
+from three records/two sources/seven years to five records/four sources/eight
+years (2010, 2011, 2013, 2016, 2019–2022). VOTER adds a second source in 2019.
+See `data/evaluation/minimum-wage-summary.json`. The local test-client memory peak
+is 215.9 MiB, excluding Gunicorn master and OS; this is not a new VPS measurement.

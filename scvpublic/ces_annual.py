@@ -37,6 +37,11 @@ def extend_documents(base, frame, crosswalk):
         unknown = answers.notna() & ~answers.isin([*scores, 8, 9])
         if unknown.any():
             raise ValueError('Unreviewed response code: ' + entry['source_code'])
+        if 'published_counts' in entry:
+            counts = {str(int(k)): int(v) for k, v in
+                      answers[answers.isin(scores)].value_counts().items()}
+            if counts != entry['published_counts']:
+                raise ValueError('Published frequencies differ: ' + entry['source_code'])
         weights = frame[crosswalk['weight']]
         scored = answers.map(scores)
         valid = scored.notna() & np.isfinite(weights) & (weights > 0)
@@ -58,6 +63,10 @@ def extend_documents(base, frame, crosswalk):
             raise ValueError('Existing item scoring or family differs')
         weight_sum = float(weights[valid].sum())
         mean = float((weights[valid]*scored[valid]).sum()/weight_sum)
+        grouped = weights[valid].groupby(answers[valid]).sum()
+        independent = sum(float(w)*scores[int(a)] for a, w in grouped.items())/weight_sum
+        if not np.isclose(mean, independent, rtol=0, atol=1e-12):
+            raise ValueError('Grouped score differs: ' + code)
         document['years'][year] = mean
         document['respondents'][year] = int(valid.sum())
         document['weight_sums'][year] = weight_sum

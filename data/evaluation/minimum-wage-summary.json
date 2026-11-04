@@ -1,0 +1,108 @@
+{
+  "status": "passed",
+  "queries_checked": 42,
+  "judged_cases": 49,
+  "regressions": [],
+  "changes": {
+    "minimum wage": {
+      "before": {
+        "ces": [],
+        "gss": [],
+        "nationscape": [
+          "nationscape_minwage"
+        ],
+        "pew": [],
+        "prri": [
+          "prri_minimum_wage_10",
+          "prri_minimum_wage_15"
+        ],
+        "public": [],
+        "voter": [],
+        "wvs": []
+      },
+      "after": {
+        "ces": [
+          "minimum_wage_contractors"
+        ],
+        "gss": [],
+        "nationscape": [
+          "nationscape_minwage"
+        ],
+        "pew": [],
+        "prri": [
+          "prri_minimum_wage_10",
+          "prri_minimum_wage_15"
+        ],
+        "public": [],
+        "voter": [
+          "voter_econpolicy_minwage"
+        ],
+        "wvs": []
+      }
+    }
+  },
+  "questions": {
+    "ces": [
+      "minimum_wage_contractors"
+    ],
+    "gss": [],
+    "nationscape": [
+      "nationscape_minwage"
+    ],
+    "pew": [],
+    "prri": [
+      "prri_minimum_wage_10",
+      "prri_minimum_wage_15"
+    ],
+    "public": [],
+    "voter": [
+      "voter_econpolicy_minwage"
+    ],
+    "wvs": []
+  },
+  "public_years": [
+    2010,
+    2011,
+    2013,
+    2016,
+    2019,
+    2020,
+    2021,
+    2022
+  ],
+  "existing_survey_records_preserved": 337,
+  "limitation": "Partial development judgments, not independent relevance validation.",
+  "sources": {
+    "data/evaluation/survey-relevance-development.json": "f9bc6ee9b55cb64bd4e1ee77d8d216354fb5f2865fd40771419b6bf1bd3d26ff",
+    "data/evaluation/survey-climate-relevance.json": "92a661f3ea2040f87494ad84c808dd43c345953214243fb695130c3bc6232086",
+    "data/evaluation/survey-description-checks.json": "45d1997c55b8b26f3646ed120fde3985793318c66ee1da275a30c775802ff0ad",
+    "data/evaluation/survey-synonyms.json": "317be1d67c7875ce97bc6d9c93d476a28bddd703e86917565798a6ac6d5daaed",
+    "artifacts/ces-minimum-wage.sqlite": "2c2ae5a846079421d12fd766131d6709dbbb3ebccd36c222a5169263085f3077",
+    "artifacts/ces-climate-batch.sqlite": "0319c92c8f04495f33ff84bce47320a64169bd547261f42109b217f9643e4623",
+    "artifacts/semantic-minimum-wage-stable/manifest.json": "1d3316a342743cd3bf9db5e2e767524fe8acce08a2df8769fd19eeb87169a185",
+    "artifacts/semantic-survey-topic-routing/manifest.json": "ef96f0ffecc6b1603bfb4ea26e42debae41f7ba2fc34f83a7404b44eea012228",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/check_minimum_wage.py": "c03eb80580c8c483f4ad0be4bbfd8b1592c28d290d5f0c1c3eed46c007a10143"
+  },
+  "validation": {
+    "unit_tests": 158,
+    "serving_requests": 160,
+    "peak_test_process_rss_mib": 215.875,
+    "memory_scope": "Single-process local Flask test client; excludes Gunicorn master and OS.",
+    "http_requests": 42
+  },
+  "import": {
+    "rows": 60000,
+    "year": 2022,
+    "entries": [
+      {
+        "code": "minimum_wage_contractors",
+        "source_code": "CC22_355d",
+        "year": 2022,
+        "valid_responses": 59844,
+        "excluded": 156,
+        "mean": 0.40145469432167635,
+        "weight_sum": 59822.7087403341
+      }
+    ]
+  }
+}

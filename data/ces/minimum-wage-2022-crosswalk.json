@@ -1,0 +1,37 @@
+{
+  "year": 2022,
+  "wave": "pre-election",
+  "weight": "commonweight",
+  "doi": "10.7910/DVN/PR4L8P",
+  "status": "Assistant reviewed against questionnaire page 48 and guide page 53; not independently reviewed",
+  "sources": {
+    "data/raw/ces-2022-v4/responses.csv": "dcdaeba631e0bdf50f3d7dcf4dcde7cc980e4281ff5dab87efcaa7353ca089bc",
+    "data/raw/ces-2022-v4/pre-election-questionnaire.pdf": "0e01ab38d1dd2ee9a9c4a4529032ab96c34c5f4661d3be61389ac8701f20cfbf",
+    "data/raw/ces-2022-v4/guide.pdf": "4ee48162508bfa5a53017a4f87373f53e83a206934ff9755de890e37595a3460"
+  },
+  "entries": [
+    {
+      "source_code": "CC22_355d",
+      "code": "minimum_wage_contractors",
+      "family": "ces:minimum_wage_contractors",
+      "existing_item": false,
+      "title": "Minimum wage: federal contractors, $15/hour",
+      "question_text": "Increase the minimum wage paid to federal contractors to $15 an hour",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "harmonization": "Support for raising the minimum wage is coded liberal; opposition conservative. This item evaluates a specific executive decision for federal contractors, not a universal minimum wage. Keep separate from general and nationwide wage proposals.",
+      "reviewed_questionnaire_pdf_pages": [
+        48
+      ],
+      "reviewed_guide_pdf_pages": [
+        53
+      ],
+      "published_counts": {
+        "1": 43164,
+        "2": 16680
+      }
+    }
+  ]
+}

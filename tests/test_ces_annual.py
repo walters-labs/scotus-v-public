@@ -47,6 +47,14 @@ class AnnualCESTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'scoring'):
             extend_documents(self.base,self.frame,self.crosswalk)
 
+    def test_published_counts_include_answers_with_invalid_weights(self):
+        self.entry['published_counts'] = {'1': 2, '2': 1}
+        result = extend_documents(self.base, self.frame, self.crosswalk)
+        self.assertEqual(result['documents'][0]['respondents']['2024'], 2)
+        self.entry['published_counts']['1'] = 1
+        with self.assertRaisesRegex(ValueError, 'Published frequencies'):
+            extend_documents(self.base, self.frame, self.crosswalk)
+
     def test_other_year_requires_its_own_wording(self):
         self.crosswalk['year'] = 2022
         with self.assertRaisesRegex(ValueError, 'Missing question wording'):
