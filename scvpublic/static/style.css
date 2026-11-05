@@ -31,3 +31,12 @@ details { margin: 1rem 0; }
 .survey-results summary:focus-visible{outline:2px solid #64766d;outline-offset:3px}
 .survey-results details p,.survey-results details ul{font-size:12px;line-height:1.6}
 .survey-question .long-question{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden}
+
+.topic-search{grid-template-columns:minmax(0,1fr) auto;align-items:start}
+.topic-search button{align-self:start;margin-top:26px}
+.search-help{display:block;margin-top:8px;font-size:12px;font-weight:400;color:#5b686e}
+.methodology{font-size:13px;color:#5b686e;margin:18px 0 26px}
+.methodology summary{cursor:pointer;width:fit-content}
+.methodology summary:focus-visible{outline:2px solid #64766d;outline-offset:3px}
+.methodology p{max-width:85ch}
+@media(max-width:760px){.topic-search{grid-template-columns:1fr}.topic-search button{margin-top:0}}
