@@ -1158,3 +1158,59 @@ from three records/two sources/seven years to five records/four sources/eight
 years (2010, 2011, 2013, 2016, 2019–2022). VOTER adds a second source in 2019.
 See `data/evaluation/minimum-wage-summary.json`. The local test-client memory peak
 is 215.9 MiB, excluding Gunicorn master and OS; this is not a new VPS measurement.
+
+### Contraception coverage (November 5 candidate)
+
+This batch adds two policy families and three question-years to the existing GSS
+teenage-access item:
+
+- CES 2023–2024: support/opposition to prohibiting government restrictions on
+  contraceptive provision and access. Identical item wording is retained as one
+  family. Support = +1, opposition = -1. CES 2023 is an odd-year single-wave survey;
+  2024 uses the pre-election adult-population weight. Both use `commonweight`.
+  The 2023 questionnaire PDF page 45 and Stata value labels establish the response
+  codes; raw counts are 16,247 support, 7,948 oppose and 305 skipped (not an
+  independent published-frequency check). The 2024 original DOCX identifies
+  `CC24_340a`; guide PDF page 50 independently confirms 44,296 support and 15,550
+  oppose. Weighted means are +0.331329 (2023) and +0.420280 (2024).
+- PRRI September 2022: laws restricting which types of birth control can be used
+  to prevent pregnancy (`Q29_5`). Strongly/somewhat favor/oppose map to
+  -1, -1/3, +1/3, +1. Opposition to restrictions is coded liberal. Full-sample
+  `KP_WEIGHT` reproduces the questionnaire page 27 percentages (5/11/19/60),
+  within the existing 0.51 percentage-point rounding tolerance. The June figures
+  shown for comparison are not imported as another observation.
+
+These are related but distinct policy measurements; neither asks about personal
+contraceptive use. The GSS question retains its teenage/parental-consent scope.
+PRRI 2012 Q17 insurance mandates are deferred pending review of split-form
+wording and form-specific denominators/weights. Its moral-acceptability item is
+not a direct access-policy measure. This batch is not an exhaustive inventory of
+all contraception surveys.
+
+Rebuild into fresh paths (all source manifests are already pinned):
+
+```sh
+PYTHONPATH=. .venv/bin/python -m scvpublic.ces_annual --base data/processed/ces-minimum-wage/public.json --manifest data/manifests/ces-2023-v2.json --crosswalk data/ces/contraception-2023-crosswalk.json --output data/processed/contraception-ces-2023/public.json
+PYTHONPATH=. .venv/bin/python -m scvpublic.ces_annual --base data/processed/contraception-ces-2023/public.json --manifest data/manifests/ces-2024-v9.json --crosswalk data/ces/contraception-2024-crosswalk.json --output data/processed/contraception-ces/public.json
+PYTHONPATH=. .venv/bin/python -m scvpublic.prri --documents-manifest data/manifests/prri-all-policy-documents.json --mappings data/prri/contraception-mappings.json --output data/processed/contraception-prri/public.json
+PYTHONPATH=. .venv/bin/python -c "from pathlib import Path; from scvpublic.gss import attach; attach(Path('artifacts/ces-minimum-wage.sqlite'), Path('data/processed/contraception-ces/public.json'), Path('artifacts/contraception-ces.sqlite'), corpus='ces'); attach(Path('artifacts/contraception-ces.sqlite'), Path('data/processed/contraception-prri/public.json'), Path('artifacts/contraception.sqlite'), corpus='prri')"
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/rebind_hybrid.py --old artifacts/ces-minimum-wage.sqlite --new artifacts/contraception.sqlite --bundle artifacts/semantic-minimum-wage-stable --output artifacts/semantic-contraception-court
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_embeddings.py --artifact artifacts/contraception.sqlite --bundle artifacts/semantic-contraception-court --output artifacts/semantic-contraception-base --phrases --reuse-artifact artifacts/ces-minimum-wage.sqlite --reuse-bundle artifacts/semantic-minimum-wage-stable
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_topic_bundle.py --artifact artifacts/contraception.sqlite --bundle artifacts/semantic-contraception-base --descriptions data/evaluation/survey-topics-contraception.json --output artifacts/semantic-contraception
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/check_contraception.py --baseline-artifact artifacts/ces-minimum-wage.sqlite --baseline-bundle artifacts/semantic-minimum-wage-stable --artifact artifacts/contraception.sqlite --bundle artifacts/semantic-contraception --output artifacts/contraception-validation.json
+```
+
+Existing survey records, embeddings, expansion vocabulary, and court content are
+preserved. The complete reviewed topic specification extends the minimum-wage
+release; the topic-bundle builder can now replace an existing topic specification
+in a new output directory. No retrieval thresholds or scoring conventions change.
+
+Validation: all 338 existing survey records and vectors are preserved. The 42-query
+comparison changes only contraception, birth control and contraceptive access;
+no judged relevance regressions occur in the partial development set. These
+queries now return GSS, CES and PRRI policy questions, removing the previously
+selected abortion-only records. Coverage grows from 22 to 23 calendar years
+(2023 is new), with independent-source overlap in 2022 and 2024. 158 unit tests,
+160 serving requests and 42 HTTP checks pass. Local test-process peak RSS is
+230.4 MiB, excluding Gunicorn master and OS. Results and import checks are in
+`data/evaluation/contraception-summary.json`; this is not a VPS measurement.

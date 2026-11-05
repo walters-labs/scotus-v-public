@@ -1,0 +1,31 @@
+{
+  "year": 2024,
+  "wave": "pre-election",
+  "weight": "commonweight",
+  "doi": "10.7910/DVN/X11EP6",
+  "status": "Assistant reviewed against original questionnaire; not independently reviewed",
+  "sources": {
+    "data/raw/ces-2024-v9/responses.csv": "8a5e9fbc982961ad910bad9aed8d521fa0a85e85cded43fb308cce0ab22ba5d9",
+    "data/raw/ces-2024-v9/guide.pdf": "48ef8f229980b4778dd26f321062e9d9e089abdd849cc8db2529377f3e8b0c10",
+    "data/raw/ces-2024-v9/pre-election-questionnaire.docx": "fe8d9acec0a8f312fbde3a95d3d2190e6be8f992c9de41f40954f1875abfdca8"
+  },
+  "entries": [
+    {
+      "source_code": "CC24_340a",
+      "code": "contraception_access",
+      "family": "ces:contraception_access",
+      "existing_item": true,
+      "title": "Contraception: prohibit government restrictions on access",
+      "question_text": "Prohibit government restrictions on the provision of, and access to, contraceptives",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "harmonization": "Support for prohibiting government restrictions on contraceptive provision and access is coded liberal; opposition conservative. This concerns access policy, not personal use, abortion or teenage parental consent.",
+      "published_counts": {
+        "1": 44296,
+        "2": 15550
+      }
+    }
+  ]
+}

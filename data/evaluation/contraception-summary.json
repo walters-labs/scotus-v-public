@@ -1,0 +1,220 @@
+{
+  "status": "passed",
+  "queries_checked": 42,
+  "judged_cases": 49,
+  "regressions": [],
+  "changes": {
+    "birth control": {
+      "before": {
+        "ces": [],
+        "gss": [
+          "pillok"
+        ],
+        "nationscape": [],
+        "pew": [],
+        "prri": [
+          "prri_abortion_medication_ban"
+        ],
+        "public": [],
+        "voter": [],
+        "wvs": []
+      },
+      "after": {
+        "ces": [
+          "contraception_access"
+        ],
+        "gss": [
+          "pillok"
+        ],
+        "nationscape": [],
+        "pew": [],
+        "prri": [
+          "prri_birth_control_restrictions"
+        ],
+        "public": [],
+        "voter": [],
+        "wvs": []
+      }
+    },
+    "contraception": {
+      "before": {
+        "ces": [],
+        "gss": [
+          "pillok"
+        ],
+        "nationscape": [],
+        "pew": [],
+        "prri": [],
+        "public": [],
+        "voter": [],
+        "wvs": []
+      },
+      "after": {
+        "ces": [
+          "contraception_access"
+        ],
+        "gss": [
+          "pillok"
+        ],
+        "nationscape": [],
+        "pew": [],
+        "prri": [
+          "prri_birth_control_restrictions"
+        ],
+        "public": [],
+        "voter": [],
+        "wvs": []
+      }
+    },
+    "contraceptive access": {
+      "before": {
+        "ces": [
+          "abortion_expand_access"
+        ],
+        "gss": [
+          "pillok"
+        ],
+        "nationscape": [],
+        "pew": [],
+        "prri": [
+          "prri_abortion_difficult"
+        ],
+        "public": [],
+        "voter": [],
+        "wvs": []
+      },
+      "after": {
+        "ces": [
+          "contraception_access"
+        ],
+        "gss": [
+          "pillok"
+        ],
+        "nationscape": [],
+        "pew": [],
+        "prri": [
+          "prri_birth_control_restrictions"
+        ],
+        "public": [],
+        "voter": [],
+        "wvs": []
+      }
+    }
+  },
+  "questions": {
+    "ces": [
+      "contraception_access"
+    ],
+    "gss": [
+      "pillok"
+    ],
+    "nationscape": [],
+    "pew": [],
+    "prri": [
+      "prri_birth_control_restrictions"
+    ],
+    "public": [],
+    "voter": [],
+    "wvs": []
+  },
+  "public_years": [
+    1986,
+    1988,
+    1989,
+    1990,
+    1991,
+    1993,
+    1994,
+    1996,
+    1998,
+    2000,
+    2002,
+    2004,
+    2006,
+    2008,
+    2010,
+    2012,
+    2014,
+    2016,
+    2018,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "existing_survey_records_preserved": 338,
+  "limitation": "Partial development judgments, not independent relevance validation.",
+  "sources": {
+    "data/evaluation/survey-relevance-development.json": "f9bc6ee9b55cb64bd4e1ee77d8d216354fb5f2865fd40771419b6bf1bd3d26ff",
+    "data/evaluation/survey-climate-relevance.json": "92a661f3ea2040f87494ad84c808dd43c345953214243fb695130c3bc6232086",
+    "data/evaluation/survey-description-checks.json": "45d1997c55b8b26f3646ed120fde3985793318c66ee1da275a30c775802ff0ad",
+    "data/evaluation/survey-synonyms.json": "317be1d67c7875ce97bc6d9c93d476a28bddd703e86917565798a6ac6d5daaed",
+    "artifacts/contraception.sqlite": "ff857d6b01ac88f7629ceae9d21ef1596f51306460f40ab73dbeb0dd1d1c333d",
+    "artifacts/ces-minimum-wage.sqlite": "2c2ae5a846079421d12fd766131d6709dbbb3ebccd36c222a5169263085f3077",
+    "artifacts/semantic-contraception/manifest.json": "c7e308a37f7dec72e286121998f9443d0a39d0c592b07c693aea68375440d561",
+    "artifacts/semantic-minimum-wage-stable/manifest.json": "1d3316a342743cd3bf9db5e2e767524fe8acce08a2df8769fd19eeb87169a185",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/check_contraception.py": "c1ca72b89461c153855e5cc6f3a0df4d0acb3a953004a9b2b5eadd1ca9fc54d6"
+  },
+  "validation": {
+    "unit_tests": 158,
+    "serving_requests": 160,
+    "http_requests": 42,
+    "peak_test_process_rss_mib": 230.375,
+    "memory_scope": "Local single-process Flask test client, excluding Gunicorn master and OS."
+  },
+  "imports": {
+    "contraception-ces-2023": {
+      "rows": 24500,
+      "year": 2023,
+      "entries": [
+        {
+          "code": "contraception_access",
+          "source_code": "CC23_340b",
+          "year": 2023,
+          "valid_responses": 24195,
+          "excluded": 305,
+          "mean": 0.331328856495875,
+          "weight_sum": 24202.807675757445
+        }
+      ]
+    },
+    "contraception-ces": {
+      "rows": 60000,
+      "year": 2024,
+      "entries": [
+        {
+          "code": "contraception_access",
+          "source_code": "CC24_340a",
+          "year": 2024,
+          "valid_responses": 59846,
+          "excluded": 154,
+          "mean": 0.42028001751160815,
+          "weight_sum": 59820.43012868369
+        }
+      ]
+    },
+    "prri": [
+      {
+        "question": "prri_birth_control_restrictions",
+        "year": "2022",
+        "respondents": 2439,
+        "weighted_percentages": {
+          "1": 4.972513866927045,
+          "2": 11.079700967043394,
+          "3": 18.72439134450879,
+          "4": 60.38350780489652
+        },
+        "published_percentages": {
+          "1": 5,
+          "2": 11,
+          "3": 19,
+          "4": 60
+        }
+      }
+    ]
+  },
+  "deferred": [
+    "PRRI 2012 insurance mandates: split-form wording, denominators and weights need separate review.",
+    "PRRI 2012 moral acceptability: not a direct access-policy measure."
+  ]
+}

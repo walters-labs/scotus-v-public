@@ -1,0 +1,26 @@
+{
+  "year": 2023,
+  "wave": "post-election-only",
+  "weight": "commonweight",
+  "doi": "10.7910/DVN/JQJTCC",
+  "status": "Assistant reviewed against original questionnaire; not independently reviewed",
+  "sources": {
+    "data/raw/ces-2023-v2/responses.dta": "8f328f29d75ac94ba03ab4b2612796cdb5ae070789c90a4557020503fea20c37",
+    "data/raw/ces-2023-v2/questionnaire.pdf": "0fcd7928b1d3d10a649c747973b941db889df6a4c56132ba63c403ddefcd3502"
+  },
+  "entries": [
+    {
+      "source_code": "CC23_340b",
+      "code": "contraception_access",
+      "family": "ces:contraception_access",
+      "existing_item": false,
+      "title": "Contraception: prohibit government restrictions on access",
+      "question_text": "Prohibit government restrictions on the provision of, and access to, contraceptives",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "harmonization": "Support for prohibiting government restrictions on contraceptive provision and access is coded liberal; opposition conservative. This concerns access policy, not personal use, abortion or teenage parental consent."
+    }
+  ]
+}

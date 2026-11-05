@@ -15,8 +15,8 @@ def build(artifact, bundle, descriptions, output):
     if output.exists():
         raise FileExistsError(output)
     baseline = SurveySearch(bundle, artifact, Encoder(bundle))
-    if baseline.topic_router:
-        raise ValueError('Use a baseline without topic routing')
+    # An existing routing file is replaced by the complete reviewed specification
+    # below, allowing a new data batch to extend a previously routed release.
     router = TopicSearch(baseline, descriptions)
     spec = json.loads(descriptions.read_text())
     metadata = dict(version=1, status=spec['status'], scope=spec['scope'],
