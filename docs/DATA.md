@@ -1214,3 +1214,60 @@ selected abortion-only records. Coverage grows from 22 to 23 calendar years
 160 serving requests and 42 HTTP checks pass. Local test-process peak RSS is
 230.4 MiB, excluding Gunicorn master and OS. Results and import checks are in
 `data/evaluation/contraception-summary.json`; this is not a VPS measurement.
+
+### Education funding and affordability (candidate)
+
+This bounded batch reviews financial education policies, not every issue involving
+schools. It adds two families and three question-years:
+
+- CES 2023–2024: forgive up to $20,000 of student-loan debt per person. Support is
+  +1; opposition is -1. Both years use `commonweight` (odd-year single-wave in
+  2023, pre-election in 2024). The 2023 questionnaire PDF page 41 prints
+  `CC23_323f`, while the released Stata variable with the matching item label is
+  `CC23_328f`; the crosswalk explicitly records that discrepancy. The 2024 DOCX
+  and response file use `CC24_323f`. Guide PDF page 47 independently reports
+  34,482 support and 25,507 oppose, reproduced by the importer. Missing answers
+  and invalid weights are excluded; grouped category totals reproduce each mean.
+  This is policy support, not agreement with a court ruling on presidential power.
+- PRRI 2016: free public-college tuition for students whose families earn less
+  than $125,000. Q30C, questionnaire PDF page 21, uses the full-sample `weight`.
+  Completely/mostly agree/disagree map to +1, +1/3, -1/3, -1. Weighted category
+  percentages reproduce 33/32/22/14 within the existing rounding tolerance. Keep
+  the income threshold and public-institution scope; this is not universal free
+  college or forgiveness of existing debt.
+
+The broad education query also gains reviewed metadata for existing GSS education
+spending, ANES public-school spending and college financial aid, and Nationscape
+college affordability and tax-funded private/religious-school vouchers. Support
+for vouchers retains its existing conservative direction. These different policies
+are not interchangeable measurements. Religious practices, school integration,
+teacher gun policies, and mixed tax/infrastructure proposals are outside this
+financial-policy metadata batch; unreviewed questions retain baseline retrieval.
+
+Deferred: CES 2024 post-election vouchers need review of post-election weighting;
+PRRI 2019/2020 free-college items need review of split-form weights/denominators.
+Neither is silently imported using the full-sample pre-election path.
+
+Rebuild into fresh paths:
+
+```sh
+PYTHONPATH=. .venv/bin/python -m scvpublic.ces_annual --base data/processed/contraception-ces/public.json --manifest data/manifests/ces-2023-v2.json --crosswalk data/ces/education-2023-crosswalk.json --output data/processed/education-ces-2023/public.json
+PYTHONPATH=. .venv/bin/python -m scvpublic.ces_annual --base data/processed/education-ces-2023/public.json --manifest data/manifests/ces-2024-v9.json --crosswalk data/ces/education-2024-crosswalk.json --output data/processed/education-ces/public.json
+PYTHONPATH=. .venv/bin/python -m scvpublic.prri --documents-manifest data/manifests/prri-all-policy-documents.json --mappings data/prri/education-mappings.json --output data/processed/education-prri/public.json
+PYTHONPATH=. .venv/bin/python -c "from pathlib import Path; from scvpublic.gss import attach; attach(Path('artifacts/contraception.sqlite'), Path('data/processed/education-ces/public.json'), Path('artifacts/education-ces.sqlite'), corpus='ces'); attach(Path('artifacts/education-ces.sqlite'), Path('data/processed/education-prri/public.json'), Path('artifacts/education.sqlite'), corpus='prri')"
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/rebind_hybrid.py --old artifacts/contraception.sqlite --new artifacts/education.sqlite --bundle artifacts/semantic-contraception --output artifacts/semantic-education-court
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_embeddings.py --artifact artifacts/education.sqlite --bundle artifacts/semantic-education-court --output artifacts/semantic-education-base --phrases --reuse-artifact artifacts/contraception.sqlite --reuse-bundle artifacts/semantic-contraception
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_topic_bundle.py --artifact artifacts/education.sqlite --bundle artifacts/semantic-education-base --descriptions data/evaluation/survey-topics-education.json --output artifacts/semantic-education-final
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/check_education.py --baseline-artifact artifacts/contraception.sqlite --baseline-bundle artifacts/semantic-contraception --artifact artifacts/education.sqlite --bundle artifacts/semantic-education-final --output artifacts/education-validation.json
+```
+
+Validation: 158 unit tests, 160 serving requests and 42 HTTP checks pass. The
+47-query comparison preserves all unrelated result identities; changes are
+limited to education, college affordability, free college tuition and student
+loan forgiveness. Five narrower education queries have explicit positive checks.
+All 340 prior survey documents and vectors, phrase vocabulary and court vectors
+are preserved. Broad education coverage grows from one question/source across
+34 years to seven questions/five sources across 38 years (1973–2024). Most of
+the historical gain comes from recovering existing records, not new observations.
+Results are recorded in `data/evaluation/education-summary.json`. Development
+judgments are partial and not independent relevance validation.

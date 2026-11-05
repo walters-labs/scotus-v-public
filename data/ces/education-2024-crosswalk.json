@@ -1,0 +1,31 @@
+{
+  "year": 2024,
+  "wave": "pre-election",
+  "weight": "commonweight",
+  "doi": "10.7910/DVN/X11EP6",
+  "status": "Assistant reviewed against questionnaire and response metadata; not independently reviewed",
+  "sources": {
+    "data/raw/ces-2024-v9/responses.csv": "8a5e9fbc982961ad910bad9aed8d521fa0a85e85cded43fb308cce0ab22ba5d9",
+    "data/raw/ces-2024-v9/guide.pdf": "48ef8f229980b4778dd26f321062e9d9e089abdd849cc8db2529377f3e8b0c10",
+    "data/raw/ces-2024-v9/pre-election-questionnaire.docx": "fe8d9acec0a8f312fbde3a95d3d2190e6be8f992c9de41f40954f1875abfdca8"
+  },
+  "entries": [
+    {
+      "source_code": "CC24_323f",
+      "code": "student_loan_forgiveness",
+      "family": "ces:student_loan_forgiveness",
+      "existing_item": true,
+      "title": "Student loans: forgive up to $20,000 per person",
+      "question_text": "Forgive up to $20,000 of student loan debt for each person",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "harmonization": "Support for this student-debt forgiveness proposal is coded liberal; opposition conservative. Keep distinct from tuition-free college, financial aid and presidential legal authority.",
+      "published_counts": {
+        "1": 34482,
+        "2": 25507
+      }
+    }
+  ]
+}

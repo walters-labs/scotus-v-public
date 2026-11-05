@@ -1,0 +1,27 @@
+{
+  "year": 2023,
+  "wave": "post-election-only",
+  "weight": "commonweight",
+  "doi": "10.7910/DVN/JQJTCC",
+  "status": "Assistant reviewed against questionnaire and response metadata; not independently reviewed",
+  "sources": {
+    "data/raw/ces-2023-v2/responses.dta": "8f328f29d75ac94ba03ab4b2612796cdb5ae070789c90a4557020503fea20c37",
+    "data/raw/ces-2023-v2/questionnaire.pdf": "0fcd7928b1d3d10a649c747973b941db889df6a4c56132ba63c403ddefcd3502"
+  },
+  "entries": [
+    {
+      "source_code": "CC23_328f",
+      "code": "student_loan_forgiveness",
+      "family": "ces:student_loan_forgiveness",
+      "existing_item": false,
+      "title": "Student loans: forgive up to $20,000 per person",
+      "question_text": "Forgive up to $20,000 of student loan debt for each person",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "harmonization": "Support for this student-debt forgiveness proposal is coded liberal; opposition conservative. Keep distinct from tuition-free college, financial aid and presidential legal authority."
+    }
+  ],
+  "review_note": "Questionnaire PDF page 41 prints CC23_323f, while Stata variable CC23_328f carries the matching full item label in the welfare battery. Record the actual raw variable; do not silently rename the source."
+}

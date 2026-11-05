@@ -1,0 +1,282 @@
+{
+  "status": "passed",
+  "queries_checked": 47,
+  "judged_cases": 49,
+  "regressions": [],
+  "changes": {
+    "college affordability": {
+      "before": {
+        "ces": [],
+        "gss": [],
+        "nationscape": [
+          "nationscape_college"
+        ],
+        "pew": [],
+        "prri": [],
+        "public": [
+          "VCF0891"
+        ],
+        "voter": [],
+        "wvs": []
+      },
+      "after": {
+        "ces": [
+          "student_loan_forgiveness"
+        ],
+        "gss": [],
+        "nationscape": [
+          "nationscape_college"
+        ],
+        "pew": [],
+        "prri": [
+          "prri_free_tuition_income_limit"
+        ],
+        "public": [
+          "VCF0891"
+        ],
+        "voter": [],
+        "wvs": []
+      }
+    },
+    "education": {
+      "before": {
+        "ces": [],
+        "gss": [
+          "nateduc"
+        ],
+        "nationscape": [],
+        "pew": [],
+        "prri": [],
+        "public": [],
+        "voter": [],
+        "wvs": []
+      },
+      "after": {
+        "ces": [
+          "student_loan_forgiveness"
+        ],
+        "gss": [
+          "nateduc"
+        ],
+        "nationscape": [
+          "nationscape_college",
+          "nationscape_vouchers"
+        ],
+        "pew": [],
+        "prri": [
+          "prri_free_tuition_income_limit"
+        ],
+        "public": [
+          "VCF0890",
+          "VCF0891"
+        ],
+        "voter": [],
+        "wvs": []
+      }
+    },
+    "free college tuition": {
+      "before": {
+        "ces": [],
+        "gss": [],
+        "nationscape": [
+          "nationscape_college"
+        ],
+        "pew": [],
+        "prri": [],
+        "public": [
+          "VCF0891"
+        ],
+        "voter": [],
+        "wvs": []
+      },
+      "after": {
+        "ces": [],
+        "gss": [],
+        "nationscape": [
+          "nationscape_college"
+        ],
+        "pew": [],
+        "prri": [
+          "prri_free_tuition_income_limit"
+        ],
+        "public": [
+          "VCF0891"
+        ],
+        "voter": [],
+        "wvs": []
+      }
+    },
+    "student loan forgiveness": {
+      "before": {
+        "ces": [],
+        "gss": [],
+        "nationscape": [
+          "nationscape_college"
+        ],
+        "pew": [],
+        "prri": [],
+        "public": [
+          "VCF0891"
+        ],
+        "voter": [],
+        "wvs": []
+      },
+      "after": {
+        "ces": [
+          "student_loan_forgiveness"
+        ],
+        "gss": [],
+        "nationscape": [],
+        "pew": [],
+        "prri": [],
+        "public": [],
+        "voter": [],
+        "wvs": []
+      }
+    }
+  },
+  "questions": {
+    "ces": [
+      "student_loan_forgiveness"
+    ],
+    "gss": [
+      "nateduc"
+    ],
+    "nationscape": [
+      "nationscape_college",
+      "nationscape_vouchers"
+    ],
+    "pew": [],
+    "prri": [
+      "prri_free_tuition_income_limit"
+    ],
+    "public": [
+      "VCF0890",
+      "VCF0891"
+    ],
+    "voter": [],
+    "wvs": []
+  },
+  "public_years": [
+    1973,
+    1974,
+    1975,
+    1976,
+    1977,
+    1978,
+    1980,
+    1982,
+    1983,
+    1984,
+    1985,
+    1986,
+    1987,
+    1988,
+    1989,
+    1990,
+    1991,
+    1992,
+    1993,
+    1994,
+    1996,
+    1998,
+    2000,
+    2002,
+    2004,
+    2006,
+    2008,
+    2010,
+    2012,
+    2014,
+    2016,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "existing_survey_records_preserved": 340,
+  "narrow_queries_checked": [
+    "school funding",
+    "college affordability",
+    "student loan forgiveness",
+    "school vouchers",
+    "free college tuition"
+  ],
+  "limitation": "Partial development judgments, not independent relevance validation.",
+  "sources": {
+    "data/evaluation/survey-relevance-development.json": "f9bc6ee9b55cb64bd4e1ee77d8d216354fb5f2865fd40771419b6bf1bd3d26ff",
+    "data/evaluation/survey-climate-relevance.json": "92a661f3ea2040f87494ad84c808dd43c345953214243fb695130c3bc6232086",
+    "data/evaluation/survey-description-checks.json": "45d1997c55b8b26f3646ed120fde3985793318c66ee1da275a30c775802ff0ad",
+    "data/evaluation/survey-synonyms.json": "317be1d67c7875ce97bc6d9c93d476a28bddd703e86917565798a6ac6d5daaed",
+    "artifacts/education.sqlite": "9e74c6928d2e31d68b19e409f712c556e077c5c443fb52a93727c73d12ae29f9",
+    "artifacts/contraception.sqlite": "ff857d6b01ac88f7629ceae9d21ef1596f51306460f40ab73dbeb0dd1d1c333d",
+    "artifacts/semantic-education-final/manifest.json": "c316c868da80669184318e083a9bc1ec2624541f5d23d0f931ec6bf72e9200b9",
+    "artifacts/semantic-contraception/manifest.json": "c7e308a37f7dec72e286121998f9443d0a39d0c592b07c693aea68375440d561",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/check_education.py": "29db05b3b7ed0ffe0ea972cdfe1dc85958f2bc39f9e5e92b4582f353d9219cc3"
+  },
+  "validation": {
+    "unit_tests": 158,
+    "serving_requests": 160,
+    "http_requests": 42,
+    "peak_test_process_rss_mib": 230.03125,
+    "memory_scope": "Local single-process Flask test client; excludes Gunicorn master and OS."
+  },
+  "imports": {
+    "education-ces-2023": {
+      "rows": 24500,
+      "year": 2023,
+      "entries": [
+        {
+          "code": "student_loan_forgiveness",
+          "source_code": "CC23_328f",
+          "year": 2023,
+          "valid_responses": 24498,
+          "excluded": 2,
+          "mean": 0.17577257578600597,
+          "weight_sum": 24498.91101314471
+        }
+      ]
+    },
+    "education-ces": {
+      "rows": 60000,
+      "year": 2024,
+      "entries": [
+        {
+          "code": "student_loan_forgiveness",
+          "source_code": "CC24_323f",
+          "year": 2024,
+          "valid_responses": 59989,
+          "excluded": 11,
+          "mean": 0.101354422262748,
+          "weight_sum": 59991.34924040985
+        }
+      ]
+    },
+    "prri": [
+      {
+        "question": "prri_free_tuition_income_limit",
+        "year": "2016",
+        "respondents": 1997,
+        "weighted_percentages": {
+          "1": 32.614043125703326,
+          "2": 31.666684533106547,
+          "3": 21.571782642512048,
+          "4": 13.505197355902112
+        },
+        "published_percentages": {
+          "1": 33,
+          "2": 32,
+          "3": 22,
+          "4": 14
+        }
+      }
+    ]
+  },
+  "deferred": [
+    "CES 2024 post-election vouchers: post-election weighting review required.",
+    "PRRI 2019/2020 free college: split-form weighting/denominator review required."
+  ]
+}
