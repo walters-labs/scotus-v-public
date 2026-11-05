@@ -1329,3 +1329,64 @@ leader-query selections are unchanged. 158 unit tests, 160 serving requests and
 42 HTTP checks pass. Local test-process RSS peaks at 230.2 MiB (not whole-server
 memory). See `data/evaluation/civil-rights-summary.json`; judgments are partial
 development checks, not independent validation.
+
+### PRRI split-form policy batch
+
+This batch adds four question-years from the already downloaded AVS files:
+2012 contraception insurance mandates for religiously affiliated colleges/hospitals
+and for churches, 2020 free tuition at public colleges, and 2022 federal ballot-access
+protection versus state control. PRRI now has 43 records and 91 question-years.
+The 2022 record shares the existing federal-voting-rights family, so it extends
+that family without giving it extra weight in overlapping years.
+
+The importer selects explicit assignment fields before calculating distributions:
+2012 `form=1` (1,503 respondents), 2020 `RND_06=0` (1,302), and 2022
+`DOV_FORM_2=1` (1,252). Annual weights are used within each assigned sample.
+Unknown/skipped answers remain in the published-percentage denominator, but are
+excluded from the liberal/conservative mean. Assignment labels, allowed values,
+sample sizes, and the absence of responses outside the assigned form are checked.
+All scored categories reproduce the published rounded percentages within the
+existing 0.51 percentage-point tolerance.
+
+The 2022 published sample is 1,253; the released file has 1,252 assigned respondents.
+This discrepancy is recorded in provenance, without imputing a respondent or
+changing weights. Its weighted percentages are 63.783% federal protection and
+31.183% state control, versus published 64% and 31%. This is a federalism/access
+forced choice, not a direct measure of opposition to voting rights.
+
+Only the neutral 2012 Form 1 wording is included. Form 2 adds “even if they have
+religious objections”; its results also reproduce, but are not imported as extra
+independent policy questions. Employer types remain separate policies. These
+questions concern insurance mandates, not personal moral approval of contraception.
+2019 free tuition remains deferred: no explicit form-assignment field was located;
+inferring eligibility from answered items alone is not used. Its nonmissing-response
+denominator also produces 0.681% don't-know, whereas the topline prints less than 0.5%.
+
+Reproduce from the civil-rights release:
+
+```sh
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python -m scvpublic.prri \
+  --documents-manifest data/manifests/prri-all-policy-documents.json \
+  --mappings data/prri/split-form-mappings.json \
+  --output data/processed/prri-split-form/public.json \
+  --base-artifact artifacts/civil-rights.sqlite --artifact artifacts/prri-split-form.sqlite
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/rebind_hybrid.py \
+  --old artifacts/civil-rights.sqlite --new artifacts/prri-split-form.sqlite \
+  --bundle artifacts/semantic-civil-rights --output artifacts/semantic-prri-split-form-court
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_embeddings.py \
+  --artifact artifacts/prri-split-form.sqlite --bundle artifacts/semantic-prri-split-form-court \
+  --output artifacts/semantic-prri-split-form-base --phrases \
+  --reuse-artifact artifacts/civil-rights.sqlite --reuse-bundle artifacts/semantic-civil-rights
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_topic_bundle.py \
+  --artifact artifacts/prri-split-form.sqlite --bundle artifacts/semantic-prri-split-form-base \
+  --descriptions data/evaluation/survey-topics-split-form.json --output artifacts/semantic-prri-split-form
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/check_prri_split_form.py \
+  --baseline-artifact artifacts/civil-rights.sqlite --baseline-bundle artifacts/semantic-civil-rights \
+  --artifact artifacts/prri-split-form.sqlite --bundle artifacts/semantic-prri-split-form \
+  --output artifacts/prri-split-form-validation.json
+```
+
+Existing survey payloads and vectors, phrase vectors, court vectors, and model
+files are preserved. Search checks use development judgments, not independent
+relevance validation. The questions add policy-specific observations, not a
+continuous measure of public opinion between survey years.

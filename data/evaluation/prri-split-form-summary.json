@@ -1,0 +1,415 @@
+{
+  "status": "passed",
+  "queries_checked": 53,
+  "judged_cases": 49,
+  "regressions": [],
+  "changes": {
+    "birth control": {
+      "before": {
+        "ces": [
+          "contraception_access"
+        ],
+        "gss": [
+          "pillok"
+        ],
+        "nationscape": [],
+        "pew": [],
+        "prri": [
+          "prri_birth_control_restrictions"
+        ],
+        "public": [],
+        "voter": [],
+        "wvs": []
+      },
+      "after": {
+        "ces": [
+          "contraception_access"
+        ],
+        "gss": [
+          "pillok"
+        ],
+        "nationscape": [],
+        "pew": [],
+        "prri": [
+          "prri_birth_control_restrictions",
+          "prri_contraception_insurance_churches",
+          "prri_contraception_insurance_colleges"
+        ],
+        "public": [],
+        "voter": [],
+        "wvs": []
+      }
+    },
+    "civil rights": {
+      "before": {
+        "ces": [],
+        "gss": [],
+        "nationscape": [],
+        "pew": [],
+        "prri": [
+          "prri_federal_voting_rights",
+          "prri_felony_voting_restoration",
+          "prri_gay_job_protection",
+          "prri_lgbt_protections"
+        ],
+        "public": [
+          "VCF0816",
+          "VCF0817",
+          "VCF0867",
+          "VCF0867a",
+          "VCF0876",
+          "VCF0876a"
+        ],
+        "voter": [
+          "voter_affirmativeaction"
+        ],
+        "wvs": []
+      },
+      "after": {
+        "ces": [],
+        "gss": [],
+        "nationscape": [],
+        "pew": [],
+        "prri": [
+          "prri_federal_voting_rights",
+          "prri_federal_voting_rights_2022",
+          "prri_felony_voting_restoration",
+          "prri_gay_job_protection",
+          "prri_lgbt_protections"
+        ],
+        "public": [
+          "VCF0816",
+          "VCF0817",
+          "VCF0867",
+          "VCF0867a",
+          "VCF0876",
+          "VCF0876a"
+        ],
+        "voter": [
+          "voter_affirmativeaction"
+        ],
+        "wvs": []
+      }
+    },
+    "college affordability": {
+      "before": {
+        "ces": [
+          "student_loan_forgiveness"
+        ],
+        "gss": [],
+        "nationscape": [
+          "nationscape_college"
+        ],
+        "pew": [],
+        "prri": [
+          "prri_free_tuition_income_limit"
+        ],
+        "public": [
+          "VCF0891"
+        ],
+        "voter": [],
+        "wvs": []
+      },
+      "after": {
+        "ces": [
+          "student_loan_forgiveness"
+        ],
+        "gss": [],
+        "nationscape": [
+          "nationscape_college"
+        ],
+        "pew": [],
+        "prri": [
+          "prri_free_public_college",
+          "prri_free_tuition_income_limit"
+        ],
+        "public": [
+          "VCF0891"
+        ],
+        "voter": [],
+        "wvs": []
+      }
+    },
+    "contraception": {
+      "before": {
+        "ces": [
+          "contraception_access"
+        ],
+        "gss": [
+          "pillok"
+        ],
+        "nationscape": [],
+        "pew": [],
+        "prri": [
+          "prri_birth_control_restrictions"
+        ],
+        "public": [],
+        "voter": [],
+        "wvs": []
+      },
+      "after": {
+        "ces": [
+          "contraception_access"
+        ],
+        "gss": [
+          "pillok"
+        ],
+        "nationscape": [],
+        "pew": [],
+        "prri": [
+          "prri_birth_control_restrictions",
+          "prri_contraception_insurance_churches",
+          "prri_contraception_insurance_colleges"
+        ],
+        "public": [],
+        "voter": [],
+        "wvs": []
+      }
+    },
+    "education": {
+      "before": {
+        "ces": [
+          "student_loan_forgiveness"
+        ],
+        "gss": [
+          "nateduc"
+        ],
+        "nationscape": [
+          "nationscape_college",
+          "nationscape_vouchers"
+        ],
+        "pew": [],
+        "prri": [
+          "prri_free_tuition_income_limit"
+        ],
+        "public": [
+          "VCF0890",
+          "VCF0891"
+        ],
+        "voter": [],
+        "wvs": []
+      },
+      "after": {
+        "ces": [
+          "student_loan_forgiveness"
+        ],
+        "gss": [
+          "nateduc"
+        ],
+        "nationscape": [
+          "nationscape_college",
+          "nationscape_vouchers"
+        ],
+        "pew": [],
+        "prri": [
+          "prri_free_public_college",
+          "prri_free_tuition_income_limit"
+        ],
+        "public": [
+          "VCF0890",
+          "VCF0891"
+        ],
+        "voter": [],
+        "wvs": []
+      }
+    },
+    "free college tuition": {
+      "before": {
+        "ces": [],
+        "gss": [],
+        "nationscape": [
+          "nationscape_college"
+        ],
+        "pew": [],
+        "prri": [
+          "prri_free_tuition_income_limit"
+        ],
+        "public": [
+          "VCF0891"
+        ],
+        "voter": [],
+        "wvs": []
+      },
+      "after": {
+        "ces": [],
+        "gss": [],
+        "nationscape": [
+          "nationscape_college"
+        ],
+        "pew": [],
+        "prri": [
+          "prri_free_public_college",
+          "prri_free_tuition_income_limit"
+        ],
+        "public": [
+          "VCF0891"
+        ],
+        "voter": [],
+        "wvs": []
+      }
+    },
+    "voting rights": {
+      "before": {
+        "ces": [],
+        "gss": [],
+        "nationscape": [],
+        "pew": [],
+        "prri": [
+          "prri_federal_voting_rights",
+          "prri_felony_voting_restoration"
+        ],
+        "public": [],
+        "voter": [],
+        "wvs": []
+      },
+      "after": {
+        "ces": [],
+        "gss": [],
+        "nationscape": [],
+        "pew": [],
+        "prri": [
+          "prri_federal_voting_rights",
+          "prri_federal_voting_rights_2022",
+          "prri_felony_voting_restoration"
+        ],
+        "public": [],
+        "voter": [],
+        "wvs": []
+      }
+    }
+  },
+  "questions": {
+    "ces": [],
+    "gss": [],
+    "nationscape": [],
+    "pew": [],
+    "prri": [
+      "prri_federal_voting_rights",
+      "prri_federal_voting_rights_2022",
+      "prri_felony_voting_restoration",
+      "prri_gay_job_protection",
+      "prri_lgbt_protections"
+    ],
+    "public": [
+      "VCF0816",
+      "VCF0817",
+      "VCF0867",
+      "VCF0867a",
+      "VCF0876",
+      "VCF0876a"
+    ],
+    "voter": [
+      "voter_affirmativeaction"
+    ],
+    "wvs": []
+  },
+  "public_years": [
+    1962,
+    1964,
+    1966,
+    1968,
+    1970,
+    1972,
+    1974,
+    1976,
+    1978,
+    1980,
+    1984,
+    1986,
+    1988,
+    1990,
+    1992,
+    1994,
+    1996,
+    1998,
+    2000,
+    2004,
+    2008,
+    2010,
+    2012,
+    2016,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "existing_survey_records_preserved": 344,
+  "narrow_queries_checked": [
+    "contraception",
+    "birth control",
+    "free college tuition",
+    "voting rights"
+  ],
+  "limitation": "Partial development judgments, not independent relevance validation.",
+  "sources": {
+    "data/evaluation/survey-relevance-development.json": "f9bc6ee9b55cb64bd4e1ee77d8d216354fb5f2865fd40771419b6bf1bd3d26ff",
+    "data/evaluation/survey-climate-relevance.json": "92a661f3ea2040f87494ad84c808dd43c345953214243fb695130c3bc6232086",
+    "data/evaluation/survey-description-checks.json": "45d1997c55b8b26f3646ed120fde3985793318c66ee1da275a30c775802ff0ad",
+    "data/evaluation/survey-synonyms.json": "317be1d67c7875ce97bc6d9c93d476a28bddd703e86917565798a6ac6d5daaed",
+    "artifacts/prri-split-form.sqlite": "bce7aab725496086db5f896df29c76ad7db23aff50c4045bf18ee6a6b9875703",
+    "artifacts/civil-rights.sqlite": "0469fc3ba98b479bdb01fd5020464c87c4d6a6896c31c8ff1ca052f12fb7113f",
+    "artifacts/semantic-prri-split-form/manifest.json": "ecedfc66c90d3ce9668c252efed11a51621395c877a31970c244e76d53786ee0",
+    "artifacts/semantic-civil-rights/manifest.json": "f669592f5d87a745730994ba43c12c88692263f23edb8ccaa29f18e7a304e244",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/check_prri_split_form.py": "e51d6282c385acb78a99ae2a4662db144cb08b242a9f5c9a8fab37133d1f32b8"
+  },
+  "new_question_years": [
+    {
+      "question": "prri_contraception_insurance_colleges",
+      "year": "2012",
+      "respondents": 1444,
+      "weighted_percentages": {
+        "1": 55.775357799093065,
+        "2": 40.47639115996021
+      },
+      "published_percentages": {
+        "1": 56,
+        "2": 40
+      }
+    },
+    {
+      "question": "prri_contraception_insurance_churches",
+      "year": "2012",
+      "respondents": 1418,
+      "weighted_percentages": {
+        "1": 44.63512078353365,
+        "2": 50.15255980175654
+      },
+      "published_percentages": {
+        "1": 45,
+        "2": 50
+      }
+    },
+    {
+      "question": "prri_free_public_college",
+      "year": "2020",
+      "respondents": 1294,
+      "weighted_percentages": {
+        "1": 29.29476425966098,
+        "2": 33.593516559624625,
+        "3": 19.33206652574166,
+        "4": 17.027979443931855
+      },
+      "published_percentages": {
+        "1": 29,
+        "2": 34,
+        "3": 19,
+        "4": 17
+      }
+    },
+    {
+      "question": "prri_federal_voting_rights_2022",
+      "year": "2022",
+      "respondents": 1211,
+      "weighted_percentages": {
+        "1": 63.78336365371355,
+        "2": 31.183472013421085
+      },
+      "published_percentages": {
+        "1": 64,
+        "2": 31
+      }
+    }
+  ],
+  "questions_total": 348
+}

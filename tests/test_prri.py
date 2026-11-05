@@ -30,6 +30,24 @@ class PRRITests(unittest.TestCase):
         self.assertEqual((n,weight),(2,3))
         self.assertEqual(percent,{'1':50,'2':25})
 
+    def test_explicit_form_keeps_nonresponse_and_excludes_other_form(self):
+        wave=copy.deepcopy(self.wave)
+        wave['sample']=dict(column='form', expected_label='Form', value=1,
+                            allowed_values=[1,2], expected_n=3)
+        self.labels['form']='Form'
+        frame=pd.DataFrame({'Q':[1,2,99,float('nan')], 'W':[2,1,1,100], 'form':[1,1,1,2]})
+        mean,n,weight,percent=self.run_summary(wave=wave,frame=frame)
+        self.assertEqual(percent,{'1':50,'2':25})
+        self.assertEqual((n,weight),(2,3))
+        self.assertAlmostEqual(mean,1/3)
+        for column,value in [('Q',1),('form',3),('form',1)]:
+            invalid=frame.copy();invalid.loc[3,column]=value
+            with self.assertRaises(ValueError):
+                self.run_summary(wave=wave,frame=invalid)
+        self.labels['form']='Changed'
+        with self.assertRaisesRegex(ValueError,'sample label changed'):
+            self.run_summary(wave=wave,frame=frame)
+
     def test_unknown_codes_labels_and_toplines_fail(self):
         frame=self.frame.copy();frame.loc[0,'Q']=7
         with self.assertRaisesRegex(ValueError,'Unexpected'):
@@ -105,3 +123,17 @@ class PRRITests(unittest.TestCase):
             self.assertEqual(old['scores'],new['scores'])
             for wave in old['waves']:
                 self.assertIn(wave,new['waves'])
+
+    def test_split_form_batch_preserves_records_and_family(self):
+        old=json.loads(Path('data/prri/civil-rights-mappings.json').read_text())
+        new=json.loads(Path('data/prri/split-form-mappings.json').read_text())
+        entries={e['code']:e for e in new['entries']}
+        for entry in old['entries']:
+            self.assertEqual(entry,entries[entry['code']])
+        added=[e for e in new['entries'] if e['code'] not in {d['code'] for d in old['entries']}]
+        self.assertEqual(len(added),4)
+        for entry in added:
+            self.assertIn('sample',entry['waves'][0])
+            self.assertEqual(entry['scores']['1'],1)
+        self.assertEqual(entries['prri_federal_voting_rights_2022']['family'],
+                         entries['prri_federal_voting_rights']['family'])

@@ -8,6 +8,24 @@ from .build import digest
 from .survey_schema import prepare
 
 
+def select_sample(frame, wave, labels):
+    """Select an explicitly documented questionnaire form, never inferred answers."""
+    spec = wave.get('sample')
+    if spec is None:
+        return frame
+    column = spec['column']
+    if labels[column] != spec['expected_label']:
+        raise ValueError('PRRI sample label changed: ' + column)
+    if set(frame[column].dropna()) - set(spec['allowed_values']):
+        raise ValueError('Unexpected PRRI form assignment')
+    selected = frame[column].eq(spec['value'])
+    if int(selected.sum()) != spec['expected_n']:
+        raise ValueError('PRRI sample count changed')
+    if frame.loc[~selected, wave['source_code']].notna().any():
+        raise ValueError('PRRI answers outside assigned form')
+    return frame.loc[selected]
+
+
 def summarize(frame, wave, scores, labels, value_labels):
     code, weight = wave['source_code'], wave['weight']
     if labels[code] != wave['expected_label'] or value_labels != wave['expected_labels']:
@@ -15,6 +33,7 @@ def summarize(frame, wave, scores, labels, value_labels):
     allowed = {float(k) for k in value_labels}
     if set(frame[code].dropna()) - allowed:
         raise ValueError('Unexpected PRRI response: ' + code)
+    frame = select_sample(frame, wave, labels)
     weights = frame[weight]
     valid_weights = weights.gt(0) & weights.lt(float('inf'))
     data = frame.loc[valid_weights]
@@ -61,13 +80,18 @@ def build(manifest, documents_manifest, mappings, output):
                 if digest(p) != files[str(p)]:
                     raise ValueError('PRRI checksum mismatch: '+str(p))
                 sources[str(p)] = files[str(p)]
-            frame, meta = pyreadstat.read_dta(raw, usecols=[wave['source_code'],wave['weight']])
+            columns = [wave['source_code'], wave['weight']]
+            if 'sample' in wave:
+                columns.append(wave['sample']['column'])
+            frame, meta = pyreadstat.read_dta(raw, usecols=columns)
             values = {str(int(k)):v for k,v in meta.variable_value_labels[wave['source_code']].items()}
             mean, n, weight_sum, percentages = summarize(frame, wave, entry['scores'], meta.column_names_to_labels, values)
             d['years'][year], d['respondents'][year], d['weight_sums'][year] = mean, n, weight_sum
             d['year_provenance'][year] = {k:wave[k] for k in ('source_code','weight','question','doi','wave')}
             if 'questionnaire_page' in wave:
                 d['year_provenance'][year]['questionnaire_page'] = wave['questionnaire_page']
+            if 'sample' in wave:
+                d['year_provenance'][year]['sample'] = wave['sample']
             audit.append(dict(question=entry['code'], year=year, respondents=n, weighted_percentages=percentages, published_percentages=wave['published_percentages']))
         documents.append(d)
     payload = prepare(dict(methodology=mapping['version'], release=mapping.get('release', 'PRRI AVS 2018–2024 pilot'), notes=mapping['notes'], sources=sources, documents=documents, validation=audit))

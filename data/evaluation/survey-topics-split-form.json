@@ -1,0 +1,880 @@
+{
+  "version": 1,
+  "status": "Assistant-reviewed development pilot, not independently reviewed",
+  "scope": "67 reviewed questions, including explicitly assigned PRRI split-form policy questions. Original wording and measurements retained.",
+  "entries": [
+    {
+      "source": "ces",
+      "code": "enviro_carbon",
+      "source_text_sha256": "06a64139c14ed380b6a5e1e43e0015ab048d5cf47bfc57bb73e038172b4edf24",
+      "source_title": "Environment: EPA carbon regulation",
+      "source_question": "Support or oppose giving the EPA power to regulate carbon dioxide emissions?",
+      "topic": "Climate change mitigation",
+      "policy": "Support or oppose EPA regulation of carbon dioxide emissions.",
+      "scope": "Federal environmental regulation.",
+      "equivalent_terms": [
+        "carbon emissions",
+        "greenhouse gas regulation"
+      ]
+    },
+    {
+      "source": "ces",
+      "code": "enviro_renewable",
+      "source_text_sha256": "8c0bf7a1cd6066033e8d9668dbbbec8fa707a998ae78aafc23deb14e6a83fc5a",
+      "source_title": "Environment: renewable electricity with price tradeoff",
+      "source_question": "Support or oppose requiring states to use a minimum amount of renewable fuels for electricity even if electricity prices increase?",
+      "topic": "Climate change mitigation and renewable energy",
+      "policy": "Support or oppose minimum renewable-electricity requirements even if electricity prices increase.",
+      "scope": "State electricity generation; price tradeoff.",
+      "equivalent_terms": [
+        "renewable fuels",
+        "wind power",
+        "solar power",
+        "hydroelectric power"
+      ]
+    },
+    {
+      "source": "ces",
+      "code": "environment_renewables",
+      "source_text_sha256": "d834e605805d8c3390aed9d8ff88f858ace44d58e72fdd0672d86f6981836a51",
+      "source_title": "Environment: renewable electricity",
+      "source_question": "Support or oppose: Require that at least 20 percent of electricity be generated with renewable sources such as wind, solar, or hydroelectric power?",
+      "topic": "Climate change mitigation and renewable energy",
+      "policy": "Support or oppose requiring at least 20 percent of electricity to come from renewable sources.",
+      "scope": "Electricity generation mandate.",
+      "equivalent_terms": [
+        "renewable electricity",
+        "wind power",
+        "solar power",
+        "hydroelectric power"
+      ]
+    },
+    {
+      "source": "ces",
+      "code": "climate_action_scale",
+      "source_text_sha256": "3473b8227e59e9bbf934bf2d052ae3b0b9001f0571f66281d697962859f48133",
+      "source_title": "Climate change: belief and willingness to act",
+      "source_question": "From what you know about global climate change or global warming, which statement comes closest to your opinion: immediate action is necessary; some action should be taken; more research is necessary before taking action; concern is exaggerated and no action is necessary; or climate change is not occurring?",
+      "topic": "Climate change and global warming",
+      "policy": "Beliefs about whether climate change is occurring and whether immediate action, some action, further research, or no action is needed.",
+      "scope": "General climate beliefs and willingness to act.",
+      "equivalent_terms": [
+        "climate action",
+        "global warming"
+      ]
+    },
+    {
+      "source": "ces",
+      "code": "paris_climate_agreement",
+      "source_text_sha256": "5bfb8f9612bcde27633846795bd6c437611f75eb8a29d7d7077a6638307904c5",
+      "source_title": "Paris Climate Agreement",
+      "source_question": "Support or oppose: The United States re-joins the Paris Climate Agreement?",
+      "topic": "Climate change mitigation and international agreements",
+      "policy": "Support or oppose the United States rejoining the Paris Climate Agreement.",
+      "scope": "United States participation in an international climate agreement.",
+      "equivalent_terms": [
+        "Paris Agreement",
+        "international climate cooperation"
+      ]
+    },
+    {
+      "source": "ces",
+      "code": "fuel_efficiency_35",
+      "source_text_sha256": "b04e35c0ac9a8e5eeada41ee741f39c27fdff5108f4713dc1f55d21d888c3e5a",
+      "source_title": "Vehicle fuel-efficiency standards: 35 mpg",
+      "source_question": "Support or oppose raising required fuel efficiency for the average automobile from 25 mpg to 35 mpg?",
+      "topic": "Vehicle fuel-efficiency standards",
+      "policy": "Support or oppose raising automobile fuel efficiency from 25 to 35 miles per gallon.",
+      "scope": "Average automobile fuel economy requirement.",
+      "equivalent_terms": [
+        "fuel economy",
+        "gas mileage",
+        "vehicle efficiency"
+      ]
+    },
+    {
+      "source": "ces",
+      "code": "fuel_efficiency_lower",
+      "source_text_sha256": "cdf4a4bd89eb76644f6b77c81338b60695424416e8ba218b226e0ad56f9e9e41",
+      "source_title": "Vehicle fuel-efficiency standards: lowering to 25 mpg",
+      "source_question": "Support or oppose lowering required fuel efficiency for the average automobile from 35 mpg to 25 mpg?",
+      "topic": "Vehicle fuel-efficiency standards",
+      "policy": "Support or oppose lowering automobile fuel efficiency from 35 to 25 miles per gallon.",
+      "scope": "Average automobile fuel economy requirement.",
+      "equivalent_terms": [
+        "fuel economy",
+        "gas mileage",
+        "vehicle efficiency"
+      ]
+    },
+    {
+      "source": "ces",
+      "code": "fuel_efficiency_54",
+      "source_text_sha256": "8c310a9a1560b0a39807dd7f030d18ca25eacacadfb98f46e4b790876a9e5126",
+      "source_title": "Vehicle fuel-efficiency standards: 54.5 mpg",
+      "source_question": "Support or oppose raising average fuel efficiency for all cars and trucks in the US from 40 mpg to 54.5 mpg by 2025?",
+      "topic": "Vehicle fuel-efficiency standards",
+      "policy": "Support or oppose raising average car and truck fuel efficiency from 40 to 54.5 miles per gallon by 2025.",
+      "scope": "United States cars and trucks.",
+      "equivalent_terms": [
+        "fuel economy",
+        "gas mileage",
+        "vehicle efficiency"
+      ]
+    },
+    {
+      "source": "ces",
+      "code": "federal_clean_energy",
+      "source_text_sha256": "7aa5850c316d89557078fd1e07b767e0cf6e5a74685002318ef533090cc0a003",
+      "source_title": "Federal clean-energy purchasing",
+      "source_question": "Support or oppose: Order all federal agencies to buy clean energy, purchase electric vehicles, and make federal buildings energy efficient?",
+      "topic": "Clean energy and government purchasing",
+      "policy": "Support or oppose requiring federal agencies to buy clean energy and electric vehicles and make federal buildings energy efficient.",
+      "scope": "Federal procurement and buildings.",
+      "equivalent_terms": [
+        "clean electricity",
+        "electric vehicles",
+        "energy efficiency"
+      ]
+    },
+    {
+      "source": "ces",
+      "code": "environment_fossil_production",
+      "source_text_sha256": "f6800113ebdf9ee80de74715f15e11f6ab0daec715111bc164a7c6e224eec9ef",
+      "source_title": "Environment: fossil fuel production",
+      "source_question": "Support or oppose: Increase fossil fuel production in the U.S.?",
+      "topic": "Energy policy and fossil fuels",
+      "policy": "Support or oppose increasing fossil fuel production in the United States.",
+      "scope": "Domestic fuel production.",
+      "equivalent_terms": [
+        "fossil fuel extraction",
+        "energy production"
+      ]
+    },
+    {
+      "source": "ces",
+      "code": "environment_federal_leases",
+      "source_text_sha256": "5c02722bb6275814e006c095daa5e72e83ce49767a07d153e32966a741f6ae3d",
+      "source_title": "Environment: oil and gas leases",
+      "source_question": "Support or oppose: Halt new oil and gas leases on federal lands?",
+      "topic": "Energy policy and public lands",
+      "policy": "Support or oppose halting new oil and gas leases on federal lands.",
+      "scope": "New federal land leases for oil and gas.",
+      "equivalent_terms": [
+        "oil drilling",
+        "natural gas extraction",
+        "federal lands"
+      ]
+    },
+    {
+      "source": "nationscape",
+      "code": "nationscape_cap_carbon",
+      "source_text_sha256": "cf561ddd46689c8330ad8a3730c112cea89a56b9e711e08524884ab7ce77f83a",
+      "source_title": "Cap carbon emissions to combat climate change",
+      "source_question": "Cap carbon emissions to combat climate change.",
+      "topic": "Climate change mitigation",
+      "policy": "Support or oppose capping carbon emissions to combat climate change.",
+      "scope": "Carbon emissions limit.",
+      "equivalent_terms": [
+        "greenhouse gas emissions",
+        "carbon cap"
+      ]
+    },
+    {
+      "source": "ces",
+      "code": "healthcare_aca",
+      "source_text_sha256": "e1ea0a4bba12ba3f89151354c8325b2022341369faf9b09e0e571999a4714488",
+      "source_title": "Health care: Affordable Care Act",
+      "source_question": "Support or oppose repealing the Affordable Care Act?",
+      "topic": "Healthcare and health insurance",
+      "policy": "Support or oppose repealing the Affordable Care Act.",
+      "scope": "Federal health insurance law.",
+      "equivalent_terms": [
+        "health care",
+        "ACA",
+        "Obamacare repeal"
+      ]
+    },
+    {
+      "source": "ces",
+      "code": "healthcare_acamandate",
+      "source_text_sha256": "af75eed19da9f417372c5f639eed26cb388d81ef24838c0ebb36c44c3395fe5a",
+      "source_title": "Health care: insurance mandate",
+      "source_question": "Support or oppose restoring the Affordable Care Act requirement that all individuals purchase health insurance?",
+      "topic": "Healthcare and health insurance",
+      "policy": "Support or oppose restoring the Affordable Care Act requirement to purchase health insurance.",
+      "scope": "Individual insurance mandate.",
+      "equivalent_terms": [
+        "health care",
+        "ACA",
+        "Obamacare mandate"
+      ]
+    },
+    {
+      "source": "ces",
+      "code": "healthcare_medicare",
+      "source_text_sha256": "95318faaf14c5cd4956278318c7ef6fe20461772e0ecff3fef003ae8db8162e4",
+      "source_title": "Health care: Medicare for all",
+      "source_question": "Support or oppose expanding Medicare to cover all Americans?",
+      "topic": "Healthcare and health insurance",
+      "policy": "Support or oppose expanding Medicare to cover all Americans.",
+      "scope": "Universal Medicare coverage.",
+      "equivalent_terms": [
+        "health care",
+        "Medicare for all",
+        "universal health insurance"
+      ]
+    },
+    {
+      "source": "ces",
+      "code": "healthcare_medicareage",
+      "source_text_sha256": "ebb1b23ed2a8660f07d06fdf4755d6bf7ec4529e9ba027e334bbe3d08598909a",
+      "source_title": "Health care: Medicare eligibility",
+      "source_question": "Support or oppose lowering the Medicare eligibility age from 65 to 50?",
+      "topic": "Healthcare and health insurance",
+      "policy": "Support or oppose lowering the Medicare eligibility age from 65 to 50.",
+      "scope": "Age eligibility for public health insurance.",
+      "equivalent_terms": [
+        "health care",
+        "Medicare eligibility"
+      ]
+    },
+    {
+      "source": "ces",
+      "code": "healthcare_medicaid_work",
+      "source_text_sha256": "bb7695b5305db47deb79bc6229d4a6e22a2d52724553fb4d6ad00dfcf294bfca",
+      "source_title": "Health care: Medicaid work requirements",
+      "source_question": "Support or oppose: Require able-bodied adults under 64 years of age who do not have dependents to have a job in order to receive Medicaid.?",
+      "topic": "Healthcare and Medicaid eligibility",
+      "policy": "Support or oppose requiring able-bodied adults under 64 without dependents to work to receive Medicaid.",
+      "scope": "Medicaid work requirements.",
+      "equivalent_terms": [
+        "health care",
+        "Medicaid employment requirements"
+      ]
+    },
+    {
+      "source": "ces",
+      "code": "healthcare_medicaid_expand",
+      "source_text_sha256": "a964604c4cb6e41aefdb03a3de7b5ccbf716f425a837d4c932fee1c7fb5db607",
+      "source_title": "Health care: Medicaid expansion",
+      "source_question": "Support or oppose: Expand Medicaid to cover individuals making less than $25,000 and families making less than $40,000 a year.?",
+      "topic": "Healthcare and Medicaid eligibility",
+      "policy": "Support or oppose expanding Medicaid to individuals earning less than $25,000 and families earning less than $40,000 annually.",
+      "scope": "Income eligibility for Medicaid.",
+      "equivalent_terms": [
+        "health care",
+        "Medicaid expansion"
+      ]
+    },
+    {
+      "source": "gss",
+      "code": "helpsick",
+      "source_text_sha256": "0b4ccad20815e53137e30056248117ccb847d39a916ea8dad4bca13f57ee29d0",
+      "source_title": "Government medical care assistance",
+      "source_question": "Should the federal government help pay doctors and hospital bills, or should people pay for their own medical care?",
+      "topic": "Healthcare and government medical assistance",
+      "policy": "Whether government should help pay doctors and hospital bills or individuals should pay their own medical expenses.",
+      "scope": "Public financial assistance for medical treatment.",
+      "equivalent_terms": [
+        "health care",
+        "government medical care",
+        "medical bills"
+      ]
+    },
+    {
+      "source": "gss",
+      "code": "natheal",
+      "source_text_sha256": "814e601ee7ef81dffbc883f4b82633eaf289de773c388a77b54d23f1efc6027c",
+      "source_title": "Government spending: health",
+      "source_question": "Is the nation spending too little, about the right amount, or too much on health?",
+      "topic": "Healthcare spending",
+      "policy": "Whether the nation spends too little, about the right amount, or too much on health.",
+      "scope": "National spending priorities.",
+      "equivalent_terms": [
+        "health care",
+        "health spending"
+      ]
+    },
+    {
+      "source": "public",
+      "code": "VCF0805",
+      "source_text_sha256": "d23c6da9ceea7f8dc611b99e676196db3564bb40789810b2d9007ce6a7c331de",
+      "source_title": "Government Assistance with Medical Care",
+      "source_question": "1956,1960:\n           Around election time people talk about di\ufb00erent things that our\n           government in Washington is doing or should be doing. Now I would like\n           to talk to you about some of the things that our government might do.\n           Of course, di\ufb00erent things are important to di\ufb00erent people, so we\n           don\u2019t expect everyone to have an opinion about all of these. I would\n           like you to look at this card as I read each question and tell me how\n           you feel about the question. If you don\u2019t have an opinion, just tell me\n           that; if you do have an opinion, choose one of the other answers.]\n           (CARD WITH RESPONSE CHOICES SHOWN TO R: AGREE STRONGLY/ AGREE BUT NOT\n           VERY STRONGLY/ NOT SURE, IT DEPENDS/DISAGREE BUT NOT VERY STRONGLY/\n           DISAGREE VERY STRONGLY).\n           \u2018The government ought to help people get doctors and hospital care at\n           low cost.\u2019\n           1962:\n           Now on a di\ufb00erent problem. \u2018The government ought to help people get\n           doctors and hospital care at low cost.\u2019 Do you have an opinion on this\n           or not? (IF YES:) Do you agree that the government should do this or do\n           you think the government should not do it.\n           1964,1968:\n           Some say the government in Washington ought to help people get doctors\n           and hospital care at low cost; others say the government should not get\n           into this. Have you been interested enough in this to favor one side\n           over the other? (IF YES) What is your position?",
+      "topic": "Healthcare and government medical assistance",
+      "policy": "Whether government should help people obtain doctors and hospital care at low cost.",
+      "scope": "Government assistance with medical costs.",
+      "equivalent_terms": [
+        "health care",
+        "affordable medical care",
+        "medical bills"
+      ]
+    },
+    {
+      "source": "public",
+      "code": "VCF0806",
+      "source_text_sha256": "678357f183e806cc68bc601cff8cf18d0b385c6b4a73abb67e335a2f2dde9277",
+      "source_title": "Government Health Insurance Scale",
+      "source_question": "There is much concern about the rapid rise in medical and hospital\n            costs. Some (1988,1994-LATER: people) feel there should be a\n            government insurance plan which would cover all medical and hospital\n            expenses (1984 AND LATER: for everyone). (1996,2004: Suppose these\n            people are at one end of a scale, at point 1). Others feel that\n            (1988,1994-1996: all) medical expenses should be paid by individuals,\n            and through private insurance (1984 AND LATER: plans) like Blue Cross\n            (1984-1994: or [1996:some] other company paid plans). (1996,2004:\n            Suppose these people are at the other end, at point 7. And of course,\n            some people have opinions somewhere in between at points 2,3,4,5 or 6.)\n            Where would you place yourself on this scale, or haven\u2019t you thought\n            much about this? (7-POINT SCALE SHOWN TO R)",
+      "topic": "Healthcare and health insurance",
+      "policy": "Preference between government insurance covering medical and hospital expenses and individual payment through private insurance.",
+      "scope": "Public versus private financing of medical treatment.",
+      "equivalent_terms": [
+        "health care",
+        "government health insurance",
+        "medical insurance"
+      ]
+    },
+    {
+      "source": "public",
+      "code": "VCF0887",
+      "source_text_sha256": "88a121c0de42b4a4d170490bdba23ce73e5ec85fa0513c1a17458bccef454599",
+      "source_title": "Federal Spending- Child Care",
+      "source_question": "Child care",
+      "topic": "Childcare funding",
+      "policy": "Whether federal spending on child care should increase, decrease, or remain the same.",
+      "scope": "Federal childcare spending.",
+      "equivalent_terms": [
+        "daycare",
+        "child care services"
+      ]
+    },
+    {
+      "source": "public",
+      "code": "VCF0839",
+      "source_text_sha256": "19f8c8bbd8bbad70a826aab4fe7975e0ec1f2d143c27d73a0efe8e44a28991e5",
+      "source_title": "Government Services-Spending Scale",
+      "source_question": "Some people think the government should provide fewer services, even\n            in areas such as health and education, in order to reduce spending.\n            (2004: Suppose these people are at one end of a scale, at point 1.)\n            Other people feel that it is important for the government to provide\n            many more services even if it means an increase in spending.\n            (2004: Suppose these people are at the other end, at point 7. And\n            of course, some other people have opinions somewhere in between, at\n            points 2,3,4,5, or 6.)\n            Where would you place yourself on this scale, or haven\u2019t you thought\n            much about this? (7-POINT SCALE SHOWN TO R)",
+      "topic": "Government services and public spending",
+      "policy": "Preference for fewer government services and lower spending versus more services and higher spending.",
+      "scope": "Overall size of government services.",
+      "equivalent_terms": [
+        "public services",
+        "government spending"
+      ]
+    },
+    {
+      "source": "prri",
+      "code": "prri_collective_bargaining",
+      "source_text_sha256": "e1d697975aa0d903050d67e073d32a232cc23ffa5211e313704931f3f23dd9f2",
+      "source_title": "Public employee collective bargaining",
+      "source_question": "Eliminating the rights of public employees to collectively bargain over health care, pensions and other benefits.",
+      "topic": "Labor unions and collective bargaining",
+      "policy": "Support or oppose eliminating public employees\u2019 rights to bargain collectively over employment benefits.",
+      "scope": "Public-sector worker bargaining rights; benefits include healthcare and pensions.",
+      "equivalent_terms": [
+        "public employee unions",
+        "labor bargaining rights"
+      ]
+    },
+    {
+      "source": "gss",
+      "code": "pillok",
+      "source_text_sha256": "85a42dcbf4b1dda6d70b25f079c3bd47b5a71280f6e375a45ce69cd8393fce12",
+      "source_title": "Teenage access to birth control",
+      "source_question": "Should birth control be available to teenagers aged 14\u201316 even without parental approval?",
+      "topic": "Contraception and birth control access",
+      "policy": "Whether teenagers aged 14 to 16 should have access to birth control without parental approval.",
+      "scope": "Teenage access and parental consent.",
+      "equivalent_terms": [
+        "contraceptive access",
+        "birth control",
+        "contraception"
+      ]
+    },
+    {
+      "source": "nationscape",
+      "code": "nationscape_gov_insurance",
+      "source_text_sha256": "0998bbd61650ca00ea345f597000fa2695228e6d216e73089f29d2fae1981f46",
+      "source_title": "Government-run health insurance",
+      "source_question": "Provide government-run health insurance to all Americans.",
+      "topic": "Healthcare and health insurance",
+      "policy": "Support or oppose government-run health insurance for all Americans.",
+      "scope": "Universal public health insurance.",
+      "equivalent_terms": [
+        "health care",
+        "government medical insurance"
+      ]
+    },
+    {
+      "source": "nationscape",
+      "code": "nationscape_abolish_priv_insurance",
+      "source_text_sha256": "efda897d0e9ee0802b1ca2933d1c681be53cf3c923b423167546aa7851e387b7",
+      "source_title": "Abolish private health insurance and replace with government run health insurance",
+      "source_question": "Abolish private health insurance and replace with government run health insurance.",
+      "topic": "Healthcare and health insurance",
+      "policy": "Support or oppose abolishing private health insurance and replacing it with government-run insurance.",
+      "scope": "Replacement of private insurance.",
+      "equivalent_terms": [
+        "health care",
+        "public health insurance"
+      ]
+    },
+    {
+      "source": "nationscape",
+      "code": "nationscape_health_subsidies",
+      "source_text_sha256": "0c2c91fcb35c802bf669f563421dc8d97dccb73652c0df081bde6240c93bc1b0",
+      "source_title": "Subsidize health insurance for lower income people not receiving Medicare or Medicaid",
+      "source_question": "Subsidize health insurance for lower income people not receiving Medicare or Medicaid.",
+      "topic": "Healthcare and health insurance",
+      "policy": "Support or oppose subsidizing insurance for lower-income people who do not receive Medicare or Medicaid.",
+      "scope": "Insurance subsidies outside Medicare and Medicaid.",
+      "equivalent_terms": [
+        "health care",
+        "health insurance subsidies"
+      ]
+    },
+    {
+      "source": "nationscape",
+      "code": "nationscape_immigration_insurance",
+      "source_text_sha256": "7dae3eb71d8e0c885d4e41884eca796a1ed61bc474f14958d369aa2797c98b4e",
+      "source_title": "Provide government-financed health insurance to immigrants who enter the U.S. illegally",
+      "source_question": "Provide government-financed health insurance to immigrants who enter the U.S. illegally.",
+      "topic": "Healthcare coverage for immigrants",
+      "policy": "Support or oppose government-financed health insurance for immigrants who enter the United States illegally.",
+      "scope": "Public insurance and immigration status.",
+      "equivalent_terms": [
+        "health care",
+        "immigrant health insurance"
+      ]
+    },
+    {
+      "source": "nationscape",
+      "code": "nationscape_medicare_for_all",
+      "source_text_sha256": "0066431a1d708e93ca2928e1c85f81e9feb3b7b52795cea84b58510dfd957a7e",
+      "source_title": "Enact Medicare-for-All",
+      "source_question": "Enact Medicare-for-All.",
+      "topic": "Healthcare and health insurance",
+      "policy": "Support or oppose enacting Medicare-for-All.",
+      "scope": "National public health insurance proposal.",
+      "equivalent_terms": [
+        "health care",
+        "Medicare for all"
+      ]
+    },
+    {
+      "source": "voter",
+      "code": "voter_health_mandate",
+      "source_text_sha256": "1d9092311db82edc35604369765c56a6b8edac08df7c3bd9988104f6056f4650",
+      "source_title": "Health insurance mandate",
+      "source_question": "As you may know, the Affordable Care Act required nearly all Americans to have health insurance, or else pay a fine. Congress passed a law repealing this requirement starting in January 2019. Do you favor or oppose requiring all Americans have health insurance?",
+      "topic": "Healthcare and health insurance",
+      "policy": "Favor or oppose requiring all Americans to have health insurance.",
+      "scope": "Individual health insurance mandate following its repeal.",
+      "equivalent_terms": [
+        "health care",
+        "insurance requirement"
+      ]
+    },
+    {
+      "source": "voter",
+      "code": "voter_univhealthcov",
+      "source_text_sha256": "574bd23d7e51458df1a0894cead586bdbf5e1220c3ab1ed3cf940c3c98ac2cd3",
+      "source_title": "Federal responsibility to ensure health care coverage",
+      "source_question": "Do you think it is the responsibility of the federal government to see to it that everyone has health care coverage?",
+      "topic": "Healthcare coverage",
+      "policy": "Whether the federal government is responsible for ensuring everyone has health care coverage.",
+      "scope": "Federal responsibility for universal coverage.",
+      "equivalent_terms": [
+        "health insurance",
+        "health care",
+        "universal healthcare"
+      ]
+    },
+    {
+      "source": "voter",
+      "code": "voter_medicareforall",
+      "source_text_sha256": "0369f806df79435078e30c360a8309a083d9607298be78789ba158f1fac87221",
+      "source_title": "Support for Medicare for All government health care plan",
+      "source_question": "Would you support or oppose a national health plan, sometimes called 'Medicare-for-all,' in which Americans would get their insurance from a single government plan?",
+      "topic": "Healthcare and health insurance",
+      "policy": "Support or oppose a national Medicare-for-All plan in which Americans receive insurance from a single government plan.",
+      "scope": "Single government insurance plan.",
+      "equivalent_terms": [
+        "health care",
+        "single payer",
+        "Medicare for all"
+      ]
+    },
+    {
+      "source": "voter",
+      "code": "voter_healthreformbill",
+      "source_text_sha256": "6b66bfce06af7f2dc4e8b041ede04ffc678b4aa715d3c3b308790835b0d7d1cf",
+      "source_title": "Change in health care reform bill passed in 2010",
+      "source_question": "Do you think the health care reform bill that passed in 2010 should be expanded, kept the same, or repealed?",
+      "topic": "Healthcare reform",
+      "policy": "Whether the health care reform bill passed in 2010 should be expanded, retained, or repealed.",
+      "scope": "2010 federal health reform law.",
+      "equivalent_terms": [
+        "health care",
+        "Affordable Care Act",
+        "Obamacare"
+      ]
+    },
+    {
+      "source": "voter",
+      "code": "voter_aca_favor",
+      "source_text_sha256": "c093bf4996d77617b6fdaf3259221093626eb7dc9b1379e9dd894e3d745e3f80",
+      "source_title": "Proposed ACA repeal and replacement plan",
+      "source_question": "As you may know, Congress is currently discussing a healthcare plan that would repeal and replace the Affordable Care Act. Given what you know about the proposed new health care plan, do you have a generally favorable or generally unfavorable opinion of it?",
+      "topic": "Healthcare reform",
+      "policy": "Favorable or unfavorable opinion of the proposed congressional plan to repeal and replace the Affordable Care Act.",
+      "scope": "Specific repeal-and-replacement proposal.",
+      "equivalent_terms": [
+        "health care",
+        "ACA replacement",
+        "Obamacare repeal"
+      ]
+    },
+    {
+      "source": "nationscape",
+      "code": "nationscape_minwage",
+      "source_text_sha256": "ea5041f2fcb42d332679ed9abc0baee53034a3eeda2c98a80ee41a9bdf884345",
+      "source_title": "Raise the minimum wage to $15/hour",
+      "source_question": "Raise the minimum wage to $15/hour.",
+      "topic": "Minimum wage",
+      "policy": "Raise the minimum wage to $15/hour.",
+      "scope": "Wage floor increase; retain the question\u2019s stated dollar amount, where specified.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "prri",
+      "code": "prri_minimum_wage_10",
+      "source_text_sha256": "365d639c20dfa00d389b2a357e0c2ad8fbd4846af12350f819b1373dfbb696a5",
+      "source_title": "Minimum wage: $7.25 to $10",
+      "source_question": "Increasing the minimum wage from $7.25 an hour to $10.00 an hour.",
+      "topic": "Minimum wage",
+      "policy": "Increasing the minimum wage from $7.25 an hour to $10.00 an hour.",
+      "scope": "Wage floor increase; retain the question\u2019s stated dollar amount, where specified.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "prri",
+      "code": "prri_minimum_wage_15",
+      "source_text_sha256": "4b6f17302f986777e44b2900e1224ffb649a30a63834157fd7e96126c2d14559",
+      "source_title": "Minimum wage: $7.25 to $15",
+      "source_question": "Increasing the minimum wage from $7.25 an hour to $15 an hour.",
+      "topic": "Minimum wage",
+      "policy": "Increasing the minimum wage from $7.25 an hour to $15 an hour.",
+      "scope": "Wage floor increase; retain the question\u2019s stated dollar amount, where specified.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "voter",
+      "code": "voter_econpolicy_minwage",
+      "source_text_sha256": "258bd9e14148ba60375a76358d6006fb8fed3e3a8f2d1af64ddb9a3ccf607dcf",
+      "source_title": "Raise the minimum wage",
+      "source_question": "Do you support or oppose the following policies? - Raising the minimum wage.",
+      "topic": "Minimum wage",
+      "policy": "Do you support or oppose the following policies? - Raising the minimum wage.",
+      "scope": "Wage floor increase; retain the question\u2019s stated dollar amount, where specified.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "ces",
+      "code": "minimum_wage_contractors",
+      "source_text_sha256": "461c747713be40b01f9a131d78e9d54ff89b74c6e532c15d578df9e539097fe1",
+      "source_title": "Minimum wage: federal contractors, $15/hour",
+      "source_question": "Support or oppose: Increase the minimum wage paid to federal contractors to $15 an hour?",
+      "topic": "Minimum wage for federal contractors",
+      "policy": "Support or oppose: Increase the minimum wage paid to federal contractors to $15 an hour?",
+      "scope": "Federal contractor wage floor; specific executive decision.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "ces",
+      "code": "contraception_access",
+      "source_text_sha256": "093dee624d2f2084bf9931b39dc2d5a32f69f77fd6acd9428e16c0c93420b3e6",
+      "source_title": "Contraception: prohibit government restrictions on access",
+      "source_question": "Support or oppose: Prohibit government restrictions on the provision of, and access to, contraceptives?",
+      "topic": "Contraception and birth control access",
+      "policy": "Support or oppose: Prohibit government restrictions on the provision of, and access to, contraceptives?",
+      "scope": "Government restrictions on provision and access.",
+      "equivalent_terms": [
+        "contraceptive access",
+        "birth control",
+        "contraception"
+      ]
+    },
+    {
+      "source": "prri",
+      "code": "prri_birth_control_restrictions",
+      "source_text_sha256": "0d20cafaacfe9bac5bbbfd19642832839ad88c6ab9d0e762457ad8245759574a",
+      "source_title": "Birth control: restrictions on contraceptive methods",
+      "source_question": "How much do you favor or oppose laws that restrict what types of birth control can be used to prevent pregnancy?",
+      "topic": "Contraception and birth control restrictions",
+      "policy": "How much do you favor or oppose laws that restrict what types of birth control can be used to prevent pregnancy?",
+      "scope": "Legal restrictions on contraceptive methods.",
+      "equivalent_terms": [
+        "contraceptive access",
+        "birth control",
+        "contraception"
+      ]
+    },
+    {
+      "source": "gss",
+      "code": "nateduc",
+      "source_text_sha256": "6bea833b29d656533915efe8ba52c5842692f533e28608db0fefa0740af4b895",
+      "source_title": "Government spending: education",
+      "source_question": "Is the nation spending too little, about the right amount, or too much on education?",
+      "topic": "Education and school funding",
+      "policy": "Is the nation spending too little, about the right amount, or too much on education?",
+      "scope": "Education funding/affordability; retain original school type, eligibility and proposal limits.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "nationscape",
+      "code": "nationscape_college",
+      "source_text_sha256": "316fc1ae4bc5934f00857a90a54d868516ed5834ae08e40979f147e32dd989fc",
+      "source_title": "Ensure that all students can graduate from state colleges debt free",
+      "source_question": "Ensure that all students can graduate from state colleges debt free.",
+      "topic": "Education and college affordability",
+      "policy": "Ensure that all students can graduate from state colleges debt free.",
+      "scope": "Education funding/affordability; retain original school type, eligibility and proposal limits.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "nationscape",
+      "code": "nationscape_vouchers",
+      "source_text_sha256": "24b1889eaa9156604f2375c656f9e117bd1c0fea9dc8fdc01f538e797bed333c",
+      "source_title": "Provide tax-funded vouchers to be used for private or religious schools",
+      "source_question": "Provide tax-funded vouchers to be used for private or religious schools.",
+      "topic": "Education and school funding and school vouchers",
+      "policy": "Provide tax-funded vouchers to be used for private or religious schools.",
+      "scope": "Education funding/affordability; retain original school type, eligibility and proposal limits.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "public",
+      "code": "VCF0890",
+      "source_text_sha256": "2dcfd994a0adca0adbca9b5ae2e5ec9b5d623c4416731120b1ef175e8900e13f",
+      "source_title": "Federal Spending- Public Schools",
+      "source_question": "Public schools",
+      "topic": "Education and school funding",
+      "policy": "Public schools",
+      "scope": "Education funding/affordability; retain original school type, eligibility and proposal limits.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "public",
+      "code": "VCF0891",
+      "source_text_sha256": "bc5e97d461c72c88254e9351e3f562f1e39705627b0b87df8cddb54ac11fd1d5",
+      "source_title": "Federal Spending- Fin Aid for College Students",
+      "source_question": "Financial aid for college students",
+      "topic": "Education and college affordability and financial aid",
+      "policy": "Financial aid for college students",
+      "scope": "Education funding/affordability; retain original school type, eligibility and proposal limits.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "ces",
+      "code": "student_loan_forgiveness",
+      "source_text_sha256": "9a547a6d92b033d61fd404740901556847ed98296516430f00818e429192d6b1",
+      "source_title": "Student loans: forgive up to $20,000 per person",
+      "source_question": "Support or oppose: Forgive up to $20,000 of student loan debt for each person?",
+      "topic": "Education and college affordability and student loan forgiveness",
+      "policy": "Support or oppose: Forgive up to $20,000 of student loan debt for each person?",
+      "scope": "Education funding/affordability; retain original school type, eligibility and proposal limits.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "prri",
+      "code": "prri_free_tuition_income_limit",
+      "source_text_sha256": "f32bfb6581fe41930270de238da77b7d79308bd03e7e5e7940445b6c39f80b3a",
+      "source_title": "Public college: free tuition below $125,000 family income",
+      "source_question": "Tuition to public colleges and universities should be free for all students whose families make less than $125,000 a year.",
+      "topic": "Education and college affordability and free public college tuition",
+      "policy": "Tuition to public colleges and universities should be free for all students whose families make less than $125,000 a year.",
+      "scope": "Education funding/affordability; retain original school type, eligibility and proposal limits.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "prri",
+      "code": "prri_gay_job_protection",
+      "source_text_sha256": "6566c2925ed3a60c099e64afaa301ad0dde7f929a1d193de8d68183405fbdbf4",
+      "source_title": "Gay and lesbian employment protections",
+      "source_question": "Laws that would protect gay and lesbian people against job discrimination.",
+      "topic": "Civil rights and anti-discrimination protections and LGBT employment protections",
+      "policy": "Laws that would protect gay and lesbian people against job discrimination.",
+      "scope": "Specific policy; preserve original population, mechanism and eligibility. Not a generic racial-attitude measure.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "prri",
+      "code": "prri_lgbt_protections",
+      "source_text_sha256": "3c5a40d4e06735883410dff19a8cf0fa0f97d8795399a9fe320574cfe63b7937",
+      "source_title": "LGBT nondiscrimination protections",
+      "source_question": "Laws that would protect gay, lesbian, bisexual, and transgender people against discrimination in jobs, public accommodations, and housing.",
+      "topic": "Civil rights and anti-discrimination protections and LGBT protections",
+      "policy": "Laws that would protect gay, lesbian, bisexual, and transgender people against discrimination in jobs, public accommodations, and housing.",
+      "scope": "Specific policy; preserve original population, mechanism and eligibility. Not a generic racial-attitude measure.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "public",
+      "code": "VCF0814",
+      "source_text_sha256": "9e435d80e8dc6d2de4c399ca7f0812e808da8c6375a51e8951239548e86faec7",
+      "source_title": "Civil Rights Pushes Too Fast or Not Fast Enough",
+      "source_question": "Some say that the civil rights people have been trying to push too\n            fast. Others feel they haven\u2019t pushed fast enough.\n            How about you: Do you think that civil rights leaders are trying to\n            push too fast, are going too slowly, or are they moving about the\n            right speed?",
+      "topic": "Pace of movement activism",
+      "policy": "Some say that the civil rights people have been trying to push too\n            fast. Others feel they haven\u2019t pushed fast enough.\n            How about you: Do you think that civil rights leaders are trying to\n            push too fast, are going too slowly, or are they moving about the\n            right speed?",
+      "scope": "Movement/leader attitudes, excluded from broad policy-topic routing.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "public",
+      "code": "VCF0816",
+      "source_text_sha256": "e1f134ca66cf2b6aa3a94adcab783cdd4b88b95b34b1bed293fa66e0cb764b2e",
+      "source_title": "Should Government Ensure School Integration",
+      "source_question": "1962:\n           How about this statement, \u2018The government in Washington should see to it\n           that white and colored children are allowed to go to the same\n           schools.\u2019 Do you have an opinion on this or not? (IF YES:) Do you\n           agree that the government should do this or do you think that the\n           government should not do it?\n           1964-1986,1990 AND LATER:\n           Some people say that the government in Washington should see to it that\n           white and black (1962-1966: colored; 1968,1970: Negro) children go (1964-\n           1970: are allowed to go) to the same schools. Others claim this is not\n           the government\u2019s business. Have you been concerned (1986,1990 AND LATER:\n           interested) enough about [in] this question to favor one side over the\n           other? (IF YES)\n           Do you think the government in Washington should \u2014",
+      "topic": "Civil rights and racial equality and school integration",
+      "policy": "1962:\n           How about this statement, \u2018The government in Washington should see to it\n           that white and colored children are allowed to go to the same\n           schools.\u2019 Do you have an opinion on this or not? (IF YES:) Do you\n           agree that the government should do this or do you think that the\n           government should not do it?\n           1964-1986,1990 AND LATER:\n           Some people say that the government in Washington should see to it that\n           white and black (1962-1966: colored; 1968,1970: Negro) children go (1964-\n           1970: are allowed to go) to the same schools. Others claim this is not\n           the government\u2019s business. Have you been concerned (1986,1990 AND LATER:\n           interested) enough about [in] this question to favor one side over the\n           other? (IF YES)\n           Do you think the government in Washington should \u2014",
+      "scope": "Specific policy; preserve original population, mechanism and eligibility. Not a generic racial-attitude measure.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "public",
+      "code": "VCF0817",
+      "source_text_sha256": "d0681fdd6cd20568ee214ef649f71009bb84f7882f5fe2b9f463db9c69379257",
+      "source_title": "School Busing Scale",
+      "source_question": "There is much discussion about the best way to deal with racial\n            problems. Some people think achieving racial integration of schools\n            is so important that it justifies busing children to schools out of\n            their own neighborhoods. Others think letting children go to their\n            neighborhood schools is so important that they oppose busing.\n            Where would you place yourself on this scale, or haven\u2019t you thought\n            much about this? (7-POINT SCALE SHOWN TO R)",
+      "topic": "Civil rights and racial equality and school integration and school busing",
+      "policy": "There is much discussion about the best way to deal with racial\n            problems. Some people think achieving racial integration of schools\n            is so important that it justifies busing children to schools out of\n            their own neighborhoods. Others think letting children go to their\n            neighborhood schools is so important that they oppose busing.\n            Where would you place yourself on this scale, or haven\u2019t you thought\n            much about this? (7-POINT SCALE SHOWN TO R)",
+      "scope": "Specific policy; preserve original population, mechanism and eligibility. Not a generic racial-attitude measure.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "public",
+      "code": "VCF0867",
+      "source_text_sha256": "412030148a75c0626b63037f00e12e910004ab92c0fc3369384c0e4e1272b332",
+      "source_title": "Affirmative Action in Hiring/Promotion [1 of 2]",
+      "source_question": "Some people say that because of past discrimination blacks should be\n           given preference in hiring and promotion. Others say that such\n           preference in hiring and promotion of blacks is wrong because it gives\n           blacks advantages they haven\u2019t earned. What about your opinion\u2013 are\n           you for or against preferential hiring and promotion of blacks?",
+      "topic": "Civil rights and racial equality and affirmative action",
+      "policy": "Some people say that because of past discrimination blacks should be\n           given preference in hiring and promotion. Others say that such\n           preference in hiring and promotion of blacks is wrong because it gives\n           blacks advantages they haven\u2019t earned. What about your opinion\u2013 are\n           you for or against preferential hiring and promotion of blacks?",
+      "scope": "Specific policy; preserve original population, mechanism and eligibility. Not a generic racial-attitude measure.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "public",
+      "code": "VCF0867a",
+      "source_text_sha256": "644b0cd5217dce50ecb0ea0b4775fff5b278d453bcd0d7d772cce4e7e4c228ea",
+      "source_title": "Affirmative Action in Hiring/Promotion [2 of 2]",
+      "source_question": "Some people say that because of past discrimination blacks should be\n            given preference in hiring and promotion. Others say that such\n            preference in hiring and promotion of blacks is wrong because it gives\n            blacks advantages they haven\u2019t earned. What about your opinion\u2013 are\n            you for or against preferential hiring and promotion of blacks?\n            (IF FAVOR: ) Do you favor preference in hiring and promotion strongly or\n            not strongly?\n            (IF OPPOSE:) Do you oppose preference in hiring and promotion strongly\n            or not strongly?",
+      "topic": "Civil rights and racial equality and affirmative action",
+      "policy": "Some people say that because of past discrimination blacks should be\n            given preference in hiring and promotion. Others say that such\n            preference in hiring and promotion of blacks is wrong because it gives\n            blacks advantages they haven\u2019t earned. What about your opinion\u2013 are\n            you for or against preferential hiring and promotion of blacks?\n            (IF FAVOR: ) Do you favor preference in hiring and promotion strongly or\n            not strongly?\n            (IF OPPOSE:) Do you oppose preference in hiring and promotion strongly\n            or not strongly?",
+      "scope": "Specific policy; preserve original population, mechanism and eligibility. Not a generic racial-attitude measure.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "public",
+      "code": "VCF0876",
+      "source_text_sha256": "265bb21263cbd9eeb474ff4baa6f750f0f91af8a582f817ef51fad8a2a29ae58",
+      "source_title": "Law to Protect Homosexuals Against Discrimination",
+      "source_question": "Do you favor or oppose laws to protect [homosexuals/gays and lesbians]\n            against job discrimination?",
+      "topic": "Civil rights and anti-discrimination protections and LGBT employment protections",
+      "policy": "Do you favor or oppose laws to protect [homosexuals/gays and lesbians]\n            against job discrimination?",
+      "scope": "Specific policy; preserve original population, mechanism and eligibility. Not a generic racial-attitude measure.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "public",
+      "code": "VCF0876a",
+      "source_text_sha256": "634be824e702e7363d8ad4e188201865704bb764cabc4946994e828b4200ab87",
+      "source_title": "Strength of Position on Law to Protect Homosexuals Against Discrimination",
+      "source_question": "Do you favor or oppose laws to protect [homosexuals/gays and lesbians]\n            against job discrimination?\n            Do you favor/oppose such laws strongly or not strongly?",
+      "topic": "Civil rights and anti-discrimination protections and LGBT employment protections",
+      "policy": "Do you favor or oppose laws to protect [homosexuals/gays and lesbians]\n            against job discrimination?\n            Do you favor/oppose such laws strongly or not strongly?",
+      "scope": "Specific policy; preserve original population, mechanism and eligibility. Not a generic racial-attitude measure.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "public",
+      "code": "VCF0216",
+      "source_text_sha256": "2575f8ecbf2f08ba2080e022ae56a64022aa1a625098180bb82f3f518541fe1c",
+      "source_title": "Thermometer - Civil Rights Leaders",
+      "source_question": "Civil rights leaders \u2013 feeling thermometer",
+      "topic": "Leader favorability",
+      "policy": "Civil rights leaders \u2013 feeling thermometer",
+      "scope": "Movement/leader attitudes, excluded from broad policy-topic routing.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "voter",
+      "code": "voter_affirmativeaction",
+      "source_text_sha256": "4eb9d7677debcbc49d1b6abf004f5163a9fd8b4ebb509922d383c27a89777288",
+      "source_title": "Favor affirmative action for women and racial minorities",
+      "source_question": "Do you generally favor or oppose affirmative action programs for women and racial minorities?",
+      "topic": "Civil rights and racial equality and affirmative action",
+      "policy": "Do you generally favor or oppose affirmative action programs for women and racial minorities?",
+      "scope": "Specific policy; preserve original population, mechanism and eligibility. Not a generic racial-attitude measure.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "prri",
+      "code": "prri_felony_voting_restoration",
+      "source_text_sha256": "580b71999e644a30d4f6aed46bbc4286e56e869a8cba403e055af931920d459d",
+      "source_title": "Voting rights after completing a felony sentence",
+      "source_question": "A person who has been convicted of a felony should be allowed to vote after they have served their sentence.",
+      "topic": "Civil rights and voting rights and felony voting restoration",
+      "policy": "A person who has been convicted of a felony should be allowed to vote after they have served their sentence.",
+      "scope": "Specific policy; preserve original population, mechanism and eligibility. Not a generic racial-attitude measure.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "prri",
+      "code": "prri_federal_voting_rights",
+      "source_text_sha256": "ad95bb505e7ce25afa0a502b77bd6b8eace34ffbc7c9b9d9b361fe4771d21d80",
+      "source_title": "Federal voting-rights law versus state control",
+      "source_question": "Which comes closest to your view: The U.S. Congress should pass a voting rights law to guarantee every citizen access to the ballot, or we should leave decisions on voting rights to the states?",
+      "topic": "Civil rights and voting rights and federal ballot access protections",
+      "policy": "Which comes closest to your view: The U.S. Congress should pass a voting rights law to guarantee every citizen access to the ballot, or we should leave decisions on voting rights to the states?",
+      "scope": "Specific policy; preserve original population, mechanism and eligibility. Not a generic racial-attitude measure.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "prri",
+      "code": "prri_contraception_insurance_colleges",
+      "source_text_sha256": "fcd794b5c466235a5b8574ec7ec673510a01c8a1eb98a9f2970e741deb2d7459",
+      "source_title": "Contraception insurance coverage at religiously affiliated colleges and hospitals",
+      "source_question": "Should religiously affiliated colleges and hospitals be required to provide their employees with health care plans that cover contraception or birth control at no cost, or not?",
+      "topic": "Contraception and birth control access and contraception insurance coverage",
+      "policy": "Should religiously affiliated colleges and hospitals be required to provide their employees with health care plans that cover contraception or birth control at no cost, or not?",
+      "scope": "Support is coded liberal; opposition conservative. Original survey weights applied within the explicitly assigned form; nonresponse excluded from the score, retained in the topline denominator. Employer-specific contraception insurance mandate, not general approval of contraceptive use. Neutral Form 1 wording is used; the religious-objections wording experiment is not counted as an extra question.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "prri",
+      "code": "prri_contraception_insurance_churches",
+      "source_text_sha256": "45c754d4ed978988bd66f56784da69fad9e1d5e12fe93bd76b830bbe486caadf",
+      "source_title": "Contraception insurance coverage at churches and other places of worship",
+      "source_question": "Should churches and other places of worship be required to provide their employees with health care plans that cover contraception or birth control at no cost, or not?",
+      "topic": "Contraception and birth control access and contraception insurance coverage",
+      "policy": "Should churches and other places of worship be required to provide their employees with health care plans that cover contraception or birth control at no cost, or not?",
+      "scope": "Support is coded liberal; opposition conservative. Original survey weights applied within the explicitly assigned form; nonresponse excluded from the score, retained in the topline denominator. Employer-specific contraception insurance mandate, not general approval of contraceptive use. Neutral Form 1 wording is used; the religious-objections wording experiment is not counted as an extra question.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "prri",
+      "code": "prri_free_public_college",
+      "source_text_sha256": "31beda2adf3c1e462f502a01ac9cb54dc35f8b3e27d70da0bac40b1dfa0adeb6",
+      "source_title": "Free tuition at public colleges",
+      "source_question": "Do you strongly favor, favor, oppose, or strongly oppose making college tuition free at public institutions?",
+      "topic": "Education and college affordability and free college tuition",
+      "policy": "Do you strongly favor, favor, oppose, or strongly oppose making college tuition free at public institutions?",
+      "scope": "Support is coded liberal; opposition conservative. Original survey weights applied within the explicitly assigned form; nonresponse excluded from the score, retained in the topline denominator.",
+      "equivalent_terms": []
+    },
+    {
+      "source": "prri",
+      "code": "prri_federal_voting_rights_2022",
+      "source_text_sha256": "ad95bb505e7ce25afa0a502b77bd6b8eace34ffbc7c9b9d9b361fe4771d21d80",
+      "source_title": "Federal voting-rights law versus state control",
+      "source_question": "Which comes closest to your view: The U.S. Congress should pass a voting rights law to guarantee every citizen access to the ballot, or we should leave decisions on voting rights to the states?",
+      "topic": "Civil rights and voting rights and federal ballot access protections",
+      "policy": "Which comes closest to your view: The U.S. Congress should pass a voting rights law to guarantee every citizen access to the ballot, or we should leave decisions on voting rights to the states?",
+      "scope": "Support is coded liberal; opposition conservative. Original survey weights applied within the explicitly assigned form; nonresponse excluded from the score, retained in the topline denominator. Federal protection versus state control mixes ballot access and federalism. The released form contains one fewer respondent than the published sample.",
+      "equivalent_terms": []
+    }
+  ]
+}
