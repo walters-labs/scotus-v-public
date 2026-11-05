@@ -1271,3 +1271,61 @@ are preserved. Broad education coverage grows from one question/source across
 the historical gain comes from recovering existing records, not new observations.
 Results are recorded in `data/evaluation/education-summary.json`. Development
 judgments are partial and not independent relevance validation.
+
+### Civil-rights policy coverage (candidate)
+
+This batch adds two PRRI questions and recovers existing policy questions through
+reviewed topic metadata. It does not change court retrieval or existing scores.
+
+- PRRI 2016 Q30B: voting eligibility after completing a felony sentence.
+  Questionnaire PDF page 21 supplies the exact scope and four agreement levels.
+  Full-sample `weight` reproduces 33/41/14/12 percent within the existing 0.51-point
+  rounding tolerance. Agreement maps to +1/+1/3, disagreement to -1/3/-1.
+  It does not measure voting during incarceration.
+- PRRI 2021 Q20: federal voting-rights legislation guaranteeing ballot access
+  versus leaving voting-rights decisions to states. Questionnaire PDF page 19;
+  `KP_WEIGHT` reproduces 70/27 percent, with skipped responses excluded from the
+  scored mean. Federal legislation = +1 and state control = -1 by the project's
+  stated convention. This mixes access and federalism; the latter response is
+  not equivalent to opposition to voting rights.
+
+The topic review adds ANES school integration/busing, affirmative action and
+employment nondiscrimination, PRRI gay/LGBT nondiscrimination, and VOTER affirmative
+action. Existing ANES strength-of-position variants retain their family/priority
+metadata, so displaying both variables does not create independent question
+families. Topic counts must not be interpreted as independent samples.
+
+ANES `VCF0216` (leader feeling thermometer) and `VCF0814` (pace of movement
+activism) receive distinct metadata without the broad policy label. They are
+excluded from reviewed broad civil-rights routing, but remain stored and available
+through specific searches. No source wording, historical scores or orientation
+is changed. This is a selected policy review, not an exhaustive civil-rights index.
+
+Deferred: PRRI 2022 voting-rights comparison uses a split form and requires review
+of its sampling/weight denominator; CES cumulative affirmative-action measures
+require annual wording/scale review before import. Perceived discrimination and
+racial-resentment questions are not treated as interchangeable with direct policy
+support.
+
+Rebuild into fresh paths:
+
+```sh
+PYTHONPATH=. .venv/bin/python -m scvpublic.prri --documents-manifest data/manifests/prri-all-policy-documents.json --mappings data/prri/civil-rights-mappings.json --output data/processed/civil-rights-prri/public.json --base-artifact artifacts/education.sqlite --artifact artifacts/civil-rights.sqlite
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/rebind_hybrid.py --old artifacts/education.sqlite --new artifacts/civil-rights.sqlite --bundle artifacts/semantic-education-final --output artifacts/semantic-civil-rights-court
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_embeddings.py --artifact artifacts/civil-rights.sqlite --bundle artifacts/semantic-civil-rights-court --output artifacts/semantic-civil-rights-base --phrases --reuse-artifact artifacts/education.sqlite --reuse-bundle artifacts/semantic-education-final
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_topic_bundle.py --artifact artifacts/civil-rights.sqlite --bundle artifacts/semantic-civil-rights-base --descriptions data/evaluation/survey-topics-civil-rights.json --output artifacts/semantic-civil-rights
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/check_civil_rights.py --baseline-artifact artifacts/education.sqlite --baseline-bundle artifacts/semantic-education-final --artifact artifacts/civil-rights.sqlite --bundle artifacts/semantic-civil-rights --output artifacts/civil-rights-validation.json
+```
+
+Validation: broad civil rights now selects 11 records representing nine
+source-specific families across three sources and 29 years (1962–2024), versus
+two records across ten years previously. The extra history mainly comes from
+existing ANES policy records; only two new question-years were imported. Existing
+family-priority rules select the strength variant when both ANES variants match,
+so recovered variants may change aggregate values without changing stored scores.
+All 342 prior documents/vectors and court assets are preserved. The 53-query
+comparison changes only six reviewed civil-rights queries; unrelated and specific
+leader-query selections are unchanged. 158 unit tests, 160 serving requests and
+42 HTTP checks pass. Local test-process RSS peaks at 230.2 MiB (not whole-server
+memory). See `data/evaluation/civil-rights-summary.json`; judgments are partial
+development checks, not independent validation.
