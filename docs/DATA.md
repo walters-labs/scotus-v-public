@@ -1390,3 +1390,69 @@ Existing survey payloads and vectors, phrase vectors, court vectors, and model
 files are preserved. Search checks use development judgments, not independent
 relevance validation. The questions add policy-specific observations, not a
 continuous measure of public opinion between survey years.
+
+### CES affirmative-action extension
+
+Three wording records add six question-years (2008, 2009, 2010, 2012, 2013,
+2014), sharing one CES affirmative-action family with no overlapping years.
+2008 explicitly includes women and racial minorities; 2009 refers to racial
+minorities and correcting discrimination; 2010/2012–2014 say past discrimination.
+All combine employment and college admissions, so neither setting can be
+interpreted as a separately measured preference. The original wording is retained
+in each record and year provenance. Changing wording can affect the trend.
+
+The four-point scale maps strong support to +1, somewhat support to +1/3,
+somewhat opposition to -1/3 and strong opposition to -1. This equal-spacing
+assumption matches the project's existing convention. Cumulative common-content
+pre-election/single-wave weights are joined by year and respondent ID. Every
+included respondent joins successfully. Missing answers and nonpositive/nonfinite
+weights are excluded; 140 answered 2010 records have invalid weights. No weights
+are imputed. All six raw frequency distributions exactly match cumulative-guide
+table 104, and respondent-level means match independent grouped calculations.
+
+Source evidence: cumulative policy guide tables 104–105 (PDF page 70), plus the
+[official 2009 questionnaire, CC09_55, page 18](https://projects.iq.harvard.edu/files/cces/files/cces_2009_common.pdf)
+for its abbreviated wording. That questionnaire's text was verified through the
+indexed official document; direct PDF download returned HTTP 403. Its frequencies
+also match the downloaded 2009 annual codebook. Download URLs and checksums for
+the 2007, 2009 and 2011 annual codebooks are in
+`data/manifests/ces-affirmative-action-documents.json`.
+
+Deferred rather than assumed comparable:
+- 2006–2007: the cumulative seven-point scale has an inconsistent note about a
+  fourth “Not sure” option. The 2007 annual codebook also has different frequencies.
+  Reconcile source versions and midpoint interpretation before import.
+- 2011: the available codebooks give only “Affirmative Action,” not the full
+  question text. Its four response labels alone cannot establish policy scope.
+
+Reproduce in fresh output paths (download documentation from the manifest URLs
+to their recorded paths first):
+
+```sh
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_ces_cumulative.py \
+  --base-artifact artifacts/prri-split-form.sqlite --artifact artifacts/affirmative-action.sqlite \
+  --output data/processed/affirmative-action-ces/public.json \
+  --audit data/ces/affirmative-action-validation.json \
+  --mappings data/ces/affirmative-action-mappings.json \
+  --documents-manifest data/manifests/ces-affirmative-action-documents.json
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/rebind_hybrid.py \
+  --old artifacts/prri-split-form.sqlite --new artifacts/affirmative-action.sqlite \
+  --bundle artifacts/semantic-prri-split-form --output artifacts/semantic-affirmative-action-court
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_embeddings.py \
+  --artifact artifacts/affirmative-action.sqlite --bundle artifacts/semantic-affirmative-action-court \
+  --output artifacts/semantic-affirmative-action-base --phrases \
+  --reuse-artifact artifacts/prri-split-form.sqlite --reuse-bundle artifacts/semantic-prri-split-form
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_survey_topic_bundle.py \
+  --artifact artifacts/affirmative-action.sqlite --bundle artifacts/semantic-affirmative-action-base \
+  --descriptions data/evaluation/survey-topics-affirmative-action.json \
+  --output artifacts/semantic-affirmative-action
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/check_affirmative_action.py \
+  --baseline-artifact artifacts/prri-split-form.sqlite --baseline-bundle artifacts/semantic-prri-split-form \
+  --artifact artifacts/affirmative-action.sqlite --bundle artifacts/semantic-affirmative-action \
+  --output artifacts/affirmative-action-validation.json
+```
+
+The cumulative builder reuses the existing published-frequency and weighted-score
+validator from `scripts/build_ces_climate.py`. Existing records, embeddings,
+phrase vocabulary and court assets remain unchanged. Search checks use partial
+development judgments, not independent validation.

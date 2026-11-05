@@ -1,0 +1,17 @@
+[
+  {
+    "path": "data/raw/ces-affirmative-action/2007-guide.pdf",
+    "url": "https://dataverse.harvard.edu/api/access/datafile/2301850",
+    "sha256": "76e1bcca9034605d345aa7684cfa8d8f7ff30134afe555d72c30917040336869"
+  },
+  {
+    "path": "data/raw/ces-affirmative-action/2009-guide.pdf",
+    "url": "https://dataverse.harvard.edu/api/access/datafile/2432787",
+    "sha256": "9d35bd80ea00ba6a559f1e4a8230cdf2d44c66d5514b233506a204b78921abfb"
+  },
+  {
+    "path": "data/raw/ces-affirmative-action/2011-guide.pdf",
+    "url": "https://dataverse.harvard.edu/api/access/datafile/2438386",
+    "sha256": "8010c8b2bd8455123f60c0414904b1aae13153b6a3ce3bda17c2b7195da88076"
+  }
+]

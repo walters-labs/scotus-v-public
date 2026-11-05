@@ -1,0 +1,169 @@
+{
+  "version": "explicit-ces-v1",
+  "notes": "Reviewed affirmative-action extension. Annual wording variants are separate records sharing one family without overlapping years. Support maps to liberal +1; opposition to conservative -1; intermediate responses to +/-1/3. Missing responses and invalid weights excluded. Employment and college admissions are combined in the original question, not separately measured.",
+  "entries": [
+    {
+      "code": "affirmative_action_race_women",
+      "source_code": "affirmativeaction",
+      "title": "Affirmative action in employment and college admissions for racial minorities and women",
+      "question": "Affirmative action programs give preference to racial minorities and to women in employment and college admissions in order to correct for discrimination. Do you support or oppose affirmative action?",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "family": "ces:affirmative_action",
+      "priority": 0,
+      "weight": "weight",
+      "measurement_type": "policy",
+      "rationale": "Support coded liberal; opposition conservative. Four ordered responses mapped to +1, +1/3, -1/3, -1. Original question combines employment and college admissions; it does not measure either separately. Wording variants share one family; changes in wording can affect the trend.",
+      "question_note": "Support coded liberal; opposition conservative. Four ordered responses mapped to +1, +1/3, -1/3, -1. Original question combines employment and college admissions; it does not measure either separately. Wording variants share one family; changes in wording can affect the trend.",
+      "source_url": "https://doi.org/10.7910/DVN/OSXDQO",
+      "years": [
+        2008
+      ],
+      "published_counts": {
+        "2008": {
+          "1": 3791,
+          "2": 8883,
+          "3": 8123,
+          "4": 11820
+        }
+      },
+      "expected_labels": {
+        "1": "Strongly support",
+        "2": "Somewhat support",
+        "3": "Somewhat oppose",
+        "4": "Strongly oppose"
+      },
+      "original_codes": {
+        "2008": "cc313"
+      }
+    },
+    {
+      "code": "affirmative_action_race_2009",
+      "source_code": "affirmativeaction",
+      "title": "Affirmative action in employment and college admissions for racial minorities",
+      "question": "Affirmative action programs give preference to racial minorities in employment and college admissions in order to correct for discrimination. Do you support or oppose affirmative action?",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "family": "ces:affirmative_action",
+      "priority": 0,
+      "weight": "weight",
+      "measurement_type": "policy",
+      "rationale": "Support coded liberal; opposition conservative. Four ordered responses mapped to +1, +1/3, -1/3, -1. Original question combines employment and college admissions; it does not measure either separately. Wording variants share one family; changes in wording can affect the trend.",
+      "question_note": "Support coded liberal; opposition conservative. Four ordered responses mapped to +1, +1/3, -1/3, -1. Original question combines employment and college admissions; it does not measure either separately. Wording variants share one family; changes in wording can affect the trend.",
+      "source_url": "https://doi.org/10.7910/DVN/OSXDQO",
+      "years": [
+        2009
+      ],
+      "published_counts": {
+        "2009": {
+          "1": 1581,
+          "2": 3236,
+          "3": 3392,
+          "4": 5541
+        }
+      },
+      "expected_labels": {
+        "1": "Strongly support",
+        "2": "Somewhat support",
+        "3": "Somewhat oppose",
+        "4": "Strongly oppose"
+      },
+      "original_codes": {
+        "2009": "cc09_55"
+      }
+    },
+    {
+      "code": "affirmative_action_race",
+      "source_code": "affirmativeaction",
+      "title": "Affirmative action in employment and college admissions for racial minorities",
+      "question": "Affirmative action programs give preference to racial minorities in employment and college admissions in order to correct for past discrimination. Do you support or oppose affirmative action?",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "family": "ces:affirmative_action",
+      "priority": 0,
+      "weight": "weight",
+      "measurement_type": "policy",
+      "rationale": "Support coded liberal; opposition conservative. Four ordered responses mapped to +1, +1/3, -1/3, -1. Original question combines employment and college admissions; it does not measure either separately. Wording variants share one family; changes in wording can affect the trend.",
+      "question_note": "Support coded liberal; opposition conservative. Four ordered responses mapped to +1, +1/3, -1/3, -1. Original question combines employment and college admissions; it does not measure either separately. Wording variants share one family; changes in wording can affect the trend.",
+      "source_url": "https://doi.org/10.7910/DVN/OSXDQO",
+      "years": [
+        2010,
+        2012,
+        2013,
+        2014
+      ],
+      "published_counts": {
+        "2010": {
+          "1": 6638,
+          "2": 12985,
+          "3": 13326,
+          "4": 22324
+        },
+        "2012": {
+          "1": 7448,
+          "2": 13797,
+          "3": 14183,
+          "4": 18869
+        },
+        "2013": {
+          "1": 1993,
+          "2": 4176,
+          "3": 4219,
+          "4": 5930
+        },
+        "2014": {
+          "1": 8116,
+          "2": 14161,
+          "3": 14135,
+          "4": 19591
+        }
+      },
+      "expected_labels": {
+        "1": "Strongly support",
+        "2": "Somewhat support",
+        "3": "Somewhat oppose",
+        "4": "Strongly oppose"
+      },
+      "original_codes": {
+        "2010": "cc327",
+        "2012": "CC327",
+        "2013": "CC330",
+        "2014": "CC14_328"
+      }
+    }
+  ],
+  "deferred": [
+    {
+      "years": [
+        2006,
+        2007
+      ],
+      "reason": "Cumulative guide labels a seven-point scale but its note describes a fourth Not sure option recoded NA. Annual 2007 guide counts differ from cumulative counts. Reconcile source versions and midpoint meaning before import."
+    },
+    {
+      "years": [
+        2011
+      ],
+      "reason": "Cumulative and annual codebooks abbreviate wording to Affirmative Action; full question wording not verified."
+    }
+  ],
+  "documentation": [
+    {
+      "url": "https://projects.iq.harvard.edu/files/cces/files/cces_2009_common.pdf",
+      "location": "CC09_55, page 18",
+      "note": "Full wording verified in official questionnaire indexed text; direct PDF download returned 403. Counts independently verified against downloaded annual codebook and cumulative guide."
+    }
+  ]
+}

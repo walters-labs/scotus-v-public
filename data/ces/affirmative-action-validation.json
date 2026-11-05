@@ -1,0 +1,112 @@
+{
+  "sources": {
+    "data/raw/ces-policy/responses.dta": "0264338e7298450e42c63a2431273f7ad4b04be90d5075e0ba4b64c48ca5cfdd",
+    "data/raw/ces-policy/guide.pdf": "3cb04fd6c5e10d7f94139d5c12eaec5fb420a362efad50d5a6f76e85adfc4dbd",
+    "data/raw/ces-policy/common.feather": "543838b1116aa97e2e3e8976b9c5bf0224253233fa38757805b1cbff43db46ec",
+    "data/raw/ces-policy/common-guide.pdf": "07ca96d8b2c4ed64f1cfeff4d140dc1a5a4ade4ecf8446ff4e50207c56f7b003",
+    "data/raw/ces-affirmative-action/2007-guide.pdf": "76e1bcca9034605d345aa7684cfa8d8f7ff30134afe555d72c30917040336869",
+    "data/raw/ces-affirmative-action/2009-guide.pdf": "9d35bd80ea00ba6a559f1e4a8230cdf2d44c66d5514b233506a204b78921abfb",
+    "data/raw/ces-affirmative-action/2011-guide.pdf": "8010c8b2bd8455123f60c0414904b1aae13153b6a3ce3bda17c2b7195da88076",
+    "artifacts/prri-split-form.sqlite": "bce7aab725496086db5f896df29c76ad7db23aff50c4045bf18ee6a6b9875703",
+    "data/ces/affirmative-action-mappings.json": "387d5f20fa7f88f3584d88e738f62722e9ee9bb096ebcf39cb24cee860ff6b75",
+    "data/manifests/ces-affirmative-action-documents.json": "e886252a5438d456c66bd3b0c20d390a88467ce15c48e2ab9d84f3aca7b38196",
+    "data/manifests/ces-policy-v3.json": "dbe3b0f0bae8bdb19c91b241de1bcd58e5e6550d2adce820618745fcb21d15e8",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/build_ces_cumulative.py": "7766d3294f6b864e33fad6f646610f42ae065095a6e72856709404f7a6445dc6",
+    "scripts/build_ces_climate.py": "823d038289f0e59566bb76a76e81055b2073afcfaf5c0a6fc81d7e4f592f49de"
+  },
+  "checks": [
+    {
+      "code": "affirmative_action_race_women",
+      "year": 2008,
+      "frequencies": {
+        "4": 11820,
+        "2": 8883,
+        "3": 8123,
+        "1": 3791
+      },
+      "weighted_mean": -0.14650014079970503,
+      "valid_responses": 32617,
+      "invalid_weight_responses": 0
+    },
+    {
+      "code": "affirmative_action_race_2009",
+      "year": 2009,
+      "frequencies": {
+        "4": 5541,
+        "3": 3392,
+        "2": 3236,
+        "1": 1581
+      },
+      "weighted_mean": -0.27383179846918815,
+      "valid_responses": 13750,
+      "invalid_weight_responses": 0
+    },
+    {
+      "code": "affirmative_action_race",
+      "year": 2010,
+      "frequencies": {
+        "4": 22324,
+        "3": 13326,
+        "2": 12985,
+        "1": 6638
+      },
+      "weighted_mean": -0.2762975685353868,
+      "valid_responses": 55133,
+      "invalid_weight_responses": 140
+    },
+    {
+      "code": "affirmative_action_race",
+      "year": 2012,
+      "frequencies": {
+        "4": 18869,
+        "3": 14183,
+        "2": 13797,
+        "1": 7448
+      },
+      "weighted_mean": -0.21357633472599377,
+      "valid_responses": 54297,
+      "invalid_weight_responses": 0
+    },
+    {
+      "code": "affirmative_action_race",
+      "year": 2013,
+      "frequencies": {
+        "4": 5930,
+        "3": 4219,
+        "2": 4176,
+        "1": 1993
+      },
+      "weighted_mean": -0.23827810592591028,
+      "valid_responses": 16318,
+      "invalid_weight_responses": 0
+    },
+    {
+      "code": "affirmative_action_race",
+      "year": 2014,
+      "frequencies": {
+        "4": 19591,
+        "2": 14161,
+        "3": 14135,
+        "1": 8116
+      },
+      "weighted_mean": -0.23933136582609507,
+      "valid_responses": 56003,
+      "invalid_weight_responses": 0
+    }
+  ],
+  "deferred": [
+    {
+      "years": [
+        2006,
+        2007
+      ],
+      "reason": "Cumulative guide labels a seven-point scale but its note describes a fourth Not sure option recoded NA. Annual 2007 guide counts differ from cumulative counts. Reconcile source versions and midpoint meaning before import."
+    },
+    {
+      "years": [
+        2011
+      ],
+      "reason": "Cumulative and annual codebooks abbreviate wording to Affirmative Action; full question wording not verified."
+    }
+  ]
+}
