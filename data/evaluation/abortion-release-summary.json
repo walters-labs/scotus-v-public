@@ -1,0 +1,2873 @@
+{
+  "status": "Descriptive current-release audit, not a validated alignment estimate",
+  "provenance": {
+    "artifacts/affirmative-action.sqlite": "a7e8e8757291dce0f0cca727f2dfc4bbe01e6c7c3da6c7367739cf74e60cf064",
+    "artifacts/semantic-affirmative-action/manifest.json": "ec5050a7c158cecaf46ac92988e5a7a0fba7a2dc3a7fbacd586d3d222ed272d9",
+    "data/research/abortion-current-case-review.json": "c6ba85d1564ac95a0faca33e9bb5334b222755fa7a634f3d0565ed6121785eba",
+    "data/research/abortion_case_review.json": "dd51f5c5f9676e1848d78b04575583047c8275e5ed1e24772c0c9c5cb13712e5",
+    "data/raw/scdb-2026/SCDB_2026_01_caseCentered_Citation.csv": "b3cc84bd73a7a0325856cca52ae6fc5bd6a39433113f83fef248556ad4488528",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/audit_abortion_release.py": "c6ab79dcd5fb015e79cc8ab5787a2b12b52c1a7882dad1a10aeb377389769e7f",
+    "scripts/audit_question_composition.py": "a6a8a1c6e0f315cf6513a54e64ecc1299371af01e970ddfbfeb7a2b66a602fef",
+    "scvpublic/store.py": "54affb2ff43be0ace30fda5991275b6b9344a77f514d6897e605770b4886f3f2",
+    "scvpublic/chart.py": "62e09ab8cbcb7b33cb1d999164a371f31fb98d5f84c88770ce45d7eb6a7a2a37"
+  },
+  "limitations": [
+    "Scope labels are provisional assistant review, not independent legal review.",
+    "Direct-scope curves retain SCDB ideological direction and vote margins; they are not new access-impact scores.",
+    "Prior review is not a complete reference corpus; omitted-case counts are not recall estimates.",
+    "Stable item codes do not establish unchanged wording, survey mode or population.",
+    "Alternative survey series measure different scopes; none is selected as preferred from agreement with court outcomes.",
+    "This audit validates aggregation and court score arithmetic, not every raw survey response or population inference.",
+    "No causal, forecasting or statistical-significance claim; no confidence intervals computed."
+  ],
+  "court": {
+    "chart_documents": 95,
+    "chart_years": 51,
+    "scope_counts": {
+      "direct_access": 21,
+      "funding": 6,
+      "related_litigation": 18,
+      "procedure": 6,
+      "outside_abortion_policy": 38,
+      "contraception": 6
+    },
+    "scores_verified_against_scdb": 95,
+    "missing_prior_reviewed_cases": [
+      {
+        "case_id": "1987-012",
+        "name": "NEAL F. HARTIGAN, ATTORNEY GENERAL OF THE STATE OF ILLINOIS, ETC., et al. v. DAVID ZBARAZ AND ALLAN G. CHARLES ETC.",
+        "category": "equally_divided_affirmance",
+        "status": "not_indexed"
+      },
+      {
+        "case_id": "1991-120",
+        "name": "LEONA BENTEN, et al. v. DAVID KESSLER, COMMISSIONER, FOOD AND DRUG ADMINISTRATION, et al.",
+        "category": "interim_administrative_procedure",
+        "status": "not_indexed"
+      },
+      {
+        "case_id": "1996-024",
+        "name": "PAUL SCHENCK AND DWIGHT SAUNDERS v. PRO-CHOICE NETWORK OF WESTERN NEW YORK et al.",
+        "category": "speech_buffer_zone",
+        "status": "below_chart_cutoff"
+      },
+      {
+        "case_id": "1996-042",
+        "name": "MARTIN D. LAMBERT, GALLATIN COUNTY ATTORNEY v. SUSAN WICKLUND et al.",
+        "category": "direct_access_merits",
+        "status": "not_indexed"
+      },
+      {
+        "case_id": "1996-074",
+        "name": "JOSEPH P. MAZUREK, ATTORNEY GENERAL OF MONTANA v. JAMES H. ARMSTRONG et al.",
+        "category": "direct_access_merits",
+        "status": "not_indexed"
+      },
+      {
+        "case_id": "1999-086",
+        "name": "LEILA JEANNE HILL, AUDREY HIMMELMANN, AND EVERITT W. SIMPSON, JR. v. COLORADO, et al.",
+        "category": "speech_buffer_zone",
+        "status": "below_chart_cutoff"
+      },
+      {
+        "case_id": "2023-060",
+        "name": "MOYLE v. UNITED STATES",
+        "category": "procedural_disposition",
+        "status": "below_chart_cutoff"
+      }
+    ],
+    "sign_changes_with_direct_scope": [
+      1976,
+      1983,
+      1986,
+      2020,
+      2022
+    ]
+  },
+  "surveys": {
+    "records": 14,
+    "families": 12,
+    "sources": 7,
+    "observed_years": 46,
+    "omitted_abortion_label_records": {
+      "ces": [
+        {
+          "code": "abortion_coverage",
+          "question": "Support or oppose allowing employers to decline coverage of abortions in insurance plans?",
+          "years": [
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2020",
+            "2022"
+          ]
+        },
+        {
+          "code": "abortion_exceptions_only",
+          "question": "Support or oppose: Permit abortion only in case of rape, incest or when the woman's life is in danger?",
+          "years": [
+            "2022",
+            "2024"
+          ]
+        },
+        {
+          "code": "abortion_expand_access",
+          "question": "Support or oppose: Expand access to abortion, including making it more affordable, broadening the types of providers who can offer care, and protecting access to abortion clinics?",
+          "years": [
+            "2023",
+            "2024"
+          ]
+        }
+      ],
+      "gss": [
+        {
+          "code": "abdefect",
+          "question": "Should a woman be able to obtain a legal abortion if there is a strong chance of a serious fetal defect?",
+          "years": [
+            "1972",
+            "1973",
+            "1974",
+            "1975",
+            "1976",
+            "1977",
+            "1978",
+            "1980",
+            "1982",
+            "1983",
+            "1984",
+            "1985",
+            "1987",
+            "1988",
+            "1989",
+            "1990",
+            "1991",
+            "1993",
+            "1994",
+            "1996",
+            "1998",
+            "2000",
+            "2002",
+            "2004",
+            "2006",
+            "2008",
+            "2010",
+            "2012",
+            "2014",
+            "2016",
+            "2018",
+            "2021",
+            "2022",
+            "2024"
+          ]
+        },
+        {
+          "code": "abnomore",
+          "question": "Should a woman be able to obtain a legal abortion if she is married and wants no more children?",
+          "years": [
+            "1972",
+            "1973",
+            "1974",
+            "1975",
+            "1976",
+            "1977",
+            "1978",
+            "1980",
+            "1982",
+            "1983",
+            "1984",
+            "1985",
+            "1987",
+            "1988",
+            "1989",
+            "1990",
+            "1991",
+            "1993",
+            "1994",
+            "1996",
+            "1998",
+            "2000",
+            "2002",
+            "2004",
+            "2006",
+            "2008",
+            "2010",
+            "2012",
+            "2014",
+            "2016",
+            "2018",
+            "2021",
+            "2022",
+            "2024"
+          ]
+        },
+        {
+          "code": "abpoor",
+          "question": "Should a woman be able to obtain a legal abortion if the family has a low income and cannot afford more children?",
+          "years": [
+            "1972",
+            "1973",
+            "1974",
+            "1975",
+            "1976",
+            "1977",
+            "1978",
+            "1980",
+            "1982",
+            "1983",
+            "1984",
+            "1985",
+            "1987",
+            "1988",
+            "1989",
+            "1990",
+            "1991",
+            "1993",
+            "1994",
+            "1996",
+            "1998",
+            "2000",
+            "2002",
+            "2004",
+            "2006",
+            "2008",
+            "2010",
+            "2012",
+            "2014",
+            "2016",
+            "2018",
+            "2021",
+            "2022",
+            "2024"
+          ]
+        },
+        {
+          "code": "abrape",
+          "question": "Should a woman be able to obtain a legal abortion if the pregnancy resulted from rape?",
+          "years": [
+            "1972",
+            "1973",
+            "1974",
+            "1975",
+            "1976",
+            "1977",
+            "1978",
+            "1980",
+            "1982",
+            "1983",
+            "1984",
+            "1985",
+            "1987",
+            "1988",
+            "1989",
+            "1990",
+            "1991",
+            "1993",
+            "1994",
+            "1996",
+            "1998",
+            "2000",
+            "2002",
+            "2004",
+            "2006",
+            "2008",
+            "2010",
+            "2012",
+            "2014",
+            "2016",
+            "2018",
+            "2021",
+            "2022",
+            "2024"
+          ]
+        },
+        {
+          "code": "absingle",
+          "question": "Should a woman be able to obtain a legal abortion if she is unmarried and does not want to marry the man?",
+          "years": [
+            "1972",
+            "1973",
+            "1974",
+            "1975",
+            "1976",
+            "1977",
+            "1978",
+            "1980",
+            "1982",
+            "1983",
+            "1984",
+            "1985",
+            "1987",
+            "1988",
+            "1989",
+            "1990",
+            "1991",
+            "1993",
+            "1994",
+            "1996",
+            "1998",
+            "2000",
+            "2002",
+            "2004",
+            "2006",
+            "2008",
+            "2010",
+            "2012",
+            "2014",
+            "2016",
+            "2018",
+            "2021",
+            "2022",
+            "2024"
+          ]
+        }
+      ],
+      "nationscape": [
+        {
+          "code": "nationscape_abortion_any_time",
+          "question": "Permit abortion at any time during the pregnancy.",
+          "years": [
+            "2019",
+            "2020",
+            "2021"
+          ]
+        },
+        {
+          "code": "nationscape_abortion_conditions",
+          "question": "Permit abortion in cases other than rape, incest, or when the woman\u2019s life is in danger.",
+          "years": [
+            "2019",
+            "2020",
+            "2021"
+          ]
+        },
+        {
+          "code": "nationscape_abortion_insurance",
+          "question": "Allow employers to decline coverage of abortions in insurance plans.",
+          "years": [
+            "2019",
+            "2020",
+            "2021"
+          ]
+        },
+        {
+          "code": "nationscape_abortion_waiting",
+          "question": "Require a waiting period and ultrasound before an abortion can be obtained.",
+          "years": [
+            "2019"
+          ]
+        }
+      ],
+      "pew": [],
+      "prri": [
+        {
+          "code": "prri_abortion_providers",
+          "question": "Ensuring at least some health care professionals in your community provide legal abortions.",
+          "years": [
+            "2024"
+          ]
+        },
+        {
+          "code": "prri_abortion_medication_ban",
+          "question": "Laws that make it illegal to use or receive through the mail FDA-approved drugs, also known as the abortion pill, for a medical abortion.",
+          "years": [
+            "2024"
+          ]
+        }
+      ],
+      "public": [
+        {
+          "code": "VCF0230",
+          "question": "1984: Anti-abortionists \u2013 thermometer\n           1988,1990: Opponents of abortion \u2013 thermometer",
+          "years": [
+            "1984",
+            "1988",
+            "1990"
+          ]
+        }
+      ],
+      "voter": [
+        {
+          "code": "voter_roevwade",
+          "question": "As you may know, the 1973 Supreme Court Case Roe v. Wade established a woman's constitutional right to have an abortion. Would you like to see the Supreme Court overturn its Roe v. Wade decision, or not?",
+          "years": [
+            "2020"
+          ]
+        }
+      ],
+      "wvs": []
+    },
+    "within_source_composition": {
+      "ces": {
+        "transitions": [
+          {
+            "before": 2008,
+            "after": 2009,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abortion_scale"
+            ],
+            "observed_change": 0.0027129318494471255,
+            "common_item_change": 0.0027129318494471255,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 2009,
+            "after": 2010,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abortion_scale"
+            ],
+            "observed_change": 0.050194735600374185,
+            "common_item_change": 0.050194735600374185,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 2010,
+            "after": 2011,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abortion_scale"
+            ],
+            "observed_change": -0.005851370806186584,
+            "common_item_change": -0.005851370806186584,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 2011,
+            "after": 2012,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abortion_scale"
+            ],
+            "observed_change": 0.0707280789022578,
+            "common_item_change": 0.0707280789022578,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 2012,
+            "after": 2013,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abortion_scale"
+            ],
+            "observed_change": -0.06060301520729,
+            "common_item_change": -0.06060301520729,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 2013,
+            "after": 2014,
+            "gap": 1,
+            "added": [
+              "abortion_20weeks",
+              "abortion_always"
+            ],
+            "removed": [
+              "abortion_scale"
+            ],
+            "common": [],
+            "observed_change": -0.399126310323583,
+            "common_item_change": null,
+            "composition_contrast": null
+          },
+          {
+            "before": 2014,
+            "after": 2015,
+            "gap": 1,
+            "added": [
+              "abortion_prohibition"
+            ],
+            "removed": [],
+            "common": [
+              "abortion_20weeks",
+              "abortion_always"
+            ],
+            "observed_change": 0.22620537313403719,
+            "common_item_change": -0.035067065961116695,
+            "composition_contrast": 0.26127243909515385
+          },
+          {
+            "before": 2015,
+            "after": 2016,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abortion_20weeks",
+              "abortion_always",
+              "abortion_prohibition"
+            ],
+            "observed_change": 0.07849089744638434,
+            "common_item_change": 0.07849089744638434,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 2016,
+            "after": 2017,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abortion_20weeks",
+              "abortion_always",
+              "abortion_prohibition"
+            ],
+            "observed_change": -0.04170295107687802,
+            "common_item_change": -0.04170295107687803,
+            "composition_contrast": 6.938893903907228e-18
+          },
+          {
+            "before": 2017,
+            "after": 2018,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abortion_20weeks",
+              "abortion_always",
+              "abortion_prohibition"
+            ],
+            "observed_change": 0.003544975305896564,
+            "common_item_change": 0.0035449753058965686,
+            "composition_contrast": -4.7704895589362195e-18
+          },
+          {
+            "before": 2018,
+            "after": 2019,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abortion_20weeks",
+              "abortion_always",
+              "abortion_prohibition"
+            ],
+            "observed_change": 0.008657097030656313,
+            "common_item_change": 0.008657097030656308,
+            "composition_contrast": 5.204170427930421e-18
+          },
+          {
+            "before": 2019,
+            "after": 2020,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abortion_20weeks",
+              "abortion_always",
+              "abortion_prohibition"
+            ],
+            "observed_change": 0.019008615560329317,
+            "common_item_change": 0.01900861556032932,
+            "composition_contrast": -3.469446951953614e-18
+          },
+          {
+            "before": 2020,
+            "after": 2021,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abortion_20weeks",
+              "abortion_always",
+              "abortion_prohibition"
+            ],
+            "observed_change": 0.04169349741279724,
+            "common_item_change": 0.04169349741279723,
+            "composition_contrast": 6.938893903907228e-18
+          },
+          {
+            "before": 2021,
+            "after": 2022,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abortion_20weeks",
+              "abortion_always",
+              "abortion_prohibition"
+            ],
+            "observed_change": 0.04171648014488322,
+            "common_item_change": 0.04171648014488324,
+            "composition_contrast": -2.0816681711721685e-17
+          },
+          {
+            "before": 2022,
+            "after": 2023,
+            "gap": 1,
+            "added": [],
+            "removed": [
+              "abortion_20weeks"
+            ],
+            "common": [
+              "abortion_always",
+              "abortion_prohibition"
+            ],
+            "observed_change": 0.1660082411799143,
+            "common_item_change": -0.0028751874851751097,
+            "composition_contrast": 0.16888342866508943
+          },
+          {
+            "before": 2023,
+            "after": 2024,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abortion_always",
+              "abortion_prohibition"
+            ],
+            "observed_change": 0.04941331863803383,
+            "common_item_change": 0.04941331863803382,
+            "composition_contrast": 1.3877787807814457e-17
+          }
+        ],
+        "fixed_composition_groups": [
+          {
+            "items": [
+              "abortion_scale"
+            ],
+            "years": [
+              2008,
+              2009,
+              2010,
+              2011,
+              2012,
+              2013
+            ],
+            "series": {
+              "2008": 0.22141463069432402,
+              "2009": 0.22412756254377114,
+              "2010": 0.2743222981441453,
+              "2011": 0.26847092733795874,
+              "2012": 0.33919900624021654,
+              "2013": 0.27859599103292654
+            }
+          },
+          {
+            "items": [
+              "abortion_20weeks",
+              "abortion_always"
+            ],
+            "years": [
+              2014
+            ],
+            "series": {
+              "2014": -0.12053031929065643
+            }
+          },
+          {
+            "items": [
+              "abortion_20weeks",
+              "abortion_always",
+              "abortion_prohibition"
+            ],
+            "years": [
+              2015,
+              2016,
+              2017,
+              2018,
+              2019,
+              2020,
+              2021,
+              2022
+            ],
+            "series": {
+              "2015": 0.10567505384338076,
+              "2016": 0.1841659512897651,
+              "2017": 0.14246300021288708,
+              "2018": 0.14600797551878364,
+              "2019": 0.15466507254943995,
+              "2020": 0.17367368810976927,
+              "2021": 0.2153671855225665,
+              "2022": 0.2570836656674497
+            }
+          },
+          {
+            "items": [
+              "abortion_always",
+              "abortion_prohibition"
+            ],
+            "years": [
+              2023,
+              2024
+            ],
+            "series": {
+              "2023": 0.42309190684736403,
+              "2024": 0.47250522548539786
+            }
+          }
+        ]
+      },
+      "gss": {
+        "transitions": [
+          {
+            "before": 1972,
+            "after": 1973,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abhlth"
+            ],
+            "observed_change": 0.08090968235117846,
+            "common_item_change": 0.08090968235117846,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 1973,
+            "after": 1974,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abhlth"
+            ],
+            "observed_change": 0.006252484550651638,
+            "common_item_change": 0.006252484550651638,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 1974,
+            "after": 1975,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abhlth"
+            ],
+            "observed_change": -0.02759174137929199,
+            "common_item_change": -0.02759174137929199,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 1975,
+            "after": 1976,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abhlth"
+            ],
+            "observed_change": 0.0038746055376137623,
+            "common_item_change": 0.0038746055376137623,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 1976,
+            "after": 1977,
+            "gap": 1,
+            "added": [
+              "abany"
+            ],
+            "removed": [],
+            "common": [
+              "abhlth"
+            ],
+            "observed_change": -0.5397262553334455,
+            "common_item_change": -0.00725178429408091,
+            "composition_contrast": -0.5324744710393646
+          },
+          {
+            "before": 1977,
+            "after": 1978,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": -0.03909480074014293,
+            "common_item_change": -0.039094800740142904,
+            "composition_contrast": -2.7755575615628914e-17
+          },
+          {
+            "before": 1978,
+            "after": 1980,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": 0.0663566081468121,
+            "common_item_change": 0.06635660814681213,
+            "composition_contrast": -2.7755575615628914e-17
+          },
+          {
+            "before": 1980,
+            "after": 1982,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": 0.013613751846229316,
+            "common_item_change": 0.013613751846229274,
+            "composition_contrast": 4.163336342344337e-17
+          },
+          {
+            "before": 1982,
+            "after": 1983,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": -0.10099015386949597,
+            "common_item_change": -0.10099015386949596,
+            "composition_contrast": -1.3877787807814457e-17
+          },
+          {
+            "before": 1983,
+            "after": 1984,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": 0.06021777762835265,
+            "common_item_change": 0.060217777628352634,
+            "composition_contrast": 1.3877787807814457e-17
+          },
+          {
+            "before": 1984,
+            "after": 1985,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": 0.011134491677641578,
+            "common_item_change": 0.011134491677641564,
+            "composition_contrast": 1.3877787807814457e-17
+          },
+          {
+            "before": 1985,
+            "after": 1987,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": 0.006056305076955759,
+            "common_item_change": 0.006056305076955787,
+            "composition_contrast": -2.7755575615628914e-17
+          },
+          {
+            "before": 1987,
+            "after": 1988,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": -0.0421060455055049,
+            "common_item_change": -0.042106045505504924,
+            "composition_contrast": 2.7755575615628914e-17
+          },
+          {
+            "before": 1988,
+            "after": 1989,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": 0.040103697186571696,
+            "common_item_change": 0.040103697186571696,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 1989,
+            "after": 1990,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": 0.05850755230357857,
+            "common_item_change": 0.0585075523035786,
+            "composition_contrast": -2.7755575615628914e-17
+          },
+          {
+            "before": 1990,
+            "after": 1991,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": -0.052111694866024794,
+            "common_item_change": -0.05211169486602481,
+            "composition_contrast": 1.3877787807814457e-17
+          },
+          {
+            "before": 1991,
+            "after": 1993,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": 0.03763011337314309,
+            "common_item_change": 0.037630113373143106,
+            "composition_contrast": -1.3877787807814457e-17
+          },
+          {
+            "before": 1993,
+            "after": 1994,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": 0.015656358920800917,
+            "common_item_change": 0.01565635892080089,
+            "composition_contrast": 2.7755575615628914e-17
+          },
+          {
+            "before": 1994,
+            "after": 1996,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": -0.006800336249466021,
+            "common_item_change": -0.006800336249465973,
+            "composition_contrast": -4.85722573273506e-17
+          },
+          {
+            "before": 1996,
+            "after": 1998,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": -0.08450517367261101,
+            "common_item_change": -0.08450517367261104,
+            "composition_contrast": 2.7755575615628914e-17
+          },
+          {
+            "before": 1998,
+            "after": 2000,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": -0.005508288053186761,
+            "common_item_change": -0.005508288053186747,
+            "composition_contrast": -1.3877787807814457e-17
+          },
+          {
+            "before": 2000,
+            "after": 2002,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": 0.056913701626406465,
+            "common_item_change": 0.05691370162640648,
+            "composition_contrast": -1.3877787807814457e-17
+          },
+          {
+            "before": 2002,
+            "after": 2004,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": -0.07724601052375951,
+            "common_item_change": -0.07724601052375951,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 2004,
+            "after": 2006,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": 0.017957901458063197,
+            "common_item_change": 0.01795790145806321,
+            "composition_contrast": -1.3877787807814457e-17
+          },
+          {
+            "before": 2006,
+            "after": 2008,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": 0.03715011242251731,
+            "common_item_change": 0.03715011242251727,
+            "composition_contrast": 4.163336342344337e-17
+          },
+          {
+            "before": 2008,
+            "after": 2010,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": -0.013876949628456758,
+            "common_item_change": -0.013876949628456758,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 2010,
+            "after": 2012,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": 0.003436705038814991,
+            "common_item_change": 0.0034367050388150328,
+            "composition_contrast": -4.163336342344337e-17
+          },
+          {
+            "before": 2012,
+            "after": 2014,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": 0.04212535605045947,
+            "common_item_change": 0.04212535605045943,
+            "composition_contrast": 4.163336342344337e-17
+          },
+          {
+            "before": 2014,
+            "after": 2016,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": 0.02386580439463165,
+            "common_item_change": 0.023865804394631644,
+            "composition_contrast": 6.938893903907228e-18
+          },
+          {
+            "before": 2016,
+            "after": 2018,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": 0.03951591650886627,
+            "common_item_change": 0.03951591650886629,
+            "composition_contrast": -2.0816681711721685e-17
+          },
+          {
+            "before": 2018,
+            "after": 2021,
+            "gap": 3,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": 0.057160248982049244,
+            "common_item_change": 0.05716024898204923,
+            "composition_contrast": 1.3877787807814457e-17
+          },
+          {
+            "before": 2021,
+            "after": 2022,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": 0.043807966125048003,
+            "common_item_change": 0.043807966125048,
+            "composition_contrast": 6.938893903907228e-18
+          },
+          {
+            "before": 2022,
+            "after": 2024,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "abany",
+              "abhlth"
+            ],
+            "observed_change": 0.0013407831555745098,
+            "common_item_change": 0.0013407831555745375,
+            "composition_contrast": -2.7755575615628914e-17
+          }
+        ],
+        "fixed_composition_groups": [
+          {
+            "items": [
+              "abhlth"
+            ],
+            "years": [
+              1972,
+              1973,
+              1974,
+              1975,
+              1976
+            ],
+            "series": {
+              "1972": 0.7630436756632586,
+              "1973": 0.843953358014437,
+              "1974": 0.8502058425650887,
+              "1975": 0.8226141011857967,
+              "1976": 0.8264887067234105
+            }
+          },
+          {
+            "items": [
+              "abany",
+              "abhlth"
+            ],
+            "years": [
+              1977,
+              1978,
+              1980,
+              1982,
+              1983,
+              1984,
+              1985,
+              1987,
+              1988,
+              1989,
+              1990,
+              1991,
+              1993,
+              1994,
+              1996,
+              1998,
+              2000,
+              2002,
+              2004,
+              2006,
+              2008,
+              2010,
+              2012,
+              2014,
+              2016,
+              2018,
+              2021,
+              2022,
+              2024
+            ],
+            "series": {
+              "1977": 0.2867624513899649,
+              "1978": 0.247667650649822,
+              "1980": 0.3140242587966341,
+              "1982": 0.3276380106428634,
+              "1983": 0.22664785677336743,
+              "1984": 0.2868656344017201,
+              "1985": 0.29800012607936166,
+              "1987": 0.3040564311563174,
+              "1988": 0.2619503856508125,
+              "1989": 0.3020540828373842,
+              "1990": 0.3605616351409628,
+              "1991": 0.308449940274938,
+              "1993": 0.3460800536480811,
+              "1994": 0.361736412568882,
+              "1996": 0.354936076319416,
+              "1998": 0.27043090264680497,
+              "2000": 0.2649226145936182,
+              "2002": 0.3218363162200247,
+              "2004": 0.24459030569626516,
+              "2006": 0.26254820715432836,
+              "2008": 0.2996983195768457,
+              "2010": 0.2858213699483889,
+              "2012": 0.2892580749872039,
+              "2014": 0.3313834310376634,
+              "2016": 0.35524923543229503,
+              "2018": 0.3947651519411613,
+              "2021": 0.45192540092321054,
+              "2022": 0.49573336704825854,
+              "2024": 0.49707415020383305
+            }
+          }
+        ]
+      },
+      "nationscape": {
+        "transitions": [
+          {
+            "before": 2019,
+            "after": 2020,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "nationscape_abortion_never",
+              "nationscape_late_term_abortion"
+            ],
+            "observed_change": -0.01735877106176653,
+            "common_item_change": -0.01735877106176653,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 2020,
+            "after": 2021,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "nationscape_abortion_never",
+              "nationscape_late_term_abortion"
+            ],
+            "observed_change": -0.0027456184158532737,
+            "common_item_change": -0.0027456184158532737,
+            "composition_contrast": 0.0
+          }
+        ],
+        "fixed_composition_groups": [
+          {
+            "items": [
+              "nationscape_abortion_never",
+              "nationscape_late_term_abortion"
+            ],
+            "years": [
+              2019,
+              2020,
+              2021
+            ],
+            "series": {
+              "2019": 0.04775884343541842,
+              "2020": 0.030400072373651887,
+              "2021": 0.027654453957798614
+            }
+          }
+        ]
+      },
+      "prri": {
+        "transitions": [
+          {
+            "before": 2013,
+            "after": 2019,
+            "gap": 6,
+            "added": [
+              "prri_abortion"
+            ],
+            "removed": [
+              "prri_abortion_difficult"
+            ],
+            "common": [],
+            "observed_change": 0.016366323295545493,
+            "common_item_change": null,
+            "composition_contrast": null
+          },
+          {
+            "before": 2019,
+            "after": 2020,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "prri_abortion"
+            ],
+            "observed_change": -0.024633954641098826,
+            "common_item_change": -0.024633954641098826,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 2020,
+            "after": 2021,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "prri_abortion"
+            ],
+            "observed_change": 0.054798405952519585,
+            "common_item_change": 0.054798405952519585,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 2021,
+            "after": 2023,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "prri_abortion"
+            ],
+            "observed_change": 0.011633630670874251,
+            "common_item_change": 0.011633630670874251,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 2023,
+            "after": 2024,
+            "gap": 1,
+            "added": [],
+            "removed": [],
+            "common": [
+              "prri_abortion"
+            ],
+            "observed_change": 0.0224918706596533,
+            "common_item_change": 0.0224918706596533,
+            "composition_contrast": 0.0
+          }
+        ],
+        "fixed_composition_groups": [
+          {
+            "items": [
+              "prri_abortion_difficult"
+            ],
+            "years": [
+              2013
+            ],
+            "series": {
+              "2013": 0.14014715883038162
+            }
+          },
+          {
+            "items": [
+              "prri_abortion"
+            ],
+            "years": [
+              2019,
+              2020,
+              2021,
+              2023,
+              2024
+            ],
+            "series": {
+              "2019": 0.1565134821259271,
+              "2020": 0.13187952748482829,
+              "2021": 0.18667793343734787,
+              "2023": 0.19831156410822212,
+              "2024": 0.22080343476787542
+            }
+          }
+        ]
+      },
+      "public": {
+        "transitions": [
+          {
+            "before": 1972,
+            "after": 1976,
+            "gap": 4,
+            "added": [],
+            "removed": [],
+            "common": [
+              "VCF0837"
+            ],
+            "observed_change": 0.028763159369849016,
+            "common_item_change": 0.028763159369849016,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 1976,
+            "after": 1978,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "VCF0837"
+            ],
+            "observed_change": 0.011226344367474467,
+            "common_item_change": 0.011226344367474467,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 1978,
+            "after": 1980,
+            "gap": 2,
+            "added": [
+              "VCF0838"
+            ],
+            "removed": [
+              "VCF0837"
+            ],
+            "common": [],
+            "observed_change": 0.13284095249716305,
+            "common_item_change": null,
+            "composition_contrast": null
+          },
+          {
+            "before": 1980,
+            "after": 1982,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "VCF0838"
+            ],
+            "observed_change": -0.012561678319380515,
+            "common_item_change": -0.012561678319380515,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 1982,
+            "after": 1984,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "VCF0838"
+            ],
+            "observed_change": 0.002791948225581403,
+            "common_item_change": 0.002791948225581403,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 1984,
+            "after": 1986,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "VCF0838"
+            ],
+            "observed_change": 0.026916124210216108,
+            "common_item_change": 0.026916124210216108,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 1986,
+            "after": 1988,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "VCF0838"
+            ],
+            "observed_change": -0.04351911369908279,
+            "common_item_change": -0.04351911369908279,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 1988,
+            "after": 1990,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "VCF0838"
+            ],
+            "observed_change": 0.036696581568948866,
+            "common_item_change": 0.036696581568948866,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 1990,
+            "after": 1992,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "VCF0838"
+            ],
+            "observed_change": 0.0967038909682745,
+            "common_item_change": 0.0967038909682745,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 1992,
+            "after": 1994,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "VCF0838"
+            ],
+            "observed_change": -0.10085232026748411,
+            "common_item_change": -0.10085232026748411,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 1994,
+            "after": 1996,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "VCF0838"
+            ],
+            "observed_change": 0.008734862783769254,
+            "common_item_change": 0.008734862783769254,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 1996,
+            "after": 1998,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "VCF0838"
+            ],
+            "observed_change": 0.012629964618214834,
+            "common_item_change": 0.012629964618214834,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 1998,
+            "after": 2000,
+            "gap": 2,
+            "added": [],
+            "removed": [],
+            "common": [
+              "VCF0838"
+            ],
+            "observed_change": -0.012667766744746123,
+            "common_item_change": -0.012667766744746123,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 2000,
+            "after": 2004,
+            "gap": 4,
+            "added": [],
+            "removed": [],
+            "common": [
+              "VCF0838"
+            ],
+            "observed_change": -0.05208752405719311,
+            "common_item_change": -0.05208752405719311,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 2004,
+            "after": 2008,
+            "gap": 4,
+            "added": [],
+            "removed": [],
+            "common": [
+              "VCF0838"
+            ],
+            "observed_change": 0.05306106306684369,
+            "common_item_change": 0.05306106306684369,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 2008,
+            "after": 2012,
+            "gap": 4,
+            "added": [],
+            "removed": [],
+            "common": [
+              "VCF0838"
+            ],
+            "observed_change": 0.058788217792918124,
+            "common_item_change": 0.058788217792918124,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 2012,
+            "after": 2016,
+            "gap": 4,
+            "added": [],
+            "removed": [],
+            "common": [
+              "VCF0838"
+            ],
+            "observed_change": -0.012651607754385563,
+            "common_item_change": -0.012651607754385563,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 2016,
+            "after": 2020,
+            "gap": 4,
+            "added": [],
+            "removed": [],
+            "common": [
+              "VCF0838"
+            ],
+            "observed_change": 0.06982819647175603,
+            "common_item_change": 0.06982819647175603,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 2020,
+            "after": 2024,
+            "gap": 4,
+            "added": [],
+            "removed": [],
+            "common": [
+              "VCF0838"
+            ],
+            "observed_change": 0.07817713618512034,
+            "common_item_change": 0.07817713618512034,
+            "composition_contrast": 0.0
+          }
+        ],
+        "fixed_composition_groups": [
+          {
+            "items": [
+              "VCF0837"
+            ],
+            "years": [
+              1972,
+              1976,
+              1978
+            ],
+            "series": {
+              "1972": 0.03423698612711914,
+              "1976": 0.06300014549696815,
+              "1978": 0.07422648986444262
+            }
+          },
+          {
+            "items": [
+              "VCF0838"
+            ],
+            "years": [
+              1980,
+              1982,
+              1984,
+              1986,
+              1988,
+              1990,
+              1992,
+              1994,
+              1996,
+              1998,
+              2000,
+              2004,
+              2008,
+              2012,
+              2016,
+              2020,
+              2024
+            ],
+            "series": {
+              "1980": 0.20706744236160568,
+              "1982": 0.19450576404222517,
+              "1984": 0.19729771226780657,
+              "1986": 0.22421383647802268,
+              "1988": 0.1806947227789399,
+              "1990": 0.21739130434788875,
+              "1992": 0.31409519531616326,
+              "1994": 0.21324287504867914,
+              "1996": 0.2219777378324484,
+              "1998": 0.23460770245066323,
+              "2000": 0.2219399357059171,
+              "2004": 0.169852411648724,
+              "2008": 0.2229134747155677,
+              "2012": 0.2817016925084858,
+              "2016": 0.26905008475410025,
+              "2020": 0.3388782812258563,
+              "2024": 0.4170554174109766
+            }
+          }
+        ]
+      },
+      "voter": {
+        "transitions": [
+          {
+            "before": 2016,
+            "after": 2020,
+            "gap": 4,
+            "added": [],
+            "removed": [],
+            "common": [
+              "voter_abortion"
+            ],
+            "observed_change": 0.018054691852213145,
+            "common_item_change": 0.018054691852213145,
+            "composition_contrast": 0.0
+          }
+        ],
+        "fixed_composition_groups": [
+          {
+            "items": [
+              "voter_abortion"
+            ],
+            "years": [
+              2016,
+              2020
+            ],
+            "series": {
+              "2016": 0.16121055951989624,
+              "2020": 0.17926525137210939
+            }
+          }
+        ]
+      },
+      "wvs": {
+        "transitions": [
+          {
+            "before": 1995,
+            "after": 1999,
+            "gap": 4,
+            "added": [],
+            "removed": [],
+            "common": [
+              "F120"
+            ],
+            "observed_change": 0.09853496845348558,
+            "common_item_change": 0.09853496845348558,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 1999,
+            "after": 2006,
+            "gap": 7,
+            "added": [],
+            "removed": [],
+            "common": [
+              "F120"
+            ],
+            "observed_change": 0.01958967449118304,
+            "common_item_change": 0.01958967449118304,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 2006,
+            "after": 2011,
+            "gap": 5,
+            "added": [],
+            "removed": [],
+            "common": [
+              "F120"
+            ],
+            "observed_change": 0.07098374875602692,
+            "common_item_change": 0.07098374875602692,
+            "composition_contrast": 0.0
+          },
+          {
+            "before": 2011,
+            "after": 2017,
+            "gap": 6,
+            "added": [],
+            "removed": [],
+            "common": [
+              "F120"
+            ],
+            "observed_change": 0.014101949357974014,
+            "common_item_change": 0.014101949357974014,
+            "composition_contrast": 0.0
+          }
+        ],
+        "fixed_composition_groups": [
+          {
+            "items": [
+              "F120"
+            ],
+            "years": [
+              1995,
+              1999,
+              2006,
+              2011,
+              2017
+            ],
+            "series": {
+              "1995": -0.34436983730035226,
+              "1999": -0.24583486884686667,
+              "2006": -0.22624519435568363,
+              "2011": -0.1552614455996567,
+              "2017": -0.1411594962416827
+            }
+          }
+        ]
+      }
+    },
+    "between_source_composition": {
+      "transitions": [
+        {
+          "before": 1972,
+          "after": 1973,
+          "gap": 1,
+          "added": [],
+          "removed": [
+            "public"
+          ],
+          "common": [
+            "gss"
+          ],
+          "observed_change": 0.4453130271192482,
+          "common_item_change": 0.08090968235117846,
+          "composition_contrast": 0.36440334476806974
+        },
+        {
+          "before": 1973,
+          "after": 1974,
+          "gap": 1,
+          "added": [],
+          "removed": [],
+          "common": [
+            "gss"
+          ],
+          "observed_change": 0.006252484550651638,
+          "common_item_change": 0.006252484550651638,
+          "composition_contrast": 0.0
+        },
+        {
+          "before": 1974,
+          "after": 1975,
+          "gap": 1,
+          "added": [],
+          "removed": [],
+          "common": [
+            "gss"
+          ],
+          "observed_change": -0.02759174137929199,
+          "common_item_change": -0.02759174137929199,
+          "composition_contrast": 0.0
+        },
+        {
+          "before": 1975,
+          "after": 1976,
+          "gap": 1,
+          "added": [
+            "public"
+          ],
+          "removed": [],
+          "common": [
+            "gss"
+          ],
+          "observed_change": -0.37786967507560737,
+          "common_item_change": 0.0038746055376137623,
+          "composition_contrast": -0.38174428061322113
+        },
+        {
+          "before": 1976,
+          "after": 1977,
+          "gap": 1,
+          "added": [],
+          "removed": [
+            "public"
+          ],
+          "common": [
+            "gss"
+          ],
+          "observed_change": -0.1579819747202244,
+          "common_item_change": -0.5397262553334455,
+          "composition_contrast": 0.38174428061322113
+        },
+        {
+          "before": 1977,
+          "after": 1978,
+          "gap": 1,
+          "added": [
+            "public"
+          ],
+          "removed": [],
+          "common": [
+            "gss"
+          ],
+          "observed_change": -0.1258153811328326,
+          "common_item_change": -0.03909480074014293,
+          "composition_contrast": -0.08672058039268968
+        },
+        {
+          "before": 1978,
+          "after": 1980,
+          "gap": 2,
+          "added": [],
+          "removed": [],
+          "common": [
+            "gss",
+            "public"
+          ],
+          "observed_change": 0.09959878032198757,
+          "common_item_change": 0.09959878032198757,
+          "composition_contrast": 0.0
+        },
+        {
+          "before": 1980,
+          "after": 1982,
+          "gap": 2,
+          "added": [],
+          "removed": [],
+          "common": [
+            "gss",
+            "public"
+          ],
+          "observed_change": 0.0005260367634243868,
+          "common_item_change": 0.0005260367634244006,
+          "composition_contrast": -1.3877787807814457e-17
+        },
+        {
+          "before": 1982,
+          "after": 1983,
+          "gap": 1,
+          "added": [],
+          "removed": [
+            "public"
+          ],
+          "common": [
+            "gss"
+          ],
+          "observed_change": -0.03442403056917684,
+          "common_item_change": -0.10099015386949597,
+          "composition_contrast": 0.06656612330031914
+        },
+        {
+          "before": 1983,
+          "after": 1984,
+          "gap": 1,
+          "added": [
+            "public"
+          ],
+          "removed": [],
+          "common": [
+            "gss"
+          ],
+          "observed_change": 0.015433816561395891,
+          "common_item_change": 0.06021777762835265,
+          "composition_contrast": -0.04478396106695676
+        },
+        {
+          "before": 1984,
+          "after": 1985,
+          "gap": 1,
+          "added": [],
+          "removed": [
+            "public"
+          ],
+          "common": [
+            "gss"
+          ],
+          "observed_change": 0.055918452744598335,
+          "common_item_change": 0.011134491677641578,
+          "composition_contrast": 0.04478396106695676
+        },
+        {
+          "before": 1985,
+          "after": 1986,
+          "gap": 1,
+          "added": [
+            "public"
+          ],
+          "removed": [
+            "gss"
+          ],
+          "common": [],
+          "observed_change": -0.07378628960133898,
+          "common_item_change": null,
+          "composition_contrast": null
+        },
+        {
+          "before": 1986,
+          "after": 1987,
+          "gap": 1,
+          "added": [
+            "gss"
+          ],
+          "removed": [
+            "public"
+          ],
+          "common": [],
+          "observed_change": 0.07984259467829474,
+          "common_item_change": null,
+          "composition_contrast": null
+        },
+        {
+          "before": 1987,
+          "after": 1988,
+          "gap": 1,
+          "added": [
+            "public"
+          ],
+          "removed": [],
+          "common": [
+            "gss"
+          ],
+          "observed_change": -0.08273387694144121,
+          "common_item_change": -0.0421060455055049,
+          "composition_contrast": -0.04062783143593632
+        },
+        {
+          "before": 1988,
+          "after": 1989,
+          "gap": 1,
+          "added": [],
+          "removed": [
+            "public"
+          ],
+          "common": [
+            "gss"
+          ],
+          "observed_change": 0.08073152862250801,
+          "common_item_change": 0.040103697186571696,
+          "composition_contrast": 0.04062783143593632
+        },
+        {
+          "before": 1989,
+          "after": 1990,
+          "gap": 1,
+          "added": [
+            "public"
+          ],
+          "removed": [],
+          "common": [
+            "gss"
+          ],
+          "observed_change": -0.013077613092958462,
+          "common_item_change": 0.05850755230357857,
+          "composition_contrast": -0.07158516539653703
+        },
+        {
+          "before": 1990,
+          "after": 1991,
+          "gap": 1,
+          "added": [],
+          "removed": [
+            "public"
+          ],
+          "common": [
+            "gss"
+          ],
+          "observed_change": 0.019473470530512238,
+          "common_item_change": -0.052111694866024794,
+          "composition_contrast": 0.07158516539653703
+        },
+        {
+          "before": 1991,
+          "after": 1992,
+          "gap": 1,
+          "added": [
+            "public"
+          ],
+          "removed": [
+            "gss"
+          ],
+          "common": [],
+          "observed_change": 0.005645255041225261,
+          "common_item_change": null,
+          "composition_contrast": null
+        },
+        {
+          "before": 1992,
+          "after": 1993,
+          "gap": 1,
+          "added": [
+            "gss"
+          ],
+          "removed": [
+            "public"
+          ],
+          "common": [],
+          "observed_change": 0.03198485833191783,
+          "common_item_change": null,
+          "composition_contrast": null
+        },
+        {
+          "before": 1993,
+          "after": 1994,
+          "gap": 1,
+          "added": [
+            "public"
+          ],
+          "removed": [],
+          "common": [
+            "gss"
+          ],
+          "observed_change": -0.05859040983930053,
+          "common_item_change": 0.015656358920800917,
+          "composition_contrast": -0.07424676876010144
+        },
+        {
+          "before": 1994,
+          "after": 1995,
+          "gap": 1,
+          "added": [
+            "wvs"
+          ],
+          "removed": [
+            "gss",
+            "public"
+          ],
+          "common": [],
+          "observed_change": -0.6318594811091328,
+          "common_item_change": null,
+          "composition_contrast": null
+        },
+        {
+          "before": 1995,
+          "after": 1996,
+          "gap": 1,
+          "added": [
+            "gss",
+            "public"
+          ],
+          "removed": [
+            "wvs"
+          ],
+          "common": [],
+          "observed_change": 0.6328267443762845,
+          "common_item_change": null,
+          "composition_contrast": null
+        },
+        {
+          "before": 1996,
+          "after": 1998,
+          "gap": 2,
+          "added": [],
+          "removed": [],
+          "common": [
+            "gss",
+            "public"
+          ],
+          "observed_change": -0.035937604527198075,
+          "common_item_change": -0.03593760452719809,
+          "composition_contrast": 1.3877787807814457e-17
+        },
+        {
+          "before": 1998,
+          "after": 1999,
+          "gap": 1,
+          "added": [
+            "wvs"
+          ],
+          "removed": [
+            "gss",
+            "public"
+          ],
+          "common": [],
+          "observed_change": -0.4983541713956008,
+          "common_item_change": null,
+          "composition_contrast": null
+        },
+        {
+          "before": 1999,
+          "after": 2000,
+          "gap": 1,
+          "added": [
+            "gss",
+            "public"
+          ],
+          "removed": [
+            "wvs"
+          ],
+          "common": [],
+          "observed_change": 0.4892661439966343,
+          "common_item_change": null,
+          "composition_contrast": null
+        },
+        {
+          "before": 2000,
+          "after": 2002,
+          "gap": 2,
+          "added": [],
+          "removed": [
+            "public"
+          ],
+          "common": [
+            "gss"
+          ],
+          "observed_change": 0.07840504107025703,
+          "common_item_change": 0.056913701626406465,
+          "composition_contrast": 0.021491339443850566
+        },
+        {
+          "before": 2002,
+          "after": 2004,
+          "gap": 2,
+          "added": [
+            "public"
+          ],
+          "removed": [],
+          "common": [
+            "gss"
+          ],
+          "observed_change": -0.1146149575475301,
+          "common_item_change": -0.07724601052375951,
+          "composition_contrast": -0.03736894702377058
+        },
+        {
+          "before": 2004,
+          "after": 2006,
+          "gap": 2,
+          "added": [
+            "wvs"
+          ],
+          "removed": [
+            "public"
+          ],
+          "common": [
+            "gss"
+          ],
+          "observed_change": -0.18906985227317222,
+          "common_item_change": 0.017957901458063197,
+          "composition_contrast": -0.20702775373123541
+        },
+        {
+          "before": 2006,
+          "after": 2008,
+          "gap": 2,
+          "added": [
+            "ces",
+            "public"
+          ],
+          "removed": [
+            "wvs"
+          ],
+          "common": [
+            "gss"
+          ],
+          "observed_change": 0.2298573019295901,
+          "common_item_change": 0.03715011242251731,
+          "composition_contrast": 0.1927071895070728
+        },
+        {
+          "before": 2008,
+          "after": 2009,
+          "gap": 1,
+          "added": [],
+          "removed": [
+            "gss",
+            "public"
+          ],
+          "common": [
+            "ces"
+          ],
+          "observed_change": -0.023881245785141336,
+          "common_item_change": 0.0027129318494471255,
+          "composition_contrast": -0.02659417763458846
+        },
+        {
+          "before": 2009,
+          "after": 2010,
+          "gap": 1,
+          "added": [
+            "gss"
+          ],
+          "removed": [],
+          "common": [
+            "ces"
+          ],
+          "observed_change": 0.05594427150249598,
+          "common_item_change": 0.050194735600374185,
+          "composition_contrast": 0.005749535902121794
+        },
+        {
+          "before": 2010,
+          "after": 2011,
+          "gap": 1,
+          "added": [
+            "wvs"
+          ],
+          "removed": [
+            "gss"
+          ],
+          "common": [
+            "ces"
+          ],
+          "observed_change": -0.2234670931771161,
+          "common_item_change": -0.005851370806186584,
+          "composition_contrast": -0.21761572237092952
+        },
+        {
+          "before": 2011,
+          "after": 2012,
+          "gap": 1,
+          "added": [
+            "gss",
+            "public"
+          ],
+          "removed": [
+            "wvs"
+          ],
+          "common": [
+            "ces"
+          ],
+          "observed_change": 0.24678151704281776,
+          "common_item_change": 0.0707280789022578,
+          "composition_contrast": 0.17605343814055996
+        },
+        {
+          "before": 2012,
+          "after": 2013,
+          "gap": 1,
+          "added": [
+            "prri"
+          ],
+          "removed": [
+            "gss",
+            "public"
+          ],
+          "common": [
+            "ces"
+          ],
+          "observed_change": -0.09401468298031468,
+          "common_item_change": -0.06060301520729,
+          "composition_contrast": -0.03341166777302468
+        },
+        {
+          "before": 2013,
+          "after": 2014,
+          "gap": 1,
+          "added": [
+            "gss"
+          ],
+          "removed": [
+            "prri"
+          ],
+          "common": [
+            "ces"
+          ],
+          "observed_change": -0.10394501905815062,
+          "common_item_change": -0.399126310323583,
+          "composition_contrast": 0.29518129126543236
+        },
+        {
+          "before": 2014,
+          "after": 2015,
+          "gap": 1,
+          "added": [],
+          "removed": [
+            "gss"
+          ],
+          "common": [
+            "ces"
+          ],
+          "observed_change": 0.0002484979698772899,
+          "common_item_change": 0.22620537313403719,
+          "composition_contrast": -0.2259568751641599
+        },
+        {
+          "before": 2015,
+          "after": 2016,
+          "gap": 1,
+          "added": [
+            "gss",
+            "public",
+            "voter"
+          ],
+          "removed": [],
+          "common": [
+            "ces"
+          ],
+          "observed_change": 0.1367439039056334,
+          "common_item_change": 0.07849089744638434,
+          "composition_contrast": 0.058253006459249065
+        },
+        {
+          "before": 2016,
+          "after": 2017,
+          "gap": 1,
+          "added": [
+            "wvs"
+          ],
+          "removed": [
+            "gss",
+            "public",
+            "voter"
+          ],
+          "common": [
+            "ces"
+          ],
+          "observed_change": -0.24176720576341196,
+          "common_item_change": -0.04170295107687802,
+          "composition_contrast": -0.20006425468653394
+        },
+        {
+          "before": 2017,
+          "after": 2018,
+          "gap": 1,
+          "added": [
+            "gss"
+          ],
+          "removed": [
+            "wvs"
+          ],
+          "common": [
+            "ces"
+          ],
+          "observed_change": 0.2697348117443703,
+          "common_item_change": 0.003544975305896564,
+          "composition_contrast": 0.2661898364384737
+        },
+        {
+          "before": 2018,
+          "after": 2019,
+          "gap": 1,
+          "added": [
+            "nationscape",
+            "prri"
+          ],
+          "removed": [
+            "gss"
+          ],
+          "common": [
+            "ces"
+          ],
+          "observed_change": -0.15074076435971068,
+          "common_item_change": 0.008657097030656313,
+          "composition_contrast": -0.159397861390367
+        },
+        {
+          "before": 2019,
+          "after": 2020,
+          "gap": 1,
+          "added": [
+            "public",
+            "voter"
+          ],
+          "removed": [],
+          "common": [
+            "ces",
+            "nationscape",
+            "prri"
+          ],
+          "observed_change": 0.051173564742981195,
+          "common_item_change": -0.007661370047512013,
+          "composition_contrast": 0.05883493479049321
+        },
+        {
+          "before": 2020,
+          "after": 2021,
+          "gap": 1,
+          "added": [
+            "gss"
+          ],
+          "removed": [
+            "public",
+            "voter"
+          ],
+          "common": [
+            "ces",
+            "nationscape",
+            "prri"
+          ],
+          "observed_change": 0.049586879346987855,
+          "common_item_change": 0.031248761649821183,
+          "composition_contrast": 0.018338117697166673
+        },
+        {
+          "before": 2021,
+          "after": 2022,
+          "gap": 1,
+          "added": [],
+          "removed": [
+            "nationscape",
+            "prri"
+          ],
+          "common": [
+            "ces",
+            "gss"
+          ],
+          "observed_change": 0.15600227289762322,
+          "common_item_change": 0.04276222313496561,
+          "composition_contrast": 0.11324004976265761
+        },
+        {
+          "before": 2022,
+          "after": 2023,
+          "gap": 1,
+          "added": [
+            "prri"
+          ],
+          "removed": [
+            "gss"
+          ],
+          "common": [
+            "ces"
+          ],
+          "observed_change": -0.06570678088006104,
+          "common_item_change": 0.1660082411799143,
+          "composition_contrast": -0.23171502205997535
+        },
+        {
+          "before": 2023,
+          "after": 2024,
+          "gap": 1,
+          "added": [
+            "gss",
+            "public"
+          ],
+          "removed": [],
+          "common": [
+            "ces",
+            "prri"
+          ],
+          "observed_change": 0.09115782148922769,
+          "common_item_change": 0.03595259464884357,
+          "composition_contrast": 0.05520522684038412
+        }
+      ],
+      "fixed_composition_groups": [
+        {
+          "items": [
+            "gss",
+            "public"
+          ],
+          "years": [
+            1972,
+            1976,
+            1978,
+            1980,
+            1982,
+            1984,
+            1988,
+            1990,
+            1994,
+            1996,
+            1998,
+            2000,
+            2004
+          ],
+          "series": {
+            "1972": 0.39864033089518885,
+            "1976": 0.44474442611018933,
+            "1978": 0.1609470702571323,
+            "1980": 0.2605458505791199,
+            "1982": 0.2610718873425443,
+            "1984": 0.24208167333476333,
+            "1988": 0.2213225542148762,
+            "1990": 0.28897646974442576,
+            "1994": 0.28748964380878056,
+            "1996": 0.2884569070759322,
+            "1998": 0.2525193025487341,
+            "2000": 0.24343127514976765,
+            "2004": 0.20722135867249458
+          }
+        },
+        {
+          "items": [
+            "gss"
+          ],
+          "years": [
+            1973,
+            1974,
+            1975,
+            1977,
+            1983,
+            1985,
+            1987,
+            1989,
+            1991,
+            1993,
+            2002
+          ],
+          "series": {
+            "1973": 0.843953358014437,
+            "1974": 0.8502058425650887,
+            "1975": 0.8226141011857967,
+            "1977": 0.2867624513899649,
+            "1983": 0.22664785677336743,
+            "1985": 0.29800012607936166,
+            "1987": 0.3040564311563174,
+            "1989": 0.3020540828373842,
+            "1991": 0.308449940274938,
+            "1993": 0.3460800536480811,
+            "2002": 0.3218363162200247
+          }
+        },
+        {
+          "items": [
+            "public"
+          ],
+          "years": [
+            1986,
+            1992
+          ],
+          "series": {
+            "1986": 0.22421383647802268,
+            "1992": 0.31409519531616326
+          }
+        },
+        {
+          "items": [
+            "wvs"
+          ],
+          "years": [
+            1995,
+            1999
+          ],
+          "series": {
+            "1995": -0.34436983730035226,
+            "1999": -0.24583486884686667
+          }
+        },
+        {
+          "items": [
+            "gss",
+            "wvs"
+          ],
+          "years": [
+            2006
+          ],
+          "series": {
+            "2006": 0.018151506399322365
+          }
+        },
+        {
+          "items": [
+            "ces",
+            "gss",
+            "public"
+          ],
+          "years": [
+            2008,
+            2012
+          ],
+          "series": {
+            "2008": 0.24800880832891248,
+            "2012": 0.30338625791196877
+          }
+        },
+        {
+          "items": [
+            "ces"
+          ],
+          "years": [
+            2009,
+            2015
+          ],
+          "series": {
+            "2009": 0.22412756254377114,
+            "2015": 0.10567505384338076
+          }
+        },
+        {
+          "items": [
+            "ces",
+            "gss"
+          ],
+          "years": [
+            2010,
+            2014,
+            2018,
+            2022
+          ],
+          "series": {
+            "2010": 0.2800718340462671,
+            "2014": 0.10542655587350347,
+            "2018": 0.2703865637299725,
+            "2022": 0.3764085163578541
+          }
+        },
+        {
+          "items": [
+            "ces",
+            "wvs"
+          ],
+          "years": [
+            2011,
+            2017
+          ],
+          "series": {
+            "2011": 0.056604740869151016,
+            "2017": 0.0006517519856021892
+          }
+        },
+        {
+          "items": [
+            "ces",
+            "prri"
+          ],
+          "years": [
+            2013,
+            2023
+          ],
+          "series": {
+            "2013": 0.2093715749316541,
+            "2023": 0.31070173547779306
+          }
+        },
+        {
+          "items": [
+            "ces",
+            "gss",
+            "public",
+            "voter"
+          ],
+          "years": [
+            2016
+          ],
+          "series": {
+            "2016": 0.24241895774901415
+          }
+        },
+        {
+          "items": [
+            "ces",
+            "nationscape",
+            "prri"
+          ],
+          "years": [
+            2019
+          ],
+          "series": {
+            "2019": 0.11964579937026183
+          }
+        },
+        {
+          "items": [
+            "ces",
+            "nationscape",
+            "prri",
+            "public",
+            "voter"
+          ],
+          "years": [
+            2020
+          ],
+          "series": {
+            "2020": 0.17081936411324303
+          }
+        },
+        {
+          "items": [
+            "ces",
+            "gss",
+            "nationscape",
+            "prri"
+          ],
+          "years": [
+            2021
+          ],
+          "series": {
+            "2021": 0.22040624346023088
+          }
+        },
+        {
+          "items": [
+            "ces",
+            "gss",
+            "prri",
+            "public"
+          ],
+          "years": [
+            2024
+          ],
+          "series": {
+            "2024": 0.40185955696702075
+          }
+        }
+      ]
+    },
+    "fixed_seven_item_gss": {
+      "1977": 0.2823336428887661,
+      "1978": 0.19868468761184196,
+      "1980": 0.2627049790943368,
+      "1982": 0.2948424171347127,
+      "1983": 0.14709570540696795,
+      "1984": 0.20943965326773897,
+      "1985": 0.20700991383757847,
+      "1987": 0.20391543621510366,
+      "1988": 0.17182379508327417,
+      "1989": 0.23351516774742925,
+      "1990": 0.2595045781097361,
+      "1991": 0.23695279412333134,
+      "1993": 0.25644878409730765,
+      "1994": 0.2759133389006949,
+      "1996": 0.24436224080773306,
+      "1998": 0.1705749743464057,
+      "2000": 0.1463411885488133,
+      "2002": 0.18089337051802684,
+      "2004": 0.1289447739197638,
+      "2006": 0.13968317779438125,
+      "2008": 0.16000182505140587,
+      "2010": 0.1869224531624129,
+      "2012": 0.15998750450795948,
+      "2014": 0.20615667901949908,
+      "2016": 0.20765008742464056,
+      "2018": 0.2564924527940808,
+      "2021": 0.3438027070293101,
+      "2022": 0.3905282568219774,
+      "2024": 0.3814801363038494
+    },
+    "gss_any_reason": {
+      "1977": -0.24571201964939976,
+      "1978": -0.3197680864017187,
+      "1980": -0.18566272888452368,
+      "1982": -0.17631410727935085,
+      "1983": -0.33326474725821126,
+      "1984": -0.2321213796569557,
+      "1985": -0.21176080751132514,
+      "1987": -0.18088300391256573,
+      "1988": -0.25928897301574033,
+      "1989": -0.1984705429323878,
+      "1990": -0.13282360470845,
+      "1991": -0.18067366520686393,
+      "1993": -0.11127955446169358,
+      "1994": -0.08504783540815225,
+      "1996": -0.12158608237301867,
+      "1998": -0.21134930207598193,
+      "2000": -0.23894610121153992,
+      "2002": -0.17912263775431878,
+      "2004": -0.21609481198536593,
+      "2006": -0.21000424029003378,
+      "2008": -0.1651282080989698,
+      "2010": -0.14532603303017003,
+      "2012": -0.1508727189448112,
+      "2014": -0.09490929179677646,
+      "2016": -0.08098205004815777,
+      "2018": -0.003949139362721789,
+      "2021": 0.12206952684872525,
+      "2022": 0.13808099677899782,
+      "2024": 0.16576943095062902
+    }
+  }
+}
