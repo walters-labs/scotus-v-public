@@ -366,3 +366,474 @@ PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/check_survey_topic_
 The compact result is `data/evaluation/survey-topic-routing-summary.json`.
 The candidate runs locally on port 8024. No production activation is part of
 this experiment.
+
+## Frozen baseline and passage-support diagnostic — 2026-11-05
+
+The production baseline is the affirmative-action artifact and matching hybrid
+bundle. This experiment does **not** change serving code, embeddings, thresholds,
+or source data. Earlier search improvements remain intact.
+
+### Expanded regression evidence
+
+`data/evaluation/court-search-benchmark-v2.json` preserves the existing 20-topic
+court judgments, adds the abortion audit's current-case scope judgments, and
+adds four equivalent-query checks (contraception, same-sex marriage, capital
+punishment, healthcare). It has 24 queries and 240 query/case labels, or 210
+after collapsing equivalent-query copies. These are deliberately selected
+development examples, not a representative or independently adjudicated sample.
+The historical “validation” split was previously inspected and is not blind.
+
+Search relevance includes central procedural disputes. An abortion standing case
+can remain a direct search match even when it is unsuitable for interpreting
+the chart as an abortion-access measure. Contraception is related, not treated
+as a clear irrelevant negative for abortion. Unjudged cases remain unjudged.
+
+The acceptance gate is explicit, per query:
+1. Preserve every baseline-plotted judged direct case.
+2. Add no judged irrelevant plotted cases.
+3. Remove at least one judged irrelevant case.
+4. Lose no baseline direct case from the first ten results.
+
+These checks are necessary development guardrails, not a promise of improvement
+for arbitrary queries. Index omissions are reported separately. Passing them
+does not authorize deployment; latency/memory and further independent judgments
+would still matter.
+
+### Diagnosed mechanisms
+
+The exact best-scoring passages are reconstructed from the verified text and
+the same 254-token windows/40-token overlap used to build embeddings. Token
+window counts and source hashes are checked.
+
+- **Roper / abortion:** 155 passages; passage 134 (zero-based) discusses abortion
+  decisions as an analogy concerning minors. Maximum cosine 0.520; opening
+  passage 0.163; mean 0.210. Its opening states the juvenile-execution question.
+  TF-IDF contributes only 0.0023 to its final 0.471 score.
+- **Willy / abortion:** the highest-scoring passage includes the cited case name
+  “Abortion Rights Mobilization” in a discussion of sanctions/jurisdiction.
+  Maximum cosine 0.429, opening 0.127, final 0.388.
+- **Postal Service v. Konan / abortion:** the best passage concerns the meaning
+  of “miscarriage” of mail. Maximum cosine 0.346; lexical score zero; final 0.312.
+  This is a word-sense/context failure rather than an abortion-policy discussion.
+- **Little Sisters / birth control:** genuinely relevant contraceptive coverage
+  case with a modest maximum cosine of 0.352 and zero lexical score for this
+  query. Its final baseline score is only 0.317. A crude stricter cutoff or
+  dilution of passage evidence can sacrifice precisely the synonym match we
+  need to preserve.
+
+The failure is not simply insufficient text. TF-IDF indexes supplied opinion
+texts; most embeddings use syllabi, with opinion fallback. A strong isolated
+passage can dominate the case score, including a citation or a different sense
+of a word. Whole-document context must help distinguish these without drowning
+out a central issue in otherwise technical legal text.
+
+### One predeclared experiment: rejected
+
+Keep candidate nomination, 10% lexical weight and 0.30 plotting threshold.
+Replace the maximum semantic score with:
+
+```text
+0.75 × maximum passage cosine + 0.25 × max(0, mean passage cosine)
+```
+
+No parameter sweep or threshold retuning was performed.
+
+Abortion plot matches fall from **95 to 74**, removing **19 judged irrelevant**
+cases. Across all 24 queries, 24 judged-irrelevant query/case pairs are removed,
+but **12 baseline direct query/case pairs are lost**. These pair counts are not
+unique cases or independent observations because queries overlap. Relevant
+top-ten results also regress. Little Sisters drops out for birth control;
+Hollingsworth drops out for same-sex marriage. Other losses occur in voting,
+speech, immigration, labor, privacy and healthcare searches.
+
+The no-new-irrelevant gate passes largely by construction: this score never
+exceeds the corresponding baseline score. That is not independent evidence of
+better precision. Raw result-count reduction is not a quality metric.
+
+**Decision: reject the runtime change.** Retain only the benchmark, frozen
+results, diagnostic evidence and reproducible experiment. Do not lower the
+threshold to rescue this trial after observing its failures; that would require
+a separately specified experiment and further validation.
+
+### Reproduction
+
+```sh
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/experiment_court_passage_support.py \
+  --artifact artifacts/affirmative-action.sqlite \
+  --bundle artifacts/semantic-affirmative-action \
+  --output artifacts/court-passage-support-v1
+```
+
+Use a fresh output directory. Outputs are baseline candidate rankings, trial
+rankings, passage evidence, and per-query metrics with artifact, model-manifest,
+benchmark and code hashes. The committed result is
+`data/evaluation/court-passage-support-summary.json`.
+
+The next justified experiment is contextual relevance assessment over the case
+overview and supporting passage together, rather than another global cutoff.
+A small query–case reranker is a candidate, not an adopted architecture. It must
+be evaluated against this baseline and the synonym anchors, with the 1 GB VPS
+constraint measured explicitly. Source cleanup and better overviews may also
+help; no new runtime behavior has been selected.
+
+### Contextual reranker experiment: rejected
+
+Tested the existing pinned, quantized `cross-encoder/ms-marco-MiniLM-L2-v2`
+against the same 24-query candidate pool (3,716 query/case pairs). Each input
+contained the case name, the first 180 source tokens and 180 tokens from its
+strongest matching passage. Inputs fit the model's 512-token limit. The
+predeclared rule ranked raw logits and accepted logits >= 0; no threshold sweep
+was performed. These logits are not relevance probabilities.
+
+The acceptance rule loses direct matches across all 24 queries. A separate
+post-run diagnostic ignoring the cutoff also shows ranking regressions:
+birth control retains only one of six judged-direct top-ten results; gun
+control goes from five to two. Dobbs falls from rank 2 to 49 for abortion,
+and Little Sisters from 9 to 107 for birth control. Gay marriage improves,
+but these mixed results do not pass the cross-topic gate. Lowering the cutoff
+would not fix the ordering failures. Unjudged cases remain unjudged, not false
+positives; these are retention checks, not comprehensive precision estimates.
+
+Reranking alone has a local p95 of 1.85 seconds across the 24 queries. A fresh
+process loading both models and running three serial abortion searches peaks
+at 592 MiB RSS, with search/rerank times of 1.43–1.47 seconds. This Mac measurement
+excludes Gunicorn master, survey search, concurrency and context lookup; it is
+not a VPS memory measurement or deployment capacity estimate. Quality already
+fails, so no server trial is warranted.
+
+**Decision: reject this model/input configuration.** Production remains
+unchanged. This does not establish that all contextual rerankers fail. Source
+quality remains a concrete issue: an opinion opening can contain inserted
+footnotes and amicus names rather than a clean overview. Evaluate input quality
+before another model or threshold trial.
+
+Reproduce after generating the frozen passage-support baseline above, with the
+pinned model in `artifacts/survey-reranker-model`:
+
+```sh
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/experiment_court_reranker.py prepare
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/experiment_court_reranker.py evaluate
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/experiment_court_reranker.py profile
+```
+
+The compact tracked results, provenance, post-run ranking diagnostic and local
+profile are in `data/evaluation/court-context-reranker-summary.json`. Full
+contexts and rankings remain in the ignored experiment output directory.
+
+### Source-quality audit after the reranker trial
+
+The serving artifact's embedding sources comprise 7,305 syllabi, 429 short-
+syllabus opinion fallbacks, and 391 official principal-opinion fallbacks.
+The official subset has publication watermarks in 348 documents and line-end
+hyphenation in 390. Neither signal occurs in the other two source groups.
+Amicus wording appears within the first 1,800 characters of 183 official
+opinions, 14 short-syllabus fallbacks and 21 syllabi. This last signal is a
+review flag, not an error count: legitimate prose can discuss an amicus brief.
+
+Manual inspection confirms that Dobbs' opening sentence is interrupted by a
+lengthy counsel list and a publication watermark. The reranker receives this
+clutter twice because its opening and strongest passage overlap. By contrast,
+Little Sisters' syllabus clearly discusses contraceptive coverage; its failed
+ranking cannot simply be blamed on missing or garbled source text. Roper has a
+clear juvenile-execution opening but an abortion analogy in the winning passage;
+Willy's clean syllabus includes an abortion-related case name in a citation.
+Those are contextual relevance problems rather than extraction corruption.
+
+The official importer deliberately extracts principal opinions, but does not
+retain syllabi. A read-only probe of cached, checksum-verified PDFs finds an
+exact standalone `Syllabus` header in the first two pages for **350 of the 391
+indexed official records**. Across the entire supplement, including three records
+not used by this artifact, the count is 351 of 394. Header presence does not
+validate the complete summary or its boundaries; failure to find it in two
+pages does not establish that no syllabus exists. Dobbs' cached PDF includes
+a substantive syllabus describing the challenged law and holding.
+
+**Next bounded experiment:** extract official syllabi into a separate candidate
+source, validate case identity and summary boundaries, remove verified layout
+boilerplate, and preserve opinion fallback where no usable summary exists.
+Keep full opinion text for lexical retrieval. Compare the candidate embeddings
+against the frozen baseline before changing serving artifacts. Do not globally
+strip citations or amicus references, or treat this audit as proof of improved
+search. No runtime code or deployed data changed during this audit.
+
+Reproduce with `PYTHONPATH=. .venv/bin/python scripts/audit_court_text_quality.py
+--pdftotext /path/to/pdftotext`. Tracked signals and source hashes are in
+`data/evaluation/court-text-quality-summary.json`.
+
+### Official-syllabus candidate: chart retention passes, ranking gate fails
+
+Built an isolated candidate with 196 official syllabi and 195 unchanged official
+opinion fallbacks. Extraction required contiguous syllabus pages, a following
+principal-opinion header, the expected docket, a substantive Held section and
+a unique disposition boundary. Ambiguous endings, including analysis following
+the disposition, retained the original opinion. Publication watermarks were
+removed and lowercase line-end hyphenation joined. Counsel/vote lists after the
+disposition were excluded. These conservative checks do not establish perfect
+extraction or repair every PDF glyph; this is an experimental source set.
+
+Extraction checks caught counsel contamination, variable whitespace in
+watermarks and premature disposition boundaries before search evaluation.
+Preparatory versions were stopped without search comparisons. The final
+candidate is `artifacts/official-syllabi-v5`; only this version was evaluated.
+The lexical artifact, model, window sizes, nomination and scoring rules remain
+unchanged. Unmodified sources reuse their existing vectors exactly.
+
+Results across the frozen 24 queries:
+
+- No baseline plotted judged-direct cases are lost, and no new judged-irrelevant
+  cases enter the plots.
+- Abortion goes from 95 to 93 plot matches, removing Postal Service v. Konan
+  and Free Speech Coalition v. Paxton. Dobbs remains rank 2.
+- Seven known direct query/case matches leave the top ten across six topics.
+  Examples: Brnovich 4→17 for voting rights; Moody 2→20 and Free Speech
+  Coalition 3→36 for free speech; Sanchez 4→45 for immigration.
+- Passage vectors decrease from 46,876 to 40,274. No new runtime model is added.
+
+**Decision: do not promote.** This source change passes chart retention but
+fails the frozen top-ten retention gate. The two removed abortion false
+positives do not justify the ranking regressions. No cutoff tuning or serving
+changes were made. Judgments are partial; this is not a complete precision or
+recall estimate. A future trial can evaluate summaries alongside opinion
+evidence, rather than replacing opinion evidence outright, but must specify
+its combination rule before evaluation and pass the same checks.
+
+Reproduce using a fresh output directory:
+
+```sh
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/experiment_official_syllabi.py prepare --output artifacts/official-syllabi-review --pdftotext /path/to/pdftotext
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/experiment_official_syllabi.py build --output artifacts/official-syllabi-review
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/experiment_official_syllabi.py evaluate --output artifacts/official-syllabi-review
+```
+
+Tracked extraction provenance, per-query results and rank regressions are in
+`data/evaluation/official-syllabi-summary.json`. Candidate texts, vectors and
+full rankings remain in ignored artifacts. No additional downloads were needed.
+
+### Dual-source scoring trial: frozen gate passes, follow-up review fails
+
+One fixed trial combines 75% original maximum passage cosine with 25% official
+syllabus maximum passage cosine for the 196 extracted cases. Other sources are
+unchanged. Lexical weighting, top-100 candidate nomination and the 0.30 plotting
+cutoff stay fixed. There was no weight sweep. Here “original” means the existing
+source policy, primarily syllabi with opinion fallback, not full opinions for
+every case.
+
+All four frozen development gates pass across 24 queries: no labeled direct
+plot matches lost, no labeled direct top-ten cases lost, no newly admitted
+labeled irrelevant cases, and one labeled irrelevant pair removed (Free Speech
+Coalition v. Paxton for abortion). Abortion falls from 95 to 94 matches.
+
+However, candidate-pool movement introduces 12 previously unjudged query/case
+pairs and removes 32 pairs overall. Follow-up inspection found two clear new
+false positives: Edwards v. Vannoy for death penalty (jury-rule retroactivity,
+life-without-parole sentence) and Grants Pass v. Johnson for capital punishment
+(public camping and the Eighth Amendment). Death-penalty precedents and general
+punishment language do not make these capital-sentencing cases. These new
+judgments are recorded separately without changing the frozen benchmark or
+tuning the trial after the fact. The other additions have not been exhaustively
+adjudicated.
+
+**Decision: do not promote.** Passing an incomplete labeled benchmark is not
+proof of improvement. Lowering scores of existing candidates also changes who
+enters the semantic top 100, exposing further false positives. Future evaluation
+must examine changed memberships as well as the fixed labels. This result does
+not justify another weight sweep or a production scoring change.
+
+Reproduction: `PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python
+scripts/experiment_court_dual_source.py --output artifacts/court-dual-source-review`.
+The script uses the frozen baseline and official-syllabi-v5 bundle. Results,
+provenance and follow-up review are tracked in
+`data/evaluation/court-dual-source-summary.json`. Full rankings are in the ignored
+experiment directory. Local p95 was about 0.066 seconds in an offline process
+loading both bundles; this is not optimized VPS memory or latency measurement.
+No serving code, production artifacts or deployment changed.
+
+### Benchmark v3: turn follow-up findings into regression checks
+
+`data/evaluation/court-search-benchmark-v3.json` preserves every v2 judgment and
+adds Edwards v. Vannoy and Grants Pass v. Johnson as irrelevant for both
+“death penalty” and “capital punishment.” This raises the count from 240 to 244
+query/case labels across the same 24 queries. The four added labels represent
+two case-topic judgments, repeated for the alias, not four independent examples.
+Each includes source evidence, a verified text hash and the reason for exclusion.
+The original v2 file and original experiment results remain unchanged.
+
+Re-evaluating the saved dual-source rankings against v3 now explicitly fails
+`no_new_irrelevant`: Edwards is newly admitted for death penalty and Grants Pass
+for capital punishment. The other three gates pass. This is a regression check
+using post-run findings, not new held-out validation or a search improvement.
+Other unlabeled changed memberships remain unjudged.
+
+```sh
+PYTHONPATH=. .venv/bin/python scripts/evaluate_frozen_court.py --output data/evaluation/court-dual-source-v3-summary.json
+PYTHONPATH=. .venv/bin/python -m unittest discover -s tests -p test_frozen_court_evaluation.py -v
+```
+
+The evaluator hashes the input rankings and benchmark, requires matching query
+sets, and reports unjudged additions/removals separately from known errors. Its
+tests cover new negatives, retained positives at the cutoff, and top-ten
+regressions without chart loss. Use v3 for subsequent comparisons; historical
+experiment scripts retain their original frozen inputs. Production is unchanged.
+
+### Complete dual-source membership review
+
+Reviewed all 44 changed chart memberships (34 unique cases) against the existing
+topic scopes using the verified local source openings and holdings. The record
+is `data/evaluation/court-dual-source-membership-review.json`; it includes each
+label, rationale, evidence, source hash, scores and membership mechanism.
+This is assistant review, not independent adjudication or a random sample.
+Borderline cases are `related`, not counted as clear positives or negatives.
+
+| Changed membership | Direct | Related | Irrelevant | Total |
+|---|---:|---:|---:|---:|
+| Added | 6 | 4 | 2 | 12 |
+| Removed | 8 | 12 | 12 | 32 |
+
+Counts are query/case pairs, not independent cases: Thornell is lost for both
+death penalty and capital punishment. Clear gains include Skipper for death
+penalty and Cardoza-Fonseca for immigration. Clear losses include Thornell and
+Cruz for capital punishment and Glacier Northwest for labor unions. Under the
+existing broad scopes, Van Buren concerns informational privacy, Minerva concerns
+patent ownership, Monsanto concerns pesticide regulation, and Skrmetti concerns
+access to medical treatment. These are also directly relevant losses. Related
+items include benefit-adjudication procedure for disability rights and pharmacy
+fraud for healthcare; no scope was broadened to force a positive label.
+
+Seven of the eight direct losses are absent from the candidate's nominated
+pool; only Skrmetti for healthcare remains nominated but falls below 0.30
+(0.308→0.296). The nomination losses had baseline scores about 0.359–0.430.
+Changing semantic scores shifts the top-100 pool, so apparent filtering is not
+solely an effect of the plotting cutoff. Their absence is not proof of low
+relevance. The review explicitly records this distinction.
+
+**Decision: reject the candidate.** It removes real noise but also loses useful
+cases and admits new noise. Keep production unchanged. The next bounded
+diagnostic should separate candidate selection from scoring by evaluating the
+same score rule on a fixed/union candidate pool and reporting the resulting
+membership changes. That is a diagnostic, not an approved serving architecture;
+do not start another weight sweep. The completed review is additional regression
+evidence; the original v2/v3 benchmarks and historical results remain intact.
+
+### Candidate-pool diagnostic
+
+Kept the 75/25 source score, lexical weighting and 0.30 cutoff unchanged, and
+evaluated two predeclared pools: the frozen original nomination pool and the
+union of original and previous dual-source nominations. Both use query-specific
+retrieval results, not a global case allowlist. Evaluation combines v3 labels
+with the completed 44-membership review, checking for conflicting labels.
+Recomputed scores match the previous dual-source scores within 1e-7.
+
+| Pool | Direct chart losses | New irrelevant pairs | Removed irrelevant pairs | Direct top-ten losses |
+|---|---:|---:|---:|---:|
+| Previous dual-source nominations | 8 | 2 | 12 | 1 |
+| Fixed original nominations | 1 | 0 | 7 | 1 |
+| Union of both nominations | 1 | 2 | 7 | 1 |
+
+Both diagnostics recover the seven direct query/case pairs lost through
+nomination churn, confirming the mechanism rather than merely inferring it.
+The remaining direct loss is Skrmetti for healthcare: its blended score falls
+below the plotting cutoff, and it also leaves the first ten. The fixed pool
+avoids the new Edwards/Grants Pass false positives; the union admits them.
+The fixed pool's no-new-negative result is partly structural because it cannot
+admit cases outside original nominations, not independent validation of relevance.
+
+**Decision: no promotion.** Fixed nomination substantially reduces observed
+regressions, but still fails direct chart and top-ten retention. No threshold or
+weight was adjusted to rescue this remaining case. This isolates candidate
+selection as a major failure mechanism while leaving a score-induced failure
+unresolved. Production and all historical artifacts remain unchanged.
+
+Run `PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python
+scripts/experiment_court_candidate_pool.py` with a fresh `--output` directory.
+Results are tracked in `data/evaluation/court-candidate-pool-summary.json`;
+full fixed/union rankings and pre-run protocol are in
+`artifacts/court-candidate-pool-v1`. These remain development diagnostics, not
+independent estimates of precision or recall.
+
+### Healthcare wording diagnostic
+
+`scripts/diagnose_healthcare_search.py` compares the two spellings using the
+serving encoder's one-query-at-a-time calls. It verifies source hashes, passage
+counts and recomputed semantic scores against the saved baseline and fixed-pool
+trial within 1e-7. Batching differently changes quantized encoder outputs, so
+diagnostic calls must match serving calls. No encoder or serving code changed.
+Evidence is in `data/evaluation/healthcare-wording-diagnostic.json`.
+
+| Skrmetti query | Original semantic | Summary semantic | Normalized lexical | Baseline final | Blended final |
+|---|---:|---:|---:|---:|---:|
+| healthcare | .29725 | .24428 | .40199 | .30772 | .29580 |
+| health care | .29944 | .26382 | .12929 | .28242 | .27441 |
+
+The original semantic scores are nearly equal. The lexical contribution makes
+the baseline difference: the one-word query barely clears .30; the spaced query
+already misses. Averaging the lower summary score removes the remaining margin
+for the one-word query. Both winning passages concern uncertainty and debate
+over medical treatment; the summary has not lost the medical subject, but the
+encoder assigns its passage a lower similarity. This is score dilution, not
+evidence that the case is unrelated. The original winner contains a watermark,
+but this diagnostic does not isolate any causal effect of that watermark.
+
+The behavior extends beyond Skrmetti. Baseline chart counts are 12 for healthcare
+and 52 for health care; the fixed-pool candidate gives 10 and 52. These counts
+are not quality estimates. NFIB v. Sebelius ranks 13 with score .29911 and zero
+lexical contribution for healthcare, versus rank 2 and score .47019 for health
+care. Braidwood's summary blend lowers both scores but leaves both above cutoff.
+Schutte drops from .30793 to .27212 for healthcare and was already below cutoff
+for health care. Empire Health remains plotted for both spellings.
+
+**Conclusion:** spelling sensitivity and unconditional averaging interact.
+Canonicalizing everything to the spaced spelling would not recover Skrmetti;
+canonicalizing to the unspaced spelling loses other useful matches. Do not add
+a case exception, lower the global cutoff, or claim normalization alone fixes
+this. Production remains unchanged. Any future query-variant experiment must
+retain both spellings as regression queries and review changed memberships
+across topics; summary averaging still requires separate evidence of benefit.
+
+### Query spelling-variant test on original search
+
+Tested one explicit spelling equivalence, without summary averaging: exact
+`healthcare`, `health care`, and `health-care` queries expand to the first two
+forms. A bounded full-match regex recognizes these spellings; it does not infer
+synonyms, split arbitrary words, or rewrite compound queries such as `mental
+health care`. Each variant uses original retrieval. Results are deduplicated by
+case ID using the maximum returned complete hybrid score, not a sum of duplicate
+evidence or separate maxima for lexical/semantic components. Cutoff remains .30.
+
+Both benchmark spellings produce identical rankings and **54 chart cases**:
+healthcare grows from 12 to 54; health care from 52 to 54. NFIB v. Sebelius is
+recovered for healthcare at rank 2; Skrmetti is recovered for health care with
+score .30772. Skrmetti remains plotted for both but ranks 46, compared with rank
+10 in the original healthcare results. The frozen top-ten retention check
+therefore fails. This rank change alone does not establish that its replacements
+are irrelevant: broad-query results compete for list position.
+
+All 22 other benchmark queries retain their exact original rankings and scores;
+this is principally guaranteed by the deliberately narrow expansion rule, not
+proof of general synonym robustness. No original chart matches can be lost by
+this max/union rule. It cannot remove existing false positives either. There
+are 42 additions relative to healthcare, including 40 previously unjudged pairs;
+the two additions relative to health care are Skrmetti (direct) and Schutte
+(related, healthcare reimbursement fraud).
+
+A deliberate seven-case sample among the additions found three direct matches
+(Wilder, Rush Prudential, King v. Burwell) and four related matches involving
+hospital labor rules, medical leave, or tax treatment of sickness benefits.
+This sample is not an estimate of precision. Remaining additions have not been
+fully adjudicated. Results and evidence are in
+`data/evaluation/healthcare-variants-summary.json`.
+
+**Decision:** useful spelling consistency and recall evidence, but not a proven
+overall relevance improvement or a deployment candidate yet. Regex is suitable
+for recognizing explicitly justified spelling variants; it cannot determine
+whether a case is centrally about a topic or discover semantic synonyms. Do not
+add case-specific exceptions or change weights to rescue the top-ten gate.
+Production is unchanged.
+
+```sh
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/experiment_healthcare_variants.py --output artifacts/healthcare-variants-review
+PYTHONPATH=. .venv/bin/python -m unittest discover -s tests -p test_healthcare_variants.py -v
+```
+
+The script asserts baseline parity on all 24 queries. Unit checks cover exact
+variant boundaries, case deduplication, maximum rather than summed scores, and
+stable ties. Full candidate rankings are saved in the ignored output directory.

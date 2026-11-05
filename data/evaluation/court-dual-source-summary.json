@@ -1,0 +1,522 @@
+{
+  "protocol": {
+    "rule": "Semantic = 0.75 original maximum passage cosine + 0.25 official summary maximum passage cosine for the 196 replaced cases; other sources unchanged. Same top-100 lexical/semantic nomination, 0.1 lexical/0.9 semantic weighting and 0.30 cutoff. No parameter sweep.",
+    "limitations": "Previously inspected, partial judgments; not blind validation. Original sources are primarily syllabi, with full-opinion fallback. This trial supplements only the 196 official cases with validated candidate syllabi.",
+    "provenance": {
+      "artifacts/affirmative-action.sqlite": "a7e8e8757291dce0f0cca727f2dfc4bbe01e6c7c3da6c7367739cf74e60cf064",
+      "artifacts/semantic-affirmative-action/manifest.json": "ec5050a7c158cecaf46ac92988e5a7a0fba7a2dc3a7fbacd586d3d222ed272d9",
+      "artifacts/official-syllabi-v5/bundle/manifest.json": "0cac56a0162684b83136ec21273eda6d1c4822a2cb03f74df23ad1e9cdb764bc",
+      "artifacts/court-passage-support-v1/baseline.json": "010dbd6458bd5e8f1db5aebd99158bf53de67003c4b5732cc8dc331a480ebbae",
+      "data/evaluation/court-search-benchmark-v2.json": "abc09a4d6c73e1362f4dfbb9663cacd5e7254ae73f43a64c4f2b656ba1e24538",
+      "/Users/jackson/GitHub/scotus-v-public/scripts/experiment_court_dual_source.py": "50e48b58c18c51dc79b6f76456516a70504c7c8d2903898c7e878b3089f15c2a",
+      "scvpublic/hybrid.py": "6a87d65d8766c978573a036b8a576492ec3c53f33e8a58ff3cb059a4f319dba8"
+    }
+  },
+  "gate": {
+    "no_lost_direct": true,
+    "no_new_irrelevant": true,
+    "no_lost_direct_top10": true,
+    "removes_known_irrelevant": true
+  },
+  "passes": true,
+  "queries": {
+    "birth control": {
+      "baseline_chart": 11,
+      "candidate_chart": 10,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "rank_regressions": []
+    },
+    "gay marriage": {
+      "baseline_chart": 25,
+      "candidate_chart": 22,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "rank_regressions": []
+    },
+    "gun control": {
+      "baseline_chart": 82,
+      "candidate_chart": 79,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "rank_regressions": []
+    },
+    "abortion": {
+      "baseline_chart": 95,
+      "candidate_chart": 94,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [
+        "2024-029"
+      ],
+      "lost_direct_top10": [],
+      "rank_regressions": []
+    },
+    "voting rights": {
+      "baseline_chart": 135,
+      "candidate_chart": 134,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "rank_regressions": []
+    },
+    "religious freedom": {
+      "baseline_chart": 119,
+      "candidate_chart": 119,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "rank_regressions": []
+    },
+    "free speech": {
+      "baseline_chart": 145,
+      "candidate_chart": 145,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "rank_regressions": []
+    },
+    "death penalty": {
+      "baseline_chart": 136,
+      "candidate_chart": 136,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "rank_regressions": []
+    },
+    "immigration": {
+      "baseline_chart": 144,
+      "candidate_chart": 145,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "rank_regressions": []
+    },
+    "racial discrimination": {
+      "baseline_chart": 155,
+      "candidate_chart": 154,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "rank_regressions": []
+    },
+    "labor unions": {
+      "baseline_chart": 162,
+      "candidate_chart": 161,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "rank_regressions": []
+    },
+    "campaign finance": {
+      "baseline_chart": 75,
+      "candidate_chart": 71,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "rank_regressions": []
+    },
+    "privacy": {
+      "baseline_chart": 129,
+      "candidate_chart": 128,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "rank_regressions": []
+    },
+    "search and seizure": {
+      "baseline_chart": 144,
+      "candidate_chart": 144,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "rank_regressions": []
+    },
+    "environmental protection": {
+      "baseline_chart": 121,
+      "candidate_chart": 121,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "rank_regressions": []
+    },
+    "disability rights": {
+      "baseline_chart": 143,
+      "candidate_chart": 141,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "rank_regressions": []
+    },
+    "school segregation": {
+      "baseline_chart": 136,
+      "candidate_chart": 136,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "rank_regressions": []
+    },
+    "health care": {
+      "baseline_chart": 52,
+      "candidate_chart": 52,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "rank_regressions": []
+    },
+    "criminal sentencing": {
+      "baseline_chart": 165,
+      "candidate_chart": 165,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "rank_regressions": []
+    },
+    "property rights": {
+      "baseline_chart": 157,
+      "candidate_chart": 156,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "rank_regressions": []
+    },
+    "contraception": {
+      "baseline_chart": 23,
+      "candidate_chart": 23,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "rank_regressions": []
+    },
+    "same-sex marriage": {
+      "baseline_chart": 19,
+      "candidate_chart": 19,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "rank_regressions": []
+    },
+    "capital punishment": {
+      "baseline_chart": 122,
+      "candidate_chart": 122,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "rank_regressions": []
+    },
+    "healthcare": {
+      "baseline_chart": 12,
+      "candidate_chart": 10,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "rank_regressions": []
+    }
+  },
+  "local_p95_seconds": 0.06631926879927047,
+  "timing_scope": "Offline process with both bundles and redundant unchanged vectors; not optimized deployment memory/latency.",
+  "added_chart_pairs": [
+    {
+      "query": "death penalty",
+      "case_id": "2020-020",
+      "name": "EDWARDS v. VANNOY, WARDEN",
+      "score": 0.4184754264277859
+    },
+    {
+      "query": "death penalty",
+      "case_id": "1985-073",
+      "name": "SKIPPER v. SOUTH CAROLINA",
+      "score": 0.4339858498004157
+    },
+    {
+      "query": "immigration",
+      "case_id": "1986-051",
+      "name": "IMMIGRATION AND NATURALIZATION SERVICE v. CARDOZA-FONSECA",
+      "score": 0.3579336660014311
+    },
+    {
+      "query": "environmental protection",
+      "case_id": "1985-083",
+      "name": "DOW CHEMICAL CO. v. UNITED STATES, BY AND THROUGH ADMINISTRATOR, ENVIRONMENTAL PROTECTION AGENCY",
+      "score": 0.36264259354258244
+    },
+    {
+      "query": "disability rights",
+      "case_id": "1988-108",
+      "name": "SULLIVAN, SECRETARY OF HEALTH AND HUMAN SERVICES v. HUDSON",
+      "score": 0.40052836114993806
+    },
+    {
+      "query": "school segregation",
+      "case_id": "1985-085",
+      "name": "WYGANT et al. v. JACKSON BOARD OF EDUCATION et al.",
+      "score": 0.389109802890549
+    },
+    {
+      "query": "criminal sentencing",
+      "case_id": "1969-128",
+      "name": "WILLIAMS v. ILLINOIS",
+      "score": 0.48175478449967907
+    },
+    {
+      "query": "criminal sentencing",
+      "case_id": "1949-087",
+      "name": "QUICKSALL v. MICHIGAN",
+      "score": 0.4778684745933324
+    },
+    {
+      "query": "property rights",
+      "case_id": "1979-054",
+      "name": "UNITED STATES v. CLARKE et al.",
+      "score": 0.4258018995556137
+    },
+    {
+      "query": "capital punishment",
+      "case_id": "2020-037",
+      "name": "SHINN v. KAYER",
+      "score": 0.40017274955802024
+    },
+    {
+      "query": "capital punishment",
+      "case_id": "2002-012",
+      "name": "DAVID ALLEN SATTAZAHN v. PENNSYLVANIA",
+      "score": 0.408187342400294
+    },
+    {
+      "query": "capital punishment",
+      "case_id": "2023-056",
+      "name": "CITY OF GRANTS PASS, OREGON v. JOHNSON",
+      "score": 0.4065381400268005
+    }
+  ],
+  "removed_chart_pairs": [
+    {
+      "query": "birth control",
+      "case_id": "2021-019",
+      "name": "DOBBS v. JACKSON WOMEN\u2019S HEALTH ORGANIZATION"
+    },
+    {
+      "query": "gay marriage",
+      "case_id": "2020-015",
+      "name": "FULTON v. CITY OF PHILADELPHIA, PENNSYLVANIA"
+    },
+    {
+      "query": "gay marriage",
+      "case_id": "2024-019",
+      "name": "UNITED STATES v. SKRMETTI"
+    },
+    {
+      "query": "gay marriage",
+      "case_id": "2021-019",
+      "name": "DOBBS v. JACKSON WOMEN\u2019S HEALTH ORGANIZATION"
+    },
+    {
+      "query": "gun control",
+      "case_id": "2025-007",
+      "name": "BARRETT v. UNITED STATES"
+    },
+    {
+      "query": "gun control",
+      "case_id": "2024-019",
+      "name": "UNITED STATES v. SKRMETTI"
+    },
+    {
+      "query": "gun control",
+      "case_id": "2021-019",
+      "name": "DOBBS v. JACKSON WOMEN\u2019S HEALTH ORGANIZATION"
+    },
+    {
+      "query": "abortion",
+      "case_id": "2024-029",
+      "name": "FREE SPEECH COALITION v. PAXTON"
+    },
+    {
+      "query": "voting rights",
+      "case_id": "2021-019",
+      "name": "DOBBS v. JACKSON WOMEN\u2019S HEALTH ORGANIZATION"
+    },
+    {
+      "query": "death penalty",
+      "case_id": "2023-055",
+      "name": "THORNELL v. JONES"
+    },
+    {
+      "query": "death penalty",
+      "case_id": "2021-019",
+      "name": "DOBBS v. JACKSON WOMEN\u2019S HEALTH ORGANIZATION"
+    },
+    {
+      "query": "racial discrimination",
+      "case_id": "2021-021",
+      "name": "CUMMINGS v. PREMIER REHAB KELLER, P.L.L.C."
+    },
+    {
+      "query": "labor unions",
+      "case_id": "2022-030",
+      "name": "GLACIER NORTHWEST v. INT'L BROTHERHOOD OF TEAMSTERS"
+    },
+    {
+      "query": "campaign finance",
+      "case_id": "2021-024",
+      "name": "CARSON v. MAKIN"
+    },
+    {
+      "query": "campaign finance",
+      "case_id": "2021-021",
+      "name": "CUMMINGS v. PREMIER REHAB KELLER, P.L.L.C."
+    },
+    {
+      "query": "campaign finance",
+      "case_id": "2020-046",
+      "name": "BRNOVICH v. DEMOCRATIC NATIONAL COMMITTEE"
+    },
+    {
+      "query": "campaign finance",
+      "case_id": "2020-055",
+      "name": "NATIONAL COLLEGIATE ATHLETIC ASSOCIATION v. ALSTON"
+    },
+    {
+      "query": "privacy",
+      "case_id": "2020-019",
+      "name": "VAN BUREN v. UNITED STATES"
+    },
+    {
+      "query": "environmental protection",
+      "case_id": "2025-054",
+      "name": "MONSANTO COMPANY v. DURNELL"
+    },
+    {
+      "query": "disability rights",
+      "case_id": "2021-027",
+      "name": "BECERRA v. EMPIRE HEALTH FOUNDATION"
+    },
+    {
+      "query": "disability rights",
+      "case_id": "2024-019",
+      "name": "UNITED STATES v. SKRMETTI"
+    },
+    {
+      "query": "disability rights",
+      "case_id": "2020-047",
+      "name": "CARR v. SAUL, COMMISSIONER OF SOCIAL SECURITY"
+    },
+    {
+      "query": "school segregation",
+      "case_id": "2024-037",
+      "name": "AMES v. OHIO DEPARTMENT OF YOUTH SERVICES"
+    },
+    {
+      "query": "criminal sentencing",
+      "case_id": "2020-010",
+      "name": "PEREIDA v. WILKINSON"
+    },
+    {
+      "query": "criminal sentencing",
+      "case_id": "2021-019",
+      "name": "DOBBS v. JACKSON WOMEN\u2019S HEALTH ORGANIZATION"
+    },
+    {
+      "query": "property rights",
+      "case_id": "2025-047",
+      "name": "CHATRIE v. UNITED STATES"
+    },
+    {
+      "query": "property rights",
+      "case_id": "2020-062",
+      "name": "MINERVA SURGICAL INC. v. HOLOGIC INC."
+    },
+    {
+      "query": "capital punishment",
+      "case_id": "2023-055",
+      "name": "THORNELL v. JONES"
+    },
+    {
+      "query": "capital punishment",
+      "case_id": "2022-011",
+      "name": "CRUZ v. ARIZONA"
+    },
+    {
+      "query": "capital punishment",
+      "case_id": "2025-021",
+      "name": "RUTHERFORD v. UNITED STATES"
+    },
+    {
+      "query": "healthcare",
+      "case_id": "2022-054",
+      "name": "UNITED STATES EX REL. SCHUTTE v. SUPERVALU INC."
+    },
+    {
+      "query": "healthcare",
+      "case_id": "2024-019",
+      "name": "UNITED STATES v. SKRMETTI"
+    }
+  ],
+  "decision": "Do not promote. Frozen development gate passes, but post-run review identifies two newly admitted false positives outside existing judgments.",
+  "followup_review": {
+    "scope": "Post-run review; original frozen benchmark unchanged. Two clear new false positives identified; remaining additions not exhaustively adjudicated.",
+    "reviewer": "assistant, based on verified local official opinion text",
+    "source_sha256": "7eb621dd39323be34e2df127cdf45407fed6e5828c3c78bd9e5e71cb030a7089",
+    "new_irrelevant": [
+      {
+        "query": "death penalty",
+        "case_id": "2020-020",
+        "reason": "Edwards concerns retroactivity of the unanimous-jury rule on collateral review. Defendant received life without parole; death-penalty cases appear as retroactivity precedents."
+      },
+      {
+        "query": "capital punishment",
+        "case_id": "2023-056",
+        "reason": "Grants Pass concerns public-camping ordinances under the Eighth Amendment, not execution or capital sentencing."
+      }
+    ]
+  }
+}

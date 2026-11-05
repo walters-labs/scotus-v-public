@@ -1,0 +1,1252 @@
+{
+  "protocol": {
+    "hypothesis": "A cross-encoder assessing overview plus matching passage can reject incidental mentions without losing central-topic synonym matches.",
+    "rule": "Same nominated cases; 180 overview tokens + 180 best-passage tokens + up to 40 name tokens; rerank by raw cross-encoder logit; accept logit >= 0. No threshold sweep.",
+    "limitations": "Logits are not calibrated relevance probabilities. Development judgments are not independent validation.",
+    "provenance": {
+      "artifacts/affirmative-action.sqlite": "a7e8e8757291dce0f0cca727f2dfc4bbe01e6c7c3da6c7367739cf74e60cf064",
+      "artifacts/semantic-affirmative-action/manifest.json": "ec5050a7c158cecaf46ac92988e5a7a0fba7a2dc3a7fbacd586d3d222ed272d9",
+      "artifacts/survey-reranker-model/manifest.json": "e0fbfc01bb780df831554eb477ab94ee07d43fabe68344bdee33a51b4121d7b3",
+      "artifacts/court-passage-support-v1/baseline.json": "010dbd6458bd5e8f1db5aebd99158bf53de67003c4b5732cc8dc331a480ebbae",
+      "data/evaluation/court-search-benchmark-v2.json": "abc09a4d6c73e1362f4dfbb9663cacd5e7254ae73f43a64c4f2b656ba1e24538",
+      "/Users/jackson/GitHub/scotus-v-public/scripts/experiment_court_reranker.py": "bb08f5ce61ee18c321367f3670cbfeafbe112f40d21190738585e810d7e0edaf",
+      "scripts/experiment_survey_reranker.py": "213739380f40f8e7685ac2d99e2e7dbccbdf4e91508ec3bbb6566bf69f0af66c"
+    }
+  },
+  "queries": {
+    "birth control": {
+      "seconds": 2.1569022920011776,
+      "candidates": 196,
+      "baseline_chart": 11,
+      "candidate_chart": 0,
+      "lost_direct": [
+        "1964-121",
+        "1971-079",
+        "1976-126",
+        "1982-135",
+        "2013-070",
+        "2019-060"
+      ],
+      "new_direct": [],
+      "removed_irrelevant": [],
+      "new_irrelevant": [],
+      "lost_direct_top10": [
+        "1964-121",
+        "1971-079",
+        "1976-126",
+        "1982-135",
+        "2013-070",
+        "2019-060"
+      ],
+      "baseline_judged_direct": [
+        "1964-121",
+        "1971-079",
+        "1976-126",
+        "1982-135",
+        "2013-070",
+        "2019-060"
+      ],
+      "candidate_judged_direct": [],
+      "baseline_judged_irrelevant": [],
+      "candidate_judged_irrelevant": []
+    },
+    "gay marriage": {
+      "seconds": 1.6497509590008121,
+      "candidates": 162,
+      "baseline_chart": 25,
+      "candidate_chart": 1,
+      "lost_direct": [
+        "2012-077",
+        "2012-079",
+        "2017-020"
+      ],
+      "new_direct": [],
+      "removed_irrelevant": [
+        "1970-053",
+        "1974-147",
+        "1977-007"
+      ],
+      "new_irrelevant": [],
+      "lost_direct_top10": [
+        "2012-079",
+        "2017-020"
+      ],
+      "baseline_judged_direct": [
+        "2012-077",
+        "2012-079",
+        "2014-070",
+        "2017-020"
+      ],
+      "candidate_judged_direct": [
+        "2014-070"
+      ],
+      "baseline_judged_irrelevant": [
+        "1970-053",
+        "1974-147",
+        "1977-007"
+      ],
+      "candidate_judged_irrelevant": []
+    },
+    "gun control": {
+      "seconds": 1.6751205830005347,
+      "candidates": 164,
+      "baseline_chart": 82,
+      "candidate_chart": 6,
+      "lost_direct": [
+        "2007-071",
+        "2013-061",
+        "2021-013",
+        "2023-012"
+      ],
+      "new_direct": [],
+      "removed_irrelevant": [
+        "1960-138"
+      ],
+      "new_irrelevant": [],
+      "lost_direct_top10": [
+        "2007-071",
+        "2021-013",
+        "2023-012"
+      ],
+      "baseline_judged_direct": [
+        "1975-021",
+        "2007-071",
+        "2013-061",
+        "2021-013",
+        "2023-012",
+        "2024-005"
+      ],
+      "candidate_judged_direct": [
+        "1975-021",
+        "2024-005"
+      ],
+      "baseline_judged_irrelevant": [
+        "1960-138"
+      ],
+      "candidate_judged_irrelevant": []
+    },
+    "abortion": {
+      "seconds": 1.4206166670010134,
+      "candidates": 135,
+      "baseline_chart": 95,
+      "candidate_chart": 5,
+      "lost_direct": [
+        "1970-088",
+        "1972-049",
+        "1973-129",
+        "1974-118",
+        "1975-170",
+        "1975-171",
+        "1975-172",
+        "1976-037",
+        "1976-154",
+        "1976-155",
+        "1976-157",
+        "1978-024",
+        "1978-056",
+        "1978-158",
+        "1979-148",
+        "1982-112",
+        "1982-113",
+        "1982-114",
+        "1985-077",
+        "1985-106",
+        "1987-148",
+        "1988-150",
+        "1989-133",
+        "1989-134",
+        "1990-077",
+        "1991-117",
+        "1992-018",
+        "1993-016",
+        "1993-091",
+        "1995-032",
+        "1995-073",
+        "1999-088",
+        "2002-021",
+        "2005-020",
+        "2005-037",
+        "2013-068",
+        "2015-048",
+        "2017-041",
+        "2018-078",
+        "2019-040",
+        "2021-006",
+        "2021-019",
+        "2021-033",
+        "2023-049",
+        "2024-054",
+        "2025-025"
+      ],
+      "new_direct": [],
+      "removed_irrelevant": [
+        "1967-117",
+        "1974-067",
+        "1975-164",
+        "1976-020",
+        "1976-091",
+        "1977-014",
+        "1977-056",
+        "1978-083",
+        "1978-129",
+        "1980-059",
+        "1981-069",
+        "1982-122",
+        "1982-142",
+        "1983-081",
+        "1986-072",
+        "1990-048",
+        "1991-039",
+        "1995-006",
+        "1996-091",
+        "1996-092",
+        "1997-055",
+        "1997-098",
+        "2000-070",
+        "2004-008",
+        "2004-024",
+        "2007-068",
+        "2011-054",
+        "2012-065",
+        "2012-077",
+        "2016-015",
+        "2019-063",
+        "2020-008",
+        "2024-015",
+        "2024-019",
+        "2024-029",
+        "2024-058",
+        "2025-013",
+        "2025-061"
+      ],
+      "new_irrelevant": [],
+      "lost_direct_top10": [
+        "1975-170",
+        "1976-157",
+        "1982-112",
+        "1985-106",
+        "1990-077",
+        "1999-088",
+        "2005-020",
+        "2021-019"
+      ],
+      "baseline_judged_direct": [
+        "1970-088",
+        "1972-048",
+        "1972-049",
+        "1973-129",
+        "1974-118",
+        "1975-004",
+        "1975-170",
+        "1975-171",
+        "1975-172",
+        "1976-037",
+        "1976-154",
+        "1976-155",
+        "1976-157",
+        "1978-024",
+        "1978-056",
+        "1978-158",
+        "1979-148",
+        "1979-149",
+        "1980-057",
+        "1982-112",
+        "1982-113",
+        "1982-114",
+        "1985-077",
+        "1985-106",
+        "1987-148",
+        "1988-150",
+        "1989-133",
+        "1989-134",
+        "1990-077",
+        "1991-117",
+        "1992-018",
+        "1993-016",
+        "1993-091",
+        "1995-032",
+        "1995-073",
+        "1999-088",
+        "2002-021",
+        "2005-020",
+        "2005-037",
+        "2006-031",
+        "2013-068",
+        "2015-048",
+        "2017-041",
+        "2018-078",
+        "2019-040",
+        "2021-006",
+        "2021-019",
+        "2021-033",
+        "2023-049",
+        "2024-054",
+        "2025-025"
+      ],
+      "candidate_judged_direct": [
+        "1972-048",
+        "1975-004",
+        "1979-149",
+        "1980-057",
+        "2006-031"
+      ],
+      "baseline_judged_irrelevant": [
+        "1967-117",
+        "1974-067",
+        "1975-164",
+        "1976-020",
+        "1976-091",
+        "1977-014",
+        "1977-056",
+        "1978-083",
+        "1978-129",
+        "1980-059",
+        "1981-069",
+        "1982-122",
+        "1982-142",
+        "1983-081",
+        "1986-072",
+        "1990-048",
+        "1991-039",
+        "1995-006",
+        "1996-091",
+        "1996-092",
+        "1997-055",
+        "1997-098",
+        "2000-070",
+        "2004-008",
+        "2004-024",
+        "2007-068",
+        "2011-054",
+        "2012-065",
+        "2012-077",
+        "2016-015",
+        "2019-063",
+        "2020-008",
+        "2024-015",
+        "2024-019",
+        "2024-029",
+        "2024-058",
+        "2025-013",
+        "2025-061"
+      ],
+      "candidate_judged_irrelevant": []
+    },
+    "voting rights": {
+      "seconds": 1.6163434579993918,
+      "candidates": 155,
+      "baseline_chart": 135,
+      "candidate_chart": 1,
+      "lost_direct": [
+        "1959-081",
+        "1959-105",
+        "1965-064",
+        "2020-046",
+        "2025-014"
+      ],
+      "new_direct": [],
+      "removed_irrelevant": [],
+      "new_irrelevant": [],
+      "lost_direct_top10": [
+        "1965-064",
+        "2020-046",
+        "2025-014"
+      ],
+      "baseline_judged_direct": [
+        "1959-081",
+        "1959-105",
+        "1965-064",
+        "2012-073",
+        "2020-046",
+        "2025-014"
+      ],
+      "candidate_judged_direct": [
+        "2012-073"
+      ],
+      "baseline_judged_irrelevant": [],
+      "candidate_judged_irrelevant": []
+    },
+    "religious freedom": {
+      "seconds": 1.3146253750001051,
+      "candidates": 124,
+      "baseline_chart": 119,
+      "candidate_chart": 1,
+      "lost_direct": [
+        "1969-087",
+        "1987-070",
+        "1992-098",
+        "2021-061"
+      ],
+      "new_direct": [],
+      "removed_irrelevant": [],
+      "new_irrelevant": [],
+      "lost_direct_top10": [
+        "1969-087",
+        "2021-061"
+      ],
+      "baseline_judged_direct": [
+        "1969-087",
+        "1987-070",
+        "1992-098",
+        "2013-070",
+        "2021-061"
+      ],
+      "candidate_judged_direct": [
+        "2013-070"
+      ],
+      "baseline_judged_irrelevant": [],
+      "candidate_judged_irrelevant": []
+    },
+    "free speech": {
+      "seconds": 1.6339897920006479,
+      "candidates": 154,
+      "baseline_chart": 145,
+      "candidate_chart": 0,
+      "lost_direct": [
+        "1950-089",
+        "1970-145",
+        "2014-058",
+        "2023-062",
+        "2024-029"
+      ],
+      "new_direct": [],
+      "removed_irrelevant": [],
+      "new_irrelevant": [],
+      "lost_direct_top10": [
+        "2014-058",
+        "2023-062",
+        "2024-029"
+      ],
+      "baseline_judged_direct": [
+        "1950-089",
+        "1970-145",
+        "2014-058",
+        "2023-062",
+        "2024-029"
+      ],
+      "candidate_judged_direct": [],
+      "baseline_judged_irrelevant": [],
+      "candidate_judged_irrelevant": []
+    },
+    "death penalty": {
+      "seconds": 1.7658560829986527,
+      "candidates": 139,
+      "baseline_chart": 136,
+      "candidate_chart": 22,
+      "lost_direct": [
+        "1981-172",
+        "2004-024"
+      ],
+      "new_direct": [],
+      "removed_irrelevant": [
+        "1990-005"
+      ],
+      "new_irrelevant": [],
+      "lost_direct_top10": [
+        "1981-172",
+        "2004-024"
+      ],
+      "baseline_judged_direct": [
+        "1981-172",
+        "1986-139",
+        "2004-024",
+        "2007-068"
+      ],
+      "candidate_judged_direct": [
+        "1986-139",
+        "2007-068"
+      ],
+      "baseline_judged_irrelevant": [
+        "1990-005"
+      ],
+      "candidate_judged_irrelevant": []
+    },
+    "immigration": {
+      "seconds": 1.6491464999999152,
+      "candidates": 147,
+      "baseline_chart": 144,
+      "candidate_chart": 8,
+      "lost_direct": [
+        "1984-145",
+        "2002-003",
+        "2011-075",
+        "2020-058",
+        "2025-055"
+      ],
+      "new_direct": [],
+      "removed_irrelevant": [],
+      "new_irrelevant": [],
+      "lost_direct_top10": [
+        "2011-075",
+        "2020-058",
+        "2025-055"
+      ],
+      "baseline_judged_direct": [
+        "1984-145",
+        "2002-003",
+        "2011-075",
+        "2020-058",
+        "2025-055"
+      ],
+      "candidate_judged_direct": [],
+      "baseline_judged_irrelevant": [],
+      "candidate_judged_irrelevant": []
+    },
+    "racial discrimination": {
+      "seconds": 1.6476953749988752,
+      "candidates": 156,
+      "baseline_chart": 155,
+      "candidate_chart": 4,
+      "lost_direct": [
+        "1949-065",
+        "1965-035",
+        "1975-154",
+        "1985-085",
+        "2006-073"
+      ],
+      "new_direct": [],
+      "removed_irrelevant": [],
+      "new_irrelevant": [],
+      "lost_direct_top10": [
+        "1975-154",
+        "1985-085",
+        "2006-073"
+      ],
+      "baseline_judged_direct": [
+        "1949-065",
+        "1965-035",
+        "1975-154",
+        "1985-085",
+        "2006-073"
+      ],
+      "candidate_judged_direct": [],
+      "baseline_judged_irrelevant": [],
+      "candidate_judged_irrelevant": []
+    },
+    "labor unions": {
+      "seconds": 1.764227125000616,
+      "candidates": 166,
+      "baseline_chart": 162,
+      "candidate_chart": 33,
+      "lost_direct": [
+        "1956-044",
+        "1974-139",
+        "2017-045"
+      ],
+      "new_direct": [],
+      "removed_irrelevant": [],
+      "new_irrelevant": [],
+      "lost_direct_top10": [
+        "1956-044",
+        "1956-079",
+        "1980-127"
+      ],
+      "baseline_judged_direct": [
+        "1956-044",
+        "1956-079",
+        "1974-139",
+        "1980-127",
+        "2017-045"
+      ],
+      "candidate_judged_direct": [
+        "1956-079",
+        "1980-127"
+      ],
+      "baseline_judged_irrelevant": [],
+      "candidate_judged_irrelevant": []
+    },
+    "campaign finance": {
+      "seconds": 1.7465937079996365,
+      "candidates": 167,
+      "baseline_chart": 75,
+      "candidate_chart": 0,
+      "lost_direct": [
+        "1999-026",
+        "2007-072",
+        "2021-040"
+      ],
+      "new_direct": [],
+      "removed_irrelevant": [
+        "1974-125"
+      ],
+      "new_irrelevant": [],
+      "lost_direct_top10": [
+        "1999-026",
+        "2007-072",
+        "2021-040"
+      ],
+      "baseline_judged_direct": [
+        "1999-026",
+        "2007-072",
+        "2021-040"
+      ],
+      "candidate_judged_direct": [],
+      "baseline_judged_irrelevant": [
+        "1974-125"
+      ],
+      "candidate_judged_irrelevant": []
+    },
+    "privacy": {
+      "seconds": 1.670473000000129,
+      "candidates": 152,
+      "baseline_chart": 129,
+      "candidate_chart": 0,
+      "lost_direct": [
+        "1985-144",
+        "2003-046",
+        "2010-020",
+        "2017-021"
+      ],
+      "new_direct": [],
+      "removed_irrelevant": [],
+      "new_irrelevant": [],
+      "lost_direct_top10": [
+        "2003-046",
+        "2010-020",
+        "2017-021"
+      ],
+      "baseline_judged_direct": [
+        "1985-144",
+        "2003-046",
+        "2010-020",
+        "2017-021"
+      ],
+      "candidate_judged_direct": [],
+      "baseline_judged_irrelevant": [],
+      "candidate_judged_irrelevant": []
+    },
+    "search and seizure": {
+      "seconds": 1.5745116250000137,
+      "candidates": 146,
+      "baseline_chart": 144,
+      "candidate_chart": 1,
+      "lost_direct": [
+        "1960-133",
+        "1968-136",
+        "1976-122",
+        "1989-123",
+        "1992-085",
+        "2020-009"
+      ],
+      "new_direct": [],
+      "removed_irrelevant": [],
+      "new_irrelevant": [],
+      "lost_direct_top10": [
+        "1968-136",
+        "1992-085",
+        "2020-009"
+      ],
+      "baseline_judged_direct": [
+        "1960-133",
+        "1968-136",
+        "1976-122",
+        "1989-123",
+        "1992-085",
+        "2020-009"
+      ],
+      "candidate_judged_direct": [],
+      "baseline_judged_irrelevant": [],
+      "candidate_judged_irrelevant": []
+    },
+    "environmental protection": {
+      "seconds": 1.8595945830002165,
+      "candidates": 175,
+      "baseline_chart": 121,
+      "candidate_chart": 8,
+      "lost_direct": [
+        "2003-026",
+        "2008-040",
+        "2024-022"
+      ],
+      "new_direct": [],
+      "removed_irrelevant": [],
+      "new_irrelevant": [],
+      "lost_direct_top10": [
+        "2003-026",
+        "2008-040",
+        "2024-022"
+      ],
+      "baseline_judged_direct": [
+        "2003-026",
+        "2008-040",
+        "2024-022"
+      ],
+      "candidate_judged_direct": [],
+      "baseline_judged_irrelevant": [],
+      "candidate_judged_irrelevant": []
+    },
+    "disability rights": {
+      "seconds": 1.6803601660012646,
+      "candidates": 159,
+      "baseline_chart": 143,
+      "candidate_chart": 0,
+      "lost_direct": [
+        "2000-022",
+        "2024-061"
+      ],
+      "new_direct": [],
+      "removed_irrelevant": [
+        "1978-082"
+      ],
+      "new_irrelevant": [],
+      "lost_direct_top10": [
+        "2000-022",
+        "2024-061"
+      ],
+      "baseline_judged_direct": [
+        "2000-022",
+        "2024-061"
+      ],
+      "candidate_judged_direct": [],
+      "baseline_judged_irrelevant": [
+        "1978-082"
+      ],
+      "candidate_judged_irrelevant": []
+    },
+    "school segregation": {
+      "seconds": 1.4994687500002328,
+      "candidates": 142,
+      "baseline_chart": 136,
+      "candidate_chart": 7,
+      "lost_direct": [
+        "1970-082"
+      ],
+      "new_direct": [],
+      "removed_irrelevant": [
+        "1988-060",
+        "2005-007"
+      ],
+      "new_irrelevant": [],
+      "lost_direct_top10": [
+        "1970-082"
+      ],
+      "baseline_judged_direct": [
+        "1970-082",
+        "1972-164",
+        "1973-173"
+      ],
+      "candidate_judged_direct": [
+        "1972-164",
+        "1973-173"
+      ],
+      "baseline_judged_irrelevant": [
+        "1988-060",
+        "2005-007"
+      ],
+      "candidate_judged_irrelevant": []
+    },
+    "health care": {
+      "seconds": 1.7143642499995622,
+      "candidates": 158,
+      "baseline_chart": 52,
+      "candidate_chart": 0,
+      "lost_direct": [
+        "1980-115",
+        "1987-154",
+        "2011-077"
+      ],
+      "new_direct": [],
+      "removed_irrelevant": [],
+      "new_irrelevant": [],
+      "lost_direct_top10": [
+        "1980-115",
+        "2011-077"
+      ],
+      "baseline_judged_direct": [
+        "1980-115",
+        "1987-154",
+        "2011-077"
+      ],
+      "candidate_judged_direct": [],
+      "baseline_judged_irrelevant": [],
+      "candidate_judged_irrelevant": []
+    },
+    "criminal sentencing": {
+      "seconds": 1.7629345419991296,
+      "candidates": 168,
+      "baseline_chart": 165,
+      "candidate_chart": 9,
+      "lost_direct": [
+        "1992-019",
+        "2004-014",
+        "2021-041"
+      ],
+      "new_direct": [],
+      "removed_irrelevant": [],
+      "new_irrelevant": [],
+      "lost_direct_top10": [
+        "2004-014",
+        "2021-041"
+      ],
+      "baseline_judged_direct": [
+        "1992-019",
+        "1994-076",
+        "2004-014",
+        "2010-078",
+        "2021-041"
+      ],
+      "candidate_judged_direct": [
+        "1994-076",
+        "2010-078"
+      ],
+      "baseline_judged_irrelevant": [],
+      "candidate_judged_irrelevant": []
+    },
+    "property rights": {
+      "seconds": 1.6969912499989732,
+      "candidates": 163,
+      "baseline_chart": 157,
+      "candidate_chart": 0,
+      "lost_direct": [
+        "1983-159",
+        "2001-039",
+        "2016-051",
+        "2020-051"
+      ],
+      "new_direct": [],
+      "removed_irrelevant": [],
+      "new_irrelevant": [],
+      "lost_direct_top10": [
+        "2001-039",
+        "2016-051",
+        "2020-051"
+      ],
+      "baseline_judged_direct": [
+        "1983-159",
+        "2001-039",
+        "2016-051",
+        "2020-051"
+      ],
+      "candidate_judged_direct": [],
+      "baseline_judged_irrelevant": [],
+      "candidate_judged_irrelevant": []
+    },
+    "contraception": {
+      "seconds": 1.1177567089998774,
+      "candidates": 107,
+      "baseline_chart": 23,
+      "candidate_chart": 0,
+      "lost_direct": [
+        "1964-121",
+        "1971-079",
+        "1976-126",
+        "1982-135",
+        "2013-070",
+        "2019-060"
+      ],
+      "new_direct": [],
+      "removed_irrelevant": [
+        "2008-079"
+      ],
+      "new_irrelevant": [],
+      "lost_direct_top10": [
+        "1964-121",
+        "1971-079",
+        "1976-126",
+        "1982-135",
+        "2013-070",
+        "2019-060"
+      ],
+      "baseline_judged_direct": [
+        "1964-121",
+        "1971-079",
+        "1976-126",
+        "1982-135",
+        "2013-070",
+        "2019-060"
+      ],
+      "candidate_judged_direct": [],
+      "baseline_judged_irrelevant": [
+        "2008-079"
+      ],
+      "candidate_judged_irrelevant": []
+    },
+    "same-sex marriage": {
+      "seconds": 1.7507888340005593,
+      "candidates": 166,
+      "baseline_chart": 19,
+      "candidate_chart": 1,
+      "lost_direct": [
+        "2012-077",
+        "2012-079",
+        "2017-020"
+      ],
+      "new_direct": [],
+      "removed_irrelevant": [
+        "1970-053",
+        "1977-007"
+      ],
+      "new_irrelevant": [],
+      "lost_direct_top10": [
+        "2012-079",
+        "2017-020"
+      ],
+      "baseline_judged_direct": [
+        "2012-077",
+        "2012-079",
+        "2014-070",
+        "2017-020"
+      ],
+      "candidate_judged_direct": [
+        "2014-070"
+      ],
+      "baseline_judged_irrelevant": [
+        "1970-053",
+        "1977-007"
+      ],
+      "candidate_judged_irrelevant": []
+    },
+    "capital punishment": {
+      "seconds": 1.6186236670000653,
+      "candidates": 156,
+      "baseline_chart": 122,
+      "candidate_chart": 11,
+      "lost_direct": [
+        "1981-172"
+      ],
+      "new_direct": [],
+      "removed_irrelevant": [],
+      "new_irrelevant": [],
+      "lost_direct_top10": [],
+      "baseline_judged_direct": [
+        "1981-172",
+        "1986-139",
+        "2004-024",
+        "2007-068"
+      ],
+      "candidate_judged_direct": [
+        "1986-139",
+        "2004-024",
+        "2007-068"
+      ],
+      "baseline_judged_irrelevant": [],
+      "candidate_judged_irrelevant": []
+    },
+    "healthcare": {
+      "seconds": 1.684851209000044,
+      "candidates": 159,
+      "baseline_chart": 12,
+      "candidate_chart": 0,
+      "lost_direct": [
+        "1980-115"
+      ],
+      "new_direct": [],
+      "removed_irrelevant": [],
+      "new_irrelevant": [],
+      "lost_direct_top10": [
+        "1980-115"
+      ],
+      "baseline_judged_direct": [
+        "1980-115"
+      ],
+      "candidate_judged_direct": [],
+      "baseline_judged_irrelevant": [],
+      "candidate_judged_irrelevant": []
+    }
+  },
+  "gate": {
+    "no_lost_direct": false,
+    "no_new_irrelevant": true,
+    "no_lost_direct_top10": false,
+    "removes_known_irrelevant": true
+  },
+  "passes_development_gate": false,
+  "p95_rerank_seconds": 1.8455338079999817,
+  "max_rerank_seconds": 2.1569022920011776,
+  "peak_rss_mib": 516.3125,
+  "memory_scope": "Offline evaluation process: reranker and all request text; excludes hybrid model and web service. Not deployment footprint.",
+  "requests_sha256": "60a8693b130d98fa3f0450702b4440f5502ff6c5faac4d21dc733cc4b4eb7e9b",
+  "ranking_only_diagnostic": {
+    "status": "Post-run diagnostic, not a separately validated candidate; no cutoff used for this comparison",
+    "queries": {
+      "birth control": {
+        "baseline_direct_top10": 6,
+        "reranked_direct_top10": 1,
+        "lost_direct_top10": [
+          "1964-121",
+          "1971-079",
+          "1976-126",
+          "2013-070",
+          "2019-060"
+        ],
+        "new_direct_top10": [],
+        "baseline_irrelevant_top10": 0,
+        "reranked_irrelevant_top10": 0
+      },
+      "gay marriage": {
+        "baseline_direct_top10": 3,
+        "reranked_direct_top10": 4,
+        "lost_direct_top10": [],
+        "new_direct_top10": [
+          "2012-077"
+        ],
+        "baseline_irrelevant_top10": 2,
+        "reranked_irrelevant_top10": 0
+      },
+      "gun control": {
+        "baseline_direct_top10": 5,
+        "reranked_direct_top10": 2,
+        "lost_direct_top10": [
+          "2007-071",
+          "2021-013",
+          "2023-012"
+        ],
+        "new_direct_top10": [],
+        "baseline_irrelevant_top10": 0,
+        "reranked_irrelevant_top10": 0
+      },
+      "abortion": {
+        "baseline_direct_top10": 10,
+        "reranked_direct_top10": 10,
+        "lost_direct_top10": [
+          "1975-170",
+          "1976-157",
+          "1982-112",
+          "1985-106",
+          "1990-077",
+          "1999-088",
+          "2021-019"
+        ],
+        "new_direct_top10": [
+          "1975-004",
+          "1976-155",
+          "1979-149",
+          "1980-057",
+          "1988-150",
+          "1989-133",
+          "1991-117"
+        ],
+        "baseline_irrelevant_top10": 0,
+        "reranked_irrelevant_top10": 0
+      },
+      "voting rights": {
+        "baseline_direct_top10": 4,
+        "reranked_direct_top10": 1,
+        "lost_direct_top10": [
+          "1965-064",
+          "2020-046",
+          "2025-014"
+        ],
+        "new_direct_top10": [],
+        "baseline_irrelevant_top10": 0,
+        "reranked_irrelevant_top10": 0
+      },
+      "religious freedom": {
+        "baseline_direct_top10": 3,
+        "reranked_direct_top10": 1,
+        "lost_direct_top10": [
+          "1969-087",
+          "2021-061"
+        ],
+        "new_direct_top10": [],
+        "baseline_irrelevant_top10": 0,
+        "reranked_irrelevant_top10": 0
+      },
+      "free speech": {
+        "baseline_direct_top10": 3,
+        "reranked_direct_top10": 2,
+        "lost_direct_top10": [
+          "2023-062"
+        ],
+        "new_direct_top10": [],
+        "baseline_irrelevant_top10": 0,
+        "reranked_irrelevant_top10": 0
+      },
+      "death penalty": {
+        "baseline_direct_top10": 4,
+        "reranked_direct_top10": 2,
+        "lost_direct_top10": [
+          "1981-172",
+          "2004-024"
+        ],
+        "new_direct_top10": [],
+        "baseline_irrelevant_top10": 0,
+        "reranked_irrelevant_top10": 0
+      },
+      "immigration": {
+        "baseline_direct_top10": 3,
+        "reranked_direct_top10": 0,
+        "lost_direct_top10": [
+          "2011-075",
+          "2020-058",
+          "2025-055"
+        ],
+        "new_direct_top10": [],
+        "baseline_irrelevant_top10": 0,
+        "reranked_irrelevant_top10": 0
+      },
+      "racial discrimination": {
+        "baseline_direct_top10": 3,
+        "reranked_direct_top10": 1,
+        "lost_direct_top10": [
+          "1985-085",
+          "2006-073"
+        ],
+        "new_direct_top10": [],
+        "baseline_irrelevant_top10": 0,
+        "reranked_irrelevant_top10": 0
+      },
+      "labor unions": {
+        "baseline_direct_top10": 3,
+        "reranked_direct_top10": 0,
+        "lost_direct_top10": [
+          "1956-044",
+          "1956-079",
+          "1980-127"
+        ],
+        "new_direct_top10": [],
+        "baseline_irrelevant_top10": 0,
+        "reranked_irrelevant_top10": 0
+      },
+      "campaign finance": {
+        "baseline_direct_top10": 3,
+        "reranked_direct_top10": 1,
+        "lost_direct_top10": [
+          "1999-026",
+          "2021-040"
+        ],
+        "new_direct_top10": [],
+        "baseline_irrelevant_top10": 0,
+        "reranked_irrelevant_top10": 0
+      },
+      "privacy": {
+        "baseline_direct_top10": 3,
+        "reranked_direct_top10": 2,
+        "lost_direct_top10": [
+          "2017-021"
+        ],
+        "new_direct_top10": [],
+        "baseline_irrelevant_top10": 0,
+        "reranked_irrelevant_top10": 0
+      },
+      "search and seizure": {
+        "baseline_direct_top10": 3,
+        "reranked_direct_top10": 1,
+        "lost_direct_top10": [
+          "1968-136",
+          "2020-009"
+        ],
+        "new_direct_top10": [],
+        "baseline_irrelevant_top10": 0,
+        "reranked_irrelevant_top10": 0
+      },
+      "environmental protection": {
+        "baseline_direct_top10": 3,
+        "reranked_direct_top10": 0,
+        "lost_direct_top10": [
+          "2003-026",
+          "2008-040",
+          "2024-022"
+        ],
+        "new_direct_top10": [],
+        "baseline_irrelevant_top10": 0,
+        "reranked_irrelevant_top10": 0
+      },
+      "disability rights": {
+        "baseline_direct_top10": 2,
+        "reranked_direct_top10": 1,
+        "lost_direct_top10": [
+          "2024-061"
+        ],
+        "new_direct_top10": [],
+        "baseline_irrelevant_top10": 0,
+        "reranked_irrelevant_top10": 0
+      },
+      "school segregation": {
+        "baseline_direct_top10": 3,
+        "reranked_direct_top10": 2,
+        "lost_direct_top10": [
+          "1970-082"
+        ],
+        "new_direct_top10": [],
+        "baseline_irrelevant_top10": 0,
+        "reranked_irrelevant_top10": 0
+      },
+      "health care": {
+        "baseline_direct_top10": 2,
+        "reranked_direct_top10": 1,
+        "lost_direct_top10": [
+          "1980-115"
+        ],
+        "new_direct_top10": [],
+        "baseline_irrelevant_top10": 0,
+        "reranked_irrelevant_top10": 0
+      },
+      "criminal sentencing": {
+        "baseline_direct_top10": 4,
+        "reranked_direct_top10": 2,
+        "lost_direct_top10": [
+          "2004-014",
+          "2021-041"
+        ],
+        "new_direct_top10": [],
+        "baseline_irrelevant_top10": 0,
+        "reranked_irrelevant_top10": 0
+      },
+      "property rights": {
+        "baseline_direct_top10": 3,
+        "reranked_direct_top10": 2,
+        "lost_direct_top10": [
+          "2016-051",
+          "2020-051"
+        ],
+        "new_direct_top10": [
+          "1983-159"
+        ],
+        "baseline_irrelevant_top10": 0,
+        "reranked_irrelevant_top10": 0
+      },
+      "contraception": {
+        "baseline_direct_top10": 6,
+        "reranked_direct_top10": 6,
+        "lost_direct_top10": [],
+        "new_direct_top10": [],
+        "baseline_irrelevant_top10": 0,
+        "reranked_irrelevant_top10": 1
+      },
+      "same-sex marriage": {
+        "baseline_direct_top10": 3,
+        "reranked_direct_top10": 4,
+        "lost_direct_top10": [],
+        "new_direct_top10": [
+          "2012-077"
+        ],
+        "baseline_irrelevant_top10": 2,
+        "reranked_irrelevant_top10": 0
+      },
+      "capital punishment": {
+        "baseline_direct_top10": 3,
+        "reranked_direct_top10": 3,
+        "lost_direct_top10": [],
+        "new_direct_top10": [],
+        "baseline_irrelevant_top10": 0,
+        "reranked_irrelevant_top10": 0
+      },
+      "healthcare": {
+        "baseline_direct_top10": 1,
+        "reranked_direct_top10": 1,
+        "lost_direct_top10": [
+          "1980-115"
+        ],
+        "new_direct_top10": [
+          "2011-077"
+        ],
+        "baseline_irrelevant_top10": 0,
+        "reranked_irrelevant_top10": 0
+      }
+    }
+  },
+  "local_profile": {
+    "platform": "darwin",
+    "requests": 3,
+    "candidates": 135,
+    "seconds": [
+      1.4696466669993242,
+      1.4265995000005205,
+      1.459306208000271
+    ],
+    "peak_rss_mib": 591.9375,
+    "scope": "Fresh process with both models; one serial query. Excludes Gunicorn master, survey search, concurrent requests and context lookup; not a VPS/cgroup measurement."
+  },
+  "decision": "Rejected. No runtime or deployment changes."
+}

@@ -1,0 +1,328 @@
+{
+  "status": "Offline evaluation of unchanged saved rankings; production unchanged",
+  "benchmark_labels": 244,
+  "provenance": {
+    "artifacts/court-passage-support-v1/baseline.json": "010dbd6458bd5e8f1db5aebd99158bf53de67003c4b5732cc8dc331a480ebbae",
+    "artifacts/court-dual-source-v1/rankings.json": "ebe014ca41f577574f1933c8fc2c5d759e1eeb7562a3ae9304884a607491a294",
+    "data/evaluation/court-search-benchmark-v3.json": "555f570a7f284f2aebf970fdcc85d34135ce7db5c44f37a08dcec1eb0b244094",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/evaluate_frozen_court.py": "fae3e7783725df40490821bad6100721c67bfb600de607859ae5794ffd4993f5"
+  },
+  "gate": {
+    "no_lost_direct": true,
+    "no_new_irrelevant": false,
+    "no_lost_direct_top10": true,
+    "removes_known_irrelevant": true
+  },
+  "passes": false,
+  "queries": {
+    "birth control": {
+      "baseline_chart": 11,
+      "candidate_chart": 10,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "gay marriage": {
+      "baseline_chart": 25,
+      "candidate_chart": 22,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": [
+        "2020-015",
+        "2021-019",
+        "2024-019"
+      ]
+    },
+    "gun control": {
+      "baseline_chart": 82,
+      "candidate_chart": 79,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": [
+        "2021-019",
+        "2024-019",
+        "2025-007"
+      ]
+    },
+    "abortion": {
+      "baseline_chart": 95,
+      "candidate_chart": 94,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [
+        "2024-029"
+      ],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "voting rights": {
+      "baseline_chart": 135,
+      "candidate_chart": 134,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": [
+        "2021-019"
+      ]
+    },
+    "religious freedom": {
+      "baseline_chart": 119,
+      "candidate_chart": 119,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "free speech": {
+      "baseline_chart": 145,
+      "candidate_chart": 145,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "death penalty": {
+      "baseline_chart": 136,
+      "candidate_chart": 136,
+      "lost_direct": [],
+      "new_irrelevant": [
+        "2020-020"
+      ],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [
+        "1985-073"
+      ],
+      "removed_unjudged": [
+        "2021-019",
+        "2023-055"
+      ]
+    },
+    "immigration": {
+      "baseline_chart": 144,
+      "candidate_chart": 145,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [
+        "1986-051"
+      ],
+      "removed_unjudged": []
+    },
+    "racial discrimination": {
+      "baseline_chart": 155,
+      "candidate_chart": 154,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": [
+        "2021-021"
+      ]
+    },
+    "labor unions": {
+      "baseline_chart": 162,
+      "candidate_chart": 161,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": [
+        "2022-030"
+      ]
+    },
+    "campaign finance": {
+      "baseline_chart": 75,
+      "candidate_chart": 71,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": [
+        "2020-046",
+        "2020-055",
+        "2021-021",
+        "2021-024"
+      ]
+    },
+    "privacy": {
+      "baseline_chart": 129,
+      "candidate_chart": 128,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": [
+        "2020-019"
+      ]
+    },
+    "search and seizure": {
+      "baseline_chart": 144,
+      "candidate_chart": 144,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "environmental protection": {
+      "baseline_chart": 121,
+      "candidate_chart": 121,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [
+        "1985-083"
+      ],
+      "removed_unjudged": [
+        "2025-054"
+      ]
+    },
+    "disability rights": {
+      "baseline_chart": 143,
+      "candidate_chart": 141,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [
+        "1988-108"
+      ],
+      "removed_unjudged": [
+        "2020-047",
+        "2021-027",
+        "2024-019"
+      ]
+    },
+    "school segregation": {
+      "baseline_chart": 136,
+      "candidate_chart": 136,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [
+        "1985-085"
+      ],
+      "removed_unjudged": [
+        "2024-037"
+      ]
+    },
+    "health care": {
+      "baseline_chart": 52,
+      "candidate_chart": 52,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "criminal sentencing": {
+      "baseline_chart": 165,
+      "candidate_chart": 165,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [
+        "1949-087",
+        "1969-128"
+      ],
+      "removed_unjudged": [
+        "2020-010",
+        "2021-019"
+      ]
+    },
+    "property rights": {
+      "baseline_chart": 157,
+      "candidate_chart": 156,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [
+        "1979-054"
+      ],
+      "removed_unjudged": [
+        "2020-062",
+        "2025-047"
+      ]
+    },
+    "contraception": {
+      "baseline_chart": 23,
+      "candidate_chart": 23,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "same-sex marriage": {
+      "baseline_chart": 19,
+      "candidate_chart": 19,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "capital punishment": {
+      "baseline_chart": 122,
+      "candidate_chart": 122,
+      "lost_direct": [],
+      "new_irrelevant": [
+        "2023-056"
+      ],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [
+        "2002-012",
+        "2020-037"
+      ],
+      "removed_unjudged": [
+        "2022-011",
+        "2023-055",
+        "2025-021"
+      ]
+    },
+    "healthcare": {
+      "baseline_chart": 12,
+      "candidate_chart": 10,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": [
+        "2022-054",
+        "2024-019"
+      ]
+    }
+  }
+}

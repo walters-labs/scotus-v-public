@@ -1,0 +1,2008 @@
+{
+  "provenance": {
+    "artifacts/affirmative-action.sqlite": "a7e8e8757291dce0f0cca727f2dfc4bbe01e6c7c3da6c7367739cf74e60cf064",
+    "data/processed/modern/official.json": "7eb621dd39323be34e2df127cdf45407fed6e5828c3c78bd9e5e71cb030a7089",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/audit_court_text_quality.py": "908b98ee972d029c330ec4c6265b7caa9117210470fd376635b9c62702107da2"
+  },
+  "counts": {
+    "syllabus": 7305,
+    "short_syllabus_opinion_fallback": 429,
+    "official_opinion_fallback": 391
+  },
+  "signals": {
+    "official_opinion_fallback": {
+      "documents": 391,
+      "watermark": 348,
+      "line_end_hyphen": 390,
+      "opening_amicus": 183
+    },
+    "short_syllabus_opinion_fallback": {
+      "documents": 429,
+      "watermark": 0,
+      "line_end_hyphen": 0,
+      "opening_amicus": 14
+    },
+    "syllabus": {
+      "documents": 7305,
+      "watermark": 0,
+      "line_end_hyphen": 0,
+      "opening_amicus": 21
+    }
+  },
+  "limitations": "Signals are not confirmed error rates. Amicus mentions can be substantive. Syllabus header presence is not validated extraction; absence in two pages does not prove absence.",
+  "official_pdf_probe": {
+    "records": [
+      {
+        "case_id": "2018-010",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2018-015",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2018-053",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2018-054",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2018-055",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2018-056",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2018-063",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2018-069",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2018-078",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2019-002",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2019-007",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2019-014",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2019-021",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2019-032",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2019-044",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2019-063",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2019-064",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2019-065",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2019-069",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2019-073",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2019-075",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-002",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-003",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-004",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-005",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-006",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2020-007",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-008",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-009",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-010",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-011",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-012",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-013",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-014",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-015",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-016",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-017",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-018",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-019",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-020",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-021",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-022",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-025",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-026",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-027",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-028",
+        "indexed": false,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-029",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-030",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-031",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-032",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-033",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-035",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2020-036",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2020-037",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-038",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-039",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-042",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-043",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-044",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2020-046",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-047",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-049",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-051",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-052",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-053",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-054",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-055",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-056",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-057",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-058",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-059",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-060",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-061",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-062",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-064",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-065",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-066",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-067",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-068",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-070",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-071",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2020-072",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-073",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2020-074",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-001",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-003",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-004",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-005",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-006",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-007",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-008",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-009",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-010",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-011",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-012",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2021-013",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2021-014",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-015",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-016",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-017",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-018",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-019",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-020",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-021",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-022",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-023",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-024",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-025",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-026",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-027",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-029",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-030",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-031",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2021-032",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-033",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-034",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-035",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-036",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-037",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-038",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-039",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-040",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-041",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-042",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-043",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-045",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-046",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-047",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-048",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-049",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-050",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2021-051",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-053",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-055",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-056",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-057",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-058",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-059",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-060",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-061",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-062",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-063",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-064",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-066",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-067",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-068",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2021-069",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-001",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-003",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2022-004",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2022-005",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-006",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-007",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-008",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-009",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-011",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-012",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-013",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-015",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-016",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-017",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-018",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-019",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-020",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-021",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-022",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-023",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-024",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-025",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-026",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2022-027",
+        "indexed": false,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2022-028",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-030",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-031",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-032",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-033",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-034",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-035",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-036",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-037",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-038",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-039",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-041",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-042",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-043",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-044",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-045",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-046",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-047",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-048",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-049",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-050",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-051",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-052",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-053",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-054",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-055",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-056",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-057",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-058",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-059",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-061",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2022-062",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-001",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-002",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-003",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2023-004",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-005",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-006",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2023-007",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-008",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-009",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2023-010",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-011",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-012",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-013",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-014",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-015",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-016",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-017",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-018",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-019",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-020",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-021",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-022",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-023",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-024",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-025",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-026",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-027",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-028",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-029",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-032",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-033",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-034",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-035",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-037",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-038",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-039",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-040",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-041",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-042",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-043",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-044",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-045",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-047",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-048",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-049",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-050",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-051",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-052",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2023-053",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-054",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-055",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-056",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-057",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-058",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-059",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-060",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-061",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2023-062",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-001",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-002",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-003",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-004",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-005",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-006",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-007",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-008",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-009",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-010",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-011",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2024-012",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-013",
+        "indexed": false,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2024-014",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-015",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-017",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-018",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-019",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-020",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-021",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-022",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-023",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-024",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-026",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-027",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-028",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-029",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-030",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-031",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-032",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-033",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-034",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-035",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-036",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-037",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-038",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-039",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-040",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-041",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-043",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-045",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-046",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-048",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-049",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-050",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-051",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-052",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-053",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2024-054",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-055",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-056",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-057",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-058",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-059",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-060",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-061",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-062",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-064",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-065",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-066",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2024-067",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2024-068",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2025-001",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2025-002",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-003",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2025-004",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-005",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-006",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-007",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-008",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-009",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-010",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-011",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-012",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-013",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-014",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-015",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-016",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-017",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-018",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-019",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-020",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-021",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-022",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-023",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-024",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-025",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-026",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-027",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-028",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-030",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-031",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2025-032",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-034",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-035",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-036",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-037",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-038",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-039",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-040",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-041",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-042",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-043",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-044",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-046",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2025-047",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-048",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-049",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-050",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-051",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-052",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-053",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-054",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-055",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-056",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-057",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-058",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-059",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-060",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-061",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-062",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "2025-063",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-064",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-065",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-066",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-067",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "2025-068",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": true
+      },
+      {
+        "case_id": "official:2026-09-25:26A388",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "official:2026-09-25:26A308",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "official:2026-09-04:26A274",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "official:2026-08-31:26A203",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "official:2026-08-24:26A124",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      },
+      {
+        "case_id": "official:2026-10-14:26A476",
+        "indexed": true,
+        "syllabus_header_in_first_two_pages": false
+      }
+    ],
+    "indexed_syllabus_headers": 350
+  }
+}

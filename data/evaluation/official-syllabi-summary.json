@@ -1,0 +1,3443 @@
+{
+  "gate": {
+    "no_lost_direct": true,
+    "no_new_irrelevant": true,
+    "no_lost_direct_top10": false,
+    "removes_known_irrelevant": true
+  },
+  "passes": false,
+  "queries": {
+    "birth control": {
+      "baseline_chart": 11,
+      "candidate_chart": 9,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": []
+    },
+    "gay marriage": {
+      "baseline_chart": 25,
+      "candidate_chart": 22,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": []
+    },
+    "gun control": {
+      "baseline_chart": 82,
+      "candidate_chart": 77,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": []
+    },
+    "abortion": {
+      "baseline_chart": 95,
+      "candidate_chart": 93,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [
+        "2024-029",
+        "2025-013"
+      ],
+      "lost_direct_top10": []
+    },
+    "voting rights": {
+      "baseline_chart": 135,
+      "candidate_chart": 134,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [
+        "2020-046"
+      ]
+    },
+    "religious freedom": {
+      "baseline_chart": 119,
+      "candidate_chart": 119,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": []
+    },
+    "free speech": {
+      "baseline_chart": 145,
+      "candidate_chart": 145,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [
+        "2023-062",
+        "2024-029"
+      ]
+    },
+    "death penalty": {
+      "baseline_chart": 136,
+      "candidate_chart": 136,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": []
+    },
+    "immigration": {
+      "baseline_chart": 144,
+      "candidate_chart": 144,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [
+        "2020-058"
+      ]
+    },
+    "racial discrimination": {
+      "baseline_chart": 155,
+      "candidate_chart": 154,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": []
+    },
+    "labor unions": {
+      "baseline_chart": 162,
+      "candidate_chart": 161,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": []
+    },
+    "campaign finance": {
+      "baseline_chart": 75,
+      "candidate_chart": 69,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [
+        "2021-040"
+      ]
+    },
+    "privacy": {
+      "baseline_chart": 129,
+      "candidate_chart": 127,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": []
+    },
+    "search and seizure": {
+      "baseline_chart": 144,
+      "candidate_chart": 144,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": []
+    },
+    "environmental protection": {
+      "baseline_chart": 121,
+      "candidate_chart": 121,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": []
+    },
+    "disability rights": {
+      "baseline_chart": 143,
+      "candidate_chart": 141,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [
+        "2024-061"
+      ]
+    },
+    "school segregation": {
+      "baseline_chart": 136,
+      "candidate_chart": 136,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": []
+    },
+    "health care": {
+      "baseline_chart": 52,
+      "candidate_chart": 51,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": []
+    },
+    "criminal sentencing": {
+      "baseline_chart": 165,
+      "candidate_chart": 164,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [
+        "2021-041"
+      ]
+    },
+    "property rights": {
+      "baseline_chart": 157,
+      "candidate_chart": 155,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": []
+    },
+    "contraception": {
+      "baseline_chart": 23,
+      "candidate_chart": 23,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": []
+    },
+    "same-sex marriage": {
+      "baseline_chart": 19,
+      "candidate_chart": 17,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": []
+    },
+    "capital punishment": {
+      "baseline_chart": 122,
+      "candidate_chart": 121,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": []
+    },
+    "healthcare": {
+      "baseline_chart": 12,
+      "candidate_chart": 8,
+      "lost_direct": [],
+      "new_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": []
+    }
+  },
+  "candidate_manifest_sha256": "0cac56a0162684b83136ec21273eda6d1c4822a2cb03f74df23ad1e9cdb764bc",
+  "benchmark_sha256": "abc09a4d6c73e1362f4dfbb9663cacd5e7254ae73f43a64c4f2b656ba1e24538",
+  "ranking_regressions": [
+    {
+      "query": "voting rights",
+      "case_id": "2020-046",
+      "name": "BRNOVICH v. DEMOCRATIC NATIONAL COMMITTEE",
+      "before_rank": 4,
+      "after_rank": 17
+    },
+    {
+      "query": "free speech",
+      "case_id": "2023-062",
+      "name": "MOODY v. NETCHOICE, LLC",
+      "before_rank": 2,
+      "after_rank": 20
+    },
+    {
+      "query": "free speech",
+      "case_id": "2024-029",
+      "name": "FREE SPEECH COALITION v. PAXTON",
+      "before_rank": 3,
+      "after_rank": 36
+    },
+    {
+      "query": "immigration",
+      "case_id": "2020-058",
+      "name": "SANCHEZ v. MAYORKAS",
+      "before_rank": 4,
+      "after_rank": 45
+    },
+    {
+      "query": "campaign finance",
+      "case_id": "2021-040",
+      "name": "FEDERAL ELECTION COMMISSION v. TED CRUZ FOR SENATE",
+      "before_rank": 1,
+      "after_rank": 12
+    },
+    {
+      "query": "disability rights",
+      "case_id": "2024-061",
+      "name": "A.J.T. v. OSSEO AREA SCHOOLS, INDEPENDENT SCHOOL DISTRICT NO. 279",
+      "before_rank": 2,
+      "after_rank": 23
+    },
+    {
+      "query": "criminal sentencing",
+      "case_id": "2021-041",
+      "name": "CONCEPCION v. UNITED STATES",
+      "before_rank": 3,
+      "after_rank": 13
+    }
+  ],
+  "extraction": {
+    "rule": "Only bounded, docket-confirmed official syllabi with Held; unchanged model, windows, lexical index and scoring. No threshold tuning.",
+    "provenance": {
+      "artifacts/affirmative-action.sqlite": "a7e8e8757291dce0f0cca727f2dfc4bbe01e6c7c3da6c7367739cf74e60cf064",
+      "artifacts/semantic-affirmative-action/manifest.json": "ec5050a7c158cecaf46ac92988e5a7a0fba7a2dc3a7fbacd586d3d222ed272d9",
+      "data/processed/modern/official.json": "7eb621dd39323be34e2df127cdf45407fed6e5828c3c78bd9e5e71cb030a7089",
+      "artifacts/court-passage-support-v1/baseline.json": "010dbd6458bd5e8f1db5aebd99158bf53de67003c4b5732cc8dc331a480ebbae",
+      "data/evaluation/court-search-benchmark-v2.json": "abc09a4d6c73e1362f4dfbb9663cacd5e7254ae73f43a64c4f2b656ba1e24538",
+      "/Users/jackson/GitHub/scotus-v-public/scripts/experiment_official_syllabi.py": "a8b93e310321eddf4a5963c75f9c918d8a7a4c2fa966b3dbe9efdce19dc61921"
+    },
+    "records": [
+      {
+        "case_id": "2018-010",
+        "source_url": "https://www.supremecourt.gov/opinions/18pdf/16-1363_a86c.pdf",
+        "pdf_sha256": "4caca0a52cb02aee8458f6d8c9a313bd0886c9f9b9e7887cde08c0bfaeda93b4",
+        "status": "fallback",
+        "reason": "analysis_after_disposition"
+      },
+      {
+        "case_id": "2018-015",
+        "source_url": "https://www.supremecourt.gov/opinions/18pdf/17-961_j42k.pdf",
+        "pdf_sha256": "e55ac4a5eb36d3ccd1544cbf7b1af6c3d61f7a49a05bfe2074638d6a2238759e",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2018-053",
+        "source_url": "https://www.supremecourt.gov/opinions/18pdf/18-56_3d9g.pdf",
+        "pdf_sha256": "5e0a5365a89dc4ee86275b27ac4356638235492901a2fbbc3c1d3a0a5d601cdd",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2018-054",
+        "source_url": "https://www.supremecourt.gov/opinions/18pdf/17-1660_5ifl.pdf",
+        "pdf_sha256": "b632fcaa1cc4258e1d30077e6cbeeb0e8f9ccefa28660e65e5818f011b4a4124",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2018-055",
+        "source_url": "https://www.supremecourt.gov/opinions/18pdf/18-272_4hdj.pdf",
+        "pdf_sha256": "667b6583de569d41cbfe2239f3e59c639661ac7edcd3e2859a6bb4b3ce75d542",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2018-056",
+        "source_url": "https://www.supremecourt.gov/opinions/18pdf/18-443_2b34.pdf",
+        "pdf_sha256": "0aa3454eba7ea2a7d20599671cc34e145d15f054a5f22a0a9cb54a6b3303a034",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2018-063",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/588US2PP_final.pdf#page=220",
+        "pdf_sha256": "ce8da9165dcf7af84775e49ad2ece3f1a9003823cb21433cb7a03c781f92fd2d",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2018-069",
+        "source_url": "https://www.supremecourt.gov/opinions/18pdf/18-459_4hdj.pdf",
+        "pdf_sha256": "41674cfc72a2012e1fc0b2463d2d0436056462722c4a77e6841fd65b0644c3d5",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2018-078",
+        "source_url": "https://www.supremecourt.gov/opinions/18pdf/18-483_3d9g.pdf",
+        "pdf_sha256": "40b23275abdd5ac1d2578a11071450942b2587ee993a9cc24eb99ec3ddec5981",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2019-002",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/590US1PP_web.pdf#page=99",
+        "pdf_sha256": "2f7772b5683143e58b903a7eb189571b27ffa1b9d599951fca5ec3e4292a6a83",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2019-007",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/589US1PP_Web.pdf#page=49",
+        "pdf_sha256": "994602f7d6f2300ac409d20f149e9600c448254067fc764977b00023417fb70b",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2019-014",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/589US1PP_Web.pdf#page=90",
+        "pdf_sha256": "994602f7d6f2300ac409d20f149e9600c448254067fc764977b00023417fb70b",
+        "status": "candidate",
+        "pages": 1,
+        "words": 303,
+        "text_sha256": "74079719aba13e271449d6237b2c1640f2adc7042c24c59fe794467119aece48"
+      },
+      {
+        "case_id": "2019-021",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/590US1PP_web.pdf#page=352",
+        "pdf_sha256": "2f7772b5683143e58b903a7eb189571b27ffa1b9d599951fca5ec3e4292a6a83",
+        "status": "candidate",
+        "pages": 1,
+        "words": 180,
+        "text_sha256": "1573b87df875d4ee89ebd136b8eebdcf169b03b5682e680ebcdbc7a9572ea751"
+      },
+      {
+        "case_id": "2019-032",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/590US1PP_web.pdf#page=434",
+        "pdf_sha256": "2f7772b5683143e58b903a7eb189571b27ffa1b9d599951fca5ec3e4292a6a83",
+        "status": "candidate",
+        "pages": 2,
+        "words": 671,
+        "text_sha256": "27e4017a042eb7e371fe2f140ec513ed1c7c807a236f54ae053ba7b128a9fe38"
+      },
+      {
+        "case_id": "2019-044",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/589US1PP_Web.pdf#page=42",
+        "pdf_sha256": "994602f7d6f2300ac409d20f149e9600c448254067fc764977b00023417fb70b",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2019-063",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/591US2PP_web.pdf#page=169",
+        "pdf_sha256": "d113d76eee1b7784cf541fee195299ced7ed5ee615b8afe50c588febb5eb5fd7",
+        "status": "fallback",
+        "reason": "analysis_after_disposition"
+      },
+      {
+        "case_id": "2019-064",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/589US1PP_Web.pdf#page=98",
+        "pdf_sha256": "994602f7d6f2300ac409d20f149e9600c448254067fc764977b00023417fb70b",
+        "status": "fallback",
+        "reason": "no_substantive_holding"
+      },
+      {
+        "case_id": "2019-065",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/589US2PP_final.pdf#page=237",
+        "pdf_sha256": "37361623c7f81b66b2764f9cbebf6d9eb4a128763ac1c7f5985dd6388b7e021d",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2019-069",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/590US2PP_web.pdf#page=394",
+        "pdf_sha256": "41eddf01a724ea6c82983f9e6c3beb3c30429f67b171de03ba4991f6756fc423",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2019-073",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/591US2PP_web.pdf#page=214",
+        "pdf_sha256": "d113d76eee1b7784cf541fee195299ced7ed5ee615b8afe50c588febb5eb5fd7",
+        "status": "candidate",
+        "pages": 1,
+        "words": 67,
+        "text_sha256": "79648d52f2335692e7ae53f56e615ce80090cea36712c56ab1f5d50cb7805e17"
+      },
+      {
+        "case_id": "2019-075",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/591US2PP_web.pdf#page=536",
+        "pdf_sha256": "d113d76eee1b7784cf541fee195299ced7ed5ee615b8afe50c588febb5eb5fd7",
+        "status": "candidate",
+        "pages": 1,
+        "words": 85,
+        "text_sha256": "8bf5153dc39fd6afba469f9b5ac2a944c77e7afe5409c39bc25225dd6f1ce414"
+      },
+      {
+        "case_id": "2020-002",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/592US1PP_web.pdf#page=93",
+        "pdf_sha256": "6bf297333aade78f011a1bc4fc79f1f4acad821152c7c56466996ac3548a323f",
+        "status": "candidate",
+        "pages": 2,
+        "words": 676,
+        "text_sha256": "0dc4412b9c03a0c1c73a22984eac0d0996d48dae1de81a40805b146b7071bc1a"
+      },
+      {
+        "case_id": "2020-003",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/592US1PP_web.pdf#page=83",
+        "pdf_sha256": "6bf297333aade78f011a1bc4fc79f1f4acad821152c7c56466996ac3548a323f",
+        "status": "candidate",
+        "pages": 2,
+        "words": 506,
+        "text_sha256": "bae04a9d661251456a39bf2b16ff2ebbf903c48062cecb3dedba15d8db751e6b"
+      },
+      {
+        "case_id": "2020-004",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/592US1PP_web.pdf#page=120",
+        "pdf_sha256": "6bf297333aade78f011a1bc4fc79f1f4acad821152c7c56466996ac3548a323f",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2020-005",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/592us2r21_p86a.pdf",
+        "pdf_sha256": "f91b638e8c58c382ce682c8ff763beffc16356bf21df7b294c69d7653690e438",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1122,
+        "text_sha256": "b96569e81bdd7485419ad9cf77477d0574d204ea60296a742f76ee002963c322"
+      },
+      {
+        "case_id": "2020-006",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/593us1r26_f29g.pdf",
+        "pdf_sha256": "23827beee1980fe872d62c58a9711ba484bbdc73a9aeb0d7c2bcba8cc591c5bc",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2020-007",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/592US1PP_web.pdf#page=194",
+        "pdf_sha256": "6bf297333aade78f011a1bc4fc79f1f4acad821152c7c56466996ac3548a323f",
+        "status": "candidate",
+        "pages": 2,
+        "words": 549,
+        "text_sha256": "87bf430741923b79c6128b5ce1bf60edbf17e1fceecd0efa0c72fe086586b7c4"
+      },
+      {
+        "case_id": "2020-008",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/592US1PP_web.pdf#page=109",
+        "pdf_sha256": "6bf297333aade78f011a1bc4fc79f1f4acad821152c7c56466996ac3548a323f",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2020-009",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/592us2r20_o759.pdf",
+        "pdf_sha256": "4a0e77e7c462b1ca3a9185afa1406677b4e5b28cee2f9fdfc78f5929d4c87f53",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2020-010",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/592us2r17_l537.pdf",
+        "pdf_sha256": "e06fa515ec7e0ff0900f3ed7946fb40af5a67134ae5eae6b34b664120cfb0222",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1004,
+        "text_sha256": "cf39b05f26a2996b3c5d94f9b6b015d045ff4d941c547ecc2589f92f7a92a9b1"
+      },
+      {
+        "case_id": "2020-011",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/592us2r18_7l48.pdf",
+        "pdf_sha256": "0de8cbea5e6309e6dec8901a674799104713d2fb70e0059593b1be60fd74f7df",
+        "status": "candidate",
+        "pages": 2,
+        "words": 748,
+        "text_sha256": "c3f363de74fb3cf7fedce3dd228acaa8aea4e057414cf9b79be3e29a2b320082"
+      },
+      {
+        "case_id": "2020-012",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/592US1PP_web.pdf#page=228",
+        "pdf_sha256": "6bf297333aade78f011a1bc4fc79f1f4acad821152c7c56466996ac3548a323f",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2020-013",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/593us2r44_3eah.pdf",
+        "pdf_sha256": "e5b53a3d09a8a7fb848072e1a55f142f73034f96e3105e553d98baa3455d5e3f",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2020-014",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/593us1r30_4315.pdf",
+        "pdf_sha256": "e21708b8149950e5326d7bddc50b44ef694f4543740686f0b7a5045c4ba5612e",
+        "status": "candidate",
+        "pages": 2,
+        "words": 623,
+        "text_sha256": "880d7092a874862c49b8ec98d27a57e471292e2a15df9f0c45416a8044c2ebee"
+      },
+      {
+        "case_id": "2020-015",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/593us2r47_8m59.pdf",
+        "pdf_sha256": "7688ac1a239c89eb58922876b61bff2f301f0ae8683ca3d64e73b00eb6fb953d",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1189,
+        "text_sha256": "87aa24a9e27d0e493a792f3d9d833c6dc9954eb0405870f2e6fffeda5610c9eb"
+      },
+      {
+        "case_id": "2020-016",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/592us2r16_1971.pdf",
+        "pdf_sha256": "ab86178527114df990a97e4bf003874663c9fa71072ee3b6e32bd195b993f76f",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2020-017",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/593us1r32_21o3.pdf",
+        "pdf_sha256": "52e1c2d11acf20ed9b9c9c493251eace454892f9c420d41a236199b7ae3d5150",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2020-018",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/593us2r49_c0nd.pdf",
+        "pdf_sha256": "75b0f178fc2ff165aac3e6529eb21fd1b44bf6983d52194de6e1790433b82ff3",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2020-019",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/593us2r42_n7ip.pdf",
+        "pdf_sha256": "cbd94e4c35491d0b2cb9adb545e3481816069b4cce1a25b4db614e741548140c",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1324,
+        "text_sha256": "5035eaf555a6dd07fe4cb1d094003a72db42f16dfc607ff91871c6fee46e4b76"
+      },
+      {
+        "case_id": "2020-020",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/593us1r36_j4ek.pdf",
+        "pdf_sha256": "aa2a60ff15d80f6fe8e5706e9f0dc75121eb9e981c7c0b63b21fe3c301151192",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2020-021",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/593us2r48_p8k0.pdf",
+        "pdf_sha256": "b783f1d65575049afa26ff673e2539f2db7eae880adc87f6eaecc808a751765f",
+        "status": "candidate",
+        "pages": 2,
+        "words": 232,
+        "text_sha256": "e1679524c68f25c01669b332a0379973aced0f636fc2d3b1437f7781515f008e"
+      },
+      {
+        "case_id": "2020-022",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/593us1r34_mlho.pdf",
+        "pdf_sha256": "c29edfc66eaffdc83532e25c1b90d2668fe5b75eb7feb4add0d57ea9cfed3557",
+        "status": "candidate",
+        "pages": 2,
+        "words": 722,
+        "text_sha256": "068fa3520a8ad432f109da2c9da0c901d802071af77ee6832e0da791b0366ced"
+      },
+      {
+        "case_id": "2020-025",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/592US1PP_web.pdf#page=247",
+        "pdf_sha256": "6bf297333aade78f011a1bc4fc79f1f4acad821152c7c56466996ac3548a323f",
+        "status": "fallback",
+        "reason": "no_substantive_holding"
+      },
+      {
+        "case_id": "2020-026",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/592US1PP_web.pdf#page=209",
+        "pdf_sha256": "6bf297333aade78f011a1bc4fc79f1f4acad821152c7c56466996ac3548a323f",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1292,
+        "text_sha256": "11f39067302b80f13eb3a57ee4abe945b6468c97d690b3d5ac61b2c7d9046c38"
+      },
+      {
+        "case_id": "2020-027",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/592us2r23_1bn2.pdf",
+        "pdf_sha256": "28e6840e19a47d85627f1a04c55d8a801073a3959a9a1ebba6ae444ac6bfe66b",
+        "status": "candidate",
+        "pages": 3,
+        "words": 904,
+        "text_sha256": "53c7322ddc89dec5474d920fd2814c1999e1e5b52c0a2dbbb58aef8328d3842f"
+      },
+      {
+        "case_id": "2020-029",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/594us1r55_5468.pdf",
+        "pdf_sha256": "a83f490ef3c8fe7dff60a323e464fd4bdc73fb805602248348e30a8a8e31debd",
+        "status": "candidate",
+        "pages": 6,
+        "words": 2438,
+        "text_sha256": "1f6bdcced70073e518b57e56938115ca327da713b9d09950c7b140a141f8c566"
+      },
+      {
+        "case_id": "2020-030",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/593us1r28_758b.pdf",
+        "pdf_sha256": "a3b3061f560bff34209f0327909e0cdbe408ebd589948ddcabc85e3290b54835",
+        "status": "candidate",
+        "pages": 3,
+        "words": 781,
+        "text_sha256": "f71c26084ffed47279ea6bd74434a43362ba4167dc106805a90747147a45b89a"
+      },
+      {
+        "case_id": "2020-031",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/594us2r63_4f15.pdf",
+        "pdf_sha256": "27dd16f9c7089148e6a9cea4eaf12ff2edc2c91a229684885329cf93cf354270",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1127,
+        "text_sha256": "47fd2d758f8c68f89ca2e6698ed94c1b84299b40ff60d8e31c4b5c2ddd64b04f"
+      },
+      {
+        "case_id": "2020-032",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/592us2r19_8mjp.pdf",
+        "pdf_sha256": "370f9dc1eff8638da88f024d82e2dcd6dbcf49c91eaabcfdfb77ab6bbb14b3b8",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2020-033",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/592US1PP_web.pdf#page=165",
+        "pdf_sha256": "6bf297333aade78f011a1bc4fc79f1f4acad821152c7c56466996ac3548a323f",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2020-035",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/592US1PP_web.pdf#page=47",
+        "pdf_sha256": "6bf297333aade78f011a1bc4fc79f1f4acad821152c7c56466996ac3548a323f",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2020-036",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/592US1PP_web.pdf#page=41",
+        "pdf_sha256": "6bf297333aade78f011a1bc4fc79f1f4acad821152c7c56466996ac3548a323f",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2020-037",
+        "source_url": "https://www.supremecourt.gov/opinions/preliminaryprint/592US1PP_web.pdf#page=151",
+        "pdf_sha256": "6bf297333aade78f011a1bc4fc79f1f4acad821152c7c56466996ac3548a323f",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2020-038",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/592us2r24_19m2.pdf",
+        "pdf_sha256": "f55df67f10c6598b64add503dbb460b472e5c90cdf2df518e7d98a5eefbf055d",
+        "status": "candidate",
+        "pages": 2,
+        "words": 601,
+        "text_sha256": "67c7d399dd0229d52c3ba5a075bf7c8d556e4a6ea5be691c652ac54cbe89e6ef"
+      },
+      {
+        "case_id": "2020-039",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/593us1r35_i425.pdf",
+        "pdf_sha256": "ce7415c692bf858a28d41a6aca8c170a317841cb77e635290a80a9bfa08c7b81",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2020-042",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/593us2r41_9o6b.pdf",
+        "pdf_sha256": "cb3fc816df2096195f2b8ee562f14a42eed48236d1f9158b6e39a9c6729744b9",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2020-043",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/594us1r56_7k47.pdf",
+        "pdf_sha256": "fa24f9592f389f71ce6f887329d8930a2ee14ba12001b9947c660c96a9b654a8",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2020-044",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/594us1r50_m6io.pdf",
+        "pdf_sha256": "633a2c603b56770fe0fa99f0b4d76e855e9c0fdf7970f944556640930ca0d61c",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2020-046",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/594us2r66_5468.pdf",
+        "pdf_sha256": "eb2b04082193bdd9504dcae829d7cddd88684f276d5a06d69f85691af6d3867e",
+        "status": "candidate",
+        "pages": 6,
+        "words": 2484,
+        "text_sha256": "687eb5ca45cf5c4accb5d1c8b1c287e41add6f1a248f825567f95a5bdf970b4e"
+      },
+      {
+        "case_id": "2020-047",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/593us1r29_b97c.pdf",
+        "pdf_sha256": "8b2b71e9ee9279f02a149cb31b692c9ef12fd7903817fadee8cdf0fcd3adc40e",
+        "status": "candidate",
+        "pages": 2,
+        "words": 674,
+        "text_sha256": "7bdfc73a32edb2c91b0899ce632004659623dd4b160b3fb0b527a3afb4bdbb64"
+      },
+      {
+        "case_id": "2020-049",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/593us2r40_j5fl.pdf",
+        "pdf_sha256": "566e0829d217ceebfd6d4039493621f1f8de9e0a891a251db4b7b0d02efc243b",
+        "status": "candidate",
+        "pages": 2,
+        "words": 805,
+        "text_sha256": "247cadb42ce0abfed279e5ae66218d64ea0972a48e80bf0b64a74d1021149593"
+      },
+      {
+        "case_id": "2020-051",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/594us1r53_0pm1.pdf",
+        "pdf_sha256": "985ad4d406c5023bfe83866989b7cf8f6e411d64a621de99d45a0edf418c84f9",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2020-052",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/593us1r33_4i29.pdf",
+        "pdf_sha256": "49fd95ba2b463c1501f57d762c31bb9c60902eb78fc5c79ad07c101bfa0c29a1",
+        "status": "candidate",
+        "pages": 2,
+        "words": 398,
+        "text_sha256": "3a5df8fdd6389454f1f6c76a4ba9d3e4d1148634a4e6d0544f0297b820005470"
+      },
+      {
+        "case_id": "2020-053",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/594us1r52_3e04.pdf",
+        "pdf_sha256": "f63bb538fd6b0a9af67d4588b3d65fef090ae457a7503196b09e822b7e304129",
+        "status": "candidate",
+        "pages": 3,
+        "words": 940,
+        "text_sha256": "fa84edf208b56bd5d531a30b6effab64a8484ac804b2a1188cbe5da9dc6d48bc"
+      },
+      {
+        "case_id": "2020-054",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/594us2r59_197d.pdf",
+        "pdf_sha256": "999fb878304c48611e3eebbbabd9f9eca746849fd296c5a12a59e1f9609824b6",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1259,
+        "text_sha256": "ce631f5346d89388fe88053dff7d0e2ce24f5397a463b5276bf3e93386b93a0a"
+      },
+      {
+        "case_id": "2020-055",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/594us1r51_7k47.pdf",
+        "pdf_sha256": "d21abcbec1dfc74dd6cfd5d2c0bfd4cd2a9e310baed05d6ae517ba6ff5528e49",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1302,
+        "text_sha256": "57195f170c72e5cc08a67535992f6f42b07d77b1eeda988ee100260ab356f644"
+      },
+      {
+        "case_id": "2020-056",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/594us2r65_2co3.pdf",
+        "pdf_sha256": "870c1348d5ac06f36fdbf074f56424987b755a1139c15dc60c1d5230240b5515",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2020-057",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/594us1r54_k5gm.pdf",
+        "pdf_sha256": "97b3a7a938d2e5b7c4c497fe9c0b15b24bda6f0d6aa663adb3f257ee69f974ba",
+        "status": "candidate",
+        "pages": 3,
+        "words": 887,
+        "text_sha256": "78cc0301c8070c12e3aaa64acefffa1f9bdabc4b31f380e575d7f6fcf8373097"
+      },
+      {
+        "case_id": "2020-058",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/593us2r43_22p3.pdf",
+        "pdf_sha256": "722302f40908396c270408f2d7191953217f292f724dbd52bd645719192d0cc0",
+        "status": "candidate",
+        "pages": 2,
+        "words": 515,
+        "text_sha256": "dd256e0b1034fc8e9edbf6b8fa2a72b1ef5fa2ba669583075997d2c7a620be53"
+      },
+      {
+        "case_id": "2020-059",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/593us2r39_j4el.pdf",
+        "pdf_sha256": "c3527a44373ee39b13a36c50a78a698acd1960cb90930f24a4f770f9f78caeca",
+        "status": "candidate",
+        "pages": 2,
+        "words": 836,
+        "text_sha256": "1dc0676285ce8a4440a6f8bf151cc789d5d8b28f727cceda0ba2aaa5e1278695"
+      },
+      {
+        "case_id": "2020-060",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/593us2r37_1an2.pdf",
+        "pdf_sha256": "9d333f89c250927d1987bbf1c9318ed8c17199d88cf09447fb6882bee30910fa",
+        "status": "candidate",
+        "pages": 2,
+        "words": 829,
+        "text_sha256": "56b414af48b84ce082c04724ba17271e0df1b7397a8456527d1d04a27011aedd"
+      },
+      {
+        "case_id": "2020-061",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/593us2r38_n648.pdf",
+        "pdf_sha256": "1faec98fee6a72194cbb4d76cda220d615b520c36de727728fc8f6389577a812",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2020-062",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/594us2r64_anbf.pdf",
+        "pdf_sha256": "5a65e28396b2a936381123d98771ee5175e298b36196be235eda02d6f7ad895b",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1350,
+        "text_sha256": "be18270a7193a538d00bcbb6631d6830ed30cd307b4a2e68a45e32918caf07f5"
+      },
+      {
+        "case_id": "2020-064",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/594us2r58_6537.pdf",
+        "pdf_sha256": "25993d3741ea8374b33fc51610eb4a232985c549b712c94819633532bf0160d4",
+        "status": "candidate",
+        "pages": 3,
+        "words": 966,
+        "text_sha256": "d7403f957da67721f151cc67a8823b517ce987226e42f5f6b73437e38a28ffb4"
+      },
+      {
+        "case_id": "2020-065",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/594us2r57_4357.pdf",
+        "pdf_sha256": "8d043f3930f4bf2d69fb57cf25ddbd5dc46c2688d6b16d2b98afc401e5f75788",
+        "status": "candidate",
+        "pages": 3,
+        "words": 924,
+        "text_sha256": "9cc73230e4ab78e0e183a24dbc7e6a31e77b550012116d892535b117160d5604"
+      },
+      {
+        "case_id": "2020-066",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/593us2r45_5ifl.pdf",
+        "pdf_sha256": "94805387e04969a2d76b540582bbb3166bfe423879cc9f24af0f2eae3c16a195",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2020-067",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/593us2r46_1qm2.pdf",
+        "pdf_sha256": "4da2cf1422a33ae13cad6cd5904793960a9b23ae6b018ff14ce61cfbd646c189",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2020-068",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/594us2r62_19m1.pdf",
+        "pdf_sha256": "ea536e2b4f5c5ac2a5aca3d772845e0bdce8930896cafb61b890ec11112d2b11",
+        "status": "candidate",
+        "pages": 5,
+        "words": 1928,
+        "text_sha256": "be24fffad9d394939dcb1bc14e645a904807267c88f7fc5c47877174cfad035d"
+      },
+      {
+        "case_id": "2020-070",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/592us2r22_jgkn.pdf",
+        "pdf_sha256": "4d0a5431973bd1c151bcba01a46f7ad8fb55d3b11acf89e6ed096babe9f3c99a",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2020-071",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/593us1r31_g314.pdf",
+        "pdf_sha256": "4e660d3c0fc061610db5c3e5feb1b4535ce4620e524b26994a93169bcba61ead",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2020-072",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/594us2r67_k537.pdf",
+        "pdf_sha256": "e9164ba92ebaa896b99cb09d8453c859fddf3bab031a54b208949ae2e827844c",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2020-073",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/594us2r61_7m58.pdf",
+        "pdf_sha256": "06e89a29e2a369390e9359b503dddfc22c304431129c7a7a426e6b5de425575a",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2020-074",
+        "source_url": "https://www.supremecourt.gov/opinions/20pdf/594us2r60_2c83.pdf",
+        "pdf_sha256": "24dcc08322ccaab3c00c52a41b70a21f114387a967e28a98195a91c207676a11",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2021-001",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/595us2r16_d1pf.pdf",
+        "pdf_sha256": "ab837ae57fb6896fb23040f4ed60c56727733549e5bde32a9529d49b373ffadc",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2021-003",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us1r24_9p6b.pdf",
+        "pdf_sha256": "ff6497611b8ce1f329f9edd111da0cc34d72a95879a8a20a6a711bac81ddbe92",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1413,
+        "text_sha256": "85fa3558fe241fa2ab71a0e239f8c6c240730866e8aba0e4561c2e122686e36b"
+      },
+      {
+        "case_id": "2021-004",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/595us1r9_5iek.pdf",
+        "pdf_sha256": "59b49428ee030541a5a545308836d6a29999e9b1d0be7442b0acfea8b82e6ba4",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2021-005",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/595us2r12_1a72.pdf",
+        "pdf_sha256": "b1cb893711d795c32b66fad93265411e704163d6bf44e5c190951cfb8f3bf05e",
+        "status": "fallback",
+        "reason": "analysis_after_disposition"
+      },
+      {
+        "case_id": "2021-006",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/595us2r13_n7io.pdf",
+        "pdf_sha256": "95e36bc4f6021527ad42427c03fdadd12fa9de01f65a013c7f16614e608cc898",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2021-007",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us1r21_5f57.pdf",
+        "pdf_sha256": "06ad0b9857e61cdf4ee8806dd0ab8a8158241a9005e23fbed5f12724b9832e9a",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2021-008",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/595us2r14_l64n.pdf",
+        "pdf_sha256": "ed6beaa249bdb6b9bd0e3b43b3a53797ff1b8cb468a5d68fdcbd4aea74928da6",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1302,
+        "text_sha256": "4eb74b22f620adefc40da93f101e1998a428544eb9271f1de6409bb44c893966"
+      },
+      {
+        "case_id": "2021-009",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/595us1r6_ihdk.pdf",
+        "pdf_sha256": "d18a826d1bf7bfcf94b71134db1d5493e0acc95f69e54f9dd26de5296139d973",
+        "status": "candidate",
+        "pages": 2,
+        "words": 780,
+        "text_sha256": "d4a1d3ef0a9d713fcc5656ce1d4d5ca8becfda17f109711b55b6067624afa65b"
+      },
+      {
+        "case_id": "2021-010",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us1r32_e29g.pdf",
+        "pdf_sha256": "131ee37282b85402b6da9743e1b6479ee2c4d36d313f18cfad9a80cecce21899",
+        "status": "candidate",
+        "pages": 5,
+        "words": 1657,
+        "text_sha256": "b318c209f4d14c8faff1ba148341ef845474c2ce0b68a197d27683bc2bb94edc"
+      },
+      {
+        "case_id": "2021-011",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/595us2r19_8n59.pdf",
+        "pdf_sha256": "379c245eb7248f0ddfce9a885dbfbf8b67a269e7f888a13fa7e65de9f898be1b",
+        "status": "candidate",
+        "pages": 3,
+        "words": 968,
+        "text_sha256": "9821640872293b5e7d60de147451b1b6e2e31e6f4fbc515639db245596c91b8c"
+      },
+      {
+        "case_id": "2021-012",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us1r20_f2ag.pdf",
+        "pdf_sha256": "6f6d3249767ca1b731e0c182e353f0861e39046561d12aba7023ed35138cd9fe",
+        "status": "fallback",
+        "reason": "docket_not_confirmed"
+      },
+      {
+        "case_id": "2021-013",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/597us1r54_7648.pdf",
+        "pdf_sha256": "050f4a002f60f97729bd9a1da879cf1dc0c08955859b56aac8966c0a4bb3e76f",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2021-014",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/595us2r15_l537.pdf",
+        "pdf_sha256": "57ea5d9bc577453e7df11fc4173900104e1d10f11d50c1ebfc1be0bd4bc6fc5b",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1166,
+        "text_sha256": "b53ceded5e5c4122fc5842e99072d35ea1f2c0d71e0a5aff9ca58b9b2b88908a"
+      },
+      {
+        "case_id": "2021-015",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/595us2r11_4f14.pdf",
+        "pdf_sha256": "fbba9e12b6e0b0b17302a0fb433b8dd6440b445f459a8966a4be2f2d716dce13",
+        "status": "candidate",
+        "pages": 3,
+        "words": 938,
+        "text_sha256": "f936479263bd173095ccd360e0e2b93f22ef28a4ccf788aa28c963056143127f"
+      },
+      {
+        "case_id": "2021-016",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us1r25_bpm1.pdf",
+        "pdf_sha256": "d82394826c2026eb59067cbb8bdd9174408f69c4347570d352dd967e9e6e542e",
+        "status": "candidate",
+        "pages": 2,
+        "words": 505,
+        "text_sha256": "4d359298071bef55618c99688ba56390199b22f112db41c7d18dc90e9bedd6a2"
+      },
+      {
+        "case_id": "2021-017",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us1r22_4315.pdf",
+        "pdf_sha256": "c3b8f23b481c9fcd0bb0a84dd0676b572f1d4d19f0c746219194f5562bdad67a",
+        "status": "candidate",
+        "pages": 3,
+        "words": 994,
+        "text_sha256": "cf360995763266fba7dd76e84fa7b3982665795ec2eaac2327129964b305f212"
+      },
+      {
+        "case_id": "2021-018",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us2r40_2d93.pdf",
+        "pdf_sha256": "0aeadfe36e462b140606a8a880f5094c728c75133655604b4eb73b639001526a",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2021-019",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/597us1r58_gebh.pdf",
+        "pdf_sha256": "70091abee490f2ed61351bd072823e0743d6dd01b6f664359dbcf25bc755e0ad",
+        "status": "candidate",
+        "pages": 8,
+        "words": 3271,
+        "text_sha256": "c99e9ed7b95138418b07504256ad662e155cb5abde04cf662ec0d203383dc188"
+      },
+      {
+        "case_id": "2021-020",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/595us1r10_4hdj.pdf",
+        "pdf_sha256": "9bab6e2d0d8292b059b5b0ed800ef49c1bf4409ad59dd13bef356e67a1190f62",
+        "status": "candidate",
+        "pages": 2,
+        "words": 615,
+        "text_sha256": "6097a25b3bd4b2f7d53ed1ea62e8d0162e868e6e692adc94d2194bbd6bfb1128"
+      },
+      {
+        "case_id": "2021-021",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us1r27_5i36.pdf",
+        "pdf_sha256": "e63f6e3f9c14cf645ce7d18bcf2a4efae503d7c383259f0d719ea1fbf69d03a5",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1461,
+        "text_sha256": "f0343c5d300f5b494a73c8c7c7cc126df5ac777b84807d72345e614718b5cd19"
+      },
+      {
+        "case_id": "2021-022",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us2r39_7l48.pdf",
+        "pdf_sha256": "8a8180f53db3141dd3cfc771742f22f6235dd77b0aa3a78d3513eeb301342b75",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1032,
+        "text_sha256": "b71862c5aea649d24c8b1fb7b29cffbfdaad7b5c58c28abde409ab77613d43c3"
+      },
+      {
+        "case_id": "2021-023",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us1r31_5367.pdf",
+        "pdf_sha256": "995bbf062026d06e4def821c25269e4d66e69f9be268b00d9c3a68b285067c8d",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1249,
+        "text_sha256": "a1e1f721f490278672a7dda46583608cbfe5bfd5f8854411acef7547fd85db81"
+      },
+      {
+        "case_id": "2021-024",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us2r49_7l48.pdf",
+        "pdf_sha256": "699847e75835e016880aa443428cdbc30b7b9fca45a1b01b6f0d3108359219c3",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1393,
+        "text_sha256": "e3fbc8a5f85c14833b494a4b131bf328f08151c4cd63d12ad4becef8fb819efb"
+      },
+      {
+        "case_id": "2021-025",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us2r46_bqm1.pdf",
+        "pdf_sha256": "4a073a7488831863f1a28a7a7cd2692ca70bc6ba192bef152e63bd0c9ee59675",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2021-026",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us1r34_c9dh.pdf",
+        "pdf_sha256": "232e483d1a99327128c7edce0baf8cbd527972fea8bd1abad6e254e2fddaea44",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1344,
+        "text_sha256": "d9659c71fdef395ea10b6756b8b4a3dd6f672c316d0d277d8b0e733db0edc8c7"
+      },
+      {
+        "case_id": "2021-027",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/597us1r59_i4dk.pdf",
+        "pdf_sha256": "6cd983751b20af09cd946e2c166d6d1f8e754628d8fe4849801e0125ca799655",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1458,
+        "text_sha256": "81708f8a9839517ba53dbe09c938ab5e5408e6b8326cc0edb3783ca8bf2b4be7"
+      },
+      {
+        "case_id": "2021-029",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us2r52_886a.pdf",
+        "pdf_sha256": "85269f114e4eedd14fa0d0c0562975f5819ae1c053f7a9a650567906ec04bef2",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1136,
+        "text_sha256": "758ce780cf9ba3c979f1ff2af3d31fd253bab2aec0833ea34b7969c38a592249"
+      },
+      {
+        "case_id": "2021-030",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/595us2r18_a86c.pdf",
+        "pdf_sha256": "b41787594986dab5f455267fa334f36b29b34b654ed3e781019755cfecb6548f",
+        "status": "candidate",
+        "pages": 5,
+        "words": 1904,
+        "text_sha256": "c937782668b8a6998a96c22a46ed8f5da44dcb3ae68cf0a035c9142a0addf6b4"
+      },
+      {
+        "case_id": "2021-031",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/595us1r1_mkhn.pdf",
+        "pdf_sha256": "23955691e0b22777d225958ad4be349fa24f5e68365766a5637e7653852636fa",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2021-032",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/595us1r2_8njq.pdf",
+        "pdf_sha256": "b92440fdb34f3e70db57ddf314bcda88c9a11085d527ad1274da6b9f020ca4fc",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2021-033",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/595us1r4_0861.pdf",
+        "pdf_sha256": "5bfc2df3943f04277b26094114526ecbba2b7f2ed6dc8b51fdde62743965d4a6",
+        "status": "fallback",
+        "reason": "analysis_after_disposition"
+      },
+      {
+        "case_id": "2021-034",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/595us1r5_d1oe.pdf",
+        "pdf_sha256": "e6301be403418e72f93790c27d604fc73237338e3d13ba11b38eb289e3683b82",
+        "status": "fallback",
+        "reason": "no_substantive_holding"
+      },
+      {
+        "case_id": "2021-035",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/595us1r8_8o6a.pdf",
+        "pdf_sha256": "797cd667f062a7e051d50682446c857399f07ff306ae972f72345c0721dc8fab",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2021-036",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/595us1r7_4315.pdf",
+        "pdf_sha256": "c85fc401dd9f7af0ef388a7d7118cee93e055fe7a5b9280e79206e9c90abeb5a",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2021-037",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us1r26_o6p1.pdf",
+        "pdf_sha256": "f376976326ff9e75be8cfa9da6cb7ed25f056b7e86514d3095aae710dc74d5e9",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2021-038",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us1r23_heim.pdf",
+        "pdf_sha256": "7eae21e6898a458823150ec7ede43c81a80e6cf3c6fe204d679bf6bbb75a13f8",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2021-039",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us1r29_j3ko.pdf",
+        "pdf_sha256": "15e99cd593a6011d20a94bb44af6e10228e6c5bb87c3f3d97ee3638ecd857226",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1341,
+        "text_sha256": "20d5572bc29160df1ce292e49e8db6fd69b0560728187df6bd7c56918ade8bd0"
+      },
+      {
+        "case_id": "2021-040",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us1r30_o759.pdf",
+        "pdf_sha256": "e647a0103404fbc6de6f3be3a18ceb770480c3e49676e1f2a9dcc112437ed2c5",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1647,
+        "text_sha256": "550d6e3fd37e4352a27fe0f8fbcf5a68e57fd42eb8dfebe65d6b69fc81a7d95a"
+      },
+      {
+        "case_id": "2021-041",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/597us2r61_7khn.pdf",
+        "pdf_sha256": "01c2a82ed903373e126e721864e3269469120233fee779908a05b86c3ab220b2",
+        "status": "candidate",
+        "pages": 5,
+        "words": 1815,
+        "text_sha256": "541257e3ae837dc13117bb0eaf06bee5ab1716a8d7ef9fab800495006463c4d6"
+      },
+      {
+        "case_id": "2021-042",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us2r41_2924.pdf",
+        "pdf_sha256": "a8b478ea4a87a7bf666a17a31581935177394d3c6e84801c89d990800500d4b5",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1055,
+        "text_sha256": "0aec6062afac83dee738b79d3a76a9cf87885a31cdc0ef20fb0e12f8e9ee4510"
+      },
+      {
+        "case_id": "2021-043",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us2r45_3d46.pdf",
+        "pdf_sha256": "d697120ce3af1be9db27b7ede1aa75db495955868f9314a87d43b79accfe4189",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1550,
+        "text_sha256": "237d772449260f30c4e626d08ef7ef836c1a2a8f6d02ae995567d75891d416d7"
+      },
+      {
+        "case_id": "2021-045",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/597us2r65_5iel.pdf",
+        "pdf_sha256": "fee243cca15737985deefbca0f515809e38da034e1deb33aeef88c0ab2db6439",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2021-046",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/597us2r60_8oka.pdf",
+        "pdf_sha256": "e6b98b82b4883c06d01b7339f4fe86f6891b2b77b1078f5a909fe0948785d398",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1391,
+        "text_sha256": "49af22cac36597c5b0c4572497e3922de8123b36e32359840303ba4663859919"
+      },
+      {
+        "case_id": "2021-047",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us2r53_l6h1.pdf",
+        "pdf_sha256": "27a67cc0da8009ca93fd46a3b69801429004ed193ea6870fd35b6664f0fc2aa4",
+        "status": "candidate",
+        "pages": 2,
+        "words": 521,
+        "text_sha256": "5af1fd64829aafe2a35e5b636f4b4623e2e4a19b067e2c19be5c17fcf6ac8639"
+      },
+      {
+        "case_id": "2021-048",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us1r37_7l48.pdf",
+        "pdf_sha256": "77aca25def67fac2c73605cc5f4633d292b5449bbc6616d69d09bf9a6609c853",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1348,
+        "text_sha256": "5d8875ebdb51d912a0570315911c528790f9a100c70d8a0cc98a3943e9e9e50e"
+      },
+      {
+        "case_id": "2021-049",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/597us2r63_m6ho.pdf",
+        "pdf_sha256": "0d9bd5ffa502bd21f5b05f50079d412e2fc00deb624222da935825c2ec2ba7fb",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1517,
+        "text_sha256": "4ac0b07d2228c6e3bbb88957c0bfe41dc1606d0776b5f1d675b347ba077e8db9"
+      },
+      {
+        "case_id": "2021-050",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us1r28_6j36.pdf",
+        "pdf_sha256": "607a38d079cbc8a990eb1bfac54f401f355bf59921872054beb16c0285772a6d",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2021-051",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us2r44_6j37.pdf",
+        "pdf_sha256": "0b686ce3baeceade91a82826fc80957c3ba46062679b3d0eba88b20fd25a2f84",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2021-053",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us2r43_gn0f.pdf",
+        "pdf_sha256": "04de0530b297067d10c9f63230646000a1600ff432d262c7da7ceb35cb14a89e",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2021-055",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us2r47_m6hn.pdf",
+        "pdf_sha256": "f82ca55ec7e1045cde1dc649f1a88e5b39a0d643cefc4a486f850cc0212be749",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2021-056",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/597us1r57_b0nd.pdf",
+        "pdf_sha256": "86792f4b70a745703817d47d780cf8aa708a61eca0fa41b27c3df9f5dbc6584b",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1430,
+        "text_sha256": "129bd0cf637c28e346b5aa5621dca94c8c1ff2558f34ceb98b084d295c887ac7"
+      },
+      {
+        "case_id": "2021-057",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us1r35_664c.pdf",
+        "pdf_sha256": "694d9e9fed03aca856e1ce141a4c9e7f5e1d6475ea75467b87ffad8bb5063f0c",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1070,
+        "text_sha256": "71ce863926eb10444aecec9116616e1d6a7d01f6f7d39ee52a33128a6f0522fa"
+      },
+      {
+        "case_id": "2021-058",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us1r33_a86c.pdf",
+        "pdf_sha256": "5f9681d83b18ec27196b249b714269cded64cf31c4159df0d45a5463ed299cb1",
+        "status": "candidate",
+        "pages": 2,
+        "words": 666,
+        "text_sha256": "2ffc6a0c4b4c95a1d0c7732d9f5d54c7f234faa82a2ef5667ea0a8e40ed9a67f"
+      },
+      {
+        "case_id": "2021-059",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us2r42_3f14.pdf",
+        "pdf_sha256": "327a632010341d4b2dae3aa7c38aff1250e2c412bb9fcdac871ab3cdd56f0baa",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1458,
+        "text_sha256": "3a7e82061e1ec6424f91e25006b88c9c32bf528a2be3d14902901e9364dc37a4"
+      },
+      {
+        "case_id": "2021-060",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us2r51_6479.pdf",
+        "pdf_sha256": "11e8d038e8804c511df6f790afbbca61922aacab96865312e740ae0cc38bb290",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1052,
+        "text_sha256": "7cca364f81f9a1bfc4b1aad0cf3b1e76bf51cfe16445f2324c0b94294497a61e"
+      },
+      {
+        "case_id": "2021-061",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/597us2r62_d92h.pdf",
+        "pdf_sha256": "53dc3c56a3c6a70ddb15f2c727a2973a9e6567fd1880a62bda890046e30032a0",
+        "status": "candidate",
+        "pages": 5,
+        "words": 1917,
+        "text_sha256": "d9aaee5f2a96e219e20acb373a977ef5693d4c66c5ea74e61579d438b26c9ca4"
+      },
+      {
+        "case_id": "2021-062",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/597us2r64_5436.pdf",
+        "pdf_sha256": "4a468821a41d0eb3d2992bd74e63cf74d84201c490b761c9418b5cac9f190b20",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2021-063",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/597us1r56_p86b.pdf",
+        "pdf_sha256": "92b7e67d77f48b236327c2f0a5c6b06d57ba27da70d4277e2f399275ecf9684c",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1244,
+        "text_sha256": "89fc48cde3ddb43cf1603c39d2be8021b637f134d5efa1697c71bf78f062ebe0"
+      },
+      {
+        "case_id": "2021-064",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us1r36_k5fl.pdf",
+        "pdf_sha256": "775a8ddc68188e880d9592028b515d07bfe207f528fb350a5874477ec3e08c08",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2021-066",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/597us1r55_8m58.pdf",
+        "pdf_sha256": "5b39af57a191e4ffa6dc532fdfadf86f90a84f196e9c2331d6c16f91afd0a215",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1423,
+        "text_sha256": "a5e1d7ba6ec0231e9950cb89402d3e8e05a49c7cb671b9b804e1c2968c6ba9ec"
+      },
+      {
+        "case_id": "2021-067",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us2r50_2034.pdf",
+        "pdf_sha256": "8efa05321ad41a05288b326714ba62acb7f259b789a5e70335653034f69d9ad2",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1070,
+        "text_sha256": "f27398be84385a1dc59c34efb60172615768e7336a1845fa5e62f1f25b63da6d"
+      },
+      {
+        "case_id": "2021-068",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/596us2r38_e29f.pdf",
+        "pdf_sha256": "97a2279601085a40a138384478198f8d6b3d2a31919e44bf994309ea44b864a4",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2021-069",
+        "source_url": "https://www.supremecourt.gov/opinions/21pdf/597us2r66_k537.pdf",
+        "pdf_sha256": "6617eaffedbd3ab78aaf1c20e6ce2821c93efbe806d5060e90156953c198be76",
+        "status": "candidate",
+        "pages": 5,
+        "words": 1669,
+        "text_sha256": "b14c3d28022837b3d89d9d857301578fb919b024720f4e7a70608be6073e6d4d"
+      },
+      {
+        "case_id": "2022-001",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us2r28_hgcj.pdf",
+        "pdf_sha256": "af7b29e1907045cb3cccc7b0d8e36db50772a59a7ccb0def8afad6bbdf2c4ccb",
+        "status": "candidate",
+        "pages": 6,
+        "words": 2203,
+        "text_sha256": "b81c81c2fd68a153b78be3dc0150b7804da765e8eb7d5f577c93b7eae03216fa"
+      },
+      {
+        "case_id": "2022-003",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us1r1_3e04.pdf",
+        "pdf_sha256": "a9cac9ed25211c81fcf5c3177664d3950957e1148870844a198bbc3e3099e105",
+        "status": "fallback",
+        "reason": "docket_not_confirmed"
+      },
+      {
+        "case_id": "2022-004",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/599us1r33_dc8f.pdf",
+        "pdf_sha256": "6840b046da54008719ca4ba28f7caf8a99804ba229412b0f4a3d66a92497c0a0",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2022-005",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us1r12_l5gm.pdf",
+        "pdf_sha256": "4cde8b7a5790b7038bf86d6952cd768906229c29b03a68b057ccb18c19a8d28f",
+        "status": "candidate",
+        "pages": 2,
+        "words": 629,
+        "text_sha256": "3d09b48eca9e2022420b114c9fb3de578ee23d76d3c8ed40bd92478046a98eda"
+      },
+      {
+        "case_id": "2022-006",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us2r18_g2bh.pdf",
+        "pdf_sha256": "0028ea4c79418459882785fe66f8b64eaf0c17a2a79ef532651101ebd2638187",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2022-007",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us2r23_c0n2.pdf",
+        "pdf_sha256": "e30b7422927af494ce2dd0c56261138e27bc03f6e4bdfd13aaf654cc53564c6d",
+        "status": "candidate",
+        "pages": 6,
+        "words": 2483,
+        "text_sha256": "6045acd7465bcf81f406508b36fbd6d70744fa6403446d71dc72cbe4fe6b81b4"
+      },
+      {
+        "case_id": "2022-008",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us1r4_1a7d.pdf",
+        "pdf_sha256": "867b8717e71a423b8175fa7667dd9be2b67ec2f5415761f962d1c343f0ec788e",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1643,
+        "text_sha256": "33f02a1584ad3e6621a4dd2edc7722361c86c20f0186e2c5649eec3fe2306839"
+      },
+      {
+        "case_id": "2022-009",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/600us1r53_4g15.pdf",
+        "pdf_sha256": "4beb59d5910b71771b9a671684a3dca9ce8fd2483d4dbd8a71cc129ea0182911",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2022-011",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us1r3_j4ek.pdf",
+        "pdf_sha256": "524e5d9573f8d3ff16a4c20af451ed9dfd18d45e7f14dcb56be2760b5e4e1a51",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1062,
+        "text_sha256": "e4dbd8ba8b16d8ddbae09961b396a6c0dbd7fdca4b9dfad8c51cd33d73c0ec0b"
+      },
+      {
+        "case_id": "2022-012",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/599us1r42_2b35.pdf",
+        "pdf_sha256": "7fc24aa16225dbf8d0062f3010102176f90566c52d691205dba91358ab22b19d",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1673,
+        "text_sha256": "07db4b1492e5c12fb7e1edb942cab26e7eff058e1469f533087b6d21f1d7c0ea"
+      },
+      {
+        "case_id": "2022-013",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us1r6_0813.pdf",
+        "pdf_sha256": "12b9360b9eb1a9590bd0183e90c7357bd2f60b55e2b49201f752994ab121aa91",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2022-015",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us1r10_febh.pdf",
+        "pdf_sha256": "e6dbc4d8ce60054bebdcdf7f71366f207d657e106ca7734bb4c2acf18af99dd6",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2022-016",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/600us1r52_7l48.pdf",
+        "pdf_sha256": "5149e9957088896777c37e9b85b7b4f13b1039e3b1ca526cc9a4fff773c15bbc",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2022-017",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/599us1r36_feah.pdf",
+        "pdf_sha256": "d9756d09297f785ff1165238e23aae0417a9acda77bcf0a380e456708297d628",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2022-018",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/599us1r38_khmp.pdf",
+        "pdf_sha256": "08d0fa77f4281addfe5bb3d7758e0e588418a39dab3dd5fd3c129a1a15bcb873",
+        "status": "candidate",
+        "pages": 8,
+        "words": 3055,
+        "text_sha256": "f7ab82a7b79ef6f941fedac8c4055b530bb9a89d3426616e947010925320d971"
+      },
+      {
+        "case_id": "2022-019",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/600us1r58_7khn.pdf",
+        "pdf_sha256": "87fd2aa79e9a73dc85458ffb4e41ac91a0c6d2e40bf2d2774a812a9225317587",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2022-020",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us1r5_1b72.pdf",
+        "pdf_sha256": "b690b4e2f718cd62ddc03905dc917c7f99aeb0a13a22f892f3b96dde19c065db",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2022-021",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/599us1r40_q8l1.pdf",
+        "pdf_sha256": "f2238ca1e79ff267c93cd48ecb31b40a14db3f7f5382ec3ab7dd33166d6ea34a",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1586,
+        "text_sha256": "5d25fb40ae72c4046439d50597eeb573f82f067321087a2f52756498b689c242"
+      },
+      {
+        "case_id": "2022-022",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us2r16_4gdj.pdf",
+        "pdf_sha256": "5f3b062f51237430ae3a89ab85890e4cb3002f476cd3ac4f1be40f86822377b1",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1170,
+        "text_sha256": "2285be315f67eae7fa0e28fdca00d806312383d7b203e4136b3f25c1a7642f36"
+      },
+      {
+        "case_id": "2022-023",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us1r9_8mjp.pdf",
+        "pdf_sha256": "6df3d6e949307ad1c40845963fefc9b67ba7bc0daf8df5a7b852cff8107b656b",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1147,
+        "text_sha256": "6d2f4d423de87887b8be1279315ada894ed1e23bf3306f8a69d32b456de62f5c"
+      },
+      {
+        "case_id": "2022-024",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us2r15_d1o2.pdf",
+        "pdf_sha256": "e4dc0a4e320a58cfa025c3124c5b303866d0eea27f20924722f6839934fe6097",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2022-025",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us1r14_3e04.pdf",
+        "pdf_sha256": "6ee6e08cf4391831e6dec252e0ed2eedfc3afa07c1debfc5b045b4e9f98e3a74",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2022-026",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/600us1r50_h3ci.pdf",
+        "pdf_sha256": "e790c40f27cfc29a71075410d857d4d414965aaa7a867def746d808999b8c4e0",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2022-028",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us2r21_5425.pdf",
+        "pdf_sha256": "1d26b87b0bfaf22eaba67f05c3aa90eb0c1e37f8e84b969a3be84bcd251cb10f",
+        "status": "candidate",
+        "pages": 3,
+        "words": 860,
+        "text_sha256": "1f6e3646a7412b71d019053a6642dbd911ec0db3e6d445fa0f4a385e57efd16f"
+      },
+      {
+        "case_id": "2022-030",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us2r32_ca7d.pdf",
+        "pdf_sha256": "f25f8675a19b4c4ef23f53061791ccc8ecf8d7dc141ffc987fb90aa95bcb0275",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1060,
+        "text_sha256": "eeb8810d50ca96478335924c93c57d85780ffc91120c6e176a382cb89dd4181a"
+      },
+      {
+        "case_id": "2022-031",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us2r17_c0nd.pdf",
+        "pdf_sha256": "98faec7b5e5d03104853ddbfbe548cdc29fc0199a2c9db15d17567789cef21ef",
+        "status": "candidate",
+        "pages": 3,
+        "words": 909,
+        "text_sha256": "0941ffc2390ef515182d379e19306a537b90842b811de4a74b5ac983f3f54c0c"
+      },
+      {
+        "case_id": "2022-032",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us1r13_3e04.pdf",
+        "pdf_sha256": "868a92d02c0b86ce69bb94dc1b957bbbf7281b33399377945519f10ad42cafda",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1089,
+        "text_sha256": "eee2626999eb532eeac3083706fc9999bc76b559bebd617587b6ae6e61a511a6"
+      },
+      {
+        "case_id": "2022-033",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us2r19_dc8f.pdf",
+        "pdf_sha256": "523f28ee5dcc03b08320fba42182bda07a87c6300af4eca30f8ded2febcc96ea",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2022-034",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us1r8_limq.pdf",
+        "pdf_sha256": "2122362beae66d73dc6fcd3d85641136975f93ec7f8b8aef9cd692ce63572dca",
+        "status": "candidate",
+        "pages": 2,
+        "words": 796,
+        "text_sha256": "b17c666d188fe336a0a768a250d3f431d173d466a9179de4ad57636c3b8dd5ae"
+      },
+      {
+        "case_id": "2022-035",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us2r25_i32j.pdf",
+        "pdf_sha256": "fe76c1f6e8ed6b17d3a6a0bd8f602ee9a5f1a361aa25faad62e6caf2be65b647",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2022-036",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us2r22_hejm.pdf",
+        "pdf_sha256": "cdc4dd9267003bf8e776f7557a8afa5d9050f30f6326821aa37709120a62cb19",
+        "status": "candidate",
+        "pages": 6,
+        "words": 2445,
+        "text_sha256": "6ac2d9640fea13e1bdfd13676073870df820973ff43bfba5788b12436366257a"
+      },
+      {
+        "case_id": "2022-037",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/599us1r34_p86b.pdf",
+        "pdf_sha256": "dd608b26387f3e95842727f879e7c8ae6197059dca88b53e669a28622230f8c9",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2022-038",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/600us1r56_1o13.pdf",
+        "pdf_sha256": "ca73127a1ac9ec079b319c312b2a1c1c1043c0fba38d4d0a1b048e2340184648",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2022-039",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/600us1r57_o7kq.pdf",
+        "pdf_sha256": "70318283ef0b48f1536222f5538c5184177424fd3ae256579d4d380ae5f411b4",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2022-041",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/599us1r49_jgkn.pdf",
+        "pdf_sha256": "da6d7c826c762aa78dc8297cd23f41573001ad199e2db1c6ae55605cc41f1687",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1403,
+        "text_sha256": "e5fba0f5cb147c7e15e6ff882bd2ab4ca02e461b87c9963acdc48118b046b6de"
+      },
+      {
+        "case_id": "2022-042",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/599us1r44_54l8.pdf",
+        "pdf_sha256": "f96f0c9c03efaf7592ec6da75b14f04876f4838a9834a5d375f9befc15f43e4d",
+        "status": "candidate",
+        "pages": 3,
+        "words": 938,
+        "text_sha256": "6f9d7b236b4aafb0ec8138d3780cf140d05f2bcb16fea9f1d786599bfca3d5d2"
+      },
+      {
+        "case_id": "2022-043",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/599us1r48_986b.pdf",
+        "pdf_sha256": "c3f0f38cf9abade9232171ed39804c6bb24837048492de241f3c728ea273914f",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2022-044",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/600us1r54_g3bi.pdf",
+        "pdf_sha256": "372f0e4580b4a13e6a3ad449a750ba0ed78a79045fe07b17ef24ac032161be13",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1099,
+        "text_sha256": "ee5f489671a3d3044d05980f86db8c05295cbec5c81e17610b52a7b1d2861afb"
+      },
+      {
+        "case_id": "2022-045",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/599us1r35_3f14.pdf",
+        "pdf_sha256": "45a1d9a2e608ac47828291ce48d6a830256f15642804891e3f6a9157452eb597",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1271,
+        "text_sha256": "3aaac02f435b5f62f9ea480ed85daf7744d99f991feded0db0f261d401537104"
+      },
+      {
+        "case_id": "2022-046",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us2r24_m6hn.pdf",
+        "pdf_sha256": "38eee11ef8e39ed40e566961077ead7fb0ccb9ed2143eb51f71b85ab47ab174b",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1516,
+        "text_sha256": "089b5af87bbcf4481602446717a8423f4e62360369bfce50486af5d6a456e3b3"
+      },
+      {
+        "case_id": "2022-047",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/599us1r41_2bo2.pdf",
+        "pdf_sha256": "337341fd16d462a379b89feff32c3840fed571f0a4e25e64e4e6a8154c383db4",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2022-048",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/599us1r37_8m59.pdf",
+        "pdf_sha256": "2fbe4875a7e34b0bc7ce5fe6a6f0de155d07d9af02bda33e3b37976cf4996bf2",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2022-049",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/599us1r46_dc8f.pdf",
+        "pdf_sha256": "613adb32bc17966b1b9be125490a4506734c9a91929d968198e7704465ebeab8",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2022-050",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us2r20_b07d.pdf",
+        "pdf_sha256": "ed40ef933c84dc7711bb4329fc16f9eb5d364590e17b6842b44f42a142a6a6d0",
+        "status": "candidate",
+        "pages": 2,
+        "words": 684,
+        "text_sha256": "2091991e9015d3c1a88eda531fb8412c26f5ff555002124686993b1b27a3c9b9"
+      },
+      {
+        "case_id": "2022-051",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us2r31_5h26.pdf",
+        "pdf_sha256": "c58e1b7c61a65c49f2b7fcd66c2f2cd20dc8529dfa400064347d37b4ade651df",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1043,
+        "text_sha256": "eb99b0911b236d47cdf35fe7bf982f5030ad555497df5d40d74d0a998986ccc4"
+      },
+      {
+        "case_id": "2022-052",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/599us1r45_6537.pdf",
+        "pdf_sha256": "8b309a5e39a7f884d19d9f3378fd8ab8c1232437781faa9d8e0087c1ca7a652b",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2022-053",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/600us1r55_3dq4.pdf",
+        "pdf_sha256": "6b17b9d84575b1bb6590eea103149bd43253bdf6004f2152b7193d2ff0b0930e",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2022-054",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us2r30_g2bh.pdf",
+        "pdf_sha256": "f61c8b24700a5622e896ddc0af619f2b5c3baf9bef0ffc1e2083039d0d33dfbf",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1029,
+        "text_sha256": "305606aa01e8feab457682d7bcd9982d510a488f3a8e385d85d2c2e6a49ead69"
+      },
+      {
+        "case_id": "2022-055",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/600us1r51_g3bi.pdf",
+        "pdf_sha256": "fe6940feec1c23c8acc9787e87ad3d644dfea245c08f792187db7da82f48dd56",
+        "status": "candidate",
+        "pages": 3,
+        "words": 878,
+        "text_sha256": "9bcb4d12dde2b289279fc0f4cb489bb4f3b330fa88d35cd1fafb566b3b3da3d6"
+      },
+      {
+        "case_id": "2022-056",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/599us1r39_3204.pdf",
+        "pdf_sha256": "f35ba1fba948c11f3ad69786f6fc6a27e627789845690d6513f9ce8e12c12f61",
+        "status": "candidate",
+        "pages": 3,
+        "words": 916,
+        "text_sha256": "25a5713d118cf7be659e52203977b0766052ef5906e3f1d7d1f9ab0d5b49e7ff"
+      },
+      {
+        "case_id": "2022-057",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us2r29_k5fm.pdf",
+        "pdf_sha256": "edd396522ae99e3751f9b25bff8ee62d7fb6e030cc9306b4731cd17edd4868b6",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2022-058",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/599us1r43_jhek.pdf",
+        "pdf_sha256": "039f6a39d2c22c8ad20a186febae0c8444d060a6bb0d39fa370dd32fd06ac884",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2022-059",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us2r27_aplc.pdf",
+        "pdf_sha256": "8420ac57fa4bfecbdf590ce6ac319787446a50b402fed94fba95c6c7af7547f5",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2022-061",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/598us2r26_feag.pdf",
+        "pdf_sha256": "5e0043ce6d9108c35127aac26242ce73750f3745ed0f9234a5ae83335dd0f7bc",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2022-062",
+        "source_url": "https://www.supremecourt.gov/opinions/22pdf/599us1r47_8m58.pdf",
+        "pdf_sha256": "df847a51db9cb0bf1f60755966ec656df612a9de7bb7d5cffa3952d957201e37",
+        "status": "candidate",
+        "pages": 3,
+        "words": 884,
+        "text_sha256": "25383b0d94384927572311b2ea90dafb2c33d0cbd5d2d338ced9c0ed890b99a4"
+      },
+      {
+        "case_id": "2023-001",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/601us1r07_19m1.pdf",
+        "pdf_sha256": "21b45d154ea47e32aa02e1777bdd9b0255fc94f6f819b3250b41d0bbcbed8d6e",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1069,
+        "text_sha256": "6a7d8fcfaa1a254eb877a44e4ad41d6d795023e8a29ea5a585936c454d15c1e2"
+      },
+      {
+        "case_id": "2023-002",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/601us2r21_7648.pdf",
+        "pdf_sha256": "dca5960548787ffb568d2535786b7b5a77133a033518fd89f2397dd346f66fb0",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1195,
+        "text_sha256": "897f7b82f26e0bb14c80553c2749bc61f38cddec3b5867ea4782fe6e1355fff9"
+      },
+      {
+        "case_id": "2023-003",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/601us1r01_q86b.pdf",
+        "pdf_sha256": "e9a4ef4eb0e5b94742b6f04226688685db00ecb8c96fd5fe3111f1cd8ae37c7f",
+        "status": "fallback",
+        "reason": "no_substantive_holding"
+      },
+      {
+        "case_id": "2023-004",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/601us1r02_c07d.pdf",
+        "pdf_sha256": "c2da6be076a9254714c90ed5e0957b2497e53f175a9a0ef17101690f5c31572e",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1002,
+        "text_sha256": "f1963be22c88323b442e656de4e530083e1b3753b6890b7818e6aef61e765e9a"
+      },
+      {
+        "case_id": "2023-005",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/601us1r04_4g15.pdf",
+        "pdf_sha256": "1364e15a8557caa332d0e731b625048a0f646523d7803f4b560e777dc46b8446",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2023-006",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/602us1r24_j4ek.pdf",
+        "pdf_sha256": "2d689af3a7136f0c3c5e0b2a3ba4a0044f4b549ab7f2e001aaf2093792e5ba60",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2023-007",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/601us2r20_09m1.pdf",
+        "pdf_sha256": "ed7893474ea45593ca9aa6dbec33823276260f4637ab0a34cbcb4f6596936d4d",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2023-008",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/601us1r08_a8cf.pdf",
+        "pdf_sha256": "7a590496a2ff5d604c0f3bd2dc7c1638705e3a3d7a74c91299e01d7c1ceb4238",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1198,
+        "text_sha256": "7b7c99b2d9ea1873118553949781e7f91f89128281386dccbee62a66653c25cf"
+      },
+      {
+        "case_id": "2023-009",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/601us1r09_hgci.pdf",
+        "pdf_sha256": "c3f7984b449d130656277e1c3b0e0546fa456f81341653eaf36698a879f820c4",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2023-010",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/602us1r33_qqm4.pdf",
+        "pdf_sha256": "0944777de924973b5830051e6b1d627302f3d1af901bb2b478259104c8ee8a2c",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1459,
+        "text_sha256": "35ba6be8c7660d1b903133fddc4712d4a5362f9fc5a8fbb3866c7e4974417b9e"
+      },
+      {
+        "case_id": "2023-011",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/601us1r03_4gcj.pdf",
+        "pdf_sha256": "d7f105379673545840743521e9ac8fbbca60f2566ba09cc473d57e0f5ad39528",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1342,
+        "text_sha256": "7acd854283f17bc84e781c444dfecec9227b383bfdb0ec7391981f7a7d1f0e50"
+      },
+      {
+        "case_id": "2023-012",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/602us1r43_p860.pdf",
+        "pdf_sha256": "9e1e9b21f8bcd36aa37851b9413822fde23e23195ff06b3661cb91cdca9d430f",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1454,
+        "text_sha256": "2297a125dcc427bc0c1f8419259b6dfb0a099c7dc098e14a30b2cca3177b2e50"
+      },
+      {
+        "case_id": "2023-013",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/601us2r16_2dp3.pdf",
+        "pdf_sha256": "1a141d915d979872fcb88b1df92cb4dd16fb2284fd77167eeed0b78264c5c906",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1276,
+        "text_sha256": "729fcf79ffee44a55bd38cd996c07dfcab7142ec166d3f7463d6f4d4951770e5"
+      },
+      {
+        "case_id": "2023-014",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/601us2r18_6j37.pdf",
+        "pdf_sha256": "f3ea6203595e97e985057fbc3fcde190e2af6ae6f2fd0f2bf421398dc64ccd0f",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2023-015",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/603us1r54_o7jp.pdf",
+        "pdf_sha256": "c497dcce12d9831f9e59879c2133a9ffd7732f7110db9bf051cb37e5dfee7c89",
+        "status": "candidate",
+        "pages": 8,
+        "words": 3223,
+        "text_sha256": "006f544ffe5ecd6ec4a31e194f6bdbacb74df9c788fa232dca7f1abf85e714ce"
+      },
+      {
+        "case_id": "2023-016",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/601us1r10_k5fm.pdf",
+        "pdf_sha256": "a2b5cce703e5f23dc14fee80bb48580fb8d5cce8b2685d691d90a58e02fdc2a6",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2023-017",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/602us1r37_7khn.pdf",
+        "pdf_sha256": "a2051df6424b6a15266e222a60999eb386ee2c1adbd0937d4804bedc6b77a160",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2023-018",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/601us1r05_1qm2.pdf",
+        "pdf_sha256": "94765a28cabdf53fbf15b534455ebb78c92934ff2a0123c6327d2d5264c40696",
+        "status": "candidate",
+        "pages": 2,
+        "words": 739,
+        "text_sha256": "d1f81e621c9800cdd92b1a2280f53bfe59d6448912d66f9d6b49d2d348ff0ab5"
+      },
+      {
+        "case_id": "2023-019",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/602us1r41_h3dj.pdf",
+        "pdf_sha256": "34798d5ebee5d35746e0131ec1e738f32ebec87e1b7b23887f7b6801fe2b323b",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2023-020",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/603us1r50_7kh7.pdf",
+        "pdf_sha256": "e26f02ca0ee92bdfd16f83b9522c3821206f6d0593a4746cdd38af84a287cb63",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2023-021",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/602us1r25_p86b.pdf",
+        "pdf_sha256": "a1a634288c832046e834ea1fc363b6837badb614e336eda7c88e51920f9241b2",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1551,
+        "text_sha256": "e250229787960cb35d6e9542f3560df2aa892f4244b6a90cb854636f57dc1d86"
+      },
+      {
+        "case_id": "2023-022",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/603us1r51_1b8e.pdf",
+        "pdf_sha256": "d57bf879e3edcfaea8b1eaa4b6ac09811bf45c59cfa1b6e18fbe2859fccb1e6d",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2023-023",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/601us1r06_a86c.pdf",
+        "pdf_sha256": "ce2f003460a71c9d1ea449c396ee2a690b86a2aa7a42cd71fbaccdb05e86afd2",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1348,
+        "text_sha256": "b54c88348be3db5069e7a7245baf904f2f45c9170f706cec11602ff16de7731f"
+      },
+      {
+        "case_id": "2023-024",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/601us1r11_7lh8.pdf",
+        "pdf_sha256": "2e660573a1fc05d1f324bd8e6aba05e78bce70cfa6d679984f942e6ea9db9aae",
+        "status": "candidate",
+        "pages": 2,
+        "words": 949,
+        "text_sha256": "b302401daf9738fbf38714a8d2f3454027b0142b033fb916a9494d0a759b2da8"
+      },
+      {
+        "case_id": "2023-025",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/601us2r14_00m5.pdf",
+        "pdf_sha256": "2b261065d40e4cb99c40a8b5f0fdee452ea6258f9ac94414fa81aa58e85992ea",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2023-026",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/602us1r38_mlho.pdf",
+        "pdf_sha256": "4eca0461f6ce91f38c5953c8fe8a18f7f14420af9c90d2dcc17e9d6b7d680f05",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1074,
+        "text_sha256": "3cb02d6ee42f15ba54ec268716443fdf6548eb629cb4fd03fcd74a7608c80d96"
+      },
+      {
+        "case_id": "2023-027",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/602us1r44_kjfm.pdf",
+        "pdf_sha256": "01f4f7d3b37f6fa672d072ac8ee4675d5715425ee38fd9dd1c30eb522356abac",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2023-028",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/601us2r13_8mjp.pdf",
+        "pdf_sha256": "c8cc13e913d926a24e1639c705a3508366e48e8173c76d11250b085e12fcc9ca",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2023-029",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/601us2r15_apl1.pdf",
+        "pdf_sha256": "8fcdc451418ccfe675d1c27e7c87a7b07294cd6c5f6598b30dc1a539aedf4e1d",
+        "status": "candidate",
+        "pages": 2,
+        "words": 628,
+        "text_sha256": "4d0db3137c2e4f4cb343d7ea509c62a9d94835d3ea33a8c87e5e178e8cdf9300"
+      },
+      {
+        "case_id": "2023-032",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/603us1r59_4fci.pdf",
+        "pdf_sha256": "623b36ce767f3ecb639d9bae6e989e405892ff64ced272f19c3266b1a5df2c21",
+        "status": "candidate",
+        "pages": 5,
+        "words": 2141,
+        "text_sha256": "7bc7c98224f27b164d3af117b854441fe8c3c9241e962d9b9b4bc37b36966974"
+      },
+      {
+        "case_id": "2023-033",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/601us2r12_7648.pdf",
+        "pdf_sha256": "62eb64431f65a41e76ec33fd5189f5b387ac905fe0b021d731df403b54c1d241",
+        "status": "candidate",
+        "pages": 2,
+        "words": 820,
+        "text_sha256": "fd1251fc7eb678a586ac41bb11ad10a9f2b2e5068da3dc0c1534e49c4e149429"
+      },
+      {
+        "case_id": "2023-034",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/603us1r52_d18f.pdf",
+        "pdf_sha256": "0e6291a7009c5e839891a6a2ec9a9718831cd07ff3c167cd1db982252c656f6c",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2023-035",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/601us2r19_jifl.pdf",
+        "pdf_sha256": "20a5eedd0dd474464f2ad614d118eb41de4c188465c7c0ad0eee6e7bb815746d",
+        "status": "candidate",
+        "pages": 2,
+        "words": 577,
+        "text_sha256": "5406a3ebb2a0c8b122a5c1399689ad338e89ad34204604c59fde74254d9519a8"
+      },
+      {
+        "case_id": "2023-037",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/601us2r17_nmio.pdf",
+        "pdf_sha256": "34c35ef39b6e18f958a1aede9ecc2599384e55d6a891740bfc40f8b6424d825c",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1204,
+        "text_sha256": "43323bdb99c60bfe6df5d2a0198fbdcfe73cb223e70ac19da90b06491132a388"
+      },
+      {
+        "case_id": "2023-038",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/602us1r29_0861.pdf",
+        "pdf_sha256": "ed1e84847dca1c4a5159742c16aa8664c7c872fc782659e2e9060900a7ad11aa",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1397,
+        "text_sha256": "f2b39a4e0b4ad92d88ed09ccadfaa9869a62965c52094dd6cdea5fc6e60db72a"
+      },
+      {
+        "case_id": "2023-039",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/602us1r36_k537.pdf",
+        "pdf_sha256": "497d23c2a254a52957cc6474c504925fbe4b41347990a563f6e24e0c1edad9c6",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1324,
+        "text_sha256": "1ad4e26ce0cb19a0dc9b206fc053b65406e4205fabe17e6ba3243d2a2d24a7df"
+      },
+      {
+        "case_id": "2023-040",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/602us1r26_k537.pdf",
+        "pdf_sha256": "7947a771d9807cfcbbc4cb2588415737f0305e48b53bfc8ec4b5a39be6b664c5",
+        "status": "candidate",
+        "pages": 2,
+        "words": 660,
+        "text_sha256": "ff05d6714114181e33e78dd5855a07d020d3b04712f68f4b93c62117d350a34f"
+      },
+      {
+        "case_id": "2023-041",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/603us1r49_n6io.pdf",
+        "pdf_sha256": "10a40c0c521d0d857fd86cad584dbb7ce60911cdd977ecd81ebc18bb8a0004af",
+        "status": "candidate",
+        "pages": 5,
+        "words": 1729,
+        "text_sha256": "b3df99a6dd22aa669d31228c5ade03aaaa1bd6fed451bb8e5f0314505330d116"
+      },
+      {
+        "case_id": "2023-042",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/602us1r28_9o6b.pdf",
+        "pdf_sha256": "5a0251f4a56b5deeffcbd31c9fd31a340391fe8104d200284b74f1a95df46afe",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2023-043",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/602us1r39_2b8e.pdf",
+        "pdf_sha256": "6d9e1fd3003f8ec47087c152228678abb8010c2369b75ea5a2dd073bd446c6ae",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2023-044",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/602us1r32_2q24.pdf",
+        "pdf_sha256": "eed3e88da7134ce8672ad23000a9da9533250bba44546bdb9e0c9e6b81c16ec7",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1080,
+        "text_sha256": "e49d9a6731a17b422b417bfa33abc94e5353d431659cf476330b8316e1378cb8"
+      },
+      {
+        "case_id": "2023-045",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/602us1r42_l5gm.pdf",
+        "pdf_sha256": "9016fb98b486b0441440a16b7b11759b90cc6566bac3ebbc7554720ed0a54a4d",
+        "status": "candidate",
+        "pages": 2,
+        "words": 429,
+        "text_sha256": "3bf52009159a32479b3d807c3bbcd23cbb2719020429ad35b3b5e0a428385692"
+      },
+      {
+        "case_id": "2023-047",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/602us1r30_g3bi.pdf",
+        "pdf_sha256": "abec1ef5acb7f5aba479577a5caa2783ee740579f24c28e78bf2286200efc024",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1566,
+        "text_sha256": "4530c9317828a2f47178675deb4135529336b57422ec7d840ccdf512f5428e81"
+      },
+      {
+        "case_id": "2023-048",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/601us2r23_khlp.pdf",
+        "pdf_sha256": "8a05736d69fc9f0ed415f6fdf6c1a8609798017644489f3b5f4799369d3e5712",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2023-049",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/602us1r35_h3ci.pdf",
+        "pdf_sha256": "d47732e921dcb01a9c8411e7f3e09b86d402c317aa1fc3e64fea986bc7698574",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2023-050",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/602us1r45_h31i.pdf",
+        "pdf_sha256": "6f43e6db0122890d62c2cead0ed109b614eef9dc612e90619a411dd9a6186123",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1522,
+        "text_sha256": "e54394b7956cf1f779cd8ee639ab63a31d5c7631994876d3ab4747c7c7ccd5af"
+      },
+      {
+        "case_id": "2023-051",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/602us1r31_6537.pdf",
+        "pdf_sha256": "4398a03bd0521be933bb7cbe239bc52695f97563e331b9f826dc8be14eae1a9f",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2023-052",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/603us1r48_g3ci.pdf",
+        "pdf_sha256": "0c2d0de830421e8b4c521c12dc002c075abfa216637ea429a979fbd245926ddd",
+        "status": "fallback",
+        "reason": "docket_not_confirmed"
+      },
+      {
+        "case_id": "2023-053",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/602us1r40_f20g.pdf",
+        "pdf_sha256": "02bfbc537038426d36b52a2e634861642d14f33c7030e5bfce1aac2ff05e816d",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2023-054",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/603us1r55_6j36.pdf",
+        "pdf_sha256": "9d5545a93222f66af44fafaedb11c1daaf11ddda638b1cda5b5fc884af437407",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1253,
+        "text_sha256": "211159659b882e23d7f3969e3b7ebcd5b0d17bc60e8af1c3b2560940808a701c"
+      },
+      {
+        "case_id": "2023-055",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/602us1r27_jhek.pdf",
+        "pdf_sha256": "80ae0d520411609eeb781b089588682b265b59cfcb5d08cadfb490627ad4406e",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1443,
+        "text_sha256": "8a2336ff2786660f99bc0dc56353fb0fe649cd0b12924aeaea3ee548b35fb2ae"
+      },
+      {
+        "case_id": "2023-056",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/603us1r56_1bo2.pdf",
+        "pdf_sha256": "bea47fd3ce2ce7c26d62382cf60591c5fe79527a3bfa0f5008e0fdfc68b5aa3c",
+        "status": "candidate",
+        "pages": 5,
+        "words": 1884,
+        "text_sha256": "aa3d494d80b8e1e0af1b2e3880c2c3f82f2662d4cec1bdd3c34e8edb650e6a58"
+      },
+      {
+        "case_id": "2023-057",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/601us2r22_o7jq.pdf",
+        "pdf_sha256": "e75b081189b42def82bc3104957a2f23724d448b465686fba5e4d075d0cd59ab",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2023-058",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/602us1r46_gfbi.pdf",
+        "pdf_sha256": "0119b24d81743589236cbf5aa3062f55b4be3c6cbeca87d15c6f113f8711e967",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1190,
+        "text_sha256": "035e3c355d5ca60c54c40ef517914ba3e2a648ab539dcafd9d7ac0672d47ba02"
+      },
+      {
+        "case_id": "2023-059",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/602us1r34_e29g.pdf",
+        "pdf_sha256": "373cc31bfe284fcf067a42825234ac7236699aeac7554dce68c4bd0585ecd6c4",
+        "status": "candidate",
+        "pages": 3,
+        "words": 901,
+        "text_sha256": "021ea0ad9e2e2c1c251be15b58c43ad1e95aae4a6d3bf8a98ee01e32e4002a2e"
+      },
+      {
+        "case_id": "2023-060",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/603us1r53_l5gm.pdf",
+        "pdf_sha256": "55d11c7541629015f71018779c4aa16cbf033c5a7948e8d4bc2bfdf8f015e62b",
+        "status": "fallback",
+        "reason": "no_substantive_holding"
+      },
+      {
+        "case_id": "2023-061",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/603us1r57_2dp3.pdf",
+        "pdf_sha256": "3ce0e8bc0408c2e7b9cf0a7301b07b4ae30a606f5482947f819081c6f16ccf19",
+        "status": "candidate",
+        "pages": 8,
+        "words": 3136,
+        "text_sha256": "9bb6d488423223eaaca225263e412f1bb17e0e5983eb35d88954aedce4f5f1bd"
+      },
+      {
+        "case_id": "2023-062",
+        "source_url": "https://www.supremecourt.gov/opinions/23pdf/603us1r58_8mj9.pdf",
+        "pdf_sha256": "b2c6915de754a3ebe8db1c7d9c1cf195b270a990ec994a0631533538025ac414",
+        "status": "candidate",
+        "pages": 6,
+        "words": 2096,
+        "text_sha256": "ba629545a6a4b2cc445331469cae4518bfd0e6ecf9c89f6f6623e9dd87a11c27"
+      },
+      {
+        "case_id": "2024-001",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/604us1r03_3f14.pdf",
+        "pdf_sha256": "20f6932b2c8343d956c6dfb0bc2d7819c4e01ea4bf02534d3cfcb8add6580e3d",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2024-002",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/604us2r23_3e04.pdf",
+        "pdf_sha256": "f0ea5f7f316e00ac2150526cfc81dc97a3faeb3a5ef26b387754313ff90077c3",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2024-003",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/604us2r22_ed9g.pdf",
+        "pdf_sha256": "92a8a117541d1bfa7ea96b40da79b40a6c0db991b2ed339ffcbb8afec79b65c9",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2024-004",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/604us1r11_2b8e.pdf",
+        "pdf_sha256": "70ac97f1e8f2fd88eab09827553fba69e2e6d085ad5f484ec2ff2556d2f45f16",
+        "status": "candidate",
+        "pages": 2,
+        "words": 604,
+        "text_sha256": "9b0db79f0a49edcb7a97d2609377a13b79b0f03262446d422a5cea28566832ce"
+      },
+      {
+        "case_id": "2024-005",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/604us2r20_q8l1.pdf",
+        "pdf_sha256": "0178aa7c909d39e21bb4f3502f288d21fd379cb3d18a0ecc56c0bf315fd2c9a5",
+        "status": "candidate",
+        "pages": 3,
+        "words": 798,
+        "text_sha256": "fb5b520c3dbb92b11f3c5772c7821923de8c63b2f2eb6d64aa826e8dfb6a7697"
+      },
+      {
+        "case_id": "2024-006",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/604us1r12_8njq.pdf",
+        "pdf_sha256": "d3ed0ddf1df0252872012b137e544ae57e393fac309ab379cf4f8d96751b2410",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1039,
+        "text_sha256": "05eb881704bba969ae07b217110d5c4c0e0763f8b0731db0b8974a718a56ceb2"
+      },
+      {
+        "case_id": "2024-007",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/604us1r13_c0n2.pdf",
+        "pdf_sha256": "a99f203c6818a16ec5f5c72763acf2806ba455bebef7dcaa81832f982cddcae1",
+        "status": "candidate",
+        "pages": 5,
+        "words": 1487,
+        "text_sha256": "bb29ffa96ea96bb094a8ad4a6dcf6c20989db0ca56dceb7627686f28a6a17f51"
+      },
+      {
+        "case_id": "2024-008",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/604us1r16_o759.pdf",
+        "pdf_sha256": "18a7d7f73dd8c8b8596da74744fc2e0ef413e20135a3be5fcf757c2006dafed3",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1047,
+        "text_sha256": "1094a27d4fb6bf6aaba00910a5137e5baf2a4a57acd629788adcadaf91c8d75d"
+      },
+      {
+        "case_id": "2024-009",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/604us1r17_olp1.pdf",
+        "pdf_sha256": "1fc157538a633606b67856ef76288bd923595fd72588254f2ca0e6c7525c4657",
+        "status": "candidate",
+        "pages": 3,
+        "words": 952,
+        "text_sha256": "25994efd6f6f9636f95d31a41845643138c4b5c45d2c594d6a312a35df8e7c9f"
+      },
+      {
+        "case_id": "2024-010",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/604us1r10_mlio.pdf",
+        "pdf_sha256": "f1f6ead7d2d391deed0c9b7e893994a22b1b3b2ca28d2183d927e78b9854ec13",
+        "status": "candidate",
+        "pages": 3,
+        "words": 886,
+        "text_sha256": "a2e5fec7b5c4110d8b52b1be85601b9694c09f4f24a399b552a67a7d5d87d96f"
+      },
+      {
+        "case_id": "2024-011",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/605us1r28_limq.pdf",
+        "pdf_sha256": "e2adc6205d74a8cf7c8f79ea53deffafa7402414808b78c68e9ef539514f1d5f",
+        "status": "fallback",
+        "reason": "docket_not_confirmed"
+      },
+      {
+        "case_id": "2024-012",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/604us1r06_5ifl.pdf",
+        "pdf_sha256": "3b868b209006015997d93f69e2884aad4583045b5cdb1df1ff6820fc362080d3",
+        "status": "candidate",
+        "pages": 2,
+        "words": 609,
+        "text_sha256": "137979f609f1775315c6964de17468f11f55fe906c6076a1980580a708280a54"
+      },
+      {
+        "case_id": "2024-014",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/604us2r27_e2pg.pdf",
+        "pdf_sha256": "412e5db49df9abdd1a8d9dfea76c1a20d21ab6ee7a9935a7cb3bbfc07a0093e4",
+        "status": "candidate",
+        "pages": 2,
+        "words": 738,
+        "text_sha256": "e10d2639d57c45b7f61716fff61a3a012a2e83ba486042735ef0400b18c96a34"
+      },
+      {
+        "case_id": "2024-015",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/604us2r19_i42j.pdf",
+        "pdf_sha256": "bc0a11a2c67c52f2f4673e03a96fa228c25a1ad966d6fe51ef8e55729d10dd27",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2024-017",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/604us2r21_6kh7.pdf",
+        "pdf_sha256": "1d48bb9e054345914844e6c24e22ca69478938f88a42e76259668e4670fd4de5",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1364,
+        "text_sha256": "4a2f03caeda14d2a8e9440642aa35ca43e69dc287a5dfdd283b51b35b4db1ae8"
+      },
+      {
+        "case_id": "2024-018",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/604us1r09_1b7d.pdf",
+        "pdf_sha256": "100f2dd107fc40bda158f7c5f4535e616d3c5689caef7a192ec11fb00e7ca3e7",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1002,
+        "text_sha256": "1b1bc689b2826df980a92d6e7016160102ec2e248024612854e583d00d9eb8eb"
+      },
+      {
+        "case_id": "2024-019",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/605us2r48_m648.pdf",
+        "pdf_sha256": "e41700aa9485a8ed11f43687f4310d72f3bb0ba846f9faee2c61d3d181fa88f6",
+        "status": "candidate",
+        "pages": 5,
+        "words": 1702,
+        "text_sha256": "b3eb16564098e391a36859ed18900c365bdcae70f12ce29d7a3c3d1978c30312"
+      },
+      {
+        "case_id": "2024-020",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/605us1r32_f2ah.pdf",
+        "pdf_sha256": "84a0f5065a945f62cf1db8406860aefb5c3f52c70d887dc8b06b125872531670",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2024-021",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/605us1r29_bp7c.pdf",
+        "pdf_sha256": "5080e91a9d106a41538890d85d639a943c7d47c606fff7a7f66ecd4c653c2535",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2024-022",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/605us1r34_h3ci.pdf",
+        "pdf_sha256": "58b34001b0e43c40da1d5485feda45faf35837241f8493caca21da041d385396",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2024-023",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/604us1r15_dc8f.pdf",
+        "pdf_sha256": "97910a1eda9991ca6d6e17e93bfff2902ebae33effaec2473daf70d3f25d581d",
+        "status": "candidate",
+        "pages": 2,
+        "words": 750,
+        "text_sha256": "5991c3baa6ab212da44c87488946a30e597608bdb574f043b86ba12580411f90"
+      },
+      {
+        "case_id": "2024-024",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/606us1r61_2dp3.pdf",
+        "pdf_sha256": "e97e497ae03807852e809b712653e4f64efa6b818be7f48a02a1beb3869817d2",
+        "status": "fallback",
+        "reason": "analysis_after_disposition"
+      },
+      {
+        "case_id": "2024-026",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/606us1r53_5i36.pdf",
+        "pdf_sha256": "eeb94ef457b828e26c9932a43b6311de3f645ed2b2251caa6d8b1f7190d0883c",
+        "status": "fallback",
+        "reason": "analysis_after_disposition"
+      },
+      {
+        "case_id": "2024-027",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/604us2r18_9p6b.pdf",
+        "pdf_sha256": "f7ae99c987c4f760ac69dd85b50dea36d03572d148df839b16ead7fc097edfb2",
+        "status": "candidate",
+        "pages": 2,
+        "words": 739,
+        "text_sha256": "c82e57395101b5c74af2536b88cc18586cf2058b47e333fc98d044a51fb8c146"
+      },
+      {
+        "case_id": "2024-028",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/604us1r14_6kg7.pdf",
+        "pdf_sha256": "7451a9b18c22a7d213a4f49904dac1a9607d2cdb973ee5a7d4e76188ad0e8ea4",
+        "status": "candidate",
+        "pages": 2,
+        "words": 688,
+        "text_sha256": "17d083f1abd4942a29e2af2f954bf2e954da134ab0a34f7bf439d4176920cad7"
+      },
+      {
+        "case_id": "2024-029",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/606us2r62_986b.pdf",
+        "pdf_sha256": "5c2805a93c6082b67e99b64b0f3ebc8e58a79a3a0eb67fa066bb84274381910a",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1205,
+        "text_sha256": "5aaa637ccfb2fd90bd0f77185c339605f41a5ba789eb8469534d560b22a44271"
+      },
+      {
+        "case_id": "2024-030",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/606us1r57_n6io.pdf",
+        "pdf_sha256": "45eca458b4c9706cb6cf62ef9761b3a544206ee8defe3927503f6c75364ab586",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2024-031",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/606us1r55_3d9g.pdf",
+        "pdf_sha256": "903dbe41e1267aaf125f2cbca1836df3b8ae0fc0fb76f6492613d2f9f145120f",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2024-032",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/605us1r30_h315.pdf",
+        "pdf_sha256": "2454ec25332d9fc45e9e38c0b0af24881f604092c21d3574adcd338e35f255d1",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2024-033",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/604us2r26_7m48.pdf",
+        "pdf_sha256": "669943d97001d2aa403be01ae9b56f0c92a386191321d0b4956f8e28dff2cb61",
+        "status": "candidate",
+        "pages": 2,
+        "words": 756,
+        "text_sha256": "a1061df5028fa7556e64dbabaee3b6e8bc7f1c566d4c781ffd6392e75c92541f"
+      },
+      {
+        "case_id": "2024-034",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/606us1r59_g31h.pdf",
+        "pdf_sha256": "13f4072b0746020ed2b37b2df58a1cd05253dadfe89c1a2d9b3121b6b3ffaec1",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2024-035",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/606us1r56_bq7d.pdf",
+        "pdf_sha256": "d45a4197f26807aba7615e1ddf1933cb4bd86508a89df46f44b64e15336cede4",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1162,
+        "text_sha256": "3fd42b14fe212f2d9537aebb66f2d1b83d18537c70f18314556690d5f8227aee"
+      },
+      {
+        "case_id": "2024-036",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/605us2r47_bqm2.pdf",
+        "pdf_sha256": "d9bcfe43d5d8593b765f8ba8dacca1517d1601e340f4c84c2eb9cfe519861c48",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1394,
+        "text_sha256": "b815f50e06d1b03f11c953ee888aafc08332ddcf6049e9a0bba8afc23b380d69"
+      },
+      {
+        "case_id": "2024-037",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/605us1r39_kkg1.pdf",
+        "pdf_sha256": "d4d84b175bc99b5f4b1a74c5c6fab70031b128fb4aac82f4e7e9935684b1f7c0",
+        "status": "candidate",
+        "pages": 2,
+        "words": 656,
+        "text_sha256": "c7a4e780888f6667115e62d8abe56c9189d666966988400bbd6564af55bafb80"
+      },
+      {
+        "case_id": "2024-038",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/605us1r36_4f14.pdf",
+        "pdf_sha256": "61e5766206c58fdc9e8773ca47bd9c43155c62a012d2aa0dfb9a9410d5de43a2",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2024-039",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/605us1r35_4f14.pdf",
+        "pdf_sha256": "29b956d5b985309b9b690ecb191c032b3d8c7afb2387c12c3a6a7acbe69652f7",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2024-040",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/605us1r38_j426.pdf",
+        "pdf_sha256": "3bf648c8d88b1204f354168f13ac94f67f750f69238f07786c7992e063eb7a66",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1483,
+        "text_sha256": "2bab516fe0278b24a0744003f7c20aebea478502097bdfd4decce1f2a1fa67ac"
+      },
+      {
+        "case_id": "2024-041",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/605us2r51_4f57.pdf",
+        "pdf_sha256": "98dc84420df006fb94835269e9e88bd2e2a8f206be5762daeffd2f41a431bae6",
+        "status": "candidate",
+        "pages": 3,
+        "words": 929,
+        "text_sha256": "fe3105005f948d29c6c82fdefea301ec1c039deed735500c9a1044e92341debb"
+      },
+      {
+        "case_id": "2024-043",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/605us2r49_pok0.pdf",
+        "pdf_sha256": "6e1293decc758c7c322b748ee8f01065b0fc60d21f9ac27a44e264918d695fa0",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2024-045",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/605us2r50_g2hk.pdf",
+        "pdf_sha256": "9ba92e34aa7a5df33e91702e1d18cdb675d83c827c65951dfa15d780c773e8fc",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1207,
+        "text_sha256": "caf1af8b5bee2569b1a507b71e990730d8ff66a797f2a455c58d6ca9e808ff27"
+      },
+      {
+        "case_id": "2024-046",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/606us1r58_5h25.pdf",
+        "pdf_sha256": "5bf1012a4d4cf70aae4a1b1db2d896736fbe82332e7c6b85ca2488dcc43403ef",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2024-048",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/606us2r64_8nj9.pdf",
+        "pdf_sha256": "64626d90f6ee7e69b784fb395ad03b5c15a3fc8361b7104fbb4e8138c93bb1d2",
+        "status": "candidate",
+        "pages": 6,
+        "words": 2103,
+        "text_sha256": "0eae35757d979bdf205a18adfb42528f80c46fd3f67bfc6def14f92d3b59817e"
+      },
+      {
+        "case_id": "2024-049",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/604us1r07_k536.pdf",
+        "pdf_sha256": "68f00463b5e6e2ffdb8ca1a57847ed227a37c6f1d40d1ac707235f8fa9b5f1c2",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2024-050",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/604us1r05_db8e.pdf",
+        "pdf_sha256": "bb3fa65f1ea6eb5c9219a19b502409ab394d02b4f05e18ccb9e4156c4fee86ad",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1167,
+        "text_sha256": "0e2d2a21267189edd223f70f88953ab96afd8f3de5588a470e648a504949350c"
+      },
+      {
+        "case_id": "2024-051",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/605us1r37_986b.pdf",
+        "pdf_sha256": "44dee03581c22cc57dd2cb2a58c95f1b7d37b8b31b83a35ab7b781e931187dc8",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2024-052",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/605us2r46_kjfm.pdf",
+        "pdf_sha256": "2b97ff6b76054c9ac57e987676a8ec6a7d32c1bbfa6ffc51042e7a2b4555a8b5",
+        "status": "candidate",
+        "pages": 3,
+        "words": 928,
+        "text_sha256": "b99c6283dfe96bfd6233db8332fae31d3167eed29551a5e1bd5d678c78eaa03f"
+      },
+      {
+        "case_id": "2024-053",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/606us1r52_3eah.pdf",
+        "pdf_sha256": "40cc667d588bdba0c030ac314608d52fbf94b1f5b7152f014ec55723ce7eabbe",
+        "status": "fallback",
+        "reason": "docket_not_confirmed"
+      },
+      {
+        "case_id": "2024-054",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/606us1r60_h3ci.pdf",
+        "pdf_sha256": "1d34a3b4a43cc3a02ee71c033327e3d8e3f94ea90e18bf1026df244ea2dbbcb8",
+        "status": "candidate",
+        "pages": 5,
+        "words": 1632,
+        "text_sha256": "d8effa6c64020af9d7dd71fce6687cfbcbb47f4241795affa6e87b8b241cccb5"
+      },
+      {
+        "case_id": "2024-055",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/606us2r65_3314.pdf",
+        "pdf_sha256": "9dc973cac6aac30683dc4259e88dd2fade41cadbb058a5cd322f2877d01c12e7",
+        "status": "candidate",
+        "pages": 5,
+        "words": 1741,
+        "text_sha256": "861a859ebb798f44bef5bc4983d44c25a5d9625977a832458e68e5b61c95c7fd"
+      },
+      {
+        "case_id": "2024-056",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/605us2r43_e29g.pdf",
+        "pdf_sha256": "2ef27744581013d7493d44266ef3b455becb446d4e372ba307342b2814924c14",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2024-057",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/605us2r45_3f14.pdf",
+        "pdf_sha256": "c72b9eaf400f4f0d9fbbf464bcb3343e2b5cdb4c0828b6db7eb912324b7c7551",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2024-058",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/606us2r63_n648.pdf",
+        "pdf_sha256": "0a28233df1d708765ce3398e2897d44e11bbf1875ee13100d18920c542b8273b",
+        "status": "candidate",
+        "pages": 6,
+        "words": 2401,
+        "text_sha256": "c995746d0c23b4c358febda57ea1a1c676d3953f9429f8b0f0fa5e7e96723228"
+      },
+      {
+        "case_id": "2024-059",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/606us1r54_j4ek.pdf",
+        "pdf_sha256": "b5d7daa366245deda468df4b5f19d0cc00a08aeeada5d83c308abad031571c2a",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1174,
+        "text_sha256": "269e54284239d12e058e154c84a364a59543c1ff9295e0df01e313166325c438"
+      },
+      {
+        "case_id": "2024-060",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/605us2r42_k5fl.pdf",
+        "pdf_sha256": "5e7c6d18dd0ae60698c1105912ac4e107927d376d3733d3e69209c624f0d6e55",
+        "status": "candidate",
+        "pages": 2,
+        "words": 781,
+        "text_sha256": "230aabbebe26de025ad1a642f2e6c6ff953b5b692e80419008081e21d43b1a73"
+      },
+      {
+        "case_id": "2024-061",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/605us2r41_bp7c.pdf",
+        "pdf_sha256": "c7f7f47ffad4432638caa73968012e870208d9f094db359790334a7d1832cfb7",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1147,
+        "text_sha256": "59bbc85a6368d8f44121666479d8d8d883947ae76fea6625989c2b1bf8247f63"
+      },
+      {
+        "case_id": "2024-062",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/605us2r44_4f57.pdf",
+        "pdf_sha256": "8933bf7d996bc5c2ae8ab08459d4a3adc78f35aa83b11886d7b89cba3e00f97b",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2024-064",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/605us1r33_5h26.pdf",
+        "pdf_sha256": "6744b9949e83773a58b4030525d1ff8478d46759bea43081367f80683274a509",
+        "status": "fallback",
+        "reason": "no_substantive_holding"
+      },
+      {
+        "case_id": "2024-065",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/606us2r66_j426.pdf",
+        "pdf_sha256": "fb37a04b11076b76687f6970fbcc6672693c2d9a8f7115cee4ab8eb3c2bf008a",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2024-066",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/604us1r01_2dq3.pdf",
+        "pdf_sha256": "b8bb843416bd0728270e476df524320954f34b1f90815459b84ef5aee734b691",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2024-067",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/604us1r08_db8e.pdf",
+        "pdf_sha256": "09253689557eaf7d86e30dadc9cbe57a8478886e72f0e8129195e9b975cdd519",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2024-068",
+        "source_url": "https://www.supremecourt.gov/opinions/24pdf/606us2r67_8nka.pdf",
+        "pdf_sha256": "635c1b5d0f10d4243bab8900a365d7eac08d4364f3451a9e2ff25fefe08a5dd2",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2025-001",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/607us1r01_kjfm.pdf",
+        "pdf_sha256": "6c23e71f514750638a43abd27b139b1ffa970647a0fb8784e9abb582e3398c74",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2025-002",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/607us1r02_5426.pdf",
+        "pdf_sha256": "cfaa7c448036b820e0954d1ad965740b61b1320d8cbefe03984508eedeb96d9c",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2025-003",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/607us1r03_1o23.pdf",
+        "pdf_sha256": "3cdcbc7b8fe3998fdbe83ea251f4f00b11f23b347b7dfd45e7cbd3a30c6f7008",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2025-004",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/607us1r04_n7ip.pdf",
+        "pdf_sha256": "4e938f3c07c9a1f81f76fe5a93d4a805f9e0d56e32057bc5d5b68b20d24e6d4c",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2025-005",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/607us1r05_e2q3.pdf",
+        "pdf_sha256": "1c68d5171f9eeb026485c86afb65e659422339809475f21abaabdd41f802efcd",
+        "status": "candidate",
+        "pages": 3,
+        "words": 845,
+        "text_sha256": "be2e62140cc9774852a62c2e441e94b2559fffd3ca617f0daa69e1a0019b4699"
+      },
+      {
+        "case_id": "2025-006",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/607us1r06_19m1.pdf",
+        "pdf_sha256": "00a541d5a83e01d88c96b1a7bf754578ab2a419ebcc1236afb3c0101d99705dc",
+        "status": "candidate",
+        "pages": 2,
+        "words": 664,
+        "text_sha256": "70bf5e69956b02fd557b1f02afef50e5f9d695e20d8580dc30fb24d687886bfd"
+      },
+      {
+        "case_id": "2025-007",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/607us1r07_7647.pdf",
+        "pdf_sha256": "e5667da60c5f2d148da0b0f06434e76c7d504669a9771b75a523ac0830f3dd07",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1145,
+        "text_sha256": "656c56b95f6d7e4bb40cca495dda00c4a0f3d0cdcddf2f0d9cda2641a2015b41"
+      },
+      {
+        "case_id": "2025-008",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/607us1r08_f2q3.pdf",
+        "pdf_sha256": "f6587bed7b5bdf5ff699affa4fc63cea5e2cb7ce013c81f1de6c197d258de780",
+        "status": "candidate",
+        "pages": 2,
+        "words": 694,
+        "text_sha256": "0c5df97a51de6750fb89d35f0c3f95d1d15c1b9067ee804d592cf10e0c646bbb"
+      },
+      {
+        "case_id": "2025-009",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/607us1r09_4fb4.pdf",
+        "pdf_sha256": "758f5f7cdbe70e043c3cc909c5ed9a05c363989582a5bdd2b05c5811e8d33715",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2025-010",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/607us1r10_5hek.pdf",
+        "pdf_sha256": "c6cb3be49576bc5a61e048844aad9876991d9fad0f8b6c66309ffb8ae3a6149f",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2025-011",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/607us2r16_869c.pdf",
+        "pdf_sha256": "36dbd5f6e1a8e4bcbd6b4aa542bf5997e9d9d4a17e78c44785a223faca5fbc75",
+        "status": "candidate",
+        "pages": 2,
+        "words": 783,
+        "text_sha256": "4f03643eb3c6a64c0876b18131f064e316c8fd004b1f1aa9ef7bd34672c922f6"
+      },
+      {
+        "case_id": "2025-012",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/607us2r24_4315.pdf",
+        "pdf_sha256": "5693365408890bbbcc9ad4ba969b1c102ae011d815dd08fa720ecf5f5c8bd061",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2025-013",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/607us2r13_m64n.pdf",
+        "pdf_sha256": "efe94a4a9283aadba6e6bc44d5a636113a4a7aa9b1a24ee386e51f3de1abee80",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1120,
+        "text_sha256": "fabf04a7e567c8853e6b0e5f434eb4d831b0e59852081dbc2707022afadd0cdf"
+      },
+      {
+        "case_id": "2025-014",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us1r29_n648.pdf",
+        "pdf_sha256": "157e4b83ddad46442a83a453d7896cbb8673d260d81b9b97469d540bb5fcf571",
+        "status": "candidate",
+        "pages": 6,
+        "words": 1825,
+        "text_sha256": "4353eb8aeaf1dd5398681b7fa448cac3088dccfa6cf8b357f00971c80d18186a"
+      },
+      {
+        "case_id": "2025-015",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/607us2r23_4g15.pdf",
+        "pdf_sha256": "46b74573b5aad49bf4af9a677894f407f8500c2c3d75f7f7d8d620973e61f368",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2025-016",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us1r27_bq7c.pdf",
+        "pdf_sha256": "a32567b08e838af71b0744f4d6f803147a6927ec2cfe0f4eb2c2c5a3b7482b3f",
+        "status": "candidate",
+        "pages": 3,
+        "words": 813,
+        "text_sha256": "c62e7c47ff7baa80bce4902fd01280d105def85daab03979e2dfde56e95fe148"
+      },
+      {
+        "case_id": "2025-017",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/607us2r14_1a72.pdf",
+        "pdf_sha256": "6bdb0f4592db355fc39bef88b4ac68c6fff938ba688992464c92bb62dc789563",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1260,
+        "text_sha256": "c8af4e4a275b5dc022ed30f50991dbaa82e3a822a4d7dae37e6db71213719c16"
+      },
+      {
+        "case_id": "2025-018",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/607us2r12_8nj9.pdf",
+        "pdf_sha256": "fcad6c603f29cd32c510a5c9b15b4bfa74881bd4bae661f28e60669c2c0248b7",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2025-019",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/607us2r15_bqmc.pdf",
+        "pdf_sha256": "0e8a200b0f70291184b71563a79b47b9cf35b16e5f20ec63d5d5f8f94795fa4a",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2025-020",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/609us1r55_h315.pdf",
+        "pdf_sha256": "8eb6d27ba534ee91db00ca144e3220f33fe091e42e7c1b614a71b9bf1d443fb6",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2025-021",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us2r40_o7kq.pdf",
+        "pdf_sha256": "b59a7434dd2e8da13f2ccd606bcd1ea040ac3db16f2b0924d1cf37102a8f7794",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1469,
+        "text_sha256": "fde689142bed14d389ddfa809491aaf6f221789e8b3aaf873461d30f231dfbfd"
+      },
+      {
+        "case_id": "2025-022",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us2r39_5iek.pdf",
+        "pdf_sha256": "e7328293dc720c7923bb46560ba4a484c4dd8957654b84189dcc65a663698378",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1438,
+        "text_sha256": "dbb520cea7a53d0ec85d7af553fa89ad3128da49a469a04f6c2b6193b6b922a3"
+      },
+      {
+        "case_id": "2025-023",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/607us2r19_3e04.pdf",
+        "pdf_sha256": "d46b952745f4dc6a05d5d6802060e0584b5bca3d73bb64a956c9cea42e7f112d",
+        "status": "candidate",
+        "pages": 2,
+        "words": 707,
+        "text_sha256": "bf958499042ddaadb776e342a33bfde98151851f28ec1236e29aec703d8df38f"
+      },
+      {
+        "case_id": "2025-024",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/607us2r22_k4lo.pdf",
+        "pdf_sha256": "4b3003bcd76a3f25e1bdcfa2ad26a2bc7b326c447f07cbe9ab7a340743bdb9c9",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1174,
+        "text_sha256": "02070061f4346dbe504b7f8b13f14e9b131b38732ffae77e2bd3fe33b56ba42a"
+      },
+      {
+        "case_id": "2025-025",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us1r30_3f14.pdf",
+        "pdf_sha256": "4feb8825d5e809868d7b05cd37247775d045ae7d3eec06d0c4236c63f961f245",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2025-026",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/607us2r20_h315.pdf",
+        "pdf_sha256": "d448598764e015816fda63562ee7fd93693376ce99363d545582e8876b426321",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2025-027",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/609us2r62_g314.pdf",
+        "pdf_sha256": "fcc1439ad8cdef2cce10e89773addf8442586760cd676a2464958fb4ce4240ec",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2025-028",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/609us2r67_g3bi.pdf",
+        "pdf_sha256": "2d795dbbedb16ac12f5dffb12d060cbdd81e995975515107441724b607d438f7",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2025-030",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us2r47_m64o.pdf",
+        "pdf_sha256": "741f6ce163bdb49751df7b96bed6004d85c2c7a3a37f6b2e11716c814d4c7ec5",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2025-031",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us1r25_2q24.pdf",
+        "pdf_sha256": "7b5bf28dd0f41a0c75be11c37dc2bd5f4ca84673da6acc64098d1d99522173a7",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2025-032",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/24-43_2b35.pdf",
+        "pdf_sha256": "43a1a329994be812c65f8b6f6bfd8c78f746b893b1ae3357510c603d44842fca",
+        "status": "candidate",
+        "pages": 5,
+        "words": 1768,
+        "text_sha256": "c6563d5d6316dee07384b1ec7a75e394b8228d0898551817b5154aaa38cfa94e"
+      },
+      {
+        "case_id": "2025-034",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/607us2r18_d18f.pdf",
+        "pdf_sha256": "844ce82cfa57d14fbea41b74ffea30c8ba768e8fcfac9053a1a42379cc374f10",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2025-035",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/609us1r58_a8cf.pdf",
+        "pdf_sha256": "ebd389d839b93a37cfe45bbd8af553deb60a073742976ede0c17bf861dde2d1b",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1377,
+        "text_sha256": "81a37767d0e7544252394bd42ef0a6bf8e9caa77776da9619c6783a6e087d603"
+      },
+      {
+        "case_id": "2025-036",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us1r34_f2bh.pdf",
+        "pdf_sha256": "4fe5026e303982cd76546b9ca821917b118d540c05eb06b2b9e5102395adfcdd",
+        "status": "candidate",
+        "pages": 3,
+        "words": 949,
+        "text_sha256": "bfd5cb241cac0378fc06cc1a79470c2d8aa950effc144bd5e04699fcdd021398"
+      },
+      {
+        "case_id": "2025-037",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/609us2r63_e2pg.pdf",
+        "pdf_sha256": "7cd22ef99a872038d179a8d66102fab0660d0dc846f5f2cd5d17c8ce26138f17",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2025-038",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us1r33_fcgj.pdf",
+        "pdf_sha256": "005feccf961df0cdb347483ccdc1ae74c8cb9e6e39953a4aab176e4a5a7084f2",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2025-039",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/609us1r56_3e04.pdf",
+        "pdf_sha256": "254a9dab62bcebff86c860f7b5b2e69222295e2c4fd806d21ae66684e83682b5",
+        "status": "candidate",
+        "pages": 3,
+        "words": 981,
+        "text_sha256": "ade840322dcc7967e90d29ef29892db35ff583cafa447fa37a06d9004711c3a6"
+      },
+      {
+        "case_id": "2025-040",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us1r28_i4dk.pdf",
+        "pdf_sha256": "7b95dd663dab701e1672df1a1ca8264a8ae895961483283d1ffe936d3dc269a4",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1274,
+        "text_sha256": "596e3efb8023ac37301e58db17320907887cb53d768efc2332b3f280891f0c99"
+      },
+      {
+        "case_id": "2025-041",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/609us1r54_d18e.pdf",
+        "pdf_sha256": "8ce02921ce147acc0818a5cfc16ad6aa131e634cff935e3b4fe21bbcc0fd9931",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2025-042",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us2r51_k4lo.pdf",
+        "pdf_sha256": "7d73c96ff176df50f4b9841ac08a3bca8dd1ed185256350cffdb1c2678566025",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2025-043",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us1r32_g3bi.pdf",
+        "pdf_sha256": "f6eb319380bcc9bae5687343f6a3e6a65a99d5753ad847358081406ea397818d",
+        "status": "candidate",
+        "pages": 3,
+        "words": 770,
+        "text_sha256": "9af6ef2d9e33c7bfdfec3a78fba881d154ac5a5d853d10b744ceee91cb8e595f"
+      },
+      {
+        "case_id": "2025-044",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us2r46_2c8f.pdf",
+        "pdf_sha256": "9140c7b88ab4814bbdfff8f268adc297f533157ea47eaf7e52a2d135b307bd08",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2025-046",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/609us1r53_i4dk.pdf",
+        "pdf_sha256": "891bc8d0438affd4f4a5cad054b5e7d716eb3d5bc41ff6e6508f4082f8c08f9a",
+        "status": "fallback",
+        "reason": "docket_not_confirmed"
+      },
+      {
+        "case_id": "2025-047",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/609us2r64_7mio.pdf",
+        "pdf_sha256": "58e815ad58041056a095ce89c4115e960af1038dd6b57033816544469e34ae85",
+        "status": "candidate",
+        "pages": 5,
+        "words": 1770,
+        "text_sha256": "69d13f913d6173d0b147acd3478b6bdc6969a96ccc5583125238e50c91ac9c86"
+      },
+      {
+        "case_id": "2025-048",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/609us1r57_db8e.pdf",
+        "pdf_sha256": "9bb62dccdce17d58ce8040d1701bbe188310be305ea1628c4f92847adcb615d3",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1344,
+        "text_sha256": "6bd03aeb3e5a5b33c259ce0fa63eff2cd4996e528926e78c20e20db4e36ce199"
+      },
+      {
+        "case_id": "2025-049",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us2r43_m648.pdf",
+        "pdf_sha256": "e1501e3df00f4320706514c1a07f4d9d4d8978fafe923cc11d26faa2883d9c1b",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2025-050",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us2r37_i425.pdf",
+        "pdf_sha256": "c3d5a95a4301153c7c4f4344d58c18179de3f57f8e727daeb33d144fa44fabd6",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2025-051",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us2r45_i4dk.pdf",
+        "pdf_sha256": "7104411e1c5d02043ff8cbd0b7623683d592335d3979b6c148f4b3fe3eebacb9",
+        "status": "candidate",
+        "pages": 3,
+        "words": 1026,
+        "text_sha256": "44396135c821cca44f35b086d574260968cad9538202a0de63c6abbc1cf0e79d"
+      },
+      {
+        "case_id": "2025-052",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us1r31_8759.pdf",
+        "pdf_sha256": "ba95cc549618c879e4b547e738a13896b3005cefb4b2be42f28c9c8ab1173f66",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2025-053",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us2r48_k53m.pdf",
+        "pdf_sha256": "ceff29c11d8d6d122a5d0263d7c288b60f6cf600b096a706caff4a3144f0ecce",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2025-054",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/609us1r61_3314.pdf",
+        "pdf_sha256": "fea767bb3332c092eafa0d35957e0f01409320762858feeaf3049278dad9706a",
+        "status": "candidate",
+        "pages": 3,
+        "words": 963,
+        "text_sha256": "fa64f59617d58b36c54f40e97f77602cea0f42f29b37a243a38c088776c82c9a"
+      },
+      {
+        "case_id": "2025-055",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/609us1r59_kjfl.pdf",
+        "pdf_sha256": "3ee6dcd35bd8650d146432b7eb1183eaa0c0131eaf67352bc3404436fb235926",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1365,
+        "text_sha256": "67a95fbf1125bcb4b87fd731fd3707e58cab8f3376d35d16daf4189868259b5b"
+      },
+      {
+        "case_id": "2025-056",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us2r38_l53m.pdf",
+        "pdf_sha256": "3d39b813bdad5f74e5d5827bb700bd83d6cf0c1ab077b63441054311f81b2252",
+        "status": "candidate",
+        "pages": 3,
+        "words": 911,
+        "text_sha256": "8140126c4ab6640de8b45cf0271fa2835965786681dc5d858767f173be04c893"
+      },
+      {
+        "case_id": "2025-057",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us2r44_j42l.pdf",
+        "pdf_sha256": "383f659a255cf805fc535f4f9759cfcf8141fd05194dfe7e492f94f353a433a4",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2025-058",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us2r49_mlho.pdf",
+        "pdf_sha256": "21db23704311ae40c2ef394064c365be16d31a97fa8d1cecc42122869397663d",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1578,
+        "text_sha256": "d0bc166fbd000e654290d38c55299d98b8abf5f10bb69f80257e617417d76681"
+      },
+      {
+        "case_id": "2025-059",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/25-365_diff_ed9g.pdf",
+        "pdf_sha256": "125aba33448bec43996bb337ab7227288d7600eedc6be66ae2e2f23ad4dcca17",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2025-060",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/609us2r65_g314.pdf",
+        "pdf_sha256": "37d8ebdc4171f61c2ab87e230994f23a25e35b7ea3b9cb3da97e0c6cd3dbc362",
+        "status": "candidate",
+        "pages": 4,
+        "words": 1358,
+        "text_sha256": "fe4fc514230b914fe7ee451d3013ba4b481034d5659a5cfaff8df5f3a10dd8e5"
+      },
+      {
+        "case_id": "2025-061",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/607us1r11_7l48.pdf",
+        "pdf_sha256": "95e7fc1064930ed7cb5c1ea230d01c2f5003e3c57e12b42e959d91a6a48c2984",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2025-062",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us1r26_ppl4.pdf",
+        "pdf_sha256": "9ccab2d1849e8cfba47ce862292dac12cb9676aa89d0fac66c8124ac6a2ba82b",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "2025-063",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/607us2r21_2bo2.pdf",
+        "pdf_sha256": "68fc38c26d9ad9cbcffb2aa9c692a4ac229bd3944f7c839d83fc0998a8a5682f",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2025-064",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us2r50_lkgn.pdf",
+        "pdf_sha256": "7255a9c212afe51371fa241747a4932788da5ea5aac1f2cf799b70754cb36cc2",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2025-065",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/609us1r60_7mip.pdf",
+        "pdf_sha256": "0b8cf5cdb6068dcf8e6b53842ec33703a4b1472ee8de52106f292554df6f0439",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "2025-066",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us1r36_n758.pdf",
+        "pdf_sha256": "35aae8348f432423e2c3d645d93dfafaa139554d171f0a21e40288a20198f340",
+        "status": "candidate",
+        "pages": 1,
+        "words": 349,
+        "text_sha256": "cc05de40ad54c149c9417aace461a6e62db0b99348dda17cfa6061295e2060f7"
+      },
+      {
+        "case_id": "2025-067",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us2r41_4gc5.pdf",
+        "pdf_sha256": "469657949ce865a1a80ba71476b811987dde5a5a5ef8ae0929c1945d4741270e",
+        "status": "fallback",
+        "reason": "no_substantive_holding"
+      },
+      {
+        "case_id": "2025-068",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/608us2r52_k5fm.pdf",
+        "pdf_sha256": "5eede1a1120d133d668cf37e7187d04820e477b7d22e0892b4273efe85791903",
+        "status": "fallback",
+        "reason": "no_unique_disposition_boundary"
+      },
+      {
+        "case_id": "official:2026-09-25:26A388",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/26a388_q86b.pdf",
+        "pdf_sha256": "73ef64de152e4dc257baa83767b75eb19fe6aea473be8688b61644c0741afd2e",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "official:2026-09-25:26A308",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/26a308_pok0.pdf",
+        "pdf_sha256": "9f401c171e16498100bb2bd3962bba4cca37803e3b941b78d03f6f9d5c3fe45a",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "official:2026-09-04:26A274",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/26a274_l537.pdf",
+        "pdf_sha256": "7c14a9d1e945641c23b82a8838f94d4af5113ef51424d21bd1d623bffbdf2e60",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "official:2026-08-31:26A203",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/26a203_2b8e.pdf",
+        "pdf_sha256": "7075fd3af4344ae90c1d39a949ff0d67deff7b6fbb7452be44b9463353991e0d",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "official:2026-08-24:26A124",
+        "source_url": "https://www.supremecourt.gov/opinions/25pdf/26a124_hgci.pdf",
+        "pdf_sha256": "9729f21f8a1810e15b17af17b6b2fa720036719f56502834751dab36a0e99db5",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      },
+      {
+        "case_id": "official:2026-10-14:26A476",
+        "source_url": "https://www.supremecourt.gov/opinions/26pdf/26a476_k537.pdf",
+        "pdf_sha256": "7883149526371c5543f77a310dfcfead3834a7247654b02190abd5eec6ecaa94",
+        "status": "fallback",
+        "reason": "no_bounded_syllabus"
+      }
+    ],
+    "counts": {
+      "fallback": 195,
+      "candidate": 196
+    }
+  },
+  "decision": "Not promoted: chart retention passes, but seven known direct query/case pairs leave top ten across six topics."
+}

@@ -1,0 +1,956 @@
+{
+  "provenance": {
+    "artifacts/affirmative-action.sqlite": "a7e8e8757291dce0f0cca727f2dfc4bbe01e6c7c3da6c7367739cf74e60cf064",
+    "artifacts/semantic-affirmative-action/manifest.json": "ec5050a7c158cecaf46ac92988e5a7a0fba7a2dc3a7fbacd586d3d222ed272d9",
+    "artifacts/official-syllabi-v5/bundle/manifest.json": "0cac56a0162684b83136ec21273eda6d1c4822a2cb03f74df23ad1e9cdb764bc",
+    "artifacts/court-passage-support-v1/baseline.json": "010dbd6458bd5e8f1db5aebd99158bf53de67003c4b5732cc8dc331a480ebbae",
+    "artifacts/court-candidate-pool-v1/fixed-rankings.json": "3f5060215cb1f49d1cb1369da9126b9f665e88050aa5887509b894d29f1a9144",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/diagnose_healthcare_search.py": "c917f0931af434bd5d18fa0953c5db53f44e8f981afc60627257fe80039e6fbc"
+  },
+  "query_cosine": 0.8719191551208496,
+  "queries": {
+    "healthcare": {
+      "tokens": [
+        "healthcare"
+      ],
+      "baseline_chart": [
+        {
+          "case_id": "2021-036",
+          "name": "BIDEN v. MISSOURI",
+          "score": 0.41210202872753143
+        },
+        {
+          "case_id": "2023-047",
+          "name": "BECERRA v. SAN CARLOS APACHE TRIBE",
+          "score": 0.40282750502692644
+        },
+        {
+          "case_id": "1999-058",
+          "name": "JEFFREY ALLAN FISCHER v. UNITED STATES",
+          "score": 0.35960929538137787
+        },
+        {
+          "case_id": "2024-055",
+          "name": "KENNEDY v. BRAIDWOOD MANAGEMENT",
+          "score": 0.34600658778153315
+        },
+        {
+          "case_id": "2024-011",
+          "name": "ADVOCATE CHRIST MEDICAL CENTER v. KENNEDY",
+          "score": 0.3363579958677292
+        },
+        {
+          "case_id": "2021-027",
+          "name": "BECERRA v. EMPIRE HEALTH FOUNDATION",
+          "score": 0.33021020718710065
+        },
+        {
+          "case_id": "2020-004",
+          "name": "RUTLEDGE v. PHARMACEUTICAL CARE MANAGEMENT ASSOCIATION",
+          "score": 0.3203997624312252
+        },
+        {
+          "case_id": "1980-115",
+          "name": "NATIONAL GERIMEDICAL HOSPITAL AND GERONTOLOGY CENTER v. BLUE CROSS OF KANSAS CITY et al.",
+          "score": 0.30811878740787507
+        },
+        {
+          "case_id": "2022-054",
+          "name": "UNITED STATES EX REL. SCHUTTE v. SUPERVALU INC.",
+          "score": 0.3079286388675027
+        },
+        {
+          "case_id": "2024-019",
+          "name": "UNITED STATES v. SKRMETTI",
+          "score": 0.30772072975804166
+        },
+        {
+          "case_id": "2021-025",
+          "name": "AMERICAN HOSPITAL ASSOCIATION v. BECERRA",
+          "score": 0.3050905935552206
+        },
+        {
+          "case_id": "2020-018",
+          "name": "CALIFORNIA v. TEXAS",
+          "score": 0.30400875806808475
+        }
+      ],
+      "fixed_chart": [
+        {
+          "case_id": "2021-036",
+          "name": "BIDEN v. MISSOURI",
+          "score": 0.41210202872753143
+        },
+        {
+          "case_id": "2023-047",
+          "name": "BECERRA v. SAN CARLOS APACHE TRIBE",
+          "score": 0.38489650860892716
+        },
+        {
+          "case_id": "1999-058",
+          "name": "JEFFREY ALLAN FISCHER v. UNITED STATES",
+          "score": 0.35960929538137787
+        },
+        {
+          "case_id": "2024-011",
+          "name": "ADVOCATE CHRIST MEDICAL CENTER v. KENNEDY",
+          "score": 0.3363579958677292
+        },
+        {
+          "case_id": "2024-055",
+          "name": "KENNEDY v. BRAIDWOOD MANAGEMENT",
+          "score": 0.32728055778942955
+        },
+        {
+          "case_id": "2020-004",
+          "name": "RUTLEDGE v. PHARMACEUTICAL CARE MANAGEMENT ASSOCIATION",
+          "score": 0.3203997624312252
+        },
+        {
+          "case_id": "2021-027",
+          "name": "BECERRA v. EMPIRE HEALTH FOUNDATION",
+          "score": 0.3198484046091282
+        },
+        {
+          "case_id": "1980-115",
+          "name": "NATIONAL GERIMEDICAL HOSPITAL AND GERONTOLOGY CENTER v. BLUE CROSS OF KANSAS CITY et al.",
+          "score": 0.30811878740787507
+        },
+        {
+          "case_id": "2021-025",
+          "name": "AMERICAN HOSPITAL ASSOCIATION v. BECERRA",
+          "score": 0.3050905935552206
+        },
+        {
+          "case_id": "2020-018",
+          "name": "CALIFORNIA v. TEXAS",
+          "score": 0.30400875806808475
+        }
+      ],
+      "cases": [
+        {
+          "case_id": "2011-077",
+          "original": {
+            "max_cosine": 0.3323425054550171,
+            "passage_index": 0,
+            "passages": 15,
+            "source_sha256": "adc831be683a1ba9833aea260b134962b734bdf5590d44ed44a295d251bf2842",
+            "winning_passage": "in 2010, congress enacted the patient protection and affordable care act in order to increase the number of americans covered by health insurance and decrease the cost of health care. one key provision is the individual mandate, which requires most americans to maintain \u201c minimum essential \u201d health insurance coverage. 26 u. s. c. \u00a7 5000a. for individuals who are not exempt, and who do not receive health insurance through an employer or government program, the means of satisfying the requirement is to purchase insurance from a private company. beginning in 2014, those who do not comply with the mandate must make a \u201c [ s ] hared responsibility payment \u201d to the federal government. \u00a7 5000a ( b ) ( 1 ). the act provides that this \u201c penalty \u201d will be paid to the internal revenue service with an individual \u2019 s taxes, and \u201c shall be assessed and collected in the same manner \u201d as tax penalties. \u00a7 \u00a7 5000a ( c ), ( g ) ( 1 ). another key provision of the act is the medicaid expansion. the current medicaid program offers federal funding to states to assist pregnant women, children, needy families, the blind, the elderly, and the disabled in obtaining medical care. 42 u. s. c. \u00a7 1396d ("
+          },
+          "summary": {
+            "max_cosine": 0.3323425054550171,
+            "passage_index": 0,
+            "passages": 15,
+            "source_sha256": "adc831be683a1ba9833aea260b134962b734bdf5590d44ed44a295d251bf2842",
+            "winning_passage": "in 2010, congress enacted the patient protection and affordable care act in order to increase the number of americans covered by health insurance and decrease the cost of health care. one key provision is the individual mandate, which requires most americans to maintain \u201c minimum essential \u201d health insurance coverage. 26 u. s. c. \u00a7 5000a. for individuals who are not exempt, and who do not receive health insurance through an employer or government program, the means of satisfying the requirement is to purchase insurance from a private company. beginning in 2014, those who do not comply with the mandate must make a \u201c [ s ] hared responsibility payment \u201d to the federal government. \u00a7 5000a ( b ) ( 1 ). the act provides that this \u201c penalty \u201d will be paid to the internal revenue service with an individual \u2019 s taxes, and \u201c shall be assessed and collected in the same manner \u201d as tax penalties. \u00a7 \u00a7 5000a ( c ), ( g ) ( 1 ). another key provision of the act is the medicaid expansion. the current medicaid program offers federal funding to states to assist pregnant women, children, needy families, the blind, the elderly, and the disabled in obtaining medical care. 42 u. s. c. \u00a7 1396d ("
+          },
+          "baseline": {
+            "rank": 13,
+            "score": 0.29910825490951537,
+            "lexical": 0.0,
+            "semantic": 0.3323425054550171
+          },
+          "fixed": {
+            "rank": 11,
+            "score": 0.29910825490951537,
+            "lexical": 0.0,
+            "semantic": 0.3323425054550171
+          }
+        },
+        {
+          "case_id": "2021-027",
+          "original": {
+            "max_cosine": 0.3630834221839905,
+            "passage_index": 3,
+            "passages": 45,
+            "source_sha256": "b6af879c216f6422f0e5c00cd824a02d5a59e48da25cb93b290679705d067894",
+            "winning_passage": "( 3 ), 1395w \u2013 101 ( a ) ( 3 ) ( a ). the medicare program pays a hospital a fixed rate for treating each medicare patient, based on the patient ' s diagnosis and regardless of the hospital ' s actual costs. \u00a7 \u00a7 1395ww ( d ) ( 1 ) \u2013 ( 4 ). the rates are designed to refect the amounts an efficiently run hospital, in the same region, would expend to treat a patient with the same diagnosis. see 42 cfr \u00a7 412. 2 ( 2022 ). if the hospital spends anything more, it suffers a fnancial loss. the fat - rate payment sys - tem thus gives hospitals an incentive to provide effcient page proof pending publication levels of medical service. but congress, recognizing complexity in healthcare, pro - vided for various hospital - specifc rate adjustments \u2014 includ - ing the one at issue here for treating low - income patients. the \u201c disproportionate share hospital \u201d ( dsh ) adjustment gives hospitals serving an \u201c unusually high percentage of low - income patients \u201d enhanced medicare payments. sebelius v. auburn regional medical center, 568 u. s. 145, 150 ( 2013 )."
+          },
+          "summary": {
+            "max_cosine": 0.3170308470726013,
+            "passage_index": 6,
+            "passages": 11,
+            "source_sha256": "81708f8a9839517ba53dbe09c938ab5e5408e6b8326cc0edb3783ca8bf2b4be7",
+            "winning_passage": "conditions, such as the 90 - day cap on inpatient hospital services. for example, the statute twice refers to patients who are \u201c entitled to benefts under part a but ha [ ve ] exhausted benefts for inpatient hospital services. \u201d \u00a7 \u00a7 1395l ( a ) ( 8 ) ( b ) ( i ), 1395l ( t ) ( 1 ) ( b ) ( ii ). in thus describing the part a entitlement, the statute refects the complexity of health insurance : an insured who hits some limit on coverage for, say, eye care is still insured. his policy will pay for more eye care in the next coverage period and meanwhile will pay for his knee replacement. if \u201c entitled to benefts \u201d instead bore empire ' s meaning, medicare benefciaries would lose important rights and protections, such as the ability to enroll in other medicare programs. see \u00a7 \u00a7 1395o ( a ), 1395w - 21 ( a ) ( 3 ), 1395w \u2013 101 ( a ) ( 3 ) ( a ). empire ' s interpretation would also make a hash of provisions designed to inform medicare benefciaries of their benefts, see \u00a7 1395b \u2013"
+          },
+          "baseline": {
+            "rank": 6,
+            "score": 0.33021020718710065,
+            "lexical": 0.034351272215091926,
+            "semantic": 0.3630834221839905
+          },
+          "fixed": {
+            "rank": 7,
+            "score": 0.3198484046091282,
+            "lexical": 0.034351272215091926,
+            "semantic": 0.3515703082084656
+          }
+        },
+        {
+          "case_id": "2022-054",
+          "original": {
+            "max_cosine": 0.3362281322479248,
+            "passage_index": 2,
+            "passages": 41,
+            "source_sha256": "b86f224e8361245f4e61517852a1715c8843e8d7419c6bed8fa5296c17f40a24",
+            "winning_passage": ". ; and for sen. charles e. grass - ley by eric r. havian. briefs of amici curiae urging affrmance were fled for the advanced medical technology association et al. by douglas hallward - driemeier ; for the american hospital association et al. by michael r. dreeben, jenya godina, and anton metlitsky ; for the chamber of commerce of the united states of america et al. by john p. elwood, craig d. margolis, jayce born, andrew r. varcoe, erica klenicki, michael a. tilghman ii, james c. stansel, and melissa b. kimmel ; for ctia \u2013 the wireless associ - ation et al. by kyle d. hawkins, william t. thompson, and drew f. wald - beser ; for the national association of chain drug stores by craig y. lee and daniel stefany ; for the national defense industrial association et al. by beth s. brinkmann, matthew f. dunn, peter b. hutt ii, krysten rosen moller, and s. conrad scott ; for the professional services council et al. by david w. ogden, ronald"
+          },
+          "summary": {
+            "max_cosine": 0.17710059881210327,
+            "passage_index": 0,
+            "passages": 7,
+            "source_sha256": "305606aa01e8feab457682d7bcd9982d510a488f3a8e385d85d2c2e6a49ead69",
+            "winning_passage": "united states et al. ex rel. schutte et al. v. supervalu inc. et al. certiorari to the united states court of appeals for the seventh circuit no. 21 \u2013 1326. argued april 18, 2023 \u2014 decided june 1, 2023 * in these cases, petitioners have sued retail pharmacies under the false claims act ( fca ), 31 u. s. c. \u00a7 3729 et seq. the fca permits private parties to bring lawsuits in the name of the united states against those who they believe have defrauded the federal government, \u00a7 3730 ( b ), and imposes liability on anyone who \u201c knowingly \u201d submits a \u201c false \u201d claim to the government, \u00a7 3729 ( a ). here, petitioners claim that respondents \u2014 supervalu and safeway \u2014 defrauded two federal benefts programs, medicaid and medicare. both medicaid and medicare offer prescription - drug coverage to their benefciaries, and both often cap any reimbursement for drugs at the pharmacy ' s \u201c usual and customary \u201d charge to the public. but, according to petitioners, supervalu and safeway for years offered various"
+          },
+          "baseline": {
+            "rank": 9,
+            "score": 0.3079286388675027,
+            "lexical": 0.05323319844370412,
+            "semantic": 0.3362281322479248
+          },
+          "fixed": {
+            "rank": 30,
+            "score": 0.27212495725548796,
+            "lexical": 0.05323319844370412,
+            "semantic": 0.2964462637901306
+          }
+        },
+        {
+          "case_id": "2024-019",
+          "original": {
+            "max_cosine": 0.2972460389137268,
+            "passage_index": 64,
+            "passages": 66,
+            "source_sha256": "6b85f3fd380ad1f24c57443badf34ab3a615be7bc7bc446500b873a50cfaa0b2",
+            "winning_passage": "ultimate question of united states law, see schriro v. summerlin, 542 u. s. 348, 356 ( 2004 ) ( contemporary foreign practice is \u201c irrelevant \u201d to constitutional interpretation ), but to demonstrate the open questions regarding basic factual issues before medical au - thorities and other regulatory bodies. such uncertainty \u201c af - ford [ s ] little basis for judicial responses in absolute terms. \u201d marshall v. united states, 414 u. s. 417, 427 ( 1974 ). and page proof pending publication \u201c [ t ] he calculus of effects, the manner in which a particular law reverberates in a society, is a legislative and not a judi - cial responsibility. \u201d personnel administrator of mass., 442 u. s., at 272. * * * this case carries with it the weight of ferce scientifc and policy debates about the safety, effcacy, and propriety of medical treatments in an evolving feld. the voices in these debates raise sincere concerns ; the implications for all are profound. the equal protection clause does not resolve these disagreements. nor does it afford us license to decide them as we see best. our role is not \u201c to judge the wisdom, fairness,"
+          },
+          "summary": {
+            "max_cosine": 0.24427784979343414,
+            "passage_index": 10,
+            "passages": 12,
+            "source_sha256": "b3eb16564098e391a36859ed18900c365bdcae70f12ce29d7a3c3d1978c30312",
+            "winning_passage": "and gender can be resolved through less invasive approaches. sb1 ' s age - and diagnosis - based classifcations are rationally related to these fndings and the state ' s objective of protecting minors ' health and welfare. the court also declines the plaintiffs ' invitation to second - guess the lines that sb1 draws. states have \u201c wide discretion to pass legislation in areas where there is medical and scientifc uncertainty. \u201d gonzales v. carhart, 550 u. s. 124, 163. recent developments demonstrate the open questions that exist regarding basic factual issues before medical authorities and regulatory bodies in this area, underscoring the need for legislative fexibility. pp. 522 \u2013 525. ( c ) this case carries with it the weight of ferce scientifc and policy debates about the safety, effcacy, and propriety of medical treatments in an evolving feld. the equal protection clause does not resolve these disagreements. the court ' s role is not \u201c to judge the wisdom, fairness, or logic \u201d of sb1, beach communications, 508 u. s., at 313, but only to ensure that the law does not violate equal protection guarantees. it does not. questions regarding the law ' s policy"
+          },
+          "baseline": {
+            "rank": 10,
+            "score": 0.30772072975804166,
+            "lexical": 0.4019929473568753,
+            "semantic": 0.2972460389137268
+          },
+          "fixed": {
+            "rank": 14,
+            "score": 0.2958028972642597,
+            "lexical": 0.4019929473568753,
+            "semantic": 0.28400400280952454
+          }
+        },
+        {
+          "case_id": "2024-055",
+          "original": {
+            "max_cosine": 0.3711012601852417,
+            "passage_index": 6,
+            "passages": 95,
+            "source_sha256": "e669a4c3d1156d28bee61b4ffa1560268e8bf4f696ec4d1eaf29e4567fa06958",
+            "winning_passage": "##i - dence related to the effectiveness, appropriateness, and cost - effectiveness of clinical preventive services for the purpose of developing recommendations for the health care commu - nity. \u201d \u00a7 299b \u2013 4 ( a ) ( 1 ). as presently constituted, the task force consists of 16 page proof pending publication members who are now appointed by the secretary of hhs to staggered 4 - year terms. those members are \u201c nationally recognized experts in prevention, evidence - based medicine, and primary care. \u201d app. 39. they include researchers, professors, and practicing physicians with experience and ex - pertise in public health and across a wide range of medical specialties. they serve on a volunteer basis, so they are not paid by the federal government for their service on the task force. preventive services \u201c can help people avoid acute illness, identify and treat chronic conditions, prevent cancer or lead to earlier detection, and improve health. \u201d hhs, issue brief \u2014 access to preventive services without cost - sharing : evidence from the affordable care act 1 ( jan. 2022 ). a wide range of individuals and organizations rely on the task force ' s preventive - services recommendations. they include \u201c health care systems, professional societies, employers, \u201d \u201c"
+          },
+          "summary": {
+            "max_cosine": 0.2878744602203369,
+            "passage_index": 0,
+            "passages": 12,
+            "source_sha256": "861a859ebb798f44bef5bc4983d44c25a5d9625977a832458e68e5b61c95c7fd",
+            "winning_passage": "kennedy, secretary of health and human services, et al. v. braidwood management, inc., et al. certiorari to the united states court of appeals for the fth circuit no. 24 \u2013 316. argued april 21, 2025 \u2014 decided june 27, 2025 in 1984, the department of health and human services ( hhs ) created the u. s. preventive services task force, a body that formulates evidence - based recommendations regarding preventive healthcare services. congress codifed the task force ' s role in 1999, establishing it as an entity within the agency for healthcare research and quality ( ahrq ) in hhs ' s public health service. the task force currently consists of 16 volunteer members appointed by the secretary of hhs to staggered 4 - year terms. before 2010, task force recommendations were purely advisory. the affordable care act of 2010 changed this by requiring most health insurers and group health plans to cover without cost sharing those preventive services that receive \u201c a \u201d or \u201c b \u201d ratings from the task force. the act also amended the governing statute to describe the task force as \u201c independent \u201d and to provide that members and their recommendations \u201c shall be independent and, to the extent practicable, not"
+          },
+          "baseline": {
+            "rank": 4,
+            "score": 0.34600658778153315,
+            "lexical": 0.12015453614815592,
+            "semantic": 0.3711012601852417
+          },
+          "fixed": {
+            "rank": 5,
+            "score": 0.32728055778942955,
+            "lexical": 0.12015453614815592,
+            "semantic": 0.3502945601940155
+          }
+        }
+      ]
+    },
+    "health care": {
+      "tokens": [
+        "health",
+        "care"
+      ],
+      "baseline_chart": [
+        {
+          "case_id": "1999-058",
+          "name": "JEFFREY ALLAN FISCHER v. UNITED STATES",
+          "score": 0.4987677395437209
+        },
+        {
+          "case_id": "2011-077",
+          "name": "NATIONAL FEDERATION OF INDEPENDENT BUSINESS, et al., PETITIONERS v. KATHLEEN SEBELIUS, SECRETARY OF HEALTH AND HUMAN SERVICES, et al.",
+          "score": 0.47019130816112853
+        },
+        {
+          "case_id": "1980-115",
+          "name": "NATIONAL GERIMEDICAL HOSPITAL AND GERONTOLOGY CENTER v. BLUE CROSS OF KANSAS CITY et al.",
+          "score": 0.4299766182899475
+        },
+        {
+          "case_id": "1989-111",
+          "name": "L. DOUGLAS WILDER, GOVERNOR OF VIRGINIA, et al. v. VIRGINIA HOSPITAL ASSOCIATION",
+          "score": 0.4117407360603741
+        },
+        {
+          "case_id": "2024-055",
+          "name": "KENNEDY v. BRAIDWOOD MANAGEMENT",
+          "score": 0.40882335265689124
+        },
+        {
+          "case_id": "2021-036",
+          "name": "BIDEN v. MISSOURI",
+          "score": 0.40298286418105067
+        },
+        {
+          "case_id": "2022-017",
+          "name": "HEALTH AND HOSPITAL CORPORATION OF MARION COUNTY, INDIANA v. TALEVSKI",
+          "score": 0.39642850138271096
+        },
+        {
+          "case_id": "2001-071",
+          "name": "RUSH PRUDENTIAL HMO, INC. v. DEBRA C. MORAN et al.",
+          "score": 0.394072728167608
+        },
+        {
+          "case_id": "2021-027",
+          "name": "BECERRA v. EMPIRE HEALTH FOUNDATION",
+          "score": 0.3935482413209308
+        },
+        {
+          "case_id": "2011-028",
+          "name": "TOBY DOUGLAS, DIRECTOR, CALIFORNIA DEPARTMENT OF HEALTH CARE SERVICES, PETITIONER v. INDEPENDENT LIVING CENTER OF SOUTHERN CALIFORNIA, INC., et al.",
+          "score": 0.38421125174004317
+        },
+        {
+          "case_id": "2024-011",
+          "name": "ADVOCATE CHRIST MEDICAL CENTER v. KENNEDY",
+          "score": 0.3837678722927151
+        },
+        {
+          "case_id": "1981-146",
+          "name": "BLUM, COMMISSIONER OF THE NEW YORK STATE DEPARTMENT OF SOCIAL SERVICES, et al. v. YARETSKY et al.",
+          "score": 0.36416951868750097
+        },
+        {
+          "case_id": "2021-026",
+          "name": "GALLARDO v. MARSTILLER",
+          "score": 0.3637427340287479
+        },
+        {
+          "case_id": "2014-052",
+          "name": "KING v. BURWELL",
+          "score": 0.3631306886618577
+        },
+        {
+          "case_id": "2020-018",
+          "name": "CALIFORNIA v. TEXAS",
+          "score": 0.358808484929316
+        },
+        {
+          "case_id": "1977-128",
+          "name": "BETH ISRAEL HOSPITAL v. NATIONAL LABOR RELATIONS BOARD",
+          "score": 0.35850859856634754
+        },
+        {
+          "case_id": "2011-032",
+          "name": "DANIEL COLEMAN, PETITIONER v. COURT OF APPEALS OF MARYLAND et al.",
+          "score": 0.3442997942906401
+        },
+        {
+          "case_id": "1983-089",
+          "name": "HECKLER, SECRETARY OF HEALTH AND HUMAN SERVICES v. RINGER et al.",
+          "score": 0.34338047612561
+        },
+        {
+          "case_id": "1984-107",
+          "name": "METROPOLITAN LIFE INSURANCE CO. v. MASSACHUSETTS",
+          "score": 0.34272284158353106
+        },
+        {
+          "case_id": "2023-047",
+          "name": "BECERRA v. SAN CARLOS APACHE TRIBE",
+          "score": 0.34268787799718936
+        },
+        {
+          "case_id": "2015-024",
+          "name": "GOBEILLE v. LIBERTY MUTUAL INSURANCE COMPANY",
+          "score": 0.3406166111247019
+        },
+        {
+          "case_id": "2021-047",
+          "name": "MARIETTA MEMORIAL HOSPITAL EMPLOYEE HEALTH BENEFIT PLAN v. DAVITA",
+          "score": 0.34008515257022454
+        },
+        {
+          "case_id": "1990-064",
+          "name": "AMERICAN HOSPITAL ASSOCIATION v. NATIONAL LABOR RELATIONS BOARD et al.",
+          "score": 0.3390440800334728
+        },
+        {
+          "case_id": "2024-054",
+          "name": "MEDINA v. PLANNED PARENTHOOD SOUTH ATLANTIC",
+          "score": 0.33618346258975923
+        },
+        {
+          "case_id": "2019-029",
+          "name": "MAINE COMMUNITY HEALTH OPTIONS v. UNITED STATES",
+          "score": 0.3350002348423004
+        },
+        {
+          "case_id": "1956-064",
+          "name": "HAYNES et ux. v. UNITED STATES",
+          "score": 0.3306721570303683
+        },
+        {
+          "case_id": "2005-050",
+          "name": "ARKANSAS DEPARTMENT OF HEALTH AND HUMAN SERVICES, et al. v. HEIDI AHLBORN",
+          "score": 0.3288647306508699
+        },
+        {
+          "case_id": "1987-082",
+          "name": "PATRICK v. BURGET et al.",
+          "score": 0.32482590934971084
+        },
+        {
+          "case_id": "1983-100",
+          "name": "HECKLER, SECRETARY OF HEALTH AND HUMAN SERVICES v. COMMUNITY HEALTH SERVICES OF CRAWFORD COUNTY, INC., et al.",
+          "score": 0.3222496489252768
+        },
+        {
+          "case_id": "1978-129",
+          "name": "PARHAM, COMMISSIONER, DEPARTMENT OF HUMAN RESOURCES OF GEORGIA, et al. v. J.R. et al.",
+          "score": 0.32218161115367794
+        },
+        {
+          "case_id": "1999-034",
+          "name": "DONNA E. SHALALA, SECRETARY OF HEALTH AND HUMAN SERVICES, et al. v. ILLINOIS COUNCIL ON LONG TERM CARE, INC.",
+          "score": 0.32175738566103546
+        },
+        {
+          "case_id": "2020-004",
+          "name": "RUTLEDGE v. PHARMACEUTICAL CARE MANAGEMENT ASSOCIATION",
+          "score": 0.3217313084239246
+        },
+        {
+          "case_id": "2016-049",
+          "name": "COVENTRY HEALTH CARE OF MISSOURI v. NEVILS",
+          "score": 0.3207055643196993
+        },
+        {
+          "case_id": "2019-060",
+          "name": "LITTLE SISTERS OF THE POOR SAINTS PETER AND PAUL HOME v. PENNSYLVANIA",
+          "score": 0.320373685947571
+        },
+        {
+          "case_id": "2005-018",
+          "name": "ALBERTO R. GONZALES, ATTORNEY GENERAL, et al. v. OREGON, et al.",
+          "score": 0.3201610255103545
+        },
+        {
+          "case_id": "2002-038",
+          "name": "KENTUCKY ASSOCIATION OF HEALTH PLANS, INC., et al. v. JANIE A. MILLER, COMMISSIONER, KENTUCKY DEPARTMENT OF INSURANCE",
+          "score": 0.31930234955635356
+        },
+        {
+          "case_id": "1984-099",
+          "name": "CONNECTICUT DEPARTMENT OF INCOME MAINTENANCE v. HECKLER, SECRETARY OF HEALTH AND HUMAN SERVICES, et al.",
+          "score": 0.3180023813350985
+        },
+        {
+          "case_id": "1994-052",
+          "name": "NEW YORK STATE CONFERENCE OF BLUE CROSS & BLUE SHIELD PLANS, et al. v. TRAVELERS INSURANCE COMPANY, et al.",
+          "score": 0.3166998546415073
+        },
+        {
+          "case_id": "1998-028",
+          "name": "AMERICAN MANUFACTURERS MUTUAL INSURANCE COMPANY, et al. v. DELORES SCOTT SULLIVAN et al.",
+          "score": 0.3147673108642633
+        },
+        {
+          "case_id": "2012-014",
+          "name": "FEDERAL TRADE COMMISSION, PETITIONER v. PHOEBE PUTNEY HEALTH SYSTEM, INC., et al.",
+          "score": 0.31408071985128483
+        },
+        {
+          "case_id": "1979-135",
+          "name": "O'BANNON, SECRETARY OF PUBLIC WELFARE OF PENNSYLVANIA v. TOWN COURT NURSING CENTER et al.",
+          "score": 0.3116785447038654
+        },
+        {
+          "case_id": "2021-025",
+          "name": "AMERICAN HOSPITAL ASSOCIATION v. BECERRA",
+          "score": 0.3110735425735732
+        },
+        {
+          "case_id": "1985-122",
+          "name": "ATKINS, COMMISSIONER, MASSACHUSETTS DEPARTMENT OF PUBLIC WELFARE v. RIVERA et al.",
+          "score": 0.30883858179461426
+        },
+        {
+          "case_id": "2024-026",
+          "name": "STANLEY v. CITY OF SANFORD, FLORIDA",
+          "score": 0.30822179954920115
+        },
+        {
+          "case_id": "1984-020",
+          "name": "ALEXANDER, GOVERNOR OF TENNESSEE, et al. v. CHOATE et al.",
+          "score": 0.3049369881233389
+        },
+        {
+          "case_id": "2021-035",
+          "name": "NATIONAL FEDERATION OF INDEPENDENT BUSINESS v. DEPARTMENT OF LABOR, OCCUPATIONAL SAFETY AND HEALTH ADMINISTRATION",
+          "score": 0.3047177531321822
+        },
+        {
+          "case_id": "1987-154",
+          "name": "BOWEN, SECRETARY OF HEALTH AND HUMAN SERVICES, et al. v. MASSACHUSETTS",
+          "score": 0.3037193706641495
+        },
+        {
+          "case_id": "1976-154",
+          "name": "BEAL, SECRETARY, DEPARTMENT OF PUBLIC WELFARE OF PENNSYLVANIA, et al. v. DOE et al.",
+          "score": 0.30135690444477625
+        },
+        {
+          "case_id": "1981-133",
+          "name": "SCHWEIKER, SECRETARY OF HEALTH AND HUMAN SERVICES v. HOGAN et al.",
+          "score": 0.30132516627937994
+        },
+        {
+          "case_id": "2013-070",
+          "name": "BURWELL v. HOBBY LOBBY STORES",
+          "score": 0.30131784125647826
+        },
+        {
+          "case_id": "1978-136",
+          "name": "NATIONAL LABOR RELATIONS BOARD et al. v. BAPTIST HOSPITAL, INC.",
+          "score": 0.3006857694246519
+        },
+        {
+          "case_id": "2018-040",
+          "name": "AZAR v. ALLINA HEALTH SERVICES",
+          "score": 0.30043980138200754
+        }
+      ],
+      "fixed_chart": [
+        {
+          "case_id": "1999-058",
+          "name": "JEFFREY ALLAN FISCHER v. UNITED STATES",
+          "score": 0.4987677395437209
+        },
+        {
+          "case_id": "2011-077",
+          "name": "NATIONAL FEDERATION OF INDEPENDENT BUSINESS, et al., PETITIONERS v. KATHLEEN SEBELIUS, SECRETARY OF HEALTH AND HUMAN SERVICES, et al.",
+          "score": 0.47019130816112853
+        },
+        {
+          "case_id": "1980-115",
+          "name": "NATIONAL GERIMEDICAL HOSPITAL AND GERONTOLOGY CENTER v. BLUE CROSS OF KANSAS CITY et al.",
+          "score": 0.4299766182899475
+        },
+        {
+          "case_id": "1989-111",
+          "name": "L. DOUGLAS WILDER, GOVERNOR OF VIRGINIA, et al. v. VIRGINIA HOSPITAL ASSOCIATION",
+          "score": 0.4117407360603741
+        },
+        {
+          "case_id": "2021-036",
+          "name": "BIDEN v. MISSOURI",
+          "score": 0.40298286418105067
+        },
+        {
+          "case_id": "2022-017",
+          "name": "HEALTH AND HOSPITAL CORPORATION OF MARION COUNTY, INDIANA v. TALEVSKI",
+          "score": 0.39642850138271096
+        },
+        {
+          "case_id": "2001-071",
+          "name": "RUSH PRUDENTIAL HMO, INC. v. DEBRA C. MORAN et al.",
+          "score": 0.394072728167608
+        },
+        {
+          "case_id": "2024-055",
+          "name": "KENNEDY v. BRAIDWOOD MANAGEMENT",
+          "score": 0.3906599160056614
+        },
+        {
+          "case_id": "2011-028",
+          "name": "TOBY DOUGLAS, DIRECTOR, CALIFORNIA DEPARTMENT OF HEALTH CARE SERVICES, PETITIONER v. INDEPENDENT LIVING CENTER OF SOUTHERN CALIFORNIA, INC., et al.",
+          "score": 0.38421125174004317
+        },
+        {
+          "case_id": "2024-011",
+          "name": "ADVOCATE CHRIST MEDICAL CENTER v. KENNEDY",
+          "score": 0.3837678722927151
+        },
+        {
+          "case_id": "2021-027",
+          "name": "BECERRA v. EMPIRE HEALTH FOUNDATION",
+          "score": 0.381685206357323
+        },
+        {
+          "case_id": "2021-026",
+          "name": "GALLARDO v. MARSTILLER",
+          "score": 0.36512549324219545
+        },
+        {
+          "case_id": "1981-146",
+          "name": "BLUM, COMMISSIONER OF THE NEW YORK STATE DEPARTMENT OF SOCIAL SERVICES, et al. v. YARETSKY et al.",
+          "score": 0.36416951868750097
+        },
+        {
+          "case_id": "2014-052",
+          "name": "KING v. BURWELL",
+          "score": 0.3631306886618577
+        },
+        {
+          "case_id": "2020-018",
+          "name": "CALIFORNIA v. TEXAS",
+          "score": 0.358808484929316
+        },
+        {
+          "case_id": "1977-128",
+          "name": "BETH ISRAEL HOSPITAL v. NATIONAL LABOR RELATIONS BOARD",
+          "score": 0.35850859856634754
+        },
+        {
+          "case_id": "2011-032",
+          "name": "DANIEL COLEMAN, PETITIONER v. COURT OF APPEALS OF MARYLAND et al.",
+          "score": 0.3442997942906401
+        },
+        {
+          "case_id": "1983-089",
+          "name": "HECKLER, SECRETARY OF HEALTH AND HUMAN SERVICES v. RINGER et al.",
+          "score": 0.34338047612561
+        },
+        {
+          "case_id": "1984-107",
+          "name": "METROPOLITAN LIFE INSURANCE CO. v. MASSACHUSETTS",
+          "score": 0.34272284158353106
+        },
+        {
+          "case_id": "2015-024",
+          "name": "GOBEILLE v. LIBERTY MUTUAL INSURANCE COMPANY",
+          "score": 0.3406166111247019
+        },
+        {
+          "case_id": "1990-064",
+          "name": "AMERICAN HOSPITAL ASSOCIATION v. NATIONAL LABOR RELATIONS BOARD et al.",
+          "score": 0.3390440800334728
+        },
+        {
+          "case_id": "2021-047",
+          "name": "MARIETTA MEMORIAL HOSPITAL EMPLOYEE HEALTH BENEFIT PLAN v. DAVITA",
+          "score": 0.33830400485179496
+        },
+        {
+          "case_id": "2024-054",
+          "name": "MEDINA v. PLANNED PARENTHOOD SOUTH ATLANTIC",
+          "score": 0.3378991644082254
+        },
+        {
+          "case_id": "2019-029",
+          "name": "MAINE COMMUNITY HEALTH OPTIONS v. UNITED STATES",
+          "score": 0.3350002348423004
+        },
+        {
+          "case_id": "1956-064",
+          "name": "HAYNES et ux. v. UNITED STATES",
+          "score": 0.3306721570303683
+        },
+        {
+          "case_id": "2005-050",
+          "name": "ARKANSAS DEPARTMENT OF HEALTH AND HUMAN SERVICES, et al. v. HEIDI AHLBORN",
+          "score": 0.3288647306508699
+        },
+        {
+          "case_id": "2023-047",
+          "name": "BECERRA v. SAN CARLOS APACHE TRIBE",
+          "score": 0.32748061118963323
+        },
+        {
+          "case_id": "1987-082",
+          "name": "PATRICK v. BURGET et al.",
+          "score": 0.32482590934971084
+        },
+        {
+          "case_id": "1983-100",
+          "name": "HECKLER, SECRETARY OF HEALTH AND HUMAN SERVICES v. COMMUNITY HEALTH SERVICES OF CRAWFORD COUNTY, INC., et al.",
+          "score": 0.3222496489252768
+        },
+        {
+          "case_id": "1978-129",
+          "name": "PARHAM, COMMISSIONER, DEPARTMENT OF HUMAN RESOURCES OF GEORGIA, et al. v. J.R. et al.",
+          "score": 0.32218161115367794
+        },
+        {
+          "case_id": "1999-034",
+          "name": "DONNA E. SHALALA, SECRETARY OF HEALTH AND HUMAN SERVICES, et al. v. ILLINOIS COUNCIL ON LONG TERM CARE, INC.",
+          "score": 0.32175738566103546
+        },
+        {
+          "case_id": "2020-004",
+          "name": "RUTLEDGE v. PHARMACEUTICAL CARE MANAGEMENT ASSOCIATION",
+          "score": 0.3217313084239246
+        },
+        {
+          "case_id": "2016-049",
+          "name": "COVENTRY HEALTH CARE OF MISSOURI v. NEVILS",
+          "score": 0.3207055643196993
+        },
+        {
+          "case_id": "2019-060",
+          "name": "LITTLE SISTERS OF THE POOR SAINTS PETER AND PAUL HOME v. PENNSYLVANIA",
+          "score": 0.320373685947571
+        },
+        {
+          "case_id": "2005-018",
+          "name": "ALBERTO R. GONZALES, ATTORNEY GENERAL, et al. v. OREGON, et al.",
+          "score": 0.3201610255103545
+        },
+        {
+          "case_id": "2002-038",
+          "name": "KENTUCKY ASSOCIATION OF HEALTH PLANS, INC., et al. v. JANIE A. MILLER, COMMISSIONER, KENTUCKY DEPARTMENT OF INSURANCE",
+          "score": 0.31930234955635356
+        },
+        {
+          "case_id": "1984-099",
+          "name": "CONNECTICUT DEPARTMENT OF INCOME MAINTENANCE v. HECKLER, SECRETARY OF HEALTH AND HUMAN SERVICES, et al.",
+          "score": 0.3180023813350985
+        },
+        {
+          "case_id": "1994-052",
+          "name": "NEW YORK STATE CONFERENCE OF BLUE CROSS & BLUE SHIELD PLANS, et al. v. TRAVELERS INSURANCE COMPANY, et al.",
+          "score": 0.3166998546415073
+        },
+        {
+          "case_id": "1998-028",
+          "name": "AMERICAN MANUFACTURERS MUTUAL INSURANCE COMPANY, et al. v. DELORES SCOTT SULLIVAN et al.",
+          "score": 0.3147673108642633
+        },
+        {
+          "case_id": "2012-014",
+          "name": "FEDERAL TRADE COMMISSION, PETITIONER v. PHOEBE PUTNEY HEALTH SYSTEM, INC., et al.",
+          "score": 0.31408071985128483
+        },
+        {
+          "case_id": "1979-135",
+          "name": "O'BANNON, SECRETARY OF PUBLIC WELFARE OF PENNSYLVANIA v. TOWN COURT NURSING CENTER et al.",
+          "score": 0.3116785447038654
+        },
+        {
+          "case_id": "2021-025",
+          "name": "AMERICAN HOSPITAL ASSOCIATION v. BECERRA",
+          "score": 0.3110735425735732
+        },
+        {
+          "case_id": "1985-122",
+          "name": "ATKINS, COMMISSIONER, MASSACHUSETTS DEPARTMENT OF PUBLIC WELFARE v. RIVERA et al.",
+          "score": 0.30883858179461426
+        },
+        {
+          "case_id": "2024-026",
+          "name": "STANLEY v. CITY OF SANFORD, FLORIDA",
+          "score": 0.30822179954920115
+        },
+        {
+          "case_id": "1984-020",
+          "name": "ALEXANDER, GOVERNOR OF TENNESSEE, et al. v. CHOATE et al.",
+          "score": 0.3049369881233389
+        },
+        {
+          "case_id": "2021-035",
+          "name": "NATIONAL FEDERATION OF INDEPENDENT BUSINESS v. DEPARTMENT OF LABOR, OCCUPATIONAL SAFETY AND HEALTH ADMINISTRATION",
+          "score": 0.3047177531321822
+        },
+        {
+          "case_id": "1987-154",
+          "name": "BOWEN, SECRETARY OF HEALTH AND HUMAN SERVICES, et al. v. MASSACHUSETTS",
+          "score": 0.3037193706641495
+        },
+        {
+          "case_id": "1976-154",
+          "name": "BEAL, SECRETARY, DEPARTMENT OF PUBLIC WELFARE OF PENNSYLVANIA, et al. v. DOE et al.",
+          "score": 0.30135690444477625
+        },
+        {
+          "case_id": "1981-133",
+          "name": "SCHWEIKER, SECRETARY OF HEALTH AND HUMAN SERVICES v. HOGAN et al.",
+          "score": 0.30132516627937994
+        },
+        {
+          "case_id": "2013-070",
+          "name": "BURWELL v. HOBBY LOBBY STORES",
+          "score": 0.30131784125647826
+        },
+        {
+          "case_id": "1978-136",
+          "name": "NATIONAL LABOR RELATIONS BOARD et al. v. BAPTIST HOSPITAL, INC.",
+          "score": 0.3006857694246519
+        },
+        {
+          "case_id": "2018-040",
+          "name": "AZAR v. ALLINA HEALTH SERVICES",
+          "score": 0.30043980138200754
+        }
+      ],
+      "cases": [
+        {
+          "case_id": "2011-077",
+          "original": {
+            "max_cosine": 0.4341769814491272,
+            "passage_index": 0,
+            "passages": 15,
+            "source_sha256": "adc831be683a1ba9833aea260b134962b734bdf5590d44ed44a295d251bf2842",
+            "winning_passage": "in 2010, congress enacted the patient protection and affordable care act in order to increase the number of americans covered by health insurance and decrease the cost of health care. one key provision is the individual mandate, which requires most americans to maintain \u201c minimum essential \u201d health insurance coverage. 26 u. s. c. \u00a7 5000a. for individuals who are not exempt, and who do not receive health insurance through an employer or government program, the means of satisfying the requirement is to purchase insurance from a private company. beginning in 2014, those who do not comply with the mandate must make a \u201c [ s ] hared responsibility payment \u201d to the federal government. \u00a7 5000a ( b ) ( 1 ). the act provides that this \u201c penalty \u201d will be paid to the internal revenue service with an individual \u2019 s taxes, and \u201c shall be assessed and collected in the same manner \u201d as tax penalties. \u00a7 \u00a7 5000a ( c ), ( g ) ( 1 ). another key provision of the act is the medicaid expansion. the current medicaid program offers federal funding to states to assist pregnant women, children, needy families, the blind, the elderly, and the disabled in obtaining medical care. 42 u. s. c. \u00a7 1396d ("
+          },
+          "summary": {
+            "max_cosine": 0.4341769814491272,
+            "passage_index": 0,
+            "passages": 15,
+            "source_sha256": "adc831be683a1ba9833aea260b134962b734bdf5590d44ed44a295d251bf2842",
+            "winning_passage": "in 2010, congress enacted the patient protection and affordable care act in order to increase the number of americans covered by health insurance and decrease the cost of health care. one key provision is the individual mandate, which requires most americans to maintain \u201c minimum essential \u201d health insurance coverage. 26 u. s. c. \u00a7 5000a. for individuals who are not exempt, and who do not receive health insurance through an employer or government program, the means of satisfying the requirement is to purchase insurance from a private company. beginning in 2014, those who do not comply with the mandate must make a \u201c [ s ] hared responsibility payment \u201d to the federal government. \u00a7 5000a ( b ) ( 1 ). the act provides that this \u201c penalty \u201d will be paid to the internal revenue service with an individual \u2019 s taxes, and \u201c shall be assessed and collected in the same manner \u201d as tax penalties. \u00a7 \u00a7 5000a ( c ), ( g ) ( 1 ). another key provision of the act is the medicaid expansion. the current medicaid program offers federal funding to states to assist pregnant women, children, needy families, the blind, the elderly, and the disabled in obtaining medical care. 42 u. s. c. \u00a7 1396d ("
+          },
+          "baseline": {
+            "rank": 2,
+            "score": 0.47019130816112853,
+            "lexical": 0.7943202485691405,
+            "semantic": 0.4341769814491272
+          },
+          "fixed": {
+            "rank": 2,
+            "score": 0.47019130816112853,
+            "lexical": 0.7943202485691405,
+            "semantic": 0.4341769814491272
+          }
+        },
+        {
+          "case_id": "2021-027",
+          "original": {
+            "max_cosine": 0.41772589087486267,
+            "passage_index": 10,
+            "passages": 45,
+            "source_sha256": "b6af879c216f6422f0e5c00cd824a02d5a59e48da25cb93b290679705d067894",
+            "winning_passage": "care fraction is 10 % and its medicaid fraction is 5 %, then the hospital would qualify for increased rates. the higher the disproportionate - patient percentage goes, the greater the rate mark - up that the hospital will receive. \u00a7 \u00a7 1395ww ( d ) ( 5 ) ( f ) ( vii ) \u2013 ( xiv ). this case is about how to count patients who qualify for medicare part a \u2014 because they are over 65 or disabled \u2014 at times when the program is not paying for their hospital treatment. such non - payment may occur for a number of reasons. for one, medicare usually pays for only the frst 90 days of a hospital stay associated with a single \u201c spell of illness. \u201d see \u00a7 1395d ; 42 cfr \u00a7 409. 61 ( a ). if a patient ' s stay for an illness exceeds that limit, his coverage is \u201c ex - hausted. \u201d \u00a7 409. 61 ( a ). for another, medicare pays for hos - pital treatment only once a patient has used up other medical insurance. see \u00a7 1395y ( b ) ( 2 ) ( a ). so if a patient has a pri - vate insurance plan, or is injured"
+          },
+          "summary": {
+            "max_cosine": 0.3650013208389282,
+            "passage_index": 6,
+            "passages": 11,
+            "source_sha256": "81708f8a9839517ba53dbe09c938ab5e5408e6b8326cc0edb3783ca8bf2b4be7",
+            "winning_passage": "conditions, such as the 90 - day cap on inpatient hospital services. for example, the statute twice refers to patients who are \u201c entitled to benefts under part a but ha [ ve ] exhausted benefts for inpatient hospital services. \u201d \u00a7 \u00a7 1395l ( a ) ( 8 ) ( b ) ( i ), 1395l ( t ) ( 1 ) ( b ) ( ii ). in thus describing the part a entitlement, the statute refects the complexity of health insurance : an insured who hits some limit on coverage for, say, eye care is still insured. his policy will pay for more eye care in the next coverage period and meanwhile will pay for his knee replacement. if \u201c entitled to benefts \u201d instead bore empire ' s meaning, medicare benefciaries would lose important rights and protections, such as the ability to enroll in other medicare programs. see \u00a7 \u00a7 1395o ( a ), 1395w - 21 ( a ) ( 3 ), 1395w \u2013 101 ( a ) ( 3 ) ( a ). empire ' s interpretation would also make a hash of provisions designed to inform medicare benefciaries of their benefts, see \u00a7 1395b \u2013"
+          },
+          "baseline": {
+            "rank": 9,
+            "score": 0.3935482413209308,
+            "lexical": 0.17594939533554407,
+            "semantic": 0.41772589087486267
+          },
+          "fixed": {
+            "rank": 11,
+            "score": 0.381685206357323,
+            "lexical": 0.17594939533554407,
+            "semantic": 0.40454474091529846
+          }
+        },
+        {
+          "case_id": "2022-054",
+          "original": {
+            "max_cosine": 0.2967192530632019,
+            "passage_index": 2,
+            "passages": 41,
+            "source_sha256": "b86f224e8361245f4e61517852a1715c8843e8d7419c6bed8fa5296c17f40a24",
+            "winning_passage": ". ; and for sen. charles e. grass - ley by eric r. havian. briefs of amici curiae urging affrmance were fled for the advanced medical technology association et al. by douglas hallward - driemeier ; for the american hospital association et al. by michael r. dreeben, jenya godina, and anton metlitsky ; for the chamber of commerce of the united states of america et al. by john p. elwood, craig d. margolis, jayce born, andrew r. varcoe, erica klenicki, michael a. tilghman ii, james c. stansel, and melissa b. kimmel ; for ctia \u2013 the wireless associ - ation et al. by kyle d. hawkins, william t. thompson, and drew f. wald - beser ; for the national association of chain drug stores by craig y. lee and daniel stefany ; for the national defense industrial association et al. by beth s. brinkmann, matthew f. dunn, peter b. hutt ii, krysten rosen moller, and s. conrad scott ; for the professional services council et al. by david w. ogden, ronald"
+          },
+          "summary": {
+            "max_cosine": 0.18041649460792542,
+            "passage_index": 0,
+            "passages": 7,
+            "source_sha256": "305606aa01e8feab457682d7bcd9982d510a488f3a8e385d85d2c2e6a49ead69",
+            "winning_passage": "united states et al. ex rel. schutte et al. v. supervalu inc. et al. certiorari to the united states court of appeals for the seventh circuit no. 21 \u2013 1326. argued april 18, 2023 \u2014 decided june 1, 2023 * in these cases, petitioners have sued retail pharmacies under the false claims act ( fca ), 31 u. s. c. \u00a7 3729 et seq. the fca permits private parties to bring lawsuits in the name of the united states against those who they believe have defrauded the federal government, \u00a7 3730 ( b ), and imposes liability on anyone who \u201c knowingly \u201d submits a \u201c false \u201d claim to the government, \u00a7 3729 ( a ). here, petitioners claim that respondents \u2014 supervalu and safeway \u2014 defrauded two federal benefts programs, medicaid and medicare. both medicaid and medicare offer prescription - drug coverage to their benefciaries, and both often cap any reimbursement for drugs at the pharmacy ' s \u201c usual and customary \u201d charge to the public. but, according to petitioners, supervalu and safeway for years offered various"
+          },
+          "baseline": {
+            "rank": 84,
+            "score": 0.2694503672885138,
+            "lexical": 0.024030395316320938,
+            "semantic": 0.2967192530632019
+          },
+          "fixed": {
+            "rank": 114,
+            "score": 0.24328225334159914,
+            "lexical": 0.024030395316320938,
+            "semantic": 0.2676435708999634
+          }
+        },
+        {
+          "case_id": "2024-019",
+          "original": {
+            "max_cosine": 0.2994358539581299,
+            "passage_index": 64,
+            "passages": 66,
+            "source_sha256": "6b85f3fd380ad1f24c57443badf34ab3a615be7bc7bc446500b873a50cfaa0b2",
+            "winning_passage": "ultimate question of united states law, see schriro v. summerlin, 542 u. s. 348, 356 ( 2004 ) ( contemporary foreign practice is \u201c irrelevant \u201d to constitutional interpretation ), but to demonstrate the open questions regarding basic factual issues before medical au - thorities and other regulatory bodies. such uncertainty \u201c af - ford [ s ] little basis for judicial responses in absolute terms. \u201d marshall v. united states, 414 u. s. 417, 427 ( 1974 ). and page proof pending publication \u201c [ t ] he calculus of effects, the manner in which a particular law reverberates in a society, is a legislative and not a judi - cial responsibility. \u201d personnel administrator of mass., 442 u. s., at 272. * * * this case carries with it the weight of ferce scientifc and policy debates about the safety, effcacy, and propriety of medical treatments in an evolving feld. the voices in these debates raise sincere concerns ; the implications for all are profound. the equal protection clause does not resolve these disagreements. nor does it afford us license to decide them as we see best. our role is not \u201c to judge the wisdom, fairness,"
+          },
+          "summary": {
+            "max_cosine": 0.26381880044937134,
+            "passage_index": 10,
+            "passages": 12,
+            "source_sha256": "b3eb16564098e391a36859ed18900c365bdcae70f12ce29d7a3c3d1978c30312",
+            "winning_passage": "and gender can be resolved through less invasive approaches. sb1 ' s age - and diagnosis - based classifcations are rationally related to these fndings and the state ' s objective of protecting minors ' health and welfare. the court also declines the plaintiffs ' invitation to second - guess the lines that sb1 draws. states have \u201c wide discretion to pass legislation in areas where there is medical and scientifc uncertainty. \u201d gonzales v. carhart, 550 u. s. 124, 163. recent developments demonstrate the open questions that exist regarding basic factual issues before medical authorities and regulatory bodies in this area, underscoring the need for legislative fexibility. pp. 522 \u2013 525. ( c ) this case carries with it the weight of ferce scientifc and policy debates about the safety, effcacy, and propriety of medical treatments in an evolving feld. the equal protection clause does not resolve these disagreements. the court ' s role is not \u201c to judge the wisdom, fairness, or logic \u201d of sb1, beach communications, 508 u. s., at 313, but only to ensure that the law does not violate equal protection guarantees. it does not. questions regarding the law ' s policy"
+          },
+          "baseline": {
+            "rank": 72,
+            "score": 0.28242109398803755,
+            "lexical": 0.1292882542572066,
+            "semantic": 0.2994358539581299
+          },
+          "fixed": {
+            "rank": 79,
+            "score": 0.2744072435375218,
+            "lexical": 0.1292882542572066,
+            "semantic": 0.29053157567977905
+          }
+        },
+        {
+          "case_id": "2024-055",
+          "original": {
+            "max_cosine": 0.4289102554321289,
+            "passage_index": 6,
+            "passages": 95,
+            "source_sha256": "e669a4c3d1156d28bee61b4ffa1560268e8bf4f696ec4d1eaf29e4567fa06958",
+            "winning_passage": "##i - dence related to the effectiveness, appropriateness, and cost - effectiveness of clinical preventive services for the purpose of developing recommendations for the health care commu - nity. \u201d \u00a7 299b \u2013 4 ( a ) ( 1 ). as presently constituted, the task force consists of 16 page proof pending publication members who are now appointed by the secretary of hhs to staggered 4 - year terms. those members are \u201c nationally recognized experts in prevention, evidence - based medicine, and primary care. \u201d app. 39. they include researchers, professors, and practicing physicians with experience and ex - pertise in public health and across a wide range of medical specialties. they serve on a volunteer basis, so they are not paid by the federal government for their service on the task force. preventive services \u201c can help people avoid acute illness, identify and treat chronic conditions, prevent cancer or lead to earlier detection, and improve health. \u201d hhs, issue brief \u2014 access to preventive services without cost - sharing : evidence from the affordable care act 1 ( jan. 2022 ). a wide range of individuals and organizations rely on the task force ' s preventive - services recommendations. they include \u201c health care systems, professional societies, employers, \u201d \u201c"
+          },
+          "summary": {
+            "max_cosine": 0.34818392992019653,
+            "passage_index": 0,
+            "passages": 12,
+            "source_sha256": "861a859ebb798f44bef5bc4983d44c25a5d9625977a832458e68e5b61c95c7fd",
+            "winning_passage": "kennedy, secretary of health and human services, et al. v. braidwood management, inc., et al. certiorari to the united states court of appeals for the fth circuit no. 24 \u2013 316. argued april 21, 2025 \u2014 decided june 27, 2025 in 1984, the department of health and human services ( hhs ) created the u. s. preventive services task force, a body that formulates evidence - based recommendations regarding preventive healthcare services. congress codifed the task force ' s role in 1999, establishing it as an entity within the agency for healthcare research and quality ( ahrq ) in hhs ' s public health service. the task force currently consists of 16 volunteer members appointed by the secretary of hhs to staggered 4 - year terms. before 2010, task force recommendations were purely advisory. the affordable care act of 2010 changed this by requiring most health insurers and group health plans to cover without cost sharing those preventive services that receive \u201c a \u201d or \u201c b \u201d ratings from the task force. the act also amended the governing statute to describe the task force as \u201c independent \u201d and to provide that members and their recommendations \u201c shall be independent and, to the extent practicable, not"
+          },
+          "baseline": {
+            "rank": 5,
+            "score": 0.40882335265689124,
+            "lexical": 0.2280412276797522,
+            "semantic": 0.4289102554321289
+          },
+          "fixed": {
+            "rank": 8,
+            "score": 0.3906599160056614,
+            "lexical": 0.2280412276797522,
+            "semantic": 0.4087286591529846
+          }
+        }
+      ]
+    }
+  }
+}

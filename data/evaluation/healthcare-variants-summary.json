@@ -1,0 +1,731 @@
+{
+  "protocol": {
+    "rule": "Original retrieval only. Exact healthcare/health care/health-care queries expand to healthcare and health care. Union returned candidates, deduplicate by case ID, use maximum returned complete hybrid score. Same .30 cutoff; no summary blend, parameter sweep, or extra cases.",
+    "limitations": "Small explicit spelling equivalence for a development experiment, not general synonym discovery. Maximum scores are not calibrated probabilities; retaining old plotted cases follows by construction. New memberships need review.",
+    "provenance": {
+      "artifacts/affirmative-action.sqlite": "a7e8e8757291dce0f0cca727f2dfc4bbe01e6c7c3da6c7367739cf74e60cf064",
+      "artifacts/semantic-affirmative-action/manifest.json": "ec5050a7c158cecaf46ac92988e5a7a0fba7a2dc3a7fbacd586d3d222ed272d9",
+      "artifacts/court-passage-support-v1/baseline.json": "010dbd6458bd5e8f1db5aebd99158bf53de67003c4b5732cc8dc331a480ebbae",
+      "data/evaluation/court-search-benchmark-v3.json": "555f570a7f284f2aebf970fdcc85d34135ce7db5c44f37a08dcec1eb0b244094",
+      "data/evaluation/court-dual-source-membership-review.json": "5e1267b38bbcd3c61b484b783362858820d1e0e2c5b2f4dd208d9b18b8f7a929",
+      "/Users/jackson/GitHub/scotus-v-public/scripts/experiment_healthcare_variants.py": "f829d3f7f1708eb51f424dd222e23743975c03dad97491f8fbad89dd6d16752b",
+      "scripts/evaluate_frozen_court.py": "fae3e7783725df40490821bad6100721c67bfb600de607859ae5794ffd4993f5"
+    }
+  },
+  "queries": {
+    "birth control": {
+      "baseline_chart": 11,
+      "candidate_chart": 11,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "gay marriage": {
+      "baseline_chart": 25,
+      "candidate_chart": 25,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "gun control": {
+      "baseline_chart": 82,
+      "candidate_chart": 82,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "abortion": {
+      "baseline_chart": 95,
+      "candidate_chart": 95,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "voting rights": {
+      "baseline_chart": 135,
+      "candidate_chart": 135,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "religious freedom": {
+      "baseline_chart": 119,
+      "candidate_chart": 119,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "free speech": {
+      "baseline_chart": 145,
+      "candidate_chart": 145,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "death penalty": {
+      "baseline_chart": 136,
+      "candidate_chart": 136,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "immigration": {
+      "baseline_chart": 144,
+      "candidate_chart": 144,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "racial discrimination": {
+      "baseline_chart": 155,
+      "candidate_chart": 155,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "labor unions": {
+      "baseline_chart": 162,
+      "candidate_chart": 162,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "campaign finance": {
+      "baseline_chart": 75,
+      "candidate_chart": 75,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "privacy": {
+      "baseline_chart": 129,
+      "candidate_chart": 129,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "search and seizure": {
+      "baseline_chart": 144,
+      "candidate_chart": 144,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "environmental protection": {
+      "baseline_chart": 121,
+      "candidate_chart": 121,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "disability rights": {
+      "baseline_chart": 143,
+      "candidate_chart": 143,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "school segregation": {
+      "baseline_chart": 136,
+      "candidate_chart": 136,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "health care": {
+      "baseline_chart": 52,
+      "candidate_chart": 54,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "criminal sentencing": {
+      "baseline_chart": 165,
+      "candidate_chart": 165,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "property rights": {
+      "baseline_chart": 157,
+      "candidate_chart": 157,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "contraception": {
+      "baseline_chart": 23,
+      "candidate_chart": 23,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "same-sex marriage": {
+      "baseline_chart": 19,
+      "candidate_chart": 19,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "capital punishment": {
+      "baseline_chart": 122,
+      "candidate_chart": 122,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [],
+      "added_unjudged": [],
+      "removed_unjudged": []
+    },
+    "healthcare": {
+      "baseline_chart": 12,
+      "candidate_chart": 54,
+      "lost_direct": [],
+      "new_irrelevant": [],
+      "removed_irrelevant": [],
+      "lost_direct_top10": [
+        "2024-019"
+      ],
+      "added_unjudged": [
+        "1956-064",
+        "1976-154",
+        "1977-128",
+        "1978-129",
+        "1978-136",
+        "1979-135",
+        "1981-133",
+        "1981-146",
+        "1983-089",
+        "1983-100",
+        "1984-020",
+        "1984-099",
+        "1984-107",
+        "1985-122",
+        "1987-082",
+        "1989-111",
+        "1990-064",
+        "1994-052",
+        "1998-028",
+        "1999-034",
+        "2001-071",
+        "2002-038",
+        "2005-018",
+        "2005-050",
+        "2011-028",
+        "2011-032",
+        "2012-014",
+        "2013-070",
+        "2014-052",
+        "2015-024",
+        "2016-049",
+        "2018-040",
+        "2019-029",
+        "2019-060",
+        "2021-026",
+        "2021-035",
+        "2021-047",
+        "2022-017",
+        "2024-026",
+        "2024-054"
+      ],
+      "removed_unjudged": []
+    }
+  },
+  "added_chart_pairs": {
+    "birth control": [],
+    "gay marriage": [],
+    "gun control": [],
+    "abortion": [],
+    "voting rights": [],
+    "religious freedom": [],
+    "free speech": [],
+    "death penalty": [],
+    "immigration": [],
+    "racial discrimination": [],
+    "labor unions": [],
+    "campaign finance": [],
+    "privacy": [],
+    "search and seizure": [],
+    "environmental protection": [],
+    "disability rights": [],
+    "school segregation": [],
+    "health care": [
+      {
+        "case_id": "2022-054",
+        "name": "UNITED STATES EX REL. SCHUTTE v. SUPERVALU INC.",
+        "score": 0.3079286388675027,
+        "winning_variant": "healthcare",
+        "label": "related"
+      },
+      {
+        "case_id": "2024-019",
+        "name": "UNITED STATES v. SKRMETTI",
+        "score": 0.30772072975804166,
+        "winning_variant": "healthcare",
+        "label": "direct"
+      }
+    ],
+    "criminal sentencing": [],
+    "property rights": [],
+    "contraception": [],
+    "same-sex marriage": [],
+    "capital punishment": [],
+    "healthcare": [
+      {
+        "case_id": "2011-077",
+        "name": "NATIONAL FEDERATION OF INDEPENDENT BUSINESS, et al., PETITIONERS v. KATHLEEN SEBELIUS, SECRETARY OF HEALTH AND HUMAN SERVICES, et al.",
+        "score": 0.47019130816112853,
+        "winning_variant": "health care",
+        "label": "direct"
+      },
+      {
+        "case_id": "1989-111",
+        "name": "L. DOUGLAS WILDER, GOVERNOR OF VIRGINIA, et al. v. VIRGINIA HOSPITAL ASSOCIATION",
+        "score": 0.4117407360603741,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "2022-017",
+        "name": "HEALTH AND HOSPITAL CORPORATION OF MARION COUNTY, INDIANA v. TALEVSKI",
+        "score": 0.39642850138271096,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "2001-071",
+        "name": "RUSH PRUDENTIAL HMO, INC. v. DEBRA C. MORAN et al.",
+        "score": 0.394072728167608,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "2011-028",
+        "name": "TOBY DOUGLAS, DIRECTOR, CALIFORNIA DEPARTMENT OF HEALTH CARE SERVICES, PETITIONER v. INDEPENDENT LIVING CENTER OF SOUTHERN CALIFORNIA, INC., et al.",
+        "score": 0.38421125174004317,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "1981-146",
+        "name": "BLUM, COMMISSIONER OF THE NEW YORK STATE DEPARTMENT OF SOCIAL SERVICES, et al. v. YARETSKY et al.",
+        "score": 0.36416951868750097,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "2021-026",
+        "name": "GALLARDO v. MARSTILLER",
+        "score": 0.3637427340287479,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "2014-052",
+        "name": "KING v. BURWELL",
+        "score": 0.3631306886618577,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "1977-128",
+        "name": "BETH ISRAEL HOSPITAL v. NATIONAL LABOR RELATIONS BOARD",
+        "score": 0.35850859856634754,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "2011-032",
+        "name": "DANIEL COLEMAN, PETITIONER v. COURT OF APPEALS OF MARYLAND et al.",
+        "score": 0.3442997942906401,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "1983-089",
+        "name": "HECKLER, SECRETARY OF HEALTH AND HUMAN SERVICES v. RINGER et al.",
+        "score": 0.34338047612561,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "1984-107",
+        "name": "METROPOLITAN LIFE INSURANCE CO. v. MASSACHUSETTS",
+        "score": 0.34272284158353106,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "2015-024",
+        "name": "GOBEILLE v. LIBERTY MUTUAL INSURANCE COMPANY",
+        "score": 0.3406166111247019,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "2021-047",
+        "name": "MARIETTA MEMORIAL HOSPITAL EMPLOYEE HEALTH BENEFIT PLAN v. DAVITA",
+        "score": 0.34008515257022454,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "1990-064",
+        "name": "AMERICAN HOSPITAL ASSOCIATION v. NATIONAL LABOR RELATIONS BOARD et al.",
+        "score": 0.3390440800334728,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "2024-054",
+        "name": "MEDINA v. PLANNED PARENTHOOD SOUTH ATLANTIC",
+        "score": 0.33618346258975923,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "2019-029",
+        "name": "MAINE COMMUNITY HEALTH OPTIONS v. UNITED STATES",
+        "score": 0.3350002348423004,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "1956-064",
+        "name": "HAYNES et ux. v. UNITED STATES",
+        "score": 0.3306721570303683,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "2005-050",
+        "name": "ARKANSAS DEPARTMENT OF HEALTH AND HUMAN SERVICES, et al. v. HEIDI AHLBORN",
+        "score": 0.3288647306508699,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "1987-082",
+        "name": "PATRICK v. BURGET et al.",
+        "score": 0.32482590934971084,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "1983-100",
+        "name": "HECKLER, SECRETARY OF HEALTH AND HUMAN SERVICES v. COMMUNITY HEALTH SERVICES OF CRAWFORD COUNTY, INC., et al.",
+        "score": 0.3222496489252768,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "1978-129",
+        "name": "PARHAM, COMMISSIONER, DEPARTMENT OF HUMAN RESOURCES OF GEORGIA, et al. v. J.R. et al.",
+        "score": 0.32218161115367794,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "1999-034",
+        "name": "DONNA E. SHALALA, SECRETARY OF HEALTH AND HUMAN SERVICES, et al. v. ILLINOIS COUNCIL ON LONG TERM CARE, INC.",
+        "score": 0.32175738566103546,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "2016-049",
+        "name": "COVENTRY HEALTH CARE OF MISSOURI v. NEVILS",
+        "score": 0.3207055643196993,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "2019-060",
+        "name": "LITTLE SISTERS OF THE POOR SAINTS PETER AND PAUL HOME v. PENNSYLVANIA",
+        "score": 0.320373685947571,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "2005-018",
+        "name": "ALBERTO R. GONZALES, ATTORNEY GENERAL, et al. v. OREGON, et al.",
+        "score": 0.3201610255103545,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "2002-038",
+        "name": "KENTUCKY ASSOCIATION OF HEALTH PLANS, INC., et al. v. JANIE A. MILLER, COMMISSIONER, KENTUCKY DEPARTMENT OF INSURANCE",
+        "score": 0.31930234955635356,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "1984-099",
+        "name": "CONNECTICUT DEPARTMENT OF INCOME MAINTENANCE v. HECKLER, SECRETARY OF HEALTH AND HUMAN SERVICES, et al.",
+        "score": 0.3180023813350985,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "1994-052",
+        "name": "NEW YORK STATE CONFERENCE OF BLUE CROSS & BLUE SHIELD PLANS, et al. v. TRAVELERS INSURANCE COMPANY, et al.",
+        "score": 0.3166998546415073,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "1998-028",
+        "name": "AMERICAN MANUFACTURERS MUTUAL INSURANCE COMPANY, et al. v. DELORES SCOTT SULLIVAN et al.",
+        "score": 0.3147673108642633,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "2012-014",
+        "name": "FEDERAL TRADE COMMISSION, PETITIONER v. PHOEBE PUTNEY HEALTH SYSTEM, INC., et al.",
+        "score": 0.31408071985128483,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "1979-135",
+        "name": "O'BANNON, SECRETARY OF PUBLIC WELFARE OF PENNSYLVANIA v. TOWN COURT NURSING CENTER et al.",
+        "score": 0.3116785447038654,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "1985-122",
+        "name": "ATKINS, COMMISSIONER, MASSACHUSETTS DEPARTMENT OF PUBLIC WELFARE v. RIVERA et al.",
+        "score": 0.30883858179461426,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "2024-026",
+        "name": "STANLEY v. CITY OF SANFORD, FLORIDA",
+        "score": 0.30822179954920115,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "1984-020",
+        "name": "ALEXANDER, GOVERNOR OF TENNESSEE, et al. v. CHOATE et al.",
+        "score": 0.3049369881233389,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "2021-035",
+        "name": "NATIONAL FEDERATION OF INDEPENDENT BUSINESS v. DEPARTMENT OF LABOR, OCCUPATIONAL SAFETY AND HEALTH ADMINISTRATION",
+        "score": 0.3047177531321822,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "1987-154",
+        "name": "BOWEN, SECRETARY OF HEALTH AND HUMAN SERVICES, et al. v. MASSACHUSETTS",
+        "score": 0.3037193706641495,
+        "winning_variant": "health care",
+        "label": "direct"
+      },
+      {
+        "case_id": "1976-154",
+        "name": "BEAL, SECRETARY, DEPARTMENT OF PUBLIC WELFARE OF PENNSYLVANIA, et al. v. DOE et al.",
+        "score": 0.30135690444477625,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "1981-133",
+        "name": "SCHWEIKER, SECRETARY OF HEALTH AND HUMAN SERVICES v. HOGAN et al.",
+        "score": 0.30132516627937994,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "2013-070",
+        "name": "BURWELL v. HOBBY LOBBY STORES",
+        "score": 0.30131784125647826,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "1978-136",
+        "name": "NATIONAL LABOR RELATIONS BOARD et al. v. BAPTIST HOSPITAL, INC.",
+        "score": 0.3006857694246519,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      },
+      {
+        "case_id": "2018-040",
+        "name": "AZAR v. ALLINA HEALTH SERVICES",
+        "score": 0.30043980138200754,
+        "winning_variant": "health care",
+        "label": "unjudged"
+      }
+    ]
+  },
+  "anchors": {
+    "health care": {
+      "2024-019": {
+        "rank": 46,
+        "score": 0.30772072975804166,
+        "winning_variant": "healthcare"
+      },
+      "2011-077": {
+        "rank": 2,
+        "score": 0.47019130816112853,
+        "winning_variant": "health care"
+      }
+    },
+    "healthcare": {
+      "2024-019": {
+        "rank": 46,
+        "score": 0.30772072975804166,
+        "winning_variant": "healthcare"
+      },
+      "2011-077": {
+        "rank": 2,
+        "score": 0.47019130816112853,
+        "winning_variant": "health care"
+      }
+    }
+  },
+  "sample_review": {
+    "method": "Deliberate sample of seven additions to healthcare, using verified local source text. Not a random sample or exhaustive review. The eighth inspected opening (NFIB v OSHA) was insufficient and remains unjudged.",
+    "records": [
+      {
+        "case_id": "1989-111",
+        "source": "syllabus",
+        "sha256": "6b553c37f6ef210d82710d6389583d1e203c8be5c7bf53180e0262af4ca78268",
+        "opening": "To qualify for federal financial assistance to help defray the cost of furnishing medical care to the needy under the Medicaid Act, States must submit to the Secretary of Health and Human Services for approval a plan which, inter alia, establishes a scheme for reimbursing health care providers. In 1980, Congress passed the Boren Amendment to the Act, which requires provider reimbursement according to rates that the \"State finds, and makes assurances satisfactory to the Secretary,\" are \"reasonable and adequate\" to meet the costs of \"efficiently and economically operated facilities.\" The State must also assure the Secretary that individuals have \"reasonable access\" to facilities of \"adequate quality.\" Virginia's plan, under which providers are reimbursed according to a prospective formula, was approved by the Secretary in 1982 and again in 1986 after an amendment. In 1986, respondent, a nonprofit corporation composed of public and private hospitals operating in Virginia, filed suit against petitioner state officials for declaratory and injunctive relief under 42 U. S. C. \u00a7 1983, alleging that the state plan violates the Act because its reimbursement rates are not \"reasonable and adeq",
+        "holding": "Held: The Boren Amendment is enforceable in a \u00a7 1983 action for declaratory and injunctive relief brought by health care providers. Pp. 508-524. (a) Section 1983-which provides a cause of action for the \"deprivation of any rights . . . secured by [federal] laws\"-is inapplicable if (1) the statute in question does not create enforceable \"rights\" within \u00a7 1983's meaning, or (2) Congress has foreclosed such enforcement of the statute in the enactment itself. Wright v. Roanoke Redevelopment and Housing Authority, 479 U. S. 418, 423. P. 508. (b) The Boren Amendment creates a substantive federal \"right,\" enforceable by providers under \u00a7 1983, to the adoption of reasonable and adequate reimbursement rates. There can be little doubt that providers are the intended beneficiaries of the amendment, see Golden State Transit Corp. v. Los Angeles, 493 U. S. 103, 106, since the amendment establishes a system for reimbursing such providers and is phrased in terms benefiting them. Moreover, the amendme",
+        "label": "direct",
+        "reason": "Medicaid provider reimbursement rates and enforcement."
+      },
+      {
+        "case_id": "2001-071",
+        "source": "syllabus",
+        "sha256": "cab42f386e973bd666475dc831dd9a17c27b900038f4252f6bb28ef6717fda7b",
+        "opening": "Petitioner Rush Prudential HMO, Inc., a health maintenance organization (HMO) that contracts to provide medical services for employee welfare benefit plans covered by the Employee Retirement Income Security Act of 1974 (ERISA), denied respondent Moran's request to have surgery by an unaffiliated specialist on the ground that the procedure was not medically necessary. Moran made a written demand for an independent medical review of her claim, as guaranteed by \u00a7 4-10 of Illinois's HMO Act, which further provides that \"[i]n the event that the reviewing physician determines the covered service to be medically necessary,\" the HMO \"shall provide\" the service. Rush refused her demand, and Moran sued in state court to compel compliance with the Act. That court ordered the review, which found the treatment necessary, but Rush again denied the claim. While the suit was pending, Moran had the surgery and amended her complaint to seek reimbursement. Rush removed the case to federal court, arguing that the amended complaint stated a claim for ERISA benefits. The District Court treated Moran's claim as a suit under ERISA and denied it on the ground that ERISA preempted \u00a74-10. The Seventh Circuit",
+        "holding": "Held: ERISA does not preempt the Illinois HMO Act. Pp. 364-387. (a) In deciding whether a law regulates insurance, this Court starts with a commonsense view of the matter, Metropolitan Life Ins. Co. v. Massachusetts, 471 U. S.7 24, 740, which requires a law to \"be specifically directed toward\" the insurance industry, Pilot Life Ins. Co. v. Dedeaux, 481 U. S.4 1, 50. It then tests the results of the commonsense enquiry by employing the three factors used to point to insurance laws spared from federal preemption under the McCarran-Ferguson Act. Pp. 365-375. (1) The Illinois HMO Act is directed toward the insurance industry, and thus is an insurance regulation under a commonsense view. Although an HMO provides health care in addition to insurance, nothing in the saving clause requires an either-or choice between health care and insurance. Congress recognized, the year before passing ERISA, that HMOs are risk-bearing organizations subject to state insurance regulation. That conception has ",
+        "label": "direct",
+        "reason": "Independent medical review of denied HMO coverage."
+      },
+      {
+        "case_id": "2014-052",
+        "source": "syllabus",
+        "sha256": "c202c87493bcbabb11794e8e785d70748c9a7eb34d2e874a6c3f803c5fd19b08",
+        "opening": "The Patient Protection and Affordable Care Act grew out of a long history of failed health insurance reform. In the 1990s, several States sought to expand access to coverage by imposing a pair of insurance market regulations\u2014a \u201cguaranteed issue\u201d requirement, which bars insurers from denying coverage to any person because of his health, and a \u201ccommunity rating\u201d requirement, which bars insurers from charging a person higher premiums for the same reason. The reforms achieved the goal of expanding access to coverage, but they also encouraged people to wait until they got sick to buy insurance. The result was an economic \u201cdeath spiral\u201d: premiums rose, the number of people buying insurance declined, and insurers left the market entirely. In 2006, however, Massachusetts discovered a way to make the guaranteed issue and community rating requirements work\u2014by requiring individuals to buy insurance and by providing tax credits to certain individuals to make insurance more affordable. The combination of these three reforms\u2014insurance market regulations, a coverage mandate, and tax credits\u2014enabled Massachusetts to drastically reduce its uninsured rate. The Affordable Care Act adopts a version of",
+        "holding": "Held: Section 36B\u2019s tax credits are available to individuals in States that have a Federal Exchange. Pp. 7\u201321. (a) When analyzing an agency\u2019s interpretation of a statute, this Court often applies the two-step framework announced in Chevron, 467 U. S. 837 . But Chevron does not provide the appropriate framework here. The tax credits are one of the Act\u2019s key reforms and whether they are available on Federal Exchanges is a question of deep \u201ceconomic and political significance\u201d; had Congress wished to assign that question to an agency, it surely would have done so expressly. And it is especially unlikely that Congress would have delegated this decision to the IRS, which has no expertise in crafting health insurance policy of this sort. It is instead the Court\u2019s task to determine the correct reading of Section 36B. If the statutory language is plain, the Court must enforce it according to its terms. But oftentimes the meaning\u2014or ambiguity\u2014of certain words or phrases may only become evident ",
+        "label": "direct",
+        "reason": "Availability of ACA insurance tax credits."
+      },
+      {
+        "case_id": "1977-128",
+        "source": "syllabus",
+        "sha256": "42eb601ff4d7a127695f0c0024157376954575b84f58993b7a2e1ad312e00cb1",
+        "opening": "Petitioner nonprofit hospital had a written rule that prohibited employees from soliciting and distributing literature except in certain employee locker rooms and certain adjacent restrooms. The cafeteria was the common gathering place of employees and had been used by petitioner or with its approval for solicitation and distribution of literature to employees for various nonunion purposes. After an employee had made general distribution in the cafeteria to other employees of a union newsletter and had been warned that she had violated the hospital's rule and would be dismissed if she did so again, the National Labor Relations Board (NLRB), following a charge by the union, issued an unfair labor practice complaint against petitioner. The NLRB applied to petitioner the rule that it had adopted in St. John's Hospital & School of Nursing, Inc., 222 N. L. R. B. 1150, that since \"the primary function of a hospital is patient care,\" and \"a tranquil atmosphere is essential to the carrying out of that function,\" a hospital may be warranted in imposing more stringent restrictions on employee solicitation and distribution in immediate patient-care areas than are generally permitted other emp",
+        "holding": "Held: The Court of Appeals did not err in enforcing the NLRB's order to petitioner to rescind its rule as applied to the hospital's eating facilities. Pp. 491-508. (a) Freedom of employees effectively to communicate with one another regarding self-organization on the jobsite is essential to their right to self-organize and to bargain collectively established by \u00a7 7 of the Act, Republic Aviation Corp. v. NLRB, 324 U. S. 793, and in the light of its experience the NLRB is free to adopt a rule that, absent special circumstances, an employer's restriction on employee solicitation during nonworking time and distribution during such time in nonworking areas is presumptively an unreasonable interference with \u00a7 7 rights constituting an unfair labor practice under \u00a7 8 (a) (1), without the necessity of proving the underlying generic facts that persuaded it to reach that conclusion. Pp. 491-493. (b) Nothing in the legislative history of the 1974 amendments shows a congressional policy inconsisten",
+        "label": "related",
+        "reason": "Hospital union solicitation rights; healthcare setting, labor-law holding."
+      },
+      {
+        "case_id": "1990-064",
+        "source": "syllabus",
+        "sha256": "1ba5aa5d8fb32514799e00cba6b1151cdd9f1a5e2e8c7f73838d306f8671e803",
+        "opening": "The National Labor Relations Board has promulgated a rule providing that, with exceptions for, inter alia, cases presenting \"extraordinary circumstances,\" eight, and only eight, defined employee units are appropriate for collective bargaining in acute care hospitals. Petitioner, American Hospital Association, brought this action challenging the rule's facial validity on the grounds that (1) \u00a7 9(b) of the National Labor Relations Act (NLRA) requires the Board to make a separate bargaining unit determination \"in each case\" and therefore prohibits the Board from using general rules to define bargaining units; (2) the rule violates a congressional admonition to the Board to avoid the undue proliferation of bargaining units in the health care industry; and (3) the rule is arbitrary and capricious. The District Court agreed with petitioner's second argument and enjoined the rule's enforcement, but the Court of Appeals found no merit in any of the three arguments and reversed. Held: The Board's rule is not facially invalid. Pp. 609-620. (a) The Board's broad rulemaking powers under \u00a7 6 of the NLRA authorize the rule and are not limited by \u00a7 9(b)'s mandate that the Board decide the appropr",
+        "holding": "Held: The Board's rule is not facially invalid. Pp. 609-620. (a) The Board's broad rulemaking powers under \u00a7 6 of the NLRA authorize the rule and are not limited by \u00a7 9(b)'s mandate that the Board decide the appropriate bargaining unit \"in each case.\" Contrary to petitioner's reading, the clear and more natural meaning of the \"in each case\" requirement is simply to indicate that whenever there is a disagreement between employers and employees about the appropriateness of a bargaining unit, the Board shall resolve the dispute. In doing so, the Board is entitled to rely on rules that it has developed to resolve certain issues of general applicability. See, e. g., United States v. Storer Broadcasting Co., 351 U. S. 192, 205. The rule at issue does not differ significantly from the Board's many prior rules establishing general principles for the adjudication of bargaining unit disputes. This interpretation is reinforced by the NLRA's structure and policy. Nor is petitioner aided by \u00a7 9(b)'",
+        "label": "related",
+        "reason": "Hospital employee bargaining units; healthcare setting, labor-law holding."
+      },
+      {
+        "case_id": "2011-032",
+        "source": "syllabus",
+        "sha256": "84f09bb601bcd04b4026e203acbf264c433fa6530110ef73c92db673bb96ab0d",
+        "opening": "The Family and Medical Leave Act of 1993 (FMLA) entitles an employee to take up to 12 work weeks of unpaid leave per year for (A) the care of a newborn son or daughter; (B) the adoption or foster-care placement of a child; (C) the care of a spouse, son, daughter, or parent with a serious medical condition; and (D) the employee\u2019s own serious health condition when the condition interferes with the employee\u2019s ability to perform at work. 29 U. S. C. \u00a72612(a)(1). The FMLA also creates a private right of action for equitable relief and damages \u201cagainst any employer (including a public agency) in any Federal or State court.\u201d \u00a72617(a)(2). For present purposes, subparagraphs (A), (B), and (C) are referred to as the family-care provisions, and subparagraph (D) as the self-care provision. In Nevada Dept. of Human Resources v. Hibbs, 538 U.S. 721, 730\u2212732, this Court held that Congress could subject States to suit for violations of subparagraph (C) based on evidence of family-leave policies that discriminated on the basis of sex. Petitioner filed suit, alleging that his employer, the Maryland Court of Appeals, an instrumentality of the State, violated the FMLA by denying him self-care leave. T",
+        "holding": "Held: The judgment is affirmed. 626 F.3d 187, affirmed. Justice Kennedy, joined by The Chief Justice, Justice Thomas, and Justice Alito, concluded that suits against States under the self-care provision are barred by sovereign immunity. Pp. 3\u221212. (a) Under the federal system, States, as sovereigns, are immune from damages suits, unless they waive that defense. See, e.g., Kimel v. Florida Bd. of Regents, 528 U.S. 62, 72\u221273. Congress may also abrogate the States\u2019 immunity pursuant to its powers under \u00a75 of the Fourteenth Amendment, but it must make that intention \u201cunmistakably clear in the language of the statute,\u201d Hibbs, supra, at 726. It did so in the FMLA. Congress also \u201cmust tailor\u201d legislation enacted under \u00a75 \u201cto remedy or prevent\u201d \u201cconduct transgressing the Fourteenth Amendment\u2019s substantive provisions.\u201d Florida Prepaid Postsecondary Ed. Expense Bd. v. College Savings Bank, 527 U.S. 627, 639. \u201cThere must be a congruence and proportionality between the injury to be prevented or rem",
+        "label": "related",
+        "reason": "Medical leave and state sovereign immunity, rather than coverage or provision of care."
+      },
+      {
+        "case_id": "1956-064",
+        "source": "syllabus",
+        "sha256": "853e79014f73302ada64e45613ec03ca7b39177c41e5c2787233c64530d2410d",
+        "opening": "Pursuant to a comprehensive \"Plan for Employees' Pensions, Disability Benefits and Death Benefits,\" which a corporation had had in force for many years and copies of which were furnished to each employee, the corporation paid one of its employees $2,100 in sickness disability benefits, which was equivalent to his salary for a year, during which time the employee had been sick and unable to work. Held: Under \u00a7 22 (b) (5) of the Internal Revenue Code of 1939, such income of the employee was exempt from income tax as an amount received through \"health insurance.\" Pp. 82-86. (a) Broadly speaking, \"health insurance\" is an undertaking by one person for reasons satisfactory to him to indemnify another for losses caused by illness, and the plan here involved comes within this meaning. P. 83. (b) A different result is not required by the facts that, under the corporation's plan, the employees paid no fixed periodic premiums, there was no definite fund created to assure payment of disability benefits, and the amount and duration of the benefits varied with the length of service. Pp. 83-84. (c) There is nothing in the language or legislative history of \u00a7 22 (b) (5) which limits the term \"heal",
+        "holding": "Held: Under \u00a7 22 (b) (5) of the Internal Revenue Code of 1939, such income of the employee was exempt from income tax as an amount received through \"health insurance.\" Pp. 82-86. (a) Broadly speaking, \"health insurance\" is an undertaking by one person for reasons satisfactory to him to indemnify another for losses caused by illness, and the plan here involved comes within this meaning. P. 83. (b) A different result is not required by the facts that, under the corporation's plan, the employees paid no fixed periodic premiums, there was no definite fund created to assure payment of disability benefits, and the amount and duration of the benefits varied with the length of service. Pp. 83-84. (c) There is nothing in the language or legislative history of \u00a7 22 (b) (5) which limits the term \"health insurance\" to particular forms of insurance conventionally made available by commercial companies, nor does there appear to be any other reason for so limiting it. Pp. 84-85. 233 F. 2d 413, revers",
+        "label": "related",
+        "reason": "Tax treatment of sickness wage-replacement benefits, rather than financing medical treatment."
+      }
+    ]
+  },
+  "decision": "Spelling consistency and recall anchors improve, but top-ten retention fails and new memberships remain incompletely reviewed. Offline only; no promotion."
+}
