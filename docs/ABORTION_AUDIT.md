@@ -178,3 +178,15 @@ It requires the existing CaseSumm, official-opinion and SCDB source files.
 Outputs include selected records, missing reviewed cases, every composition
 transition, fixed-item comparisons, and alternative court scopes.
 The compact committed summary is `data/evaluation/abortion-release-summary.json`.
+
+
+## Follow-up conclusion — November 6, 2026
+
+Exploratory rule-based and LLM holding extraction did not establish reliable
+automated policy-effect scoring. Those unused pilots were removed. The live
+search and SCDB direction/vote scoring remain unchanged.
+
+The retained improvement is complete SCDB issue metadata, including secondary
+issues that the citation-centered file omitted. See [the SCDB audit and build
+commands](SCDB_PROCEDURE_AUDIT.md). Metadata signals are descriptive, not a
+blanket procedural-case exclusion or a complete merits-classification target.

@@ -1,0 +1,3702 @@
+{
+  "status": "Offline metadata comparison, no automatic merits classification",
+  "download_url": "https://scdb.la.psu.edu/?jet_download=3ec1f4346994212fb72570497da9c546951a6d7b",
+  "release_page": "https://scdb.la.psu.edu/data/2026-release-01/",
+  "provenance": {
+    "data/raw/scdb-2026/SCDB_2026_01_caseCentered_Citation.csv": "b3cc84bd73a7a0325856cca52ae6fc5bd6a39433113f83fef248556ad4488528",
+    "data/raw/scdb-2026/issues-split.zip": "d42102cbd880b966d5cd82500015a0f0912c6c2af2896ed81eba9dfbcbb0324a",
+    "artifacts/affirmative-action.sqlite": "a7e8e8757291dce0f0cca727f2dfc4bbe01e6c7c3da6c7367739cf74e60cf064",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/audit_scdb_secondary_issues.py": "8f23c6755c7aa8fe9774b58119f4b55c853ab078b3297f449db589c66b1ff532"
+  },
+  "csv_member": "SCDB_2026_01_caseCentered_Vote.csv",
+  "csv_sha256": "113e64b3f7729f4063ab01d766532ff2920e88cfce8fe097689caff3d4cf1a1b",
+  "expanded_rows": 14090,
+  "expanded_unique_cases": 9409,
+  "indexed_cases_compared": 8119,
+  "missing_expanded_case_ids": [
+    "official:2026-08-24:26A124",
+    "official:2026-08-31:26A203",
+    "official:2026-09-04:26A274",
+    "official:2026-09-25:26A308",
+    "official:2026-09-25:26A388",
+    "official:2026-10-14:26A476"
+  ],
+  "primary_cases_missing_in_expanded": [],
+  "indexed_cases_with_added_issues": 669,
+  "indexed_cases_with_new_signal": 211,
+  "indexed_cases_with_multiple_directions": 311,
+  "recovered_cases": [
+    {
+      "case_id": "1951-008",
+      "name": "UNITED STATES v. JEFFERS",
+      "primary_issues": [
+        "10050"
+      ],
+      "all_issues": [
+        "10050",
+        "90240"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1951-023",
+      "name": "PILLSBURY ET AL., DEPUTY COMMISSIONERS, v. UNITED ENGINEERING CO. ET AL.",
+      "primary_issues": [
+        "80050"
+      ],
+      "all_issues": [
+        "80050",
+        "90480"
+      ],
+      "all_signals": [
+        "timeliness_issue"
+      ]
+    },
+    {
+      "case_id": "1952-064",
+      "name": "UNITED STATES EX REL. CHAPMAN, SECRETARY OF THE INTERIOR, v. FEDERAL POWER COMMISSION ET AL.",
+      "primary_issues": [
+        "80130"
+      ],
+      "all_issues": [
+        "80130",
+        "90280"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1953-049",
+      "name": "INTERNATIONAL LONGSHOREMEN'S AND WAREHOUSEMEN'S UNION, LOCAL 37, et al. v. BOYD, DISTRICT DIRECTOR, IMMIGRATION AND NATURALIZATION SERVICE",
+      "primary_issues": [
+        "20310"
+      ],
+      "all_issues": [
+        "20310",
+        "90240"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1955-010",
+      "name": "REECE v. GEORGIA",
+      "primary_issues": [
+        "20040"
+      ],
+      "all_issues": [
+        "20040",
+        "90350"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1955-080",
+      "name": "CAHILL v. NEW YORK, NEW HAVEN & HARTFORD RAILROAD CO.",
+      "primary_issues": [
+        "10280"
+      ],
+      "all_issues": [
+        "10280",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1955-081",
+      "name": "UNITED STATES et al. v. STORER BROADCASTING CO.",
+      "primary_issues": [
+        "80320"
+      ],
+      "all_issues": [
+        "80320",
+        "90280"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1956-080",
+      "name": "CIVIL AERONAUTICS BOARD v. HERMANN et al.",
+      "primary_issues": [
+        "90120"
+      ],
+      "all_issues": [
+        "90120",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1957-034",
+      "name": "STAUB v. CITY OF BAXLEY",
+      "primary_issues": [
+        "30010"
+      ],
+      "all_issues": [
+        "30010",
+        "90180"
+      ],
+      "all_signals": [
+        "explicit_no_merits_issue"
+      ]
+    },
+    {
+      "case_id": "1957-053",
+      "name": "PUBLIC UTILITIES COMMISSION OF CALIFORNIA v. UNITED STATES",
+      "primary_issues": [
+        "100050"
+      ],
+      "all_issues": [
+        "100050",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1957-056",
+      "name": "UNITED STATES v. HVASS",
+      "primary_issues": [
+        "10420"
+      ],
+      "all_issues": [
+        "10420",
+        "90340"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1957-057",
+      "name": "HARMON v. BRUCKER, SECRETARY OF THE ARMY",
+      "primary_issues": [
+        "20240"
+      ],
+      "all_issues": [
+        "20240",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1957-097",
+      "name": "BYRD v. BLUE RIDGE RURAL ELECTRIC COOPERATIVE, INC.",
+      "primary_issues": [
+        "80040"
+      ],
+      "all_issues": [
+        "80040",
+        "90330"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1957-118",
+      "name": "FLORA v. UNITED STATES",
+      "primary_issues": [
+        "120010"
+      ],
+      "all_issues": [
+        "120010",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1957-129",
+      "name": "HANSON, EXECUTRIX, et al. v. DENCKLA et al.",
+      "primary_issues": [
+        "40060"
+      ],
+      "all_issues": [
+        "40060",
+        "90240",
+        "90510"
+      ],
+      "all_signals": [
+        "judicial_administration_issue",
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1957-131",
+      "name": "IVANHOE IRRIGATION DISTRICT et al. v. MCCRACKEN et al.",
+      "primary_issues": [
+        "40070"
+      ],
+      "all_issues": [
+        "100080",
+        "40070",
+        "80130",
+        "90180"
+      ],
+      "all_signals": [
+        "explicit_no_merits_issue"
+      ]
+    },
+    {
+      "case_id": "1957-146",
+      "name": "NATIONAL ASSOCIATION FOR THE ADVANCEMENT OF COLORED PEOPLE v. ALABAMA ex rel. PATTERSON, ATTORNEY GENERAL",
+      "primary_issues": [
+        "30010"
+      ],
+      "all_issues": [
+        "30010",
+        "90180",
+        "90240"
+      ],
+      "all_signals": [
+        "explicit_no_merits_issue",
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1958-045",
+      "name": "ALLIED STORES OF OHIO, INC., v. BOWERS, TAX COMMISSIONER OF OHIO",
+      "primary_issues": [
+        "80100"
+      ],
+      "all_issues": [
+        "80100",
+        "90310"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1958-136",
+      "name": "TAYLOR v. MCELROY et al.",
+      "primary_issues": [
+        "30120"
+      ],
+      "all_issues": [
+        "30120",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1959-047",
+      "name": "FLORA v. UNITED STATES",
+      "primary_issues": [
+        "120010"
+      ],
+      "all_issues": [
+        "120010",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1959-108",
+      "name": "BROTHERHOOD OF LOCOMOTIVE ENGINEERS et al. v. MISSOURI-KANSAS-TEXAS RAILROAD CO. et al.",
+      "primary_issues": [
+        "70190"
+      ],
+      "all_issues": [
+        "70190",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1959-120",
+      "name": "AMERICAN TRUCKING ASSOCIATIONS, INC., et al. v. UNITED STATES et al.",
+      "primary_issues": [
+        "80240"
+      ],
+      "all_issues": [
+        "80240",
+        "90280"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1959-131",
+      "name": "WOLFE et al. v. NORTH CAROLINA",
+      "primary_issues": [
+        "20040"
+      ],
+      "all_issues": [
+        "20040",
+        "90180"
+      ],
+      "all_signals": [
+        "explicit_no_merits_issue"
+      ]
+    },
+    {
+      "case_id": "1959-136",
+      "name": "LUCKENBACH STEAMSHIP CO., INC., v. UNITED STATES et al.",
+      "primary_issues": [
+        "80010"
+      ],
+      "all_issues": [
+        "80010",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1960-009",
+      "name": "UPHAUS v. WYMAN, ATTORNEY GENERAL OF NEW HAMPSHIRE",
+      "primary_issues": [
+        "30050"
+      ],
+      "all_issues": [
+        "30050",
+        "90180"
+      ],
+      "all_signals": [
+        "explicit_no_merits_issue"
+      ]
+    },
+    {
+      "case_id": "1960-028",
+      "name": "TRAVIS v. UNITED STATES",
+      "primary_issues": [
+        "30060"
+      ],
+      "all_issues": [
+        "30060",
+        "90140"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1960-050",
+      "name": "WILSON v. SCHNETTLER et al.",
+      "primary_issues": [
+        "10050"
+      ],
+      "all_issues": [
+        "10050",
+        "90020"
+      ],
+      "all_signals": [
+        "comity_issue"
+      ]
+    },
+    {
+      "case_id": "1961-002",
+      "name": "MARTIN v. WALTON, PROBATE JUDGE OF JOHNSON COUNTY, KANSAS",
+      "primary_issues": [
+        "80110"
+      ],
+      "all_issues": [
+        "80110",
+        "90160"
+      ],
+      "all_signals": [
+        "explicit_no_merits_issue"
+      ]
+    },
+    {
+      "case_id": "1961-013",
+      "name": "CRAMP v. BOARD OF PUBLIC INSTRUCTION OF ORANGE COUNTY",
+      "primary_issues": [
+        "30110"
+      ],
+      "all_issues": [
+        "30110",
+        "90220"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1961-038",
+      "name": "RETAIL CLERKS INTERNATIONAL ASSOCIATION, LOCAL UNIONS NOS. 128 AND 633, v. LION DRY GOODS, INC., et al.",
+      "primary_issues": [
+        "70200"
+      ],
+      "all_issues": [
+        "70200",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1961-039",
+      "name": "BAILEY et al. v. PATTERSON et al.",
+      "primary_issues": [
+        "20040"
+      ],
+      "all_issues": [
+        "20040",
+        "90240",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue",
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1961-044",
+      "name": "LOCAL 174, TEAMSTERS, CHAUFFEURS, WAREHOUSEMEN & HELPERS OF AMERICA, v. LUCAS FLOUR CO.",
+      "primary_issues": [
+        "70160"
+      ],
+      "all_issues": [
+        "70010",
+        "70160",
+        "90350"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1961-046",
+      "name": "DIBELLA v. UNITED STATES",
+      "primary_issues": [
+        "10370"
+      ],
+      "all_issues": [
+        "10370",
+        "90380"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1961-050",
+      "name": "KESLER v. DEPARTMENT OF PUBLIC SAFETY OF UTAH",
+      "primary_issues": [
+        "80030"
+      ],
+      "all_issues": [
+        "80030",
+        "90340"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1961-051",
+      "name": "BAKER et al. v. CARR et al.",
+      "primary_issues": [
+        "20090"
+      ],
+      "all_issues": [
+        "20090",
+        "90230",
+        "90250"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1961-052",
+      "name": "TURNER v. CITY OF MEMPHIS et al.",
+      "primary_issues": [
+        "20040"
+      ],
+      "all_issues": [
+        "20040",
+        "90330"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1961-054",
+      "name": "RUSK, SECRETARY OF STATE v. CORT",
+      "primary_issues": [
+        "20280"
+      ],
+      "all_issues": [
+        "20280",
+        "90340"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1962-025",
+      "name": "JONES v. CUNNINGHAM, PENITENTIARY SUPERINTENDENT",
+      "primary_issues": [
+        "10020"
+      ],
+      "all_issues": [
+        "10020",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1962-032",
+      "name": "NATIONAL ASSOCIATION FOR THE ADVANCEMENT OF COLORED PEOPLE v. BUTTON, ATTORNEY GENERAL OF VIRGINIA, et al.",
+      "primary_issues": [
+        "30010"
+      ],
+      "all_issues": [
+        "30010",
+        "90350"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1962-037",
+      "name": "LOCAL NO. 438 CONSTRUCTION & GENERAL LABORERS' UNION, AFL-CIO, v. CURRY et al., DOING BUSINESS AS S. J. CURRY & CO.",
+      "primary_issues": [
+        "100020"
+      ],
+      "all_issues": [
+        "100020",
+        "90350"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1962-049",
+      "name": "KENNEDY, ATTORNEY GENERAL, v. MENDOZA-MARTINEZ",
+      "primary_issues": [
+        "20280"
+      ],
+      "all_issues": [
+        "20280",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1962-051",
+      "name": "SCHNEIDER v. RUSK, SECRETARY OF STATE",
+      "primary_issues": [
+        "20280"
+      ],
+      "all_issues": [
+        "20280",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1962-060",
+      "name": "GRAY, CHAIRMAN OF THE GEORGIA STATE DEMOCRATIC EXECUTIVE COMMITTEE, et al. v. SANDERS",
+      "primary_issues": [
+        "20090"
+      ],
+      "all_issues": [
+        "20090",
+        "90130",
+        "90230",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue",
+        "mootness_or_venue_issue",
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1962-108",
+      "name": "WRIGHT et al. v. GEORGIA",
+      "primary_issues": [
+        "20080"
+      ],
+      "all_issues": [
+        "20080",
+        "90180"
+      ],
+      "all_signals": [
+        "explicit_no_merits_issue"
+      ]
+    },
+    {
+      "case_id": "1962-110",
+      "name": "ANDREWS v. UNITED STATES",
+      "primary_issues": [
+        "10370"
+      ],
+      "all_issues": [
+        "10370",
+        "90380"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1962-128",
+      "name": "WHEELDIN et al. v. WHEELER",
+      "primary_issues": [
+        "30050"
+      ],
+      "all_issues": [
+        "20400",
+        "30050",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1962-137",
+      "name": "SHENKER v. BALTIMORE & OHIO RAILROAD CO.",
+      "primary_issues": [
+        "80040"
+      ],
+      "all_issues": [
+        "80040",
+        "90330"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1962-142",
+      "name": "DIVISION 1287, AMALGAMATED ASSOCIATION OF STREET, ELECTRIC RAILWAY & MOTOR COACH EMPLOYEES OF AMERICA et al. v. MISSOURI",
+      "primary_issues": [
+        "100120"
+      ],
+      "all_issues": [
+        "100120",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1963-047",
+      "name": "WESBERRY et al. v. SANDERS, GOVERNOR OF GEORGIA, et al.",
+      "primary_issues": [
+        "20090"
+      ],
+      "all_issues": [
+        "20090",
+        "90250"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1963-049",
+      "name": "UNITED STATES v. HEALY et al.",
+      "primary_issues": [
+        "10570"
+      ],
+      "all_issues": [
+        "10570",
+        "90480"
+      ],
+      "all_signals": [
+        "timeliness_issue"
+      ]
+    },
+    {
+      "case_id": "1963-132",
+      "name": "CHAMBERLIN et al. v. DADE COUNTY BOARD OF PUBLIC INSTRUCTION et al.",
+      "primary_issues": [
+        "30170"
+      ],
+      "all_issues": [
+        "30170",
+        "90160"
+      ],
+      "all_signals": [
+        "explicit_no_merits_issue"
+      ]
+    },
+    {
+      "case_id": "1963-140",
+      "name": "REYNOLDS, JUDGE, et al. v. SIMS et al.",
+      "primary_issues": [
+        "20090"
+      ],
+      "all_issues": [
+        "20090",
+        "90250"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1963-153",
+      "name": "FALLEN v. UNITED STATES",
+      "primary_issues": [
+        "10370"
+      ],
+      "all_issues": [
+        "10370",
+        "90480"
+      ],
+      "all_signals": [
+        "timeliness_issue"
+      ]
+    },
+    {
+      "case_id": "1963-160",
+      "name": "BELL et al. v. MARYLAND",
+      "primary_issues": [
+        "20080"
+      ],
+      "all_issues": [
+        "20080",
+        "90390"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1964-012",
+      "name": "GILLESPIE, ADMINISTRATRIX v. UNITED STATES STEEL CORP.",
+      "primary_issues": [
+        "80050"
+      ],
+      "all_issues": [
+        "80050",
+        "90380"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1964-033",
+      "name": "CITY OF EL PASO v. SIMMONS",
+      "primary_issues": [
+        "80110"
+      ],
+      "all_issues": [
+        "80110",
+        "90510"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1964-071",
+      "name": "BURNETT v. NEW YORK CENTRAL RAILROAD CO.",
+      "primary_issues": [
+        "80050"
+      ],
+      "all_issues": [
+        "80050",
+        "90480"
+      ],
+      "all_signals": [
+        "timeliness_issue"
+      ]
+    },
+    {
+      "case_id": "1964-077",
+      "name": "DOMBROWSKI et al. v. PFISTER, CHAIRMAN, JOINT LEGISLATIVE COMMITTEE ON UNAMERICAN ACTIVITIES OF THE LOUISIANA LEGISLATURE, et al.",
+      "primary_issues": [
+        "30010"
+      ],
+      "all_issues": [
+        "30010",
+        "90030"
+      ],
+      "all_signals": [
+        "comity_issue"
+      ]
+    },
+    {
+      "case_id": "1964-081",
+      "name": "HARMAN et al. v. FORSSENIUS et al.",
+      "primary_issues": [
+        "20010"
+      ],
+      "all_issues": [
+        "20010",
+        "90010"
+      ],
+      "all_signals": [
+        "comity_issue"
+      ]
+    },
+    {
+      "case_id": "1964-103",
+      "name": "PARROT et al. v. CITY OF TALLAHASSEE",
+      "primary_issues": [
+        "20080"
+      ],
+      "all_issues": [
+        "20080",
+        "90180"
+      ],
+      "all_signals": [
+        "explicit_no_merits_issue"
+      ]
+    },
+    {
+      "case_id": "1964-121",
+      "name": "GRISWOLD et al. v. CONNECTICUT",
+      "primary_issues": [
+        "50010"
+      ],
+      "all_issues": [
+        "50010",
+        "90240"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1964-134",
+      "name": "CAMERON et al. v. JOHNSON, GOVERNOR OF MISSISSIPPI, et al.",
+      "primary_issues": [
+        "30010"
+      ],
+      "all_issues": [
+        "30010",
+        "90030"
+      ],
+      "all_signals": [
+        "comity_issue"
+      ]
+    },
+    {
+      "case_id": "1965-048",
+      "name": "UNITED STATES v. ADAMS et al.",
+      "primary_issues": [
+        "80180"
+      ],
+      "all_issues": [
+        "80180",
+        "90510"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1965-054",
+      "name": "UNITED STATES v. JOHNSON",
+      "primary_issues": [
+        "80140"
+      ],
+      "all_issues": [
+        "80140",
+        "90340"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1965-071",
+      "name": "BRENNER, COMMISSIONER OF PATENTS v. MANSON",
+      "primary_issues": [
+        "80180"
+      ],
+      "all_issues": [
+        "80180",
+        "90510"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1965-083",
+      "name": "UNITED STATES v. GUEST et al.",
+      "primary_issues": [
+        "20400"
+      ],
+      "all_issues": [
+        "20400",
+        "90340"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1965-105",
+      "name": "MILLS v. ALABAMA",
+      "primary_issues": [
+        "30010"
+      ],
+      "all_issues": [
+        "30010",
+        "90350"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1965-125",
+      "name": "FEDERAL TRADE COMMISSION v. DEAN FOODS CO. et al.",
+      "primary_issues": [
+        "80020"
+      ],
+      "all_issues": [
+        "80020",
+        "90280",
+        "90330"
+      ],
+      "all_signals": [
+        "judicial_administration_issue",
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1965-136",
+      "name": "LOMENZO, SECRETARY OF STATE OF NEW YORK, et al. v. WMCA, INC., et al.",
+      "primary_issues": [
+        "20090"
+      ],
+      "all_issues": [
+        "20090",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1967-059",
+      "name": "SCHNEIDER v. SMITH, COMMANDANT, UNITED STATES COAST GUARD",
+      "primary_issues": [
+        "30060"
+      ],
+      "all_issues": [
+        "30060",
+        "90340"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1967-126",
+      "name": "CARAFAS v. LAVALLEE, WARDEN",
+      "primary_issues": [
+        "10020"
+      ],
+      "all_issues": [
+        "10020",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1967-158",
+      "name": "SIBRON v. NEW YORK",
+      "primary_issues": [
+        "10050"
+      ],
+      "all_issues": [
+        "10050",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1968-003",
+      "name": "WILLIAMS et al. v. RHODES, GOVERNOR OF OHIO, et al.",
+      "primary_issues": [
+        "20030"
+      ],
+      "all_issues": [
+        "20030",
+        "90250"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1968-017",
+      "name": "CARROLL et al. v. PRESIDENT AND COMMISSIONERS OF PRINCESS ANNE et al.",
+      "primary_issues": [
+        "30010"
+      ],
+      "all_issues": [
+        "30010",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1968-019",
+      "name": "UNITED STATES v. CONCENTRATED PHOSPHATE EXPORT ASSN., INC., et al.",
+      "primary_issues": [
+        "80010"
+      ],
+      "all_issues": [
+        "80010",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1968-035",
+      "name": "HUNTER v. ERICKSON, MAYOR OF AKRON, et al.",
+      "primary_issues": [
+        "20040"
+      ],
+      "all_issues": [
+        "20040",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1968-055",
+      "name": "ALDERMAN et al. v. UNITED STATES",
+      "primary_issues": [
+        "10050"
+      ],
+      "all_issues": [
+        "10050",
+        "90310"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1968-064",
+      "name": "SNYDER v. HARRIS et al.",
+      "primary_issues": [
+        "90110"
+      ],
+      "all_issues": [
+        "90110",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1968-069",
+      "name": "SCOFIELD et al. v. NATIONAL LABOR RELATIONS BOARD et al.",
+      "primary_issues": [
+        "70060"
+      ],
+      "all_issues": [
+        "70060",
+        "90480"
+      ],
+      "all_signals": [
+        "timeliness_issue"
+      ]
+    },
+    {
+      "case_id": "1968-091",
+      "name": "MOORE et al. v. OGILVIE, GOVERNOR OF ILLINOIS, et al.",
+      "primary_issues": [
+        "20030"
+      ],
+      "all_issues": [
+        "20030",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1968-099",
+      "name": "UNITED STATES v. COVINGTON",
+      "primary_issues": [
+        "10090"
+      ],
+      "all_issues": [
+        "10090",
+        "90340"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1968-112",
+      "name": "BOYKIN v. ALABAMA",
+      "primary_issues": [
+        "10030"
+      ],
+      "all_issues": [
+        "10030",
+        "90350"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1968-137",
+      "name": "BENTON v. MARYLAND",
+      "primary_issues": [
+        "10170"
+      ],
+      "all_issues": [
+        "10170",
+        "90250"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1969-004",
+      "name": "BROCKINGTON v. RHODES, GOVERNOR OF OHIO, et al.",
+      "primary_issues": [
+        "20030"
+      ],
+      "all_issues": [
+        "20030",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1969-005",
+      "name": "HALL et ux. v. BEALS, CLERK AND RECORDER OF EL PASO COUNTY, et al.",
+      "primary_issues": [
+        "20220"
+      ],
+      "all_issues": [
+        "20220",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1969-019",
+      "name": "SULLIVAN et al. v. LITTLE HUNTING PARK, INC., et al.",
+      "primary_issues": [
+        "20040"
+      ],
+      "all_issues": [
+        "20040",
+        "90280"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1969-024",
+      "name": "GUTKNECHT v. UNITED STATES",
+      "primary_issues": [
+        "20230"
+      ],
+      "all_issues": [
+        "20230",
+        "90280"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1969-107",
+      "name": "ATLANTIC COAST LINE RAILROAD CO. v. BROTHERHOOD OF LOCOMOTIVE ENGINEERS et al.",
+      "primary_issues": [
+        "70140"
+      ],
+      "all_issues": [
+        "70140",
+        "90090"
+      ],
+      "all_signals": [
+        "comity_issue"
+      ]
+    },
+    {
+      "case_id": "1969-129",
+      "name": "UNITED STATES v. SISSON",
+      "primary_issues": [
+        "30130"
+      ],
+      "all_issues": [
+        "30130",
+        "90340"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1969-135",
+      "name": "MORRIS et al. v. SCHOONFIELD, WARDEN, et al.",
+      "primary_issues": [
+        "20340"
+      ],
+      "all_issues": [
+        "20340",
+        "90390"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1970-024",
+      "name": "WISCONSIN v. CONSTANTINEAU",
+      "primary_issues": [
+        "40020"
+      ],
+      "all_issues": [
+        "40020",
+        "90090"
+      ],
+      "all_signals": [
+        "comity_issue"
+      ]
+    },
+    {
+      "case_id": "1970-046",
+      "name": "UNITED STATES v. WELLER",
+      "primary_issues": [
+        "30130"
+      ],
+      "all_issues": [
+        "30130",
+        "90340"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1970-062",
+      "name": "OHIO v. WYANDOTTE CHEMICALS CORP. et al.",
+      "primary_issues": [
+        "80130"
+      ],
+      "all_issues": [
+        "80130",
+        "90370"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1970-088",
+      "name": "UNITED STATES v. VUITCH",
+      "primary_issues": [
+        "50020"
+      ],
+      "all_issues": [
+        "50020",
+        "90340"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1970-144",
+      "name": "HUNTER v. TENNESSEE",
+      "primary_issues": [
+        "10130"
+      ],
+      "all_issues": [
+        "10130",
+        "90390"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1971-024",
+      "name": "WILWORDING et al. v. SWENSON, WARDEN",
+      "primary_issues": [
+        "10020"
+      ],
+      "all_issues": [
+        "10020",
+        "90040"
+      ],
+      "all_signals": [
+        "comity_issue"
+      ]
+    },
+    {
+      "case_id": "1971-027",
+      "name": "PICARD v. CONNOR",
+      "primary_issues": [
+        "10020"
+      ],
+      "all_issues": [
+        "10020",
+        "90040"
+      ],
+      "all_signals": [
+        "comity_issue"
+      ]
+    },
+    {
+      "case_id": "1971-055",
+      "name": "PARISI v. DAVIDSON et al.",
+      "primary_issues": [
+        "30130"
+      ],
+      "all_issues": [
+        "30130",
+        "90050"
+      ],
+      "all_signals": [
+        "comity_issue"
+      ]
+    },
+    {
+      "case_id": "1971-079",
+      "name": "EISENSTADT, SHERIFF v. BAIRD",
+      "primary_issues": [
+        "50020"
+      ],
+      "all_issues": [
+        "50020",
+        "90240"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1971-083",
+      "name": "LYNCH et al. v. HOUSEHOLD FINANCE CORP. et al.",
+      "primary_issues": [
+        "20100"
+      ],
+      "all_issues": [
+        "20100",
+        "90090"
+      ],
+      "all_signals": [
+        "comity_issue"
+      ]
+    },
+    {
+      "case_id": "1971-092",
+      "name": "SIERRA CLUB v. MORTON, SECRETARY OF THE INTERIOR, et al.",
+      "primary_issues": [
+        "80130"
+      ],
+      "all_issues": [
+        "80130",
+        "90240"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1971-095",
+      "name": "WASHINGTON et al. v. GENERAL MOTORS CORP. et al.",
+      "primary_issues": [
+        "80130"
+      ],
+      "all_issues": [
+        "80130",
+        "90370"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1971-112",
+      "name": "CAPLIN, TRUSTEE v. MARINE MIDLAND GRACE TRUST CO. OF NEW YORK",
+      "primary_issues": [
+        "80030"
+      ],
+      "all_issues": [
+        "80030",
+        "90280"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1971-118",
+      "name": "LAKE CARRIERS' ASSN. ET AL v. MACMULLAN et al.",
+      "primary_issues": [
+        "80130"
+      ],
+      "all_issues": [
+        "80130",
+        "90090"
+      ],
+      "all_signals": [
+        "comity_issue"
+      ]
+    },
+    {
+      "case_id": "1971-121",
+      "name": "SOCIALIST LABOR PARTY et al. v. GILLIGAN, GOVERNOR OF OHIO, et al.",
+      "primary_issues": [
+        "30100"
+      ],
+      "all_issues": [
+        "30100",
+        "90240"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1971-127",
+      "name": "BRUNETTE MACHINE WORKS, LTD. v. KOCKUM INDUSTRIES, INC.",
+      "primary_issues": [
+        "80180"
+      ],
+      "all_issues": [
+        "80180",
+        "90140"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1971-139",
+      "name": "MOOSE LODGE NO. 107 v. IRVIS et al.",
+      "primary_issues": [
+        "20040"
+      ],
+      "all_issues": [
+        "20040",
+        "90240"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1971-159",
+      "name": "LAIRD, SECRETARY OF DEFENSE, et al. v. TATUM et al.",
+      "primary_issues": [
+        "30010"
+      ],
+      "all_issues": [
+        "30010",
+        "90250"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1971-166",
+      "name": "MANCUSI, CORRECTIONAL SUPERINTENDENT v. STUBBS",
+      "primary_issues": [
+        "10270"
+      ],
+      "all_issues": [
+        "10270",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1972-071",
+      "name": "LINDA R. S. v. RICHARD D. et al.",
+      "primary_issues": [
+        "20200"
+      ],
+      "all_issues": [
+        "20200",
+        "90240"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1972-104",
+      "name": "PREISER, CORRECTION COMMISSIONER, et al. v. RODRIGUEZ et al.",
+      "primary_issues": [
+        "10020"
+      ],
+      "all_issues": [
+        "10020",
+        "90040"
+      ],
+      "all_signals": [
+        "comity_issue"
+      ]
+    },
+    {
+      "case_id": "1972-151",
+      "name": "UNITED STATES et al. v. STUDENTS CHALLENGING REGULATORY AGENCY PROCEDURES (SCRAP) et al.",
+      "primary_issues": [
+        "80130"
+      ],
+      "all_issues": [
+        "80130",
+        "90120",
+        "90280"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1973-034",
+      "name": "NATIONAL RAILROAD PASSENGER CORP. et al. v. NATIONAL ASSOCIATION OF RAILROAD PASSENGERS",
+      "primary_issues": [
+        "80220"
+      ],
+      "all_issues": [
+        "80220",
+        "90290"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1973-074",
+      "name": "HAGANS et al. v. LAVINE, COMMISSIONER, NEW YORK DEPARTMENT OF SOCIAL SERVICES, et al.",
+      "primary_issues": [
+        "20190"
+      ],
+      "all_issues": [
+        "20190",
+        "90410"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1973-092",
+      "name": "DEFUNIS et al. v. ODEGAARD et al.",
+      "primary_issues": [
+        "20070"
+      ],
+      "all_issues": [
+        "20070",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1973-120",
+      "name": "F. D. RICH CO., INC., et al. v. UNITED STATES FOR THE USE OF INDUSTRIAL LUMBER CO., INC.",
+      "primary_issues": [
+        "60010"
+      ],
+      "all_issues": [
+        "60010",
+        "90140"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1974-006",
+      "name": "FRANCISCO v. GATHRIGHT, CORRECTIONAL SUPERINTENDENT",
+      "primary_issues": [
+        "10020"
+      ],
+      "all_issues": [
+        "10020",
+        "90040"
+      ],
+      "all_signals": [
+        "comity_issue"
+      ]
+    },
+    {
+      "case_id": "1974-076",
+      "name": "SCHLESINGER, SECRETARY OF DEFENSE, et al. v. COUNCILMAN",
+      "primary_issues": [
+        "20240"
+      ],
+      "all_issues": [
+        "20240",
+        "90050"
+      ],
+      "all_signals": [
+        "comity_issue"
+      ]
+    },
+    {
+      "case_id": "1974-081",
+      "name": "MCLUCAS, SECRETARY OF THE AIR FORCE, et al. v. DECHAMPLAIN",
+      "primary_issues": [
+        "20240"
+      ],
+      "all_issues": [
+        "20240",
+        "90050",
+        "90340"
+      ],
+      "all_signals": [
+        "comity_issue",
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1974-114",
+      "name": "BLUE CHIP STAMPS et al. v. MANOR DRUG STORES",
+      "primary_issues": [
+        "80120"
+      ],
+      "all_issues": [
+        "80120",
+        "90290"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1974-123",
+      "name": "RONDEAU v. MOSINEE PAPER CORP.",
+      "primary_issues": [
+        "80120"
+      ],
+      "all_issues": [
+        "80120",
+        "90290"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1974-124",
+      "name": "CORT et al. v. ASH",
+      "primary_issues": [
+        "30140"
+      ],
+      "all_issues": [
+        "30140",
+        "90290"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1974-147",
+      "name": "WEINBERGER, SECRETARY OF HEALTH, EDUCATION, AND WELFARE, et al. v. SALFI et al.",
+      "primary_issues": [
+        "20180"
+      ],
+      "all_issues": [
+        "20180",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1975-027",
+      "name": "FEDERAL POWER COMMISSION v. TRANSCONTINENTAL GAS PIPE LINE CORP. et al.",
+      "primary_issues": [
+        "90120"
+      ],
+      "all_issues": [
+        "90120",
+        "90380"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1975-058",
+      "name": "FRANKS et al. v. BOWMAN TRANSPORTATION CO., INC., et al.",
+      "primary_issues": [
+        "20060"
+      ],
+      "all_issues": [
+        "20060",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1975-134",
+      "name": "EXAMINING BOARD OF ENGINEERS, ARCHITECTS AND SURVEYORS et al. v. FLORES DE OTERO",
+      "primary_issues": [
+        "20120"
+      ],
+      "all_issues": [
+        "20120",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1975-158",
+      "name": "ELROD, SHERIFF, et al. v. BURNS et al.",
+      "primary_issues": [
+        "30010"
+      ],
+      "all_issues": [
+        "30010",
+        "90250"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1976-025",
+      "name": "CRAIG et al. v. BOREN, GOVERNOR OF OKLAHOMA, et al.",
+      "primary_issues": [
+        "20130"
+      ],
+      "all_issues": [
+        "20130",
+        "90130",
+        "90240"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue",
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1976-053",
+      "name": "PIPER et al. v. CHRIS-CRAFT INDUSTRIES, INC.",
+      "primary_issues": [
+        "80120"
+      ],
+      "all_issues": [
+        "80120",
+        "90290"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1976-088",
+      "name": "WOOLEY, CHIEF OF POLICE OF LEBANON, et al. v. MAYNARD ET UX.",
+      "primary_issues": [
+        "30160"
+      ],
+      "all_issues": [
+        "30160",
+        "90030"
+      ],
+      "all_signals": [
+        "comity_issue"
+      ]
+    },
+    {
+      "case_id": "1977-140",
+      "name": "DUKE POWER CO. v. CAROLINA ENVIRONMENTAL STUDY GROUP, INC., et al.",
+      "primary_issues": [
+        "80280"
+      ],
+      "all_issues": [
+        "80280",
+        "90240",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue",
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1978-064",
+      "name": "COUNTY OF LOS ANGELES et al. v. DAVIS et al.",
+      "primary_issues": [
+        "20060"
+      ],
+      "all_issues": [
+        "20060",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1978-077",
+      "name": "DOUGLAS OIL COMPANY OF CALIFORNIA et al. v. PETROL STOPS NORTHWEST et al.",
+      "primary_issues": [
+        "10160"
+      ],
+      "all_issues": [
+        "10160",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1978-128",
+      "name": "TOUCHE ROSS & CO. v. REDINGTON, TRUSTEE, et al.",
+      "primary_issues": [
+        "80120"
+      ],
+      "all_issues": [
+        "80120",
+        "90290"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1979-003",
+      "name": "TRANSAMERICA MORTGAGE ADVISORS, INC. (TAMA), et al. v. LEWIS",
+      "primary_issues": [
+        "80120"
+      ],
+      "all_issues": [
+        "80120",
+        "90290"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1979-063",
+      "name": "VITEK, CORRECTIONAL DIRECTOR, et al. v. JONES",
+      "primary_issues": [
+        "40040"
+      ],
+      "all_issues": [
+        "40040",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1980-063",
+      "name": "SAN DIEGO GAS & ELECTRIC CO. v. CITY OF SAN DIEGO et al.",
+      "primary_issues": [
+        "40070"
+      ],
+      "all_issues": [
+        "40070",
+        "90380"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1980-093",
+      "name": "FLYNT et al. v. OHIO",
+      "primary_issues": [
+        "30190"
+      ],
+      "all_issues": [
+        "30190",
+        "90380"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1980-134",
+      "name": "MIDDLESEX COUNTY SEWERAGE AUTHORITY et al. v. NATIONAL SEA CLAMMERS ASSOCIATION",
+      "primary_issues": [
+        "80130"
+      ],
+      "all_issues": [
+        "80130",
+        "90290"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1981-022",
+      "name": "DONOVAN, SECRETARY OF LABOR, et al. v. RICHLAND COUNTY ASSOCIATION FOR RETARDED CITIZENS",
+      "primary_issues": [
+        "70040"
+      ],
+      "all_issues": [
+        "70040",
+        "90330"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1981-042",
+      "name": "CITY OF MESQUITE v. ALADDIN'S CASTLE, INC.",
+      "primary_issues": [
+        "40010"
+      ],
+      "all_issues": [
+        "40010",
+        "90130",
+        "90340"
+      ],
+      "all_signals": [
+        "judicial_administration_issue",
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1981-098",
+      "name": "OREGON v. KENNEDY",
+      "primary_issues": [
+        "10170"
+      ],
+      "all_issues": [
+        "10170",
+        "90180"
+      ],
+      "all_signals": [
+        "explicit_no_merits_issue"
+      ]
+    },
+    {
+      "case_id": "1982-163",
+      "name": "MICHIGAN v. LONG",
+      "primary_issues": [
+        "10060"
+      ],
+      "all_issues": [
+        "10060",
+        "90350"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1983-083",
+      "name": "FEDERAL COMMUNICATIONS COMMISSION et al. v. ITT WORLD COMMUNICATIONS, INC., et al.",
+      "primary_issues": [
+        "50040"
+      ],
+      "all_issues": [
+        "50040",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1983-089",
+      "name": "HECKLER, SECRETARY OF HEALTH AND HUMAN SERVICES v. RINGER et al.",
+      "primary_issues": [
+        "20190"
+      ],
+      "all_issues": [
+        "20190",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1983-109",
+      "name": "HAWAII HOUSING AUTHORITY ET AL v. MIDKIFF et al.",
+      "primary_issues": [
+        "40070"
+      ],
+      "all_issues": [
+        "40070",
+        "90090"
+      ],
+      "all_signals": [
+        "comity_issue"
+      ]
+    },
+    {
+      "case_id": "1983-124",
+      "name": "FIREFIGHTERS LOCAL UNION NO. 1784 v. STOTTS et al.",
+      "primary_issues": [
+        "20070"
+      ],
+      "all_issues": [
+        "20060",
+        "20070",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1983-153",
+      "name": "RICHARDSON v. UNITED STATES",
+      "primary_issues": [
+        "10170"
+      ],
+      "all_issues": [
+        "10170",
+        "90380"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1984-033",
+      "name": "AKE v. OKLAHOMA",
+      "primary_issues": [
+        "20380"
+      ],
+      "all_issues": [
+        "20380",
+        "90180"
+      ],
+      "all_signals": [
+        "explicit_no_merits_issue"
+      ]
+    },
+    {
+      "case_id": "1984-047",
+      "name": "FEDERAL ELECTION COMMISSION v. NATIONAL CONSERVATIVE POLITICAL ACTION COMMITTEE et al.",
+      "primary_issues": [
+        "30140"
+      ],
+      "all_issues": [
+        "30140",
+        "90280"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1984-122",
+      "name": "CALDWELL v. MISSISSIPPI",
+      "primary_issues": [
+        "10130"
+      ],
+      "all_issues": [
+        "10130",
+        "90350"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1984-143",
+      "name": "PHILLIPS PETROLEUM CO. v. SHUTTS et al.",
+      "primary_issues": [
+        "40060"
+      ],
+      "all_issues": [
+        "40060",
+        "90240"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1985-037",
+      "name": "NEW YORK v. CLASS",
+      "primary_issues": [
+        "10060"
+      ],
+      "all_issues": [
+        "10060",
+        "90350"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1985-054",
+      "name": "BENDER et al. v. WILLIAMSPORT AREA SCHOOL DISTRICT et al.",
+      "primary_issues": [
+        "30170"
+      ],
+      "all_issues": [
+        "30170",
+        "90240"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1985-069",
+      "name": "AETNA LIFE INSURANCE CO. v. LAVOIE et al.",
+      "primary_issues": [
+        "40050"
+      ],
+      "all_issues": [
+        "40050",
+        "90350"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1985-106",
+      "name": "THORNBURGH, GOVERNOR OF PENNSYLVANIA, et al. v. AMERICAN COLLEGE OF OBSTETRICIANS AND GYNECOLOGISTS et al.",
+      "primary_issues": [
+        "50020"
+      ],
+      "all_issues": [
+        "50020",
+        "90340"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1985-109",
+      "name": "EAST RIVER STEAMSHIP CORP. et al. v. TRANSAMERICA DELAVAL INC.",
+      "primary_issues": [
+        "80070"
+      ],
+      "all_issues": [
+        "80070",
+        "90230"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1985-121",
+      "name": "MAINE v. TAYLOR et al.",
+      "primary_issues": [
+        "80110"
+      ],
+      "all_issues": [
+        "80110",
+        "90340"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1985-141",
+      "name": "PRESS-ENTERPRISE CO. v. SUPERIOR COURT OF CALIFORNIA FOR THE COUNTY OF RIVERSIDE",
+      "primary_issues": [
+        "30010"
+      ],
+      "all_issues": [
+        "30010",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1985-143",
+      "name": "DAVIS et al. v. BANDEMER et al.",
+      "primary_issues": [
+        "20090"
+      ],
+      "all_issues": [
+        "20090",
+        "90250"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1985-145",
+      "name": "JAPAN WHALING ASSOCIATION et al. v. AMERICAN CETACEAN SOCIETY et al.",
+      "primary_issues": [
+        "80130"
+      ],
+      "all_issues": [
+        "80130",
+        "90250"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1985-150",
+      "name": "POSADAS DE PUERTO RICO ASSOCIATES, DBA CONDADO HOLIDAY INN v. TOURISM COMPANY OF PUERTO RICO et al.",
+      "primary_issues": [
+        "30020"
+      ],
+      "all_issues": [
+        "30020",
+        "90350"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1985-165",
+      "name": "COMMODITY FUTURES TRADING COMMISSION v. SCHOR et al.",
+      "primary_issues": [
+        "90120"
+      ],
+      "all_issues": [
+        "90120",
+        "90520"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1986-022",
+      "name": "CLARKE, COMPTROLLER OF THE CURRENCY v. SECURITIES INDUSTRY ASSOCIATION",
+      "primary_issues": [
+        "80120"
+      ],
+      "all_issues": [
+        "80120",
+        "90240"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1986-035",
+      "name": "PENNSYLVANIA v. RITCHIE",
+      "primary_issues": [
+        "10160"
+      ],
+      "all_issues": [
+        "10160",
+        "90380"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1986-057",
+      "name": "CALIFORNIA COASTAL COMMISSION et al. v. GRANITE ROCK CO.",
+      "primary_issues": [
+        "80130"
+      ],
+      "all_issues": [
+        "100030",
+        "80130",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1986-068",
+      "name": "METROPOLITAN LIFE INSURANCE CO. v. TAYLOR",
+      "primary_issues": [
+        "100020"
+      ],
+      "all_issues": [
+        "100020",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1986-075",
+      "name": "ARKANSAS WRITERS' PROJECT, INC. v. RAGLAND, COMMISSIONER OF REVENUE OF ARKANSAS",
+      "primary_issues": [
+        "80100"
+      ],
+      "all_issues": [
+        "30010",
+        "80100",
+        "90230"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1986-085",
+      "name": "BURLINGTON NORTHERN RAILROAD CO. et al. v. BROTHERHOOD OF MAINTENANCE OF WAY EMPLOYES et al.",
+      "primary_issues": [
+        "70150"
+      ],
+      "all_issues": [
+        "70150",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1986-086",
+      "name": "BURLINGTON NORTHERN RAILROAD CO. v. OKLAHOMA TAX COMMISSION et al.",
+      "primary_issues": [
+        "80100"
+      ],
+      "all_issues": [
+        "80100",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1986-087",
+      "name": "MEESE, ATTORNEY GENERAL OF THE UNITED STATES, et al. v. KEENE",
+      "primary_issues": [
+        "30010"
+      ],
+      "all_issues": [
+        "30010",
+        "90240"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1986-125",
+      "name": "CITY OF HOUSTON, TEXAS v. HILL",
+      "primary_issues": [
+        "30150"
+      ],
+      "all_issues": [
+        "30150",
+        "90030"
+      ],
+      "all_signals": [
+        "comity_issue"
+      ]
+    },
+    {
+      "case_id": "1987-006",
+      "name": "GWALTNEY OF SMITHFIELD, LTD. v. CHESAPEAKE BAY FOUNDATION, INC., et al.",
+      "primary_issues": [
+        "80130"
+      ],
+      "all_issues": [
+        "80130",
+        "90290"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1987-022",
+      "name": "HONIG, CALIFORNIA SUPERINTENDENT OF PUBLIC INSTRUCTION v. DOE et al.",
+      "primary_issues": [
+        "20210"
+      ],
+      "all_issues": [
+        "20210",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1987-070",
+      "name": "EMPLOYMENT DIVISION, DEPARTMENT OF HUMAN RESOURCES OF THE STATE OF OREGON, et al. v. SMITH",
+      "primary_issues": [
+        "30160"
+      ],
+      "all_issues": [
+        "30160",
+        "90190"
+      ],
+      "all_signals": [
+        "explicit_no_merits_issue"
+      ]
+    },
+    {
+      "case_id": "1988-001",
+      "name": "RHODES, JAMES A., et al. v. STEWART, LARRY",
+      "primary_issues": [
+        "60010"
+      ],
+      "all_issues": [
+        "60010",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1988-029",
+      "name": "TEXAS MONTHLY, INC. v. BULLOCK, COMPTROLLER OF PUBLIC ACCOUNTS OF STATE OF TEXAS, et al.",
+      "primary_issues": [
+        "30170"
+      ],
+      "all_issues": [
+        "30170",
+        "90230"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1988-125",
+      "name": "PUBLIC CITIZEN v. UNITED STATES DEPARTMENT OF JUSTICE et al.",
+      "primary_issues": [
+        "50040"
+      ],
+      "all_issues": [
+        "50040",
+        "90220"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1989-004",
+      "name": "OLAF A. HALLSTROM, ET UX. v. TILLAMOOK COUNTY",
+      "primary_issues": [
+        "80130"
+      ],
+      "all_issues": [
+        "80130",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1989-016",
+      "name": "FW/PBS, INC., DBA PARIS ADULT BOOKSTORE II, et al. v. CITY OF DALLAS et al.",
+      "primary_issues": [
+        "30010"
+      ],
+      "all_issues": [
+        "30010",
+        "30190",
+        "90240"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1989-065",
+      "name": "MISSOURI et al. v. JENKINS et al.",
+      "primary_issues": [
+        "20050"
+      ],
+      "all_issues": [
+        "20050",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1989-078",
+      "name": "UNITED STATES v. MUNOZ-FLORES",
+      "primary_issues": [
+        "120040"
+      ],
+      "all_issues": [
+        "120040",
+        "90250"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1991-009",
+      "name": "GUY WOODDELL, JR. v. INTERNATIONAL BROTHERHOOD OF ELECTRICAL WORKERS, LOCAL 71, et al.",
+      "primary_issues": [
+        "10580"
+      ],
+      "all_issues": [
+        "10580",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1991-022",
+      "name": "BARBARA J. NORMAN, et al. v. DOROTHY REED, et al.",
+      "primary_issues": [
+        "20030"
+      ],
+      "all_issues": [
+        "20030",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "1991-090",
+      "name": "CAROL ANKENBRANDT, AS NEXT FRIEND AND MOTHER OF L. R. AND S. R. v. JON A. RICHARDS AND DEBRA KESLER",
+      "primary_issues": [
+        "20170"
+      ],
+      "all_issues": [
+        "20170",
+        "90090"
+      ],
+      "all_signals": [
+        "comity_issue"
+      ]
+    },
+    {
+      "case_id": "1995-024",
+      "name": "D. GRANT PEACOCK v. JACK L. THOMAS",
+      "primary_issues": [
+        "80090"
+      ],
+      "all_issues": [
+        "80090",
+        "90410"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1997-030",
+      "name": "NATIONAL CREDIT UNION ADMINISTRATION v. FIRST NATIONAL BANK & TRUST CO. et al.",
+      "primary_issues": [
+        "80170"
+      ],
+      "all_issues": [
+        "80170",
+        "90280"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "1997-087",
+      "name": "ARNOLD F. HOHN v. UNITED STATES",
+      "primary_issues": [
+        "10020"
+      ],
+      "all_issues": [
+        "10020",
+        "90340"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "1998-080",
+      "name": "JEFFERSON COUNTY, ALABAMA v. WILLIAM M. ACKER, JR., SENIOR JUDGE, UNITED STATES DISTRICT COURT, NORTHERN DISTRICT OF ALABAMA, AND U. W. CLEMON, JUDGE, UNITED STATES DISTRICT COURT, NORTHERN DISTRICT OF ALABAMA",
+      "primary_issues": [
+        "100060"
+      ],
+      "all_issues": [
+        "100060",
+        "80100",
+        "90090"
+      ],
+      "all_signals": [
+        "comity_issue"
+      ]
+    },
+    {
+      "case_id": "1999-044",
+      "name": "CITY OF ERIE, et al. v. PAP'S A. M., TDBA 'KANDYLAND'",
+      "primary_issues": [
+        "30190"
+      ],
+      "all_issues": [
+        "30190",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "2000-024",
+      "name": "JAMES F. LEWIS v. LEWIS & CLARK MARINE, INC., ETC.",
+      "primary_issues": [
+        "80070"
+      ],
+      "all_issues": [
+        "80070",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "2001-074",
+      "name": "UTAH, et al. v. DONALD L. EVANS, SECRETARY OF COMMERCE, et al.",
+      "primary_issues": [
+        "20090"
+      ],
+      "all_issues": [
+        "20090",
+        "90210"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "2002-013",
+      "name": "PIERCE COUNTY, WASHINGTON v. IGNACIO GUILLEN, LEGAL GUARDIAN OF JENNIFER GUILLEN AND ALMA GUILLEN, MINORS, et al.",
+      "primary_issues": [
+        "80240"
+      ],
+      "all_issues": [
+        "80240",
+        "90380"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "2003-006",
+      "name": "MITCH MCCONNELL, UNITED STATES SENATOR, et al. v. FEDERAL ELECTION COMMISSION, et al.",
+      "primary_issues": [
+        "30140"
+      ],
+      "all_issues": [
+        "30140",
+        "90240"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "2007-036",
+      "name": "HOMERO GONZALEZ v. UNITED STATES",
+      "primary_issues": [
+        "10360"
+      ],
+      "all_issues": [
+        "10360",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "2008-031",
+      "name": "BETTY E. VADEN v. DISCOVER BANK et al.",
+      "primary_issues": [
+        "100030"
+      ],
+      "all_issues": [
+        "100030",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "2008-081",
+      "name": "THOMAS C. HORNE, SUPERINTENDENT, ARIZONA PUBLIC INSTRUCTION v. MIRIAM FLORES et al.",
+      "primary_issues": [
+        "20050"
+      ],
+      "all_issues": [
+        "20050",
+        "90240"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "2009-028",
+      "name": "REED ELSEVIER, INC., et al., v. IRVIN MUCHNICK et al.",
+      "primary_issues": [
+        "80190"
+      ],
+      "all_issues": [
+        "80190",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "2009-043",
+      "name": "MERCK & CO., INC., et al. v. RICHARD REYNOLDS et al.",
+      "primary_issues": [
+        "80120"
+      ],
+      "all_issues": [
+        "80120",
+        "90480"
+      ],
+      "all_signals": [
+        "timeliness_issue"
+      ]
+    },
+    {
+      "case_id": "2010-072",
+      "name": "AMERICAN ELECTRIC POWER COMPANY, INC., et al., PETITIONERS v. CONNECTICUT ET AL",
+      "primary_issues": [
+        "80130"
+      ],
+      "all_issues": [
+        "80130",
+        "90120",
+        "90240"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "2010-079",
+      "name": "HOWARD K. STERN, EXECUTOR OF THE ESTATE OF VICKI LYNN MARSHALL, PETITIONER, v. ELAINE T. MARSHALL, EXECUTRIX OF THE ESTATE OF E. PIERCE MARSHALL",
+      "primary_issues": [
+        "140070"
+      ],
+      "all_issues": [
+        "140070",
+        "90320"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "2011-051",
+      "name": "PATRICK WOOD, PETITIONER v. KEVIN MILYARD, WARDEN, et al.",
+      "primary_issues": [
+        "10020"
+      ],
+      "all_issues": [
+        "10020",
+        "90480"
+      ],
+      "all_signals": [
+        "timeliness_issue"
+      ]
+    },
+    {
+      "case_id": "2011-052",
+      "name": "UNITED STATES, PETITIONER v. HOME CONCRETE & SUPPLY, LLC, et al.",
+      "primary_issues": [
+        "120010"
+      ],
+      "all_issues": [
+        "120010",
+        "90480"
+      ],
+      "all_signals": [
+        "timeliness_issue"
+      ]
+    },
+    {
+      "case_id": "2012-007",
+      "name": "ALREADY, LLC, DBA YUMS, PETITIONER v. NIKE, INC.",
+      "primary_issues": [
+        "80200"
+      ],
+      "all_issues": [
+        "80200",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "2012-012",
+      "name": "JEFFREY LEE CHAFIN, PETITIONER v. LYNNE HALES CHAFIN",
+      "primary_issues": [
+        "20170"
+      ],
+      "all_issues": [
+        "20170",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "2012-034",
+      "name": "GENESIS HEALTHCARE CORPORATION, et al., PETITIONERS v. LAURA SYMCZYK",
+      "primary_issues": [
+        "70040"
+      ],
+      "all_issues": [
+        "70040",
+        "90130"
+      ],
+      "all_signals": [
+        "mootness_or_venue_issue"
+      ]
+    },
+    {
+      "case_id": "2016-074",
+      "name": "SANDOZ INC. v. AMGEN INC.",
+      "primary_issues": [
+        "80180"
+      ],
+      "all_issues": [
+        "80180",
+        "90330"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "2018-062",
+      "name": "RUCHO v. COMMON CAUSE",
+      "primary_issues": [
+        "20010"
+      ],
+      "all_issues": [
+        "20010",
+        "90250"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "2023-049",
+      "name": "FOOD AND DRUG ADMINISTRATION v. ALLIANCE FOR HIPPOCRATIC MEDICINE",
+      "primary_issues": [
+        "50020"
+      ],
+      "all_issues": [
+        "50020",
+        "90310"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    },
+    {
+      "case_id": "2024-050",
+      "name": "ROYAL CANIN U.S.A., INC. v. WULLSCHLEGER",
+      "primary_issues": [
+        "80170"
+      ],
+      "all_issues": [
+        "80170",
+        "90400"
+      ],
+      "all_signals": [
+        "judicial_administration_issue"
+      ]
+    },
+    {
+      "case_id": "2025-005",
+      "name": "BOST v. ILLINOIS BD. OF ELECTIONS",
+      "primary_issues": [
+        "20010"
+      ],
+      "all_issues": [
+        "20010",
+        "90240"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ]
+    }
+  ],
+  "pilot": [
+    {
+      "case_id": "1972-048",
+      "name": "ROE et al. v. WADE, DISTRICT ATTORNEY OF DALLAS COUNTY",
+      "primary_issues": [
+        "50020"
+      ],
+      "all_issues": [
+        "50020"
+      ],
+      "added_issues": [],
+      "primary_signals": [],
+      "all_signals": [],
+      "recovered_signal": false,
+      "row_count": 2,
+      "directions": [
+        "2"
+      ],
+      "rows": [
+        {
+          "docketId": "1972-048-01",
+          "caseIssuesId": "1972-048-01-01",
+          "voteId": "1972-048-01-01-01",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "2",
+          "lawSupp": "230",
+          "caseDisposition": "3",
+          "decisionDirection": "2",
+          "majVotes": "7",
+          "minVotes": "2"
+        },
+        {
+          "docketId": "1972-048-01",
+          "caseIssuesId": "1972-048-01-02",
+          "voteId": "1972-048-01-02-01",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "1",
+          "lawSupp": "139",
+          "caseDisposition": "3",
+          "decisionDirection": "2",
+          "majVotes": "7",
+          "minVotes": "2"
+        }
+      ]
+    },
+    {
+      "case_id": "1975-172",
+      "name": "BELLOTTI, ATTORNEY GENERAL OF MASSACHUSETTS, et al. v. BAIRD et al.",
+      "primary_issues": [
+        "90070"
+      ],
+      "all_issues": [
+        "90070"
+      ],
+      "added_issues": [],
+      "primary_signals": [
+        "comity_issue"
+      ],
+      "all_signals": [
+        "comity_issue"
+      ],
+      "recovered_signal": false,
+      "row_count": 2,
+      "directions": [
+        "1"
+      ],
+      "rows": [
+        {
+          "docketId": "1975-172-01",
+          "caseIssuesId": "1975-172-01-01",
+          "voteId": "1975-172-01-01-01",
+          "issue": "90070",
+          "issueArea": "9",
+          "lawType": "5",
+          "lawSupp": "500",
+          "caseDisposition": "5",
+          "decisionDirection": "1",
+          "majVotes": "9",
+          "minVotes": "0"
+        },
+        {
+          "docketId": "1975-172-02",
+          "caseIssuesId": "1975-172-02-01",
+          "voteId": "1975-172-02-01-01",
+          "issue": "90070",
+          "issueArea": "9",
+          "lawType": "5",
+          "lawSupp": "500",
+          "caseDisposition": "5",
+          "decisionDirection": "1",
+          "majVotes": "9",
+          "minVotes": "0"
+        }
+      ]
+    },
+    {
+      "case_id": "1979-148",
+      "name": "HARRIS, SECRETARY OF HEALTH AND HUMAN SERVICES v. MCRAE et al.",
+      "primary_issues": [
+        "50020"
+      ],
+      "all_issues": [
+        "50020"
+      ],
+      "added_issues": [],
+      "primary_signals": [],
+      "all_signals": [],
+      "recovered_signal": false,
+      "row_count": 5,
+      "directions": [
+        "1"
+      ],
+      "rows": [
+        {
+          "docketId": "1979-148-01",
+          "caseIssuesId": "1979-148-01-01",
+          "voteId": "1979-148-01-01-01",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "3",
+          "lawSupp": "308",
+          "caseDisposition": "4",
+          "decisionDirection": "1",
+          "majVotes": "5",
+          "minVotes": "4"
+        },
+        {
+          "docketId": "1979-148-01",
+          "caseIssuesId": "1979-148-01-02",
+          "voteId": "1979-148-01-02-01",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "2",
+          "lawSupp": "203",
+          "caseDisposition": "4",
+          "decisionDirection": "1",
+          "majVotes": "5",
+          "minVotes": "4"
+        },
+        {
+          "docketId": "1979-148-01",
+          "caseIssuesId": "1979-148-01-03",
+          "voteId": "1979-148-01-03-01",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "2",
+          "lawSupp": "202",
+          "caseDisposition": "4",
+          "decisionDirection": "1",
+          "majVotes": "5",
+          "minVotes": "4"
+        },
+        {
+          "docketId": "1979-148-01",
+          "caseIssuesId": "1979-148-01-04",
+          "voteId": "1979-148-01-04-01",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "2",
+          "lawSupp": "207",
+          "caseDisposition": "4",
+          "decisionDirection": "1",
+          "majVotes": "5",
+          "minVotes": "4"
+        },
+        {
+          "docketId": "1979-148-01",
+          "caseIssuesId": "1979-148-01-05",
+          "voteId": "1979-148-01-05-01",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "2",
+          "lawSupp": "212",
+          "caseDisposition": "4",
+          "decisionDirection": "1",
+          "majVotes": "5",
+          "minVotes": "4"
+        }
+      ]
+    },
+    {
+      "case_id": "1985-077",
+      "name": "DIAMOND et al. v. CHARLES et al.",
+      "primary_issues": [
+        "90240"
+      ],
+      "all_issues": [
+        "90240"
+      ],
+      "added_issues": [],
+      "primary_signals": [
+        "standing_issue"
+      ],
+      "all_signals": [
+        "standing_issue"
+      ],
+      "recovered_signal": false,
+      "row_count": 1,
+      "directions": [
+        "1"
+      ],
+      "rows": [
+        {
+          "docketId": "1985-077-01",
+          "caseIssuesId": "1985-077-01-01",
+          "voteId": "1985-077-01-01-01",
+          "issue": "90240",
+          "issueArea": "9",
+          "lawType": "1",
+          "lawSupp": "138",
+          "caseDisposition": "9",
+          "decisionDirection": "1",
+          "majVotes": "9",
+          "minVotes": "0"
+        }
+      ]
+    },
+    {
+      "case_id": "1990-077",
+      "name": "IRVING RUST, et al. v. SULLIVAN, LOUIS W., SECRETARY OF HEALTH AND HUMAN SERVICES",
+      "primary_issues": [
+        "50020"
+      ],
+      "all_issues": [
+        "50020"
+      ],
+      "added_issues": [],
+      "primary_signals": [],
+      "all_signals": [],
+      "recovered_signal": false,
+      "row_count": 6,
+      "directions": [
+        "1"
+      ],
+      "rows": [
+        {
+          "docketId": "1990-077-01",
+          "caseIssuesId": "1990-077-01-01",
+          "voteId": "1990-077-01-01-01",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "6",
+          "lawSupp": "600",
+          "caseDisposition": "2",
+          "decisionDirection": "1",
+          "majVotes": "5",
+          "minVotes": "4"
+        },
+        {
+          "docketId": "1990-077-02",
+          "caseIssuesId": "1990-077-02-01",
+          "voteId": "1990-077-02-01-01",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "6",
+          "lawSupp": "600",
+          "caseDisposition": "2",
+          "decisionDirection": "1",
+          "majVotes": "5",
+          "minVotes": "4"
+        },
+        {
+          "docketId": "1990-077-02",
+          "caseIssuesId": "1990-077-02-02",
+          "voteId": "1990-077-02-02-01",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "2",
+          "lawSupp": "200",
+          "caseDisposition": "2",
+          "decisionDirection": "1",
+          "majVotes": "5",
+          "minVotes": "4"
+        },
+        {
+          "docketId": "1990-077-02",
+          "caseIssuesId": "1990-077-02-03",
+          "voteId": "1990-077-02-03-01",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "2",
+          "lawSupp": "207",
+          "caseDisposition": "2",
+          "decisionDirection": "1",
+          "majVotes": "5",
+          "minVotes": "4"
+        },
+        {
+          "docketId": "1990-077-02",
+          "caseIssuesId": "1990-077-02-04",
+          "voteId": "1990-077-02-04-01",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "2",
+          "lawSupp": "200",
+          "caseDisposition": "2",
+          "decisionDirection": "1",
+          "majVotes": "5",
+          "minVotes": "4"
+        },
+        {
+          "docketId": "1990-077-02",
+          "caseIssuesId": "1990-077-02-05",
+          "voteId": "1990-077-02-05-01",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "2",
+          "lawSupp": "207",
+          "caseDisposition": "2",
+          "decisionDirection": "1",
+          "majVotes": "5",
+          "minVotes": "4"
+        }
+      ]
+    },
+    {
+      "case_id": "1991-117",
+      "name": "PLANNED PARENTHOOD OF SOUTHEASTERN PENNSYLVANIA, et al. v. ROBERT P. CASEY, et al., ETC.",
+      "primary_issues": [
+        "50020"
+      ],
+      "all_issues": [
+        "50020"
+      ],
+      "added_issues": [],
+      "primary_signals": [],
+      "all_signals": [],
+      "recovered_signal": false,
+      "row_count": 2,
+      "directions": [
+        "2"
+      ],
+      "rows": [
+        {
+          "docketId": "1991-117-01",
+          "caseIssuesId": "1991-117-01-01",
+          "voteId": "1991-117-01-01-01",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "2",
+          "lawSupp": "230",
+          "caseDisposition": "7",
+          "decisionDirection": "2",
+          "majVotes": "5",
+          "minVotes": "4"
+        },
+        {
+          "docketId": "1991-117-02",
+          "caseIssuesId": "1991-117-02-01",
+          "voteId": "1991-117-02-01-01",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "2",
+          "lawSupp": "230",
+          "caseDisposition": "2",
+          "decisionDirection": "2",
+          "majVotes": "5",
+          "minVotes": "4"
+        }
+      ]
+    },
+    {
+      "case_id": "2005-020",
+      "name": "KELLY A. AYOTTE, ATTORNEY GENERAL OF NEW HAMPSHIRE v. PLANNED PARENTHOOD OF NORTHERN NEW ENGLAND, et al.",
+      "primary_issues": [
+        "50020"
+      ],
+      "all_issues": [
+        "50020"
+      ],
+      "added_issues": [],
+      "primary_signals": [],
+      "all_signals": [],
+      "recovered_signal": false,
+      "row_count": 1,
+      "directions": [
+        "2"
+      ],
+      "rows": [
+        {
+          "docketId": "2005-020-01",
+          "caseIssuesId": "2005-020-01-01",
+          "voteId": "2005-020-01-01-01",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "",
+          "lawSupp": "",
+          "caseDisposition": "5",
+          "decisionDirection": "2",
+          "majVotes": "9",
+          "minVotes": "0"
+        }
+      ]
+    },
+    {
+      "case_id": "2006-031",
+      "name": "ALBERTO R. GONZALES, ATTORNEY GENERAL v. LEROY CARHART, et al.",
+      "primary_issues": [
+        "50020"
+      ],
+      "all_issues": [
+        "50020"
+      ],
+      "added_issues": [],
+      "primary_signals": [],
+      "all_signals": [],
+      "recovered_signal": false,
+      "row_count": 4,
+      "directions": [
+        "1"
+      ],
+      "rows": [
+        {
+          "docketId": "2006-031-01",
+          "caseIssuesId": "2006-031-01-01",
+          "voteId": "2006-031-01-01-01",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "6",
+          "lawSupp": "600",
+          "caseDisposition": "3",
+          "decisionDirection": "1",
+          "majVotes": "5",
+          "minVotes": "4"
+        },
+        {
+          "docketId": "2006-031-01",
+          "caseIssuesId": "2006-031-01-02",
+          "voteId": "2006-031-01-02-01",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "2",
+          "lawSupp": "230",
+          "caseDisposition": "3",
+          "decisionDirection": "1",
+          "majVotes": "5",
+          "minVotes": "4"
+        },
+        {
+          "docketId": "2006-031-02",
+          "caseIssuesId": "2006-031-02-01",
+          "voteId": "2006-031-02-01-01",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "6",
+          "lawSupp": "600",
+          "caseDisposition": "3",
+          "decisionDirection": "1",
+          "majVotes": "5",
+          "minVotes": "4"
+        },
+        {
+          "docketId": "2006-031-02",
+          "caseIssuesId": "2006-031-02-02",
+          "voteId": "2006-031-02-02-01",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "2",
+          "lawSupp": "230",
+          "caseDisposition": "3",
+          "decisionDirection": "1",
+          "majVotes": "5",
+          "minVotes": "4"
+        }
+      ]
+    },
+    {
+      "case_id": "2013-068",
+      "name": "MCCULLEN v. COAKLEY",
+      "primary_issues": [
+        "50020"
+      ],
+      "all_issues": [
+        "30150",
+        "50020"
+      ],
+      "added_issues": [
+        "30150"
+      ],
+      "primary_signals": [],
+      "all_signals": [],
+      "recovered_signal": false,
+      "row_count": 3,
+      "directions": [
+        "1",
+        "2"
+      ],
+      "rows": [
+        {
+          "docketId": "2013-068-01",
+          "caseIssuesId": "2013-068-01-01",
+          "voteId": "2013-068-01-01-01",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "2",
+          "lawSupp": "200",
+          "caseDisposition": "4",
+          "decisionDirection": "1",
+          "majVotes": "9",
+          "minVotes": "0"
+        },
+        {
+          "docketId": "2013-068-01",
+          "caseIssuesId": "2013-068-01-01",
+          "voteId": "2013-068-01-01-02",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "2",
+          "lawSupp": "200",
+          "caseDisposition": "4",
+          "decisionDirection": "2",
+          "majVotes": "5",
+          "minVotes": "4"
+        },
+        {
+          "docketId": "2013-068-01",
+          "caseIssuesId": "2013-068-01-02",
+          "voteId": "2013-068-01-02-01",
+          "issue": "30150",
+          "issueArea": "3",
+          "lawType": "8",
+          "lawSupp": "800",
+          "caseDisposition": "4",
+          "decisionDirection": "2",
+          "majVotes": "9",
+          "minVotes": "0"
+        }
+      ]
+    },
+    {
+      "case_id": "2021-006",
+      "name": "CAMERON v. EMW WOMEN\u2019S SURGICAL CENTER, P.S.C.",
+      "primary_issues": [
+        "90480"
+      ],
+      "all_issues": [
+        "90480"
+      ],
+      "added_issues": [],
+      "primary_signals": [
+        "timeliness_issue"
+      ],
+      "all_signals": [
+        "timeliness_issue"
+      ],
+      "recovered_signal": false,
+      "row_count": 1,
+      "directions": [
+        "2"
+      ],
+      "rows": [
+        {
+          "docketId": "2021-006-01",
+          "caseIssuesId": "2021-006-01-01",
+          "voteId": "2021-006-01-01-01",
+          "issue": "90480",
+          "issueArea": "9",
+          "lawType": "4",
+          "lawSupp": "400",
+          "caseDisposition": "4",
+          "decisionDirection": "2",
+          "majVotes": "8",
+          "minVotes": "1"
+        }
+      ]
+    },
+    {
+      "case_id": "2021-019",
+      "name": "DOBBS v. JACKSON WOMEN\u2019S HEALTH ORGANIZATION",
+      "primary_issues": [
+        "50020"
+      ],
+      "all_issues": [
+        "50020"
+      ],
+      "added_issues": [],
+      "primary_signals": [],
+      "all_signals": [],
+      "recovered_signal": false,
+      "row_count": 1,
+      "directions": [
+        "1"
+      ],
+      "rows": [
+        {
+          "docketId": "2021-019-01",
+          "caseIssuesId": "2021-019-01-01",
+          "voteId": "2021-019-01-01-01",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "2",
+          "lawSupp": "230",
+          "caseDisposition": "4",
+          "decisionDirection": "1",
+          "majVotes": "6",
+          "minVotes": "3"
+        }
+      ]
+    },
+    {
+      "case_id": "2023-049",
+      "name": "FOOD AND DRUG ADMINISTRATION v. ALLIANCE FOR HIPPOCRATIC MEDICINE",
+      "primary_issues": [
+        "50020"
+      ],
+      "all_issues": [
+        "50020",
+        "90310"
+      ],
+      "added_issues": [
+        "90310"
+      ],
+      "primary_signals": [],
+      "all_signals": [
+        "standing_issue"
+      ],
+      "recovered_signal": true,
+      "row_count": 4,
+      "directions": [
+        "1",
+        "2"
+      ],
+      "rows": [
+        {
+          "docketId": "2023-049-01",
+          "caseIssuesId": "2023-049-01-01",
+          "voteId": "2023-049-01-01-01",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "1",
+          "lawSupp": "139",
+          "caseDisposition": "4",
+          "decisionDirection": "2",
+          "majVotes": "9",
+          "minVotes": "0"
+        },
+        {
+          "docketId": "2023-049-01",
+          "caseIssuesId": "2023-049-01-02",
+          "voteId": "2023-049-01-02-01",
+          "issue": "90310",
+          "issueArea": "9",
+          "lawType": "1",
+          "lawSupp": "139",
+          "caseDisposition": "4",
+          "decisionDirection": "1",
+          "majVotes": "9",
+          "minVotes": "0"
+        },
+        {
+          "docketId": "2023-049-02",
+          "caseIssuesId": "2023-049-02-01",
+          "voteId": "2023-049-02-01-01",
+          "issue": "50020",
+          "issueArea": "5",
+          "lawType": "1",
+          "lawSupp": "139",
+          "caseDisposition": "4",
+          "decisionDirection": "2",
+          "majVotes": "9",
+          "minVotes": "0"
+        },
+        {
+          "docketId": "2023-049-02",
+          "caseIssuesId": "2023-049-02-02",
+          "voteId": "2023-049-02-02-01",
+          "issue": "90310",
+          "issueArea": "9",
+          "lawType": "1",
+          "lawSupp": "139",
+          "caseDisposition": "4",
+          "decisionDirection": "1",
+          "majVotes": "9",
+          "minVotes": "0"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Multiple rows may represent dockets, legal provisions or vote coalitions, not independent decisions.",
+    "A procedural issue coexisting with a policy issue does not prove the entire case avoids merits.",
+    "Direction codes may differ by issue; no row averaging or polarity replacement performed.",
+    "No signal remains unlabeled; remedy-only decisions can still be missed."
+  ]
+}

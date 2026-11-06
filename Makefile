@@ -134,3 +134,11 @@ SURVEY_INPUTS ?= data/processed/anes-20260205/public.json data/processed/gss-gri
 .PHONY: validate-surveys
 validate-surveys:
 	$(PY) -m scvpublic.survey_schema $(SURVEY_INPUTS)
+
+# Metadata-only workstation step; outputs must be new paths.
+SCDB_ISSUES_ARCHIVE ?= data/raw/scdb-2026/issues-split.zip
+SCDB_ISSUES_ARTIFACT ?= artifacts/scdb-issues.sqlite
+SCDB_ISSUES_BUNDLE ?= artifacts/semantic-scdb-issues
+.PHONY: enrich-scdb-issues
+enrich-scdb-issues:
+	$(PY) -m scvpublic.scdb_metadata --artifact $(HYBRID_ARTIFACT) --archive $(SCDB_ISSUES_ARCHIVE) --output $(SCDB_ISSUES_ARTIFACT) --bundle $(HYBRID_BUNDLE) --output-bundle $(SCDB_ISSUES_BUNDLE)

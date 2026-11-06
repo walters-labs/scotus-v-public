@@ -1,0 +1,49 @@
+{
+  "court_documents": 8125,
+  "postings_compared": 18899285,
+  "original_payloads_and_meta_identical": true,
+  "queries": [
+    {
+      "query": "abortion",
+      "cases": 135,
+      "exact_parity": true
+    },
+    {
+      "query": "contraception",
+      "cases": 107,
+      "exact_parity": true
+    },
+    {
+      "query": "civil rights",
+      "cases": 174,
+      "exact_parity": true
+    },
+    {
+      "query": "gun control",
+      "cases": 164,
+      "exact_parity": true
+    },
+    {
+      "query": "gay marriage",
+      "cases": 162,
+      "exact_parity": true
+    },
+    {
+      "query": "healthcare",
+      "cases": 226,
+      "exact_parity": true
+    },
+    {
+      "query": "minimum wage",
+      "cases": 157,
+      "exact_parity": true
+    },
+    {
+      "query": "immigration",
+      "cases": 147,
+      "exact_parity": true
+    }
+  ],
+  "artifact_sha256": "38cde989a39db72a0607fb45e14cd9cc9a73a57e37b892889be3e9bf8171321f",
+  "size_change_bytes": 10506240
+}

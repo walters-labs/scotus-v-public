@@ -1,0 +1,422 @@
+{
+  "status": "Read-only metadata audit; no classifier or chart exclusion",
+  "provenance": {
+    "data/raw/scdb-2026/SCDB_2026_01_caseCentered_Citation.csv": "b3cc84bd73a7a0325856cca52ae6fc5bd6a39433113f83fef248556ad4488528",
+    "artifacts/affirmative-action.sqlite": "a7e8e8757291dce0f0cca727f2dfc4bbe01e6c7c3da6c7367739cf74e60cf064",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/audit_scdb_procedure.py": "38fa7e11a7cb73eb5d8d29724bb844ce46736dd5e8cea4c5664e402827637840"
+  },
+  "court_documents": 8125,
+  "unique_court_case_ids": 8125,
+  "matched_cases": 8119,
+  "unmatched_case_ids": [
+    "official:2026-08-24:26A124",
+    "official:2026-08-31:26A203",
+    "official:2026-09-04:26A274",
+    "official:2026-09-25:26A308",
+    "official:2026-09-25:26A388",
+    "official:2026-10-14:26A476"
+  ],
+  "raw_rows": 9409,
+  "raw_unique_cases": 9409,
+  "signal_counts": {
+    "no_selected_signal_not_a_merits_label": 7292,
+    "judicial_administration_issue": 322,
+    "explicit_no_merits_issue": 115,
+    "comity_issue": 109,
+    "standing_issue": 118,
+    "mootness_or_venue_issue": 111,
+    "timeliness_issue": 33,
+    "missing_issue": 19
+  },
+  "conflicting_metadata_case_ids": [],
+  "field_missing_cases": {
+    "decisionType": 0,
+    "jurisdiction": 0,
+    "issue": 19,
+    "issueArea": 19,
+    "caseDisposition": 110,
+    "declarationUncon": 0,
+    "lawType": 942,
+    "decisionDirection": 0
+  },
+  "pilot": [
+    {
+      "case_id": "1972-048",
+      "name": "ROE et al. v. WADE, DISTRICT ATTORNEY OF DALLAS COUNTY",
+      "fields": {
+        "decisionType": [
+          "1"
+        ],
+        "jurisdiction": [
+          "2"
+        ],
+        "issue": [
+          "50020"
+        ],
+        "issueArea": [
+          "5"
+        ],
+        "caseDisposition": [
+          "3"
+        ],
+        "declarationUncon": [
+          "3"
+        ],
+        "lawType": [
+          "2"
+        ],
+        "decisionDirection": [
+          "2"
+        ]
+      },
+      "signal": "no_selected_signal_not_a_merits_label"
+    },
+    {
+      "case_id": "1975-172",
+      "name": "BELLOTTI, ATTORNEY GENERAL OF MASSACHUSETTS, et al. v. BAIRD et al.",
+      "fields": {
+        "decisionType": [
+          "1"
+        ],
+        "jurisdiction": [
+          "2"
+        ],
+        "issue": [
+          "90070"
+        ],
+        "issueArea": [
+          "9"
+        ],
+        "caseDisposition": [
+          "5"
+        ],
+        "declarationUncon": [
+          "1"
+        ],
+        "lawType": [
+          "5"
+        ],
+        "decisionDirection": [
+          "1"
+        ]
+      },
+      "signal": "comity_issue"
+    },
+    {
+      "case_id": "1979-148",
+      "name": "HARRIS, SECRETARY OF HEALTH AND HUMAN SERVICES v. MCRAE et al.",
+      "fields": {
+        "decisionType": [
+          "1"
+        ],
+        "jurisdiction": [
+          "2"
+        ],
+        "issue": [
+          "50020"
+        ],
+        "issueArea": [
+          "5"
+        ],
+        "caseDisposition": [
+          "4"
+        ],
+        "declarationUncon": [
+          "1"
+        ],
+        "lawType": [
+          "3"
+        ],
+        "decisionDirection": [
+          "1"
+        ]
+      },
+      "signal": "no_selected_signal_not_a_merits_label"
+    },
+    {
+      "case_id": "1985-077",
+      "name": "DIAMOND et al. v. CHARLES et al.",
+      "fields": {
+        "decisionType": [
+          "1"
+        ],
+        "jurisdiction": [
+          "2"
+        ],
+        "issue": [
+          "90240"
+        ],
+        "issueArea": [
+          "9"
+        ],
+        "caseDisposition": [
+          "9"
+        ],
+        "declarationUncon": [
+          "1"
+        ],
+        "lawType": [
+          "1"
+        ],
+        "decisionDirection": [
+          "1"
+        ]
+      },
+      "signal": "standing_issue"
+    },
+    {
+      "case_id": "1990-077",
+      "name": "IRVING RUST, et al. v. SULLIVAN, LOUIS W., SECRETARY OF HEALTH AND HUMAN SERVICES",
+      "fields": {
+        "decisionType": [
+          "1"
+        ],
+        "jurisdiction": [
+          "1"
+        ],
+        "issue": [
+          "50020"
+        ],
+        "issueArea": [
+          "5"
+        ],
+        "caseDisposition": [
+          "2"
+        ],
+        "declarationUncon": [
+          "1"
+        ],
+        "lawType": [
+          "6"
+        ],
+        "decisionDirection": [
+          "1"
+        ]
+      },
+      "signal": "no_selected_signal_not_a_merits_label"
+    },
+    {
+      "case_id": "1991-117",
+      "name": "PLANNED PARENTHOOD OF SOUTHEASTERN PENNSYLVANIA, et al. v. ROBERT P. CASEY, et al., ETC.",
+      "fields": {
+        "decisionType": [
+          "1"
+        ],
+        "jurisdiction": [
+          "1"
+        ],
+        "issue": [
+          "50020"
+        ],
+        "issueArea": [
+          "5"
+        ],
+        "caseDisposition": [
+          "7"
+        ],
+        "declarationUncon": [
+          "3"
+        ],
+        "lawType": [
+          "2"
+        ],
+        "decisionDirection": [
+          "2"
+        ]
+      },
+      "signal": "no_selected_signal_not_a_merits_label"
+    },
+    {
+      "case_id": "2005-020",
+      "name": "KELLY A. AYOTTE, ATTORNEY GENERAL OF NEW HAMPSHIRE v. PLANNED PARENTHOOD OF NORTHERN NEW ENGLAND, et al.",
+      "fields": {
+        "decisionType": [
+          "1"
+        ],
+        "jurisdiction": [
+          "1"
+        ],
+        "issue": [
+          "50020"
+        ],
+        "issueArea": [
+          "5"
+        ],
+        "caseDisposition": [
+          "5"
+        ],
+        "declarationUncon": [
+          "1"
+        ],
+        "lawType": [
+          ""
+        ],
+        "decisionDirection": [
+          "2"
+        ]
+      },
+      "signal": "no_selected_signal_not_a_merits_label"
+    },
+    {
+      "case_id": "2006-031",
+      "name": "ALBERTO R. GONZALES, ATTORNEY GENERAL v. LEROY CARHART, et al.",
+      "fields": {
+        "decisionType": [
+          "1"
+        ],
+        "jurisdiction": [
+          "1"
+        ],
+        "issue": [
+          "50020"
+        ],
+        "issueArea": [
+          "5"
+        ],
+        "caseDisposition": [
+          "3"
+        ],
+        "declarationUncon": [
+          "1"
+        ],
+        "lawType": [
+          "6"
+        ],
+        "decisionDirection": [
+          "1"
+        ]
+      },
+      "signal": "no_selected_signal_not_a_merits_label"
+    },
+    {
+      "case_id": "2013-068",
+      "name": "MCCULLEN v. COAKLEY",
+      "fields": {
+        "decisionType": [
+          "1"
+        ],
+        "jurisdiction": [
+          "1"
+        ],
+        "issue": [
+          "50020"
+        ],
+        "issueArea": [
+          "5"
+        ],
+        "caseDisposition": [
+          "4"
+        ],
+        "declarationUncon": [
+          "3"
+        ],
+        "lawType": [
+          "2"
+        ],
+        "decisionDirection": [
+          "1"
+        ]
+      },
+      "signal": "no_selected_signal_not_a_merits_label"
+    },
+    {
+      "case_id": "2021-006",
+      "name": "CAMERON v. EMW WOMEN\u2019S SURGICAL CENTER, P.S.C.",
+      "fields": {
+        "decisionType": [
+          "1"
+        ],
+        "jurisdiction": [
+          "1"
+        ],
+        "issue": [
+          "90480"
+        ],
+        "issueArea": [
+          "9"
+        ],
+        "caseDisposition": [
+          "4"
+        ],
+        "declarationUncon": [
+          "1"
+        ],
+        "lawType": [
+          "4"
+        ],
+        "decisionDirection": [
+          "2"
+        ]
+      },
+      "signal": "timeliness_issue"
+    },
+    {
+      "case_id": "2021-019",
+      "name": "DOBBS v. JACKSON WOMEN\u2019S HEALTH ORGANIZATION",
+      "fields": {
+        "decisionType": [
+          "1"
+        ],
+        "jurisdiction": [
+          "1"
+        ],
+        "issue": [
+          "50020"
+        ],
+        "issueArea": [
+          "5"
+        ],
+        "caseDisposition": [
+          "4"
+        ],
+        "declarationUncon": [
+          "1"
+        ],
+        "lawType": [
+          "2"
+        ],
+        "decisionDirection": [
+          "1"
+        ]
+      },
+      "signal": "no_selected_signal_not_a_merits_label"
+    },
+    {
+      "case_id": "2023-049",
+      "name": "FOOD AND DRUG ADMINISTRATION v. ALLIANCE FOR HIPPOCRATIC MEDICINE",
+      "fields": {
+        "decisionType": [
+          "1"
+        ],
+        "jurisdiction": [
+          "1"
+        ],
+        "issue": [
+          "50020"
+        ],
+        "issueArea": [
+          "5"
+        ],
+        "caseDisposition": [
+          "4"
+        ],
+        "declarationUncon": [
+          "1"
+        ],
+        "lawType": [
+          "1"
+        ],
+        "decisionDirection": [
+          "2"
+        ]
+      },
+      "signal": "no_selected_signal_not_a_merits_label"
+    }
+  ],
+  "limitations": [
+    "Issue labels are not binary merits/procedural ground truth.",
+    "No selected signal is unlabeled, not a negative training example.",
+    "Judicial-power categories are broad; they can involve substantive questions.",
+    "Citation-centered file may omit secondary issue detail; inspect issue/legal-provision data before building labels."
+  ]
+}
