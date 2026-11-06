@@ -41,3 +41,30 @@ class HybridTests(unittest.TestCase):
                 self.assertEqual(engine.search(['unfamiliar weak query']),[])
             (folder/'ids.json').write_text('[]')
             with self.assertRaisesRegex(ValueError,'checksum'):HybridSearch(folder,artifact)
+
+    def test_healthcare_variants_merge_complete_scores_and_share_cache(self):
+        import threading
+        engine=object.__new__(HybridSearch)
+        engine.lock=threading.Lock()
+        one={'case_id':'one','score':.4,'semantic_score':.4,'lexical_score':.4}
+        stronger={'case_id':'one','score':.5,'semantic_score':.55,'lexical_score':.05}
+        second={'case_id':'two','score':.45}
+        with patch.object(engine,'_single',side_effect=[(one,second),(stronger,)]) as single:
+            hits=engine.search(['healthcare'])
+            self.assertEqual(hits,[stronger,second])
+            for terms in [['health care'],['health-care'],[' HEALTH CARE '],['health','care']]:
+                self.assertEqual(engine.search(terms),hits)
+            self.assertEqual(single.call_count,2)
+            self.assertEqual(single.call_args_list[0].args,(('healthcare',),))
+            self.assertEqual(single.call_args_list[1].args,(('health care',),))
+        engine._cached.cache_clear()
+
+    def test_healthcare_rule_does_not_rewrite_other_queries(self):
+        import threading
+        engine=object.__new__(HybridSearch)
+        engine.lock=threading.Lock()
+        with patch.object(engine,'_single',return_value=()) as single:
+            for query in ['child care','mental health care','health career','birth control']:
+                engine.search([query])
+                self.assertEqual(single.call_args.args,((query,),))
+        engine._cached.cache_clear()

@@ -837,3 +837,66 @@ PYTHONPATH=. .venv/bin/python -m unittest discover -s tests -p test_healthcare_v
 The script asserts baseline parity on all 24 queries. Unit checks cover exact
 variant boundaries, case deduplication, maximum rather than summed scores, and
 stable ties. Full candidate rankings are saved in the ignored output directory.
+
+### Completed healthcare variant review (2026-11-06)
+
+Reviewed all 54 plotted cases in the merged result, covering every addition for
+both spellings and both original top-ten lists. Evidence and case-level reasons
+are in `data/evaluation/healthcare-variants-full-review.json`. Verified source
+openings/holdings were supplemented with body passages when PDF front matter
+obscured the subject. This is assistant review under the existing coverage,
+provision, access and financing scope, not independent or blind adjudication.
+All seven earlier sample labels and overlapping benchmark labels are preserved.
+
+| Query/result | Direct | Related | Irrelevant |
+|---|---:|---:|---:|
+| Original healthcare chart | 10 | 2 | 0 |
+| Original health care chart | 44 | 8 | 0 |
+| Combined chart, either spelling | 45 | 9 | 0 |
+| Additions to healthcare | 35 | 7 | 0 |
+| Additions to health care | 1 | 1 | 0 |
+
+Related results include hospital labor disputes, medical leave, sickness
+wage-replacement taxation, and general fraud or workplace-health rules. They
+are not counted as directly relevant or silently treated as clear false
+positives. These counts describe this fully reviewed result set, not recall
+against all relevant cases in the corpus, nor validity of ideological scores.
+No original plotted case is lost (as expected from union/max scoring).
+
+For healthcare, the first ten change from 8 direct / 2 related to 9 direct /
+1 related. For health care, both are 9 direct / 1 related. Skrmetti remains
+plotted at rank 46; its fall from the healthcare top ten is a relative ranking
+change amid useful additions, not a retrieval loss. Fischer, a related hospital
+fraud case, still ranks first, so ranking quality is not solved.
+
+**Decision: recommend the narrow spelling-consistency change for implementation
+review.** The original strict identity-based top-ten gate still fails, and its
+historical output remains unchanged. This manual decision is supported by a
+complete review of the changed results and first page, not a retroactive claim
+that the old gate passed. Future evaluations should report retrieval losses,
+first-page relevance composition, and individual anchor rank changes separately.
+Do not equate every relevant case leaving the first ten with degraded relevance.
+
+The experiment remains offline. No production search code or artifacts changed.
+A subsequent implementation should keep this bounded spelling equivalence,
+deduplication and original scoring, add runtime parity checks, and consider
+query latency before deployment. It does not authorize broad synonym lists,
+summary blending, or a general claim of improved topic search. The separate
+footer cleanup is still a local, undeployed template edit.
+
+### Runtime implementation (2026-11-06)
+
+Implemented the reviewed exact-query healthcare spelling rule in
+`scvpublic/hybrid.py`. Each form uses the two original retrieval calls and
+maximum complete score per case, matching the experiment. All equivalent forms
+share one cached result. Compound queries and other topics retain their previous
+path. Survey search is unchanged. No summary blend, new model, or artifact
+rebuild is involved.
+
+Runtime rankings and scores match the saved variant experiment for all 24
+benchmark queries (score tolerance 1e-7). The 22 unaffected queries retain the
+baseline result. Dedicated tests cover complete-score selection, deduplication,
+cache sharing and nonmatching queries; the full 170-test suite passes. Local
+uncached healthcare searches took about 72–77 ms; cached calls about 10–14
+microseconds. These are local observations, not VPS latency guarantees. This is
+a local implementation ready for deployment review, not a completed deployment.

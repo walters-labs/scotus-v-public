@@ -32,11 +32,29 @@ class HybridSearch:
         self.lock = threading.Lock()
 
     def search(self, terms):
+        # Normalize only this reviewed spelling equivalence, not arbitrary
+        # words or phrases containing it. All forms share one result cache.
+        query = ' '.join(t.strip() for t in terms if t.strip())
+        if re.fullmatch(r'health(?:\s+|\s*-\s*)?care', query, flags=re.I):
+            terms = ('healthcare',)
         with self.lock:
             return list(self._cached(tuple(terms)))
 
     @lru_cache(maxsize=32)
     def _cached(self, terms):
+        if terms != ('healthcare',):
+            return self._single(terms)
+        # Each spelling nominates independently. Keep the strongest complete
+        # score per case rather than summing duplicate evidence.
+        merged = {}
+        for variant in ('healthcare', 'health care'):
+            for hit in self._single((variant,)):
+                key = hit['case_id']
+                if key not in merged or hit['score'] > merged[key]['score']:
+                    merged[key] = hit
+        return tuple(sorted(merged.values(), key=lambda h: (-h['score'], h['case_id'])))
+
+    def _single(self, terms):
         import numpy as np
         query = ' '.join(t.strip() for t in terms if t.strip())
         if not re.search(r'\w', query):
