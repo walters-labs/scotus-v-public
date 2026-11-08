@@ -62,7 +62,10 @@ raw respondent files, credentials, and experimental packages.
 
 ## Interpretation
 
-Court direction comes from SCDB, scaled by the vote margin. Survey answers use
+Court direction comes from SCDB, scaled by the vote margin and weighted by search
+relevance within each year. It describes the coded decision, not necessarily
+support for the searched policy; procedural rulings can contribute too. A larger
+vote margin does not measure the strength or scope of a policy change. Survey answers use
 explicit mappings from −1 (conservative) to +1 (liberal), documented respondent
 weights, and question-family deduplication. The combined index weights available
 survey sources equally within each observed year.
