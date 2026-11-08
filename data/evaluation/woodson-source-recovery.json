@@ -1,0 +1,43 @@
+{
+  "status": "missing_authored_source_recovered_not_deployed",
+  "case_id": "1975-176",
+  "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep428/usrep428280/usrep428280.pdf",
+  "pdf_sha256": "8b4d2421be03e5276e02f64dd9d7920ec53c5d56c6000e27f78f6b4fe0970f80",
+  "output": "data/processed/casesumm/woodson-recovered.json",
+  "output_sha256": "0afcfdc21c87ab36f5fab757be36d00f2e07ebd5fcd9e6808b46e24cd5349c29",
+  "principal_pages": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "principal_words": 7521,
+  "source_spans": 28,
+  "old_casesumm_words": 472,
+  "supersedes_status": "unresolved_summary_only in historical casesumm-prefix-repairs report",
+  "limitations": [
+    "OCR errors remain; no silent textual correction.",
+    "Boundary recovery is not sentence-level legal interpretation.",
+    "Concurrences are preserved separately, not merged into plurality reasoning."
+  ]
+}

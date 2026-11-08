@@ -1,0 +1,214 @@
+{
+  "case_id": "1975-176",
+  "citation": "428.US.280",
+  "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep428/usrep428280/usrep428280.pdf",
+  "pdf_path": "data/raw/official-scotus/usrep428280.pdf",
+  "pdf_sha256": "8b4d2421be03e5276e02f64dd9d7920ec53c5d56c6000e27f78f6b4fe0970f80",
+  "extracted_sha256": "d07f5fc812602101423c1e68ef89e012198170e2d69eb964847a8bdb25c19af8",
+  "original_casesumm_opinion_sha256": "1f65ac061f2766933dbbd0ad93cd4896f1ddc8fa3a7a4c025fbff3fc5253c3a8",
+  "review": "Assistant visually checked PDF pages 3, 26 and 27 and inspected running headers throughout principal pages 3-26. Footnotes 39 and 40 belong to the plurality despite appearing below the Brennan opening; amicus note on page 3 excluded.",
+  "authority": "Judgment of Court; principal reasoning by Stewart, Powell and Stevens. Brennan and Marshall concur separately in judgment; not a five-justice endorsement of all plurality reasoning.",
+  "limitations": [
+    "OCR errors remain; no silent textual correction.",
+    "Boundary recovery is not sentence-level legal interpretation.",
+    "Concurrences are preserved separately, not merged into plurality reasoning."
+  ],
+  "spans": [
+    {
+      "page": 3,
+      "start": 1146,
+      "end": 1649,
+      "role": "principal_plurality",
+      "sha256": "fc634cbb6e5b20d8bab78a97daeaf1a61213315ee170a59b64575a655e2d4594"
+    },
+    {
+      "page": 4,
+      "start": 94,
+      "end": 1989,
+      "role": "principal_plurality",
+      "sha256": "d48ca71706baad2007374fcc876f0772b1f25e9316302af691dcd5be0576fd80"
+    },
+    {
+      "page": 5,
+      "start": 103,
+      "end": 2115,
+      "role": "principal_plurality",
+      "sha256": "24603af0547c7bd2deda83c2d4dd513e7f6cb9a41e5c4167ea10df6e44fdd10b"
+    },
+    {
+      "page": 6,
+      "start": 97,
+      "end": 2029,
+      "role": "principal_plurality",
+      "sha256": "be2304a09be8fa7223f84c25e1bbdeddba0e64ce0c175f13bde524744e2d01ac"
+    },
+    {
+      "page": 7,
+      "start": 109,
+      "end": 2002,
+      "role": "principal_plurality",
+      "sha256": "04a580a0c1e2e872f97b8aa40dee740ad11f1a6e53a7c968bf55eb98b7c6079b"
+    },
+    {
+      "page": 8,
+      "start": 96,
+      "end": 2359,
+      "role": "principal_plurality",
+      "sha256": "0cd60ad925b970fe7784731405c10e8bebd8ade1c588a444e425f813e8b8d530"
+    },
+    {
+      "page": 9,
+      "start": 106,
+      "end": 2237,
+      "role": "principal_plurality",
+      "sha256": "6bcabb3ca89558606eab1a964435e01e2af6c567b58fe4e32c9318432fde1598"
+    },
+    {
+      "page": 10,
+      "start": 104,
+      "end": 2124,
+      "role": "principal_plurality",
+      "sha256": "3e24627c17318984f3fd674ec426241db2aa42bafba3ef3380e6086b12db1d65"
+    },
+    {
+      "page": 11,
+      "start": 103,
+      "end": 2100,
+      "role": "principal_plurality",
+      "sha256": "e8b35727a9f9549f9301bcc8fe36b12c7b92bfdacc889463aa76cb7397c7166d"
+    },
+    {
+      "page": 12,
+      "start": 98,
+      "end": 2059,
+      "role": "principal_plurality",
+      "sha256": "ea754b3c3791d11fa85ad6e4887f759899b6ff0f64dae4f9daa653738907907f"
+    },
+    {
+      "page": 13,
+      "start": 106,
+      "end": 2742,
+      "role": "principal_plurality",
+      "sha256": "ed333cd7939d2cc089a16a5b73cf142e314f3987db6630846e07fd88db5f1e0d"
+    },
+    {
+      "page": 14,
+      "start": 97,
+      "end": 2061,
+      "role": "principal_plurality",
+      "sha256": "7404bdd425908e5f82d31d245363d89cc17808b1737ac91a28f5495c96bff38b"
+    },
+    {
+      "page": 15,
+      "start": 114,
+      "end": 2700,
+      "role": "principal_plurality",
+      "sha256": "8d522a820ec3b9b18b8e9111cfa3c474bd24eafa58f094738cb8a8d8d5deebf7"
+    },
+    {
+      "page": 16,
+      "start": 94,
+      "end": 2227,
+      "role": "principal_plurality",
+      "sha256": "3f3a653ca4d64b2b9105fb8fcc6bc02cae9a0d7b8048c72b765b81e796285a35"
+    },
+    {
+      "page": 17,
+      "start": 104,
+      "end": 2320,
+      "role": "principal_plurality",
+      "sha256": "ef8c1dffa0a49eae20ed7b9223199f27ce6ddd7faf06e5199d5d158ae5aab907"
+    },
+    {
+      "page": 18,
+      "start": 96,
+      "end": 1988,
+      "role": "principal_plurality",
+      "sha256": "0ca85f6936790d78294829a62fc83153b05f098cc04eef9666132e88215f3159"
+    },
+    {
+      "page": 19,
+      "start": 110,
+      "end": 2186,
+      "role": "principal_plurality",
+      "sha256": "4ea89462ec847484020c35a4c3855973c87c0101b939933f9aeede8249c7ab12"
+    },
+    {
+      "page": 20,
+      "start": 99,
+      "end": 2197,
+      "role": "principal_plurality",
+      "sha256": "c086fc8a34fbd93099e88cb9d828fd1861847b63db02240df38d136b0c4f55aa"
+    },
+    {
+      "page": 21,
+      "start": 100,
+      "end": 1937,
+      "role": "principal_plurality",
+      "sha256": "0c25f80a2d27624831f43bc0ac756c6a5b89b371f2fcbb80662b46dfe8f488c1"
+    },
+    {
+      "page": 22,
+      "start": 98,
+      "end": 2380,
+      "role": "principal_plurality",
+      "sha256": "8d1c1e0ab3f3fff8a6bbec916ddacfa9e9801c9ece0aee54696004d2f65c91a7"
+    },
+    {
+      "page": 23,
+      "start": 102,
+      "end": 2032,
+      "role": "principal_plurality",
+      "sha256": "ddff62244a68624570cb4e1316089b00258e3f33f5c41619e93f1c547d44128b"
+    },
+    {
+      "page": 24,
+      "start": 107,
+      "end": 1950,
+      "role": "principal_plurality",
+      "sha256": "940aa6b2f084faaa54ca6ad5a4b899a5d60b2787fd7d22047367a7d8856ba549"
+    },
+    {
+      "page": 25,
+      "start": 102,
+      "end": 2033,
+      "role": "principal_plurality",
+      "sha256": "7a554c16a8f6d26d1fd3eb32339e3bc112794cd1f4f391cbab702036ebecd248"
+    },
+    {
+      "page": 26,
+      "start": 97,
+      "end": 1101,
+      "role": "principal_plurality",
+      "sha256": "9c3a3caa6a7f893a41eca3431e63e8ea2f6aceb40235fb00a19a6ae3d3bfaa80"
+    },
+    {
+      "page": 26,
+      "start": 1270,
+      "end": 2154,
+      "role": "principal_plurality_footnotes",
+      "sha256": "640fa86a0c4d4a200e9c8d5c92348de7e2df3e0e931f273f1a6e8ddbae1c681a"
+    },
+    {
+      "page": 26,
+      "start": 1101,
+      "end": 1270,
+      "role": "brennan_concurrence_in_judgment",
+      "sha256": "4524f12be62bf3ef71bb2c85d1e9b920d2d048716c70a233fbf9e3f8e4725556"
+    },
+    {
+      "page": 27,
+      "start": 99,
+      "end": 250,
+      "role": "brennan_concurrence_in_judgment",
+      "sha256": "e768abf69785f304775b2fa65b74ede94d6f9fb6575bbd93e2c0c3112d67ebd4"
+    },
+    {
+      "page": 27,
+      "start": 250,
+      "end": 564,
+      "role": "marshall_concurrence_in_judgment",
+      "sha256": "a690e017519a1386242a8337d3478cf3dd1d7e695120eada1837e76e13113de2"
+    }
+  ]
+}

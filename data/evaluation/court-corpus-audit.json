@@ -1,0 +1,73 @@
+{
+  "status": "Read-only corpus triage; signals are not confirmed defects or a merits/authority classifier",
+  "summary": {
+    "indexed_cases": 8125,
+    "source_counts": {
+      "casesumm": 7734,
+      "official": 391
+    },
+    "selected_source_counts": {
+      "syllabus": 7305,
+      "short_syllabus_opinion_fallback": 429,
+      "official_opinion_fallback": 391
+    },
+    "triage_queues": {
+      "no_priority_trigger_not_verified_clean": 7718,
+      "short_opinion_review": 236,
+      "possible_summary_or_prefatory_material": 106,
+      "existing_official_extraction_difference": 65
+    },
+    "signal_counts": {
+      "opening_amicus_mention": 385,
+      "short_opinion_under_100_words": 236,
+      "opening_shared_with_syllabus": 83,
+      "starts_with_lettered_subsection": 30,
+      "held_before_late_author_cue": 11,
+      "opening_part_specific_language": 69,
+      "line_end_hyphen": 390,
+      "proof_watermark": 348
+    },
+    "empty_selected_texts": 0,
+    "selected_texts_under_40_words": 114,
+    "author_cue_cases": 679,
+    "standalone_header_cases": 391,
+    "no_newline_cases": 7729,
+    "conflicting_cases": [],
+    "duplicate_extra_rows": 8,
+    "indexed_official_extraction_status": {
+      "unchanged": 326,
+      "changed": 65
+    },
+    "official_records_total": 394,
+    "official_records_shadowed_by_casesumm": 0,
+    "official_records_not_used": 3,
+    "raw_scan": {
+      "raw_casesumm_rows": 27071,
+      "not_selected_for_indexed_corpus": 19329
+    }
+  },
+  "provenance": {
+    "artifact_sha256": "38cde989a39db72a0607fb45e14cd9cc9a73a57e37b892889be3e9bf8171321f",
+    "official_sha256": "7eb621dd39323be34e2df127cdf45407fed6e5828c3c78bd9e5e71cb030a7089",
+    "scdb_sha256": "b3cc84bd73a7a0325856cca52ae6fc5bd6a39433113f83fef248556ad4488528",
+    "casesumm_files": {
+      "data-00000-of-00002.arrow": "86d7f1048189946467c3c81e573034d123be73c3ddb1616d6abc6b94a0093653",
+      "data-00001-of-00002.arrow": "664c3aafc1abd7c5f7e6a459e99303c9cb023bf0324f0c4fec13a0c97fcccf15"
+    },
+    "script_sha256": "a8462a2b766c7e5786a67e31f8de7ddf48c72b0f8a9882f38ed3682ca0722ac7",
+    "reused_official_audit_sha256": "4e63f68f6cf8214597b14f4ecfc1982158e09f04f2945173d2297209e611488e",
+    "records_sha256": "db29f7e5cf6878146e2accbf5098fb81d3a772c89c3d9266e45b9dc2f8a0430d"
+  },
+  "elapsed_seconds": 19.596050832999936,
+  "records_path": "artifacts/court-corpus-audit/records.json",
+  "selection_note": "selected_source follows scvpublic.sources.select_text (summary/embedding input selection), not a claim about TF-IDF document content; full opinion fields were audited separately.",
+  "official_audit_note": "Reused 394-record audit after checking source/extractor hashes and case coverage; PDFs not re-extracted or visually reviewed in this run.",
+  "limitations": [
+    "No-priority-trigger does not mean clean, complete or controlling.",
+    "Shared summary opening and late author cues are candidates, not proven contamination.",
+    "Short opinions can be valid dispositions; body mentions of amicus or part divisions can be legitimate.",
+    "Author cues can occur in quoted precedent or summary material; absence is not missing text.",
+    "One priority queue per record; descriptive signal counts overlap.",
+    "Only indexed cases audited; no claim of complete SCOTUS corpus coverage."
+  ]
+}

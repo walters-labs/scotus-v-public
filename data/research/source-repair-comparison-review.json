@@ -1,0 +1,25 @@
+{
+  "status": "No clear interpretation improvement in this bounded development check",
+  "comparison_sha256": "8708dfc2c4f6faa6225e382b82a4963e070f7e15c4de633fb658957fdabe9341",
+  "expectations_sha256": "3bce9ba789a013d3d7ddde5f8cc3de7ac40529806bf0e25622325ca626f3a4ba",
+  "completed_requests": 4,
+  "mechanical_passes": 4,
+  "findings": 12,
+  "assessment_method": "Assistant inspected outputs and resolved cited passages against the pre-call expectations; not independent legal review, replicated trial or held-out accuracy.",
+  "observations": [
+    {
+      "case_id": "1975-176",
+      "old": "Basic statute invalidation and remedy already extracted from summary text.",
+      "repaired": "Same basic outcome; missed footnote 40 not-reached proportionality question despite opinion_end:p012 containing it. Third finding assigns controlling_court to individualized-sentencing reasoning supported only by three-justice plurality passages opinion_end:p005-p006, without explaining authority limitations.",
+      "conclusion": "Source completeness improved; interpretation benefit not demonstrated."
+    },
+    {
+      "case_id": "2022-043",
+      "old": "Recognized stay procedure; fourth finding nonetheless labeled rejection of pro-arbitration procedural-rule argument policy_merits.",
+      "repaired": "Recognized stay procedure; third finding mislabeled Griggs applicability policy_merits. Missed Suski dismissal despite opinion_end:p013 containing it. Second finding adds an unsupported assertion that Ninth Circuit affirmed denial of arbitration; cited passages establish stay ruling and remand, not that assertion.",
+      "conclusion": "Persisting classification and support errors; no clear gain."
+    }
+  ],
+  "recommendation": "Retain source repairs offline. Do not use current extraction as reliable automated policy findings or deploy it. No prompt tuning or further retries performed.",
+  "serving_artifact_sha256": "38cde989a39db72a0607fb45e14cd9cc9a73a57e37b892889be3e9bf8171321f"
+}

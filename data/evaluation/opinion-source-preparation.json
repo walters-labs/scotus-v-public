@@ -1,0 +1,149 @@
+{
+  "status": "Offline candidate only; no API requests, serving rebuild or deployment",
+  "script_sha256": "a19e35e8d06a19fe0786af7e01e4ad63dc6e20bacbd17d473b723bcd70ad1958",
+  "audit_sha256": "3be342722f80e2be8a4c480622849bab9c9bd1dc005b277edabbe8a2e35a5ca3",
+  "official_source_sha256": "7eb621dd39323be34e2df127cdf45407fed6e5828c3c78bd9e5e71cb030a7089",
+  "documents": 10,
+  "lossless_partitions_verified": 10,
+  "records": [
+    {
+      "case_id": "2018-010",
+      "path": "artifacts/prepared-opinion-sections/2018-010.json",
+      "sha256": "8968ee7cd97d2df173e792af1d8d6c88655649e70390947daa9204243cdf0521",
+      "status": "audited_outer_boundary_candidate",
+      "section_roles": {
+        "unassigned_material": 33,
+        "page_header": 55,
+        "principal_text_candidate": 26
+      },
+      "authority_warning": true,
+      "controlling_opinion_certified": false,
+      "principal_changed_from_stored": false
+    },
+    {
+      "case_id": "2018-063",
+      "path": "artifacts/prepared-opinion-sections/2018-063.json",
+      "sha256": "9bc43c1dc74145e7485ae906b908cc4f55a63837f9ce77ef529e2ebf5c7ba330",
+      "status": "audited_outer_boundary_candidate",
+      "section_roles": {
+        "page_header": 322,
+        "unassigned_material": 341,
+        "principal_text_candidate": 28
+      },
+      "authority_warning": true,
+      "controlling_opinion_certified": false,
+      "principal_changed_from_stored": false
+    },
+    {
+      "case_id": "2020-007",
+      "path": "artifacts/prepared-opinion-sections/2020-007.json",
+      "sha256": "c8ee0f8d8aac274e33a3a8b5e920b0f49328854428394a25005afd75b91947f8",
+      "status": "audited_outer_boundary_candidate",
+      "section_roles": {
+        "page_header": 14,
+        "unassigned_material": 8,
+        "principal_text_candidate": 7
+      },
+      "authority_warning": false,
+      "controlling_opinion_certified": false,
+      "principal_changed_from_stored": false
+    },
+    {
+      "case_id": "2020-013",
+      "path": "artifacts/prepared-opinion-sections/2020-013.json",
+      "sha256": "ccc55d470ed339515b917aea70704d284531bf48e70871f13f099a4832d9e62a",
+      "status": "audited_outer_boundary_candidate",
+      "section_roles": {
+        "unassigned_material": 45,
+        "page_header": 66,
+        "principal_text_candidate": 23
+      },
+      "authority_warning": true,
+      "controlling_opinion_certified": false,
+      "principal_changed_from_stored": false
+    },
+    {
+      "case_id": "2020-015",
+      "path": "artifacts/prepared-opinion-sections/2020-015.json",
+      "sha256": "bf8d1e5f522dec339854a7783fe246ee1400f085bc9344a97440873d89363ffa",
+      "status": "audited_outer_boundary_candidate",
+      "section_roles": {
+        "unassigned_material": 90,
+        "page_header": 106,
+        "principal_text_candidate": 18
+      },
+      "authority_warning": false,
+      "controlling_opinion_certified": false,
+      "principal_changed_from_stored": true
+    },
+    {
+      "case_id": "2022-004",
+      "path": "artifacts/prepared-opinion-sections/2022-004.json",
+      "sha256": "7b8796f4db4d6da932a4aa5ef375a8da7d96fe199b75ca487ffdb48c6654135a",
+      "status": "audited_outer_boundary_candidate",
+      "section_roles": {
+        "unassigned_material": 78,
+        "page_header": 104,
+        "principal_text_candidate": 34
+      },
+      "authority_warning": true,
+      "controlling_opinion_certified": false,
+      "principal_changed_from_stored": false
+    },
+    {
+      "case_id": "2023-049",
+      "path": "artifacts/prepared-opinion-sections/2023-049.json",
+      "sha256": "c01f08d5ab78d652b7b828b659875730cc7d63e76a138ea6340afe99b473b083",
+      "status": "audited_outer_boundary_candidate",
+      "section_roles": {
+        "unassigned_material": 16,
+        "page_header": 37,
+        "principal_text_candidate": 26
+      },
+      "authority_warning": false,
+      "controlling_opinion_certified": false,
+      "principal_changed_from_stored": false
+    },
+    {
+      "case_id": "2023-060",
+      "path": "artifacts/prepared-opinion-sections/2023-060.json",
+      "sha256": "5eda0184d5e857596c75699b5665318e24b0764a144037aa1f65781710023dd8",
+      "status": "audited_outer_boundary_candidate",
+      "section_roles": {
+        "unassigned_material": 47,
+        "page_header": 45,
+        "principal_text_candidate": 1
+      },
+      "authority_warning": false,
+      "controlling_opinion_certified": false,
+      "principal_changed_from_stored": true
+    },
+    {
+      "case_id": "410.US.113",
+      "path": "artifacts/prepared-opinion-sections/410.US.113.json",
+      "sha256": "1a25c98ccd6617b30ea48239c093a59229fca003e3734a023873d0b750fb509b",
+      "status": "unsegmented_not_promoted",
+      "section_roles": {
+        "syllabus_source_field": 1,
+        "unsegmented_opinion_field": 1
+      },
+      "authority_warning": false,
+      "controlling_opinion_certified": false,
+      "principal_changed_from_stored": null
+    },
+    {
+      "case_id": "505.US.833",
+      "path": "artifacts/prepared-opinion-sections/505.US.833.json",
+      "sha256": "fd5357566f1d92295ba1152dbecba716a9e5442543223db175a88263b05522f6",
+      "status": "opening_candidate_requires_source_review",
+      "section_roles": {
+        "syllabus_source_field": 1,
+        "prefatory_material_unclassified": 1,
+        "authored_text_candidate": 1
+      },
+      "authority_warning": true,
+      "controlling_opinion_certified": false,
+      "principal_changed_from_stored": null
+    }
+  ]
+}

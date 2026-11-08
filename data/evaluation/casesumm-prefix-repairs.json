@@ -1,0 +1,20 @@
+{
+  "status": "offline_source_overlay_not_deployed",
+  "output": "data/processed/casesumm/opinion-repairs.json",
+  "output_sha256": "ffcbf74fd7693da22effd62797899c1fed233c6ace3f5b30b048f926a3549831",
+  "manifest_sha256": "91b1e539c2d7c48080a9b65fbd2872f0e436633d436ca4ff7a3b4b85e64be4c3",
+  "summary": {
+    "preface_separated": 99,
+    "unresolved_summary_only": 1,
+    "unchanged_no_justified_prefix": 6
+  },
+  "lossless_partitions_verified": 106,
+  "separated_characters": 569981,
+  "limitations": [
+    "Only prefatory boundaries are repaired; downstream majority/plurality/dissent attribution and completeness are not certified.",
+    "Later opinions, appendices, footnotes and quotations are retained without assigning them to the Court.",
+    "Shared syllabus wording alone does not warrant deletion.",
+    "Woodson remains unresolved and must not be treated as verified authored opinion evidence.",
+    "Original Arrow files, syllabus fields, serving indexes and court scores are unchanged."
+  ]
+}

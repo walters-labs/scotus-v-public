@@ -1,0 +1,43 @@
+{
+  "status": "Assistant inspection of development outputs and selected source passages; not independent ground truth or a full legal review",
+  "notes": [
+    {
+      "case_id": "2023-049",
+      "observation": "Standing and disposition findings cite source passages supporting those conclusions; no decided policy-merits finding emitted. This does not establish full-opinion completeness."
+    },
+    {
+      "case_id": "2005-020",
+      "finding": 1,
+      "observation": "Material attribution/scope failure: says the Supreme Court affirmed that the Act is unconstitutional. Cited opinion_start:p006 describes the District Court and First Circuit; syllabus:p003 states prior doctrine and factual premises. These passages do not support the claimed Supreme Court affirmance. Remedy finding is separately present."
+    },
+    {
+      "case_id": "1985-106",
+      "observation": "Retains jurisdiction plus policy findings. Some evidence is incomplete: the cited opinion_end:p004 ends mid-conclusion; existence of passage IDs does not certify sufficiency for each provision."
+    },
+    {
+      "case_id": "1970-088",
+      "observation": "Retains jurisdiction and statutory-validity findings with supporting passages. Two findings exceed the one-to-three evidence-ID contract; no post-hoc relaxation or clipping applied."
+    },
+    {
+      "case_id": "1972-048",
+      "observation": "Retains standing and policy findings and marks injunctive-relief question not_reached. This demonstrates decision_status can preserve an unresolved question. The injunction question is labeled procedure rather than remedy; nature categories still overlap."
+    },
+    {
+      "case_id": "1985-077",
+      "observation": "Correctly retains procedural disposition and no policy-merits finding. Finding 1 loosely describes the State failing to invoke appellate jurisdiction as a standing/intervention issue; cited text distinguishes being a party from being an appellant. Broad procedural labeling does not establish precise legal characterization."
+    },
+    {
+      "case_id": "2021-006",
+      "finding": 2,
+      "observation": "Core classification failure remains: main intervention and timeliness findings are procedure, but Attorney General authority to intervene is separately labeled decided policy_merits. Selected passages concern representation/intervention and a cited class-action intervention case, not validity of abortion policy. A naive any-policy-merits eligibility rule would still wrongly treat this as a policy ruling."
+    },
+    {
+      "case_id": "1991-117",
+      "findings": [
+        0,
+        1
+      ],
+      "observation": "Coarse rubric passes because policy-merits findings exist, but selected evidence primarily describes the lower court and a general affirmed/reversed disposition. It does not establish the precise Supreme Court outcome for every listed provision. The statement that all remaining provisions were upheld is too broad relative to the previous review (most reporting provisions); limitations acknowledge missing detailed holdings. Do not treat rubric match as verified interpretation."
+    }
+  ]
+}

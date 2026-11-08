@@ -1,0 +1,35 @@
+{
+  "status": "repaired_local_source_not_deployed",
+  "summary": {
+    "repaired_records": 65,
+    "unchanged_records": 329,
+    "restored_conclusions": 61,
+    "principal_order_replacements": 1,
+    "separate_opening_removals": 1,
+    "watermark_fragment_removals": 1,
+    "nonparticipation_notice_recoveries": 1,
+    "restored_footnote_spans": 8
+  },
+  "output": "data/processed/modern/official-repaired.json",
+  "output_sha256": "83ee9a8332dfb54e6a561cc074738322e41f91192a6263ba9510888114a84e99",
+  "manifest_sha256": "0703787f2661e00476bec26c71ada04913163543f33a317cff9cee74ed29fa3f",
+  "source_sha256": "7eb621dd39323be34e2df127cdf45407fed6e5828c3c78bd9e5e71cb030a7089",
+  "unchanged_serving_artifact_sha256": "38cde989a39db72a0607fb45e14cd9cc9a73a57e37b892889be3e9bf8171321f",
+  "footnote_cases": [
+    "2020-011",
+    "2020-072",
+    "2021-004",
+    "2021-045",
+    "2022-043",
+    "2023-017",
+    "2023-034",
+    "2024-014"
+  ],
+  "limitations": [
+    "Running headers and proof watermarks remain in raw extraction; they must not be treated as speaker evidence.",
+    "Footnotes are retained as source spans; continuations are not reordered into a polished reading edition.",
+    "No certification of majority support for every part or overall completeness of each opinion.",
+    "Only these 65 known boundary differences are repaired. Other records are unchanged.",
+    "The repaired file is a separate local source; serving artifacts and model inputs are not automatically rebuilt."
+  ]
+}

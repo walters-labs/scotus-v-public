@@ -1,0 +1,173 @@
+{
+  "status": "Preselected pilot; previous assistant labels are provisional, not independent ground truth",
+  "cases": [
+    {
+      "case_id": "2023-049",
+      "split": "development",
+      "prior_scope": "related_litigation",
+      "prior_detail": "jurisdiction_standing",
+      "prior_rationale": "Rejects standing to challenge FDA action; does not decide merits of approval."
+    },
+    {
+      "case_id": "2005-020",
+      "split": "development",
+      "prior_scope": "related_litigation",
+      "prior_detail": "severability_remedy",
+      "prior_rationale": "Addresses scope of remedy for conceded unconstitutional emergency applications rather than revisiting substantive abortion precedent."
+    },
+    {
+      "case_id": "1985-106",
+      "split": "development",
+      "prior_scope": "direct_access",
+      "prior_detail": "direct_access_merits",
+      "prior_rationale": "Invalidates abortion regulations concerning consent, reporting, and medical-risk provisions."
+    },
+    {
+      "case_id": "1970-088",
+      "split": "development",
+      "prior_scope": "direct_access",
+      "prior_detail": "direct_access_merits",
+      "prior_rationale": "Sustains statute against vagueness challenge while interpreting health broadly and placing burden on prosecution."
+    },
+    {
+      "case_id": "1972-048",
+      "split": "development",
+      "prior_scope": "direct_access",
+      "prior_detail": "direct_access_merits",
+      "prior_rationale": "Invalidates life-saving-only criminal prohibition and recognizes qualified abortion right."
+    },
+    {
+      "case_id": "1985-077",
+      "split": "development",
+      "prior_scope": "procedure",
+      "prior_detail": null,
+      "prior_rationale": "Intervenor standing to defend abortion statute."
+    },
+    {
+      "case_id": "2021-006",
+      "split": "development",
+      "prior_scope": "procedure",
+      "prior_detail": null,
+      "prior_rationale": "State attorney general intervention to defend abortion restriction; not merits."
+    },
+    {
+      "case_id": "1991-117",
+      "split": "development",
+      "prior_scope": "direct_access",
+      "prior_detail": "direct_access_merits",
+      "prior_rationale": "Reaffirms Roe core protection and invalidates spousal notice, while sustaining informed-consent, waiting, parental-consent, and most reporting provisions."
+    },
+    {
+      "case_id": "1975-172",
+      "split": "evaluation",
+      "prior_scope": "procedure",
+      "prior_detail": null,
+      "prior_rationale": "Abstention and certification of parental-consent statute; no final access merits holding."
+    },
+    {
+      "case_id": "1975-171",
+      "split": "evaluation",
+      "prior_scope": "procedure",
+      "prior_detail": null,
+      "prior_rationale": "Physician standing and appellate procedure in abortion-funding challenge."
+    },
+    {
+      "case_id": "2021-033",
+      "split": "evaluation",
+      "prior_scope": "procedure",
+      "prior_detail": null,
+      "prior_rationale": "Availability of pre-enforcement challenge to Texas abortion statute."
+    },
+    {
+      "case_id": "1995-073",
+      "split": "evaluation",
+      "prior_scope": "related_litigation",
+      "prior_detail": "severability_remedy",
+      "prior_rationale": "Reverses severability holding under state law, rather than deciding constitutionality of the surviving restriction."
+    },
+    {
+      "case_id": "1995-032",
+      "split": "evaluation",
+      "prior_scope": "procedure",
+      "prior_detail": null,
+      "prior_rationale": "Scope of injunction against state abortion-funding restriction."
+    },
+    {
+      "case_id": "2019-040",
+      "split": "evaluation",
+      "prior_scope": "direct_access",
+      "prior_detail": "direct_access_merits",
+      "prior_rationale": "Invalidates Louisiana admitting-privileges requirement; also addresses standing."
+    },
+    {
+      "case_id": "1980-057",
+      "split": "evaluation",
+      "prior_scope": "direct_access",
+      "prior_detail": "direct_access_merits",
+      "prior_rationale": "Sustains parental notice as applied to immature dependent minor; broader challenge lacks standing."
+    },
+    {
+      "case_id": "1979-149",
+      "split": "evaluation",
+      "prior_scope": "funding",
+      "prior_detail": "public_funding",
+      "prior_rationale": "Sustains Illinois funding limits and addresses jurisdiction concerning Hyde."
+    },
+    {
+      "case_id": "1975-170",
+      "split": "evaluation",
+      "prior_scope": "direct_access",
+      "prior_detail": "direct_access_merits",
+      "prior_rationale": "Invalidates spousal and blanket parental consent, while sustaining patient consent and viability definition; multiple provisions."
+    },
+    {
+      "case_id": "1982-113",
+      "split": "evaluation",
+      "prior_scope": "direct_access",
+      "prior_detail": "direct_access_merits",
+      "prior_rationale": "Invalidates hospitalization requirement but sustains pathology, second-physician, and consent provisions."
+    },
+    {
+      "case_id": "1989-133",
+      "split": "evaluation",
+      "prior_scope": "direct_access",
+      "prior_detail": "direct_access_merits",
+      "prior_rationale": "Invalidates two-parent notice without bypass but sustains scheme with judicial bypass."
+    },
+    {
+      "case_id": "2021-019",
+      "split": "evaluation",
+      "prior_scope": "direct_access",
+      "prior_detail": "direct_access_merits",
+      "prior_rationale": "Overrules Roe and Casey, changing constitutional protection for abortion."
+    },
+    {
+      "case_id": "2006-031",
+      "split": "evaluation",
+      "prior_scope": "direct_access",
+      "prior_detail": "direct_access_merits",
+      "prior_rationale": "Rejects facial challenges to the federal procedure ban."
+    },
+    {
+      "case_id": "1990-077",
+      "split": "evaluation",
+      "prior_scope": "funding",
+      "prior_detail": "public_funding_and_speech",
+      "prior_rationale": "Sustains Title X restrictions on abortion counseling, referral, and advocacy within funded programs."
+    },
+    {
+      "case_id": "1979-148",
+      "split": "evaluation",
+      "prior_scope": "funding",
+      "prior_detail": "public_funding",
+      "prior_rationale": "Sustains Hyde funding restrictions against the stated constitutional challenges."
+    },
+    {
+      "case_id": "2015-048",
+      "split": "evaluation",
+      "prior_scope": "direct_access",
+      "prior_detail": "direct_access_merits",
+      "prior_rationale": "Invalidates admitting-privileges and surgical-center requirements as undue burdens."
+    }
+  ]
+}
