@@ -1,0 +1,142 @@
+{
+  "status": "Bounded consolidation; provisional prior case labels revalidated against current source hashes, not new full-opinion adjudication",
+  "audit_report_sha256": "ee396e163a84a184c1eccafd01517fe5382f391445c14af35d8b4245df0f00ef",
+  "provenance": {
+    "artifacts/scdb-issues.sqlite": "38cde989a39db72a0607fb45e14cd9cc9a73a57e37b892889be3e9bf8171321f",
+    "artifacts/semantic-scdb-issues/manifest.json": "d7fd81ede7487e23b8d484c4f6dd3a8be6a4da0675c3d7d703812dada460ce41",
+    "data/research/abortion-current-case-review.json": "c6ba85d1564ac95a0faca33e9bb5334b222755fa7a634f3d0565ed6121785eba",
+    "data/research/abortion_case_review.json": "dd51f5c5f9676e1848d78b04575583047c8275e5ed1e24772c0c9c5cb13712e5",
+    "data/raw/scdb-2026/SCDB_2026_01_caseCentered_Citation.csv": "b3cc84bd73a7a0325856cca52ae6fc5bd6a39433113f83fef248556ad4488528",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/audit_abortion_release.py": "c6ab79dcd5fb015e79cc8ab5787a2b12b52c1a7882dad1a10aeb377389769e7f",
+    "scripts/audit_question_composition.py": "a6a8a1c6e0f315cf6513a54e64ecc1299371af01e970ddfbfeb7a2b66a602fef",
+    "scvpublic/store.py": "54affb2ff43be0ace30fda5991275b6b9344a77f514d6897e605770b4886f3f2",
+    "scvpublic/chart.py": "62e09ab8cbcb7b33cb1d999164a371f31fb98d5f84c88770ce45d7eb6a7a2a37"
+  },
+  "court": {
+    "chart_documents": 95,
+    "chart_years": 51,
+    "scope_counts": {
+      "direct_access": 21,
+      "funding": 6,
+      "related_litigation": 18,
+      "procedure": 6,
+      "outside_abortion_policy": 38,
+      "contraception": 6
+    },
+    "scores_verified_against_scdb": 95,
+    "missing_prior_reviewed_cases": [
+      {
+        "case_id": "1987-012",
+        "name": "NEAL F. HARTIGAN, ATTORNEY GENERAL OF THE STATE OF ILLINOIS, ETC., et al. v. DAVID ZBARAZ AND ALLAN G. CHARLES ETC.",
+        "category": "equally_divided_affirmance",
+        "status": "not_indexed"
+      },
+      {
+        "case_id": "1991-120",
+        "name": "LEONA BENTEN, et al. v. DAVID KESSLER, COMMISSIONER, FOOD AND DRUG ADMINISTRATION, et al.",
+        "category": "interim_administrative_procedure",
+        "status": "not_indexed"
+      },
+      {
+        "case_id": "1996-024",
+        "name": "PAUL SCHENCK AND DWIGHT SAUNDERS v. PRO-CHOICE NETWORK OF WESTERN NEW YORK et al.",
+        "category": "speech_buffer_zone",
+        "status": "below_chart_cutoff"
+      },
+      {
+        "case_id": "1996-042",
+        "name": "MARTIN D. LAMBERT, GALLATIN COUNTY ATTORNEY v. SUSAN WICKLUND et al.",
+        "category": "direct_access_merits",
+        "status": "not_indexed"
+      },
+      {
+        "case_id": "1996-074",
+        "name": "JOSEPH P. MAZUREK, ATTORNEY GENERAL OF MONTANA v. JAMES H. ARMSTRONG et al.",
+        "category": "direct_access_merits",
+        "status": "not_indexed"
+      },
+      {
+        "case_id": "1999-086",
+        "name": "LEILA JEANNE HILL, AUDREY HIMMELMANN, AND EVERITT W. SIMPSON, JR. v. COLORADO, et al.",
+        "category": "speech_buffer_zone",
+        "status": "below_chart_cutoff"
+      },
+      {
+        "case_id": "2023-060",
+        "name": "MOYLE v. UNITED STATES",
+        "category": "procedural_disposition",
+        "status": "below_chart_cutoff"
+      }
+    ],
+    "sign_changes_with_direct_scope": [
+      1976,
+      1983,
+      1986,
+      2020,
+      2022
+    ]
+  },
+  "court_2022": {
+    "search_selected": 0.060263246540128705,
+    "direct_access_only": -0.3333333333333333
+  },
+  "surveys": {
+    "records": 14,
+    "families": 12,
+    "sources": 7,
+    "observed_years": 46
+  },
+  "gss_2014": {
+    "search_selected": 0.3313834310376634,
+    "fixed_seven": 0.20615667901949908,
+    "any_reason": -0.09490929179677646
+  },
+  "historical_pilot": {
+    "not_current_search_cohort": true,
+    "source_hashes": {
+      "artifacts/abortion-alignment.json": "a78c26132421092ee757fd947dc90131bc86243e27f4f963236ad587197504bd",
+      "artifacts/abortion-retrospective-evaluation.json": "50929cb3b33d362a7979383591c4f7a2533f34160e45302a7312a270150142a0"
+    },
+    "cases": 49,
+    "matched": 47,
+    "aligned": 20,
+    "contingency": {
+      "positive": {
+        "liberal": 20,
+        "conservative": 27
+      },
+      "negative": {
+        "liberal": 0,
+        "conservative": 0
+      },
+      "zero": {
+        "liberal": 0,
+        "conservative": 0
+      }
+    },
+    "evaluated_cases": 27,
+    "evaluated_years": 19,
+    "metrics": {
+      "baseline": {
+        "brier": 0.25575136930294495,
+        "log_loss": 0.7052719824342785,
+        "accuracy": 0.5555555555555556
+      },
+      "sentiment_model": {
+        "brier": 0.2573237912413656,
+        "log_loss": 0.7086397601912803,
+        "accuracy": 0.5555555555555556
+      }
+    },
+    "historical_input_availability_verified": false
+  },
+  "limitations": [
+    "Scope labels are provisional assistant review, not independent legal review.",
+    "Direct-scope curves retain SCDB ideological direction and vote margins; they are not new access-impact scores.",
+    "Prior review is not a complete reference corpus; omitted-case counts are not recall estimates.",
+    "Stable item codes do not establish unchanged wording, survey mode or population.",
+    "Alternative survey series measure different scopes; none is selected as preferred from agreement with court outcomes.",
+    "This audit validates aggregation and court score arithmetic, not every raw survey response or population inference.",
+    "No causal, forecasting or statistical-significance claim; no confidence intervals computed."
+  ]
+}
