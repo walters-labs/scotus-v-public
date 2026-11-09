@@ -24,7 +24,8 @@ def main():
     # Keep acquisition, mapping, and research code on the build workstation.
     paths += [Path('scvpublic')/name for name in
               ('__init__.py', 'web.py', 'store.py', 'chart.py', 'build.py',
-               'hybrid.py', 'encoding.py', 'survey_search.py', 'survey_topics.py')]
+               'hybrid.py', 'encoding.py', 'survey_search.py', 'survey_topics.py',
+               'court_details.py')]
     paths += [p for folder in ('scvpublic/templates', 'scvpublic/static')
               for p in Path(folder).rglob('*') if p.is_file()]
     paths += [Path('deploy')/name for name in
