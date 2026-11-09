@@ -471,3 +471,108 @@ Preparation refuses to replace existing packets. Results are in
 improvement was demonstrated in this follow-up.** Keep the recovered sources,
 but do not promote the current extraction model into policy scoring. All 59
 selected source/repair tests pass; the serving artifact hash remains unchanged.
+
+## Search-input impact (November 9)
+
+`PYTHONPATH=. .venv/bin/python scripts/audit_repair_search_impact.py`
+checks the pinned repair outputs against the 8,125-case local serving artifact
+and writes `data/evaluation/repair-search-impact.json`. This is an input audit,
+not a ranking evaluation. It made no changes to serving artifacts.
+
+- Removing the 99 separated CaseSumm prefixes would change 99 TF-IDF documents
+  but **zero embedding inputs**: the embedding path already selects their
+  unchanged syllabuses. Keep the prefatory text available for retrieval;
+  attribution boundaries do not justify deleting useful search text.
+- All 65 repaired official records are selected official fallbacks in this
+  artifact. Adopting these repairs would change both their TF-IDF documents
+  and embedding inputs.
+- Woodson's recovered 7,521-word plurality could improve the completeness of
+  its TF-IDF input, but its embedding input remains the unchanged syllabus.
+  This does not establish improved ranking or majority support for its reasoning.
+
+The next bounded candidate should adopt the 65 official repairs first, retain
+CaseSumm retrieval text, and compare rankings against the same baseline and
+judgments. Any changed TF-IDF documents alter corpus IDF, so regression checks
+must include unchanged cases and other topics. Woodson is a separate candidate
+change. Court scores remain unchanged; no interpretation experiment is being
+promoted. There is no deployment from this audit.
+
+### Official-repair search candidate result
+
+Built `artifacts/official-repair-candidate.sqlite` and
+`artifacts/semantic-official-repair-candidate` separately from the baseline.
+The build refits court TF-IDF with the 65 repaired official inputs, preserves
+CaseSumm text, and re-encodes 2,322 passages for those 65 cases using the same
+encoder/windowing policy. Other court vectors and all survey bundle files are
+reused. Restored text may change passage boundaries as well as term weights.
+
+Validation confirmed identical survey records/postings/vectors and court
+identities/scores; 62 court records have updated PDF-page metadata. Twenty-one
+relevant unit tests passed. The original 20-topic regression suite passed,
+but the newer **24-query v3 court benchmark failed** its no-new-irrelevant
+condition. For `capital punishment`, *City of Grants Pass v. Johnson*
+(`2023-056`, public-camping ordinances) newly enters the chart at rank 108,
+score 0.398986. It was absent from the baseline candidate list and already
+labeled irrelevant in the frozen benchmark. No known direct chart or top-ten
+matches were lost; no known irrelevant chart matches were removed. Other
+unjudged membership changes are recorded without treating them as improvements.
+
+**Do not promote this candidate.** Source completeness improved, but search
+relevance improvement was not demonstrated. Keep the source repairs and these
+findings; do not change thresholds, labels, or weights to force this run to
+pass. Serving defaults and production remain unchanged. The older 20-topic
+suite alone is insufficient for this decision.
+
+Reproduce from the repository root (candidate build refuses existing output paths):
+
+```sh
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_official_repair_candidate.py
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/check_official_repair_candidate.py
+```
+
+The checker writes `data/evaluation/official-repair-search-comparison.json`
+and exits unsuccessfully when a regression gate fails. Detailed rankings stay
+in ignored `artifacts/official-repair-rankings.json`. This is a local experiment,
+not a replacement for the production build pipeline.
+
+### Isolating TF-IDF and embedding effects
+
+The offline 2×2 comparison uses the same 24-query v3 benchmark and production
+`HybridSearch` implementation. Both original artifact/bundle bindings and court
+document identities are verified before mixing vectors in memory. No deployable
+mixed bundle is created. Baseline and combined rankings reproduce the preceding
+experiment within 1e-7 score tolerance.
+
+| Variant | Lost known direct matches | Newly included known irrelevant matches | Removed known irrelevant matches |
+| --- | --- | --- | --- |
+| Repaired TF-IDF only | None | None | None |
+| Repaired embeddings only | None | Grants Pass for capital punishment | None |
+| Both repaired | None | Grants Pass for capital punishment | None |
+
+The TF-IDF-only variant leaves chart membership unchanged across all 24 queries.
+It passes the non-regression checks, but does not demonstrate relevance gains.
+No variant loses known direct top-ten matches.
+
+The Grants Pass regression is a **candidate-boundary effect**, not increased
+similarity of that case. Its semantic score remains 0.440545 and lexical rank
+remains 645. Delligatti v. United States (`2024-015`) drops from semantic rank 72
+to 120 (0.456779 → 0.430923) after re-encoding. Grants Pass consequently moves
+from rank 101 to 100 and enters the semantic candidate pool. Its resulting
+hybrid score, approximately 0.398986, exceeds the unchanged 0.30 chart cutoff.
+This exposes an existing marginally irrelevant semantic match; it does not
+show that the source repair made Grants Pass itself more similar.
+
+Keep production unchanged. TF-IDF-only is a possible source-maintenance change,
+not an established search improvement. This experiment separates the two
+retrieval components, but does not isolate text changes from passage-boundary
+or encoding-batch effects within the repaired embeddings. Do not tune a cutoff
+or add a case-specific exception to make this benchmark pass.
+
+```sh
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/experiment_official_repair_components.py
+```
+
+The committed report is `data/evaluation/official-repair-components.json`;
+full rankings are in ignored `artifacts/official-repair-component-rankings.json`.
+The three existing hybrid-search unit tests pass. This experiment uses existing
+local artifacts and requires no downloads, LLM requests, or deployment.

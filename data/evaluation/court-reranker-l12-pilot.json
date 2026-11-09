@@ -1,0 +1,655 @@
+{
+  "protocol": {
+    "queries": [
+      "birth control",
+      "contraception",
+      "healthcare",
+      "capital punishment"
+    ],
+    "cohort": {
+      "birth control": {
+        "1971-079": "direct",
+        "1976-126": "direct",
+        "1964-121": "direct",
+        "2019-060": "direct",
+        "1982-135": "direct",
+        "2013-070": "direct",
+        "2000-070": "irrelevant",
+        "2013-030": "irrelevant",
+        "2008-079": "irrelevant",
+        "2016-005": "irrelevant"
+      },
+      "contraception": {
+        "1971-079": "direct",
+        "1976-126": "direct",
+        "1964-121": "direct",
+        "2019-060": "direct",
+        "1982-135": "direct",
+        "2013-070": "direct",
+        "2000-070": "irrelevant",
+        "2013-030": "irrelevant",
+        "2008-079": "irrelevant",
+        "2016-005": "irrelevant"
+      },
+      "healthcare": {
+        "2011-077": "direct",
+        "1980-115": "direct",
+        "1987-154": "direct",
+        "1998-088": "direct",
+        "2024-019": "direct"
+      },
+      "capital punishment": {
+        "2007-068": "direct",
+        "1981-172": "direct",
+        "1986-139": "direct",
+        "1990-005": "irrelevant",
+        "1975-030": "irrelevant",
+        "2004-024": "direct",
+        "2020-020": "irrelevant",
+        "2023-056": "irrelevant",
+        "2020-037": "direct",
+        "2002-012": "direct",
+        "2023-055": "direct",
+        "2022-011": "direct",
+        "2025-021": "irrelevant"
+      }
+    },
+    "rule": "Same source-verified name/180-token overview/180-token best passage for both models; raw logit >=0 acceptance. Report positive-negative ordering separately. No threshold sweep. Stop before integration if any direct example is rejected or any judged negative accepted.",
+    "limitations": "Diagnostic selected difficult topics, not blind validation; aliases share cases. Logits are not calibrated probabilities. Cases absent from retrieval are explicitly injected for this model-only test.",
+    "provenance": {
+      "artifacts/scdb-issues.sqlite": "38cde989a39db72a0607fb45e14cd9cc9a73a57e37b892889be3e9bf8171321f",
+      "artifacts/semantic-scdb-issues/manifest.json": "d7fd81ede7487e23b8d484c4f6dd3a8be6a4da0675c3d7d703812dada460ce41",
+      "data/evaluation/court-search-benchmark-v3.json": "555f570a7f284f2aebf970fdcc85d34135ce7db5c44f37a08dcec1eb0b244094",
+      "data/evaluation/court-dual-source-membership-review.json": "5e1267b38bbcd3c61b484b783362858820d1e0e2c5b2f4dd208d9b18b8f7a929",
+      "/Users/jackson/GitHub/scotus-v-public/scripts/test_stronger_court_reranker.py": "09c615abfb1581cb6d1b0965c335b373adfb03a5b3345ab0d6a9baa956b5ac3c",
+      "artifacts/survey-reranker-model/manifest.json": "e0fbfc01bb780df831554eb477ab94ee07d43fabe68344bdee33a51b4121d7b3",
+      "artifacts/court-reranker-l12-model/manifest.json": "36951e17875777b29a926fb1e071ec9d2e0ac9bdc4eeefce7e89ba424ed8d9f1"
+    }
+  },
+  "request_sha256": "e52cf449dc491a4c801aaec54f0ae8191788f2d3a45c8130f35177b51df735cb",
+  "pairs": 38,
+  "models": {
+    "L2": {
+      "rejected_direct": 22,
+      "accepted_irrelevant": 0,
+      "pair_ordering": {
+        "birth control": {
+          "correct": 14,
+          "total": 24
+        },
+        "contraception": {
+          "correct": 21,
+          "total": 24
+        },
+        "healthcare": {
+          "correct": 0,
+          "total": 0
+        },
+        "capital punishment": {
+          "correct": 38,
+          "total": 40
+        }
+      },
+      "results": [
+        {
+          "query": "birth control",
+          "case_id": "1971-079",
+          "name": "EISENSTADT, SHERIFF v. BAIRD",
+          "label": "direct",
+          "logit": -8.766865730285645
+        },
+        {
+          "query": "birth control",
+          "case_id": "1976-126",
+          "name": "CAREY, GOVERNOR OF NEW YORK, et al. v. POPULATION SERVICES INTERNATIONAL et al.",
+          "label": "direct",
+          "logit": -9.748823165893555
+        },
+        {
+          "query": "birth control",
+          "case_id": "1964-121",
+          "name": "GRISWOLD et al. v. CONNECTICUT",
+          "label": "direct",
+          "logit": -7.623587131500244
+        },
+        {
+          "query": "birth control",
+          "case_id": "2019-060",
+          "name": "LITTLE SISTERS OF THE POOR SAINTS PETER AND PAUL HOME v. PENNSYLVANIA",
+          "label": "direct",
+          "logit": -10.10525894165039
+        },
+        {
+          "query": "birth control",
+          "case_id": "1982-135",
+          "name": "BOLGER et al. v. YOUNGS DRUG PRODUCTS CORP.",
+          "label": "direct",
+          "logit": -4.569564342498779
+        },
+        {
+          "query": "birth control",
+          "case_id": "2013-070",
+          "name": "BURWELL v. HOBBY LOBBY STORES",
+          "label": "direct",
+          "logit": -10.354560852050781
+        },
+        {
+          "query": "birth control",
+          "case_id": "2000-070",
+          "name": "TUAN ANH NGUYEN AND JOSEPH BOULAIS v. IMMIGRATION AND NATURALIZATION SERVICE",
+          "label": "irrelevant",
+          "logit": -5.596656799316406
+        },
+        {
+          "query": "birth control",
+          "case_id": "2013-030",
+          "name": "LEXMARK INT'L, INC. v. STATIC CONTROL COMPONENTS, INC.,",
+          "label": "irrelevant",
+          "logit": -9.319345474243164
+        },
+        {
+          "query": "birth control",
+          "case_id": "2008-079",
+          "name": "SAFFORD UNIFIED SCHOOL DISTRICT #1, et al.v. APRIL REDDING",
+          "label": "irrelevant",
+          "logit": -10.13149642944336
+        },
+        {
+          "query": "birth control",
+          "case_id": "2016-005",
+          "name": "MANUEL v. CITY OF JOLIET",
+          "label": "irrelevant",
+          "logit": -10.126188278198242
+        },
+        {
+          "query": "contraception",
+          "case_id": "1971-079",
+          "name": "EISENSTADT, SHERIFF v. BAIRD",
+          "label": "direct",
+          "logit": -1.5380030870437622
+        },
+        {
+          "query": "contraception",
+          "case_id": "1976-126",
+          "name": "CAREY, GOVERNOR OF NEW YORK, et al. v. POPULATION SERVICES INTERNATIONAL et al.",
+          "label": "direct",
+          "logit": -2.5891952514648438
+        },
+        {
+          "query": "contraception",
+          "case_id": "1964-121",
+          "name": "GRISWOLD et al. v. CONNECTICUT",
+          "label": "direct",
+          "logit": -4.820651531219482
+        },
+        {
+          "query": "contraception",
+          "case_id": "2019-060",
+          "name": "LITTLE SISTERS OF THE POOR SAINTS PETER AND PAUL HOME v. PENNSYLVANIA",
+          "label": "direct",
+          "logit": -4.388159275054932
+        },
+        {
+          "query": "contraception",
+          "case_id": "1982-135",
+          "name": "BOLGER et al. v. YOUNGS DRUG PRODUCTS CORP.",
+          "label": "direct",
+          "logit": -3.549325942993164
+        },
+        {
+          "query": "contraception",
+          "case_id": "2013-070",
+          "name": "BURWELL v. HOBBY LOBBY STORES",
+          "label": "direct",
+          "logit": -5.124392986297607
+        },
+        {
+          "query": "contraception",
+          "case_id": "2000-070",
+          "name": "TUAN ANH NGUYEN AND JOSEPH BOULAIS v. IMMIGRATION AND NATURALIZATION SERVICE",
+          "label": "irrelevant",
+          "logit": -8.421350479125977
+        },
+        {
+          "query": "contraception",
+          "case_id": "2013-030",
+          "name": "LEXMARK INT'L, INC. v. STATIC CONTROL COMPONENTS, INC.,",
+          "label": "irrelevant",
+          "logit": -8.922324180603027
+        },
+        {
+          "query": "contraception",
+          "case_id": "2008-079",
+          "name": "SAFFORD UNIFIED SCHOOL DISTRICT #1, et al.v. APRIL REDDING",
+          "label": "irrelevant",
+          "logit": -3.780918836593628
+        },
+        {
+          "query": "contraception",
+          "case_id": "2016-005",
+          "name": "MANUEL v. CITY OF JOLIET",
+          "label": "irrelevant",
+          "logit": -8.661690711975098
+        },
+        {
+          "query": "healthcare",
+          "case_id": "2011-077",
+          "name": "NATIONAL FEDERATION OF INDEPENDENT BUSINESS, et al., PETITIONERS v. KATHLEEN SEBELIUS, SECRETARY OF HEALTH AND HUMAN SERVICES, et al.",
+          "label": "direct",
+          "logit": -4.1367669105529785
+        },
+        {
+          "query": "healthcare",
+          "case_id": "1980-115",
+          "name": "NATIONAL GERIMEDICAL HOSPITAL AND GERONTOLOGY CENTER v. BLUE CROSS OF KANSAS CITY et al.",
+          "label": "direct",
+          "logit": -5.158462047576904
+        },
+        {
+          "query": "healthcare",
+          "case_id": "1987-154",
+          "name": "BOWEN, SECRETARY OF HEALTH AND HUMAN SERVICES, et al. v. MASSACHUSETTS",
+          "label": "direct",
+          "logit": -6.338985443115234
+        },
+        {
+          "query": "healthcare",
+          "case_id": "1998-088",
+          "name": "TOMMY OLMSTEAD, COMMISSIONER, GEORGIA DEPARTMENT OF HUMAN RESOURCES, et al. v. L. C., BY JONATHAN ZIMRING, GUARDIAN AD LITEM AND NEXT FRIEND, et al.",
+          "label": "direct",
+          "logit": -8.65429973602295
+        },
+        {
+          "query": "healthcare",
+          "case_id": "2024-019",
+          "name": "UNITED STATES v. SKRMETTI",
+          "label": "direct",
+          "logit": -7.493926525115967
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "2007-068",
+          "name": "KENNEDY v. LOUISIANA",
+          "label": "direct",
+          "logit": 0.2098187357187271
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "1981-172",
+          "name": "ENMUND v. FLORIDA",
+          "label": "direct",
+          "logit": -5.613618850708008
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "1986-139",
+          "name": "SUMNER, DIRECTOR, NEVADA DEPARTMENT OF PRISONS, et al. v. SHUMAN",
+          "label": "direct",
+          "logit": 0.3751996159553528
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "1990-005",
+          "name": "MERCEDEL W. MILES, INDIVIDUALLY AND AS ADMINISTRATRIX OF THE SUCCESSION OF LUDWICK ADAM TORREGANO v. APEX MARINE CORPORATION et al.",
+          "label": "irrelevant",
+          "logit": -9.202780723571777
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "1975-030",
+          "name": "NATIONAL INDEPENDENT COAL OPERATORS' ASSOCIATION et al. v. KLEPPE, SECRETARY OF THE INTERIOR, et al.",
+          "label": "irrelevant",
+          "logit": -7.391608238220215
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "2004-024",
+          "name": "DONALD P. ROPER, SUPERINTENDENT, POTOSI CORRECTIONAL CENTER v. CHRISTOPHER SIMMONS",
+          "label": "direct",
+          "logit": 0.8964795470237732
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "2020-020",
+          "name": "EDWARDS v. VANNOY, WARDEN",
+          "label": "irrelevant",
+          "logit": -5.988539218902588
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "2023-056",
+          "name": "CITY OF GRANTS PASS, OREGON v. JOHNSON",
+          "label": "irrelevant",
+          "logit": -7.531957626342773
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "2020-037",
+          "name": "SHINN v. KAYER",
+          "label": "direct",
+          "logit": -6.36895751953125
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "2002-012",
+          "name": "DAVID ALLEN SATTAZAHN v. PENNSYLVANIA",
+          "label": "direct",
+          "logit": -2.131868600845337
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "2023-055",
+          "name": "THORNELL v. JONES",
+          "label": "direct",
+          "logit": -4.763859272003174
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "2022-011",
+          "name": "CRUZ v. ARIZONA",
+          "label": "direct",
+          "logit": -7.135290145874023
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "2025-021",
+          "name": "RUTHERFORD v. UNITED STATES",
+          "label": "irrelevant",
+          "logit": -8.079310417175293
+        }
+      ]
+    },
+    "L12": {
+      "rejected_direct": 19,
+      "accepted_irrelevant": 0,
+      "pair_ordering": {
+        "birth control": {
+          "correct": 23,
+          "total": 24
+        },
+        "contraception": {
+          "correct": 24,
+          "total": 24
+        },
+        "healthcare": {
+          "correct": 0,
+          "total": 0
+        },
+        "capital punishment": {
+          "correct": 39,
+          "total": 40
+        }
+      },
+      "results": [
+        {
+          "query": "birth control",
+          "case_id": "1971-079",
+          "name": "EISENSTADT, SHERIFF v. BAIRD",
+          "label": "direct",
+          "logit": -4.859621047973633
+        },
+        {
+          "query": "birth control",
+          "case_id": "1976-126",
+          "name": "CAREY, GOVERNOR OF NEW YORK, et al. v. POPULATION SERVICES INTERNATIONAL et al.",
+          "label": "direct",
+          "logit": -7.53224515914917
+        },
+        {
+          "query": "birth control",
+          "case_id": "1964-121",
+          "name": "GRISWOLD et al. v. CONNECTICUT",
+          "label": "direct",
+          "logit": -4.189785480499268
+        },
+        {
+          "query": "birth control",
+          "case_id": "2019-060",
+          "name": "LITTLE SISTERS OF THE POOR SAINTS PETER AND PAUL HOME v. PENNSYLVANIA",
+          "label": "direct",
+          "logit": -7.742678165435791
+        },
+        {
+          "query": "birth control",
+          "case_id": "1982-135",
+          "name": "BOLGER et al. v. YOUNGS DRUG PRODUCTS CORP.",
+          "label": "direct",
+          "logit": -1.6307995319366455
+        },
+        {
+          "query": "birth control",
+          "case_id": "2013-070",
+          "name": "BURWELL v. HOBBY LOBBY STORES",
+          "label": "direct",
+          "logit": -9.376627922058105
+        },
+        {
+          "query": "birth control",
+          "case_id": "2000-070",
+          "name": "TUAN ANH NGUYEN AND JOSEPH BOULAIS v. IMMIGRATION AND NATURALIZATION SERVICE",
+          "label": "irrelevant",
+          "logit": -8.645883560180664
+        },
+        {
+          "query": "birth control",
+          "case_id": "2013-030",
+          "name": "LEXMARK INT'L, INC. v. STATIC CONTROL COMPONENTS, INC.,",
+          "label": "irrelevant",
+          "logit": -10.211097717285156
+        },
+        {
+          "query": "birth control",
+          "case_id": "2008-079",
+          "name": "SAFFORD UNIFIED SCHOOL DISTRICT #1, et al.v. APRIL REDDING",
+          "label": "irrelevant",
+          "logit": -10.302801132202148
+        },
+        {
+          "query": "birth control",
+          "case_id": "2016-005",
+          "name": "MANUEL v. CITY OF JOLIET",
+          "label": "irrelevant",
+          "logit": -10.13475513458252
+        },
+        {
+          "query": "contraception",
+          "case_id": "1971-079",
+          "name": "EISENSTADT, SHERIFF v. BAIRD",
+          "label": "direct",
+          "logit": 1.3303793668746948
+        },
+        {
+          "query": "contraception",
+          "case_id": "1976-126",
+          "name": "CAREY, GOVERNOR OF NEW YORK, et al. v. POPULATION SERVICES INTERNATIONAL et al.",
+          "label": "direct",
+          "logit": 0.15018565952777863
+        },
+        {
+          "query": "contraception",
+          "case_id": "1964-121",
+          "name": "GRISWOLD et al. v. CONNECTICUT",
+          "label": "direct",
+          "logit": -0.7457312345504761
+        },
+        {
+          "query": "contraception",
+          "case_id": "2019-060",
+          "name": "LITTLE SISTERS OF THE POOR SAINTS PETER AND PAUL HOME v. PENNSYLVANIA",
+          "label": "direct",
+          "logit": -0.9871989488601685
+        },
+        {
+          "query": "contraception",
+          "case_id": "1982-135",
+          "name": "BOLGER et al. v. YOUNGS DRUG PRODUCTS CORP.",
+          "label": "direct",
+          "logit": -0.5029950141906738
+        },
+        {
+          "query": "contraception",
+          "case_id": "2013-070",
+          "name": "BURWELL v. HOBBY LOBBY STORES",
+          "label": "direct",
+          "logit": -3.155980348587036
+        },
+        {
+          "query": "contraception",
+          "case_id": "2000-070",
+          "name": "TUAN ANH NGUYEN AND JOSEPH BOULAIS v. IMMIGRATION AND NATURALIZATION SERVICE",
+          "label": "irrelevant",
+          "logit": -10.065064430236816
+        },
+        {
+          "query": "contraception",
+          "case_id": "2013-030",
+          "name": "LEXMARK INT'L, INC. v. STATIC CONTROL COMPONENTS, INC.,",
+          "label": "irrelevant",
+          "logit": -10.133214950561523
+        },
+        {
+          "query": "contraception",
+          "case_id": "2008-079",
+          "name": "SAFFORD UNIFIED SCHOOL DISTRICT #1, et al.v. APRIL REDDING",
+          "label": "irrelevant",
+          "logit": -6.155123233795166
+        },
+        {
+          "query": "contraception",
+          "case_id": "2016-005",
+          "name": "MANUEL v. CITY OF JOLIET",
+          "label": "irrelevant",
+          "logit": -9.569867134094238
+        },
+        {
+          "query": "healthcare",
+          "case_id": "2011-077",
+          "name": "NATIONAL FEDERATION OF INDEPENDENT BUSINESS, et al., PETITIONERS v. KATHLEEN SEBELIUS, SECRETARY OF HEALTH AND HUMAN SERVICES, et al.",
+          "label": "direct",
+          "logit": -1.148937463760376
+        },
+        {
+          "query": "healthcare",
+          "case_id": "1980-115",
+          "name": "NATIONAL GERIMEDICAL HOSPITAL AND GERONTOLOGY CENTER v. BLUE CROSS OF KANSAS CITY et al.",
+          "label": "direct",
+          "logit": -4.482842922210693
+        },
+        {
+          "query": "healthcare",
+          "case_id": "1987-154",
+          "name": "BOWEN, SECRETARY OF HEALTH AND HUMAN SERVICES, et al. v. MASSACHUSETTS",
+          "label": "direct",
+          "logit": -3.603346347808838
+        },
+        {
+          "query": "healthcare",
+          "case_id": "1998-088",
+          "name": "TOMMY OLMSTEAD, COMMISSIONER, GEORGIA DEPARTMENT OF HUMAN RESOURCES, et al. v. L. C., BY JONATHAN ZIMRING, GUARDIAN AD LITEM AND NEXT FRIEND, et al.",
+          "label": "direct",
+          "logit": -6.380392551422119
+        },
+        {
+          "query": "healthcare",
+          "case_id": "2024-019",
+          "name": "UNITED STATES v. SKRMETTI",
+          "label": "direct",
+          "logit": -5.514025688171387
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "2007-068",
+          "name": "KENNEDY v. LOUISIANA",
+          "label": "direct",
+          "logit": 1.8505162000656128
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "1981-172",
+          "name": "ENMUND v. FLORIDA",
+          "label": "direct",
+          "logit": -2.050382137298584
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "1986-139",
+          "name": "SUMNER, DIRECTOR, NEVADA DEPARTMENT OF PRISONS, et al. v. SHUMAN",
+          "label": "direct",
+          "logit": 1.8922476768493652
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "1990-005",
+          "name": "MERCEDEL W. MILES, INDIVIDUALLY AND AS ADMINISTRATRIX OF THE SUCCESSION OF LUDWICK ADAM TORREGANO v. APEX MARINE CORPORATION et al.",
+          "label": "irrelevant",
+          "logit": -9.573019027709961
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "1975-030",
+          "name": "NATIONAL INDEPENDENT COAL OPERATORS' ASSOCIATION et al. v. KLEPPE, SECRETARY OF THE INTERIOR, et al.",
+          "label": "irrelevant",
+          "logit": -7.0869245529174805
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "2004-024",
+          "name": "DONALD P. ROPER, SUPERINTENDENT, POTOSI CORRECTIONAL CENTER v. CHRISTOPHER SIMMONS",
+          "label": "direct",
+          "logit": 1.0979416370391846
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "2020-020",
+          "name": "EDWARDS v. VANNOY, WARDEN",
+          "label": "irrelevant",
+          "logit": -5.621742248535156
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "2023-056",
+          "name": "CITY OF GRANTS PASS, OREGON v. JOHNSON",
+          "label": "irrelevant",
+          "logit": -8.278698921203613
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "2020-037",
+          "name": "SHINN v. KAYER",
+          "label": "direct",
+          "logit": -7.043107032775879
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "2002-012",
+          "name": "DAVID ALLEN SATTAZAHN v. PENNSYLVANIA",
+          "label": "direct",
+          "logit": 1.6319698095321655
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "2023-055",
+          "name": "THORNELL v. JONES",
+          "label": "direct",
+          "logit": -3.9606878757476807
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "2022-011",
+          "name": "CRUZ v. ARIZONA",
+          "label": "direct",
+          "logit": -4.8617658615112305
+        },
+        {
+          "query": "capital punishment",
+          "case_id": "2025-021",
+          "name": "RUTHERFORD v. UNITED STATES",
+          "label": "irrelevant",
+          "logit": -7.469092845916748
+        }
+      ]
+    }
+  },
+  "passes_small_gate": false,
+  "status": "local_model_only_diagnostic_not_deployed"
+}

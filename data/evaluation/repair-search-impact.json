@@ -1,0 +1,993 @@
+{
+  "status": "input_impact_only_not_relevance_validation",
+  "artifact_sha256": "38cde989a39db72a0607fb45e14cd9cc9a73a57e37b892889be3e9bf8171321f",
+  "indexed_cases": 8125,
+  "prefix_repairs": {
+    "indexed_records": 106,
+    "tfidf_changes_if_trimmed": 99,
+    "embedding_changes_if_trimmed": 0,
+    "recommendation": "Retain prefatory text for retrieval; use boundaries only for attribution experiments.",
+    "records": [
+      {
+        "case_id": "1970-073",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1971-153",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1974-096",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1974-119",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1974-124",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1975-176",
+        "status": "unresolved_summary_only",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": false
+      },
+      {
+        "case_id": "1976-010",
+        "status": "unchanged_no_justified_prefix",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": false
+      },
+      {
+        "case_id": "1976-167",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1976-179",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1977-059",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1977-153",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1978-061",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1979-062",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1979-130",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1979-153",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1979-155",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1980-012",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1980-059",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1980-146",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1980-149",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1980-152",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1981-018",
+        "status": "unchanged_no_justified_prefix",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": false
+      },
+      {
+        "case_id": "1981-136",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1981-143",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1981-145",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1981-148",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1981-169",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1982-105",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1982-113",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1982-132",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1982-137",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1982-161",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1983-039",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1983-163",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1984-004",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1984-030",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1984-033",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1984-122",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1984-142",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1985-033",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1985-056",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1985-085",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1985-131",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1985-132",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1985-136",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1985-139",
+        "status": "unchanged_no_justified_prefix",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": false
+      },
+      {
+        "case_id": "1985-153",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1986-015",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1986-035",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1986-037",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1986-050",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1986-064",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1986-077",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1986-080",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1986-093",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1986-104",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1986-154",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1987-051",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1987-075",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1987-094",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1987-153",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1988-026",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1988-029",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1988-079",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1988-145",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1989-016",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1989-051",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1989-077",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1989-080",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1989-097",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1989-100",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1989-138",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1990-023",
+        "status": "unchanged_no_justified_prefix",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": false
+      },
+      {
+        "case_id": "1990-057",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1990-116",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1991-021",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1991-047",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1991-048",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1991-083",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1991-097",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1991-117",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1992-111",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1992-117",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1992-119",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1993-089",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1993-090",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1993-094",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1994-012",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1994-080",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1994-090",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1995-038",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1995-049",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1995-086",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1995-090",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1995-095",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1997-062",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "1999-073",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "2000-052",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "2001-044",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "2001-058",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "2002-039",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "2002-052",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "2002-058",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "2003-006",
+        "status": "preface_separated",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": true
+      },
+      {
+        "case_id": "2009-004",
+        "status": "unchanged_no_justified_prefix",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": false
+      },
+      {
+        "case_id": "2016-011",
+        "status": "unchanged_no_justified_prefix",
+        "embedding_input_changed_if_prefix_removed": false,
+        "tfidf_input_changed_if_prefix_removed": false
+      }
+    ]
+  },
+  "official_repairs": {
+    "changed_records": 65,
+    "selected_changed_records": 65,
+    "records": [
+      {
+        "case_id": "2019-014",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2020-011",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2020-015",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2020-020",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2020-021",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2020-057",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2020-068",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2020-072",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2021-004",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2021-008",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2021-015",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2021-024",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2021-026",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2021-035",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2021-045",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2021-046",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2021-066",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2022-001",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2022-020",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2022-022",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2022-028",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2022-030",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2022-038",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2022-043",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2022-045",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2022-050",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2022-059",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2022-062",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2023-002",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2023-004",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2023-007",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2023-017",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2023-020",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2023-021",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2023-025",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2023-034",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2023-035",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2023-053",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2023-055",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2023-060",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2024-004",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2024-006",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2024-009",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2024-011",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2024-012",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2024-014",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2024-015",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2024-030",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2024-032",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2024-036",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2024-037",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2024-041",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2024-045",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2024-061",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2024-062",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2024-065",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2025-009",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2025-012",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2025-013",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2025-014",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2025-022",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2025-031",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2025-043",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2025-066",
+        "indexed": true,
+        "selected_official_source": true
+      },
+      {
+        "case_id": "2025-067",
+        "indexed": true,
+        "selected_official_source": true
+      }
+    ]
+  },
+  "woodson": {
+    "case_id": "1975-176",
+    "baseline_embedding_origin": "syllabus",
+    "candidate_embedding_origin": "syllabus",
+    "embedding_input_changed": false,
+    "recovered_principal_words": 7521,
+    "limitation": "Recovered principal is a plurality; source length is not authority or relevance."
+  },
+  "limitations": [
+    "No candidate index built; no evidence of ranking improvement yet.",
+    "Changing TF-IDF documents also changes corpus IDF and can affect unrepaired cases.",
+    "Source repairs do not change SCDB direction, votes, or policy interpretation."
+  ]
+}

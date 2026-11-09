@@ -900,3 +900,208 @@ cache sharing and nonmatching queries; the full 170-test suite passes. Local
 uncached healthcare searches took about 72–77 ms; cached calls about 10–14
 microseconds. These are local observations, not VPS latency guarantees. This is
 a local implementation ready for deployment review, not a completed deployment.
+
+## Search experiment review and agreement diagnostic (2026-11-09)
+
+Reviewing the recorded experiments rules out simply repeating the previously
+proposed small reranker trial:
+
+| Approach already tested | Recorded limitation |
+| --- | --- |
+| Higher global cutoff | Sacrifices relevant weak/synonym matches. |
+| Maximum/mean passage blend | Removes 24 judged off-topic pairs but loses 12 direct pairs and top-ten matches. |
+| Small contextual cross-encoder | Loses direct matches across all 24 queries; ordering also regresses without its cutoff. |
+| Official summaries / dual-source scoring | Removes noise but changes nominations and loses direct cases; expanded review overturned the initial passing result. |
+| Fixed/union nominations | Recovers nomination losses, but a direct healthcare score/top-ten loss remains. |
+| Repaired official opinion inputs | TF-IDF-only preserves chart membership; embedding changes admit Grants Pass through a top-100 boundary shift. |
+
+The next diagnostic combines two *existing* rejection signals rather than
+repeating either alone: remove a baseline candidate only if its fixed-pool
+75/25 dual-source score is below 0.30 **and** its contextual reranker logit is
+below zero. Retain original baseline scores and ordering for survivors. No new
+weights, threshold search, case exceptions or relevance-label changes are used.
+This tests whether agreement avoids individual failures, not whether the signals
+have statistically independent errors.
+
+The experiment checks v3 judgments plus the completed dual-source membership
+review, rejecting conflicting labels. Historical inputs are verified against
+recorded hashes. Cached baseline rankings must exactly match current rankings
+before their signals can be applied. Twenty-two queries match. `health care`
+and `healthcare` now use spelling-union retrieval, so both abstain and preserve
+all current results. This is **22 active checks and two unchanged controls**,
+not full current-input validation across all 24 queries.
+
+Result: all existing gates pass. Twelve chart memberships are removed:
+**7 previously judged irrelevant, 5 related, zero direct or unjudged**. No known
+direct chart or top-ten matches are lost. The seven irrelevant removals span
+gun control (2), abortion (1), and campaign finance (4). These are query/case
+pairs, not seven independent cases. The report separately counts removed
+candidates already below the chart threshold; those are not chart improvements.
+No-new-irrelevant chart membership is structural for a removal-only rule, not
+independent validation of precision. The five related removals are a tradeoff,
+not counted as successes.
+
+This is a promising **post-hoc cached diagnostic**, not a deployment candidate.
+It inherits previously inspected examples, incomplete labels, and the old
+cross-encoder's runtime cost. Next: reproduce on fresh current-source inputs,
+including both healthcare spellings, before any runtime implementation or
+server profiling. Preserve this result if that broader test fails; do not tune
+the thresholds to rescue it. Serving code and production remain unchanged.
+
+```sh
+PYTHONPATH=. .venv/bin/python scripts/experiment_court_agreement_filter.py \
+  --output artifacts/court-agreement-filter-report
+```
+
+Choose a fresh output directory. The tracked summary is
+`data/evaluation/court-agreement-filter-summary.json`; complete rankings and
+removals stay under the ignored output directory. The script reuses local
+cached evidence and makes no model/API requests.
+
+### Fresh-input agreement validation: rejected (2026-11-09)
+
+Recomputed candidate retrieval, 75/25 summary scores and contextual cross-encoder
+logits using the current `scdb-issues` artifact and source-verified contexts.
+The original 196-case summary bundle was verified against its original artifact;
+case-ID/document-ID mappings and encoder files match the current bundle. All
+24 query strings run without cached-evidence abstention. Healthcare preserves
+current spelling-union semantics: rejection requires both signals to reject
+under every spelling that nominated the case. No scores, thresholds or labels
+were tuned after the cached result.
+
+The seven known irrelevant chart removals persist, and no known direct top-ten
+case is lost. However, **Skrmetti (`2024-019`) is lost for healthcare**, failing
+the no-lost-direct gate. Its original hybrid score is 0.307721. Under `healthcare`,
+the dual-source score is 0.295803 and the fresh reranker logit is -7.251252;
+under `health care`, they are 0.274407 and -8.855925. Both signals reject a case
+already reviewed as directly concerning access to medical treatment. Agreement
+does not protect against this shared error.
+
+Across query/case memberships, the rule removes 7 irrelevant, 6 related,
+2 unjudged and 1 directly relevant chart results. Both healthcare spellings
+remove the same two cases; differing historical label coverage makes the count
+for `health care` unjudged rather than direct. That is missing annotation, not
+evidence that this spelling is safe. All 16 removals are recorded separately.
+Local offline p95 is about 3.21 seconds, not a VPS or optimized runtime measure.
+
+**Decision: reject runtime adoption.** The cached diagnostic was promising but
+incomplete. Preserve it alongside the fresh failure rather than overwriting its
+findings. No production/search code, thresholds or deployment changed. The
+remaining obstacle is contextual relevance discrimination, not simply source
+completeness or requiring agreement between these two existing signals.
+
+```sh
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/validate_court_agreement_filter.py
+```
+
+The command refuses an existing output directory; choose a new `--output` to
+rerun. Inputs/protocol are recorded before scoring. Source-verified contexts,
+logits, rankings and all removals remain under ignored
+`artifacts/court-agreement-fresh-v1`; tracked results are in
+`data/evaluation/court-agreement-fresh-summary.json`. Three existing hybrid
+unit tests and `git diff --check` pass; the relevance gate intentionally fails.
+
+### Stronger reranker pilot: ordering improves, filter gate fails (2026-11-09)
+
+Tested the publisher's quantized ONNX `cross-encoder/ms-marco-MiniLM-L12-v2`
+against the existing L2 model. The pinned revision and downloaded file hashes
+are in `data/manifests/court-reranker-l12-model.json`. The publisher's general
+retrieval comparison motivates testing L12, not an assumption of legal-topic
+accuracy: <https://www.sbert.net/docs/pretrained-models/ce-msmarco.html>.
+Model source: <https://huggingface.co/cross-encoder/ms-marco-MiniLM-L12-v2>.
+
+Before scoring, fixed four query strings: birth control, contraception,
+healthcare and capital punishment. Included every existing direct/irrelevant
+judgment for these topics from v3 plus the membership review: 38 query/case
+pairs (25 direct, 13 irrelevant). Related cases are excluded. Some labeled
+cases are deliberately supplied even if retrieval misses them, to isolate the
+reranker. This is not a retrieval-recall evaluation. Healthcare has no labeled
+irrelevant examples in this set, so it contributes no positive/negative
+ordering comparisons. Aliases share cases; these are not independent samples.
+
+Both models receive identical freshly reconstructed, checksum-verified case
+name/180-token overview/180-token best-passage contexts. All contexts fit both
+512-token limits. Acceptance is the existing predeclared logit >= 0 rule;
+ordering is measured separately, with no threshold sweep or prompt revision.
+
+| Diagnostic | L2 | L12 |
+| --- | ---: | ---: |
+| Relevant-over-irrelevant pair orderings | 73/88 | 86/88 |
+| Rejected direct examples at logit 0 | 22/25 | 19/25 |
+| Accepted irrelevant examples at logit 0 | 0/13 | 0/13 |
+
+L12 improves ordering, particularly for birth control (14/24 → 23/24), but
+still rejects Little Sisters for birth control (-7.743) and contraception
+(-0.987), and Skrmetti for healthcare (-5.514). Grants Pass is rejected for
+capital punishment (-8.279). These logits are not calibrated probabilities;
+absolute scores across models are not directly comparable. The positive/negative
+ordering result is diagnostic and does not establish full-list ranking gains.
+Batch-sensitive quantized inference may also change logits from earlier runs.
+
+**Decision: no integration.** The stronger model demonstrates a limited ordering
+improvement but fails the small filter gate. Do not lower its cutoff on these
+same examples or infer that all stronger models fail. No server-cost evaluation
+is warranted for this rejected acceptance rule. Production remains unchanged.
+
+```sh
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/test_stronger_court_reranker.py
+```
+
+Choose a fresh `--output` directory for reruns. Download the four manifest-listed
+files from the pinned Hugging Face revision into ignored
+`artifacts/court-reranker-l12-model`, mapping `onnx/model_quint8_avx2.onnx` to
+`model.onnx`, and copy the tracked manifest there as `manifest.json`.
+The model runner verifies every file checksum. The tracked result is
+`data/evaluation/court-reranker-l12-pilot.json`; protocol and exact model inputs
+are under ignored `artifacts/court-reranker-l12-pilot`. No runtime dependencies,
+serving code, production artifacts, or remote LLM calls were added.
+
+### L12 display-only ordering validation (2026-11-09)
+
+This follow-up tests the promising small-pilot ordering result without any
+acceptance cutoff. Rerank the current nominated cases by L12 raw logit, with
+case ID as tie-breaker; retain original hybrid scores and original chart inputs.
+Healthcare merges its existing spelling-specific nominations by maximum logit.
+No candidate expansion, filtering, score blending or weight search is used.
+
+All 24 query strings are evaluated against v3 plus the membership review.
+Contexts from the fresh agreement run are verified against the current source
+hashes and nominated case sets, and checked for truncation with the L12
+tokenizer. The model checksum and input hashes are recorded before inference.
+Known direct top-ten retention, newly introduced known irrelevant top-ten cases,
+and removal of known irrelevant top-ten cases are separate gates. Related and
+unjudged cases are not counted as irrelevant. Losing an individual known direct
+top-ten case is reported even when another known direct case replaces it.
+
+```sh
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/evaluate_court_l12_ordering.py
+```
+
+Choose a fresh `--output` directory for reruns. Full baseline/reranked lists and
+original chart inputs stay in ignored `artifacts/court-l12-ordering-v1`.
+The tracked report is `data/evaluation/court-l12-ordering-summary.json`.
+This is an offline test: no serving paths or production bundles are changed.
+
+**Result: reject display adoption.** Across 24 top-ten lists, known direct
+memberships fall from 87 to 44. Twenty-one query strings lose at least one
+previous known direct top-ten case. Known irrelevant top-ten memberships fall
+from four to one, but the remaining one is newly introduced for contraception
+(`2008-079`), so both direct-retention and no-new-irrelevant gates fail.
+These are overlapping query/case memberships under partial labels, not overall
+precision estimates. Unjudged replacements are not assumed irrelevant.
+
+For birth control, Little Sisters moves from rank 9 to 35 (known direct
+count 6 → 3); for contraception it moves 4 → 6 (direct count remains six).
+Gun control's known direct count falls 5 → 2, and death penalty 4 → 0.
+Gay marriage improves 3 → 4. For abortion, direct count remains ten but seven
+individual known direct top-ten cases are replaced; this is separately reported
+by the strict retention gate rather than described as seven fewer relevant
+results. Skrmetti falls from rank 46 to 116 for healthcare. Grants Pass is not
+nominated for capital punishment in this unchanged baseline, so this trial
+cannot assess its ranking there.
+
+The small pair-ordering pilot did not establish useful ordering across complete
+candidate lists. Production ordering, chart membership and scores remain
+unchanged. No cutoff adjustment, blend, new exceptions or further model sweep
+was performed. Existing hybrid unit tests (3), script compilation and diff
+whitespace checks pass; the relevance gates intentionally fail.

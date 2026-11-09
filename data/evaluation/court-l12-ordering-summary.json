@@ -1,0 +1,2281 @@
+{
+  "protocol": {
+    "rule": "Rerank all currently nominated cases by L12 raw logit, case_id tie break. No logit cutoff, score blending, candidate expansion or filtering. Healthcare merges its existing spelling-specific nominations by maximum logit. Chart uses original baseline hits and scores, never the reranked list.",
+    "gate": "No loss of known direct top-ten cases; no new known irrelevant top-ten cases; at least one known irrelevant top-ten removal. Report replacements and rank movements separately; no threshold tuning.",
+    "provenance": {
+      "artifacts/scdb-issues.sqlite": "38cde989a39db72a0607fb45e14cd9cc9a73a57e37b892889be3e9bf8171321f",
+      "artifacts/semantic-scdb-issues/manifest.json": "d7fd81ede7487e23b8d484c4f6dd3a8be6a4da0675c3d7d703812dada460ce41",
+      "artifacts/court-reranker-l12-model/manifest.json": "36951e17875777b29a926fb1e071ec9d2e0ac9bdc4eeefce7e89ba424ed8d9f1",
+      "artifacts/court-agreement-fresh-v1/evidence.json": "d5ba8b64a318053ac068817da2873dc717720f1d17beb41cd528cf04350459a8",
+      "artifacts/court-agreement-fresh-v1/protocol.json": "4408f76d5233cf7b9a08fd8ecba2e9433d384bb0b1892dd771d284c67b948a46",
+      "data/evaluation/court-search-benchmark-v3.json": "555f570a7f284f2aebf970fdcc85d34135ce7db5c44f37a08dcec1eb0b244094",
+      "data/evaluation/court-dual-source-membership-review.json": "5e1267b38bbcd3c61b484b783362858820d1e0e2c5b2f4dd208d9b18b8f7a929",
+      "/Users/jackson/GitHub/scotus-v-public/scripts/evaluate_court_l12_ordering.py": "9d6fd2ad45af36ffe915cd762b5beab4d90b6fcb7a1962d1ea09db34305b2901",
+      "scvpublic/hybrid.py": "7fb481a31ddce8be615afa060fddf1f092caa6cc443b917b0eb036f744613b40"
+    }
+  },
+  "query_count": 24,
+  "gate": {
+    "no_lost_direct_top10": false,
+    "no_new_irrelevant_top10": false,
+    "removes_known_irrelevant_top10": true,
+    "chart_unchanged": true
+  },
+  "passes": false,
+  "queries": {
+    "birth control": {
+      "candidates": 196,
+      "chart_unchanged": true,
+      "baseline_direct_top10": 6,
+      "candidate_direct_top10": 3,
+      "baseline_irrelevant_top10": 0,
+      "candidate_irrelevant_top10": 0,
+      "lost_direct_top10": [
+        "1976-126",
+        "2013-070",
+        "2019-060"
+      ],
+      "gained_direct_top10": [],
+      "new_irrelevant_top10": [],
+      "removed_irrelevant_top10": [],
+      "added_unjudged_top10": [
+        "1978-024",
+        "1982-112",
+        "1985-106",
+        "1987-019",
+        "1992-114",
+        "1999-088"
+      ],
+      "judged_rank_movements": [
+        {
+          "case_id": "1964-121",
+          "label": "direct",
+          "before": 3,
+          "after": 7
+        },
+        {
+          "case_id": "1971-079",
+          "label": "direct",
+          "before": 1,
+          "after": 10
+        },
+        {
+          "case_id": "1976-126",
+          "label": "direct",
+          "before": 2,
+          "after": 33
+        },
+        {
+          "case_id": "1982-135",
+          "label": "direct",
+          "before": 4,
+          "after": 3
+        },
+        {
+          "case_id": "2000-070",
+          "label": "irrelevant",
+          "before": 33,
+          "after": 61
+        },
+        {
+          "case_id": "2008-079",
+          "label": "irrelevant",
+          "before": 14,
+          "after": 126
+        },
+        {
+          "case_id": "2013-030",
+          "label": "irrelevant",
+          "before": 143,
+          "after": 139
+        },
+        {
+          "case_id": "2013-070",
+          "label": "direct",
+          "before": 5,
+          "after": 100
+        },
+        {
+          "case_id": "2016-005",
+          "label": "irrelevant",
+          "before": 20,
+          "after": 133
+        },
+        {
+          "case_id": "2019-060",
+          "label": "direct",
+          "before": 9,
+          "after": 35
+        },
+        {
+          "case_id": "2021-019",
+          "label": "related",
+          "before": 10,
+          "after": 39
+        }
+      ]
+    },
+    "gay marriage": {
+      "candidates": 162,
+      "chart_unchanged": true,
+      "baseline_direct_top10": 3,
+      "candidate_direct_top10": 4,
+      "baseline_irrelevant_top10": 2,
+      "candidate_irrelevant_top10": 0,
+      "lost_direct_top10": [],
+      "gained_direct_top10": [
+        "2012-077"
+      ],
+      "new_irrelevant_top10": [],
+      "removed_irrelevant_top10": [
+        "1970-053",
+        "1977-007"
+      ],
+      "added_unjudged_top10": [
+        "1985-144",
+        "2019-004"
+      ],
+      "judged_rank_movements": [
+        {
+          "case_id": "1970-053",
+          "label": "irrelevant",
+          "before": 8,
+          "after": 15
+        },
+        {
+          "case_id": "1974-147",
+          "label": "irrelevant",
+          "before": 24,
+          "after": 54
+        },
+        {
+          "case_id": "1977-007",
+          "label": "irrelevant",
+          "before": 4,
+          "after": 49
+        },
+        {
+          "case_id": "2009-090",
+          "label": "related",
+          "before": 21,
+          "after": 27
+        },
+        {
+          "case_id": "2012-077",
+          "label": "direct",
+          "before": 14,
+          "after": 3
+        },
+        {
+          "case_id": "2012-079",
+          "label": "direct",
+          "before": 2,
+          "after": 5
+        },
+        {
+          "case_id": "2014-070",
+          "label": "direct",
+          "before": 1,
+          "after": 1
+        },
+        {
+          "case_id": "2017-020",
+          "label": "direct",
+          "before": 3,
+          "after": 2
+        },
+        {
+          "case_id": "2020-015",
+          "label": "related",
+          "before": 25,
+          "after": 57
+        },
+        {
+          "case_id": "2021-019",
+          "label": "related",
+          "before": 19,
+          "after": 95
+        },
+        {
+          "case_id": "2024-019",
+          "label": "related",
+          "before": 23,
+          "after": 13
+        }
+      ]
+    },
+    "gun control": {
+      "candidates": 164,
+      "chart_unchanged": true,
+      "baseline_direct_top10": 5,
+      "candidate_direct_top10": 2,
+      "baseline_irrelevant_top10": 0,
+      "candidate_irrelevant_top10": 0,
+      "lost_direct_top10": [
+        "2007-071",
+        "2021-013",
+        "2023-012"
+      ],
+      "gained_direct_top10": [],
+      "new_irrelevant_top10": [],
+      "removed_irrelevant_top10": [],
+      "added_unjudged_top10": [
+        "1971-031",
+        "1971-105",
+        "1976-119",
+        "1982-032",
+        "2008-024",
+        "2015-044",
+        "2025-042"
+      ],
+      "judged_rank_movements": [
+        {
+          "case_id": "1960-138",
+          "label": "irrelevant",
+          "before": 43,
+          "after": 45
+        },
+        {
+          "case_id": "1975-021",
+          "label": "direct",
+          "before": 2,
+          "after": 1
+        },
+        {
+          "case_id": "1985-047",
+          "label": "irrelevant",
+          "before": 83,
+          "after": 77
+        },
+        {
+          "case_id": "1985-157",
+          "label": "irrelevant",
+          "before": 140,
+          "after": 111
+        },
+        {
+          "case_id": "1997-016",
+          "label": "direct",
+          "before": 85,
+          "after": 35
+        },
+        {
+          "case_id": "2007-071",
+          "label": "direct",
+          "before": 4,
+          "after": 12
+        },
+        {
+          "case_id": "2013-061",
+          "label": "direct",
+          "before": 16,
+          "after": 39
+        },
+        {
+          "case_id": "2021-013",
+          "label": "direct",
+          "before": 7,
+          "after": 19
+        },
+        {
+          "case_id": "2021-019",
+          "label": "irrelevant",
+          "before": 74,
+          "after": 90
+        },
+        {
+          "case_id": "2023-012",
+          "label": "direct",
+          "before": 3,
+          "after": 88
+        },
+        {
+          "case_id": "2024-005",
+          "label": "direct",
+          "before": 1,
+          "after": 3
+        },
+        {
+          "case_id": "2024-019",
+          "label": "irrelevant",
+          "before": 81,
+          "after": 95
+        },
+        {
+          "case_id": "2025-007",
+          "label": "related",
+          "before": 69,
+          "after": 32
+        }
+      ]
+    },
+    "abortion": {
+      "candidates": 135,
+      "chart_unchanged": true,
+      "baseline_direct_top10": 10,
+      "candidate_direct_top10": 10,
+      "baseline_irrelevant_top10": 0,
+      "candidate_irrelevant_top10": 0,
+      "lost_direct_top10": [
+        "1975-170",
+        "1976-157",
+        "1982-112",
+        "1985-106",
+        "1990-077",
+        "2005-020",
+        "2021-019"
+      ],
+      "gained_direct_top10": [
+        "1970-088",
+        "1978-024",
+        "1989-133",
+        "1992-018",
+        "2002-021",
+        "2005-037",
+        "2015-048"
+      ],
+      "new_irrelevant_top10": [],
+      "removed_irrelevant_top10": [],
+      "added_unjudged_top10": [],
+      "judged_rank_movements": [
+        {
+          "case_id": "1960-130",
+          "label": "related",
+          "before": 63,
+          "after": 113
+        },
+        {
+          "case_id": "1964-121",
+          "label": "related",
+          "before": 50,
+          "after": 57
+        },
+        {
+          "case_id": "1967-117",
+          "label": "irrelevant",
+          "before": 53,
+          "after": 68
+        },
+        {
+          "case_id": "1970-088",
+          "label": "direct",
+          "before": 21,
+          "after": 10
+        },
+        {
+          "case_id": "1971-079",
+          "label": "related",
+          "before": 73,
+          "after": 63
+        },
+        {
+          "case_id": "1972-048",
+          "label": "direct",
+          "before": 1,
+          "after": 6
+        },
+        {
+          "case_id": "1972-049",
+          "label": "direct",
+          "before": 12,
+          "after": 12
+        },
+        {
+          "case_id": "1973-129",
+          "label": "direct",
+          "before": 55,
+          "after": 13
+        },
+        {
+          "case_id": "1974-067",
+          "label": "irrelevant",
+          "before": 56,
+          "after": 67
+        },
+        {
+          "case_id": "1974-118",
+          "label": "direct",
+          "before": 70,
+          "after": 42
+        },
+        {
+          "case_id": "1975-004",
+          "label": "direct",
+          "before": 26,
+          "after": 30
+        },
+        {
+          "case_id": "1975-164",
+          "label": "irrelevant",
+          "before": 94,
+          "after": 69
+        },
+        {
+          "case_id": "1975-170",
+          "label": "direct",
+          "before": 6,
+          "after": 21
+        },
+        {
+          "case_id": "1975-171",
+          "label": "direct",
+          "before": 54,
+          "after": 46
+        },
+        {
+          "case_id": "1975-172",
+          "label": "direct",
+          "before": 19,
+          "after": 22
+        },
+        {
+          "case_id": "1976-020",
+          "label": "irrelevant",
+          "before": 93,
+          "after": 82
+        },
+        {
+          "case_id": "1976-037",
+          "label": "direct",
+          "before": 27,
+          "after": 34
+        },
+        {
+          "case_id": "1976-091",
+          "label": "irrelevant",
+          "before": 79,
+          "after": 65
+        },
+        {
+          "case_id": "1976-126",
+          "label": "related",
+          "before": 40,
+          "after": 78
+        },
+        {
+          "case_id": "1976-154",
+          "label": "direct",
+          "before": 41,
+          "after": 50
+        },
+        {
+          "case_id": "1976-155",
+          "label": "direct",
+          "before": 13,
+          "after": 29
+        },
+        {
+          "case_id": "1976-157",
+          "label": "direct",
+          "before": 10,
+          "after": 45
+        },
+        {
+          "case_id": "1977-014",
+          "label": "irrelevant",
+          "before": 81,
+          "after": 73
+        },
+        {
+          "case_id": "1977-056",
+          "label": "irrelevant",
+          "before": 92,
+          "after": 61
+        },
+        {
+          "case_id": "1978-024",
+          "label": "direct",
+          "before": 20,
+          "after": 2
+        },
+        {
+          "case_id": "1978-056",
+          "label": "direct",
+          "before": 49,
+          "after": 41
+        },
+        {
+          "case_id": "1978-083",
+          "label": "irrelevant",
+          "before": 51,
+          "after": 86
+        },
+        {
+          "case_id": "1978-129",
+          "label": "irrelevant",
+          "before": 78,
+          "after": 123
+        },
+        {
+          "case_id": "1978-158",
+          "label": "direct",
+          "before": 14,
+          "after": 15
+        },
+        {
+          "case_id": "1979-148",
+          "label": "direct",
+          "before": 35,
+          "after": 43
+        },
+        {
+          "case_id": "1979-149",
+          "label": "direct",
+          "before": 58,
+          "after": 19
+        },
+        {
+          "case_id": "1980-057",
+          "label": "direct",
+          "before": 23,
+          "after": 14
+        },
+        {
+          "case_id": "1980-059",
+          "label": "irrelevant",
+          "before": 75,
+          "after": 62
+        },
+        {
+          "case_id": "1981-069",
+          "label": "irrelevant",
+          "before": 87,
+          "after": 92
+        },
+        {
+          "case_id": "1982-112",
+          "label": "direct",
+          "before": 7,
+          "after": 31
+        },
+        {
+          "case_id": "1982-113",
+          "label": "direct",
+          "before": 15,
+          "after": 27
+        },
+        {
+          "case_id": "1982-114",
+          "label": "direct",
+          "before": 29,
+          "after": 24
+        },
+        {
+          "case_id": "1982-122",
+          "label": "irrelevant",
+          "before": 84,
+          "after": 83
+        },
+        {
+          "case_id": "1982-135",
+          "label": "related",
+          "before": 85,
+          "after": 117
+        },
+        {
+          "case_id": "1982-142",
+          "label": "irrelevant",
+          "before": 74,
+          "after": 66
+        },
+        {
+          "case_id": "1983-081",
+          "label": "irrelevant",
+          "before": 91,
+          "after": 90
+        },
+        {
+          "case_id": "1985-077",
+          "label": "direct",
+          "before": 30,
+          "after": 20
+        },
+        {
+          "case_id": "1985-106",
+          "label": "direct",
+          "before": 8,
+          "after": 36
+        },
+        {
+          "case_id": "1986-072",
+          "label": "irrelevant",
+          "before": 88,
+          "after": 98
+        },
+        {
+          "case_id": "1987-148",
+          "label": "direct",
+          "before": 69,
+          "after": 60
+        },
+        {
+          "case_id": "1988-150",
+          "label": "direct",
+          "before": 11,
+          "after": 17
+        },
+        {
+          "case_id": "1989-133",
+          "label": "direct",
+          "before": 18,
+          "after": 5
+        },
+        {
+          "case_id": "1989-134",
+          "label": "direct",
+          "before": 22,
+          "after": 18
+        },
+        {
+          "case_id": "1990-048",
+          "label": "irrelevant",
+          "before": 72,
+          "after": 76
+        },
+        {
+          "case_id": "1990-077",
+          "label": "direct",
+          "before": 4,
+          "after": 35
+        },
+        {
+          "case_id": "1991-039",
+          "label": "irrelevant",
+          "before": 42,
+          "after": 56
+        },
+        {
+          "case_id": "1991-117",
+          "label": "direct",
+          "before": 31,
+          "after": 26
+        },
+        {
+          "case_id": "1992-018",
+          "label": "direct",
+          "before": 24,
+          "after": 9
+        },
+        {
+          "case_id": "1993-016",
+          "label": "direct",
+          "before": 38,
+          "after": 37
+        },
+        {
+          "case_id": "1993-091",
+          "label": "direct",
+          "before": 59,
+          "after": 16
+        },
+        {
+          "case_id": "1995-006",
+          "label": "irrelevant",
+          "before": 80,
+          "after": 110
+        },
+        {
+          "case_id": "1995-032",
+          "label": "direct",
+          "before": 77,
+          "after": 33
+        },
+        {
+          "case_id": "1995-073",
+          "label": "direct",
+          "before": 52,
+          "after": 38
+        },
+        {
+          "case_id": "1996-091",
+          "label": "irrelevant",
+          "before": 57,
+          "after": 59
+        },
+        {
+          "case_id": "1996-092",
+          "label": "irrelevant",
+          "before": 65,
+          "after": 55
+        },
+        {
+          "case_id": "1997-055",
+          "label": "irrelevant",
+          "before": 66,
+          "after": 72
+        },
+        {
+          "case_id": "1997-098",
+          "label": "irrelevant",
+          "before": 62,
+          "after": 93
+        },
+        {
+          "case_id": "1999-088",
+          "label": "direct",
+          "before": 5,
+          "after": 1
+        },
+        {
+          "case_id": "2000-070",
+          "label": "irrelevant",
+          "before": 76,
+          "after": 102
+        },
+        {
+          "case_id": "2002-021",
+          "label": "direct",
+          "before": 47,
+          "after": 8
+        },
+        {
+          "case_id": "2004-008",
+          "label": "irrelevant",
+          "before": 90,
+          "after": 122
+        },
+        {
+          "case_id": "2004-024",
+          "label": "irrelevant",
+          "before": 25,
+          "after": 52
+        },
+        {
+          "case_id": "2005-020",
+          "label": "direct",
+          "before": 9,
+          "after": 23
+        },
+        {
+          "case_id": "2005-037",
+          "label": "direct",
+          "before": 37,
+          "after": 4
+        },
+        {
+          "case_id": "2006-031",
+          "label": "direct",
+          "before": 3,
+          "after": 7
+        },
+        {
+          "case_id": "2007-068",
+          "label": "irrelevant",
+          "before": 48,
+          "after": 64
+        },
+        {
+          "case_id": "2011-054",
+          "label": "irrelevant",
+          "before": 86,
+          "after": 70
+        },
+        {
+          "case_id": "2012-065",
+          "label": "irrelevant",
+          "before": 43,
+          "after": 51
+        },
+        {
+          "case_id": "2012-077",
+          "label": "irrelevant",
+          "before": 83,
+          "after": 101
+        },
+        {
+          "case_id": "2013-068",
+          "label": "direct",
+          "before": 36,
+          "after": 28
+        },
+        {
+          "case_id": "2013-070",
+          "label": "related",
+          "before": 68,
+          "after": 84
+        },
+        {
+          "case_id": "2015-048",
+          "label": "direct",
+          "before": 17,
+          "after": 3
+        },
+        {
+          "case_id": "2016-015",
+          "label": "irrelevant",
+          "before": 67,
+          "after": 96
+        },
+        {
+          "case_id": "2017-041",
+          "label": "direct",
+          "before": 45,
+          "after": 44
+        },
+        {
+          "case_id": "2018-078",
+          "label": "direct",
+          "before": 28,
+          "after": 47
+        },
+        {
+          "case_id": "2019-040",
+          "label": "direct",
+          "before": 16,
+          "after": 40
+        },
+        {
+          "case_id": "2019-063",
+          "label": "irrelevant",
+          "before": 60,
+          "after": 91
+        },
+        {
+          "case_id": "2020-008",
+          "label": "irrelevant",
+          "before": 89,
+          "after": 97
+        },
+        {
+          "case_id": "2021-006",
+          "label": "direct",
+          "before": 61,
+          "after": 48
+        },
+        {
+          "case_id": "2021-019",
+          "label": "direct",
+          "before": 2,
+          "after": 11
+        },
+        {
+          "case_id": "2021-033",
+          "label": "direct",
+          "before": 33,
+          "after": 39
+        },
+        {
+          "case_id": "2023-049",
+          "label": "direct",
+          "before": 32,
+          "after": 49
+        },
+        {
+          "case_id": "2024-015",
+          "label": "irrelevant",
+          "before": 64,
+          "after": 95
+        },
+        {
+          "case_id": "2024-019",
+          "label": "irrelevant",
+          "before": 39,
+          "after": 71
+        },
+        {
+          "case_id": "2024-029",
+          "label": "irrelevant",
+          "before": 95,
+          "after": 99
+        },
+        {
+          "case_id": "2024-054",
+          "label": "direct",
+          "before": 34,
+          "after": 80
+        },
+        {
+          "case_id": "2024-058",
+          "label": "irrelevant",
+          "before": 71,
+          "after": 74
+        },
+        {
+          "case_id": "2025-013",
+          "label": "irrelevant",
+          "before": 82,
+          "after": 79
+        },
+        {
+          "case_id": "2025-025",
+          "label": "direct",
+          "before": 44,
+          "after": 85
+        },
+        {
+          "case_id": "2025-061",
+          "label": "irrelevant",
+          "before": 46,
+          "after": 103
+        }
+      ]
+    },
+    "voting rights": {
+      "candidates": 155,
+      "chart_unchanged": true,
+      "baseline_direct_top10": 4,
+      "candidate_direct_top10": 1,
+      "baseline_irrelevant_top10": 0,
+      "candidate_irrelevant_top10": 0,
+      "lost_direct_top10": [
+        "1965-064",
+        "2020-046",
+        "2025-014"
+      ],
+      "gained_direct_top10": [],
+      "new_irrelevant_top10": [],
+      "removed_irrelevant_top10": [],
+      "added_unjudged_top10": [
+        "1968-115",
+        "1972-167",
+        "1977-045",
+        "1981-023",
+        "1990-095",
+        "1991-030",
+        "1998-016"
+      ],
+      "judged_rank_movements": [
+        {
+          "case_id": "1959-081",
+          "label": "direct",
+          "before": 131,
+          "after": 22
+        },
+        {
+          "case_id": "1959-105",
+          "label": "direct",
+          "before": 133,
+          "after": 32
+        },
+        {
+          "case_id": "1965-064",
+          "label": "direct",
+          "before": 8,
+          "after": 14
+        },
+        {
+          "case_id": "2012-073",
+          "label": "direct",
+          "before": 2,
+          "after": 1
+        },
+        {
+          "case_id": "2020-046",
+          "label": "direct",
+          "before": 4,
+          "after": 29
+        },
+        {
+          "case_id": "2021-019",
+          "label": "irrelevant",
+          "before": 114,
+          "after": 133
+        },
+        {
+          "case_id": "2025-014",
+          "label": "direct",
+          "before": 1,
+          "after": 12
+        }
+      ]
+    },
+    "religious freedom": {
+      "candidates": 124,
+      "chart_unchanged": true,
+      "baseline_direct_top10": 3,
+      "candidate_direct_top10": 1,
+      "baseline_irrelevant_top10": 0,
+      "candidate_irrelevant_top10": 0,
+      "lost_direct_top10": [
+        "1969-087",
+        "2021-061"
+      ],
+      "gained_direct_top10": [],
+      "new_irrelevant_top10": [],
+      "removed_irrelevant_top10": [],
+      "added_unjudged_top10": [
+        "1962-150",
+        "1981-014",
+        "1996-087",
+        "2005-027",
+        "2010-036",
+        "2019-054",
+        "2020-003"
+      ],
+      "judged_rank_movements": [
+        {
+          "case_id": "1969-087",
+          "label": "direct",
+          "before": 1,
+          "after": 23
+        },
+        {
+          "case_id": "1987-070",
+          "label": "direct",
+          "before": 119,
+          "after": 57
+        },
+        {
+          "case_id": "1992-098",
+          "label": "direct",
+          "before": 118,
+          "after": 89
+        },
+        {
+          "case_id": "2013-070",
+          "label": "direct",
+          "before": 3,
+          "after": 1
+        },
+        {
+          "case_id": "2021-061",
+          "label": "direct",
+          "before": 4,
+          "after": 110
+        }
+      ]
+    },
+    "free speech": {
+      "candidates": 154,
+      "chart_unchanged": true,
+      "baseline_direct_top10": 3,
+      "candidate_direct_top10": 1,
+      "baseline_irrelevant_top10": 0,
+      "candidate_irrelevant_top10": 0,
+      "lost_direct_top10": [
+        "2014-058",
+        "2023-062"
+      ],
+      "gained_direct_top10": [],
+      "new_irrelevant_top10": [],
+      "removed_irrelevant_top10": [],
+      "added_unjudged_top10": [
+        "1951-084",
+        "1972-075",
+        "1988-020",
+        "2001-038",
+        "2021-039",
+        "2022-019",
+        "2025-028"
+      ],
+      "judged_rank_movements": [
+        {
+          "case_id": "1950-089",
+          "label": "direct",
+          "before": 144,
+          "after": 134
+        },
+        {
+          "case_id": "1970-145",
+          "label": "direct",
+          "before": 143,
+          "after": 154
+        },
+        {
+          "case_id": "2014-058",
+          "label": "direct",
+          "before": 1,
+          "after": 21
+        },
+        {
+          "case_id": "2023-062",
+          "label": "direct",
+          "before": 2,
+          "after": 25
+        },
+        {
+          "case_id": "2024-029",
+          "label": "direct",
+          "before": 3,
+          "after": 1
+        }
+      ]
+    },
+    "death penalty": {
+      "candidates": 139,
+      "chart_unchanged": true,
+      "baseline_direct_top10": 4,
+      "candidate_direct_top10": 0,
+      "baseline_irrelevant_top10": 0,
+      "candidate_irrelevant_top10": 0,
+      "lost_direct_top10": [
+        "1981-172",
+        "1986-139",
+        "2004-024",
+        "2007-068"
+      ],
+      "gained_direct_top10": [],
+      "new_irrelevant_top10": [],
+      "removed_irrelevant_top10": [],
+      "added_unjudged_top10": [
+        "1971-170",
+        "1971-180",
+        "1975-177",
+        "1976-147",
+        "1981-034",
+        "1982-128",
+        "1984-124",
+        "1993-095",
+        "2002-012"
+      ],
+      "judged_rank_movements": [
+        {
+          "case_id": "1975-030",
+          "label": "irrelevant",
+          "before": 137,
+          "after": 134
+        },
+        {
+          "case_id": "1981-172",
+          "label": "direct",
+          "before": 3,
+          "after": 47
+        },
+        {
+          "case_id": "1986-139",
+          "label": "direct",
+          "before": 4,
+          "after": 13
+        },
+        {
+          "case_id": "1990-005",
+          "label": "irrelevant",
+          "before": 136,
+          "after": 132
+        },
+        {
+          "case_id": "2004-024",
+          "label": "direct",
+          "before": 2,
+          "after": 87
+        },
+        {
+          "case_id": "2007-068",
+          "label": "direct",
+          "before": 1,
+          "after": 27
+        },
+        {
+          "case_id": "2021-019",
+          "label": "irrelevant",
+          "before": 97,
+          "after": 130
+        },
+        {
+          "case_id": "2023-055",
+          "label": "direct",
+          "before": 113,
+          "after": 128
+        }
+      ]
+    },
+    "immigration": {
+      "candidates": 147,
+      "chart_unchanged": true,
+      "baseline_direct_top10": 3,
+      "candidate_direct_top10": 0,
+      "baseline_irrelevant_top10": 0,
+      "candidate_irrelevant_top10": 0,
+      "lost_direct_top10": [
+        "2011-075",
+        "2020-058",
+        "2025-055"
+      ],
+      "gained_direct_top10": [],
+      "new_irrelevant_top10": [],
+      "removed_irrelevant_top10": [],
+      "added_unjudged_top10": [
+        "1955-019",
+        "1963-030",
+        "1984-094",
+        "1991-015",
+        "1998-049",
+        "2011-013",
+        "2011-042",
+        "2013-056",
+        "2017-003"
+      ],
+      "judged_rank_movements": [
+        {
+          "case_id": "1984-145",
+          "label": "direct",
+          "before": 142,
+          "after": 63
+        },
+        {
+          "case_id": "2002-003",
+          "label": "direct",
+          "before": 137,
+          "after": 57
+        },
+        {
+          "case_id": "2011-075",
+          "label": "direct",
+          "before": 1,
+          "after": 87
+        },
+        {
+          "case_id": "2020-058",
+          "label": "direct",
+          "before": 4,
+          "after": 107
+        },
+        {
+          "case_id": "2025-055",
+          "label": "direct",
+          "before": 2,
+          "after": 99
+        }
+      ]
+    },
+    "racial discrimination": {
+      "candidates": 156,
+      "chart_unchanged": true,
+      "baseline_direct_top10": 3,
+      "candidate_direct_top10": 0,
+      "baseline_irrelevant_top10": 0,
+      "candidate_irrelevant_top10": 0,
+      "lost_direct_top10": [
+        "1975-154",
+        "1985-085",
+        "2006-073"
+      ],
+      "gained_direct_top10": [],
+      "new_irrelevant_top10": [],
+      "removed_irrelevant_top10": [],
+      "added_unjudged_top10": [
+        "1952-091",
+        "1973-048",
+        "1975-103",
+        "1975-150",
+        "1976-112",
+        "1980-041",
+        "1981-159",
+        "1986-094",
+        "1986-132",
+        "1991-095"
+      ],
+      "judged_rank_movements": [
+        {
+          "case_id": "1949-065",
+          "label": "direct",
+          "before": 155,
+          "after": 121
+        },
+        {
+          "case_id": "1965-035",
+          "label": "direct",
+          "before": 154,
+          "after": 107
+        },
+        {
+          "case_id": "1975-154",
+          "label": "direct",
+          "before": 2,
+          "after": 11
+        },
+        {
+          "case_id": "1985-085",
+          "label": "direct",
+          "before": 1,
+          "after": 40
+        },
+        {
+          "case_id": "2006-073",
+          "label": "direct",
+          "before": 4,
+          "after": 57
+        },
+        {
+          "case_id": "2021-021",
+          "label": "related",
+          "before": 83,
+          "after": 127
+        }
+      ]
+    },
+    "labor unions": {
+      "candidates": 166,
+      "chart_unchanged": true,
+      "baseline_direct_top10": 3,
+      "candidate_direct_top10": 0,
+      "baseline_irrelevant_top10": 0,
+      "candidate_irrelevant_top10": 0,
+      "lost_direct_top10": [
+        "1956-044",
+        "1956-079",
+        "1980-127"
+      ],
+      "gained_direct_top10": [],
+      "new_irrelevant_top10": [],
+      "removed_irrelevant_top10": [],
+      "added_unjudged_top10": [
+        "1955-025",
+        "1960-024",
+        "1960-113",
+        "1965-025",
+        "1970-132",
+        "1972-020",
+        "1973-026",
+        "2006-059",
+        "2008-041"
+      ],
+      "judged_rank_movements": [
+        {
+          "case_id": "1956-044",
+          "label": "direct",
+          "before": 2,
+          "after": 53
+        },
+        {
+          "case_id": "1956-079",
+          "label": "direct",
+          "before": 1,
+          "after": 13
+        },
+        {
+          "case_id": "1962-023",
+          "label": "direct",
+          "before": 163,
+          "after": 165
+        },
+        {
+          "case_id": "1974-139",
+          "label": "direct",
+          "before": 158,
+          "after": 18
+        },
+        {
+          "case_id": "1980-127",
+          "label": "direct",
+          "before": 3,
+          "after": 54
+        },
+        {
+          "case_id": "2017-045",
+          "label": "direct",
+          "before": 55,
+          "after": 112
+        },
+        {
+          "case_id": "2022-030",
+          "label": "direct",
+          "before": 108,
+          "after": 153
+        }
+      ]
+    },
+    "campaign finance": {
+      "candidates": 167,
+      "chart_unchanged": true,
+      "baseline_direct_top10": 3,
+      "candidate_direct_top10": 1,
+      "baseline_irrelevant_top10": 0,
+      "candidate_irrelevant_top10": 0,
+      "lost_direct_top10": [
+        "1999-026",
+        "2021-040"
+      ],
+      "gained_direct_top10": [],
+      "new_irrelevant_top10": [],
+      "removed_irrelevant_top10": [],
+      "added_unjudged_top10": [
+        "1981-113",
+        "1982-015",
+        "1984-047",
+        "1986-015",
+        "1989-055",
+        "1997-074",
+        "2006-059"
+      ],
+      "judged_rank_movements": [
+        {
+          "case_id": "1974-125",
+          "label": "irrelevant",
+          "before": 73,
+          "after": 125
+        },
+        {
+          "case_id": "1999-026",
+          "label": "direct",
+          "before": 5,
+          "after": 31
+        },
+        {
+          "case_id": "2007-072",
+          "label": "direct",
+          "before": 2,
+          "after": 4
+        },
+        {
+          "case_id": "2020-046",
+          "label": "irrelevant",
+          "before": 66,
+          "after": 117
+        },
+        {
+          "case_id": "2020-055",
+          "label": "irrelevant",
+          "before": 60,
+          "after": 108
+        },
+        {
+          "case_id": "2021-021",
+          "label": "irrelevant",
+          "before": 53,
+          "after": 86
+        },
+        {
+          "case_id": "2021-024",
+          "label": "irrelevant",
+          "before": 55,
+          "after": 78
+        },
+        {
+          "case_id": "2021-040",
+          "label": "direct",
+          "before": 1,
+          "after": 11
+        }
+      ]
+    },
+    "privacy": {
+      "candidates": 152,
+      "chart_unchanged": true,
+      "baseline_direct_top10": 3,
+      "candidate_direct_top10": 2,
+      "baseline_irrelevant_top10": 0,
+      "candidate_irrelevant_top10": 0,
+      "lost_direct_top10": [
+        "2017-021"
+      ],
+      "gained_direct_top10": [],
+      "new_irrelevant_top10": [],
+      "removed_irrelevant_top10": [],
+      "added_unjudged_top10": [
+        "1974-012",
+        "1981-093",
+        "1981-096",
+        "1984-002",
+        "1991-014"
+      ],
+      "judged_rank_movements": [
+        {
+          "case_id": "1974-129",
+          "label": "related",
+          "before": 127,
+          "after": 24
+        },
+        {
+          "case_id": "1985-144",
+          "label": "direct",
+          "before": 129,
+          "after": 99
+        },
+        {
+          "case_id": "2003-046",
+          "label": "direct",
+          "before": 1,
+          "after": 5
+        },
+        {
+          "case_id": "2010-020",
+          "label": "direct",
+          "before": 3,
+          "after": 1
+        },
+        {
+          "case_id": "2017-021",
+          "label": "direct",
+          "before": 2,
+          "after": 29
+        },
+        {
+          "case_id": "2020-019",
+          "label": "direct",
+          "before": 114,
+          "after": 119
+        }
+      ]
+    },
+    "search and seizure": {
+      "candidates": 146,
+      "chart_unchanged": true,
+      "baseline_direct_top10": 3,
+      "candidate_direct_top10": 1,
+      "baseline_irrelevant_top10": 0,
+      "candidate_irrelevant_top10": 0,
+      "lost_direct_top10": [
+        "1968-136",
+        "1992-085",
+        "2020-009"
+      ],
+      "gained_direct_top10": [
+        "1960-133"
+      ],
+      "new_irrelevant_top10": [],
+      "removed_irrelevant_top10": [],
+      "added_unjudged_top10": [
+        "1951-008",
+        "1956-082",
+        "1959-052",
+        "1959-133",
+        "1962-139",
+        "1968-138",
+        "1973-029",
+        "1973-082"
+      ],
+      "judged_rank_movements": [
+        {
+          "case_id": "1960-133",
+          "label": "direct",
+          "before": 88,
+          "after": 1
+        },
+        {
+          "case_id": "1968-136",
+          "label": "direct",
+          "before": 2,
+          "after": 80
+        },
+        {
+          "case_id": "1976-122",
+          "label": "direct",
+          "before": 144,
+          "after": 130
+        },
+        {
+          "case_id": "1989-123",
+          "label": "direct",
+          "before": 142,
+          "after": 69
+        },
+        {
+          "case_id": "1992-085",
+          "label": "direct",
+          "before": 4,
+          "after": 35
+        },
+        {
+          "case_id": "2020-009",
+          "label": "direct",
+          "before": 1,
+          "after": 12
+        }
+      ]
+    },
+    "environmental protection": {
+      "candidates": 175,
+      "chart_unchanged": true,
+      "baseline_direct_top10": 3,
+      "candidate_direct_top10": 0,
+      "baseline_irrelevant_top10": 0,
+      "candidate_irrelevant_top10": 0,
+      "lost_direct_top10": [
+        "2003-026",
+        "2008-040",
+        "2024-022"
+      ],
+      "gained_direct_top10": [],
+      "new_irrelevant_top10": [],
+      "removed_irrelevant_top10": [],
+      "added_unjudged_top10": [
+        "1974-083",
+        "1975-153",
+        "1977-023",
+        "1979-051",
+        "1983-140",
+        "1984-035",
+        "2000-025",
+        "2011-040",
+        "2024-045"
+      ],
+      "judged_rank_movements": [
+        {
+          "case_id": "1958-084",
+          "label": "related",
+          "before": 119,
+          "after": 127
+        },
+        {
+          "case_id": "1979-116",
+          "label": "irrelevant",
+          "before": 123,
+          "after": 138
+        },
+        {
+          "case_id": "2003-026",
+          "label": "direct",
+          "before": 3,
+          "after": 21
+        },
+        {
+          "case_id": "2008-040",
+          "label": "direct",
+          "before": 2,
+          "after": 43
+        },
+        {
+          "case_id": "2024-022",
+          "label": "direct",
+          "before": 1,
+          "after": 62
+        },
+        {
+          "case_id": "2025-054",
+          "label": "direct",
+          "before": 104,
+          "after": 41
+        }
+      ]
+    },
+    "disability rights": {
+      "candidates": 159,
+      "chart_unchanged": true,
+      "baseline_direct_top10": 2,
+      "candidate_direct_top10": 0,
+      "baseline_irrelevant_top10": 0,
+      "candidate_irrelevant_top10": 0,
+      "lost_direct_top10": [
+        "2000-022",
+        "2024-061"
+      ],
+      "gained_direct_top10": [],
+      "new_irrelevant_top10": [],
+      "removed_irrelevant_top10": [],
+      "added_unjudged_top10": [
+        "1970-098",
+        "1973-144",
+        "1980-069",
+        "1982-078",
+        "1985-101",
+        "1987-022",
+        "2010-037"
+      ],
+      "judged_rank_movements": [
+        {
+          "case_id": "1965-084",
+          "label": "irrelevant",
+          "before": 147,
+          "after": 119
+        },
+        {
+          "case_id": "1973-137",
+          "label": "related",
+          "before": 4,
+          "after": 19
+        },
+        {
+          "case_id": "1978-082",
+          "label": "irrelevant",
+          "before": 143,
+          "after": 125
+        },
+        {
+          "case_id": "2000-022",
+          "label": "direct",
+          "before": 1,
+          "after": 20
+        },
+        {
+          "case_id": "2020-047",
+          "label": "related",
+          "before": 95,
+          "after": 46
+        },
+        {
+          "case_id": "2021-027",
+          "label": "related",
+          "before": 105,
+          "after": 96
+        },
+        {
+          "case_id": "2024-019",
+          "label": "related",
+          "before": 99,
+          "after": 73
+        },
+        {
+          "case_id": "2024-061",
+          "label": "direct",
+          "before": 2,
+          "after": 70
+        }
+      ]
+    },
+    "school segregation": {
+      "candidates": 142,
+      "chart_unchanged": true,
+      "baseline_direct_top10": 3,
+      "candidate_direct_top10": 2,
+      "baseline_irrelevant_top10": 0,
+      "candidate_irrelevant_top10": 0,
+      "lost_direct_top10": [
+        "1970-082"
+      ],
+      "gained_direct_top10": [],
+      "new_irrelevant_top10": [],
+      "removed_irrelevant_top10": [],
+      "added_unjudged_top10": [
+        "1953-070",
+        "1962-130",
+        "1963-042",
+        "1963-117",
+        "1969-002"
+      ],
+      "judged_rank_movements": [
+        {
+          "case_id": "1970-082",
+          "label": "direct",
+          "before": 2,
+          "after": 24
+        },
+        {
+          "case_id": "1972-164",
+          "label": "direct",
+          "before": 1,
+          "after": 7
+        },
+        {
+          "case_id": "1973-173",
+          "label": "direct",
+          "before": 3,
+          "after": 3
+        },
+        {
+          "case_id": "1988-060",
+          "label": "irrelevant",
+          "before": 135,
+          "after": 84
+        },
+        {
+          "case_id": "2005-007",
+          "label": "irrelevant",
+          "before": 133,
+          "after": 101
+        },
+        {
+          "case_id": "2024-037",
+          "label": "irrelevant",
+          "before": 106,
+          "after": 134
+        }
+      ]
+    },
+    "health care": {
+      "candidates": 226,
+      "chart_unchanged": true,
+      "baseline_direct_top10": 2,
+      "candidate_direct_top10": 1,
+      "baseline_irrelevant_top10": 0,
+      "candidate_irrelevant_top10": 0,
+      "lost_direct_top10": [
+        "1980-115"
+      ],
+      "gained_direct_top10": [],
+      "new_irrelevant_top10": [],
+      "removed_irrelevant_top10": [],
+      "added_unjudged_top10": [
+        "1983-100",
+        "1987-058",
+        "1988-013",
+        "1992-087",
+        "2003-076",
+        "2011-028",
+        "2012-011",
+        "2014-052"
+      ],
+      "judged_rank_movements": [
+        {
+          "case_id": "1980-115",
+          "label": "direct",
+          "before": 3,
+          "after": 39
+        },
+        {
+          "case_id": "1987-154",
+          "label": "direct",
+          "before": 49,
+          "after": 64
+        },
+        {
+          "case_id": "1998-088",
+          "label": "direct",
+          "before": 61,
+          "after": 137
+        },
+        {
+          "case_id": "1999-058",
+          "label": "related",
+          "before": 1,
+          "after": 61
+        },
+        {
+          "case_id": "2011-077",
+          "label": "direct",
+          "before": 2,
+          "after": 1
+        }
+      ]
+    },
+    "criminal sentencing": {
+      "candidates": 168,
+      "chart_unchanged": true,
+      "baseline_direct_top10": 4,
+      "candidate_direct_top10": 1,
+      "baseline_irrelevant_top10": 0,
+      "candidate_irrelevant_top10": 0,
+      "lost_direct_top10": [
+        "1994-076",
+        "2004-014",
+        "2021-041"
+      ],
+      "gained_direct_top10": [],
+      "new_irrelevant_top10": [],
+      "removed_irrelevant_top10": [],
+      "added_unjudged_top10": [
+        "1977-139",
+        "1990-102",
+        "1991-043",
+        "1996-061",
+        "2000-033",
+        "2007-052",
+        "2015-031",
+        "2017-067"
+      ],
+      "judged_rank_movements": [
+        {
+          "case_id": "1992-019",
+          "label": "direct",
+          "before": 165,
+          "after": 141
+        },
+        {
+          "case_id": "1994-076",
+          "label": "direct",
+          "before": 2,
+          "after": 17
+        },
+        {
+          "case_id": "2004-014",
+          "label": "direct",
+          "before": 1,
+          "after": 88
+        },
+        {
+          "case_id": "2010-078",
+          "label": "direct",
+          "before": 4,
+          "after": 3
+        },
+        {
+          "case_id": "2020-010",
+          "label": "related",
+          "before": 112,
+          "after": 163
+        },
+        {
+          "case_id": "2021-019",
+          "label": "irrelevant",
+          "before": 121,
+          "after": 165
+        },
+        {
+          "case_id": "2021-041",
+          "label": "direct",
+          "before": 3,
+          "after": 34
+        }
+      ]
+    },
+    "property rights": {
+      "candidates": 163,
+      "chart_unchanged": true,
+      "baseline_direct_top10": 3,
+      "candidate_direct_top10": 1,
+      "baseline_irrelevant_top10": 0,
+      "candidate_irrelevant_top10": 0,
+      "lost_direct_top10": [
+        "2016-051",
+        "2020-051"
+      ],
+      "gained_direct_top10": [],
+      "new_irrelevant_top10": [],
+      "removed_irrelevant_top10": [],
+      "added_unjudged_top10": [
+        "1950-010",
+        "1961-087",
+        "1967-034",
+        "1971-083",
+        "1973-094",
+        "1979-107",
+        "1984-141",
+        "2022-026"
+      ],
+      "judged_rank_movements": [
+        {
+          "case_id": "1971-157",
+          "label": "direct",
+          "before": 158,
+          "after": 71
+        },
+        {
+          "case_id": "1983-159",
+          "label": "direct",
+          "before": 152,
+          "after": 43
+        },
+        {
+          "case_id": "2001-039",
+          "label": "direct",
+          "before": 1,
+          "after": 6
+        },
+        {
+          "case_id": "2016-051",
+          "label": "direct",
+          "before": 3,
+          "after": 25
+        },
+        {
+          "case_id": "2020-051",
+          "label": "direct",
+          "before": 2,
+          "after": 21
+        },
+        {
+          "case_id": "2020-062",
+          "label": "direct",
+          "before": 105,
+          "after": 156
+        },
+        {
+          "case_id": "2025-047",
+          "label": "related",
+          "before": 80,
+          "after": 54
+        }
+      ]
+    },
+    "contraception": {
+      "candidates": 107,
+      "chart_unchanged": true,
+      "baseline_direct_top10": 6,
+      "candidate_direct_top10": 6,
+      "baseline_irrelevant_top10": 0,
+      "candidate_irrelevant_top10": 1,
+      "lost_direct_top10": [],
+      "gained_direct_top10": [],
+      "new_irrelevant_top10": [
+        "2008-079"
+      ],
+      "removed_irrelevant_top10": [],
+      "added_unjudged_top10": [
+        "1972-048",
+        "2014-070"
+      ],
+      "judged_rank_movements": [
+        {
+          "case_id": "1964-121",
+          "label": "direct",
+          "before": 3,
+          "after": 4
+        },
+        {
+          "case_id": "1971-079",
+          "label": "direct",
+          "before": 1,
+          "after": 1
+        },
+        {
+          "case_id": "1976-126",
+          "label": "direct",
+          "before": 2,
+          "after": 2
+        },
+        {
+          "case_id": "1982-135",
+          "label": "direct",
+          "before": 9,
+          "after": 3
+        },
+        {
+          "case_id": "2000-070",
+          "label": "irrelevant",
+          "before": 55,
+          "after": 87
+        },
+        {
+          "case_id": "2008-079",
+          "label": "irrelevant",
+          "before": 23,
+          "after": 10
+        },
+        {
+          "case_id": "2013-070",
+          "label": "direct",
+          "before": 5,
+          "after": 8
+        },
+        {
+          "case_id": "2016-005",
+          "label": "irrelevant",
+          "before": 87,
+          "after": 73
+        },
+        {
+          "case_id": "2019-060",
+          "label": "direct",
+          "before": 4,
+          "after": 6
+        },
+        {
+          "case_id": "2021-019",
+          "label": "related",
+          "before": 7,
+          "after": 50
+        }
+      ]
+    },
+    "same-sex marriage": {
+      "candidates": 166,
+      "chart_unchanged": true,
+      "baseline_direct_top10": 3,
+      "candidate_direct_top10": 4,
+      "baseline_irrelevant_top10": 2,
+      "candidate_irrelevant_top10": 0,
+      "lost_direct_top10": [],
+      "gained_direct_top10": [
+        "2012-077"
+      ],
+      "new_irrelevant_top10": [],
+      "removed_irrelevant_top10": [
+        "1970-053",
+        "1977-007"
+      ],
+      "added_unjudged_top10": [
+        "1956-125",
+        "2009-081",
+        "2020-015",
+        "2021-019"
+      ],
+      "judged_rank_movements": [
+        {
+          "case_id": "1970-053",
+          "label": "irrelevant",
+          "before": 10,
+          "after": 35
+        },
+        {
+          "case_id": "1974-147",
+          "label": "irrelevant",
+          "before": 28,
+          "after": 30
+        },
+        {
+          "case_id": "1977-007",
+          "label": "irrelevant",
+          "before": 7,
+          "after": 41
+        },
+        {
+          "case_id": "2009-090",
+          "label": "related",
+          "before": 32,
+          "after": 48
+        },
+        {
+          "case_id": "2012-077",
+          "label": "direct",
+          "before": 12,
+          "after": 2
+        },
+        {
+          "case_id": "2012-079",
+          "label": "direct",
+          "before": 3,
+          "after": 3
+        },
+        {
+          "case_id": "2014-070",
+          "label": "direct",
+          "before": 1,
+          "after": 1
+        },
+        {
+          "case_id": "2017-020",
+          "label": "direct",
+          "before": 5,
+          "after": 4
+        }
+      ]
+    },
+    "capital punishment": {
+      "candidates": 156,
+      "chart_unchanged": true,
+      "baseline_direct_top10": 3,
+      "candidate_direct_top10": 2,
+      "baseline_irrelevant_top10": 0,
+      "candidate_irrelevant_top10": 0,
+      "lost_direct_top10": [
+        "2004-024"
+      ],
+      "gained_direct_top10": [],
+      "new_irrelevant_top10": [],
+      "removed_irrelevant_top10": [],
+      "added_unjudged_top10": [
+        "1971-132",
+        "1980-084",
+        "1983-027",
+        "1983-107",
+        "1991-119",
+        "2006-075",
+        "2015-007"
+      ],
+      "judged_rank_movements": [
+        {
+          "case_id": "1981-172",
+          "label": "direct",
+          "before": 11,
+          "after": 67
+        },
+        {
+          "case_id": "1986-139",
+          "label": "direct",
+          "before": 4,
+          "after": 8
+        },
+        {
+          "case_id": "2004-024",
+          "label": "direct",
+          "before": 2,
+          "after": 19
+        },
+        {
+          "case_id": "2007-068",
+          "label": "direct",
+          "before": 1,
+          "after": 7
+        },
+        {
+          "case_id": "2022-011",
+          "label": "direct",
+          "before": 102,
+          "after": 84
+        },
+        {
+          "case_id": "2023-055",
+          "label": "direct",
+          "before": 100,
+          "after": 74
+        },
+        {
+          "case_id": "2025-021",
+          "label": "irrelevant",
+          "before": 108,
+          "after": 119
+        }
+      ]
+    },
+    "healthcare": {
+      "candidates": 226,
+      "chart_unchanged": true,
+      "baseline_direct_top10": 2,
+      "candidate_direct_top10": 1,
+      "baseline_irrelevant_top10": 0,
+      "candidate_irrelevant_top10": 0,
+      "lost_direct_top10": [
+        "1980-115"
+      ],
+      "gained_direct_top10": [],
+      "new_irrelevant_top10": [],
+      "removed_irrelevant_top10": [],
+      "added_unjudged_top10": [
+        "1983-100",
+        "1987-058",
+        "1988-013",
+        "1992-087",
+        "2003-076",
+        "2011-028",
+        "2012-011",
+        "2014-052"
+      ],
+      "judged_rank_movements": [
+        {
+          "case_id": "1980-115",
+          "label": "direct",
+          "before": 3,
+          "after": 39
+        },
+        {
+          "case_id": "1987-154",
+          "label": "direct",
+          "before": 49,
+          "after": 64
+        },
+        {
+          "case_id": "1998-088",
+          "label": "direct",
+          "before": 61,
+          "after": 137
+        },
+        {
+          "case_id": "1999-058",
+          "label": "related",
+          "before": 1,
+          "after": 61
+        },
+        {
+          "case_id": "2011-077",
+          "label": "direct",
+          "before": 2,
+          "after": 1
+        },
+        {
+          "case_id": "2022-054",
+          "label": "related",
+          "before": 45,
+          "after": 129
+        },
+        {
+          "case_id": "2024-019",
+          "label": "direct",
+          "before": 46,
+          "after": 116
+        }
+      ]
+    }
+  },
+  "local_rerank_seconds": {
+    "birth control": 11.825546125000983,
+    "gay marriage": 9.319072667,
+    "gun control": 9.485646499999348,
+    "abortion": 7.996092707999196,
+    "voting rights": 11.827228916999957,
+    "religious freedom": 7.673230417000013,
+    "free speech": 9.548184541999944,
+    "death penalty": 9.493280415999834,
+    "immigration": 10.414222790999702,
+    "racial discrimination": 10.363414957999339,
+    "labor unions": 11.358568249999735,
+    "campaign finance": 11.142134416999397,
+    "privacy": 10.029862583000067,
+    "search and seizure": 9.420688707999943,
+    "environmental protection": 11.437709625000934,
+    "disability rights": 10.376575250000315,
+    "school segregation": 9.276027292000435,
+    "healthcare": 10.361163042000044,
+    "health care": 10.554892292000659,
+    "criminal sentencing": 10.735633416999917,
+    "property rights": 10.610832874999687,
+    "contraception": 7.248167875000945,
+    "same-sex marriage": 10.899849167000866,
+    "capital punishment": 10.106783458999416
+  },
+  "limitations": [
+    "Previously inspected partial labels; not independent validation or whole-result precision.",
+    "Aliases overlap; counts are query/case memberships, not independent cases.",
+    "Offline model timings are not deployment memory/latency measurements."
+  ],
+  "status": "offline_not_deployed"
+}
