@@ -1,0 +1,1930 @@
+{
+  "status": "Coverage only; policy comparability unresolved, no alignment estimate",
+  "provenance": {
+    "data/research/abortion-access-specification.json": "f1958b7f481c4e0804f5c98f2d5e24ea9c96fd4348476791b3b485d7532164d1",
+    "data/research/abortion_case_review.json": "dd51f5c5f9676e1848d78b04575583047c8275e5ed1e24772c0c9c5cb13712e5",
+    "data/research/abortion-current-case-review.json": "c6ba85d1564ac95a0faca33e9bb5334b222755fa7a634f3d0565ed6121785eba",
+    "data/raw/scdb-2026/SCDB_2026_01_caseCentered_Citation.csv": "b3cc84bd73a7a0325856cca52ae6fc5bd6a39433113f83fef248556ad4488528",
+    "artifacts/scdb-issues.sqlite": "38cde989a39db72a0607fb45e14cd9cc9a73a57e37b892889be3e9bf8171321f",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/count_abortion_access_coverage.py": "be7d4d8851ab67a57405f79ad5ee1ecff00096438974bb4cd914dd832bb8c26a"
+  },
+  "reviewed_frame_cases": 102,
+  "excluded_cases": [
+    {
+      "case_id": "1971-079",
+      "category": "contraception"
+    },
+    {
+      "case_id": "1973-129",
+      "category": "procedural_remedy"
+    },
+    {
+      "case_id": "1976-037",
+      "category": "procedural_remand"
+    },
+    {
+      "case_id": "1976-126",
+      "category": "contraception"
+    },
+    {
+      "case_id": "1976-154",
+      "category": "public_funding"
+    },
+    {
+      "case_id": "1976-155",
+      "category": "public_funding"
+    },
+    {
+      "case_id": "1976-157",
+      "category": "public_funding"
+    },
+    {
+      "case_id": "1978-056",
+      "category": "procedural_remand"
+    },
+    {
+      "case_id": "1979-148",
+      "category": "public_funding"
+    },
+    {
+      "case_id": "1979-149",
+      "category": "public_funding"
+    },
+    {
+      "case_id": "1987-012",
+      "category": "equally_divided_affirmance"
+    },
+    {
+      "case_id": "1990-077",
+      "category": "public_funding_and_speech"
+    },
+    {
+      "case_id": "1991-120",
+      "category": "interim_administrative_procedure"
+    },
+    {
+      "case_id": "1993-016",
+      "category": "clinic_protest_remedies"
+    },
+    {
+      "case_id": "1993-091",
+      "category": "speech_buffer_zone"
+    },
+    {
+      "case_id": "1995-073",
+      "category": "severability_remedy"
+    },
+    {
+      "case_id": "1996-024",
+      "category": "speech_buffer_zone"
+    },
+    {
+      "case_id": "1999-086",
+      "category": "speech_buffer_zone"
+    },
+    {
+      "case_id": "2002-021",
+      "category": "clinic_protest_remedies"
+    },
+    {
+      "case_id": "2005-020",
+      "category": "severability_remedy"
+    },
+    {
+      "case_id": "2005-037",
+      "category": "clinic_protest_remedies"
+    },
+    {
+      "case_id": "2013-068",
+      "category": "speech_buffer_zone"
+    },
+    {
+      "case_id": "2017-041",
+      "category": "speech_disclosure"
+    },
+    {
+      "case_id": "2018-078",
+      "category": "related_regulation_mixed"
+    },
+    {
+      "case_id": "2023-049",
+      "category": "jurisdiction_standing"
+    },
+    {
+      "case_id": "2023-060",
+      "category": "procedural_disposition"
+    },
+    {
+      "case_id": "1975-172",
+      "category": "procedure"
+    },
+    {
+      "case_id": "1992-018",
+      "category": "related_litigation"
+    },
+    {
+      "case_id": "2004-024",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "1985-077",
+      "category": "procedure"
+    },
+    {
+      "case_id": "2021-033",
+      "category": "procedure"
+    },
+    {
+      "case_id": "2024-054",
+      "category": "related_litigation"
+    },
+    {
+      "case_id": "2024-019",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "1991-039",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "2012-065",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "2025-025",
+      "category": "related_litigation"
+    },
+    {
+      "case_id": "2025-061",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "2007-068",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "1964-121",
+      "category": "contraception"
+    },
+    {
+      "case_id": "1978-083",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "1967-117",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "1975-171",
+      "category": "procedure"
+    },
+    {
+      "case_id": "1974-067",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "1996-091",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "2019-063",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "2021-006",
+      "category": "procedure"
+    },
+    {
+      "case_id": "1997-098",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "1960-130",
+      "category": "contraception"
+    },
+    {
+      "case_id": "2024-015",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "1996-092",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "1997-055",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "2016-015",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "2013-070",
+      "category": "contraception"
+    },
+    {
+      "case_id": "1987-148",
+      "category": "related_litigation"
+    },
+    {
+      "case_id": "1974-118",
+      "category": "related_litigation"
+    },
+    {
+      "case_id": "2024-058",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "1990-048",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "1982-142",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "1980-059",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "2000-070",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "1995-032",
+      "category": "procedure"
+    },
+    {
+      "case_id": "1978-129",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "1976-091",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "1995-006",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "1977-014",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "2025-013",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "2012-077",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "1982-122",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "1982-135",
+      "category": "contraception"
+    },
+    {
+      "case_id": "2011-054",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "1981-069",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "1986-072",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "2020-008",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "2004-008",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "1983-081",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "1977-056",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "1976-020",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "1975-164",
+      "category": "outside_abortion_policy"
+    },
+    {
+      "case_id": "2024-029",
+      "category": "outside_abortion_policy"
+    }
+  ],
+  "summary": {
+    "primary": {
+      "cases": 17,
+      "cases_with_prior_question": 17,
+      "cases_without_prior_question": [],
+      "contextual_case_question_pairs": 42,
+      "distinct_question_years": 32,
+      "distinct_survey_years": 21,
+      "by_question": {
+        "public:VCF0837": 8,
+        "gss:abany": 14,
+        "public:VCF0838": 12,
+        "ces:abortion_always": 3,
+        "ces:abortion_scale": 1,
+        "prri:prri_abortion": 2,
+        "voter:voter_abortion": 2
+      }
+    },
+    "separate": {
+      "cases": 6,
+      "cases_with_prior_question": 5,
+      "cases_without_prior_question": [
+        "1970-088"
+      ],
+      "contextual_case_question_pairs": 10,
+      "distinct_question_years": 9,
+      "distinct_survey_years": 7,
+      "by_question": {
+        "public:VCF0837": 2,
+        "gss:abany": 4,
+        "public:VCF0838": 4
+      }
+    }
+  },
+  "questions": [
+    {
+      "source": "ces",
+      "code": "abortion_always",
+      "question": "Support or oppose always allowing a woman to obtain an abortion as a matter of choice?",
+      "family": "ces:abortion_access",
+      "available_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
+    },
+    {
+      "source": "ces",
+      "code": "abortion_scale",
+      "question": "Which abortion policy do you favor: never permit, permit in limited circumstances, permit other established needs, or always allow personal choice?",
+      "family": "ces:abortion_access",
+      "available_years": [
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013
+      ]
+    },
+    {
+      "source": "gss",
+      "code": "abany",
+      "question": "Should a pregnant woman be able to obtain a legal abortion if she wants it for any reason?",
+      "family": "gss:abortion",
+      "available_years": [
+        1977,
+        1978,
+        1980,
+        1982,
+        1983,
+        1984,
+        1985,
+        1987,
+        1988,
+        1989,
+        1990,
+        1991,
+        1993,
+        1994,
+        1996,
+        1998,
+        2000,
+        2002,
+        2004,
+        2006,
+        2008,
+        2010,
+        2012,
+        2014,
+        2016,
+        2018,
+        2021,
+        2022,
+        2024
+      ]
+    },
+    {
+      "source": "prri",
+      "code": "prri_abortion",
+      "question": "Do you think abortion should be legal or illegal?",
+      "family": "prri_abortion",
+      "available_years": [
+        2019,
+        2020,
+        2021,
+        2023,
+        2024
+      ]
+    },
+    {
+      "source": "public",
+      "code": "VCF0837",
+      "question": "(1972,1976: Still on the subject of women\u2019s rights,)\n           There has been some discussion about abortion during recent years.\n           Which one of the opinions on this page (1972: card) best agrees with\n           your view? You can just tell me the number of the opinion you choose.",
+      "family": "abortion",
+      "available_years": [
+        1972,
+        1976,
+        1978,
+        1980
+      ]
+    },
+    {
+      "source": "public",
+      "code": "VCF0838",
+      "question": "ALL YEARS EXCEPT 2000 TELEPHONE:\n           There has been some discussion about abortion during recent years.\n           (RESPONDENT BOOKLET) Which one of the opinions on this page best agrees\n           with your view? You can just tell me the number of the opinion you\n           choose.\n           2000 TELEPHONE:\n           I am going to read you a short list of opinions. Please tell me which\n\n\n            one of the opinions best agrees with your view. You can just tell me the\n            number of the opinion you choose.",
+      "family": "abortion",
+      "available_years": [
+        1980,
+        1982,
+        1984,
+        1986,
+        1988,
+        1990,
+        1992,
+        1994,
+        1996,
+        1998,
+        2000,
+        2004,
+        2008,
+        2012,
+        2016,
+        2020,
+        2024
+      ]
+    },
+    {
+      "source": "voter",
+      "code": "voter_abortion",
+      "question": "Do you think abortion should be...",
+      "family": "voter_abortion",
+      "available_years": [
+        2016,
+        2020
+      ]
+    }
+  ],
+  "records": [
+    {
+      "case_id": "1970-088",
+      "name": "UNITED STATES v. VUITCH",
+      "decision_date": "4/21/1971",
+      "decision_year": 1971,
+      "category": "direct_access_merits",
+      "access_direction": "mixed",
+      "group": "separate",
+      "indexed": true,
+      "review_rationale": "Sustains statute against vagueness challenge while interpreting health broadly and placing burden on prosecution.",
+      "question_matches": [
+        {
+          "source": "ces",
+          "code": "abortion_always",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "ces",
+          "code": "abortion_scale",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "gss",
+          "code": "abany",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "prri",
+          "code": "prri_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0837",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0838",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "voter",
+          "code": "voter_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        }
+      ]
+    },
+    {
+      "case_id": "1972-048",
+      "name": "ROE et al. v. WADE, DISTRICT ATTORNEY OF DALLAS COUNTY",
+      "decision_date": "1/22/1973",
+      "decision_year": 1973,
+      "category": "direct_access_merits",
+      "access_direction": "protective",
+      "group": "primary",
+      "indexed": true,
+      "review_rationale": "Invalidates life-saving-only criminal prohibition and recognizes qualified abortion right.",
+      "question_matches": [
+        {
+          "source": "ces",
+          "code": "abortion_always",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "ces",
+          "code": "abortion_scale",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "gss",
+          "code": "abany",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "prri",
+          "code": "prri_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0837",
+          "survey_year": 1972,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "public",
+          "code": "VCF0838",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "voter",
+          "code": "voter_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        }
+      ]
+    },
+    {
+      "case_id": "1972-049",
+      "name": "DOE et al. v. BOLTON, ATTORNEY GENERAL OF GEORGIA, et al.",
+      "decision_date": "1/22/1973",
+      "decision_year": 1973,
+      "category": "direct_access_merits",
+      "access_direction": "protective",
+      "group": "primary",
+      "indexed": true,
+      "review_rationale": "Invalidates hospital, committee, concurrence, and residence restrictions; sustains clinical-judgment wording.",
+      "question_matches": [
+        {
+          "source": "ces",
+          "code": "abortion_always",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "ces",
+          "code": "abortion_scale",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "gss",
+          "code": "abany",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "prri",
+          "code": "prri_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0837",
+          "survey_year": 1972,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "public",
+          "code": "VCF0838",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "voter",
+          "code": "voter_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        }
+      ]
+    },
+    {
+      "case_id": "1975-004",
+      "name": "CONNECTICUT v. MENILLO",
+      "decision_date": "11/11/1975",
+      "decision_year": 1975,
+      "category": "direct_access_merits",
+      "access_direction": "restrictive",
+      "group": "primary",
+      "indexed": true,
+      "review_rationale": "Permits enforcement of abortion criminal prohibition against nonphysicians.",
+      "question_matches": [
+        {
+          "source": "ces",
+          "code": "abortion_always",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "ces",
+          "code": "abortion_scale",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "gss",
+          "code": "abany",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "prri",
+          "code": "prri_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0837",
+          "survey_year": 1972,
+          "lag_years": 3,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "public",
+          "code": "VCF0838",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "voter",
+          "code": "voter_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        }
+      ]
+    },
+    {
+      "case_id": "1975-170",
+      "name": "PLANNED PARENTHOOD OF CENTRAL MISSOURI et al. v. DANFORTH, ATTORNEY GENERAL OF MISSOURI, et al.",
+      "decision_date": "7/1/1976",
+      "decision_year": 1976,
+      "category": "direct_access_merits",
+      "access_direction": "mixed",
+      "group": "separate",
+      "indexed": true,
+      "review_rationale": "Invalidates spousal and blanket parental consent, while sustaining patient consent and viability definition; multiple provisions.",
+      "question_matches": [
+        {
+          "source": "ces",
+          "code": "abortion_always",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "ces",
+          "code": "abortion_scale",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "gss",
+          "code": "abany",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "prri",
+          "code": "prri_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0837",
+          "survey_year": 1972,
+          "lag_years": 4,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "public",
+          "code": "VCF0838",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "voter",
+          "code": "voter_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        }
+      ]
+    },
+    {
+      "case_id": "1978-024",
+      "name": "COLAUTTI, SECRETARY OF WELFARE OF PENNSYLVANIA, et al. v. FRANKLIN et al.",
+      "decision_date": "1/9/1979",
+      "decision_year": 1979,
+      "category": "direct_access_merits",
+      "access_direction": "protective",
+      "group": "primary",
+      "indexed": true,
+      "review_rationale": "Invalidates viability and standard-of-care provisions for vagueness.",
+      "question_matches": [
+        {
+          "source": "ces",
+          "code": "abortion_always",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "ces",
+          "code": "abortion_scale",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "gss",
+          "code": "abany",
+          "survey_year": 1978,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "prri",
+          "code": "prri_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0837",
+          "survey_year": 1978,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "public",
+          "code": "VCF0838",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "voter",
+          "code": "voter_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        }
+      ]
+    },
+    {
+      "case_id": "1978-158",
+      "name": "BELLOTTI, ATTORNEY GENERAL OF MASSACHUSETTS, et al. v. BAIRD et al.",
+      "decision_date": "7/2/1979",
+      "decision_year": 1979,
+      "category": "direct_access_merits",
+      "access_direction": "protective",
+      "group": "primary",
+      "indexed": true,
+      "review_rationale": "Affirms judgment invalidating the challenged parental-consent scheme.",
+      "question_matches": [
+        {
+          "source": "ces",
+          "code": "abortion_always",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "ces",
+          "code": "abortion_scale",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "gss",
+          "code": "abany",
+          "survey_year": 1978,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "prri",
+          "code": "prri_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0837",
+          "survey_year": 1978,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "public",
+          "code": "VCF0838",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "voter",
+          "code": "voter_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        }
+      ]
+    },
+    {
+      "case_id": "1980-057",
+      "name": "H. L. v. MATHESON, GOVERNOR OF UTAH, et al.",
+      "decision_date": "3/23/1981",
+      "decision_year": 1981,
+      "category": "direct_access_merits",
+      "access_direction": "restrictive",
+      "group": "primary",
+      "indexed": true,
+      "review_rationale": "Sustains parental notice as applied to immature dependent minor; broader challenge lacks standing.",
+      "question_matches": [
+        {
+          "source": "ces",
+          "code": "abortion_always",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "ces",
+          "code": "abortion_scale",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "gss",
+          "code": "abany",
+          "survey_year": 1980,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "prri",
+          "code": "prri_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0837",
+          "survey_year": 1980,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "public",
+          "code": "VCF0838",
+          "survey_year": 1980,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "voter",
+          "code": "voter_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        }
+      ]
+    },
+    {
+      "case_id": "1982-112",
+      "name": "CITY OF AKRON v. AKRON CENTER FOR REPRODUCTIVE HEALTH, INC., et al.",
+      "decision_date": "6/15/1983",
+      "decision_year": 1983,
+      "category": "direct_access_merits",
+      "access_direction": "protective",
+      "group": "primary",
+      "indexed": true,
+      "review_rationale": "Invalidates hospital, parental-approval, and informed-consent restrictions.",
+      "question_matches": [
+        {
+          "source": "ces",
+          "code": "abortion_always",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "ces",
+          "code": "abortion_scale",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "gss",
+          "code": "abany",
+          "survey_year": 1982,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "prri",
+          "code": "prri_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0837",
+          "survey_year": 1980,
+          "lag_years": 3,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "public",
+          "code": "VCF0838",
+          "survey_year": 1982,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "voter",
+          "code": "voter_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        }
+      ]
+    },
+    {
+      "case_id": "1982-113",
+      "name": "PLANNED PARENTHOOD ASSOCIATION OF KANSAS CITY, MISSOURI, INC., et al. v. ASHCROFT, ATTORNEY GENERAL OF MISSOURI, et al.",
+      "decision_date": "6/15/1983",
+      "decision_year": 1983,
+      "category": "direct_access_merits",
+      "access_direction": "mixed",
+      "group": "separate",
+      "indexed": true,
+      "review_rationale": "Invalidates hospitalization requirement but sustains pathology, second-physician, and consent provisions.",
+      "question_matches": [
+        {
+          "source": "ces",
+          "code": "abortion_always",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "ces",
+          "code": "abortion_scale",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "gss",
+          "code": "abany",
+          "survey_year": 1982,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "prri",
+          "code": "prri_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0837",
+          "survey_year": 1980,
+          "lag_years": 3,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "public",
+          "code": "VCF0838",
+          "survey_year": 1982,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "voter",
+          "code": "voter_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        }
+      ]
+    },
+    {
+      "case_id": "1982-114",
+      "name": "SIMOPOULOS v. VIRGINIA",
+      "decision_date": "6/15/1983",
+      "decision_year": 1983,
+      "category": "direct_access_merits",
+      "access_direction": "restrictive",
+      "group": "primary",
+      "indexed": true,
+      "review_rationale": "Sustains licensed-outpatient-clinic requirement and conviction against the challenges presented.",
+      "question_matches": [
+        {
+          "source": "ces",
+          "code": "abortion_always",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "ces",
+          "code": "abortion_scale",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "gss",
+          "code": "abany",
+          "survey_year": 1982,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "prri",
+          "code": "prri_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0837",
+          "survey_year": 1980,
+          "lag_years": 3,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "public",
+          "code": "VCF0838",
+          "survey_year": 1982,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "voter",
+          "code": "voter_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        }
+      ]
+    },
+    {
+      "case_id": "1985-106",
+      "name": "THORNBURGH, GOVERNOR OF PENNSYLVANIA, et al. v. AMERICAN COLLEGE OF OBSTETRICIANS AND GYNECOLOGISTS et al.",
+      "decision_date": "6/11/1986",
+      "decision_year": 1986,
+      "category": "direct_access_merits",
+      "access_direction": "protective",
+      "group": "primary",
+      "indexed": true,
+      "review_rationale": "Invalidates abortion regulations concerning consent, reporting, and medical-risk provisions.",
+      "question_matches": [
+        {
+          "source": "ces",
+          "code": "abortion_always",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "ces",
+          "code": "abortion_scale",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "gss",
+          "code": "abany",
+          "survey_year": 1985,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "prri",
+          "code": "prri_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0837",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0838",
+          "survey_year": 1984,
+          "lag_years": 2,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "voter",
+          "code": "voter_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        }
+      ]
+    },
+    {
+      "case_id": "1988-150",
+      "name": "WEBSTER, ATTORNEY GENERAL OF MISSOURI, et al. v. REPRODUCTIVE HEALTH SERVICES et al.",
+      "decision_date": "7/3/1989",
+      "decision_year": 1989,
+      "category": "direct_access_and_public_funding",
+      "access_direction": "restrictive",
+      "group": "separate",
+      "indexed": true,
+      "review_rationale": "Sustains public-facility restrictions and viability-testing requirements; declines preamble issue until concretely applied.",
+      "question_matches": [
+        {
+          "source": "ces",
+          "code": "abortion_always",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "ces",
+          "code": "abortion_scale",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "gss",
+          "code": "abany",
+          "survey_year": 1988,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "prri",
+          "code": "prri_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0837",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0838",
+          "survey_year": 1988,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "voter",
+          "code": "voter_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        }
+      ]
+    },
+    {
+      "case_id": "1989-133",
+      "name": "HODGSON et al. v. MINNESOTA et al.",
+      "decision_date": "6/25/1990",
+      "decision_year": 1990,
+      "category": "direct_access_merits",
+      "access_direction": "mixed",
+      "group": "separate",
+      "indexed": true,
+      "review_rationale": "Invalidates two-parent notice without bypass but sustains scheme with judicial bypass.",
+      "question_matches": [
+        {
+          "source": "ces",
+          "code": "abortion_always",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "ces",
+          "code": "abortion_scale",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "gss",
+          "code": "abany",
+          "survey_year": 1989,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "prri",
+          "code": "prri_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0837",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0838",
+          "survey_year": 1988,
+          "lag_years": 2,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "voter",
+          "code": "voter_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        }
+      ]
+    },
+    {
+      "case_id": "1989-134",
+      "name": "OHIO v. AKRON CENTER FOR REPRODUCTIVE HEALTH et al.",
+      "decision_date": "6/25/1990",
+      "decision_year": 1990,
+      "category": "direct_access_merits",
+      "access_direction": "restrictive",
+      "group": "primary",
+      "indexed": true,
+      "review_rationale": "Sustains parental-notice and bypass scheme against facial challenge.",
+      "question_matches": [
+        {
+          "source": "ces",
+          "code": "abortion_always",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "ces",
+          "code": "abortion_scale",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "gss",
+          "code": "abany",
+          "survey_year": 1989,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "prri",
+          "code": "prri_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0837",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0838",
+          "survey_year": 1988,
+          "lag_years": 2,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "voter",
+          "code": "voter_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        }
+      ]
+    },
+    {
+      "case_id": "1991-117",
+      "name": "PLANNED PARENTHOOD OF SOUTHEASTERN PENNSYLVANIA, et al. v. ROBERT P. CASEY, et al., ETC.",
+      "decision_date": "6/29/1992",
+      "decision_year": 1992,
+      "category": "direct_access_merits",
+      "access_direction": "mixed",
+      "group": "separate",
+      "indexed": true,
+      "review_rationale": "Reaffirms Roe core protection and invalidates spousal notice, while sustaining informed-consent, waiting, parental-consent, and most reporting provisions.",
+      "question_matches": [
+        {
+          "source": "ces",
+          "code": "abortion_always",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "ces",
+          "code": "abortion_scale",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "gss",
+          "code": "abany",
+          "survey_year": 1991,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "prri",
+          "code": "prri_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0837",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0838",
+          "survey_year": 1990,
+          "lag_years": 2,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "voter",
+          "code": "voter_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        }
+      ]
+    },
+    {
+      "case_id": "1996-042",
+      "name": "MARTIN D. LAMBERT, GALLATIN COUNTY ATTORNEY v. SUSAN WICKLUND et al.",
+      "decision_date": "3/31/1997",
+      "decision_year": 1997,
+      "category": "direct_access_merits",
+      "access_direction": "restrictive",
+      "group": "primary",
+      "indexed": false,
+      "review_rationale": "Reverses invalidation of parental-notice bypass provision under prior precedents.",
+      "question_matches": [
+        {
+          "source": "ces",
+          "code": "abortion_always",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "ces",
+          "code": "abortion_scale",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "gss",
+          "code": "abany",
+          "survey_year": 1996,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "prri",
+          "code": "prri_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0837",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0838",
+          "survey_year": 1996,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "voter",
+          "code": "voter_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        }
+      ]
+    },
+    {
+      "case_id": "1996-074",
+      "name": "JOSEPH P. MAZUREK, ATTORNEY GENERAL OF MONTANA v. JAMES H. ARMSTRONG et al.",
+      "decision_date": "6/16/1997",
+      "decision_year": 1997,
+      "category": "direct_access_merits",
+      "access_direction": "restrictive",
+      "group": "primary",
+      "indexed": false,
+      "review_rationale": "Reverses preliminary-injunction ruling against physician-only requirement; access merits assessed at interim stage.",
+      "question_matches": [
+        {
+          "source": "ces",
+          "code": "abortion_always",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "ces",
+          "code": "abortion_scale",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "gss",
+          "code": "abany",
+          "survey_year": 1996,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "prri",
+          "code": "prri_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0837",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0838",
+          "survey_year": 1996,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "voter",
+          "code": "voter_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        }
+      ]
+    },
+    {
+      "case_id": "1999-088",
+      "name": "DON STENBERG, ATTORNEY GENERAL OF NEBRASKA, et al. v. LEROY CARHART",
+      "decision_date": "6/28/2000",
+      "decision_year": 2000,
+      "category": "direct_access_merits",
+      "access_direction": "protective",
+      "group": "primary",
+      "indexed": true,
+      "review_rationale": "Invalidates Nebraska procedure ban under constitutional abortion precedents.",
+      "question_matches": [
+        {
+          "source": "ces",
+          "code": "abortion_always",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "ces",
+          "code": "abortion_scale",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "gss",
+          "code": "abany",
+          "survey_year": 1998,
+          "lag_years": 2,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "prri",
+          "code": "prri_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0837",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0838",
+          "survey_year": 1998,
+          "lag_years": 2,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "voter",
+          "code": "voter_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        }
+      ]
+    },
+    {
+      "case_id": "2006-031",
+      "name": "ALBERTO R. GONZALES, ATTORNEY GENERAL v. LEROY CARHART, et al.",
+      "decision_date": "4/18/2007",
+      "decision_year": 2007,
+      "category": "direct_access_merits",
+      "access_direction": "restrictive",
+      "group": "primary",
+      "indexed": true,
+      "review_rationale": "Rejects facial challenges to the federal procedure ban.",
+      "question_matches": [
+        {
+          "source": "ces",
+          "code": "abortion_always",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "ces",
+          "code": "abortion_scale",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "gss",
+          "code": "abany",
+          "survey_year": 2006,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "prri",
+          "code": "prri_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0837",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0838",
+          "survey_year": 2004,
+          "lag_years": 3,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "voter",
+          "code": "voter_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        }
+      ]
+    },
+    {
+      "case_id": "2015-048",
+      "name": "WHOLE WOMAN'S HEALTH v. HELLERSTEDT",
+      "decision_date": "6/27/2016",
+      "decision_year": 2016,
+      "category": "direct_access_merits",
+      "access_direction": "protective",
+      "group": "primary",
+      "indexed": true,
+      "review_rationale": "Invalidates admitting-privileges and surgical-center requirements as undue burdens.",
+      "question_matches": [
+        {
+          "source": "ces",
+          "code": "abortion_always",
+          "survey_year": 2015,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "ces",
+          "code": "abortion_scale",
+          "survey_year": 2013,
+          "lag_years": 3,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "gss",
+          "code": "abany",
+          "survey_year": 2014,
+          "lag_years": 2,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "prri",
+          "code": "prri_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0837",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0838",
+          "survey_year": 2012,
+          "lag_years": 4,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "voter",
+          "code": "voter_abortion",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        }
+      ]
+    },
+    {
+      "case_id": "2019-040",
+      "name": "JUNE MEDICAL SERVICES LLC v. RUSSO",
+      "decision_date": "6/29/2020",
+      "decision_year": 2020,
+      "category": "direct_access_merits",
+      "access_direction": "protective",
+      "group": "primary",
+      "indexed": true,
+      "review_rationale": "Invalidates Louisiana admitting-privileges requirement; also addresses standing.",
+      "question_matches": [
+        {
+          "source": "ces",
+          "code": "abortion_always",
+          "survey_year": 2019,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "ces",
+          "code": "abortion_scale",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "gss",
+          "code": "abany",
+          "survey_year": 2018,
+          "lag_years": 2,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "prri",
+          "code": "prri_abortion",
+          "survey_year": 2019,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "public",
+          "code": "VCF0837",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0838",
+          "survey_year": 2016,
+          "lag_years": 4,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "voter",
+          "code": "voter_abortion",
+          "survey_year": 2016,
+          "lag_years": 4,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        }
+      ]
+    },
+    {
+      "case_id": "2021-019",
+      "name": "DOBBS v. JACKSON WOMEN\u2019S HEALTH ORGANIZATION",
+      "decision_date": "6/24/2022",
+      "decision_year": 2022,
+      "category": "direct_access_merits",
+      "access_direction": "restrictive",
+      "group": "primary",
+      "indexed": true,
+      "review_rationale": "Overrules Roe and Casey, changing constitutional protection for abortion.",
+      "question_matches": [
+        {
+          "source": "ces",
+          "code": "abortion_always",
+          "survey_year": 2021,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "ces",
+          "code": "abortion_scale",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "gss",
+          "code": "abany",
+          "survey_year": 2021,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "prri",
+          "code": "prri_abortion",
+          "survey_year": 2021,
+          "lag_years": 1,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "public",
+          "code": "VCF0837",
+          "survey_year": null,
+          "lag_years": null,
+          "status": "no_prior_observation_within_five_years"
+        },
+        {
+          "source": "public",
+          "code": "VCF0838",
+          "survey_year": 2020,
+          "lag_years": 2,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        },
+        {
+          "source": "voter",
+          "code": "voter_abortion",
+          "survey_year": 2020,
+          "lag_years": 2,
+          "status": "contextual_temporal_match_policy_fit_unresolved"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "A temporal match is contextual coverage, not an adjudicated exact-policy comparison. Each case still needs policy-component/holding matching to question wording and response categories. Existing annual fields are treated as survey years; fieldwork metadata and historical release dates remain to verify.",
+    "Provisional existing holding labels; no new legal adjudication.",
+    "Shared question-years are not independent observations.",
+    "Reviewed frame is incomplete; missing indexed text is reported rather than excluding the reviewed case."
+  ]
+}

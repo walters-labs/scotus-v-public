@@ -1,0 +1,233 @@
+{
+  "status": "Provisional assistant policy-fit review of three examples; no alignment estimate or production rule",
+  "definitions": {
+    "directly_comparable": "Question addresses a named policy/disposition component of the decision; not necessarily the entire opinion or legal rationale.",
+    "broadly_contextual": "Related attitude but no defensible mapping from response categories to the specific holding. Not eligible for direct alignment scoring.",
+    "unsuitable": "Wrong construct or timing even for the specified contextual comparison."
+  },
+  "provenance": {
+    "data/research/abortion-access-coverage.json": "f620e8ad0f2b58fb2bdbcafd00678e932e47daf0070a49388d600a27d78a0951",
+    "artifacts/scdb-issues.sqlite": "38cde989a39db72a0607fb45e14cd9cc9a73a57e37b892889be3e9bf8171321f",
+    "data/research/abortion-access-specification.json": "f1958b7f481c4e0804f5c98f2d5e24ea9c96fd4348476791b3b485d7532164d1",
+    "data/anes/response_mappings.json": "cc1b5f161c1907b2534dd8359013ea6de3b2905ba91d3f54614e31db11ebc6ca",
+    "data/ces/response_mappings.json": "3e94bb88ecdc3e4230f316929257471f8078aa1ee809652463321c51e7f02a54",
+    "artifacts/abortion-review-texts.json": "45d7c0b4d41fbf8a310b8e23dd19710f3a4f6edaa36b1b9cf989b8cd2e5881a2"
+  },
+  "primary_counts": {
+    "cases": 3,
+    "eligible_temporal_pairs": 10,
+    "directly_comparable": 0,
+    "broadly_contextual": 10,
+    "unsuitable": 0
+  },
+  "primary_pairs": [
+    {
+      "case_id": "1972-048",
+      "case_name": "ROE et al. v. WADE, DISTRICT ATTORNEY OF DALLAS COUNTY",
+      "source": "public",
+      "code": "VCF0837",
+      "survey_year": 1972,
+      "lag_years": 1,
+      "classification": "broadly_contextual",
+      "direct_alignment_eligible": false,
+      "rationale": "General permission categories provide context for invalidating a life-saving-only ban, but do not ask about constitutional protection or Roe\u2019s stage-dependent framework. The category midpoint cannot stand for support for the holding.",
+      "stored_question": "(1972,1976: Still on the subject of women\u2019s rights,)\n           There has been some discussion about abortion during recent years.\n           Which one of the opinions on this page (1972: card) best agrees with\n           your view? You can just tell me the number of the opinion you choose.",
+      "wording_note": "See underlying response mappings and source codebook; display wording alone is insufficient.",
+      "scores": null,
+      "question_payload_sha256": "46052a72ded1ce9e2101aa7a7c0c6db0f734d45b6089db825e614337adf9d9d8"
+    },
+    {
+      "case_id": "2015-048",
+      "case_name": "WHOLE WOMAN'S HEALTH v. HELLERSTEDT",
+      "source": "ces",
+      "code": "abortion_always",
+      "survey_year": 2015,
+      "lag_years": 1,
+      "classification": "broadly_contextual",
+      "direct_alignment_eligible": false,
+      "rationale": "General abortion permission does not ask about hospital admitting privileges, surgical-center standards, or the burdens/benefits of those requirements. Context only; unsuitable for direct agreement with the specific rules.",
+      "stored_question": "Support or oppose always allowing a woman to obtain an abortion as a matter of choice?",
+      "wording_note": "Wording summarized; question formats vary by year. ",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "question_payload_sha256": "d081a06b077b767200860e52d9c9d20f38c9f18fd31f3f4cc5f5c8ad50fc39a5"
+    },
+    {
+      "case_id": "2015-048",
+      "case_name": "WHOLE WOMAN'S HEALTH v. HELLERSTEDT",
+      "source": "ces",
+      "code": "abortion_scale",
+      "survey_year": 2013,
+      "lag_years": 3,
+      "classification": "broadly_contextual",
+      "direct_alignment_eligible": false,
+      "rationale": "General abortion permission does not ask about hospital admitting privileges, surgical-center standards, or the burdens/benefits of those requirements. Context only; unsuitable for direct agreement with the specific rules.",
+      "stored_question": "Which abortion policy do you favor: never permit, permit in limited circumstances, permit other established needs, or always allow personal choice?",
+      "wording_note": "Wording summarized; question formats vary by year. ",
+      "scores": {
+        "1": -1,
+        "2": -0.3333333333333333,
+        "3": 0.3333333333333333,
+        "4": 1
+      },
+      "question_payload_sha256": "3f7d56f7327604278b8df3068748beb8541e4471c069a3ea8a1391ba65baa5c1"
+    },
+    {
+      "case_id": "2015-048",
+      "case_name": "WHOLE WOMAN'S HEALTH v. HELLERSTEDT",
+      "source": "gss",
+      "code": "abany",
+      "survey_year": 2014,
+      "lag_years": 2,
+      "classification": "broadly_contextual",
+      "direct_alignment_eligible": false,
+      "rationale": "General abortion permission does not ask about hospital admitting privileges, surgical-center standards, or the burdens/benefits of those requirements. Context only; unsuitable for direct agreement with the specific rules.",
+      "stored_question": "Should a pregnant woman be able to obtain a legal abortion if she wants it for any reason?",
+      "wording_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "question_payload_sha256": "787eb8c875e7da5aa45d1d0008307db685744a8327d6414888a7dfb4afcad07b"
+    },
+    {
+      "case_id": "2015-048",
+      "case_name": "WHOLE WOMAN'S HEALTH v. HELLERSTEDT",
+      "source": "public",
+      "code": "VCF0838",
+      "survey_year": 2012,
+      "lag_years": 4,
+      "classification": "broadly_contextual",
+      "direct_alignment_eligible": false,
+      "rationale": "General abortion permission does not ask about hospital admitting privileges, surgical-center standards, or the burdens/benefits of those requirements. Context only; unsuitable for direct agreement with the specific rules.",
+      "stored_question": "ALL YEARS EXCEPT 2000 TELEPHONE:\n           There has been some discussion about abortion during recent years.\n           (RESPONDENT BOOKLET) Which one of the opinions on this page best agrees\n           with your view? You can just tell me the number of the opinion you\n           choose.\n           2000 TELEPHONE:\n           I am going to read you a short list of opinions. Please tell me which\n\n\n            one of the opinions best agrees with your view. You can just tell me the\n            number of the opinion you choose.",
+      "wording_note": "See underlying response mappings and source codebook; display wording alone is insufficient.",
+      "scores": null,
+      "question_payload_sha256": "2faf34bc361cda28ed8bc98a6ec65083680987256892e125bb24fcdd0914f90d"
+    },
+    {
+      "case_id": "2021-019",
+      "case_name": "DOBBS v. JACKSON WOMEN\u2019S HEALTH ORGANIZATION",
+      "source": "ces",
+      "code": "abortion_always",
+      "survey_year": 2021,
+      "lag_years": 1,
+      "classification": "broadly_contextual",
+      "direct_alignment_eligible": false,
+      "rationale": "General legality/preferences do not establish views on overruling Roe, constitutional protection, state authority, or Mississippi\u2019s fifteen-week restriction. Do not infer support for those components from the mean.",
+      "stored_question": "Support or oppose always allowing a woman to obtain an abortion as a matter of choice?",
+      "wording_note": "Wording summarized; question formats vary by year. ",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "question_payload_sha256": "d081a06b077b767200860e52d9c9d20f38c9f18fd31f3f4cc5f5c8ad50fc39a5"
+    },
+    {
+      "case_id": "2021-019",
+      "case_name": "DOBBS v. JACKSON WOMEN\u2019S HEALTH ORGANIZATION",
+      "source": "gss",
+      "code": "abany",
+      "survey_year": 2021,
+      "lag_years": 1,
+      "classification": "broadly_contextual",
+      "direct_alignment_eligible": false,
+      "rationale": "General legality/preferences do not establish views on overruling Roe, constitutional protection, state authority, or Mississippi\u2019s fifteen-week restriction. Do not infer support for those components from the mean.",
+      "stored_question": "Should a pregnant woman be able to obtain a legal abortion if she wants it for any reason?",
+      "wording_note": "Question text summarized for display; consult source documentation for exact wording.",
+      "scores": {
+        "1": 1,
+        "2": -1
+      },
+      "question_payload_sha256": "787eb8c875e7da5aa45d1d0008307db685744a8327d6414888a7dfb4afcad07b"
+    },
+    {
+      "case_id": "2021-019",
+      "case_name": "DOBBS v. JACKSON WOMEN\u2019S HEALTH ORGANIZATION",
+      "source": "prri",
+      "code": "prri_abortion",
+      "survey_year": 2021,
+      "lag_years": 1,
+      "classification": "broadly_contextual",
+      "direct_alignment_eligible": false,
+      "rationale": "General legality/preferences do not establish views on overruling Roe, constitutional protection, state authority, or Mississippi\u2019s fifteen-week restriction. Do not infer support for those components from the mean.",
+      "stored_question": "Do you think abortion should be legal or illegal?",
+      "wording_note": "Legal in all/most cases = +1/+1/3; illegal in most/all cases = \u22121/3/\u22121. General legality, not a particular restriction. 2022 omitted pending a published-topline discrepancy; wording and question context vary by year.",
+      "scores": {
+        "1": 1,
+        "2": 0.3333333333333333,
+        "3": -0.3333333333333333,
+        "4": -1
+      },
+      "question_payload_sha256": "11c6c2a8588f99dd8dc681f16048595ccbc76438ce0d509dad497dfbb8bdf570"
+    },
+    {
+      "case_id": "2021-019",
+      "case_name": "DOBBS v. JACKSON WOMEN\u2019S HEALTH ORGANIZATION",
+      "source": "public",
+      "code": "VCF0838",
+      "survey_year": 2020,
+      "lag_years": 2,
+      "classification": "broadly_contextual",
+      "direct_alignment_eligible": false,
+      "rationale": "General legality/preferences do not establish views on overruling Roe, constitutional protection, state authority, or Mississippi\u2019s fifteen-week restriction. Do not infer support for those components from the mean.",
+      "stored_question": "ALL YEARS EXCEPT 2000 TELEPHONE:\n           There has been some discussion about abortion during recent years.\n           (RESPONDENT BOOKLET) Which one of the opinions on this page best agrees\n           with your view? You can just tell me the number of the opinion you\n           choose.\n           2000 TELEPHONE:\n           I am going to read you a short list of opinions. Please tell me which\n\n\n            one of the opinions best agrees with your view. You can just tell me the\n            number of the opinion you choose.",
+      "wording_note": "See underlying response mappings and source codebook; display wording alone is insufficient.",
+      "scores": null,
+      "question_payload_sha256": "2faf34bc361cda28ed8bc98a6ec65083680987256892e125bb24fcdd0914f90d"
+    },
+    {
+      "case_id": "2021-019",
+      "case_name": "DOBBS v. JACKSON WOMEN\u2019S HEALTH ORGANIZATION",
+      "source": "voter",
+      "code": "voter_abortion",
+      "survey_year": 2020,
+      "lag_years": 2,
+      "classification": "broadly_contextual",
+      "direct_alignment_eligible": false,
+      "rationale": "General legality/preferences do not establish views on overruling Roe, constitutional protection, state authority, or Mississippi\u2019s fifteen-week restriction. Do not infer support for those components from the mean.",
+      "stored_question": "Do you think abortion should be...",
+      "wording_note": "Legal in all cases = +1; legal in some cases = 0; illegal in all cases = \u22121. The midpoint represents conditional legality, not necessarily ideological centrism. Unknown, skipped and not-asked answers are excluded. Wave-specific cross-sectional weights are used.",
+      "scores": {
+        "1": 1,
+        "2": 0,
+        "3": -1
+      },
+      "question_payload_sha256": "9a8663e31c47db7e2556249c1d29627c648fe8b6b5fc56727d39831ad48efbd4"
+    }
+  ],
+  "supplemental": {
+    "case_id": "2021-019",
+    "source": "voter",
+    "code": "voter_roevwade",
+    "survey_year": 2020,
+    "classification": "directly_comparable_for_overruling_Roe_component",
+    "outside_primary_specification": true,
+    "question": "As you may know, the 1973 Supreme Court Case Roe v. Wade established a woman's constitutional right to have an abortion. Would you like to see the Supreme Court overturn its Roe v. Wade decision, or not?",
+    "scores": {
+      "1": -1,
+      "2": 1
+    },
+    "evidence_note": "Stored 2020Nov wave provenance references VOTER guide page 40. Not newly verified against raw respondents in this review.",
+    "limitations": [
+      "Does not measure opinions on Mississippi\u2019s fifteen-week restriction, all resulting state laws, or constitutional reasoning.",
+      "Unknown answers must remain distinct from support/opposition; examine full response shares rather than only the valid-answer signed mean.",
+      "National November 2020 attitudes are not June 2022 attitudes; no causal or forecasting claim.",
+      "This is a proposed separate component comparison, not added to primary coverage or chosen from its score."
+    ]
+  },
+  "decision": "Do not compute case-specific agreement from the ten general-question pairs. A descriptive contextual comparison is possible; a narrower component-specific comparison is more promising than extending an exact-policy claim to all 17 cases.",
+  "legal_sources": {
+    "1972-048": "https://www.loc.gov/item/usrep410113/",
+    "2015-048": "https://www.law.cornell.edu/supremecourt/text/15-274",
+    "2021-019": "https://www.supremecourt.gov/opinions/21pdf/19-1392_6j37.pdf"
+  },
+  "limitations": [
+    "Three diagnostic cases, not a representative audit of all 17.",
+    "Stored CES/GSS wording is summarized; exact year-specific questionnaires remain to verify before quantitative analysis.",
+    "Primary categories are judgments about measurement compatibility, not independent legal adjudication.",
+    "No survey means were used to select policy-fit labels."
+  ]
+}

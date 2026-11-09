@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "status": "Exploratory coverage specification fixed before this count; not preregistered or independently adjudicated",
+  "question": "For reviewed decisions directly changing legal abortion access, which general legal-access survey questions have observations in an earlier year?",
+  "case_universe": "Union of the two existing abortion case reviews, not search hits. This is an incomplete reviewed frame, not the universe of SCOTUS abortion cases.",
+  "primary_case_category": "direct_access_merits",
+  "separate_case_categories": ["mixed access direction", "direct access plus funding", "procedural", "standing", "contraception", "speech and protest", "other funding"],
+  "case_rule": "Include provisionally reviewed direct-access merits with protective or restrictive access_direction in primary coverage; list mixed and direct-access-plus-funding decisions separately. Prefer the more specific historical category when a later broad scope merges categories. Conflicting directions stop the count. Do not use SCDB ideology or vote margin as access impact.",
+  "survey_codes": {
+    "public": ["VCF0837", "VCF0838"],
+    "gss": ["abany"],
+    "ces": ["abortion_scale", "abortion_always"],
+    "prri": ["prri_abortion"],
+    "voter": ["voter_abortion"]
+  },
+  "survey_rule": "Report each question separately. These ask broad legality or personal-choice access; they are not interchangeable measures. Never pool scores or interpret all midpoints as majority support. Keep ANES versions and CES scale versus binary items separate, including overlapping years.",
+  "excluded_survey_scopes": ["moral acceptability", "movement thermometers", "public or employer funding", "specific health/rape/fetal/economic/family circumstances", "gestational limits", "blanket prohibition alone", "exceptions-only policy", "compound access expansion", "provider availability", "medication-specific policy", "waiting periods", "Roe-specific approval"],
+  "timing": {"rule": "Latest available observation for each question strictly before the decision calendar year, at most five years old; no same-year observations or interpolation.", "maximum_lag_years": 5, "historical_release_availability_verified": false},
+  "output": "Case-by-question availability table with explicit missing matches, distinct question-years and case counts. No alignment or prediction metric.",
+  "interpretation": "A temporal match is contextual coverage, not an adjudicated exact-policy comparison. Each case still needs policy-component/holding matching to question wording and response categories. Existing annual fields are treated as survey years; fieldwork metadata and historical release dates remain to verify.",
+  "stop": "Finish specification and coverage count only; no new models, search changes, deployment, or automatic expansion."
+}

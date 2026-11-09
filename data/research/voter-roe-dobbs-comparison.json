@@ -1,0 +1,81 @@
+{
+  "status": "Single descriptive component comparison; not alignment tracker or forecast",
+  "survey": {
+    "release": "VOTER Survey December 2021 release",
+    "fieldwork_start": "2020-11-13",
+    "fieldwork_end": "2020-12-07",
+    "question": "As you may know, the 1973 Supreme Court Case Roe v. Wade established a woman's constitutional right to have an abortion. Would you like to see the Supreme Court overturn its Roe v. Wade decision, or not?",
+    "response_label_note": "Full no-response label on guide page 40 adds maintain abortion rights in all 50 states; raw Stata label is truncated.",
+    "variable": "roevwade_2020Nov",
+    "weight": "weight_genpop_2020Nov",
+    "weight_rule": "Guide page 4 recommends wave-specific genpop weight for cross-sectional analysis.",
+    "sample_description": "YouGov online panel; 4,943 post-election respondents, drawn from adults invited after the September wave. Do not describe as a simple random sample or restrict to voters without additional filtering.",
+    "denominator": "All positive-weight November-wave respondents, including not sure and skipped; no yes/no-only renormalization.",
+    "respondents": 4943,
+    "weight_sum": 4943.0,
+    "responses": [
+      {
+        "code": "1",
+        "response": "Favor overturning Roe",
+        "unweighted_count": 1178,
+        "weight_sum": 1287.0475325234995,
+        "weighted_percent": 26.037781357950628
+      },
+      {
+        "code": "2",
+        "response": "Oppose overturning Roe",
+        "unweighted_count": 3024,
+        "weight_sum": 2687.0537568710893,
+        "weighted_percent": 54.36078812201273
+      },
+      {
+        "code": "3",
+        "response": "Not sure",
+        "unweighted_count": 740,
+        "weight_sum": 967.6952587988294,
+        "weighted_percent": 19.57708393281063
+      },
+      {
+        "code": "8",
+        "response": "Skipped",
+        "unweighted_count": 1,
+        "weight_sum": 1.20345180658148,
+        "weighted_percent": 0.02434658722600607
+      },
+      {
+        "code": "9",
+        "response": "Not asked",
+        "unweighted_count": 0,
+        "weight_sum": 0.0,
+        "weighted_percent": 0.0
+      }
+    ],
+    "guide_pages": [
+      3,
+      4,
+      40
+    ],
+    "source_url": "https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf"
+  },
+  "court": {
+    "case_id": "2021-019",
+    "name": "Dobbs v. Jackson Women\u2019s Health Organization",
+    "decision_date": "2022-06-24",
+    "component": "Overruled Roe v. Wade (and Casey); not an estimate of support for every part of the opinion or subsequent restrictions.",
+    "source_url": "https://www.supremecourt.gov/opinions/21pdf/19-1392_6j37.pdf"
+  },
+  "interpretation": "The weighted survey majority opposed overturning Roe in late 2020; the Court overruled Roe in June 2022. This is disagreement on that named component across those dates, not a contemporaneous estimate or causal claim.",
+  "limitations": [
+    "About 19 months between fieldwork and decision; attitudes may have changed.",
+    "Question framing explicitly references a constitutional right and may affect responses.",
+    "Panel recruitment, weighting and nonresponse can affect representativeness; no design-based confidence interval or significance claim.",
+    "One selected example cannot estimate overall court-public agreement or predictiveness.",
+    "Does not assess Mississippi\u2019s fifteen-week limit, all state restrictions, or the constitutional correctness of the decision."
+  ],
+  "provenance": {
+    "data/raw/voter/VOTER Panel Data Files/voter_panel.dta": "29382b5993748020e21dc0ef0749c65d76d87f729cac1fb2bdd11aab55d6e1f2",
+    "data/raw/voter/guide.pdf": "3a4fb03bcfe208937c5723a4f30239a9155930a818c21a708c8ac93395a981e5",
+    "data/manifests/voter-policy-batch.json": "77d9afc929283f908320bee48686edfab2801f116d25f1f50d91e0a4956804c6",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/compare_voter_roe_dobbs.py": "741c511e4204299454b114f1a5a70b99ff7ce9eefc7fe624c5772928a7dfdec2"
+  }
+}
