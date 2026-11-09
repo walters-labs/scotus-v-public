@@ -40,3 +40,14 @@ details { margin: 1rem 0; }
 .methodology summary:focus-visible{outline:2px solid #555555;outline-offset:3px}
 .methodology p{max-width:85ch}
 @media(max-width:760px){.topic-search{grid-template-columns:1fr}.topic-search button{margin-top:0}}
+
+/* Court metadata stays compact; source text is available on demand. */
+.court-case .case-citation,.court-case .case-facts{color:#666;font-size:.85rem;margin:.3rem 0}
+.court-case .case-outcome{font-size:.9rem;margin:.6rem 0}
+.case-details{margin-top:.7rem;font-size:.9rem}
+.case-details summary{cursor:pointer;color:#444}
+.case-details dl{display:grid;grid-template-columns:auto 1fr;gap:.35rem .8rem;margin:1rem 0}
+.case-details dt{font-weight:600}.case-details dd{margin:0;overflow-wrap:anywhere}
+.case-details .case-note{font-size:.8rem;color:#666;line-height:1.5}
+.case-details h4{margin:1rem 0 .4rem}
+.case-summary{margin:.7rem 0;padding-left:1rem;border-left:2px solid #ddd;line-height:1.6;max-height:22rem;overflow:auto}

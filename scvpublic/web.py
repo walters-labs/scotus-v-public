@@ -5,6 +5,7 @@ import sqlite3
 from pathlib import Path
 from flask import Flask, render_template, request
 from .chart import chart, combine_sources
+from .court_details import load_details
 from .store import connect, metadata, search, survey_search, series, court_counts, survey_items
 
 
@@ -74,6 +75,7 @@ def create_app(artifact=None, hybrid_dir=None):
             view = 'combined'
         contribution_rows = []
         counts = {}
+        court_details = {}
         error = None
         court, public, gss, ces, pew, wvs, prri, nationscape, voter, svg = [], [], [], [], [], [], [], [], [], ''
         if any(len(t) > 100 for t in terms):
@@ -92,6 +94,7 @@ def create_app(artifact=None, hybrid_dir=None):
                 else:
                     court = search(db, 'court', terms)
                     trend_court = search(db, 'court', terms, limit=None, relative_cutoff=0.20)
+                court_details = load_details(db, court)
                 if info.get('gss_documents'):
                     gss = questions('gss')
                 if info.get('ces_documents'):
@@ -140,5 +143,5 @@ def create_app(artifact=None, hybrid_dir=None):
         return render_template('index.html', terms=terms, court=court, public=public,
                                svg=svg, info=info, error=error, searched=any(terms),
                                counts=counts, gss=gss, ces=ces, pew=pew, wvs=wvs, prri=prri, nationscape=nationscape, voter=voter, view=view, views=views,
-                               contribution_rows=contribution_rows), (400 if error else 200)
+                               contribution_rows=contribution_rows, court_details=court_details), (400 if error else 200)
     return app

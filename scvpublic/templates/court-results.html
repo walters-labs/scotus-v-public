@@ -1,0 +1,31 @@
+<section><h2>Supreme Court</h2>
+{% for opinion in court %}
+{% set detail = court_details.get(opinion.get('case_id'), {}) %}
+<article class="court-case">
+<h3>{{ opinion['cases'][0]['name'] if opinion['cases']|length == 1 else opinion['name'] }}</h3>
+{% if opinion.get('citation') and not opinion['citation'].startswith('0.US.') %}<p class="case-citation">{{ opinion['citation'] }}</p>{% endif %}
+{% for case in opinion['cases'] %}
+<p class="case-facts">{{ case.get('date_decision', case['year']) }}{% if 'majority_votes' in case %} · {{ case['majority_votes'] }}–{{ case['minority_votes'] }} vote{% endif %}{% if case['polarity'] is none %} · Not yet scored; excluded from chart{% endif %}</p>
+{% else %}<p>No matching SCDB case; excluded from chart.</p>{% endfor %}
+{% if info.get('hybrid_search') and opinion['score'] < info['court_chart_cutoff'] %}<p class="case-facts">Below the chart relevance threshold; not included in the trend.</p>{% endif %}
+{% if detail.get('dispositions') %}<p class="case-outcome">{{ detail['dispositions']|join('; ') }}</p>{% endif %}
+{% if detail.get('decision_type') or detail.get('issue_areas') or detail.get('summary_excerpt') %}
+<details class="case-details"><summary>Case details{% if detail.get('summary_excerpt') %} &amp; source summary{% endif %}</summary>
+<dl>
+{% if detail.get('decision_type') %}<dt>Decision form</dt><dd>{{ detail['decision_type'] }}</dd>{% endif %}
+{% if detail.get('docket') %}<dt>Docket</dt><dd>{{ detail['docket'] }}</dd>{% endif %}
+{% if detail.get('issue_areas') %}<dt>SCDB issue areas</dt><dd>{{ detail['issue_areas']|join('; ') }}</dd>{% endif %}
+{% if detail.get('directions') %}<dt>SCDB direction</dt><dd>{{ detail['directions']|join('; ') }}</dd>{% endif %}
+</dl>
+<p class="case-note">SCDB classifications describe the recorded outcome. The vote split does not show which justices joined each part of the reasoning, and the direction is not a position on every issue in the case. <a href="{{ detail['codebook'] }}">SCDB codebook</a>.</p>
+{% if detail.get('summary_excerpt') %}
+<h4>Source summary excerpt</h4>
+<p class="case-note">{{ detail['summary_source'] }}. This is a source excerpt, not a generated interpretation or the Court’s opinion. It may omit holdings or separate opinions; source transcription errors may remain.</p>
+<blockquote class="case-summary">{{ detail['summary_excerpt'] }}</blockquote>
+{% endif %}
+{% if detail.get('source_url') %}<p><a href="{{ detail['source_url'] }}">Read the official opinion (PDF)</a></p>{% endif %}
+</details>
+{% endif %}
+</article>
+{% else %}<p>No matching opinions.</p>{% endfor %}
+</section>
