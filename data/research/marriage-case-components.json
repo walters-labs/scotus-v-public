@@ -1,0 +1,250 @@
+{
+  "review_date": "2026-11-11",
+  "status": "Assistant source-based review of five selected cases, not independent legal ground truth or a complete census",
+  "construct": "Direction of change in legal recognition of same-sex marriage",
+  "coding": {
+    "expands": "Extends legal access or recognition within the specified scope",
+    "no_merits_ruling": "No direction assigned on marriage-policy merits; not neutral and not zero",
+    "maintains_restriction": "Leaves the challenged restriction in place within the specified issues; does not enact a new ban"
+  },
+  "cases": [
+    {
+      "case_id": "2012-079",
+      "name": "United States v. Windsor",
+      "date": "2013-06-26",
+      "source": "https://www.law.cornell.edu/supremecourt/text/12-307",
+      "majority_author": "Kennedy",
+      "majority_joiners": [
+        "Ginsburg",
+        "Breyer",
+        "Sotomayor",
+        "Kagan"
+      ],
+      "vote": "5\u20134",
+      "components": [
+        {
+          "issue": "Federal recognition of lawful same-sex marriages",
+          "decision": "DOMA section 3 is unconstitutional",
+          "direction": "expands",
+          "scope": "Federal treatment of marriages lawful under state law; not a nationwide state licensing requirement",
+          "locator": "Majority Part IV, final two paragraphs; syllabus holding 2",
+          "evidence": "This opinion and its holding are confined to those lawful marriages.",
+          "survey_fit": "Broad marriage-legality preference is directionally relevant context, not a direct measure of support for DOMA section 3 invalidation",
+          "component_id": "2012-079-1",
+          "policy_id": "same_sex_marriage",
+          "comparison_fit": "contextual"
+        },
+        {
+          "issue": "Jurisdiction despite executive agreement with Windsor",
+          "decision": "Court could consider the merits",
+          "direction": "no_merits_ruling",
+          "scope": "Jurisdiction component only; the separate DOMA holding does decide merits",
+          "locator": "Majority Part II; syllabus holding 1",
+          "survey_fit": "Not measured by marriage-legality questions",
+          "component_id": "2012-079-2",
+          "policy_id": "same_sex_marriage",
+          "comparison_fit": "not_comparable"
+        }
+      ],
+      "separate_opinions": [
+        {
+          "author": "Roberts",
+          "type": "dissent",
+          "joiners": []
+        },
+        {
+          "author": "Scalia",
+          "type": "dissent",
+          "joiners": [
+            "Thomas (whole opinion)",
+            "Roberts (Part I only)"
+          ]
+        },
+        {
+          "author": "Alito",
+          "type": "dissent",
+          "joiners": [
+            "Thomas (Parts II and III only)"
+          ]
+        }
+      ],
+      "roster_evidence": "Syllabus author/joiner paragraph; opinion headings",
+      "interpretation_limit": "Votes and dissent authors are not measurements of the justices' personal approval of marriage equality."
+    },
+    {
+      "case_id": "2012-077",
+      "name": "Hollingsworth v. Perry",
+      "date": "2013-06-26",
+      "source": "https://www.law.cornell.edu/supremecourt/text/12-144",
+      "majority_author": "Roberts",
+      "majority_joiners": [
+        "Scalia",
+        "Ginsburg",
+        "Breyer",
+        "Kagan"
+      ],
+      "vote": "5\u20134",
+      "components": [
+        {
+          "issue": "Initiative proponents' standing to appeal",
+          "decision": "No standing; Ninth Circuit judgment vacated, appeal to be dismissed",
+          "direction": "no_merits_ruling",
+          "scope": "Article III appellate jurisdiction, not adjudication of whether states must permit same-sex marriage",
+          "locator": "Majority closing paragraph",
+          "evidence": "the case is remanded with instructions to dismiss the appeal for lack of jurisdiction",
+          "survey_fit": "Do not assign a policy-agreement score from marriage-legality responses",
+          "component_id": "2012-077-1",
+          "policy_id": "same_sex_marriage",
+          "comparison_fit": "not_comparable"
+        }
+      ],
+      "practical_effect": "The district-court injunction against enforcement of Proposition 8 was left undisturbed; distinguish that consequence from a Supreme Court merits endorsement of marriage equality.",
+      "separate_opinions": [
+        {
+          "author": "Kennedy",
+          "type": "dissent",
+          "joiners": [
+            "Thomas",
+            "Alito",
+            "Sotomayor"
+          ]
+        }
+      ],
+      "roster_evidence": "Syllabus author/joiner paragraph; Kennedy dissent heading",
+      "interpretation_limit": "The dissent concerns standing; it must not be coded as opposition to marriage equality."
+    },
+    {
+      "case_id": "2014-070",
+      "name": "Obergefell v. Hodges",
+      "date": "2015-06-26",
+      "source": "https://www.law.cornell.edu/supremecourt/text/14-556",
+      "majority_author": "Kennedy",
+      "majority_joiners": [
+        "Ginsburg",
+        "Breyer",
+        "Sotomayor",
+        "Kagan"
+      ],
+      "vote": "5\u20134",
+      "components": [
+        {
+          "issue": "State licensing of same-sex marriages",
+          "decision": "States must permit same-sex couples to marry on equal terms",
+          "direction": "expands",
+          "scope": "Nationwide constitutional requirement",
+          "locator": "Majority Part III closing paragraph",
+          "evidence": "The Court now holds that same-sex couples may exercise the fundamental right to marry.",
+          "survey_fit": "Direct broad policy-direction comparison with allowing same-sex couples to marry; not approval of the constitutional reasoning",
+          "component_id": "2014-070-1",
+          "policy_id": "same_sex_marriage",
+          "comparison_fit": "direct"
+        },
+        {
+          "issue": "Recognition of lawful out-of-state same-sex marriages",
+          "decision": "States must recognize these marriages",
+          "direction": "expands",
+          "scope": "Interstate recognition",
+          "locator": "Majority Part V; syllabus holding c",
+          "survey_fit": "Related but not separately asked by selected broad marriage-legality questions",
+          "component_id": "2014-070-2",
+          "policy_id": "same_sex_marriage",
+          "comparison_fit": "contextual"
+        }
+      ],
+      "separate_opinions": [
+        {
+          "author": "Roberts",
+          "type": "dissent",
+          "joiners": [
+            "Scalia",
+            "Thomas"
+          ]
+        },
+        {
+          "author": "Scalia",
+          "type": "dissent",
+          "joiners": [
+            "Thomas"
+          ]
+        },
+        {
+          "author": "Thomas",
+          "type": "dissent",
+          "joiners": [
+            "Scalia"
+          ]
+        },
+        {
+          "author": "Alito",
+          "type": "dissent",
+          "joiners": [
+            "Scalia",
+            "Thomas"
+          ]
+        }
+      ],
+      "roster_evidence": "Syllabus author/joiner paragraph; opinion headings",
+      "interpretation_limit": "Two components do not count as two independent decisions. Vote margin is recorded separately, never used as policy magnitude."
+    },
+    {
+      "case_id": "us-409-810",
+      "name": "Baker v. Nelson",
+      "date": "1972-10-10",
+      "source": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep409/usrep409801/usrep409801.pdf",
+      "vote": null,
+      "majority_author": null,
+      "majority_joiners": null,
+      "separate_opinions": [],
+      "coverage_note": "Not found in the current serving index by case name; no vote count inferred from the unsigned order.",
+      "interpretation_limit": "Summary dismissal has limited merits effect on the issues necessarily decided, unlike a standing dismissal. It does not adopt every rationale below. See Mandel v. Bradley, 432 U.S. 173, 176 (1977): https://www.law.cornell.edu/supremecourt/text/432/173 . Baker was later overruled in Obergefell Part III.",
+      "components": [
+        {
+          "component_id": "baker-licensing",
+          "policy_id": "same_sex_marriage",
+          "comparison_fit": "direct",
+          "issue": "Challenge to exclusion from marriage licensing",
+          "decision": "Appeal dismissed for want of a substantial federal question.",
+          "direction": "maintains_restriction",
+          "scope": "Summary disposition left the challenged Minnesota judgment in place; not a new nationwide legislative prohibition.",
+          "locator": "409 U.S. 810, October 10, 1972, docket 71-1027; PDF page 10. Obergefell Part III discusses and overrules Baker.",
+          "survey_fit": "Broad licensing-policy direction is comparable in principle, but this survey selection has no eligible pre-1972 observation."
+        }
+      ]
+    },
+    {
+      "case_id": "2016-081",
+      "name": "Pavan v. Smith",
+      "date": "2017-06-26",
+      "source": "https://www.law.cornell.edu/supremecourt/text/16-992",
+      "majority_author": "Per curiam (unsigned)",
+      "majority_joiners": null,
+      "vote": "6\u20133",
+      "vote_source": "SCDB_2026_01_caseCentered_Citation.csv, caseId 2016-081, majVotes 6, minVotes 3",
+      "separate_opinions": [
+        {
+          "author": "Gorsuch",
+          "type": "dissent",
+          "joiners": [
+            "Thomas",
+            "Alito"
+          ]
+        }
+      ],
+      "coverage_note": "Present in SCDB (2016-081), absent from the current serving index. Included here from the primary decision; no production index change.",
+      "interpretation_limit": "An unsigned opinion does not supply a named majority-joinder roster. Broad marriage approval is not measured approval of this birth-certificate holding.",
+      "components": [
+        {
+          "component_id": "pavan-birth-certificates",
+          "policy_id": "same_sex_marriage",
+          "comparison_fit": "contextual",
+          "issue": "Equal marital treatment on birth certificates",
+          "decision": "Rejected unequal treatment of same-sex spouses under Arkansas birth-certificate rules.",
+          "direction": "expands",
+          "scope": "Application of equal marital benefits under Obergefell to the challenged birth-certificate treatment.",
+          "locator": "Per curiam opening and closing paragraphs; dissent heading for author and joiners.",
+          "survey_fit": "Marriage-legality questions provide broad context only. No selected item directly measures support for these birth-certificate rules."
+        }
+      ]
+    }
+  ]
+}

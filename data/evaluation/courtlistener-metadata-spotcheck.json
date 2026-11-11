@@ -1,0 +1,150 @@
+{
+  "checked_on": "2026-11-11",
+  "selection": "Three deliberately chosen multi-opinion clusters; not a random coverage sample.",
+  "requests": [
+    {
+      "cluster_id": 1723,
+      "response_sha256": "4a6813f61ec52aa2467dfff134c708e2fa11643a4c3bdda99a44ead100c5116c",
+      "endpoint": "https://www.courtlistener.com/api/rest/v4/opinions/?cluster=1723&fields=id,cluster,type,author,author_str,joined_by,per_curiam,absolute_url&order_by=id",
+      "pagination_complete": true,
+      "records": [
+        {
+          "id": 1723,
+          "absolute_url": "/opinion/1723/padilla-v-kentucky/",
+          "cluster": "https://www.courtlistener.com/api/rest/v4/clusters/1723/",
+          "author": null,
+          "joined_by": [],
+          "author_str": "",
+          "per_curiam": false,
+          "type": "010combined"
+        },
+        {
+          "id": 9413157,
+          "absolute_url": "/opinion/1723/padilla-v-kentucky/",
+          "cluster": "https://www.courtlistener.com/api/rest/v4/clusters/1723/",
+          "author": null,
+          "joined_by": [],
+          "author_str": "Stevens",
+          "per_curiam": false,
+          "type": "020lead"
+        },
+        {
+          "id": 9413158,
+          "absolute_url": "/opinion/1723/padilla-v-kentucky/",
+          "cluster": "https://www.courtlistener.com/api/rest/v4/clusters/1723/",
+          "author": null,
+          "joined_by": [],
+          "author_str": "Alito",
+          "per_curiam": false,
+          "type": "030concurrence"
+        },
+        {
+          "id": 9413159,
+          "absolute_url": "/opinion/1723/padilla-v-kentucky/",
+          "cluster": "https://www.courtlistener.com/api/rest/v4/clusters/1723/",
+          "author": null,
+          "joined_by": [],
+          "author_str": "Scalia",
+          "per_curiam": false,
+          "type": "040dissent"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1722,
+      "response_sha256": "58ab99f9b65d54d2b22b192f1f2206d15f75fce0b8cac4c22f6e0d39c2d88c45",
+      "endpoint": "https://www.courtlistener.com/api/rest/v4/opinions/?cluster=1722&fields=id,cluster,type,author,author_str,joined_by,per_curiam,absolute_url&order_by=id",
+      "pagination_complete": true,
+      "records": [
+        {
+          "id": 1722,
+          "absolute_url": "/opinion/1722/shady-grove-orthopedic-associates-p-a-v-allstate-insurance/",
+          "cluster": "https://www.courtlistener.com/api/rest/v4/clusters/1722/",
+          "author": null,
+          "joined_by": [],
+          "author_str": "",
+          "per_curiam": false,
+          "type": "010combined"
+        },
+        {
+          "id": 9413154,
+          "absolute_url": "/opinion/1722/shady-grove-orthopedic-associates-p-a-v-allstate-insurance/",
+          "cluster": "https://www.courtlistener.com/api/rest/v4/clusters/1722/",
+          "author": null,
+          "joined_by": [],
+          "author_str": "Scalia",
+          "per_curiam": false,
+          "type": "020lead"
+        },
+        {
+          "id": 9413155,
+          "absolute_url": "/opinion/1722/shady-grove-orthopedic-associates-p-a-v-allstate-insurance/",
+          "cluster": "https://www.courtlistener.com/api/rest/v4/clusters/1722/",
+          "author": null,
+          "joined_by": [],
+          "author_str": "Stevens",
+          "per_curiam": false,
+          "type": "030concurrence"
+        },
+        {
+          "id": 9413156,
+          "absolute_url": "/opinion/1722/shady-grove-orthopedic-associates-p-a-v-allstate-insurance/",
+          "cluster": "https://www.courtlistener.com/api/rest/v4/clusters/1722/",
+          "author": null,
+          "joined_by": [],
+          "author_str": "Ginsburg",
+          "per_curiam": false,
+          "type": "040dissent"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2811848,
+      "response_sha256": "c46cb0cd5273560caa61eacdf52085979d0f2717e5082853e05016cfaf0c8dc3",
+      "endpoint": "https://www.courtlistener.com/api/rest/v4/opinions/?cluster=2811848&fields=id,cluster,type,author,author_str,joined_by,per_curiam,absolute_url&order_by=id",
+      "pagination_complete": true,
+      "records": [
+        {
+          "id": 2811848,
+          "absolute_url": "/opinion/2811848/horne-v-department-of-agriculture/",
+          "cluster": "https://www.courtlistener.com/api/rest/v4/clusters/2811848/",
+          "author": null,
+          "joined_by": [],
+          "author_str": "",
+          "per_curiam": false,
+          "type": "010combined"
+        },
+        {
+          "id": 9808643,
+          "absolute_url": "/opinion/2811848/horne-v-department-of-agriculture/",
+          "cluster": "https://www.courtlistener.com/api/rest/v4/clusters/2811848/",
+          "author": null,
+          "joined_by": [],
+          "author_str": "ROBERTSdelivered",
+          "per_curiam": false,
+          "type": "020lead"
+        },
+        {
+          "id": 9808644,
+          "absolute_url": "/opinion/2811848/horne-v-department-of-agriculture/",
+          "cluster": "https://www.courtlistener.com/api/rest/v4/clusters/2811848/",
+          "author": null,
+          "joined_by": [],
+          "author_str": "Thomas",
+          "per_curiam": false,
+          "type": "030concurrence"
+        },
+        {
+          "id": 9808645,
+          "absolute_url": "/opinion/2811848/horne-v-department-of-agriculture/",
+          "cluster": "https://www.courtlistener.com/api/rest/v4/clusters/2811848/",
+          "author": null,
+          "joined_by": [],
+          "author_str": "Sotomayor",
+          "per_curiam": false,
+          "type": "040dissent"
+        }
+      ]
+    }
+  ]
+}

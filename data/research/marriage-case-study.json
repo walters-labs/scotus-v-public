@@ -1,0 +1,2464 @@
+{
+  "case_review": {
+    "review_date": "2026-11-11",
+    "status": "Assistant source-based review of three selected cases, not independent legal ground truth or a complete census",
+    "construct": "Direction of change in legal recognition of same-sex marriage",
+    "coding": {
+      "expands": "Extends legal access or recognition within the specified scope",
+      "no_merits_ruling": "No direction assigned on marriage-policy merits; not neutral and not zero"
+    },
+    "cases": [
+      {
+        "case_id": "2012-079",
+        "name": "United States v. Windsor",
+        "date": "2013-06-26",
+        "source": "https://www.law.cornell.edu/supremecourt/text/12-307",
+        "majority_author": "Kennedy",
+        "majority_joiners": [
+          "Ginsburg",
+          "Breyer",
+          "Sotomayor",
+          "Kagan"
+        ],
+        "vote": "5\u20134",
+        "components": [
+          {
+            "issue": "Federal recognition of lawful same-sex marriages",
+            "decision": "DOMA section 3 is unconstitutional",
+            "direction": "expands",
+            "scope": "Federal treatment of marriages lawful under state law; not a nationwide state licensing requirement",
+            "locator": "Majority Part IV, final two paragraphs; syllabus holding 2",
+            "evidence": "This opinion and its holding are confined to those lawful marriages.",
+            "survey_fit": "Broad marriage-legality preference is directionally relevant context, not a direct measure of support for DOMA section 3 invalidation"
+          },
+          {
+            "issue": "Jurisdiction despite executive agreement with Windsor",
+            "decision": "Court could consider the merits",
+            "direction": "no_merits_ruling",
+            "scope": "Jurisdiction component only; the separate DOMA holding does decide merits",
+            "locator": "Majority Part II; syllabus holding 1",
+            "survey_fit": "Not measured by marriage-legality questions"
+          }
+        ],
+        "separate_opinions": [
+          {
+            "author": "Roberts",
+            "type": "dissent",
+            "joiners": []
+          },
+          {
+            "author": "Scalia",
+            "type": "dissent",
+            "joiners": [
+              "Thomas (whole opinion)",
+              "Roberts (Part I only)"
+            ]
+          },
+          {
+            "author": "Alito",
+            "type": "dissent",
+            "joiners": [
+              "Thomas (Parts II and III only)"
+            ]
+          }
+        ],
+        "roster_evidence": "Syllabus author/joiner paragraph; opinion headings",
+        "interpretation_limit": "Votes and dissent authors are not measurements of the justices' personal approval of marriage equality."
+      },
+      {
+        "case_id": "2012-077",
+        "name": "Hollingsworth v. Perry",
+        "date": "2013-06-26",
+        "source": "https://www.law.cornell.edu/supremecourt/text/12-144",
+        "majority_author": "Roberts",
+        "majority_joiners": [
+          "Scalia",
+          "Ginsburg",
+          "Breyer",
+          "Kagan"
+        ],
+        "vote": "5\u20134",
+        "components": [
+          {
+            "issue": "Initiative proponents' standing to appeal",
+            "decision": "No standing; Ninth Circuit judgment vacated, appeal to be dismissed",
+            "direction": "no_merits_ruling",
+            "scope": "Article III appellate jurisdiction, not adjudication of whether states must permit same-sex marriage",
+            "locator": "Majority closing paragraph",
+            "evidence": "the case is remanded with instructions to dismiss the appeal for lack of jurisdiction",
+            "survey_fit": "Do not assign a policy-agreement score from marriage-legality responses"
+          }
+        ],
+        "practical_effect": "The district-court injunction against enforcement of Proposition 8 was left undisturbed; distinguish that consequence from a Supreme Court merits endorsement of marriage equality.",
+        "separate_opinions": [
+          {
+            "author": "Kennedy",
+            "type": "dissent",
+            "joiners": [
+              "Thomas",
+              "Alito",
+              "Sotomayor"
+            ]
+          }
+        ],
+        "roster_evidence": "Syllabus author/joiner paragraph; Kennedy dissent heading",
+        "interpretation_limit": "The dissent concerns standing; it must not be coded as opposition to marriage equality."
+      },
+      {
+        "case_id": "2014-070",
+        "name": "Obergefell v. Hodges",
+        "date": "2015-06-26",
+        "source": "https://www.law.cornell.edu/supremecourt/text/14-556",
+        "majority_author": "Kennedy",
+        "majority_joiners": [
+          "Ginsburg",
+          "Breyer",
+          "Sotomayor",
+          "Kagan"
+        ],
+        "vote": "5\u20134",
+        "components": [
+          {
+            "issue": "State licensing of same-sex marriages",
+            "decision": "States must permit same-sex couples to marry on equal terms",
+            "direction": "expands",
+            "scope": "Nationwide constitutional requirement",
+            "locator": "Majority Part III closing paragraph",
+            "evidence": "The Court now holds that same-sex couples may exercise the fundamental right to marry.",
+            "survey_fit": "Direct broad policy-direction comparison with allowing same-sex couples to marry; not approval of the constitutional reasoning"
+          },
+          {
+            "issue": "Recognition of lawful out-of-state same-sex marriages",
+            "decision": "States must recognize these marriages",
+            "direction": "expands",
+            "scope": "Interstate recognition",
+            "locator": "Majority Part V; syllabus holding c",
+            "survey_fit": "Related but not separately asked by selected broad marriage-legality questions"
+          }
+        ],
+        "separate_opinions": [
+          {
+            "author": "Roberts",
+            "type": "dissent",
+            "joiners": [
+              "Scalia",
+              "Thomas"
+            ]
+          },
+          {
+            "author": "Scalia",
+            "type": "dissent",
+            "joiners": [
+              "Thomas"
+            ]
+          },
+          {
+            "author": "Thomas",
+            "type": "dissent",
+            "joiners": [
+              "Scalia"
+            ]
+          },
+          {
+            "author": "Alito",
+            "type": "dissent",
+            "joiners": [
+              "Scalia",
+              "Thomas"
+            ]
+          }
+        ],
+        "roster_evidence": "Syllabus author/joiner paragraph; opinion headings",
+        "interpretation_limit": "Two components do not count as two independent decisions. Vote margin is recorded separately, never used as policy magnitude."
+      }
+    ]
+  },
+  "scope": "Support for legal same-sex marriage; three deliberately selected case events, not complete legal history.",
+  "timing_rule": "Latest earlier-calendar-year wave per source within three years; same-year waves excluded to avoid uncertain before/after ordering.",
+  "survey_records": [
+    {
+      "source": "CES",
+      "year": 2012,
+      "variable": "gaymarriage_legalize",
+      "wording": "Do you favor or oppose allowing gays and lesbians to marry legally?",
+      "weight": "weight",
+      "denominator": "Support/oppose respondents only; harmonized missing answers excluded, original unsure/nonresponse categories unavailable here.",
+      "n": 53942,
+      "weight_sum": 54020.285807553264,
+      "percent": {
+        "support": 53.72903204273837,
+        "oppose": 46.27096795726163,
+        "neutral": 0.0,
+        "unsure": 0.0,
+        "nonresponse": 0.0
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 28085,
+          "weight_sum": 29024.576671119143,
+          "percent": 53.72903204273837
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 25857,
+          "weight_sum": 24995.70913643412,
+          "percent": 46.27096795726163
+        }
+      ],
+      "excluded_positive_weight": 593,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "CES",
+      "year": 2013,
+      "variable": "gaymarriage_legalize",
+      "wording": "Do you favor or oppose allowing gays and lesbians to marry legally?",
+      "weight": "weight",
+      "denominator": "Support/oppose respondents only; harmonized missing answers excluded, original unsure/nonresponse categories unavailable here.",
+      "n": 16175,
+      "weight_sum": 16153.974232112952,
+      "percent": {
+        "support": 54.67981046535694,
+        "oppose": 45.32018953464306,
+        "neutral": 0.0,
+        "unsure": 0.0,
+        "nonresponse": 0.0
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 9308,
+          "weight_sum": 8832.96249274196,
+          "percent": 54.67981046535694
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 6867,
+          "weight_sum": 7321.011739370992,
+          "percent": 45.32018953464306
+        }
+      ],
+      "excluded_positive_weight": 225,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "CES",
+      "year": 2014,
+      "variable": "gaymarriage_legalize",
+      "wording": "Do you favor or oppose allowing gays and lesbians to marry legally?",
+      "weight": "weight",
+      "denominator": "Support/oppose respondents only; harmonized missing answers excluded, original unsure/nonresponse categories unavailable here.",
+      "n": 55670,
+      "weight_sum": 55623.91656971872,
+      "percent": {
+        "support": 55.99766943304994,
+        "oppose": 44.00233056695006,
+        "neutral": 0.0,
+        "unsure": 0.0,
+        "nonresponse": 0.0
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 32810,
+          "weight_sum": 31148.09692642658,
+          "percent": 55.99766943304994
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 22860,
+          "weight_sum": 24475.81964329214,
+          "percent": 44.00233056695006
+        }
+      ],
+      "excluded_positive_weight": 530,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "CES",
+      "year": 2015,
+      "variable": "gaymarriage_legalize",
+      "wording": "Do you favor or oppose allowing gays and lesbians to marry legally?",
+      "weight": "weight",
+      "denominator": "Support/oppose respondents only; harmonized missing answers excluded, original unsure/nonresponse categories unavailable here.",
+      "n": 14089,
+      "weight_sum": 14100.5094095494,
+      "percent": {
+        "support": 56.50824091847563,
+        "oppose": 43.49175908152437,
+        "neutral": 0.0,
+        "unsure": 0.0,
+        "nonresponse": 0.0
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 8248,
+          "weight_sum": 7967.9498278805,
+          "percent": 56.50824091847563
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 5841,
+          "weight_sum": 6132.5595816689,
+          "percent": 43.49175908152437
+        }
+      ],
+      "excluded_positive_weight": 161,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "CES",
+      "year": 2016,
+      "variable": "gaymarriage_legalize",
+      "wording": "Do you favor or oppose allowing gays and lesbians to marry legally?",
+      "weight": "weight",
+      "denominator": "Support/oppose respondents only; harmonized missing answers excluded, original unsure/nonresponse categories unavailable here.",
+      "n": 64125,
+      "weight_sum": 64129.61824691954,
+      "percent": {
+        "support": 61.64018775387466,
+        "oppose": 38.35981224612534,
+        "neutral": 0.0,
+        "unsure": 0.0,
+        "nonresponse": 0.0
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 41718,
+          "weight_sum": 39529.61709324427,
+          "percent": 61.64018775387466
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 22407,
+          "weight_sum": 24600.00115367527,
+          "percent": 38.35981224612534
+        }
+      ],
+      "excluded_positive_weight": 475,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 1988,
+      "variable": "marsame",
+      "wording": "Homosexual couples should have the right to marry one another",
+      "weight": "wtssps",
+      "denominator": "Positive-weight respondents with substantive, cannot-choose or nonresponse item codes; inapplicable/year-unavailable/system-missing excluded.",
+      "wording_note": "Two wording variants kept distinct; Stata variable label is not full questionnaire context.",
+      "n": 1414,
+      "weight_sum": 1407.9030673785742,
+      "percent": {
+        "support": 10.850195485989106,
+        "oppose": 67.4187021421962,
+        "neutral": 13.639194899649297,
+        "unsure": 6.216384031934019,
+        "nonresponse": 1.8755234402313732
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 44,
+          "weight_sum": 38.69307121747347,
+          "percent": 2.748276647306231
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 118,
+          "weight_sum": 114.06716384633877,
+          "percent": 8.101918838682876
+        },
+        {
+          "code": "3",
+          "group": "neutral",
+          "n": 196,
+          "weight_sum": 192.0266433579045,
+          "percent": 13.639194899649297
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 336,
+          "weight_sum": 336.30610575017744,
+          "percent": 23.887021311513866
+        },
+        {
+          "code": "5",
+          "group": "oppose",
+          "n": 613,
+          "weight_sum": 612.8838696966274,
+          "percent": 43.53168083068233
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 82,
+          "weight_sum": 87.52066146563092,
+          "percent": 6.216384031934019
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 25,
+          "weight_sum": 26.40555204442166,
+          "percent": 1.8755234402313732
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 67,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2004,
+      "variable": "marsame",
+      "wording": "Homosexual couples should have the right to marry one another",
+      "weight": "wtssnrps",
+      "denominator": "Positive-weight respondents with substantive, cannot-choose or nonresponse item codes; inapplicable/year-unavailable/system-missing excluded.",
+      "wording_note": "Two wording variants kept distinct; Stata variable label is not full questionnaire context.",
+      "n": 1216,
+      "weight_sum": 1193.0629884901825,
+      "percent": {
+        "support": 29.924056757975258,
+        "oppose": 54.04298335570731,
+        "neutral": 13.313279969122428,
+        "unsure": 2.1612243705306713,
+        "nonresponse": 0.5584555466643366
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 135,
+          "weight_sum": 136.07595937771723,
+          "percent": 11.405597247629057
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 216,
+          "weight_sum": 220.9368864564808,
+          "percent": 18.5184595103462
+        },
+        {
+          "code": "3",
+          "group": "neutral",
+          "n": 173,
+          "weight_sum": 158.8358158656769,
+          "percent": 13.313279969122428
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 240,
+          "weight_sum": 240.83337019406454,
+          "percent": 20.18614042321759
+        },
+        {
+          "code": "5",
+          "group": "oppose",
+          "n": 420,
+          "weight_sum": 403.93346209878894,
+          "percent": 33.85684293248971
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 22,
+          "weight_sum": 25.784768063031365,
+          "percent": 2.1612243705306713
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 10,
+          "weight_sum": 6.66272643442272,
+          "percent": 0.5584555466643366
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 1596,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2006,
+      "variable": "marsame1",
+      "wording": "Homosexual couples have right to marry",
+      "weight": "wtssnrps",
+      "denominator": "Positive-weight respondents with substantive, cannot-choose or nonresponse item codes; inapplicable/year-unavailable/system-missing excluded.",
+      "wording_note": "Two wording variants kept distinct; Stata variable label is not full questionnaire context.",
+      "n": 2003,
+      "weight_sum": 2007.5306395980153,
+      "percent": {
+        "support": 35.4182686040231,
+        "oppose": 50.53874535800338,
+        "neutral": 13.021951491693743,
+        "unsure": 0.6923016008133088,
+        "nonresponse": 0.32873294546645504
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 307,
+          "weight_sum": 308.6510171867315,
+          "percent": 15.374660346331515
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 391,
+          "weight_sum": 402.3815770541565,
+          "percent": 20.043608257691584
+        },
+        {
+          "code": "3",
+          "group": "neutral",
+          "n": 260,
+          "weight_sum": 261.4196660693427,
+          "percent": 13.021951491693743
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 329,
+          "weight_sum": 303.02887981758244,
+          "percent": 15.09460796465156
+        },
+        {
+          "code": "5",
+          "group": "oppose",
+          "n": 695,
+          "weight_sum": 711.5519181127552,
+          "percent": 35.444137393351824
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 17,
+          "weight_sum": 13.898166754754717,
+          "percent": 0.6923016008133088
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 4,
+          "weight_sum": 6.5994146026921205,
+          "percent": 0.32873294546645504
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 2507,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2008,
+      "variable": "marsame1",
+      "wording": "Homosexual couples have right to marry",
+      "weight": "wtssnrps",
+      "denominator": "Positive-weight respondents with substantive, cannot-choose or nonresponse item codes; inapplicable/year-unavailable/system-missing excluded.",
+      "wording_note": "Two wording variants kept distinct; Stata variable label is not full questionnaire context.",
+      "n": 1352,
+      "weight_sum": 1358.0602054107553,
+      "percent": {
+        "support": 38.87751188475802,
+        "oppose": 46.76817126581521,
+        "neutral": 13.296165899584446,
+        "unsure": 0.979370717650943,
+        "nonresponse": 0.078780232191372
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 223,
+          "weight_sum": 207.63722369776778,
+          "percent": 15.28925027554035
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 307,
+          "weight_sum": 320.34279406296787,
+          "percent": 23.588261609217675
+        },
+        {
+          "code": "3",
+          "group": "neutral",
+          "n": 170,
+          "weight_sum": 180.56993792765132,
+          "percent": 13.296165899584446
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 213,
+          "weight_sum": 202.00500751577687,
+          "percent": 14.874525202266636
+        },
+        {
+          "code": "5",
+          "group": "oppose",
+          "n": 423,
+          "weight_sum": 433.13491524360705,
+          "percent": 31.893646063548573
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 14,
+          "weight_sum": 13.300443979863186,
+          "percent": 0.979370717650943
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 2,
+          "weight_sum": 1.0698829831212164,
+          "percent": 0.078780232191372
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 671,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2010,
+      "variable": "marsame1",
+      "wording": "Homosexual couples have right to marry",
+      "weight": "wtssnrps",
+      "denominator": "Positive-weight respondents with substantive, cannot-choose or nonresponse item codes; inapplicable/year-unavailable/system-missing excluded.",
+      "wording_note": "Two wording variants kept distinct; Stata variable label is not full questionnaire context.",
+      "n": 1281,
+      "weight_sum": 1271.5878304730873,
+      "percent": {
+        "support": 46.33710246328506,
+        "oppose": 38.719904382233935,
+        "neutral": 13.529417875785342,
+        "unsure": 1.1503808460129399,
+        "nonresponse": 0.26319443268270964
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 270,
+          "weight_sum": 271.520332594108,
+          "percent": 21.352857119833427
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 316,
+          "weight_sum": 317.69662332287,
+          "percent": 24.984245343451637
+        },
+        {
+          "code": "3",
+          "group": "neutral",
+          "n": 167,
+          "weight_sum": 172.03843124233688,
+          "percent": 13.529417875785342
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 191,
+          "weight_sum": 200.19664699789436,
+          "percent": 15.743831625331952
+        },
+        {
+          "code": "5",
+          "group": "oppose",
+          "n": 318,
+          "weight_sum": 292.16094509740793,
+          "percent": 22.97607275690198
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 13,
+          "weight_sum": 14.628102841993888,
+          "percent": 1.1503808460129399
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 6,
+          "weight_sum": 3.3467483764760173,
+          "percent": 0.26319443268270964
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 763,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2012,
+      "variable": "marsame1",
+      "wording": "Homosexual couples have right to marry",
+      "weight": "wtssnrps",
+      "denominator": "Positive-weight respondents with substantive, cannot-choose or nonresponse item codes; inapplicable/year-unavailable/system-missing excluded.",
+      "wording_note": "Two wording variants kept distinct; Stata variable label is not full questionnaire context.",
+      "n": 1308,
+      "weight_sum": 1302.3497320672777,
+      "percent": {
+        "support": 47.148473839557994,
+        "oppose": 39.0390284116484,
+        "neutral": 12.0950769011252,
+        "unsure": 1.1801197933005971,
+        "nonresponse": 0.5373010543677944
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 323,
+          "weight_sum": 316.29446398966144,
+          "percent": 24.286445967750396
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 315,
+          "weight_sum": 297.74355873363265,
+          "percent": 22.8620278718076
+        },
+        {
+          "code": "3",
+          "group": "neutral",
+          "n": 152,
+          "weight_sum": 157.52020161513525,
+          "percent": 12.0950769011252
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 183,
+          "weight_sum": 180.18471792777123,
+          "percent": 13.835355702938259
+        },
+        {
+          "code": "5",
+          "group": "oppose",
+          "n": 314,
+          "weight_sum": 328.2399639930002,
+          "percent": 25.203672708710148
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 14,
+          "weight_sum": 15.369286966123239,
+          "percent": 1.1801197933005971
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 7,
+          "weight_sum": 6.997538841953628,
+          "percent": 0.5373010543677944
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 666,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2014,
+      "variable": "marsame1",
+      "wording": "Homosexual couples have right to marry",
+      "weight": "wtssnrps",
+      "denominator": "Positive-weight respondents with substantive, cannot-choose or nonresponse item codes; inapplicable/year-unavailable/system-missing excluded.",
+      "wording_note": "Two wording variants kept distinct; Stata variable label is not full questionnaire context.",
+      "n": 1714,
+      "weight_sum": 1720.9710370897083,
+      "percent": {
+        "support": 56.003549370396975,
+        "oppose": 31.363773166863872,
+        "neutral": 11.080929940368808,
+        "unsure": 0.7544405805959766,
+        "nonresponse": 0.797306941774367
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 532,
+          "weight_sum": 543.8382545221649,
+          "percent": 31.600662811957395
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 423,
+          "weight_sum": 419.96660988460263,
+          "percent": 24.40288655843958
+        },
+        {
+          "code": "3",
+          "group": "neutral",
+          "n": 185,
+          "weight_sum": 190.69959491394908,
+          "percent": 11.080929940368808
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 223,
+          "weight_sum": 218.07728792255847,
+          "percent": 12.671758165747146
+        },
+        {
+          "code": "5",
+          "group": "oppose",
+          "n": 327,
+          "weight_sum": 321.6841644176823,
+          "percent": 18.692015001116726
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 12,
+          "weight_sum": 12.983703884108195,
+          "percent": 0.7544405805959766
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 12,
+          "weight_sum": 13.72142154464256,
+          "percent": 0.797306941774367
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 824,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2016,
+      "variable": "marsame1",
+      "wording": "Homosexual couples have right to marry",
+      "weight": "wtssnrps",
+      "denominator": "Positive-weight respondents with substantive, cannot-choose or nonresponse item codes; inapplicable/year-unavailable/system-missing excluded.",
+      "wording_note": "Two wording variants kept distinct; Stata variable label is not full questionnaire context.",
+      "n": 1890,
+      "weight_sum": 1909.6009227723468,
+      "percent": {
+        "support": 60.39549315831829,
+        "oppose": 26.93326855764078,
+        "neutral": 11.020898665036722,
+        "unsure": 0.8182527375995862,
+        "nonresponse": 0.8320868814046187
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 640,
+          "weight_sum": 682.8383117138497,
+          "percent": 35.758168294269005
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 464,
+          "weight_sum": 470.47458295030594,
+          "percent": 24.63732486404928
+        },
+        {
+          "code": "3",
+          "group": "neutral",
+          "n": 224,
+          "weight_sum": 210.4551826053465,
+          "percent": 11.020898665036722
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 223,
+          "weight_sum": 222.93538566963795,
+          "percent": 11.674448991466852
+        },
+        {
+          "code": "5",
+          "group": "oppose",
+          "n": 311,
+          "weight_sum": 291.3825592398248,
+          "percent": 15.25881956617393
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 16,
+          "weight_sum": 15.625361827811687,
+          "percent": 0.8182527375995862
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 12,
+          "weight_sum": 15.889538765570242,
+          "percent": 0.8320868814046187
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 977,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2018,
+      "variable": "marsame1",
+      "wording": "Homosexual couples have right to marry",
+      "weight": "wtssnrps",
+      "denominator": "Positive-weight respondents with substantive, cannot-choose or nonresponse item codes; inapplicable/year-unavailable/system-missing excluded.",
+      "wording_note": "Two wording variants kept distinct; Stata variable label is not full questionnaire context.",
+      "n": 1574,
+      "weight_sum": 1571.5932208927998,
+      "percent": {
+        "support": 66.58983202160604,
+        "oppose": 22.53587482008765,
+        "neutral": 9.289415893252807,
+        "unsure": 0.875319592934367,
+        "nonresponse": 0.7095576721191362
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 619,
+          "weight_sum": 643.4354856491321,
+          "percent": 40.94160480557466
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 416,
+          "weight_sum": 403.08580020633116,
+          "percent": 25.648227216031376
+        },
+        {
+          "code": "3",
+          "group": "neutral",
+          "n": 157,
+          "weight_sum": 145.99183043889943,
+          "percent": 9.289415893252807
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 148,
+          "weight_sum": 148.8267496664341,
+          "percent": 9.469800943903776
+        },
+        {
+          "code": "5",
+          "group": "oppose",
+          "n": 214,
+          "weight_sum": 205.34553127495082,
+          "percent": 13.066073876183872
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 12,
+          "weight_sum": 13.756463383702963,
+          "percent": 0.875319592934367
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 8,
+          "weight_sum": 11.151360273349106,
+          "percent": 0.7095576721191362
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 774,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2021,
+      "variable": "marsame",
+      "wording": "Homosexual couples should have the right to marry one another",
+      "weight": "wtssnrps",
+      "denominator": "Positive-weight respondents with substantive, cannot-choose or nonresponse item codes; inapplicable/year-unavailable/system-missing excluded.",
+      "wording_note": "Two wording variants kept distinct; Stata variable label is not full questionnaire context.",
+      "n": 2674,
+      "weight_sum": 2641.11646305281,
+      "percent": {
+        "support": 63.9666030823399,
+        "oppose": 18.26263239640831,
+        "neutral": 17.144121214632428,
+        "unsure": 0.1663684894444272,
+        "nonresponse": 0.46027481717492874
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 1265,
+          "weight_sum": 1212.8388879534832,
+          "percent": 45.92144666546013
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 500,
+          "weight_sum": 476.59359690984223,
+          "percent": 18.045156416879774
+        },
+        {
+          "code": "3",
+          "group": "neutral",
+          "n": 419,
+          "weight_sum": 452.79620784538645,
+          "percent": 17.144121214632428
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 179,
+          "weight_sum": 183.61865092554768,
+          "percent": 6.952311777773965
+        },
+        {
+          "code": "5",
+          "group": "oppose",
+          "n": 295,
+          "weight_sum": 298.7187398828081,
+          "percent": 11.310320618634345
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 5,
+          "weight_sum": 4.393985564049043,
+          "percent": 0.1663684894444272
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 1,
+          "weight_sum": 0.7155596915873933,
+          "percent": 0.027093076038013603
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 10,
+          "weight_sum": 11.440834280105873,
+          "percent": 0.43318174113691515
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 1358,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2022,
+      "variable": "marsame",
+      "wording": "Homosexual couples should have the right to marry one another",
+      "weight": "wtssnrps",
+      "denominator": "Positive-weight respondents with substantive, cannot-choose or nonresponse item codes; inapplicable/year-unavailable/system-missing excluded.",
+      "wording_note": "Two wording variants kept distinct; Stata variable label is not full questionnaire context.",
+      "n": 2341,
+      "weight_sum": 2361.9603560436003,
+      "percent": {
+        "support": 66.18556703183094,
+        "oppose": 19.13724385194951,
+        "neutral": 13.104783259066878,
+        "unsure": 0.7358435659579515,
+        "nonresponse": 0.8365622911947297
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 1047,
+          "weight_sum": 1047.2361426800364,
+          "percent": 44.337583397640444
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 499,
+          "weight_sum": 516.0407120344732,
+          "percent": 21.84798363419049
+        },
+        {
+          "code": "3",
+          "group": "neutral",
+          "n": 310,
+          "weight_sum": 309.52978532459815,
+          "percent": 13.104783259066878
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 189,
+          "weight_sum": 173.34153626973605,
+          "percent": 7.3388842376716115
+        },
+        {
+          "code": "5",
+          "group": "oppose",
+          "n": 262,
+          "weight_sum": 278.67257675270264,
+          "percent": 11.7983596142779
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 14,
+          "weight_sum": 17.38033331042436,
+          "percent": 0.7358435659579515
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 13,
+          "weight_sum": 15.345786534985443,
+          "percent": 0.6497055082114245
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 7,
+          "weight_sum": 4.413483136644092,
+          "percent": 0.18685678298330516
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 1203,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2024,
+      "variable": "marsame",
+      "wording": "Homosexual couples should have the right to marry one another",
+      "weight": "wtssnrps",
+      "denominator": "Positive-weight respondents with substantive, cannot-choose or nonresponse item codes; inapplicable/year-unavailable/system-missing excluded.",
+      "wording_note": "Two wording variants kept distinct; Stata variable label is not full questionnaire context.",
+      "n": 1146,
+      "weight_sum": 1133.587218560983,
+      "percent": {
+        "support": 63.08453303570878,
+        "oppose": 19.90138518617673,
+        "neutral": 16.02661187610139,
+        "unsure": 0.4292588757837308,
+        "nonresponse": 0.5582110262293614
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 460,
+          "weight_sum": 456.444779445907,
+          "percent": 40.26551922712525
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 262,
+          "weight_sum": 258.67342393576865,
+          "percent": 22.819013808583527
+        },
+        {
+          "code": "3",
+          "group": "neutral",
+          "n": 175,
+          "weight_sum": 181.67562379586195,
+          "percent": 16.02661187610139
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 83,
+          "weight_sum": 85.4512735633999,
+          "percent": 7.538129591111204
+        },
+        {
+          "code": "5",
+          "group": "oppose",
+          "n": 147,
+          "weight_sum": 140.1482852236884,
+          "percent": 12.363255595065525
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 9,
+          "weight_sum": 4.866023750422939,
+          "percent": 0.4292588757837308
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 4,
+          "weight_sum": 2.2396209427713347,
+          "percent": 0.1975693538265535
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 6,
+          "weight_sum": 4.088187903162802,
+          "percent": 0.3606416724028078
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 2163,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "PRRI",
+      "year": 2011,
+      "variable": "Q8B",
+      "wording": "Allowing gay and lesbian couples to marry legally.",
+      "weight": "weight",
+      "doi": "10.17605/OSF.IO/D5KRA",
+      "denominator": "All positive-weight wave respondents, including unsure/refused/skipped and missing.",
+      "n": 1505,
+      "weight_sum": 1505.0000000000005,
+      "percent": {
+        "support": 48.17892503536068,
+        "oppose": 45.34448745626442,
+        "neutral": 0.0,
+        "unsure": 6.476587508374898,
+        "nonresponse": 0.0
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 321,
+          "weight_sum": 357.7918186555499,
+          "percent": 23.773542767810614
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 391,
+          "weight_sum": 367.30100312662853,
+          "percent": 24.40538226755006
+        },
+        {
+          "code": "3",
+          "group": "oppose",
+          "n": 308,
+          "weight_sum": 296.19919228764985,
+          "percent": 19.681009454328887
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 389,
+          "weight_sum": 386.2353439291299,
+          "percent": 25.663478001935534
+        },
+        {
+          "code": "9",
+          "group": "unsure",
+          "n": 96,
+          "weight_sum": 97.47264200104225,
+          "percent": 6.476587508374898
+        },
+        {
+          "code": "missing",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "PRRI",
+      "year": 2012,
+      "variable": "legssm",
+      "wording": "Allowing gay and lesbian couples to marry legally.",
+      "weight": "weight",
+      "doi": "10.17605/OSF.IO/TKX63",
+      "denominator": "All positive-weight wave respondents, including unsure/refused/skipped and missing.",
+      "n": 3003,
+      "weight_sum": 3003.000000000001,
+      "percent": {
+        "support": 48.44001924651579,
+        "oppose": 44.79964208233794,
+        "neutral": 0.0,
+        "unsure": 6.760338671146265,
+        "nonresponse": 0.0
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 679,
+          "weight_sum": 712.3515612469718,
+          "percent": 23.72133071085486
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 725,
+          "weight_sum": 742.3022167258978,
+          "percent": 24.718688535660924
+        },
+        {
+          "code": "3",
+          "group": "oppose",
+          "n": 553,
+          "weight_sum": 540.493356575471,
+          "percent": 17.998446772409952
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 842,
+          "weight_sum": 804.8398951571378,
+          "percent": 26.80119530992799
+        },
+        {
+          "code": "9",
+          "group": "unsure",
+          "n": 204,
+          "weight_sum": 203.01297029452238,
+          "percent": 6.760338671146265
+        },
+        {
+          "code": "missing",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "PRRI",
+      "year": 2013,
+      "variable": "Q14A",
+      "wording": "Allowing gay and lesbian couples to marry legally.",
+      "weight": "weight",
+      "doi": "10.17605/OSF.IO/VT6YU",
+      "denominator": "All positive-weight wave respondents, including unsure/refused/skipped and missing.",
+      "n": 2314,
+      "weight_sum": 2315.0176,
+      "percent": {
+        "support": 51.8559513327242,
+        "oppose": 43.84053926847035,
+        "neutral": 0.0,
+        "unsure": 0.0,
+        "nonresponse": 4.303509398805434
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 569,
+          "weight_sum": 583.3471,
+          "percent": 25.198387260641123
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 617,
+          "weight_sum": 617.1273,
+          "percent": 26.657564072083076
+        },
+        {
+          "code": "3",
+          "group": "oppose",
+          "n": 471,
+          "weight_sum": 437.9002,
+          "percent": 18.91563157014443
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 576,
+          "weight_sum": 577.016,
+          "percent": 24.92490769832592
+        },
+        {
+          "code": "9",
+          "group": "nonresponse",
+          "n": 81,
+          "weight_sum": 99.627,
+          "percent": 4.303509398805434
+        },
+        {
+          "code": "missing",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 3
+    },
+    {
+      "source": "PRRI",
+      "year": 2014,
+      "variable": "Q12B",
+      "wording": "Allowing gay and lesbian couples to marry legally.",
+      "weight": "weight",
+      "doi": "10.17605/OSF.IO/4VE6R",
+      "denominator": "All positive-weight wave respondents, including unsure/refused/skipped and missing.",
+      "n": 4507,
+      "weight_sum": 4507.0032,
+      "percent": {
+        "support": 48.64092175483701,
+        "oppose": 42.50957931425475,
+        "neutral": 0.0,
+        "unsure": 8.849498930908236,
+        "nonresponse": 0.0
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 1001,
+          "weight_sum": 1069.1884,
+          "percent": 23.722823183262882
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 1131,
+          "weight_sum": 1123.0595,
+          "percent": 24.918098571574124
+        },
+        {
+          "code": "3",
+          "group": "oppose",
+          "n": 941,
+          "weight_sum": 919.9434,
+          "percent": 20.411421052463417
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 1026,
+          "weight_sum": 995.9647,
+          "percent": 22.098158261791337
+        },
+        {
+          "code": "9",
+          "group": "unsure",
+          "n": 408,
+          "weight_sum": 398.8472,
+          "percent": 8.849498930908236
+        },
+        {
+          "code": "missing",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "PRRI",
+      "year": 2015,
+      "variable": "Q9A",
+      "wording": "Allowing gay and lesbian couples to marry legally.",
+      "weight": "weight",
+      "doi": "10.17605/OSF.IO/473WX",
+      "denominator": "All positive-weight wave respondents, including unsure/refused/skipped and missing.",
+      "n": 2695,
+      "weight_sum": 2694.9999999983,
+      "percent": {
+        "support": 59.47742598933251,
+        "oppose": 39.18944047470005,
+        "neutral": 0.0,
+        "unsure": 1.3331335359674457,
+        "nonresponse": 0.0
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 880,
+          "weight_sum": 830.9676412182,
+          "percent": 30.833678709414624
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 766,
+          "weight_sum": 771.9489891933,
+          "percent": 28.643747279917886
+        },
+        {
+          "code": "3",
+          "group": "oppose",
+          "n": 447,
+          "weight_sum": 464.0492497262,
+          "percent": 17.21889609374741
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 570,
+          "weight_sum": 592.1061710663,
+          "percent": 21.970544380952635
+        },
+        {
+          "code": "9",
+          "group": "unsure",
+          "n": 32,
+          "weight_sum": 35.9279487943,
+          "percent": 1.3331335359674457
+        },
+        {
+          "code": "missing",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "PRRI",
+      "year": 2016,
+      "variable": "Q22E",
+      "wording": "Allowing gay and lesbian couples to marry legally.",
+      "weight": "weight",
+      "doi": "10.17605/OSF.IO/FPKYN",
+      "denominator": "All positive-weight wave respondents, including unsure/refused/skipped and missing.",
+      "n": 2010,
+      "weight_sum": 2010.0000000005,
+      "percent": {
+        "support": 64.17469177573528,
+        "oppose": 34.72476697161822,
+        "neutral": 0.0,
+        "unsure": 1.1005412526464924,
+        "nonresponse": 0.0
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 695,
+          "weight_sum": 677.5669309111,
+          "percent": 33.70979755775779
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 595,
+          "weight_sum": 612.3443737815,
+          "percent": 30.4648942179775
+        },
+        {
+          "code": "3",
+          "group": "oppose",
+          "n": 316,
+          "weight_sum": 327.5924868193,
+          "percent": 16.298133672597935
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 375,
+          "weight_sum": 370.3753293104,
+          "percent": 18.426633299020292
+        },
+        {
+          "code": "9",
+          "group": "unsure",
+          "n": 29,
+          "weight_sum": 22.1208791782,
+          "percent": 1.1005412526464924
+        },
+        {
+          "code": "missing",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "PRRI",
+      "year": 2017,
+      "variable": "Q17A",
+      "wording": "Allowing gay and lesbian couples to marry legally.",
+      "weight": "weight",
+      "doi": "10.17605/OSF.IO/VCTH2",
+      "denominator": "All positive-weight wave respondents, including unsure/refused/skipped and missing.",
+      "n": 2019,
+      "weight_sum": 2018.9992,
+      "percent": {
+        "support": 61.8524415462869,
+        "oppose": 32.951285963857735,
+        "neutral": 0.0,
+        "unsure": 5.19627248985537,
+        "nonresponse": 0.0
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 606,
+          "weight_sum": 634.0126,
+          "percent": 31.402320516025963
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 642,
+          "weight_sum": 614.7877,
+          "percent": 30.45012103026093
+        },
+        {
+          "code": "3",
+          "group": "oppose",
+          "n": 357,
+          "weight_sum": 339.2129,
+          "percent": 16.801041823097304
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 314,
+          "weight_sum": 326.0733,
+          "percent": 16.15024414076043
+        },
+        {
+          "code": "9",
+          "group": "unsure",
+          "n": 100,
+          "weight_sum": 104.9127,
+          "percent": 5.19627248985537
+        },
+        {
+          "code": "missing",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "PRRI",
+      "year": 2023,
+      "variable": "Q40_E",
+      "wording": "How much do you favor or oppose each of the following? Allowing same-sex couples to marry legally.",
+      "weight": "KP_WEIGHT",
+      "doi": "10.17605/OSF.IO/WVUGF",
+      "denominator": "All positive-weight wave respondents, including unsure/refused/skipped and missing.",
+      "n": 2525,
+      "weight_sum": 2524.9993,
+      "percent": {
+        "support": 65.85626776213364,
+        "oppose": 29.837168667729927,
+        "neutral": 0.0,
+        "unsure": 0.0,
+        "nonresponse": 4.3065635701364355
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 962,
+          "weight_sum": 877.8958,
+          "percent": 34.768160133747365
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 774,
+          "weight_sum": 784.9745,
+          "percent": 31.088107628386272
+        },
+        {
+          "code": "3",
+          "group": "oppose",
+          "n": 346,
+          "weight_sum": 374.9313,
+          "percent": 14.848768472925915
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 363,
+          "weight_sum": 378.457,
+          "percent": 14.988400194804013
+        },
+        {
+          "code": "99",
+          "group": "nonresponse",
+          "n": 80,
+          "weight_sum": 108.7407,
+          "percent": 4.3065635701364355
+        },
+        {
+          "code": "missing",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "PRRI",
+      "year": 2024,
+      "variable": "Q10_C",
+      "wording": "How much do you favor or oppose each of the following? Allowing same-sex couples to marry legally.",
+      "weight": "weight",
+      "doi": "10.17605/OSF.IO/UDPSG",
+      "denominator": "All positive-weight wave respondents, including unsure/refused/skipped and missing.",
+      "n": 5352,
+      "weight_sum": 5352.0053,
+      "percent": {
+        "support": 66.12145544773657,
+        "oppose": 29.759604311303654,
+        "neutral": 0.0,
+        "unsure": 0.0,
+        "nonresponse": 4.118940240959777
+      },
+      "categories": [
+        {
+          "code": "-1",
+          "group": "nonresponse",
+          "n": 163,
+          "weight_sum": 220.4459,
+          "percent": 4.118940240959777
+        },
+        {
+          "code": "1",
+          "group": "support",
+          "n": 2056,
+          "weight_sum": 1982.2521,
+          "percent": 37.037558613777904
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 1609,
+          "weight_sum": 1556.5717,
+          "percent": 29.083896833958665
+        },
+        {
+          "code": "3",
+          "group": "oppose",
+          "n": 836,
+          "weight_sum": 861.071,
+          "percent": 16.0887546206279
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 688,
+          "weight_sum": 731.6646,
+          "percent": 13.670849690675754
+        },
+        {
+          "code": "missing",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "VOTER",
+      "year": 2016,
+      "variable": "view_gaymar_2016",
+      "wording": "Do you favor or oppose allowing gays and lesbians to marry legally?",
+      "weight": "weight_genpop_2016",
+      "denominator": "Positive-weight administered wave respondents, including unsure/skipped; not-asked and system missing excluded.",
+      "n": 8000,
+      "weight_sum": 7999.999999999998,
+      "percent": {
+        "support": 49.946923019898875,
+        "oppose": 35.125559603892306,
+        "neutral": 0.0,
+        "unsure": 14.587521047194594,
+        "nonresponse": 0.33999632901422094
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 4213,
+          "weight_sum": 3995.7538415919093,
+          "percent": 49.946923019898875
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 2809,
+          "weight_sum": 2810.044768311384,
+          "percent": 35.125559603892306
+        },
+        {
+          "code": "8",
+          "group": "unsure",
+          "n": 956,
+          "weight_sum": 1167.0016837755672,
+          "percent": 14.587521047194594
+        },
+        {
+          "code": "98",
+          "group": "nonresponse",
+          "n": 22,
+          "weight_sum": 27.19970632113767,
+          "percent": 0.33999632901422094
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 4517
+    },
+    {
+      "source": "VOTER",
+      "year": 2020,
+      "variable": "view_gaymar_2020Nov",
+      "wording": "Do you favor or oppose allowing gays and lesbians to marry legally?",
+      "weight": "weight_genpop_2020Nov",
+      "denominator": "Positive-weight administered wave respondents, including unsure/skipped; not-asked and system missing excluded.",
+      "n": 4943,
+      "weight_sum": 4943.0,
+      "percent": {
+        "support": 56.410329666062715,
+        "oppose": 28.834132306798836,
+        "neutral": 0.0,
+        "unsure": 14.755538027138444,
+        "nonresponse": 0.0
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 3038,
+          "weight_sum": 2788.36259539348,
+          "percent": 56.410329666062715
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 1307,
+          "weight_sum": 1425.2711599250665,
+          "percent": 28.834132306798836
+        },
+        {
+          "code": "3",
+          "group": "unsure",
+          "n": 598,
+          "weight_sum": 729.3662446814533,
+          "percent": 14.755538027138444
+        },
+        {
+          "code": "8",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 7574
+    }
+  ],
+  "prior_observations": {
+    "2013": {
+      "GSS": {
+        "source": "GSS",
+        "year": 2012,
+        "variable": "marsame1",
+        "wording": "Homosexual couples have right to marry",
+        "weight": "wtssnrps",
+        "denominator": "Positive-weight respondents with substantive, cannot-choose or nonresponse item codes; inapplicable/year-unavailable/system-missing excluded.",
+        "wording_note": "Two wording variants kept distinct; Stata variable label is not full questionnaire context.",
+        "n": 1308,
+        "weight_sum": 1302.3497320672777,
+        "percent": {
+          "support": 47.148473839557994,
+          "oppose": 39.0390284116484,
+          "neutral": 12.0950769011252,
+          "unsure": 1.1801197933005971,
+          "nonresponse": 0.5373010543677944
+        },
+        "categories": [
+          {
+            "code": "1",
+            "group": "support",
+            "n": 323,
+            "weight_sum": 316.29446398966144,
+            "percent": 24.286445967750396
+          },
+          {
+            "code": "2",
+            "group": "support",
+            "n": 315,
+            "weight_sum": 297.74355873363265,
+            "percent": 22.8620278718076
+          },
+          {
+            "code": "3",
+            "group": "neutral",
+            "n": 152,
+            "weight_sum": 157.52020161513525,
+            "percent": 12.0950769011252
+          },
+          {
+            "code": "4",
+            "group": "oppose",
+            "n": 183,
+            "weight_sum": 180.18471792777123,
+            "percent": 13.835355702938259
+          },
+          {
+            "code": "5",
+            "group": "oppose",
+            "n": 314,
+            "weight_sum": 328.2399639930002,
+            "percent": 25.203672708710148
+          },
+          {
+            "code": "d",
+            "group": "unsure",
+            "n": 14,
+            "weight_sum": 15.369286966123239,
+            "percent": 1.1801197933005971
+          },
+          {
+            "code": "n",
+            "group": "nonresponse",
+            "n": 7,
+            "weight_sum": 6.997538841953628,
+            "percent": 0.5373010543677944
+          },
+          {
+            "code": "s",
+            "group": "nonresponse",
+            "n": 0,
+            "weight_sum": 0.0,
+            "percent": 0.0
+          },
+          {
+            "code": "r",
+            "group": "nonresponse",
+            "n": 0,
+            "weight_sum": 0.0,
+            "percent": 0.0
+          }
+        ],
+        "excluded_positive_weight": 666,
+        "missing_or_zero_weight": 0
+      },
+      "PRRI": {
+        "source": "PRRI",
+        "year": 2012,
+        "variable": "legssm",
+        "wording": "Allowing gay and lesbian couples to marry legally.",
+        "weight": "weight",
+        "doi": "10.17605/OSF.IO/TKX63",
+        "denominator": "All positive-weight wave respondents, including unsure/refused/skipped and missing.",
+        "n": 3003,
+        "weight_sum": 3003.000000000001,
+        "percent": {
+          "support": 48.44001924651579,
+          "oppose": 44.79964208233794,
+          "neutral": 0.0,
+          "unsure": 6.760338671146265,
+          "nonresponse": 0.0
+        },
+        "categories": [
+          {
+            "code": "1",
+            "group": "support",
+            "n": 679,
+            "weight_sum": 712.3515612469718,
+            "percent": 23.72133071085486
+          },
+          {
+            "code": "2",
+            "group": "support",
+            "n": 725,
+            "weight_sum": 742.3022167258978,
+            "percent": 24.718688535660924
+          },
+          {
+            "code": "3",
+            "group": "oppose",
+            "n": 553,
+            "weight_sum": 540.493356575471,
+            "percent": 17.998446772409952
+          },
+          {
+            "code": "4",
+            "group": "oppose",
+            "n": 842,
+            "weight_sum": 804.8398951571378,
+            "percent": 26.80119530992799
+          },
+          {
+            "code": "9",
+            "group": "unsure",
+            "n": 204,
+            "weight_sum": 203.01297029452238,
+            "percent": 6.760338671146265
+          },
+          {
+            "code": "missing",
+            "group": "nonresponse",
+            "n": 0,
+            "weight_sum": 0.0,
+            "percent": 0.0
+          }
+        ],
+        "excluded_positive_weight": 0,
+        "missing_or_zero_weight": 0
+      },
+      "CES": {
+        "source": "CES",
+        "year": 2012,
+        "variable": "gaymarriage_legalize",
+        "wording": "Do you favor or oppose allowing gays and lesbians to marry legally?",
+        "weight": "weight",
+        "denominator": "Support/oppose respondents only; harmonized missing answers excluded, original unsure/nonresponse categories unavailable here.",
+        "n": 53942,
+        "weight_sum": 54020.285807553264,
+        "percent": {
+          "support": 53.72903204273837,
+          "oppose": 46.27096795726163,
+          "neutral": 0.0,
+          "unsure": 0.0,
+          "nonresponse": 0.0
+        },
+        "categories": [
+          {
+            "code": "1",
+            "group": "support",
+            "n": 28085,
+            "weight_sum": 29024.576671119143,
+            "percent": 53.72903204273837
+          },
+          {
+            "code": "2",
+            "group": "oppose",
+            "n": 25857,
+            "weight_sum": 24995.70913643412,
+            "percent": 46.27096795726163
+          }
+        ],
+        "excluded_positive_weight": 593,
+        "missing_or_zero_weight": 0
+      },
+      "VOTER": null
+    },
+    "2015": {
+      "GSS": {
+        "source": "GSS",
+        "year": 2014,
+        "variable": "marsame1",
+        "wording": "Homosexual couples have right to marry",
+        "weight": "wtssnrps",
+        "denominator": "Positive-weight respondents with substantive, cannot-choose or nonresponse item codes; inapplicable/year-unavailable/system-missing excluded.",
+        "wording_note": "Two wording variants kept distinct; Stata variable label is not full questionnaire context.",
+        "n": 1714,
+        "weight_sum": 1720.9710370897083,
+        "percent": {
+          "support": 56.003549370396975,
+          "oppose": 31.363773166863872,
+          "neutral": 11.080929940368808,
+          "unsure": 0.7544405805959766,
+          "nonresponse": 0.797306941774367
+        },
+        "categories": [
+          {
+            "code": "1",
+            "group": "support",
+            "n": 532,
+            "weight_sum": 543.8382545221649,
+            "percent": 31.600662811957395
+          },
+          {
+            "code": "2",
+            "group": "support",
+            "n": 423,
+            "weight_sum": 419.96660988460263,
+            "percent": 24.40288655843958
+          },
+          {
+            "code": "3",
+            "group": "neutral",
+            "n": 185,
+            "weight_sum": 190.69959491394908,
+            "percent": 11.080929940368808
+          },
+          {
+            "code": "4",
+            "group": "oppose",
+            "n": 223,
+            "weight_sum": 218.07728792255847,
+            "percent": 12.671758165747146
+          },
+          {
+            "code": "5",
+            "group": "oppose",
+            "n": 327,
+            "weight_sum": 321.6841644176823,
+            "percent": 18.692015001116726
+          },
+          {
+            "code": "d",
+            "group": "unsure",
+            "n": 12,
+            "weight_sum": 12.983703884108195,
+            "percent": 0.7544405805959766
+          },
+          {
+            "code": "n",
+            "group": "nonresponse",
+            "n": 12,
+            "weight_sum": 13.72142154464256,
+            "percent": 0.797306941774367
+          },
+          {
+            "code": "s",
+            "group": "nonresponse",
+            "n": 0,
+            "weight_sum": 0.0,
+            "percent": 0.0
+          },
+          {
+            "code": "r",
+            "group": "nonresponse",
+            "n": 0,
+            "weight_sum": 0.0,
+            "percent": 0.0
+          }
+        ],
+        "excluded_positive_weight": 824,
+        "missing_or_zero_weight": 0
+      },
+      "PRRI": {
+        "source": "PRRI",
+        "year": 2014,
+        "variable": "Q12B",
+        "wording": "Allowing gay and lesbian couples to marry legally.",
+        "weight": "weight",
+        "doi": "10.17605/OSF.IO/4VE6R",
+        "denominator": "All positive-weight wave respondents, including unsure/refused/skipped and missing.",
+        "n": 4507,
+        "weight_sum": 4507.0032,
+        "percent": {
+          "support": 48.64092175483701,
+          "oppose": 42.50957931425475,
+          "neutral": 0.0,
+          "unsure": 8.849498930908236,
+          "nonresponse": 0.0
+        },
+        "categories": [
+          {
+            "code": "1",
+            "group": "support",
+            "n": 1001,
+            "weight_sum": 1069.1884,
+            "percent": 23.722823183262882
+          },
+          {
+            "code": "2",
+            "group": "support",
+            "n": 1131,
+            "weight_sum": 1123.0595,
+            "percent": 24.918098571574124
+          },
+          {
+            "code": "3",
+            "group": "oppose",
+            "n": 941,
+            "weight_sum": 919.9434,
+            "percent": 20.411421052463417
+          },
+          {
+            "code": "4",
+            "group": "oppose",
+            "n": 1026,
+            "weight_sum": 995.9647,
+            "percent": 22.098158261791337
+          },
+          {
+            "code": "9",
+            "group": "unsure",
+            "n": 408,
+            "weight_sum": 398.8472,
+            "percent": 8.849498930908236
+          },
+          {
+            "code": "missing",
+            "group": "nonresponse",
+            "n": 0,
+            "weight_sum": 0.0,
+            "percent": 0.0
+          }
+        ],
+        "excluded_positive_weight": 0,
+        "missing_or_zero_weight": 0
+      },
+      "CES": {
+        "source": "CES",
+        "year": 2014,
+        "variable": "gaymarriage_legalize",
+        "wording": "Do you favor or oppose allowing gays and lesbians to marry legally?",
+        "weight": "weight",
+        "denominator": "Support/oppose respondents only; harmonized missing answers excluded, original unsure/nonresponse categories unavailable here.",
+        "n": 55670,
+        "weight_sum": 55623.91656971872,
+        "percent": {
+          "support": 55.99766943304994,
+          "oppose": 44.00233056695006,
+          "neutral": 0.0,
+          "unsure": 0.0,
+          "nonresponse": 0.0
+        },
+        "categories": [
+          {
+            "code": "1",
+            "group": "support",
+            "n": 32810,
+            "weight_sum": 31148.09692642658,
+            "percent": 55.99766943304994
+          },
+          {
+            "code": "2",
+            "group": "oppose",
+            "n": 22860,
+            "weight_sum": 24475.81964329214,
+            "percent": 44.00233056695006
+          }
+        ],
+        "excluded_positive_weight": 530,
+        "missing_or_zero_weight": 0
+      },
+      "VOTER": null
+    }
+  },
+  "provenance": {
+    "data/raw/gss-2024-r3a/gss7224_r3a.dta": "a7622e03d9130e25968943b6f022f44dc0087baf0aa6b5cef150871152827344",
+    "data/raw/prri-avs-2011/responses.dta": "91538b9adfa34dede12cba29d822d0c65c33de66e23d24b1d2a388094062cb9f",
+    "data/raw/prri-avs-2011/questionnaire.pdf": "618717fc5998c73bce0a57dbb290f5609c5b5cd727c40840effe0d66b8da17ed",
+    "data/raw/prri-avs-2012/responses.dta": "431b288014767c8ef7cadb1735720d4006fb202ce8bc07a678a22c1ec1f3eb4f",
+    "data/raw/prri-avs-2012/questionnaire.pdf": "456aa2ab9bde7e06d443bed125e6a0e8fabf95fa5e3898665ad5b45dbeecdf71",
+    "data/raw/prri-avs-2013/responses.dta": "27825ad6d63e2f89890856c724761b6f594d071f5472b35728659356efc6f5a8",
+    "data/raw/prri-avs-2013/questionnaire.pdf": "6cb4e20b5e128b499a8487996c548a8d1f5be631f78d0c63411681acd0397467",
+    "data/raw/prri-avs-2014/responses.dta": "30ff1348b3dc04349cad2d0f5784c1f0f60ca83777d403f8004781e12223b80c",
+    "data/raw/prri-avs-2014/questionnaire.pdf": "9ea6063bb9f18e642f946b0690e335ae8b00f8a21368965b4ea4bed7df0ff24a",
+    "data/raw/prri-avs-2015/responses.dta": "4cc0c08e8be18b9a21615930ca09f53e06eb9f1283e30bf427f9053c8ef4457b",
+    "data/raw/prri-avs-2015/questionnaire.pdf": "caf7c8af41e7c65fbecc54469bb7582d4d1099b4e614cf3a10a22c8e6e30262d",
+    "data/raw/prri-avs-2016/responses.dta": "38ca1f4e84b5c6dcb163bfec30baf1aa8a13e37dabf7ba270b12288d2eb08877",
+    "data/raw/prri-avs-2016/questionnaire.pdf": "d11673fe787677dec3fb40a1204b67eab771137816622b48ed6a3bbc93be7447",
+    "data/raw/prri-avs-2017/responses.dta": "1eff0c20975a2a92f40e93655760ebef186561ab8041497e1c07e6cd5b28ba89",
+    "data/raw/prri-avs-2017/questionnaire.pdf": "770de64e0f4be49edfc656ad807bea7dd6890398aad013fb18552915f3c2b0bb",
+    "data/raw/prri-avs-2023/responses.dta": "77f8a295839f16997f037214a79c80139158afdceaf2045ee18cd07725a9b539",
+    "data/raw/prri-avs-2023/questionnaire.pdf": "41c2f758938dcccbf9c6742a3807d3326ceda4e4509dc1381a8905912cdf9028",
+    "data/raw/prri-avs-2024/responses.dta": "f7560d89700dc19c8bfcb6751fb9936b748b5d35dd90292102dce645ebb34326",
+    "data/raw/prri-avs-2024/questionnaire.pdf": "7b7c9a1ba8d0b4f7dec3fd5adb5288b8a51e60995caf0ec1372c0497bd667707",
+    "data/raw/ces-policy/responses.dta": "0264338e7298450e42c63a2431273f7ad4b04be90d5075e0ba4b64c48ca5cfdd",
+    "data/raw/ces-policy/guide.pdf": "3cb04fd6c5e10d7f94139d5c12eaec5fb420a362efad50d5a6f76e85adfc4dbd",
+    "data/raw/ces-policy/common.feather": "543838b1116aa97e2e3e8976b9c5bf0224253233fa38757805b1cbff43db46ec",
+    "data/raw/ces-policy/common-guide.pdf": "07ca96d8b2c4ed64f1cfeff4d140dc1a5a4ade4ecf8446ff4e50207c56f7b003",
+    "data/raw/voter/VOTER Panel Data Files/voter_panel.dta": "29382b5993748020e21dc0ef0749c65d76d87f729cac1fb2bdd11aab55d6e1f2",
+    "data/raw/voter/guide.pdf": "3a4fb03bcfe208937c5723a4f30239a9155930a818c21a708c8ac93395a981e5",
+    "data/research/marriage-case-components.json": "fba354157a0b475a7b2e31ad55915149338882adb6f57d47835a4b895b8769a2",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/marriage_case_study.py": "979595754bdf8294f6dba56544793de77e3772bc73b3604e2c663f0771e04d53",
+    "data/prri/policy-batch-mappings.json": "eff3868c9a8095ead1ce2c4a3e7b017f8318e65048929e8fb35a3dfa771bd3cc",
+    "data/manifests/gss-2024-r3a.json": "bb521484420a0df344315e1876f6720edf0fd3b797433852b8a9639ce4e18f35",
+    "data/manifests/ces-policy-v3.json": "dbe3b0f0bae8bdb19c91b241de1bcd58e5e6550d2adce820618745fcb21d15e8",
+    "data/manifests/voter-policy-batch.json": "77d9afc929283f908320bee48686edfab2801f116d25f1f50d91e0a4956804c6"
+  },
+  "limitations": [
+    "No pooled percentage: wording, denominator, target population and mode differ.",
+    "Retrospective current data vintages, not a historically available forecasting dataset.",
+    "No survey-design uncertainty or confidence intervals estimated.",
+    "Broad legality preferences compare outcome direction, not approval of constitutional reasoning or federal-recognition details."
+  ]
+}

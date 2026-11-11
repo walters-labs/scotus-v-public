@@ -1,0 +1,403 @@
+{
+  "artifact": "artifacts/court-details.sqlite",
+  "artifact_sha256": "64ec1377c7206d70228dcd9080bc93f6a584a6c379446cf68fab866ebf8e7a36",
+  "corpus_cases": 8125,
+  "caches": [
+    {
+      "path": "data/raw/rebuild/courtlistener.sqlite",
+      "sha256": "220e028cb2e53378453005363e1508769f49403ff31e5caefaa9c4a67d15eeea",
+      "clusters": 220,
+      "opinions": 0,
+      "multiple_opinion_references": 41,
+      "streams": [
+        {
+          "kind": "clusters",
+          "pages": 11,
+          "rows": 220,
+          "complete": false
+        }
+      ]
+    },
+    {
+      "path": "data/raw/sample/courtlistener.sqlite",
+      "sha256": "d2342b3fe7c46044e976634fe209af93999fcb987af582ecac5ec39ad9c6cb00",
+      "clusters": 160,
+      "opinions": 20,
+      "multiple_opinion_references": 4,
+      "streams": [
+        {
+          "kind": "clusters",
+          "pages": 8,
+          "rows": 160,
+          "complete": false
+        },
+        {
+          "kind": "opinions",
+          "pages": 1,
+          "rows": 20,
+          "complete": false
+        }
+      ]
+    }
+  ],
+  "unique_clusters": 380,
+  "unique_opinions": 20,
+  "types": {
+    "010combined": 12,
+    "020lead": 8
+  },
+  "author_field_present": 0,
+  "joined_by_field_present": 0,
+  "opinion_url_present": 20,
+  "uniquely_citation_matched_clusters": 36,
+  "uniquely_matched_corpus_cases": 34,
+  "complete_referenced_sets": 5,
+  "matches": [
+    {
+      "case_id": "2009-033",
+      "cluster_id": 1722,
+      "name": "Shady Grove Orthopedic Associates, P. A. v. Allstate Insurance",
+      "references": 4,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-034",
+      "cluster_id": 1723,
+      "name": "Padilla v. Kentucky",
+      "references": 4,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-035",
+      "cluster_id": 1724,
+      "name": "Jones v. Harris Associates L. P.",
+      "references": 3,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-036",
+      "cluster_id": 1725,
+      "name": "Berghuis v. Smith",
+      "references": 3,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-037",
+      "cluster_id": 1726,
+      "name": "Graham County Soil & Water Conservation District v. United States Ex Rel. Wilson",
+      "references": 4,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-038",
+      "cluster_id": 1727,
+      "name": "United Student Aid Funds, Inc. v. Espinosa",
+      "references": 1,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-031",
+      "cluster_id": 1728,
+      "name": "Milavetz, Gallop & Milavetz, P. A. v. United States",
+      "references": 4,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-032",
+      "cluster_id": 1729,
+      "name": "Bloate v. United States",
+      "references": 4,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-027",
+      "cluster_id": 1730,
+      "name": "Mac's Shell Service, Inc. v. Shell Oil Products Co.",
+      "references": 1,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-028",
+      "cluster_id": 1731,
+      "name": "Reed Elsevier, Inc. v. Muchnick",
+      "references": 3,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-029",
+      "cluster_id": 1732,
+      "name": "Johnson v. United States",
+      "references": 3,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-022",
+      "cluster_id": 1734,
+      "name": "Maryland v. Shatzer",
+      "references": 4,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-023",
+      "cluster_id": 1735,
+      "name": "Hertz Corp. v. Friend",
+      "references": 1,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-024",
+      "cluster_id": 1736,
+      "name": "Florida v. Powell",
+      "references": 3,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-013",
+      "cluster_id": 1742,
+      "name": "Wood v. Allen",
+      "references": 3,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-015",
+      "cluster_id": 1744,
+      "name": "Kucana v. Holder",
+      "references": 3,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-019",
+      "cluster_id": 1748,
+      "name": "NRG Power Marketing, LLC v. Maine Public Utilities Commission",
+      "references": 3,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-020",
+      "cluster_id": 1749,
+      "name": "Smith v. Spisak",
+      "references": 3,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-001",
+      "cluster_id": 1751,
+      "name": "Mohawk Industries, Inc. v. Carpenter",
+      "references": 3,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-002",
+      "cluster_id": 1752,
+      "name": "Alvarez v. Smith",
+      "references": 3,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-003",
+      "cluster_id": 1753,
+      "name": "Union Pacific R. Co. v. Locomotive Engineers and Trainmen Gen. Comm. of Adjustment, Central Region",
+      "references": 1,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-004",
+      "cluster_id": 1754,
+      "name": "Beard v. Kindler",
+      "references": 3,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-047",
+      "cluster_id": 2144,
+      "name": "United States v. Stevens",
+      "references": 3,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-044",
+      "cluster_id": 2357,
+      "name": "Jerman v. Carlisle, McNellie, Rini, Kramer & Ulrich, L.P.A.",
+      "references": 5,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-045",
+      "cluster_id": 2358,
+      "name": "Perdue v. Kenny A. Ex Rel. Winn",
+      "references": 5,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-046",
+      "cluster_id": 2359,
+      "name": "Conkright v. Frommert",
+      "references": 3,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-042",
+      "cluster_id": 78783,
+      "name": "Stolt-Nielsen S. A. v. AnimalFeeds International Corp.",
+      "references": 3,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2009-043",
+      "cluster_id": 78784,
+      "name": "Merck & Co. v. Reynolds",
+      "references": 4,
+      "cached_opinions": 0,
+      "complete_referenced_set": false,
+      "types": {}
+    },
+    {
+      "case_id": "2014-050",
+      "cluster_id": 2810524,
+      "name": "Los Angeles v. Patel",
+      "references": 1,
+      "cached_opinions": 1,
+      "complete_referenced_set": true,
+      "types": {
+        "010combined": 1
+      }
+    },
+    {
+      "case_id": "2014-040",
+      "cluster_id": 2811844,
+      "name": "Texas Dept. of Housing and Community Affairs v. Inclusive Communities Project, Inc.",
+      "references": 3,
+      "cached_opinions": 1,
+      "complete_referenced_set": false,
+      "types": {
+        "010combined": 1
+      }
+    },
+    {
+      "case_id": "2014-052",
+      "cluster_id": 2811845,
+      "name": "King v. Burwell",
+      "references": 1,
+      "cached_opinions": 1,
+      "complete_referenced_set": true,
+      "types": {
+        "010combined": 1
+      }
+    },
+    {
+      "case_id": "2014-050",
+      "cluster_id": 2811846,
+      "name": "City of L. A. v. Patel",
+      "references": 1,
+      "cached_opinions": 1,
+      "complete_referenced_set": true,
+      "types": {
+        "010combined": 1
+      }
+    },
+    {
+      "case_id": "2014-068",
+      "cluster_id": 2811847,
+      "name": "Kingsley v. Hendrickson",
+      "references": 3,
+      "cached_opinions": 1,
+      "complete_referenced_set": false,
+      "types": {
+        "010combined": 1
+      }
+    },
+    {
+      "case_id": "2014-070",
+      "cluster_id": 2812209,
+      "name": "Obergefell v. Hodges",
+      "references": 1,
+      "cached_opinions": 1,
+      "complete_referenced_set": true,
+      "types": {
+        "010combined": 1
+      }
+    },
+    {
+      "case_id": "2014-016",
+      "cluster_id": 2812210,
+      "name": "Johnson v. United States",
+      "references": 3,
+      "cached_opinions": 1,
+      "complete_referenced_set": false,
+      "types": {
+        "010combined": 1
+      }
+    },
+    {
+      "case_id": "2014-040",
+      "cluster_id": 2959750,
+      "name": "Texas Dept. of Housing and Community Affairs v. Inclusive Communities Project, Inc.",
+      "references": 1,
+      "cached_opinions": 1,
+      "complete_referenced_set": true,
+      "types": {
+        "010combined": 1
+      }
+    }
+  ],
+  "limitations": [
+    "Nonrandom incomplete API crawls; not an estimate of provider-wide coverage.",
+    "Author and joinder fields omitted by original downloader; absence is not a provider null.",
+    "Combined opinions do not identify separate authors or legal holdings.",
+    "Multiple cluster records may represent the same case; matches are not deduplicated opinions."
+  ]
+}

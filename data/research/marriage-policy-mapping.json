@@ -1,0 +1,66 @@
+{
+  "max_prior_years": 3,
+  "policies": {
+    "same_sex_marriage": {
+      "support_definition": "Support for allowing same-sex couples to marry legally / agreement with their right to marry; wording and denominators remain source-specific.",
+      "questions": [
+        {
+          "source": "CES",
+          "variable": "gaymarriage_legalize"
+        },
+        {
+          "source": "GSS",
+          "variable": "marsame"
+        },
+        {
+          "source": "GSS",
+          "variable": "marsame1"
+        },
+        {
+          "source": "PRRI",
+          "variable": "Q10_C"
+        },
+        {
+          "source": "PRRI",
+          "variable": "Q12B"
+        },
+        {
+          "source": "PRRI",
+          "variable": "Q14A"
+        },
+        {
+          "source": "PRRI",
+          "variable": "Q17A"
+        },
+        {
+          "source": "PRRI",
+          "variable": "Q22E"
+        },
+        {
+          "source": "PRRI",
+          "variable": "Q40_E"
+        },
+        {
+          "source": "PRRI",
+          "variable": "Q8B"
+        },
+        {
+          "source": "PRRI",
+          "variable": "Q9A"
+        },
+        {
+          "source": "PRRI",
+          "variable": "legssm"
+        },
+        {
+          "source": "VOTER",
+          "variable": "view_gaymar_2016"
+        },
+        {
+          "source": "VOTER",
+          "variable": "view_gaymar_2020Nov"
+        }
+      ]
+    }
+  }
+}
