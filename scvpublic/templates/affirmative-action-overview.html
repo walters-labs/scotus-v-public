@@ -3,7 +3,13 @@
 <h2 id="affirmative-action-question">The goal and the admissions rule are different questions</h2>
 <p class="overview-lead">People can evaluate efforts to increase minority representation differently from a particular way of choosing applicants. These surveys ask about different policies; they do not yield one interchangeable approval score.</p>
 <div class="reading-guide"><div><h3>Before Fisher’s 2016 ruling</h3><p>Pew asked whether programs to increase minority representation on campuses were good or bad. Gallup offered a choice between admission “solely on merit” and considering race and ethnicity for diversity. Neither described Texas’s particular admissions system.</p></div><div><h3>Before the 2023 ruling</h3><p>Pew asked specifically about race and ethnicity in selective-college admissions for diversity. That is closer to the policy at issue than general affirmative-action attitudes, but still does not measure approval of the Harvard and UNC decisions.</p></div></div>
-<h3 class="snapshot-heading">Two earlier questions, kept separate</h3>
+<h3 class="snapshot-heading">Before the 2023 ruling: race in selective-college admissions</h3>
+{% set observation = study.cases[2].components[1].observations[0] %}
+<p>{{ observation.wording }}</p>
+<div class="policy-table"><table><caption class="sr-only">Pew 2023 admissions question, full response distribution</caption><thead><tr><th scope="col">Published answer</th><th scope="col">Percent</th></tr></thead><tbody>{% for answer in observation.response_distribution %}<tr><th scope="row">{{ answer.label }}</th><td>{{ '%.0f'|format(answer.percent) }}%</td></tr>{% endfor %}</tbody></table></div>
+<p class="snapshot-note">{{ observation.source }} · {{ observation.field_start }}–{{ observation.field_end }} · {{ '{:,}'.format(observation.sample_n) }} adults. Before the June 29 ruling; all response categories retained. <a href="{{ observation.source_url }}">Original report ↗</a></p>
+<p>This question concerns the admissions policy directly, but does not describe Harvard’s or UNC’s particular programs. The broader VOTER question is available as background under the ruling below.</p>
+<h3 class="snapshot-heading">Before Fisher: two earlier questions, kept separate</h3>
 <div class="policy-table"><table><caption class="sr-only">Earlier polling for Fisher 2016 with original response categories</caption><thead><tr><th scope="col">Survey</th><th scope="col">Question, summarized</th><th scope="col">Published answers</th></tr></thead><tbody>
 {% for observation in study.cases[1].components[0].observations %}<tr><th scope="row">{{ observation.source }} · {{ observation.year }}</th><td>{{ observation.wording }}</td><td>{% for answer in observation.response_distribution %}{{ answer.label }}: {{ '%.0f'|format(answer.percent) }}%{% if not loop.last %}<br>{% endif %}{% endfor %}</td></tr>{% endfor %}
 </tbody></table></div>

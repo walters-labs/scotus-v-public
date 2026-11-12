@@ -45,28 +45,66 @@ sources (1988–2024); abortion has 56 from four sources (1972–2024). These hi
 explain their greater depth. They include later surveys, explicitly separate from
 pre-ruling comparisons; different denominators are not pooled.
 
-## Concrete fixes in this review
+## Publication assessment after the campaign-finance deployment
 
-1. **Affirmative action:** added Pew ATP Wave 125, fielded March 27–April 2, 2023,
-   before the June 29 decision. All 5,079 respondents were asked COLL_RE.
-   Retained six categories: 11/22/21/29/16/1 percent, including uncertainty and
-   nonresponse. No inferred residual or denominator change. The question isolates
-   admissions and diversity but not the specific programs, so remains contextual.
-   [Original report, page 32](https://www.pewresearch.org/politics/wp-content/uploads/sites/4/2023/06/PP_2023.06.08_college-admissions_REPORT.pdf).
-2. **School religion:** added February 9–11, 2001 after-hours access question,
-   72/26/2, national sample 1,016. It supersedes the 1999 row for Good News Club;
-   Santa Fe retains its earlier 1999 graduation question. Later 2014 observations
-   in the historical PDF are not used for either ruling.
-   [Gallup original release](https://news.gallup.com/poll/1951/Use-Schools-Student-Religious-Meetings-Acceptable-Most-Americans.aspx).
-3. **Presentation:** capital punishment and affirmative action lacked the explanatory
-   introductions used by the newer panels. Added introductions explaining exactly
-   what their questions do and do not measure.
+This pass inspected all ten current generated comparisons, all component-to-question
+matches, overview templates and shared presentation, then ran the full test suite.
+It is a content and data-integrity review, not a new cross-device visual audit,
+fresh microdata estimation, or comprehensive verification of every external link.
+
+**Ready as featured examples:** marriage equality and abortion. They have the
+best combination of specific comparisons and separately labeled opinion histories.
+Do not imply that every component in either pane has matched evidence.
+
+**Ready as narrower examples:** capital punishment, handgun rights, contraception,
+and campaign finance's McCutcheon portion. Each has an informative specific
+comparison with explicit remaining mismatches. Contraception is strongest as a
+coverage dispute, not a measured history of access. Citizens United is background,
+not a close opinion match. None requires more sources merely to raise a count.
+
+**Usable with clear limits:** affirmative action and voter ID. Admissions-specific
+questions make affirmative action useful, but its broad VOTER question about women
+and racial minorities adds little to the SFFA comparison and appears before the
+closer Pew evidence. Prioritize the admissions question and demote or omit that
+broad item in a future presentation edit. Voter ID is a legitimate single snapshot;
+one independent earlier photo-ID poll would add corroboration, not resolve the
+Indiana-specific burden/exemption mismatch.
+
+**Weakest for alignment claims:** medical marijuana and school religion. Both can
+remain as explicitly contextual educational examples. Neither should be used as a
+headline example of the Court agreeing or disagreeing with public opinion.
+Medical-use support cannot establish views about federal authority. Graduation
+prayer and student religious groups do not closely match football-game sponsorship
+and an adult-led children's club. School religion has the more promising next
+bounded question-fit task; the medical-enforcement search already has a recorded
+stop point.
+
+## Presentation findings
+
+- The shared navigation, fit labels, original distributions and source disclosures
+  are consistent. Labels distinguish policy direction from constitutional reasoning.
+- Marriage's 28 history observations are expanded by default, while abortion's
+  history is collapsible. Matching that compact presentation would bring the
+  marriage rulings into view sooner without removing evidence.
+- Several rulings repeat a holding for broad and targeted polls (especially
+  marriage and affirmative action). These are not independent outcomes. A later
+  cleanup should group questions beneath one legal component where practical.
+- The ten tabs do not communicate evidence depth. A short, plain-language scope
+  line per overview is preferable to adding another score or large warning banner.
+- Long original questionnaire text and repeated notes belong in details sections;
+  keep the opening question, best comparison and main limitation prominent.
 
 ## Integrity checks and remaining caveats
 
-- Existing recorded input hashes checked where present; no mismatch found.
-  New source snapshots are checksum-pinned. This does not establish that every
-  older artifact has complete provenance; capital punishment now has input hashes following its targeted-poll rebuild.
+- All 34 recorded current comparison-input hashes matched their files. The scan
+  of topic survey-input provenance verified 68 entries (including shared files
+  counted in more than one input). Six entries did not match current local files:
+  capital-punishment component/mapping hashes in both capital and affirmative-action
+  survey inputs, and affirmative-action component/mapping hashes in its own input.
+  These are historical build dependencies, not changed raw survey sources. Current
+  comparison hashes match, so this does not indicate altered displayed percentages.
+  Separate historical extraction provenance from current comparison dependencies;
+  do not simply overwrite old hashes and imply the surveys were re-extracted.
 - Comparison observations checked for eligible year/date, nonduplicated identifiers,
   retained response shares and explicit contextual/procedural labels.
 - Unknown historical Gallup item sample sizes remain unknown. No modern sample
@@ -75,7 +113,7 @@ pre-ruling comparisons; different denominators are not pooled.
 - YouGov’s contraception item base is 993, not the 1,000-person survey total.
 - Gallup school prayer’s `<0.5%` remains a bound, not an observed zero. The
   campaign-finance chart’s 7% remainder is derived from rounded displayed totals,
-  not an identified response option. The 2013 total of 101% is retained rounding.
+  not an identified response option. The superseded Gallup 2013 campaign item remains in research inputs but is not displayed; Pew 2014 admissions retains its published 101% total.
 - The three-year window is a transparent selection rule, not evidence that opinion
   stayed constant. New questions are explicitly selected, not automatically ranked
   by relevance. Counts do not establish comprehensive coverage of all available polls.
@@ -84,16 +122,29 @@ pre-ruling comparisons; different denominators are not pooled.
 
 ## Next work, in order
 
-1. Capital-punishment exemption questions have now been added from the original
-   May 2002 Gallup release (see `CAPITAL_PUNISHMENT_SOURCES.md`). The juvenile
-   wording remains contextual. Further work should seek corroboration, not repeat
-   general murder questions.
-2. Campaign finance now has closer aggregate-limit polling for McCutcheon. Seek
-   independent corroboration only if available; Citizens United remains explicitly
-   limited rather than padded with post-ruling reactions.
-3. Review the remaining contextual panels for publication wording and layout;
-   then decide whether further targeted data materially change the story.
+1. Small publication polish: prioritize admissions-specific evidence in affirmative
+   action, compact marriage history, and clarify historical versus current provenance.
+   These changes need not alter any percentages or search behavior.
+2. If doing one further data task, seek a school-religion question that specifies
+   school sponsorship or the actual after-school setting. Stop if only generic
+   religious-expression polling is available. Voter-ID corroboration is second.
+3. Finish the blog with marriage, abortion, and one or two narrower examples.
+   Describe ten selected historical illustrations, not ten equally validated
+   alignment studies. No claim of prediction or causal influence is ready.
 
-The ten-panel target has been reached in quantity. It has **not** made all ten
-panels equal to marriage equality in depth. This is a reason to focus the next
-small tasks, not to start an unlimited source-collection project.
+Verification: 288 tests passed. Across 29 case entries there are 44 displayed
+components: 10 direct, 22 contextual, eight missing and four procedural/not
+comparable. These are editorial component counts, not independent cases or a
+statistical measure of coverage. No timing violations were found in selected
+observations. Abortion's 56 history records comprise 55 grouped history entries
+plus the separately displayed VOTER Roe observation; none was silently lost.
+
+The app is suitable for the proposed modest project launch with these limitations.
+Further data can strengthen particular examples, but an arbitrary source count
+is not a publication requirement. The review itself changed documentation only. The following presentation follow-up
+is now implemented locally: marriage history collapses by source; Pew’s 2023
+admissions item appears prominently in the affirmative-action overview and before
+the broad VOTER component, which remains accessible as collapsed background.
+No observations, percentages, mappings or fit labels changed. All 288 tests pass;
+local browser checks confirmed the history disclosure and admissions display.
+Historical provenance clarification remains a separate maintenance task.

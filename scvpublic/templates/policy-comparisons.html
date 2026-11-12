@@ -16,8 +16,9 @@
 <p class="snapshot-note">Share supporting or agreeing with same-sex marriage in 28 audited source/question-year observations. Each bar runs from 0 to 100%. Sources are kept separate; missing years are not interpolated. This history includes surveys before and after the rulings; only eligible earlier surveys appear in the case comparisons below.</p>
 <div class="opinion-snapshots">
 {% for series in study.history %}<section class="opinion-snapshot"><h4>{{ series.source }}</h4>
+<details class="history-years"><summary>Explore {{ series.observations|length }} observations · {{ series.observations[0].year }}–{{ series.observations[-1].year }}</summary>
 {% for observation in series.observations %}<div class="opinion-row"><div><span>{{ observation.year }} · {{ observation.variable }}</span><strong>{{ '%.1f'|format(observation.percent.support) }}%</strong></div><svg class="support-track" viewBox="0 0 100 2" preserveAspectRatio="none" aria-hidden="true"><rect width="100" height="2" fill="#eee"/><rect width="{{ observation.percent.support }}" height="2" fill="#333"/></svg><details><summary>Wording and denominator</summary><p>{{ observation.wording }}</p>{% if observation.wording_note is defined %}<p>{{ observation.wording_note }}</p>{% endif %}<p>{{ observation.denominator }}</p></details></div>{% endfor %}
-</section>{% endfor %}
+</details></section>{% endfor %}
 </div>
 <p class="snapshot-note">CES percentages exclude missing answers and use support/oppose respondents only. Other sources retain additional categories; differences between sources are not necessarily changes in opinion. See the response breakdowns below.</p>
 <details class="methodology"><summary>Why is VOTER lower in 2016?</summary><p>VOTER records 49.9% favor, 35.1% oppose, 14.6% unsure and 0.3% skipped, using its supplied cross-sectional weights. Among favor/oppose respondents only, support is 58.7%; CES reports 61.6% on that narrower denominator. This explains most of their apparent difference, but does not make the surveys equivalent.</p><p>We verified VOTER’s raw response counts and weights against its <a href="https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf">survey guide</a>. It interviewed returning panelists in November–December 2016. Differences from GSS and PRRI remain; timing, question format and sample design may matter, but we have not isolated their effects. The bars retain the original denominators.</p></details>
@@ -42,7 +43,10 @@
 {% for case in study.cases %}
 <section class="policy-event" id="case-{{ case.case_id }}">
 <div class="event-heading"><time datetime="{{ case.date }}">{{ case.date }}</time><h2>{{ case.name }}</h2><a href="{{ case.source }}">Read the decision ↗</a></div>
-{% for component in case.components %}
+{% set display_components = case.components|reverse|list if topic == 'affirmative-action' and case.case_id == '2022-009' else case.components %}
+{% for component in display_components %}
+{% set broad_background = topic == 'affirmative-action' and component.component_id == 'sffa-programs' %}
+{% if broad_background %}<details class="methodology"><summary>Broader background: VOTER’s general affirmative-action question</summary>{% endif %}
 <article class="policy-component"><div class="component-heading"><h3>{{ component.issue }}</h3><span class="fit-label">{{ component.display_fit }}</span></div>
 <p class="policy-direction">{{ component.display_direction }}</p><p class="policy-decision">{{ component.decision }}</p><p>{{ component.scope }}</p>
 <p class="fit-explanation">{{ component.survey_fit }}</p>
