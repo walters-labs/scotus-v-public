@@ -1,0 +1,415 @@
+{
+  "survey_records": [
+    {
+      "source": "CES",
+      "year": 2008,
+      "variable": "affirmative_action_race_women",
+      "wording": "Affirmative action programs give preference to racial minorities and to women in employment and college admissions in order to correct for discrimination. Do you support or oppose affirmative action?",
+      "weight": "weight",
+      "denominator": "Conditional on the four support/oppose answers in the harmonized file; original reasons for missing answers unavailable. Employment and college admissions are combined in the question.",
+      "n": 32617,
+      "weight_sum": 32552.832056449606,
+      "percent": {
+        "support": 44.43196851264969,
+        "oppose": 55.56803148735031,
+        "neutral": 0.0,
+        "unsure": 0.0,
+        "nonresponse": 0.0
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 3791,
+          "weight_sum": 4749.467209442731,
+          "percent": 14.590027685476697
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 8883,
+          "weight_sum": 9714.396879854692,
+          "percent": 29.84194082717299
+        },
+        {
+          "code": "3",
+          "group": "oppose",
+          "n": 8123,
+          "weight_sum": 7998.560977088307,
+          "percent": 24.571014169268178
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 11820,
+          "weight_sum": 10090.406990063877,
+          "percent": 30.997017318082136
+        }
+      ],
+      "excluded_positive_weight": 183,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "CES",
+      "year": 2009,
+      "variable": "affirmative_action_race_2009",
+      "wording": "Affirmative action programs give preference to racial minorities in employment and college admissions in order to correct for discrimination. Do you support or oppose affirmative action?",
+      "weight": "weight",
+      "denominator": "Conditional on the four support/oppose answers in the harmonized file; original reasons for missing answers unavailable. Employment and college admissions are combined in the question.",
+      "n": 13750,
+      "weight_sum": 13734.826231330633,
+      "percent": {
+        "support": 36.08500432061042,
+        "oppose": 63.91499567938958,
+        "neutral": 0.0,
+        "unsure": 0.0,
+        "nonresponse": 0.0
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 1581,
+          "weight_sum": 1548.9031827449799,
+          "percent": 11.277195332925022
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 3236,
+          "weight_sum": 3407.309456259012,
+          "percent": 24.807808987685398
+        },
+        {
+          "code": "3",
+          "group": "oppose",
+          "n": 3392,
+          "weight_sum": 3499.3626333624125,
+          "percent": 25.47802625547592
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 5541,
+          "weight_sum": 5279.250958964229,
+          "percent": 38.43696942391366
+        }
+      ],
+      "excluded_positive_weight": 50,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "CES",
+      "year": 2010,
+      "variable": "affirmative_action_race",
+      "wording": "Affirmative action programs give preference to racial minorities in employment and college admissions in order to correct for past discrimination. Do you support or oppose affirmative action?",
+      "weight": "weight",
+      "denominator": "Conditional on the four support/oppose answers in the harmonized file; original reasons for missing answers unavailable. Employment and college admissions are combined in the question.",
+      "n": 55133,
+      "weight_sum": 55241.51214147219,
+      "percent": {
+        "support": 35.414745436385125,
+        "oppose": 64.58525456361488,
+        "neutral": 0.0,
+        "unsure": 0.0,
+        "nonresponse": 0.0
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 6632,
+          "weight_sum": 5963.717824526039,
+          "percent": 10.795717918171936
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 12969,
+          "weight_sum": 13599.923075586117,
+          "percent": 24.619027518213187
+        },
+        {
+          "code": "3",
+          "group": "oppose",
+          "n": 13291,
+          "weight_sum": 14876.625357097711,
+          "percent": 26.930155928749798
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 22241,
+          "weight_sum": 20801.24588426232,
+          "percent": 37.65509863486508
+        }
+      ],
+      "excluded_positive_weight": 126,
+      "missing_or_zero_weight": 141
+    },
+    {
+      "source": "CES",
+      "year": 2012,
+      "variable": "affirmative_action_race",
+      "wording": "Affirmative action programs give preference to racial minorities in employment and college admissions in order to correct for past discrimination. Do you support or oppose affirmative action?",
+      "weight": "weight",
+      "denominator": "Conditional on the four support/oppose answers in the harmonized file; original reasons for missing answers unavailable. Employment and college admissions are combined in the question.",
+      "n": 54297,
+      "weight_sum": 54278.855654564315,
+      "percent": {
+        "support": 38.449164528427715,
+        "oppose": 61.550835471572285,
+        "neutral": 0.0,
+        "unsure": 0.0,
+        "nonresponse": 0.0
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 7448,
+          "weight_sum": 6765.613775657259,
+          "percent": 12.464547555523747
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 13797,
+          "weight_sum": 14104.152739113963,
+          "percent": 25.984616972903964
+        },
+        {
+          "code": "3",
+          "group": "oppose",
+          "n": 14183,
+          "weight_sum": 15524.118110912072,
+          "percent": 28.600673178721753
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 18869,
+          "weight_sum": 17884.97102888102,
+          "percent": 32.95016229285053
+        }
+      ],
+      "excluded_positive_weight": 238,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "CES",
+      "year": 2013,
+      "variable": "affirmative_action_race",
+      "wording": "Affirmative action programs give preference to racial minorities in employment and college admissions in order to correct for past discrimination. Do you support or oppose affirmative action?",
+      "weight": "weight",
+      "denominator": "Conditional on the four support/oppose answers in the harmonized file; original reasons for missing answers unavailable. Employment and college admissions are combined in the question.",
+      "n": 16318,
+      "weight_sum": 16317.123421293647,
+      "percent": {
+        "support": 37.80650060465152,
+        "oppose": 62.19349939534847,
+        "neutral": 0.0,
+        "unsure": 0.0,
+        "nonresponse": 0.0
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 1993,
+          "weight_sum": 2076.0472431901944,
+          "percent": 12.72312030489993
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 4176,
+          "weight_sum": 4092.8861217429235,
+          "percent": 25.08338029975159
+        },
+        {
+          "code": "3",
+          "group": "oppose",
+          "n": 4219,
+          "weight_sum": 4229.751264406301,
+          "percent": 25.922162596910475
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 5930,
+          "weight_sum": 5918.438791954228,
+          "percent": 36.27133679843799
+        }
+      ],
+      "excluded_positive_weight": 82,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "CES",
+      "year": 2014,
+      "variable": "affirmative_action_race",
+      "wording": "Affirmative action programs give preference to racial minorities in employment and college admissions in order to correct for past discrimination. Do you support or oppose affirmative action?",
+      "weight": "weight",
+      "denominator": "Conditional on the four support/oppose answers in the harmonized file; original reasons for missing answers unavailable. Employment and college admissions are combined in the question.",
+      "n": 56003,
+      "weight_sum": 56031.17310159552,
+      "percent": {
+        "support": 37.50795492531231,
+        "oppose": 62.492045074687695,
+        "neutral": 0.0,
+        "unsure": 0.0,
+        "nonresponse": 0.0
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 8116,
+          "weight_sum": 7612.223343554311,
+          "percent": 13.58569332423552
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 14161,
+          "weight_sum": 13403.923807515856,
+          "percent": 23.922261601076794
+        },
+        {
+          "code": "3",
+          "group": "oppose",
+          "n": 14135,
+          "weight_sum": 14287.21622583381,
+          "percent": 25.498691951225585
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 19591,
+          "weight_sum": 20727.80972469155,
+          "percent": 36.993353123462114
+        }
+      ],
+      "excluded_positive_weight": 197,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "VOTER",
+      "year": 2016,
+      "variable": "affirmativeaction_2016",
+      "wording": "Do you generally favor or oppose affirmative action programs for women and racial minorities?",
+      "weight": "weight_genpop_2016",
+      "denominator": "Positive-weight administered-wave answers, including unsure/skipped; not-asked/system missing excluded. The question combines women and racial minorities and does not isolate college admissions.",
+      "n": 8000,
+      "weight_sum": 7999.999999999998,
+      "percent": {
+        "support": 33.2810908266315,
+        "oppose": 41.293464551918646,
+        "neutral": 0.0,
+        "unsure": 24.420225373792587,
+        "nonresponse": 1.0052192476572699
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 2737,
+          "weight_sum": 2662.487266130519,
+          "percent": 33.2810908266315
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 3640,
+          "weight_sum": 3303.4771641534912,
+          "percent": 41.293464551918646
+        },
+        {
+          "code": "8",
+          "group": "unsure",
+          "n": 1588,
+          "weight_sum": 1953.6180299034065,
+          "percent": 24.420225373792587
+        },
+        {
+          "code": "98",
+          "group": "nonresponse",
+          "n": 35,
+          "weight_sum": 80.41753981258158,
+          "percent": 1.0052192476572699
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 4517
+    },
+    {
+      "source": "VOTER",
+      "year": 2020,
+      "variable": "affirmativeaction_2020Sep",
+      "wording": "Do you generally favor or oppose affirmative action programs for women and racial minorities?",
+      "weight": "weight_genpop_2020Sep",
+      "denominator": "Positive-weight administered-wave answers, including unsure/skipped; not-asked/system missing excluded. The question combines women and racial minorities and does not isolate college admissions.",
+      "n": 5900,
+      "weight_sum": 5900.0,
+      "percent": {
+        "support": 44.418113053343205,
+        "oppose": 33.5111627449507,
+        "neutral": 0.0,
+        "unsure": 22.05640777662678,
+        "nonresponse": 0.014316425079320187
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 2731,
+          "weight_sum": 2620.668670147249,
+          "percent": 44.418113053343205
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 1998,
+          "weight_sum": 1977.1586019520914,
+          "percent": 33.5111627449507
+        },
+        {
+          "code": "3",
+          "group": "unsure",
+          "n": 1170,
+          "weight_sum": 1301.32805882098,
+          "percent": 22.05640777662678
+        },
+        {
+          "code": "8",
+          "group": "nonresponse",
+          "n": 1,
+          "weight_sum": 0.844669079679891,
+          "percent": 0.014316425079320187
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 6617
+    }
+  ],
+  "provenance": {
+    "data/manifests/gss-2024-r3a.json": "bb521484420a0df344315e1876f6720edf0fd3b797433852b8a9639ce4e18f35",
+    "data/raw/gss-2024-r3a/gss7224_r3a.dta": "a7622e03d9130e25968943b6f022f44dc0087baf0aa6b5cef150871152827344",
+    "data/manifests/ces-policy-v3.json": "dbe3b0f0bae8bdb19c91b241de1bcd58e5e6550d2adce820618745fcb21d15e8",
+    "data/raw/ces-policy/responses.dta": "0264338e7298450e42c63a2431273f7ad4b04be90d5075e0ba4b64c48ca5cfdd",
+    "data/raw/ces-policy/guide.pdf": "3cb04fd6c5e10d7f94139d5c12eaec5fb420a362efad50d5a6f76e85adfc4dbd",
+    "data/raw/ces-policy/common.feather": "543838b1116aa97e2e3e8976b9c5bf0224253233fa38757805b1cbff43db46ec",
+    "data/raw/ces-policy/common-guide.pdf": "07ca96d8b2c4ed64f1cfeff4d140dc1a5a4ade4ecf8446ff4e50207c56f7b003",
+    "data/ces/affirmative-action-mappings.json": "387d5f20fa7f88f3584d88e738f62722e9ee9bb096ebcf39cb24cee860ff6b75",
+    "data/manifests/voter-policy-batch.json": "77d9afc929283f908320bee48686edfab2801f116d25f1f50d91e0a4956804c6",
+    "data/raw/voter/VOTER Panel Data Files/voter_panel.dta": "29382b5993748020e21dc0ef0749c65d76d87f729cac1fb2bdd11aab55d6e1f2",
+    "data/raw/voter/guide.pdf": "3a4fb03bcfe208937c5723a4f30239a9155930a818c21a708c8ac93395a981e5",
+    "artifacts/court-details.sqlite": "64ec1377c7206d70228dcd9080bc93f6a584a6c379446cf68fab866ebf8e7a36",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/build_existing_survey_examples.py": "a7d1a15e0ae1ce1bf5f50d3c2e96e70a9e45758b9d5d1ba25615ea7517b85987",
+    "data/research/capital-punishment-policy-components.json": "2ddfb8b36e8fc8d3c924d4ad890437b764bb6667f750b105d7e1588d718b4606",
+    "data/research/capital-punishment-policy-mapping.json": "49d5f8075be82c03338d8cbd82f570e0605a8eeb2d5be7eff72dcd799df7b6cf",
+    "data/research/affirmative-action-policy-components.json": "db52ea740f98be011b1da26b00ca90943a35b8c9a58938a11e69bbe64eef3969",
+    "data/research/affirmative-action-policy-mapping.json": "ef25cab135ecf5c2150f899da7a8b75221e015c291386f7517fb54b8762d5180"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "max_prior_years": 3,
+  "policies": {
+    "admissions": {
+      "support_definition": "General affirmative-action support; source-specific combined populations and policy areas make this contextual only.",
+      "questions": [
+        {
+          "source": "CES",
+          "variable": "affirmative_action_race_women"
+        },
+        {
+          "source": "CES",
+          "variable": "affirmative_action_race_2009"
+        },
+        {
+          "source": "CES",
+          "variable": "affirmative_action_race"
+        },
+        {
+          "source": "VOTER",
+          "variable": "affirmativeaction_2016"
+        },
+        {
+          "source": "VOTER",
+          "variable": "affirmativeaction_2020Sep"
+        }
+      ]
+    }
+  }
+}

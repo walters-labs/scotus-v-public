@@ -1,0 +1,76 @@
+{
+  "status": "Selected assistant source-based review; not independent ground truth or a representative sample",
+  "cases": [
+    {
+      "case_id": "1975-173",
+      "name": "Gregg v. Georgia",
+      "date": "1976-07-02",
+      "source": "https://supreme.justia.com/cases/federal/us/428/153/",
+      "components": [
+        {
+          "component_id": "gregg-permissibility",
+          "policy_id": "capital",
+          "issue": "Permissibility of capital punishment for murder",
+          "decision": "Rejected the claim that death is invariably unconstitutional as punishment for murder.",
+          "direction": "maintains_permission",
+          "scope": "Permits capital punishment under constitutional constraints; does not require a death sentence for every murder.",
+          "locator": "Opinion of Stewart, Powell and Stevens, Part III, 428 U.S. 168\u2013187.",
+          "comparison_fit": "direct",
+          "survey_fit": "GSS asks about the same broad punishment/offense pairing. This supports only a broad policy-direction comparison, not approval of the constitutional reasoning."
+        },
+        {
+          "component_id": "gregg-procedure",
+          "policy_id": "sentencing",
+          "issue": "Georgia sentencing safeguards",
+          "decision": "Sustained Georgia\u2019s guided capital-sentencing system.",
+          "direction": "maintains_permission",
+          "scope": "The specific safeguards and review process matter.",
+          "locator": "Opinion of Stewart, Powell and Stevens, Part IV, 428 U.S. 188\u2013207.",
+          "comparison_fit": "direct",
+          "survey_fit": "The selected survey does not ask about these procedures; no agreement estimate is assigned."
+        }
+      ],
+      "interpretation_limit": "General support for capital punishment does not establish support for every death sentence or method of execution."
+    },
+    {
+      "case_id": "2001-070",
+      "name": "Atkins v. Virginia",
+      "date": "2002-06-20",
+      "source": "https://www.law.cornell.edu/supremecourt/text/536/304",
+      "components": [
+        {
+          "component_id": "atkins-exemption",
+          "policy_id": "capital",
+          "issue": "Exemption for intellectual disability",
+          "decision": "Prohibited executing offenders with intellectual disability.",
+          "direction": "expands",
+          "scope": "A categorical limit on who may be executed, not abolition of capital punishment.",
+          "locator": "Stevens majority opinion Part IV, 536 U.S. 318\u2013321.",
+          "comparison_fit": "contextual",
+          "survey_fit": "GSS asks about murder convictions generally, not intellectual disability. A favorable answer does not imply opposition to this exemption."
+        }
+      ],
+      "interpretation_limit": "No direct question on this offender category is included; broad death-penalty support cannot establish disagreement."
+    },
+    {
+      "case_id": "2004-024",
+      "name": "Roper v. Simmons",
+      "date": "2005-03-01",
+      "source": "https://www.law.cornell.edu/supremecourt/text/543/551",
+      "components": [
+        {
+          "component_id": "roper-age",
+          "policy_id": "capital",
+          "issue": "Age at the time of the offense",
+          "decision": "Prohibited death sentences for offenses committed before age 18.",
+          "direction": "expands",
+          "scope": "Age at the offense, not age at trial or execution.",
+          "locator": "Kennedy majority opinion Parts III and V, 543 U.S. 568\u2013579.",
+          "comparison_fit": "contextual",
+          "survey_fit": "GSS does not specify age at the offense; it cannot identify support for this juvenile-offender exemption."
+        }
+      ],
+      "interpretation_limit": "A general majority favoring capital punishment is not evidence that a majority favored executing juveniles."
+    }
+  ]
+}

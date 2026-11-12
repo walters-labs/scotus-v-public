@@ -30,13 +30,35 @@ class PolicyViewsTests(unittest.TestCase):
         self.assertIn('Never permit',abortion)
         self.assertIn('Maintains protection',abortion)
         self.assertNotIn('SCDB decision direction',abortion)
-        for topic, value, name in [('firearms','52.6%','Bruen'),('religion','44.3%','Shurtleff')]:
-            page=self.client.get('/policy-comparisons?topic='+topic)
-            self.assertEqual(page.status_code,200)
-            html=page.get_data(as_text=True)
-            for text in [value,name,'2022-04-06','Survey methods','Published survey results','SCOTUSPoll']:
-                self.assertIn(text,html)
         self.assertEqual(self.client.get('/policy-comparisons?topic=../../.env').status_code,404)
+
+    def test_existing_survey_topics(self):
+        capital=self.client.get('/policy-comparisons?topic=capital-punishment')
+        self.assertEqual(capital.status_code,200)
+        for text in ['Gregg', 'Atkins', 'Roper', 'GSS', '59.9%', 'Missing data', 'Context only']:
+            self.assertIn(text,capital.get_data(as_text=True))
+        affirmative=self.client.get('/policy-comparisons?topic=affirmative-action')
+        self.assertEqual(affirmative.status_code,200)
+        for text in ['Fisher', 'CES', 'VOTER', 'Context only', 'Not comparable']:
+            self.assertIn(text,affirmative.get_data(as_text=True))
+        self.assertNotIn('SCOTUSPoll',capital.get_data(as_text=True)+affirmative.get_data(as_text=True))
+        for topic in ['firearms','religion']:
+            self.assertEqual(self.client.get('/policy-comparisons?topic='+topic).status_code,404)
+
+    def test_new_topic_timing_and_scope(self):
+        from scvpublic.policy_views import load_study
+        def observations(component):
+            return [(r['source'],r['year']) for r in component['observations']]
+        capital=load_study('capital-punishment')['cases']
+        self.assertEqual([observations(c['components'][0]) for c in capital],
+                         [[('GSS',1975)],[('GSS',2000)],[('GSS',2004)]])
+        self.assertEqual(capital[0]['components'][1]['display_fit'],'Missing data')
+        self.assertEqual(capital[1]['components'][0]['display_fit'],'Context only')
+        affirmative=load_study('affirmative-action')['cases']
+        self.assertEqual([observations(c['components'][0]) for c in affirmative],
+                         [[],[('CES',2014)],[('VOTER',2020)]])
+        self.assertEqual([c['components'][0]['display_fit'] for c in affirmative],
+                         ['Not comparable','Context only','Context only'])
 
     def test_packaged_view_runs_without_research_code(self):
         import sys

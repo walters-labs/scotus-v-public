@@ -87,22 +87,42 @@ The original marriage observations remain unchanged.
 ## App view
 
 `/policy-comparisons` presents the marriage example; `?topic=abortion` selects
-abortion. The view reads the two committed `*-policy-comparison.json` results,
+abortion. The view reads the four committed `*-policy-comparison.json` results,
 not raw surveys or research scripts. It retains direct/context/missing labels,
 original multi-option categories, visible denominators, and primary decision
 links. The general search and its scoring are unchanged.
 
-Both JSON files are explicitly included in release packaging and Docker builds.
+All four JSON files are explicitly included in release packaging and Docker builds.
 A normal code release is sufficient; no search-index or embedding rebuild is
 needed. Regenerate the research outputs before packaging if their inputs change.
 `tests.test_policy_views` also boots an isolated packaged release to check that
 the page works without research scripts or raw data.
 
-## Four-topic extension
 
-The view now also supports `?topic=firearms` and `?topic=religion`. See
-`SCOTUSPOLL_POLICY_EXAMPLES.md` for selection, aggregate-data provenance and
-limitations. Those two mappings opt into `allow_same_year_with_dates`: sourced
-fieldwork must end strictly before a ruling. The original two mappings keep
-the earlier-year rule. Four precomputed outputs are included in packaging;
-research code and raw inputs remain excluded.
+## Capital punishment and affirmative action
+
+These replace the removed SCOTUSPoll examples using existing GSS, CES and VOTER
+raw files. Reproduce from the repository root:
+
+```sh
+OPENBLAS_NUM_THREADS=1 PYTHONPATH=. .venv/bin/python scripts/build_existing_survey_examples.py
+```
+
+The builder checks source hashes and answer labels, validates CES counts and
+weight joins, and independently recovers serving means from raw category totals.
+It emits eleven source/year observations; the comparison engine selects five
+prior-year observations for six cases. No SCOTUSPoll data is used.
+
+- Capital punishment: Gregg uses GSS 1975; Atkins uses 2000; Roper uses 2004.
+  General murder/death-penalty preferences are a direct broad-policy comparison
+  for Gregg, contextual for the narrower exemptions, and missing for sentencing
+  safeguards. Favoring punishment is not labeled the liberal endpoint.
+- Affirmative action: Fisher I remains non-comparable. Fisher II uses CES 2014;
+  SFFA uses VOTER 2020. Both are contextual because employment/admissions and
+  women/racial minorities are combined in the respective questions.
+
+The new view selectors are `capital-punishment` and `affirmative-action`.
+`maintains_permission` describes legal permission for a policy without implying
+it is liberal. The generated reports link the primary decisions and preserve
+scope, denominators, uncertainty responses, and gaps. These selected cases are
+worked examples, not a representative sample or a combined alignment estimate.

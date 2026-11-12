@@ -10,5 +10,6 @@
 !data/research/
 !data/research/marriage-policy-comparison.json
 !data/research/abortion-policy-comparison.json
-!data/research/firearms-policy-comparison.json
-!data/research/religion-policy-comparison.json
+
+!data/research/capital-punishment-policy-comparison.json
+!data/research/affirmative-action-policy-comparison.json

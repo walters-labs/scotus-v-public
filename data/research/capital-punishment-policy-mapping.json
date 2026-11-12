@@ -1,0 +1,18 @@
+{
+  "max_prior_years": 3,
+  "policies": {
+    "capital": {
+      "support_definition": "Favoring the death penalty for persons convicted of murder; not a liberal score.",
+      "questions": [
+        {
+          "source": "GSS",
+          "variable": "cappun"
+        }
+      ]
+    },
+    "sentencing": {
+      "support_definition": "Approval of the specific Georgia capital-sentencing system; no question selected.",
+      "questions": []
+    }
+  }
+}

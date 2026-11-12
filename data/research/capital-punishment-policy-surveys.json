@@ -1,0 +1,213 @@
+{
+  "survey_records": [
+    {
+      "source": "GSS",
+      "year": 1975,
+      "variable": "cappun",
+      "wording": "Do you favor or oppose the death penalty for persons convicted of murder?",
+      "weight": "wtssps",
+      "orientation": "Support means favoring the death penalty for murder; it is not the liberal endpoint.",
+      "denominator": "Positive-weight substantive, do-not-know and item nonresponse answers; inapplicable/unavailable/system missing excluded.",
+      "n": 1490,
+      "weight_sum": 1489.7680000296657,
+      "percent": {
+        "support": 59.92242247154159,
+        "oppose": 32.95651295495758,
+        "neutral": 0.0,
+        "unsure": 6.757920006354256,
+        "nonresponse": 0.3631445671465771
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 891,
+          "weight_sum": 892.7050748236121,
+          "percent": 59.92242247154159
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 492,
+          "weight_sum": 490.9755839285893,
+          "percent": 32.95651295495758
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 100,
+          "weight_sum": 100.67732972226847,
+          "percent": 6.757920006354256
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 7,
+          "weight_sum": 5.410011555195948,
+          "percent": 0.3631445671465771
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2000,
+      "variable": "cappun",
+      "wording": "Do you favor or oppose the death penalty for persons convicted of murder?",
+      "weight": "wtssps",
+      "orientation": "Support means favoring the death penalty for murder; it is not the liberal endpoint.",
+      "denominator": "Positive-weight substantive, do-not-know and item nonresponse answers; inapplicable/unavailable/system missing excluded.",
+      "n": 2817,
+      "weight_sum": 2816.9753999709305,
+      "percent": {
+        "support": 64.91932797738232,
+        "oppose": 26.964594374867005,
+        "neutral": 0.0,
+        "unsure": 7.327624118513952,
+        "nonresponse": 0.7884535292367268
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 1764,
+          "weight_sum": 1828.7614989493059,
+          "percent": 64.91932797738232
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 801,
+          "weight_sum": 759.5859902419489,
+          "percent": 26.964594374867005
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 228,
+          "weight_sum": 206.41736882087477,
+          "percent": 7.327624118513952
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 24,
+          "weight_sum": 22.210541958801205,
+          "percent": 0.7884535292367268
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2004,
+      "variable": "cappun",
+      "wording": "Do you favor or oppose the death penalty for persons convicted of murder?",
+      "weight": "wtssnrps",
+      "orientation": "Support means favoring the death penalty for murder; it is not the liberal endpoint.",
+      "denominator": "Positive-weight substantive, do-not-know and item nonresponse answers; inapplicable/unavailable/system missing excluded.",
+      "n": 1340,
+      "weight_sum": 1336.987741104067,
+      "percent": {
+        "support": 63.590891201963274,
+        "oppose": 29.628319693709564,
+        "neutral": 0.0,
+        "unsure": 5.688733850199449,
+        "nonresponse": 1.0920552541277246
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 855,
+          "weight_sum": 850.2024198290736,
+          "percent": 63.590891201963274
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 402,
+          "weight_sum": 396.1270022000189,
+          "percent": 29.628319693709564
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 68,
+          "weight_sum": 76.05767420120402,
+          "percent": 5.688733850199449
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 15,
+          "weight_sum": 14.600644873770545,
+          "percent": 1.0920552541277246
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 1472,
+      "missing_or_zero_weight": 0
+    }
+  ],
+  "provenance": {
+    "data/manifests/gss-2024-r3a.json": "bb521484420a0df344315e1876f6720edf0fd3b797433852b8a9639ce4e18f35",
+    "data/raw/gss-2024-r3a/gss7224_r3a.dta": "a7622e03d9130e25968943b6f022f44dc0087baf0aa6b5cef150871152827344",
+    "data/manifests/ces-policy-v3.json": "dbe3b0f0bae8bdb19c91b241de1bcd58e5e6550d2adce820618745fcb21d15e8",
+    "data/raw/ces-policy/responses.dta": "0264338e7298450e42c63a2431273f7ad4b04be90d5075e0ba4b64c48ca5cfdd",
+    "data/raw/ces-policy/guide.pdf": "3cb04fd6c5e10d7f94139d5c12eaec5fb420a362efad50d5a6f76e85adfc4dbd",
+    "data/raw/ces-policy/common.feather": "543838b1116aa97e2e3e8976b9c5bf0224253233fa38757805b1cbff43db46ec",
+    "data/raw/ces-policy/common-guide.pdf": "07ca96d8b2c4ed64f1cfeff4d140dc1a5a4ade4ecf8446ff4e50207c56f7b003",
+    "data/ces/affirmative-action-mappings.json": "387d5f20fa7f88f3584d88e738f62722e9ee9bb096ebcf39cb24cee860ff6b75",
+    "data/manifests/voter-policy-batch.json": "77d9afc929283f908320bee48686edfab2801f116d25f1f50d91e0a4956804c6",
+    "data/raw/voter/VOTER Panel Data Files/voter_panel.dta": "29382b5993748020e21dc0ef0749c65d76d87f729cac1fb2bdd11aab55d6e1f2",
+    "data/raw/voter/guide.pdf": "3a4fb03bcfe208937c5723a4f30239a9155930a818c21a708c8ac93395a981e5",
+    "artifacts/court-details.sqlite": "64ec1377c7206d70228dcd9080bc93f6a584a6c379446cf68fab866ebf8e7a36",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/build_existing_survey_examples.py": "a7d1a15e0ae1ce1bf5f50d3c2e96e70a9e45758b9d5d1ba25615ea7517b85987",
+    "data/research/capital-punishment-policy-components.json": "2ddfb8b36e8fc8d3c924d4ad890437b764bb6667f750b105d7e1588d718b4606",
+    "data/research/capital-punishment-policy-mapping.json": "49d5f8075be82c03338d8cbd82f570e0605a8eeb2d5be7eff72dcd799df7b6cf"
+  }
+}
