@@ -39,16 +39,17 @@
       "components": [
         {
           "component_id": "mccutcheon-aggregate",
-          "policy_id": "candidate_limits",
+          "policy_id": "aggregate_candidate_limits",
           "issue": "Aggregate donor limits",
           "decision": "The Court struck down the total a donor could contribute across candidates and committees.",
           "direction": "expands",
           "scope": "Per-recipient base limits were not struck down. Four justices joined Roberts’s reasoning; Thomas supplied the fifth vote with a separate rationale.",
           "locator": "Roberts opinion, Parts II–IV; Thomas concurrence.",
           "comparison_fit": "contextual",
-          "survey_fit": "The poll addresses candidate fundraising and spending, not the aggregate donor cap. This is broad regulatory context and a weak match to the legal question."
+          "survey_fit": "The earlier poll explicitly measures total donations across candidates, a closer match than candidate fundraising. It quotes a $46,200 cap, not the updated $48,600 candidate cap, and omits party/committee totals. The speech question addresses candidate totals, not every part of the holding. Both questions share one sample; retain contextual fit and do not calculate ruling approval."
         }
-      ]
+      ],
+      "interpretation_limit": "The two-year aggregate limits were invalidated; per-recipient base limits remained. The two poll items are not independent corroboration. Their sequence and the quoted dollar amount matter."
     }
   ]
 }

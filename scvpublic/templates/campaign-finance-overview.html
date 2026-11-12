@@ -1,8 +1,25 @@
 <section class="marriage-overview" aria-labelledby="campaign-finance-question">
 <p class="eyebrow">Campaign finance · A closer look</p>
-<h2 id="campaign-finance-question">Which money, which limit?</h2><p class="overview-lead">Independent advertising, direct donations, aggregate donor caps and disclosure are different legal questions. The earlier surveys provide broad context rather than direct tests of the holdings.</p>
-<div class="reading-guide"><div><h3>The public-policy questions</h3><p>Gallup asked about contribution limits versus free speech in 2009, and limits on candidates’ fundraising and spending in 2013.</p></div><div><h3>The legal questions</h3><p>Citizens United protected independent corporate and union spending while preserving disclosure requirements. McCutcheon struck down aggregate donor limits, not per-recipient caps.</p></div></div>
-<p class="snapshot-note">This is one of the thinner comparisons. Neither question isolates the disputed restriction. The 2009 chart leaves 7% unreported; that remainder is shown without guessing its meaning. The 2013 total is 101% because of published rounding.</p>
+<h2 id="campaign-finance-question">Which money, which limit?</h2>
+<p class="overview-lead">A donor’s total contributions and a corporation’s independent advertising are different questions. We have specific earlier polling about the candidate limits at issue in McCutcheon; the evidence for Citizens United remains broader context.</p>
+<div class="reading-guide">
+<div><h3>Independent spending · 2010</h3><p>Citizens United allowed independent corporate and union election spending. It did not remove the ban on direct corporate donations, and it upheld the challenged disclosure and disclaimer requirements.</p></div>
+<div><h3>Total donations · 2014</h3><p>McCutcheon removed aggregate limits across candidates and committees. Limits on what a donor could give each recipient remained. This is the distinction the newer polling helps illuminate.</p></div>
+</div>
+<h3 class="snapshot-heading">Before McCutcheon: two questions about total donations</h3>
+<div class="policy-table"><table><caption class="sr-only">YouGov and HuffPost February 2013 aggregate contribution questions</caption><thead><tr><th scope="col">Question, summarized</th><th scope="col">Published answers</th></tr></thead><tbody>
+{% for observation in study.cases[1].components[0].observations %}<tr><th scope="row">{{ observation.wording }}</th><td>{% for answer in observation.response_distribution %}{{ answer.label }}: {{ '%.0f'|format(answer.percent) }}%{% if not loop.last %}<br>{% endif %}{% endfor %}</td></tr>{% endfor %}
+</tbody></table></div>
+<p class="snapshot-note">YouGov / HuffPost · February 19–20, 2013 · 1,000 U.S. adults from an opt-in online panel. Two questions from one survey, not two independent measurements. Full responses, including uncertainty, are retained.</p>
+<h3 class="snapshot-heading">A closer match, with limits</h3>
+<p>The first question names a total cap across candidates, rather than a candidate’s fundraising budget. The second asks about free-speech rights. Together they describe views about the disputed kind of limit; neither gives an approval rating for the later decision.</p>
+<details class="methodology"><summary>Why this remains a contextual comparison</summary>
+<p>The poll quoted a $46,200 candidate cap. The ruling discussed an updated $48,600 candidate cap and a $123,200 combined cap covering candidates and other committees. The poll did not cover that full structure or expressly state the cap’s time period. The speech question followed questions about contribution amounts and corruption.</p>
+<p>“Too low” is not the same answer as “no limit.” The categories are not collapsed into support for the Court. This is one matched online sample, not a trend or independent corroboration.</p>
+</details>
+<h3 class="snapshot-heading">What is still missing for Citizens United?</h3>
+<p>The earlier Gallup question contrasts contribution limits with freedom to support campaigns. It does not isolate independent spending. No reviewed earlier question measures the disclosure rules. These gaps remain visible; later reactions to the decision are not substituted for earlier public opinion.</p>
+<p class="snapshot-note">Gallup’s 2009 chart reports two categories totaling 93%. Its remaining 7% is displayed as an unidentified remainder, not relabeled as uncertainty.</p>
 <h3 class="snapshot-heading">Two decisions, distinct questions</h3>
 <ol class="ruling-timeline">{% for case in study.cases %}<li><time>{{ case.date[:4] }}</time><div><a href="#case-{{ case.case_id }}">{{ case.name }}</a><p>{{ case.components[0].decision }}</p></div></li>{% endfor %}</ol>
 </section><h2 class="evidence-heading">The rulings and the earlier polls</h2>

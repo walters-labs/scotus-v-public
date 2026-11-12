@@ -18,6 +18,18 @@
       "url": "https://news.gallup.com/file/poll/163220/130624CampaignFinance.pdf",
       "sha256": "c00bf359bdeb0c7c8d7d915fe0f70904b12ad0f235784bedc6b9a964d4552efe",
       "bytes": 181866
+    },
+    {
+      "path": "policy-toplines/yougov-campaign-2013.pdf",
+      "url": "https://big.assets.huffingtonpost.com/toplinesbcf220.pdf",
+      "sha256": "5116a333dc02cab72802366283f7f198a6f5d532a121153a134a7ddcb260a662",
+      "bytes": 37259
+    },
+    {
+      "path": "policy-toplines/huffpost-campaign-2013.html",
+      "url": "https://www.huffpost.com/entry/campaign-finance-poll_n_2743877",
+      "sha256": "c21a58c1228268d4d84340caf035c6c409e26d3f0a95512e13186689ba8b62e5",
+      "bytes": 496227
     }
   ]
 }

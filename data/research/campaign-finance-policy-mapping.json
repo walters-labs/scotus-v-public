@@ -14,12 +14,16 @@
       "support_definition": "Original policy categories retained; contextual only, no alignment score.",
       "questions": []
     },
-    "candidate_limits": {
-      "support_definition": "Original policy categories retained; contextual only, no alignment score.",
+    "aggregate_candidate_limits": {
+      "support_definition": "Two questions from one sample: preference about a stated total candidate cap and whether total candidate limits violate free speech. Retain separately; no ruling-approval score.",
       "questions": [
         {
-          "source": "Gallup",
-          "variable": "gallup_2013_candidate_limits"
+          "source": "YouGov / HuffPost",
+          "variable": "yougov_2013_aggregate_cap"
+        },
+        {
+          "source": "YouGov / HuffPost",
+          "variable": "yougov_2013_aggregate_speech"
         }
       ]
     }

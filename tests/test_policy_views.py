@@ -160,6 +160,34 @@ class PolicyViewsTests(unittest.TestCase):
                 self.assertEqual(sum(x['percent'] for x in rows[1]['response_distribution']),101)
                 self.assertEqual(result['cases'][0]['components'][1]['comparisons'],[])
 
+    def test_campaign_aggregate_questions_replace_candidate_budget_poll(self):
+        from scvpublic.policy_views import load_study
+        citizens, mccutcheon = load_study('campaign-finance')['cases']
+        part = mccutcheon['components'][0]
+        rows = part['observations']
+        self.assertEqual(part['display_fit'], 'Context only')
+        self.assertEqual([r['variable'] for r in rows],
+                         ['yougov_2013_aggregate_cap', 'yougov_2013_aggregate_speech'])
+        self.assertEqual([[a['percent'] for a in r['response_distribution']] for r in rows],
+                         [[44, 5, 18, 12, 23], [16, 64, 20]])
+        for row in rows:
+            self.assertEqual(row['sample_n'], 1000)
+            self.assertEqual(row['field_start'], '2013-02-19')
+            self.assertEqual(row['field_end'], '2013-02-20')
+            self.assertLess(row['field_end'], mccutcheon['date'])
+            self.assertIn('same sample', row['denominator'])
+        self.assertEqual(citizens['components'][1]['observations'], [])
+        self.assertEqual(citizens['components'][1]['display_fit'], 'Missing data')
+        self.assertEqual([r['variable'] for r in citizens['components'][0]['observations']],
+                         ['gallup_2009_priority'])
+        html = self.client.get('/policy-comparisons?topic=campaign-finance').get_data(as_text=True)
+        for text in ['44%', '64%', '$46,200', '$48,600', '$123,200',
+                     'opt-in online', 'not two independent measurements',
+                     'not the same answer', 'What is still missing for Citizens United?']:
+            self.assertIn(text, html)
+        self.assertNotIn('Vote for limits', html)
+        self.assertNotIn('79.0%', html)
+
     def test_studies_and_search_navigation(self):
         self.assertIn(b'Policy comparisons',self.client.get('/').data)
         marriage=self.client.get('/policy-comparisons').get_data(as_text=True)

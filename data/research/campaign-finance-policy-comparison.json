@@ -15,12 +15,16 @@
       "support_definition": "Original policy categories retained; contextual only, no alignment score.",
       "questions": []
     },
-    "candidate_limits": {
-      "support_definition": "Original policy categories retained; contextual only, no alignment score.",
+    "aggregate_candidate_limits": {
+      "support_definition": "Two questions from one sample: preference about a stated total candidate cap and whether total candidate limits violate free speech. Retain separately; no ruling-approval score.",
       "questions": [
         {
-          "source": "Gallup",
-          "variable": "gallup_2013_candidate_limits"
+          "source": "YouGov / HuffPost",
+          "variable": "yougov_2013_aggregate_cap"
+        },
+        {
+          "source": "YouGov / HuffPost",
+          "variable": "yougov_2013_aggregate_speech"
         }
       ]
     }
@@ -108,58 +112,104 @@
       "components": [
         {
           "component_id": "mccutcheon-aggregate",
-          "policy_id": "candidate_limits",
+          "policy_id": "aggregate_candidate_limits",
           "issue": "Aggregate donor limits",
           "decision": "The Court struck down the total a donor could contribute across candidates and committees.",
           "direction": "expands",
           "scope": "Per-recipient base limits were not struck down. Four justices joined Roberts\u2019s reasoning; Thomas supplied the fifth vote with a separate rationale.",
           "locator": "Roberts opinion, Parts II\u2013IV; Thomas concurrence.",
           "comparison_fit": "contextual",
-          "survey_fit": "The poll addresses candidate fundraising and spending, not the aggregate donor cap. This is broad regulatory context and a weak match to the legal question.",
+          "survey_fit": "The earlier poll explicitly measures total donations across candidates, a closer match than candidate fundraising. It quotes a $46,200 cap, not the updated $48,600 candidate cap, and omits party/committee totals. The speech question addresses candidate totals, not every part of the holding. Both questions share one sample; retain contextual fit and do not calculate ruling approval.",
           "comparisons": [
             {
-              "source": "Gallup",
+              "source": "YouGov / HuffPost",
               "status": "available",
               "observations": [
                 {
-                  "source": "Gallup",
-                  "variable": "gallup_2013_candidate_limits",
+                  "source": "YouGov / HuffPost",
                   "year": 2013,
-                  "field_start": "2013-06-15",
-                  "field_end": "2013-06-16",
+                  "field_start": "2013-02-19",
+                  "field_end": "2013-02-20",
                   "data_kind": "published_topline",
-                  "source_url": "https://news.gallup.com/file/poll/163220/130624CampaignFinance.pdf",
-                  "source_locator": "PDF page 2, item 1: candidate fundraising and spending",
-                  "wording": "Voting for a law limiting how much House and Senate candidates can raise and spend.",
-                  "wording_note": "Paraphrased question. Published percentages total 101 due to rounding; retained without renormalization.",
-                  "weight": "Published national topline; no recalculation.",
-                  "denominator": "National sample of 1,015 adults; original response shares retained.",
-                  "orientation": "Policy context only; not approval of the specific holding.",
+                  "source_url": "https://big.assets.huffingtonpost.com/toplinesbcf220.pdf",
+                  "source_page": 1,
+                  "sample_n": 1000,
+                  "weight": "Published topline from a demographically matched opt-in online panel; no respondent-level recalculation.",
+                  "denominator": "All 1,000 U.S. adult interviews, including not sure. Published percentages retained; the two questions share the same sample.",
+                  "variable": "yougov_2013_aggregate_cap",
+                  "source_item": "2",
+                  "wording": "Whether a $46,200 total cap on donations to federal candidates is too high, too low, appropriate, or should not exist.",
+                  "wording_note": "Paraphrased summary. The prompt explicitly applies across candidates regardless of how many are supported. It quotes $46,200, not the updated $48,600 candidate cap or the $123,200 combined candidate/committee cap discussed in the ruling. It does not expressly state a time period. Q1 first asks about a $2,600 per-candidate limit. Field dates, sample and online-panel method are corroborated by the February 22, 2013 HuffPost report.",
+                  "orientation": "Preferences about an aggregate candidate cap; too low still permits a cap and must not be combined with no limit.",
                   "response_distribution": [
                     {
                       "code": "0",
-                      "label": "Vote for limits",
-                      "percent": 79
+                      "label": "Too high",
+                      "percent": 44
                     },
                     {
                       "code": "1",
-                      "label": "Vote against limits",
-                      "percent": 19
+                      "label": "Too low",
+                      "percent": 5
                     },
                     {
                       "code": "2",
-                      "label": "No opinion",
-                      "percent": 3
+                      "label": "About right",
+                      "percent": 18
+                    },
+                    {
+                      "code": "3",
+                      "label": "There should be no limit",
+                      "percent": 12
+                    },
+                    {
+                      "code": "4",
+                      "label": "Not sure",
+                      "percent": 23
                     }
-                  ],
-                  "sample_n": 1015
+                  ]
+                },
+                {
+                  "source": "YouGov / HuffPost",
+                  "year": 2013,
+                  "field_start": "2013-02-19",
+                  "field_end": "2013-02-20",
+                  "data_kind": "published_topline",
+                  "source_url": "https://big.assets.huffingtonpost.com/toplinesbcf220.pdf",
+                  "source_page": 1,
+                  "sample_n": 1000,
+                  "weight": "Published topline from a demographically matched opt-in online panel; no respondent-level recalculation.",
+                  "denominator": "All 1,000 U.S. adult interviews, including not sure. Published percentages retained; the two questions share the same sample.",
+                  "variable": "yougov_2013_aggregate_speech",
+                  "source_item": "4",
+                  "wording": "Whether limits on an individual\u2019s total donations to candidates violate free-speech rights.",
+                  "wording_note": "Paraphrased summary. Asked after per-candidate and aggregate-limit questions and a question about preventing corruption. Wording covers candidate totals, not party and PAC totals or the Court\u2019s full reasoning. It measures an opinion about rights, not respondent legal expertise. Field dates, sample and online-panel method are corroborated by the February 22, 2013 HuffPost report.",
+                  "orientation": "Yes regards total candidate limits as a speech violation; no does not. Neither is approval or disapproval of the later ruling.",
+                  "response_distribution": [
+                    {
+                      "code": "0",
+                      "label": "Yes \u2014 violates free speech",
+                      "percent": 16
+                    },
+                    {
+                      "code": "1",
+                      "label": "No \u2014 does not violate free speech",
+                      "percent": 64
+                    },
+                    {
+                      "code": "2",
+                      "label": "Not sure",
+                      "percent": 20
+                    }
+                  ]
                 }
               ]
             }
           ],
           "coverage_status": "see_source_comparisons"
         }
-      ]
+      ],
+      "interpretation_limit": "The two-year aggregate limits were invalidated; per-recipient base limits remained. The two poll items are not independent corroboration. Their sequence and the quoted dollar amount matter."
     }
   ],
   "limitations": [
@@ -169,13 +219,15 @@
     "No pooling, confidence intervals, causal claims, or prediction."
   ],
   "input_sha256": {
-    "data/research/campaign-finance-policy-components.json": "114f9af482e12aed261ec2401623bc54ddc15ef3a55825f404ea178a4f0b82a1",
-    "data/research/campaign-finance-policy-surveys.json": "a8a8402389c9e63f02840474ec5a18ecd9397299c2756ae067a540445d3e52e9",
-    "data/research/campaign-finance-policy-mapping.json": "a95df29ae3a62ce3b9e6f3c9236596b8d5939af9f96b945e78da470497dfa4cb"
+    "data/research/campaign-finance-policy-components.json": "21c461e1c79ecfdc7ef00f2ab3e9a200eef1ee40a6c6f1d54bbcb0bf2e979306",
+    "data/research/campaign-finance-policy-surveys.json": "fe521f1518d221a08c6a1fad9a25de1003af962d153d90178ab9077063080282",
+    "data/research/campaign-finance-policy-mapping.json": "648cee48d14964526cdf2294c811e91392ffe5eb114439728cd32eb808e05273"
   },
   "survey_provenance": {
     "data/raw/policy-toplines/gallup-campaign-2009.html": "270f261cb23c3978acab0458cb544491f0d774fa08772b7c8ff4a64031d7d903",
     "data/raw/policy-toplines/gallup-campaign-2009-priority.gif": "40d6235b8974f2b60248531abd3a38137edb3bff9d36aacdc8daef555cfd07a6",
-    "data/raw/policy-toplines/gallup-campaign-2013.pdf": "c00bf359bdeb0c7c8d7d915fe0f70904b12ad0f235784bedc6b9a964d4552efe"
+    "data/raw/policy-toplines/gallup-campaign-2013.pdf": "c00bf359bdeb0c7c8d7d915fe0f70904b12ad0f235784bedc6b9a964d4552efe",
+    "data/raw/policy-toplines/yougov-campaign-2013.pdf": "5116a333dc02cab72802366283f7f198a6f5d532a121153a134a7ddcb260a662",
+    "data/raw/policy-toplines/huffpost-campaign-2013.html": "c21a58c1228268d4d84340caf035c6c409e26d3f0a95512e13186689ba8b62e5"
   }
 }

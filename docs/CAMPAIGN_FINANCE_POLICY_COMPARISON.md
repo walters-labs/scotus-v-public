@@ -62,6 +62,8 @@ Zero denotes zero in retained categories; it does not prove the original questio
 
 [Decision source](https://www.law.cornell.edu/supremecourt/text/12-536)
 
+The two-year aggregate limits were invalidated; per-recipient base limits remained. The two poll items are not independent corroboration. Their sequence and the quoted dollar amount matter.
+
 ### Aggregate donor limits
 
 **expands · contextual**
@@ -70,28 +72,43 @@ The Court struck down the total a donor could contribute across candidates and c
 
 Per-recipient base limits were not struck down. Four justices joined Roberts’s reasoning; Thomas supplied the fifth vote with a separate rationale.
 
-The poll addresses candidate fundraising and spending, not the aggregate donor cap. This is broad regulatory context and a weak match to the legal question.
+The earlier poll explicitly measures total donations across candidates, a closer match than candidate fundraising. It quotes a $46,200 cap, not the updated $48,600 candidate cap, and omits party/committee totals. The speech question addresses candidate totals, not every part of the holding. Both questions share one sample; retain contextual fit and do not calculate ruling approval.
 
 Source locator: Roberts opinion, Parts II–IV; Thomas concurrence.
 
 | Source/year | Support | Oppose | Neutral | Unsure | Nonresponse |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Gallup 2013 (gallup_2013_candidate_limits): categories below | — | — | — | — | — |
+| YouGov / HuffPost 2013 (yougov_2013_aggregate_cap): categories below | — | — | — | — | — |
+| YouGov / HuffPost 2013 (yougov_2013_aggregate_speech): categories below | — | — | — | — | — |
 
 Zero denotes zero in retained categories; it does not prove the original questionnaire lacked other response options.
 
 
-**Gallup 2013 (gallup_2013_candidate_limits) — original policy categories**
+**YouGov / HuffPost 2013 (yougov_2013_aggregate_cap) — original policy categories**
 
 | Answer | Percent |
 | --- | ---: |
-| Vote for limits | 79.0% |
-| Vote against limits | 19.0% |
-| No opinion | 3.0% |
+| Too high | 44.0% |
+| Too low | 5.0% |
+| About right | 18.0% |
+| There should be no limit | 12.0% |
+| Not sure | 23.0% |
 
-Voting for a law limiting how much House and Senate candidates can raise and spend.
+Whether a $46,200 total cap on donations to federal candidates is too high, too low, appropriate, or should not exist.
 
-Denominator: National sample of 1,015 adults; original response shares retained.
+Denominator: All 1,000 U.S. adult interviews, including not sure. Published percentages retained; the two questions share the same sample.
+
+**YouGov / HuffPost 2013 (yougov_2013_aggregate_speech) — original policy categories**
+
+| Answer | Percent |
+| --- | ---: |
+| Yes — violates free speech | 16.0% |
+| No — does not violate free speech | 64.0% |
+| Not sure | 20.0% |
+
+Whether limits on an individual’s total donations to candidates violate free-speech rights.
+
+Denominator: All 1,000 U.S. adult interviews, including not sure. Published percentages retained; the two questions share the same sample.
 
 ## Limits
 

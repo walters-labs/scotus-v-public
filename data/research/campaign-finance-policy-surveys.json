@@ -2,7 +2,9 @@
   "provenance": {
     "data/raw/policy-toplines/gallup-campaign-2009.html": "270f261cb23c3978acab0458cb544491f0d774fa08772b7c8ff4a64031d7d903",
     "data/raw/policy-toplines/gallup-campaign-2009-priority.gif": "40d6235b8974f2b60248531abd3a38137edb3bff9d36aacdc8daef555cfd07a6",
-    "data/raw/policy-toplines/gallup-campaign-2013.pdf": "c00bf359bdeb0c7c8d7d915fe0f70904b12ad0f235784bedc6b9a964d4552efe"
+    "data/raw/policy-toplines/gallup-campaign-2013.pdf": "c00bf359bdeb0c7c8d7d915fe0f70904b12ad0f235784bedc6b9a964d4552efe",
+    "data/raw/policy-toplines/yougov-campaign-2013.pdf": "5116a333dc02cab72802366283f7f198a6f5d532a121153a134a7ddcb260a662",
+    "data/raw/policy-toplines/huffpost-campaign-2013.html": "c21a58c1228268d4d84340caf035c6c409e26d3f0a95512e13186689ba8b62e5"
   },
   "survey_records": [
     {
@@ -70,6 +72,84 @@
         }
       ],
       "sample_n": 1015
+    },
+    {
+      "source": "YouGov / HuffPost",
+      "year": 2013,
+      "field_start": "2013-02-19",
+      "field_end": "2013-02-20",
+      "data_kind": "published_topline",
+      "source_url": "https://big.assets.huffingtonpost.com/toplinesbcf220.pdf",
+      "source_page": 1,
+      "sample_n": 1000,
+      "weight": "Published topline from a demographically matched opt-in online panel; no respondent-level recalculation.",
+      "denominator": "All 1,000 U.S. adult interviews, including not sure. Published percentages retained; the two questions share the same sample.",
+      "variable": "yougov_2013_aggregate_cap",
+      "source_item": "2",
+      "wording": "Whether a $46,200 total cap on donations to federal candidates is too high, too low, appropriate, or should not exist.",
+      "wording_note": "Paraphrased summary. The prompt explicitly applies across candidates regardless of how many are supported. It quotes $46,200, not the updated $48,600 candidate cap or the $123,200 combined candidate/committee cap discussed in the ruling. It does not expressly state a time period. Q1 first asks about a $2,600 per-candidate limit. Field dates, sample and online-panel method are corroborated by the February 22, 2013 HuffPost report.",
+      "orientation": "Preferences about an aggregate candidate cap; too low still permits a cap and must not be combined with no limit.",
+      "response_distribution": [
+        {
+          "code": "0",
+          "label": "Too high",
+          "percent": 44
+        },
+        {
+          "code": "1",
+          "label": "Too low",
+          "percent": 5
+        },
+        {
+          "code": "2",
+          "label": "About right",
+          "percent": 18
+        },
+        {
+          "code": "3",
+          "label": "There should be no limit",
+          "percent": 12
+        },
+        {
+          "code": "4",
+          "label": "Not sure",
+          "percent": 23
+        }
+      ]
+    },
+    {
+      "source": "YouGov / HuffPost",
+      "year": 2013,
+      "field_start": "2013-02-19",
+      "field_end": "2013-02-20",
+      "data_kind": "published_topline",
+      "source_url": "https://big.assets.huffingtonpost.com/toplinesbcf220.pdf",
+      "source_page": 1,
+      "sample_n": 1000,
+      "weight": "Published topline from a demographically matched opt-in online panel; no respondent-level recalculation.",
+      "denominator": "All 1,000 U.S. adult interviews, including not sure. Published percentages retained; the two questions share the same sample.",
+      "variable": "yougov_2013_aggregate_speech",
+      "source_item": "4",
+      "wording": "Whether limits on an individual’s total donations to candidates violate free-speech rights.",
+      "wording_note": "Paraphrased summary. Asked after per-candidate and aggregate-limit questions and a question about preventing corruption. Wording covers candidate totals, not party and PAC totals or the Court’s full reasoning. It measures an opinion about rights, not respondent legal expertise. Field dates, sample and online-panel method are corroborated by the February 22, 2013 HuffPost report.",
+      "orientation": "Yes regards total candidate limits as a speech violation; no does not. Neither is approval or disapproval of the later ruling.",
+      "response_distribution": [
+        {
+          "code": "0",
+          "label": "Yes — violates free speech",
+          "percent": 16
+        },
+        {
+          "code": "1",
+          "label": "No — does not violate free speech",
+          "percent": 64
+        },
+        {
+          "code": "2",
+          "label": "Not sure",
+          "percent": 20
+        }
+      ]
     }
   ]
 }

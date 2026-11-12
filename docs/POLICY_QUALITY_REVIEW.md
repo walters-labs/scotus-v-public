@@ -38,7 +38,7 @@ not included in these counts. “Missing” excludes procedural components.
 | Contraception | 4 | 2 / 2 | Adequate Hobby Lobby comparison, incomplete access history. Two differently worded coverage polls disagree; retain both. Griswold/Eisenstadt have no earlier polls, Zubik no merits resolution. Frame as coverage conflict plus legal timeline, not four measured comparisons. |
 | Medical marijuana | 2 | 2 / 2 | Adequate medical-use context, limited legal fit. Medical policy support does not answer the federal-power or statutory-defense question. A bounded enforcement-poll audit found no verified eligible addition; see `MEDICAL_MARIJUANA_ENFORCEMENT_AUDIT.md`. Gap is explicit in the pane. No overall alignment estimate. |
 | School religion | 2 | 2 / 1 | Adequate contextual snapshot with explicit mismatches. Graduation differs from football, student groups from an adult-led club. Updated Good News Club to February 2001 instead of June 1999. One publisher, no trend claim. An exact school-sponsorship question would add more value than another general religion poll. |
-| Campaign finance | 2 | 2 / 1 | **Below the standard for a strong featured comparison.** Contributions versus independent spending and candidate limits versus donor aggregate caps are substantial mismatches. Keep visibly provisional during local review; obtain specific questions or defer/narrow this panel before presenting ten equally solid comparisons. Disclosure remains missing. |
+| Campaign finance | 2 | 3 / 2 | Improved McCutcheon comparison: two pre-ruling YouGov/HuffPost questions explicitly address total candidate contributions and free speech. One sample, an outdated quoted dollar cap, and omitted committee totals keep the comparison contextual. Citizens United still has only broad contribution context; disclosure remains missing. See `CAMPAIGN_FINANCE_SOURCES.md`. |
 
 Marriage has an additional 28 source/question-year history observations from four
 sources (1988–2024); abortion has 56 from four sources (1972–2024). These histories
@@ -88,8 +88,9 @@ pre-ruling comparisons; different denominators are not pooled.
    May 2002 Gallup release (see `CAPITAL_PUNISHMENT_SOURCES.md`). The juvenile
    wording remains contextual. Further work should seek corroboration, not repeat
    general murder questions.
-2. Improve campaign finance’s question fit, with a stop rule: if no suitable earlier
-   evidence is obtainable, defer the panel rather than pad it with generic polls.
+2. Campaign finance now has closer aggregate-limit polling for McCutcheon. Seek
+   independent corroboration only if available; Citizens United remains explicitly
+   limited rather than padded with post-ruling reactions.
 3. Review the remaining contextual panels for publication wording and layout;
    then decide whether further targeted data materially change the story.
 
