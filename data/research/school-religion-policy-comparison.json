@@ -6,8 +6,8 @@
       "support_definition": "Original policy categories retained; contextual only, no alignment score.",
       "questions": [
         {
-          "source": "Gallup",
-          "variable": "gallup_1999_graduation"
+          "source": "Freedom Forum / First Amendment Center",
+          "variable": "sofa_2000_q33"
         }
       ]
     },
@@ -21,6 +21,14 @@
         {
           "source": "Gallup",
           "variable": "gallup_2001_afterhours"
+        },
+        {
+          "source": "Pew Research Center",
+          "variable": "pew_2001_q44"
+        },
+        {
+          "source": "Pew Research Center",
+          "variable": "pew_2001_q45"
         }
       ]
     }
@@ -41,46 +49,55 @@
           "scope": "The school policy and public-address setting mattered; this was not a ban on students praying privately.",
           "locator": "Stevens opinion, Parts II\u2013IV.",
           "comparison_fit": "contextual",
-          "survey_fit": "The poll asks about graduation, not football games, and omits the election and public-address arrangements. It is contextual, not a measure of approval of this ruling.",
+          "survey_fit": "The question names student-led prayer, school-sponsored events, the public-address system and football games. This is closer than graduation prayer, but omits Santa Fe\u2019s election procedure and full school policy; it remains contextual rather than ruling approval.",
           "comparisons": [
             {
-              "source": "Gallup",
+              "source": "Freedom Forum / First Amendment Center",
               "status": "available",
               "observations": [
                 {
-                  "source": "Gallup",
-                  "variable": "gallup_1999_graduation",
-                  "year": 1999,
-                  "field_start": "1999-06-25",
-                  "field_end": "1999-06-27",
+                  "source": "Freedom Forum / First Amendment Center",
+                  "variable": "sofa_2000_q33",
+                  "year": 2000,
+                  "field_start": "2000-04-13",
+                  "field_end": "2000-04-26",
                   "data_kind": "published_topline",
-                  "source_url": "https://news.gallup.com/file/poll/177407/Views_on_Prayer_in_Schools140925%20.pdf",
-                  "source_locator": "Historical June 25\u201327, 1999 row, item C",
-                  "wording": "Permitting student prayer within the official graduation program.",
-                  "wording_note": "Paraphrased question. The source marks no opinion with an asterisk (less than 0.5%). The numeric zero is a lower bound for validation, not an observed zero. The 2000 article verifies the 1999 sample; the PDF\u2019s 2014 sample does not apply.",
-                  "weight": "Published national topline; no recalculation.",
-                  "denominator": "National sample of 1,016 adults; original response shares retained.",
-                  "orientation": "Policy context only; not approval of the specific holding.",
+                  "source_url": "https://www.freedomforum.org/wp-content/uploads/2023/12/sofa_2000_report.pdf",
+                  "source_page": 28,
+                  "source_item": "33 (printed page 22)",
+                  "sample_n": 1015,
+                  "wording": "Allowing students to lead prayer over the public-address system at school-sponsored events, including football games.",
+                  "wording_note": "Paraphrased summary. University of Connecticut conducted the survey. Methodology is on printed pages 35\u201337. The question names school sponsorship, student leadership and the public-address setting, but not Santa Fe\u2019s election procedure or full policy. Published categories total 101% through rounding; not renormalized.",
+                  "weight": "Published weighted national telephone-survey topline; no respondent-level recalculation.",
+                  "denominator": "Item sample of 1,015 adults, including uncertainty/nonresponse. Published percentages retained.",
+                  "orientation": "Policy preference only; not approval of the full holding or constitutional reasoning.",
                   "response_distribution": [
                     {
                       "code": "0",
-                      "label": "Favor",
-                      "percent": 83
+                      "label": "Strongly agree",
+                      "percent": 44
                     },
                     {
                       "code": "1",
-                      "label": "Oppose",
-                      "percent": 17
+                      "label": "Mildly agree",
+                      "percent": 20
                     },
                     {
                       "code": "2",
-                      "label": "No opinion",
-                      "percent": 0,
-                      "percent_upper_bound": 0.5
+                      "label": "Mildly disagree",
+                      "percent": 15
+                    },
+                    {
+                      "code": "3",
+                      "label": "Strongly disagree",
+                      "percent": 20
+                    },
+                    {
+                      "code": "4",
+                      "label": "Don\u2019t know / refused",
+                      "percent": 2
                     }
-                  ],
-                  "sample_n": 1016,
-                  "methodology_url": "https://news.gallup.com/poll/2803/supreme-court-prohibits-studentled-prayer-school.aspx"
+                  ]
                 }
               ]
             }
@@ -104,7 +121,7 @@
           "scope": "Access for a private club in a limited public forum, not school-led religious instruction.",
           "locator": "Syllabus, holdings 1\u20132; Thomas opinion, Parts II\u2013IV.",
           "comparison_fit": "contextual",
-          "survey_fit": "The question describes student religious groups. The case involved an adult-led Christian club for children aged 6\u201312, so the match is contextual.",
+          "survey_fit": "Pew separately asks about student religious groups and religious groups generally; Gallup provides another student-group question. General-group wording avoids assuming a student-led club, but none specifies adult leadership, elementary-age children, parental permission or the full forum rules. Not objecting to access is not the same as requiring it constitutionally.",
           "comparisons": [
             {
               "source": "Gallup",
@@ -144,6 +161,80 @@
                   "sample_n": 1016
                 }
               ]
+            },
+            {
+              "source": "Pew Research Center",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "Pew Research Center",
+                  "variable": "pew_2001_q44",
+                  "year": 2001,
+                  "field_start": "2001-03-05",
+                  "field_end": "2001-03-18",
+                  "data_kind": "published_topline",
+                  "source_url": "https://www.pewresearch.org/wp-content/uploads/sites/4/legacy-pdf/15.pdf",
+                  "source_page": 75,
+                  "source_item": "44, Form 1",
+                  "sample_n": 1023,
+                  "wording": "Whether respondents would object to public schools providing after-hours facilities for student religious groups or organizations.",
+                  "wording_note": "Paraphrased summary. Split-form item base, not the full 2,041-person survey. The full national sample includes an African-American oversample and is weighted. The two forms are parts of one survey, not independent replications. Neither specifies adult leadership, children aged 6\u201312, parental permission or the limited-public-forum conditions. Not objecting is not a claim that access must be constitutionally required.",
+                  "weight": "Published weighted national telephone-survey topline; no respondent-level recalculation.",
+                  "denominator": "Item sample of 1,023 adults, including uncertainty/nonresponse. Published percentages retained.",
+                  "orientation": "Policy preference only; not approval of the full holding or constitutional reasoning.",
+                  "response_distribution": [
+                    {
+                      "code": "0",
+                      "label": "Would object",
+                      "percent": 17
+                    },
+                    {
+                      "code": "1",
+                      "label": "Would not object",
+                      "percent": 81
+                    },
+                    {
+                      "code": "2",
+                      "label": "Don\u2019t know / refused",
+                      "percent": 2
+                    }
+                  ]
+                },
+                {
+                  "source": "Pew Research Center",
+                  "variable": "pew_2001_q45",
+                  "year": 2001,
+                  "field_start": "2001-03-05",
+                  "field_end": "2001-03-18",
+                  "data_kind": "published_topline",
+                  "source_url": "https://www.pewresearch.org/wp-content/uploads/sites/4/legacy-pdf/15.pdf",
+                  "source_page": 75,
+                  "source_item": "45, Form 2",
+                  "sample_n": 1018,
+                  "wording": "Whether respondents would object to public schools providing after-hours facilities for religious groups or organizations.",
+                  "wording_note": "Paraphrased summary. Split-form item base, not the full 2,041-person survey. The full national sample includes an African-American oversample and is weighted. The two forms are parts of one survey, not independent replications. Neither specifies adult leadership, children aged 6\u201312, parental permission or the limited-public-forum conditions. Not objecting is not a claim that access must be constitutionally required.",
+                  "weight": "Published weighted national telephone-survey topline; no respondent-level recalculation.",
+                  "denominator": "Item sample of 1,018 adults, including uncertainty/nonresponse. Published percentages retained.",
+                  "orientation": "Policy preference only; not approval of the full holding or constitutional reasoning.",
+                  "response_distribution": [
+                    {
+                      "code": "0",
+                      "label": "Would object",
+                      "percent": 22
+                    },
+                    {
+                      "code": "1",
+                      "label": "Would not object",
+                      "percent": 75
+                    },
+                    {
+                      "code": "2",
+                      "label": "Don\u2019t know / refused",
+                      "percent": 3
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "coverage_status": "see_source_comparisons"
@@ -158,13 +249,15 @@
     "No pooling, confidence intervals, causal claims, or prediction."
   ],
   "input_sha256": {
-    "data/research/school-religion-policy-components.json": "06ed6a700e68b16372fef6aec50c51bb74fb73c5e791d860cdc1d4439813ee11",
-    "data/research/school-religion-policy-surveys.json": "9cfb8fa5d741f345283fa5a38c69625cc1c1a63b946bf0a2ef0379ab6d6c5292",
-    "data/research/school-religion-policy-mapping.json": "b10637ef110520bc5c09443029a958972db8bcccfbc5ca964a829fbdc77f05b9"
+    "data/research/school-religion-policy-components.json": "0094e9c10b556e6603c57486a99e28c54bb6c9118ee86ed52cf53e1a9a911326",
+    "data/research/school-religion-policy-surveys.json": "b11f44db74114113d339208afc26b492bdb09a2263e9e6a0640cc08019eb5bd7",
+    "data/research/school-religion-policy-mapping.json": "d51dab01eccd71724995a3e0e20162bcfdf15b985b2320f564fbf09719c38be9"
   },
   "survey_provenance": {
     "data/raw/policy-toplines/gallup-school-religion.pdf": "beab351ba17d1678d3bb1f4e42c57f1d4a44205fe3be6c58318fae121fe3ebde",
     "data/raw/policy-toplines/gallup-school-prayer-2000.html": "640c6aeaffefef6dd480b42481c6861176b4f347596807c8a8561d5e7ec5542a",
-    "data/raw/policy-toplines/gallup-school-2001.html": "60a65180e12ba6796c300dfb8d2960d67766a1288763b14800a4bfc06dc0f6e7"
+    "data/raw/policy-toplines/gallup-school-2001.html": "60a65180e12ba6796c300dfb8d2960d67766a1288763b14800a4bfc06dc0f6e7",
+    "data/raw/policy-toplines/freedom-forum-school-2000.pdf": "1745fa3ec770c1bfad8dcb25d5cbb584e1017ace2152fb0882b3c8120332c74f",
+    "data/raw/policy-toplines/pew-school-2001.pdf": "f7824b94cf1f6ef05fccb904907f26dada6f5294a6ab5f7f9d2fd078b5bf62e8"
   }
 }

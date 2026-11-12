@@ -115,9 +115,9 @@ class PolicyViewsTests(unittest.TestCase):
             self.assertEqual(compare(cases,rows,mapping)['cases'],
                              json.loads((root/f'{topic}-policy-comparison.json').read_text())['cases'])
         school=load_study('school-religion')
-        self.assertEqual(school['cases'][0]['components'][0]['observations'][0]['year'],1999)
+        self.assertEqual(school['cases'][0]['components'][0]['observations'][0]['year'],2000)
         selected=school['cases'][1]['components'][0]['observations']
-        self.assertEqual([r['year'] for r in selected],[2001])
+        self.assertEqual([r['year'] for r in selected],[2001,2001,2001])
         self.assertEqual([x['percent'] for x in selected[0]['response_distribution']],[72,26,2])
         study=load_study('affirmative-action')
         pew=study['cases'][-1]['components'][-1]
@@ -148,8 +148,8 @@ class PolicyViewsTests(unittest.TestCase):
             html=page.get_data(as_text=True)
             self.assertIn('Context only',html)
             if topic=='school-religion':
-                self.assertIn('&lt;0.5%',html)
-                self.assertIn('<0.5%',report(result))
+                self.assertIn('101%',html)
+                self.assertNotIn('gallup_1999_graduation',html)
                 invalid=deepcopy(rows)
                 invalid[0]['response_distribution'][2]['percent_upper_bound']=-1
                 with self.assertRaises(ValueError):compare(cases,invalid,mapping)
@@ -187,6 +187,23 @@ class PolicyViewsTests(unittest.TestCase):
             self.assertIn(text, html)
         self.assertNotIn('Vote for limits', html)
         self.assertNotIn('79.0%', html)
+
+    def test_school_questions_preserve_setting_and_split_samples(self):
+        from scvpublic.policy_views import load_study
+        santa, club = load_study('school-religion')['cases']
+        prayer = santa['components'][0]['observations']
+        self.assertEqual([r['variable'] for r in prayer], ['sofa_2000_q33'])
+        self.assertEqual([x['percent'] for x in prayer[0]['response_distribution']], [44,20,15,20,2])
+        self.assertEqual(prayer[0]['field_end'], '2000-04-26')
+        self.assertEqual(prayer[0]['sample_n'], 1015)
+        pew = [r for r in club['components'][0]['observations'] if r['source']=='Pew Research Center']
+        self.assertEqual([r['sample_n'] for r in pew], [1023,1018])
+        self.assertEqual([[x['percent'] for x in r['response_distribution']] for r in pew], [[17,81,2],[22,75,3]])
+        self.assertTrue(all(r['field_end']=='2001-03-18' for r in pew))
+        self.assertTrue(all(c['components'][0]['display_fit']=='Context only' for c in [santa,club]))
+        html=self.client.get('/policy-comparisons?topic=school-religion').get_data(as_text=True)
+        for text in ['1,023','1,018','not independent replications','public-address','constitutionally required']:
+            self.assertIn(text,html)
 
     def test_studies_and_search_navigation(self):
         self.assertIn(b'Policy comparisons',self.client.get('/').data)

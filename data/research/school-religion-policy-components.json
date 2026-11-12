@@ -16,7 +16,7 @@
           "scope": "The school policy and public-address setting mattered; this was not a ban on students praying privately.",
           "locator": "Stevens opinion, Parts II–IV.",
           "comparison_fit": "contextual",
-          "survey_fit": "The poll asks about graduation, not football games, and omits the election and public-address arrangements. It is contextual, not a measure of approval of this ruling."
+          "survey_fit": "The question names student-led prayer, school-sponsored events, the public-address system and football games. This is closer than graduation prayer, but omits Santa Fe’s election procedure and full school policy; it remains contextual rather than ruling approval."
         }
       ]
     },
@@ -35,7 +35,7 @@
           "scope": "Access for a private club in a limited public forum, not school-led religious instruction.",
           "locator": "Syllabus, holdings 1–2; Thomas opinion, Parts II–IV.",
           "comparison_fit": "contextual",
-          "survey_fit": "The question describes student religious groups. The case involved an adult-led Christian club for children aged 6–12, so the match is contextual."
+          "survey_fit": "Pew separately asks about student religious groups and religious groups generally; Gallup provides another student-group question. General-group wording avoids assuming a student-led club, but none specifies adult leadership, elementary-age children, parental permission or the full forum rules. Not objecting to access is not the same as requiring it constitutionally."
         }
       ]
     }

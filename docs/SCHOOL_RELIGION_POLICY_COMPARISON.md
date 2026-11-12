@@ -16,28 +16,30 @@ The Court invalidated the school’s student-led, student-selected prayer policy
 
 The school policy and public-address setting mattered; this was not a ban on students praying privately.
 
-The poll asks about graduation, not football games, and omits the election and public-address arrangements. It is contextual, not a measure of approval of this ruling.
+The question names student-led prayer, school-sponsored events, the public-address system and football games. This is closer than graduation prayer, but omits Santa Fe’s election procedure and full school policy; it remains contextual rather than ruling approval.
 
 Source locator: Stevens opinion, Parts II–IV.
 
 | Source/year | Support | Oppose | Neutral | Unsure | Nonresponse |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Gallup 1999 (gallup_1999_graduation): categories below | — | — | — | — | — |
+| Freedom Forum / First Amendment Center 2000 (sofa_2000_q33): categories below | — | — | — | — | — |
 
 Zero denotes zero in retained categories; it does not prove the original questionnaire lacked other response options.
 
 
-**Gallup 1999 (gallup_1999_graduation) — original policy categories**
+**Freedom Forum / First Amendment Center 2000 (sofa_2000_q33) — original policy categories**
 
 | Answer | Percent |
 | --- | ---: |
-| Favor | 83.0% |
-| Oppose | 17.0% |
-| No opinion | <0.5% |
+| Strongly agree | 44.0% |
+| Mildly agree | 20.0% |
+| Mildly disagree | 15.0% |
+| Strongly disagree | 20.0% |
+| Don’t know / refused | 2.0% |
 
-Permitting student prayer within the official graduation program.
+Allowing students to lead prayer over the public-address system at school-sponsored events, including football games.
 
-Denominator: National sample of 1,016 adults; original response shares retained.
+Denominator: Item sample of 1,015 adults, including uncertainty/nonresponse. Published percentages retained.
 
 ## Good News Club v. Milford Central School (2001-06-11)
 
@@ -51,13 +53,15 @@ Excluding the club because of its religious viewpoint violated the Free Speech C
 
 Access for a private club in a limited public forum, not school-led religious instruction.
 
-The question describes student religious groups. The case involved an adult-led Christian club for children aged 6–12, so the match is contextual.
+Pew separately asks about student religious groups and religious groups generally; Gallup provides another student-group question. General-group wording avoids assuming a student-led club, but none specifies adult leadership, elementary-age children, parental permission or the full forum rules. Not objecting to access is not the same as requiring it constitutionally.
 
 Source locator: Syllabus, holdings 1–2; Thomas opinion, Parts II–IV.
 
 | Source/year | Support | Oppose | Neutral | Unsure | Nonresponse |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Gallup 2001 (gallup_2001_afterhours): categories below | — | — | — | — | — |
+| Pew Research Center 2001 (pew_2001_q44): categories below | — | — | — | — | — |
+| Pew Research Center 2001 (pew_2001_q45): categories below | — | — | — | — | — |
 
 Zero denotes zero in retained categories; it does not prove the original questionnaire lacked other response options.
 
@@ -73,6 +77,30 @@ Zero denotes zero in retained categories; it does not prove the original questio
 Allowing student religious groups to use school facilities after hours.
 
 Denominator: National sample of 1,016 adults; original response shares retained.
+
+**Pew Research Center 2001 (pew_2001_q44) — original policy categories**
+
+| Answer | Percent |
+| --- | ---: |
+| Would object | 17.0% |
+| Would not object | 81.0% |
+| Don’t know / refused | 2.0% |
+
+Whether respondents would object to public schools providing after-hours facilities for student religious groups or organizations.
+
+Denominator: Item sample of 1,023 adults, including uncertainty/nonresponse. Published percentages retained.
+
+**Pew Research Center 2001 (pew_2001_q45) — original policy categories**
+
+| Answer | Percent |
+| --- | ---: |
+| Would object | 22.0% |
+| Would not object | 75.0% |
+| Don’t know / refused | 3.0% |
+
+Whether respondents would object to public schools providing after-hours facilities for religious groups or organizations.
+
+Denominator: Item sample of 1,018 adults, including uncertainty/nonresponse. Published percentages retained.
 
 ## Limits
 

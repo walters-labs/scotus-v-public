@@ -18,6 +18,18 @@
       "url": "https://news.gallup.com/poll/1951/Use-Schools-Student-Religious-Meetings-Acceptable-Most-Americans.aspx",
       "sha256": "60a65180e12ba6796c300dfb8d2960d67766a1288763b14800a4bfc06dc0f6e7",
       "bytes": 104261
+    },
+    {
+      "path": "policy-toplines/freedom-forum-school-2000.pdf",
+      "url": "https://www.freedomforum.org/wp-content/uploads/2023/12/sofa_2000_report.pdf",
+      "sha256": "1745fa3ec770c1bfad8dcb25d5cbb584e1017ace2152fb0882b3c8120332c74f",
+      "bytes": 420495
+    },
+    {
+      "path": "policy-toplines/pew-school-2001.pdf",
+      "url": "https://www.pewresearch.org/wp-content/uploads/sites/4/legacy-pdf/15.pdf",
+      "sha256": "f7824b94cf1f6ef05fccb904907f26dada6f5294a6ab5f7f9d2fd078b5bf62e8",
+      "bytes": 1481795
     }
   ]
 }

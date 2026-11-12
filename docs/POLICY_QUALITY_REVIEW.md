@@ -37,7 +37,7 @@ not included in these counts. “Missing” excludes procedural components.
 | Handgun rights | 2 | 4 / 2 | Improved: pre-Heller Gallup 2008 directly measures the individual-versus-militia distinction. Possession and sales remain separate contextual questions. Storage and incorporation remain unmeasured; the 2008 Pew row is reused for McDonald. No overall ruling-approval score. |
 | Contraception | 4 | 2 / 2 | Adequate Hobby Lobby comparison, incomplete access history. Two differently worded coverage polls disagree; retain both. Griswold/Eisenstadt have no earlier polls, Zubik no merits resolution. Frame as coverage conflict plus legal timeline, not four measured comparisons. |
 | Medical marijuana | 2 | 2 / 2 | Adequate medical-use context, limited legal fit. Medical policy support does not answer the federal-power or statutory-defense question. A bounded enforcement-poll audit found no verified eligible addition; see `MEDICAL_MARIJUANA_ENFORCEMENT_AUDIT.md`. Gap is explicit in the pane. No overall alignment estimate. |
-| School religion | 2 | 2 / 1 | Adequate contextual snapshot with explicit mismatches. Graduation differs from football, student groups from an adult-led club. Updated Good News Club to February 2001 instead of June 1999. One publisher, no trend claim. An exact school-sponsorship question would add more value than another general religion poll. |
+| School religion | 2 | 4 / 3 | Improved after targeted review: Freedom Forum 2000 names football games, school sponsorship and public-address prayer. Pew 2001 adds student-group and general-group after-hours questions with separate item bases; Gallup remains corroborating context. Full school policies and young-child/parental-permission details remain unmeasured. See `SCHOOL_RELIGION_SOURCES.md`. |
 | Campaign finance | 2 | 3 / 2 | Improved McCutcheon comparison: two pre-ruling YouGov/HuffPost questions explicitly address total candidate contributions and free speech. One sample, an outdated quoted dollar cap, and omitted committee totals keep the comparison contextual. Citizens United still has only broad contribution context; disclosure remains missing. See `CAMPAIGN_FINANCE_SOURCES.md`. |
 
 Marriage has an additional 28 source/question-year history observations from four
@@ -148,3 +148,13 @@ the broad VOTER component, which remains accessible as collapsed background.
 No observations, percentages, mappings or fit labels changed. All 288 tests pass;
 local browser checks confirmed the history disclosure and admissions display.
 Historical provenance clarification remains a separate maintenance task.
+
+## School-religion follow-up
+
+The subsequent bounded review found closer questions for both rulings. School
+religion is now a useful narrower contextual example, rather than the next
+priority for generic data acquisition. It still does not support a ruling-approval
+score. Earlier recommendations above describe the pre-follow-up assessment.
+The original graduation question is retained in research inputs but no longer
+selected. Both new Pew items belong to the same survey; four displayed questions
+from three publishers are not four independent polls. All 289 tests pass.

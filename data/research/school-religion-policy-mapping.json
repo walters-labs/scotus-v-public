@@ -5,8 +5,8 @@
       "support_definition": "Original policy categories retained; contextual only, no alignment score.",
       "questions": [
         {
-          "source": "Gallup",
-          "variable": "gallup_1999_graduation"
+          "source": "Freedom Forum / First Amendment Center",
+          "variable": "sofa_2000_q33"
         }
       ]
     },
@@ -20,6 +20,14 @@
         {
           "source": "Gallup",
           "variable": "gallup_2001_afterhours"
+        },
+        {
+          "source": "Pew Research Center",
+          "variable": "pew_2001_q44"
+        },
+        {
+          "source": "Pew Research Center",
+          "variable": "pew_2001_q45"
         }
       ]
     }
