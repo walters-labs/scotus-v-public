@@ -8,7 +8,7 @@ Offline research only. Shares retain each source’s denominator. No combined al
 
 [Decision source](https://www.law.cornell.edu/supct/html/07-290.ZS.html)
 
-The judgment was 5–4. The two components concern different rules; broad handgun preferences cannot answer both.
+The judgment was 5–4. The individual-right premise and home-possession application are related parts of one ruling, not independent outcomes to count. Storage remains unmeasured.
 
 ### Keeping a handgun at home
 
@@ -62,7 +62,7 @@ The Court also invalidated the requirement that lawful firearms at home remain i
 
 This is not a ruling against every safe-storage requirement.
 
-Neither selected question addresses storage or immediate usability for self-defense.
+None of the selected questions addresses storage or immediate usability for self-defense.
 
 Source locator: Scalia majority opinion, Part III.
 
@@ -72,6 +72,37 @@ Source locator: Scalia majority opinion, Part III.
 
 Zero denotes zero in retained categories; it does not prove the original questionnaire lacked other response options.
 
+
+### An individual right, independent of militia service
+
+**expands · direct**
+
+The Court interpreted the Second Amendment as protecting an individual right independent of service in a militia.
+
+This is the constitutional premise of the home-possession ruling, not an additional independent outcome or an unlimited right.
+
+Gallup directly asks the individual-versus-militia distinction. It does not specify handguns, home self-defense, storage or state and local application; direct fit is limited to this distinction.
+
+Source locator: Syllabus holding 1; majority opinion Part II.
+
+| Source/year | Support | Oppose | Neutral | Unsure | Nonresponse |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Gallup 2008 (second_amendment_individual_right): categories below | — | — | — | — | — |
+
+Zero denotes zero in retained categories; it does not prove the original questionnaire lacked other response options.
+
+
+**Gallup 2008 (second_amendment_individual_right) — original policy categories**
+
+| Answer | Percent |
+| --- | ---: |
+| Individual right | 73.0% |
+| State militia members only | 20.0% |
+| Unsure | 7.0% |
+
+Whether the Second Amendment protects Americans’ gun ownership generally or only ownership by state militia members.
+
+Denominator: All 1,016 national adults aged 18 and older, including unsure responses. Published percentages retained.
 
 ## McDonald v. City of Chicago (2010-06-28)
 

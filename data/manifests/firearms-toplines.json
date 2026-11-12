@@ -1,5 +1,5 @@
 {
-  "description": "Published Pew and Gallup toplines. Publisher rights retained; not open microdata.",
+  "description": "Published Pew and Gallup toplines. Publisher rights retained; not open microdata. HTML snapshots are pinned; review changed publisher pages before updating checksums.",
   "files": [
     {
       "path": "policy-toplines/pew-handguns-2008.pdf",
@@ -12,6 +12,18 @@
       "url": "https://news.gallup.com/file/poll/196727/161026Guns.pdf",
       "sha256": "d8c621c9998aabfa2c1b89c838d6dc6939ff17c2d8964e22b62ab760a32c9242",
       "bytes": 305617
+    },
+    {
+      "path": "policy-toplines/gallup-individual-right-2008.html",
+      "url": "https://news.gallup.com/poll/105721/public-believes-americans-right-own-guns.aspx",
+      "sha256": "b90b9cd5fd22b27270e7142f9cd50cafb419f24b8901dca6410d17c92fbc529d",
+      "bytes": 81884
+    },
+    {
+      "path": "policy-toplines/pollingreport-guns3.html",
+      "url": "https://www.pollingreport.com/guns3.htm",
+      "sha256": "086aa67506024577ab58145957c66cc05b74a9c7261594e4a75c50811582f7cd",
+      "bytes": 294967
     }
   ]
 }

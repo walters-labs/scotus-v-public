@@ -27,10 +27,21 @@
           "scope": "This is not a ruling against every safe-storage requirement.",
           "locator": "Scalia majority opinion, Part III.",
           "comparison_fit": "contextual",
-          "survey_fit": "Neither selected question addresses storage or immediate usability for self-defense."
+          "survey_fit": "None of the selected questions addresses storage or immediate usability for self-defense."
+        },
+        {
+          "component_id": "heller-individual-right",
+          "policy_id": "individual_gun_right",
+          "issue": "An individual right, independent of militia service",
+          "decision": "The Court interpreted the Second Amendment as protecting an individual right independent of service in a militia.",
+          "direction": "expands",
+          "scope": "This is the constitutional premise of the home-possession ruling, not an additional independent outcome or an unlimited right.",
+          "locator": "Syllabus holding 1; majority opinion Part II.",
+          "comparison_fit": "direct",
+          "survey_fit": "Gallup directly asks the individual-versus-militia distinction. It does not specify handguns, home self-defense, storage or state and local application; direct fit is limited to this distinction."
         }
       ],
-      "interpretation_limit": "The judgment was 5–4. The two components concern different rules; broad handgun preferences cannot answer both."
+      "interpretation_limit": "The judgment was 5–4. The individual-right premise and home-possession application are related parts of one ruling, not independent outcomes to count. Storage remains unmeasured."
     },
     {
       "case_id": "mcdonald-2010",

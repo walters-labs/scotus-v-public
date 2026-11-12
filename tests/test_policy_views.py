@@ -215,7 +215,16 @@ class PolicyViewsTests(unittest.TestCase):
         self.assertEqual(heller['components'][1]['display_fit'],'Missing data')
         self.assertEqual(heller['components'][1]['observations'],[])
         self.assertTrue(all(c['components'][0]['display_fit']=='Context only' for c in [heller,mcdonald]))
-        self.assertEqual([[a['percent'] for a in r['response_distribution']] for r in rows],[[30,68,2],[28,71,1],[36,59,5]])
+        self.assertEqual([[a['percent'] for a in r['response_distribution']] for r in rows],[[30,68,2],[28,71,1],[36,59,5],[73,20,7]])
+        individual = heller['components'][2]
+        self.assertEqual(individual['display_fit'], 'Direct comparison')
+        self.assertEqual(len(individual['observations']), 1)
+        poll = individual['observations'][0]
+        self.assertEqual(poll['variable'], 'second_amendment_individual_right')
+        self.assertEqual(poll['sample_n'], 1016)
+        self.assertEqual(poll['field_end'], '2008-02-10')
+        self.assertLess(poll['field_end'], heller['date'])
+        self.assertFalse(any(r['variable'] == poll['variable'] for c in mcdonald['components'] for r in c['observations']))
         page=self.client.get('/policy-comparisons?topic=firearms')
         self.assertEqual(page.status_code,200)
         for text in ['Heller','McDonald','68.0%','71.0%','59.0%','storage','not two independent measurements','historical sample size not stated']:

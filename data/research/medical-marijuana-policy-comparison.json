@@ -100,7 +100,7 @@
           "scope": "Federal power to enforce the Controlled Substances Act, not an instruction that Congress must prohibit medical use.",
           "locator": "Stevens majority opinion, Parts III\u2013IV; Scalia concurrence.",
           "comparison_fit": "contextual",
-          "survey_fit": "Support for medical use provides context. It does not answer the Commerce Clause question or directly measure approval of federal enforcement.",
+          "survey_fit": "Support for medical use provides context. It does not answer the Commerce Clause question or directly measure approval of federal enforcement. No federal-enforcement question within the earlier three-year window has been verified for this selection.",
           "comparisons": [
             {
               "source": "Gallup",
@@ -161,7 +161,7 @@
     "No pooling, confidence intervals, causal claims, or prediction."
   ],
   "input_sha256": {
-    "data/research/medical-marijuana-policy-components.json": "fd7e2d3f0f8c9b7b8a5b5c0676de5e38379c1d7f91833de097bd2597a156031b",
+    "data/research/medical-marijuana-policy-components.json": "3e033b84b3faaea14f4ad01ed0a7159f21abcf0aead5ae5233a60b1178acfd4a",
     "data/research/medical-marijuana-policy-surveys.json": "870d01b6b970b17815f92daa8bda2207ea4051b741b8539e8f549f4b98149fee",
     "data/research/medical-marijuana-policy-mapping.json": "387ad98b29b9a517077632e8cc43773783940647c5d6458b786a22c37d2c211e"
   },

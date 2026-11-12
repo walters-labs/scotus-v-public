@@ -18,6 +18,15 @@
     "functional_home_firearm": {
       "support_definition": "No reviewed question about keeping a lawful home firearm usable for self-defense.",
       "questions": []
+    },
+    "individual_gun_right": {
+      "support_definition": "Individual-versus-militia constitutional interpretation only; not approval of all firearm policies.",
+      "questions": [
+        {
+          "source": "Gallup",
+          "variable": "second_amendment_individual_right"
+        }
+      ]
     }
   },
   "cases": [
@@ -129,12 +138,65 @@
           "scope": "This is not a ruling against every safe-storage requirement.",
           "locator": "Scalia majority opinion, Part III.",
           "comparison_fit": "contextual",
-          "survey_fit": "Neither selected question addresses storage or immediate usability for self-defense.",
+          "survey_fit": "None of the selected questions addresses storage or immediate usability for self-defense.",
           "comparisons": [],
           "coverage_status": "no_matching_question"
+        },
+        {
+          "component_id": "heller-individual-right",
+          "policy_id": "individual_gun_right",
+          "issue": "An individual right, independent of militia service",
+          "decision": "The Court interpreted the Second Amendment as protecting an individual right independent of service in a militia.",
+          "direction": "expands",
+          "scope": "This is the constitutional premise of the home-possession ruling, not an additional independent outcome or an unlimited right.",
+          "locator": "Syllabus holding 1; majority opinion Part II.",
+          "comparison_fit": "direct",
+          "survey_fit": "Gallup directly asks the individual-versus-militia distinction. It does not specify handguns, home self-defense, storage or state and local application; direct fit is limited to this distinction.",
+          "comparisons": [
+            {
+              "source": "Gallup",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "Gallup",
+                  "variable": "second_amendment_individual_right",
+                  "year": 2008,
+                  "field_start": "2008-02-08",
+                  "field_end": "2008-02-10",
+                  "data_kind": "published_topline",
+                  "source_url": "https://news.gallup.com/poll/105721/public-believes-americans-right-own-guns.aspx",
+                  "source_locator": "Opening findings and Survey Methods; question and full table corroborated by PollingReport, USA Today/Gallup February 8\u201310, 2008 entry.",
+                  "sample_n": 1016,
+                  "wording": "Whether the Second Amendment protects Americans\u2019 gun ownership generally or only ownership by state militia members.",
+                  "wording_note": "Paraphrased summary. The alternative mentions National Guard units. Gallup\u2019s original report verifies 73%/20%, dates and national adult base. Its chart was inaccessible; PollingReport supplies question wording and the published 7% unsure category (https://www.pollingreport.com/guns3.htm). No residual was inferred. This asks about constitutional interpretation, not approval of Heller or unrestricted gun ownership.",
+                  "weight": "Published national telephone topline; no respondent-level recalculation.",
+                  "denominator": "All 1,016 national adults aged 18 and older, including unsure responses. Published percentages retained.",
+                  "orientation": "The individual-right answer agrees with the narrow individual-versus-militia distinction; it does not measure support for all consequences of the ruling.",
+                  "response_distribution": [
+                    {
+                      "code": "0",
+                      "label": "Individual right",
+                      "percent": 73
+                    },
+                    {
+                      "code": "1",
+                      "label": "State militia members only",
+                      "percent": 20
+                    },
+                    {
+                      "code": "2",
+                      "label": "Unsure",
+                      "percent": 7
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "coverage_status": "see_source_comparisons"
         }
       ],
-      "interpretation_limit": "The judgment was 5\u20134. The two components concern different rules; broad handgun preferences cannot answer both."
+      "interpretation_limit": "The judgment was 5\u20134. The individual-right premise and home-possession application are related parts of one ruling, not independent outcomes to count. Storage remains unmeasured."
     },
     {
       "case_id": "mcdonald-2010",
@@ -246,12 +308,14 @@
     "No pooling, confidence intervals, causal claims, or prediction."
   ],
   "input_sha256": {
-    "data/research/firearms-policy-components.json": "6918b393bc383bc2d64a32ffa46844143ad1c11643eb4e8880d273518243529b",
-    "data/research/firearms-policy-surveys.json": "69432593b3bdab415cc39d1ff76a314cc84f858d62a057f2b4f27b3f8b36a0ee",
-    "data/research/firearms-policy-mapping.json": "5987ff263ab98eaacff6939afccaf1f930d0512cf577454932a948c717972f07"
+    "data/research/firearms-policy-components.json": "2543b36e129a092034b0a551c57f2bc246d6dcb6626d893f0204e01ea2c980f0",
+    "data/research/firearms-policy-surveys.json": "9a35d3ac3f14ad320e683ce12f085db67cbd4c7e57201ca9dc901279279e884b",
+    "data/research/firearms-policy-mapping.json": "8097f925b4993474a8aaea3238192b7373dc52b43a5e28daf8cc3f7b7d292f22"
   },
   "survey_provenance": {
     "data/raw/policy-toplines/pew-handguns-2008.pdf": "545d1e59f76db938c8e4e9288a2dcc047e46e895763064c322f0dbc9bd0aac41",
-    "data/raw/policy-toplines/gallup-handguns.pdf": "d8c621c9998aabfa2c1b89c838d6dc6939ff17c2d8964e22b62ab760a32c9242"
+    "data/raw/policy-toplines/gallup-handguns.pdf": "d8c621c9998aabfa2c1b89c838d6dc6939ff17c2d8964e22b62ab760a32c9242",
+    "data/raw/policy-toplines/gallup-individual-right-2008.html": "b90b9cd5fd22b27270e7142f9cd50cafb419f24b8901dca6410d17c92fbc529d",
+    "data/raw/policy-toplines/pollingreport-guns3.html": "086aa67506024577ab58145957c66cc05b74a9c7261594e4a75c50811582f7cd"
   }
 }

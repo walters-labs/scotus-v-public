@@ -56,7 +56,7 @@ The Court held that Congress could prohibit local cultivation and use even when 
 
 Federal power to enforce the Controlled Substances Act, not an instruction that Congress must prohibit medical use.
 
-Support for medical use provides context. It does not answer the Commerce Clause question or directly measure approval of federal enforcement.
+Support for medical use provides context. It does not answer the Commerce Clause question or directly measure approval of federal enforcement. No federal-enforcement question within the earlier three-year window has been verified for this selection.
 
 Source locator: Stevens majority opinion, Parts III–IV; Scalia concurrence.
 

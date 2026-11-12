@@ -1,13 +1,18 @@
 <section class="marriage-overview" aria-labelledby="firearms-question">
 <p class="eyebrow">Handgun rights · A closer look</p>
-<h2 id="firearms-question">Should people be allowed to keep a handgun?</h2>
-<p class="overview-lead">Opposition to handgun bans is more specific than a preference for “gun control.” The selected polls provide context for two rulings protecting possession, while leaving important legal questions unanswered.</p>
+<h2 id="firearms-question">An individual right—and the limits of the comparison</h2>
+<p class="overview-lead">Before Heller, Gallup asked the constitutional question at the heart of the case: does the Second Amendment protect an individual right or only militia members? That gives us a closer comparison than general preferences about gun control.</p>
 <div class="reading-guide">
 <div><h3>Two different survey questions</h3><p>Gallup asked about banning possession, with exceptions for police and other authorized people. Pew asked about banning sales. Their responses appear separately below.</p></div>
 <div><h3>Two different legal steps</h3><p>Heller protected keeping a handgun at home in D.C. McDonald extended that constitutional protection to state and local governments. Neither decision eliminated all gun regulation.</p></div>
 </div>
+<h3 class="snapshot-heading">Before Heller: the individual-right question</h3>
+<div class="policy-table"><table><caption class="sr-only">Gallup February 2008 constitutional-right poll</caption><thead><tr><th scope="col">Survey</th><th scope="col">Question, summarized</th><th scope="col">Published answers</th></tr></thead><tbody>
+{% for observation in study.cases[0].components[2].observations %}<tr><th scope="row">{{ observation.source }} · {{ observation.year }}</th><td>{{ observation.wording }}</td><td>{% for answer in observation.response_distribution %}{{ answer.label }}: {{ '%.0f'|format(answer.percent) }}%{% if not loop.last %}<br>{% endif %}{% endfor %}</td></tr>{% endfor %}
+</tbody></table></div>
+<p class="snapshot-note">February 8–10, 2008 · 1,016 U.S. adults · before the June 26 ruling. This measures agreement with one constitutional distinction, not approval of the entire decision.</p>
 <h3 class="snapshot-heading">Where the comparison stops</h3>
-<p>The earlier polls show opposition to bans, but do not establish approval of either ruling’s reasoning. They also do not tell us what respondents thought about Heller’s separate storage ruling. That component remains explicitly unmeasured.</p>
+<p>The ban questions provide additional policy context. Neither they nor the individual-right question measures support for extending the right to state governments in McDonald, or for Heller’s separate storage ruling. That component remains explicitly unmeasured.</p>
 <p class="snapshot-note">These observations are historical context, not a continuous trend. The same 2008 Pew poll appears under both cases; it is not two independent measurements.</p>
 </section>
 <h2 class="evidence-heading">The evidence, decision by decision</h2>

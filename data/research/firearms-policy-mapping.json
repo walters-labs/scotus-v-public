@@ -17,6 +17,15 @@
     "functional_home_firearm": {
       "support_definition": "No reviewed question about keeping a lawful home firearm usable for self-defense.",
       "questions": []
+    },
+    "individual_gun_right": {
+      "support_definition": "Individual-versus-militia constitutional interpretation only; not approval of all firearm policies.",
+      "questions": [
+        {
+          "source": "Gallup",
+          "variable": "second_amendment_individual_right"
+        }
+      ]
     }
   }
 }
