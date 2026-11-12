@@ -73,3 +73,13 @@ primary decision links. Ten focused tests cover the original response arithmetic
 timing, ties, missingness, input validation, and preservation of the pilot.
 
 This is a bounded research deliverable. No app changes or deployment are needed.
+
+## Abortion transfer check
+
+See `ABORTION_POLICY_STUDY.md` for the second, five-case example and reproduction
+commands. Survey records may now provide `response_distribution` (unique codes,
+labels, and percentages summing to 100) instead of the five `percent` groups.
+This preserves multi-option questions without inventing a binary threshold.
+`maintains_protection` distinguishes retained rights from expanded rights.
+Policies with empty question lists render an explicit missing-question result.
+The original marriage observations remain unchanged.

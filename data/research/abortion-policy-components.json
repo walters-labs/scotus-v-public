@@ -1,0 +1,149 @@
+{
+  "status": "Bounded assistant source-based review of five selected cases; not a census or independent ground truth",
+  "cases": [
+    {
+      "case_id": "1972-048",
+      "name": "Roe v. Wade",
+      "date": "1973-01-22",
+      "source": "https://www.law.cornell.edu/supremecourt/text/410/113",
+      "components": [
+        {
+          "component_id": "roe-access",
+          "policy_id": "general_access",
+          "comparison_fit": "contextual",
+          "issue": "Protection against a life-saving-only abortion ban",
+          "decision": "Invalidated the Texas prohibition and recognized constitutional protection subject to pregnancy-stage limits.",
+          "direction": "expands",
+          "scope": "Protection was not unlimited at every pregnancy stage.",
+          "locator": "Opinion Part XI, summary paragraphs 1\u20133.",
+          "survey_fit": "General permission categories supply context; they do not ask about constitutional protection or the stage-dependent framework."
+        }
+      ],
+      "interpretation_limit": "Historical holding, later overruled. Broad permission is not approval of the full Roe framework."
+    },
+    {
+      "case_id": "1979-148",
+      "name": "Harris v. McRae",
+      "date": "1980-06-30",
+      "source": "https://www.law.cornell.edu/supremecourt/text/448/297",
+      "components": [
+        {
+          "component_id": "harris-funding",
+          "policy_id": "public_funding",
+          "comparison_fit": "direct",
+          "issue": "Public financing of medically necessary abortions",
+          "decision": "Upheld Hyde funding restrictions; Medicaid participation did not require states to fund abortions excluded from federal reimbursement.",
+          "direction": "maintains_restriction",
+          "scope": "Public subsidy obligations, distinct from permission to obtain an abortion.",
+          "locator": "Opinion Parts II and III; syllabus holdings 1 and 2.",
+          "survey_fit": "No funding-specific observation is included. General legality and abortion in cases of poverty do not measure public-financing preferences."
+        }
+      ],
+      "interpretation_limit": "Direct denotes the policy a suitable question would need to address; none is matched. No funding agreement is inferred."
+    },
+    {
+      "case_id": "1991-117",
+      "name": "Planned Parenthood v. Casey",
+      "date": "1992-06-29",
+      "source": "https://www.law.cornell.edu/supremecourt/text/505/833",
+      "components": [
+        {
+          "component_id": "casey-core",
+          "policy_id": "general_access",
+          "comparison_fit": "contextual",
+          "issue": "Retention of core previability protection",
+          "decision": "Retained Roe\u2019s essential protection while replacing its trimester framework with the undue-burden standard.",
+          "direction": "maintains_protection",
+          "scope": "Core protection retained; regulatory doctrine changed.",
+          "locator": "Joint opinion Parts I and IV.",
+          "survey_fit": "General abortion preferences are context, not a referendum on this legal standard."
+        },
+        {
+          "component_id": "casey-spouse",
+          "policy_id": "spousal_notification",
+          "comparison_fit": "direct",
+          "issue": "Spousal notification",
+          "decision": "Invalidated the challenged husband-notification requirement.",
+          "direction": "expands",
+          "scope": "Married women subject to the challenged provision.",
+          "locator": "Joint opinion Part V-C.",
+          "survey_fit": "No selected question directly asks about spousal notification."
+        },
+        {
+          "component_id": "casey-wait",
+          "policy_id": "waiting_period",
+          "comparison_fit": "direct",
+          "issue": "Informed consent and waiting period",
+          "decision": "Allowed the challenged informed-consent and 24-hour waiting requirements.",
+          "direction": "maintains_restriction",
+          "scope": "Facial challenge to these provisions; not approval of every possible waiting rule.",
+          "locator": "Joint opinion Part V-B.",
+          "survey_fit": "No selected question directly asks about these requirements."
+        },
+        {
+          "component_id": "casey-parent",
+          "policy_id": "parental_consent",
+          "comparison_fit": "direct",
+          "issue": "Parental consent",
+          "decision": "Allowed one-parent consent with judicial bypass.",
+          "direction": "maintains_restriction",
+          "scope": "Minors; the bypass matters.",
+          "locator": "Joint opinion Part V-D.",
+          "survey_fit": "No selected question measures this particular consent-and-bypass rule."
+        }
+      ],
+      "interpretation_limit": "Mixed selected components, not one signed score. This is not exhaustive: reporting and emergency provisions are not separately analyzed. Votes differ by part."
+    },
+    {
+      "case_id": "2015-048",
+      "name": "Whole Woman\u2019s Health v. Hellerstedt",
+      "date": "2016-06-27",
+      "source": "https://www.law.cornell.edu/supremecourt/text/15-274",
+      "components": [
+        {
+          "component_id": "wwh-providers",
+          "policy_id": "general_access",
+          "comparison_fit": "contextual",
+          "issue": "Provider restrictions",
+          "decision": "Invalidated Texas admitting-privileges and surgical-center requirements.",
+          "direction": "expands",
+          "scope": "Removed the challenged provider barriers, not all abortion regulation.",
+          "locator": "Breyer opinion introduction and Parts IV\u2013V.",
+          "survey_fit": "General legality supplies context only; no selected question specifically measures either provider requirement."
+        }
+      ],
+      "interpretation_limit": "Historical ruling under the then-applicable standard. General support does not establish agreement with the medical-benefit assessment."
+    },
+    {
+      "case_id": "2021-019",
+      "name": "Dobbs v. Jackson Women\u2019s Health Organization",
+      "date": "2022-06-24",
+      "source": "https://www.supremecourt.gov/opinions/21pdf/19-1392_6j37.pdf",
+      "components": [
+        {
+          "component_id": "dobbs-roe",
+          "policy_id": "retain_roe",
+          "comparison_fit": "direct",
+          "issue": "Overruling Roe and Casey",
+          "decision": "Removed federal constitutional abortion protection by overruling Roe and Casey.",
+          "direction": "restricts",
+          "scope": "Removal of federal protection, not enactment of a nationwide abortion ban.",
+          "locator": "Majority Parts IV and VI.",
+          "survey_fit": "VOTER explicitly asks whether Roe should be overturned. Support is oriented toward retaining Roe. This matches that named component, not every aspect of Dobbs."
+        },
+        {
+          "component_id": "dobbs-limit",
+          "policy_id": "gestational_limit",
+          "comparison_fit": "direct",
+          "issue": "Mississippi fifteen-week restriction",
+          "decision": "Reversed the judgment blocking Mississippi\u2019s law under the prior constitutional standard.",
+          "direction": "maintains_restriction",
+          "scope": "Fifteen-week rule with specified exceptions; distinct from the separate overruling component.",
+          "locator": "Majority Part VI; syllabus description of the law.",
+          "survey_fit": "No selected question asks about this fifteen-week rule with its exceptions."
+        }
+      ],
+      "interpretation_limit": "Five justices joined overruling Roe/Casey; Roberts concurred in the judgment without endorsing that step. The judgment\u2019s 6\u20133 split must not be assigned to every component."
+    }
+  ]
+}

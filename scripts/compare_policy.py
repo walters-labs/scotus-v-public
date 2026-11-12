@@ -7,7 +7,7 @@ import json
 import math
 from pathlib import Path
 
-DIRECTIONS = {'expands', 'restricts', 'maintains_restriction', 'mixed', 'unresolved', 'no_merits_ruling'}
+DIRECTIONS = {'expands', 'restricts', 'maintains_restriction', 'maintains_protection', 'mixed', 'unresolved', 'no_merits_ruling'}
 FITS = {'direct', 'contextual', 'not_comparable'}
 GROUPS = {'support', 'oppose', 'neutral', 'unsure', 'nonresponse'}
 
@@ -37,10 +37,22 @@ def compare(cases, surveys, mapping):
         if key in seen or type(r['year']) is not int:
             raise ValueError('Duplicate observation or invalid year')
         seen.add(key)
-        values = r['percent']
-        if set(values) != GROUPS or any(not math.isfinite(v) or v < 0 or v > 100 for v in values.values()):
+        if ('percent' in r) == ('response_distribution' in r):
+            raise ValueError('Provide exactly one response representation')
+        if 'percent' in r:
+            values = r['percent']
+            if set(values) != GROUPS:
+                raise ValueError('Invalid response groups')
+            numbers = list(values.values())
+        else:
+            distribution = r['response_distribution']
+            codes = [c['code'] for c in distribution]
+            if not codes or len(codes) != len(set(codes)) or any(not c['label'] for c in distribution):
+                raise ValueError('Invalid response distribution')
+            numbers = [c['percent'] for c in distribution]
+        if any(not math.isfinite(v) or v < 0 or v > 100 for v in numbers):
             raise ValueError('Invalid response shares')
-        if not math.isclose(sum(values.values()), 100, abs_tol=1e-6):
+        if not math.isclose(sum(numbers), 100, abs_tol=1e-6):
             raise ValueError('Response shares must sum to 100')
         if not r['denominator'] or not r['wording']:
             raise ValueError('Missing survey meaning/denominator')
@@ -86,7 +98,8 @@ def compare(cases, surveys, mapping):
                     selected = sorted((deepcopy(r) for r in eligible if r['year'] == latest), key=lambda r: r['variable'])
                     status = 'available'
                 comparisons.append(dict(source=source, status=status, observations=selected))
-            components.append({**deepcopy(component), 'comparisons': comparisons})
+            components.append({**deepcopy(component), 'comparisons': comparisons,
+                               'coverage_status': 'no_matching_question' if not sources else 'see_source_comparisons'})
         output.append({**deepcopy(case), 'components': components})
     return dict(schema_version=1, timing_rule=f'Latest earlier calendar year per source within {age} years; retain all same-year question variants.',
                 policies=deepcopy(policies), cases=output,
@@ -113,14 +126,24 @@ def report(result):
                       '| Source/year | Support | Oppose | Neutral | Unsure | Nonresponse |',
                       '| --- | ---: | ---: | ---: | ---: | ---: |']
             notes = []
+            distributions = []
+            if not component['comparisons']:
+                lines.append('| No matching question in this selection | — | — | — | — | — |')
             for comparison in component['comparisons']:
                 if not comparison['observations']:
                     lines.append(f"| {comparison['source']}: {comparison['status'].replace('_', ' ')} | — | — | — | — | — |")
                 for r in comparison['observations']:
+                    if 'response_distribution' in r:
+                        lines.append(f"| {r['source']} {r['year']} ({r['variable']}): categories below | — | — | — | — | — |")
+                        distributions += [f"**{r['source']} {r['year']} ({r['variable']}) — original policy categories**", '',
+                                          '| Answer | Percent |', '| --- | ---: |']
+                        distributions += [f"| {c['label']} | {c['percent']:.1f}% |" for c in r['response_distribution']]
+                        distributions += ['', r['wording'], '', 'Denominator: '+r['denominator'], '']
+                        continue
                     percentages = ' | '.join(f"{r['percent'][g]:.1f}%" for g in ['support','oppose','neutral','unsure','nonresponse'])
                     lines.append(f"| {r['source']} {r['year']} ({r['variable']}) | {percentages} |")
                     notes.append(f"- **{r['source']} {r['year']} ({r['variable']}):** {r['wording']} Denominator: {r['denominator']}")
-            lines += ['', 'Zero denotes zero in retained categories; it does not prove the original questionnaire lacked other response options.', ''] + notes + ['']
+            lines += ['', 'Zero denotes zero in retained categories; it does not prove the original questionnaire lacked other response options.', ''] + notes + [''] + distributions
     lines += ['## Limits', ''] + [f'- {x}' for x in result['limitations']]
     return '\n'.join(lines)+'\n'
 

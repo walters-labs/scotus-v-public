@@ -1,0 +1,71 @@
+{
+  "max_prior_years": 3,
+  "policies": {
+    "general_access": {
+      "support_definition": "Source-specific general abortion preferences: ANES original categories, GSS any-reason legality, PRRI legal all/most. These are contextual and not interchangeable.",
+      "questions": [
+        {
+          "source": "ANES",
+          "variable": "VCF0837"
+        },
+        {
+          "source": "ANES",
+          "variable": "VCF0838"
+        },
+        {
+          "source": "GSS",
+          "variable": "abany"
+        },
+        {
+          "source": "PRRI",
+          "variable": "Q11A_A"
+        },
+        {
+          "source": "PRRI",
+          "variable": "Q31"
+        },
+        {
+          "source": "PRRI",
+          "variable": "Q38"
+        },
+        {
+          "source": "PRRI",
+          "variable": "Q48"
+        },
+        {
+          "source": "PRRI",
+          "variable": "Q51"
+        }
+      ]
+    },
+    "retain_roe": {
+      "support_definition": "Retain Roe: code 2 supports retention, code 1 opposes retention.",
+      "questions": [
+        {
+          "source": "VOTER",
+          "variable": "roevwade_2020Nov"
+        }
+      ]
+    },
+    "public_funding": {
+      "support_definition": "Support access without the specific restriction, or public funding for the funding component; no question mapped in this bounded selection.",
+      "questions": []
+    },
+    "spousal_notification": {
+      "support_definition": "Support access without the specific restriction, or public funding for the funding component; no question mapped in this bounded selection.",
+      "questions": []
+    },
+    "waiting_period": {
+      "support_definition": "Support access without the specific restriction, or public funding for the funding component; no question mapped in this bounded selection.",
+      "questions": []
+    },
+    "parental_consent": {
+      "support_definition": "Support access without the specific restriction, or public funding for the funding component; no question mapped in this bounded selection.",
+      "questions": []
+    },
+    "gestational_limit": {
+      "support_definition": "Support access without the specific restriction, or public funding for the funding component; no question mapped in this bounded selection.",
+      "questions": []
+    }
+  }
+}

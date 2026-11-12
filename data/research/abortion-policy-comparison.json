@@ -1,0 +1,551 @@
+{
+  "schema_version": 1,
+  "timing_rule": "Latest earlier calendar year per source within 3 years; retain all same-year question variants.",
+  "policies": {
+    "general_access": {
+      "support_definition": "Source-specific general abortion preferences: ANES original categories, GSS any-reason legality, PRRI legal all/most. These are contextual and not interchangeable.",
+      "questions": [
+        {
+          "source": "ANES",
+          "variable": "VCF0837"
+        },
+        {
+          "source": "ANES",
+          "variable": "VCF0838"
+        },
+        {
+          "source": "GSS",
+          "variable": "abany"
+        },
+        {
+          "source": "PRRI",
+          "variable": "Q11A_A"
+        },
+        {
+          "source": "PRRI",
+          "variable": "Q31"
+        },
+        {
+          "source": "PRRI",
+          "variable": "Q38"
+        },
+        {
+          "source": "PRRI",
+          "variable": "Q48"
+        },
+        {
+          "source": "PRRI",
+          "variable": "Q51"
+        }
+      ]
+    },
+    "retain_roe": {
+      "support_definition": "Retain Roe: code 2 supports retention, code 1 opposes retention.",
+      "questions": [
+        {
+          "source": "VOTER",
+          "variable": "roevwade_2020Nov"
+        }
+      ]
+    },
+    "public_funding": {
+      "support_definition": "Support access without the specific restriction, or public funding for the funding component; no question mapped in this bounded selection.",
+      "questions": []
+    },
+    "spousal_notification": {
+      "support_definition": "Support access without the specific restriction, or public funding for the funding component; no question mapped in this bounded selection.",
+      "questions": []
+    },
+    "waiting_period": {
+      "support_definition": "Support access without the specific restriction, or public funding for the funding component; no question mapped in this bounded selection.",
+      "questions": []
+    },
+    "parental_consent": {
+      "support_definition": "Support access without the specific restriction, or public funding for the funding component; no question mapped in this bounded selection.",
+      "questions": []
+    },
+    "gestational_limit": {
+      "support_definition": "Support access without the specific restriction, or public funding for the funding component; no question mapped in this bounded selection.",
+      "questions": []
+    }
+  },
+  "cases": [
+    {
+      "case_id": "1972-048",
+      "name": "Roe v. Wade",
+      "date": "1973-01-22",
+      "source": "https://www.law.cornell.edu/supremecourt/text/410/113",
+      "components": [
+        {
+          "component_id": "roe-access",
+          "policy_id": "general_access",
+          "comparison_fit": "contextual",
+          "issue": "Protection against a life-saving-only abortion ban",
+          "decision": "Invalidated the Texas prohibition and recognized constitutional protection subject to pregnancy-stage limits.",
+          "direction": "expands",
+          "scope": "Protection was not unlimited at every pregnancy stage.",
+          "locator": "Opinion Part XI, summary paragraphs 1\u20133.",
+          "survey_fit": "General permission categories supply context; they do not ask about constitutional protection or the stage-dependent framework.",
+          "comparisons": [
+            {
+              "source": "ANES",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "ANES",
+                  "year": 1972,
+                  "variable": "VCF0837",
+                  "wording": "(1972,1976: Still on the subject of women\u2019s rights,)\n           There has been some discussion about abortion during recent years.\n           Which one of the opinions on this page (1972: card) best agrees with\n           your view? You can just tell me the number of the opinion you choose.",
+                  "weight": "VCF0009z",
+                  "denominator": "Positive-weight coded answers 1\u20134 and DK/other (9); code 0 combines missing/not-administered and is excluded. Not a full-sample denominator.",
+                  "category_definition": "1. Abortion should never be permitted.\n           2. Abortion should be permitted only if the life and health of the woman is\n           in danger.\n           3. Abortion should be permitted if, due to personal reasons, the woman would\n           have di\ufb03culty in caring for the child.\n           4. Abortion should never be forbidden, since one should not require a woman\n           to have a child she doesn\u2019t want.\n           9. DK; other",
+                  "response_distribution": [
+                    {
+                      "code": "1",
+                      "label": "Never permit",
+                      "percent": 10.921248142644874
+                    },
+                    {
+                      "code": "2",
+                      "label": "Only danger to life and health",
+                      "percent": 45.65378900445765
+                    },
+                    {
+                      "code": "3",
+                      "label": "Personal difficulty caring for child",
+                      "percent": 16.86478454680535
+                    },
+                    {
+                      "code": "4",
+                      "label": "Never forbid / unwanted child",
+                      "percent": 23.84843982169391
+                    },
+                    {
+                      "code": "9",
+                      "label": "Do not know or other",
+                      "percent": 2.711738484398217
+                    }
+                  ],
+                  "n": 2692,
+                  "weight_sum": 2692.0,
+                  "excluded_positive_weight": 13
+                }
+              ]
+            },
+            {
+              "source": "GSS",
+              "status": "no_prior_observation",
+              "observations": []
+            },
+            {
+              "source": "PRRI",
+              "status": "no_prior_observation",
+              "observations": []
+            }
+          ],
+          "coverage_status": "see_source_comparisons"
+        }
+      ],
+      "interpretation_limit": "Historical holding, later overruled. Broad permission is not approval of the full Roe framework."
+    },
+    {
+      "case_id": "1979-148",
+      "name": "Harris v. McRae",
+      "date": "1980-06-30",
+      "source": "https://www.law.cornell.edu/supremecourt/text/448/297",
+      "components": [
+        {
+          "component_id": "harris-funding",
+          "policy_id": "public_funding",
+          "comparison_fit": "direct",
+          "issue": "Public financing of medically necessary abortions",
+          "decision": "Upheld Hyde funding restrictions; Medicaid participation did not require states to fund abortions excluded from federal reimbursement.",
+          "direction": "maintains_restriction",
+          "scope": "Public subsidy obligations, distinct from permission to obtain an abortion.",
+          "locator": "Opinion Parts II and III; syllabus holdings 1 and 2.",
+          "survey_fit": "No funding-specific observation is included. General legality and abortion in cases of poverty do not measure public-financing preferences.",
+          "comparisons": [],
+          "coverage_status": "no_matching_question"
+        }
+      ],
+      "interpretation_limit": "Direct denotes the policy a suitable question would need to address; none is matched. No funding agreement is inferred."
+    },
+    {
+      "case_id": "1991-117",
+      "name": "Planned Parenthood v. Casey",
+      "date": "1992-06-29",
+      "source": "https://www.law.cornell.edu/supremecourt/text/505/833",
+      "components": [
+        {
+          "component_id": "casey-core",
+          "policy_id": "general_access",
+          "comparison_fit": "contextual",
+          "issue": "Retention of core previability protection",
+          "decision": "Retained Roe\u2019s essential protection while replacing its trimester framework with the undue-burden standard.",
+          "direction": "maintains_protection",
+          "scope": "Core protection retained; regulatory doctrine changed.",
+          "locator": "Joint opinion Parts I and IV.",
+          "survey_fit": "General abortion preferences are context, not a referendum on this legal standard.",
+          "comparisons": [
+            {
+              "source": "ANES",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "ANES",
+                  "year": 1990,
+                  "variable": "VCF0838",
+                  "wording": "ALL YEARS EXCEPT 2000 TELEPHONE:\n           There has been some discussion about abortion during recent years.\n           (RESPONDENT BOOKLET) Which one of the opinions on this page best agrees\n           with your view? You can just tell me the number of the opinion you\n           choose.\n           2000 TELEPHONE:\n           I am going to read you a short list of opinions. Please tell me which\n\n\n            one of the opinions best agrees with your view. You can just tell me the\n            number of the opinion you choose.",
+                  "weight": "VCF0009z",
+                  "denominator": "Positive-weight coded answers 1\u20134 and DK/other (9); code 0 combines missing/not-administered and is excluded. Not a full-sample denominator.",
+                  "category_definition": "1. By law, abortion should never be permitted.\n            2. The law should permit abortion only in case of rape, incest, or when the\n            woman\u2019s life is in danger.\n            3. The law should permit abortion for reasons other than rape, incest, or\n            danger to the woman\u2019s life, but only after the need for the abortion has\n            been clearly established.\n            4. By law, a woman should always be able to obtain an abortion as a matter of\n            personal choice.\n            9. DK; other",
+                  "response_distribution": [
+                    {
+                      "code": "1",
+                      "label": "Never permit",
+                      "percent": 11.971472236372898
+                    },
+                    {
+                      "code": "2",
+                      "label": "Only rape, incest, or danger to life",
+                      "percent": 32.70504330106979
+                    },
+                    {
+                      "code": "3",
+                      "label": "Other reasons if need clearly established",
+                      "percent": 14.212939378502293
+                    },
+                    {
+                      "code": "4",
+                      "label": "Always as personal choice",
+                      "percent": 39.531329597554766
+                    },
+                    {
+                      "code": "9",
+                      "label": "Do not know or other",
+                      "percent": 1.5792154865002548
+                    }
+                  ],
+                  "n": 1963,
+                  "weight_sum": 1963.0,
+                  "excluded_positive_weight": 17
+                }
+              ]
+            },
+            {
+              "source": "GSS",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "GSS",
+                  "year": 1991,
+                  "variable": "abany",
+                  "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+                  "weight": "wtssps",
+                  "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+                  "n": 993,
+                  "weight_sum": 1002.350410754236,
+                  "percent": {
+                    "support": 39.358007580542655,
+                    "oppose": 56.716061832787716,
+                    "neutral": 0.0,
+                    "unsure": 3.4679809282406864,
+                    "nonresponse": 0.457949658428943
+                  },
+                  "categories": [
+                    {
+                      "code": "1",
+                      "group": "support",
+                      "n": 405,
+                      "weight_sum": 394.50515064825265,
+                      "percent": 39.358007580542655
+                    },
+                    {
+                      "code": "2",
+                      "group": "oppose",
+                      "n": 546,
+                      "weight_sum": 568.4936787445741,
+                      "percent": 56.716061832787716
+                    },
+                    {
+                      "code": "d",
+                      "group": "unsure",
+                      "n": 35,
+                      "weight_sum": 34.76132107909909,
+                      "percent": 3.4679809282406864
+                    },
+                    {
+                      "code": "n",
+                      "group": "nonresponse",
+                      "n": 7,
+                      "weight_sum": 4.590260282310131,
+                      "percent": 0.457949658428943
+                    },
+                    {
+                      "code": "r",
+                      "group": "nonresponse",
+                      "n": 0,
+                      "weight_sum": 0.0,
+                      "percent": 0.0
+                    },
+                    {
+                      "code": "s",
+                      "group": "nonresponse",
+                      "n": 0,
+                      "weight_sum": 0.0,
+                      "percent": 0.0
+                    }
+                  ],
+                  "excluded_positive_weight": 524,
+                  "missing_or_zero_weight": 0
+                }
+              ]
+            },
+            {
+              "source": "PRRI",
+              "status": "no_prior_observation",
+              "observations": []
+            }
+          ],
+          "coverage_status": "see_source_comparisons"
+        },
+        {
+          "component_id": "casey-spouse",
+          "policy_id": "spousal_notification",
+          "comparison_fit": "direct",
+          "issue": "Spousal notification",
+          "decision": "Invalidated the challenged husband-notification requirement.",
+          "direction": "expands",
+          "scope": "Married women subject to the challenged provision.",
+          "locator": "Joint opinion Part V-C.",
+          "survey_fit": "No selected question directly asks about spousal notification.",
+          "comparisons": [],
+          "coverage_status": "no_matching_question"
+        },
+        {
+          "component_id": "casey-wait",
+          "policy_id": "waiting_period",
+          "comparison_fit": "direct",
+          "issue": "Informed consent and waiting period",
+          "decision": "Allowed the challenged informed-consent and 24-hour waiting requirements.",
+          "direction": "maintains_restriction",
+          "scope": "Facial challenge to these provisions; not approval of every possible waiting rule.",
+          "locator": "Joint opinion Part V-B.",
+          "survey_fit": "No selected question directly asks about these requirements.",
+          "comparisons": [],
+          "coverage_status": "no_matching_question"
+        },
+        {
+          "component_id": "casey-parent",
+          "policy_id": "parental_consent",
+          "comparison_fit": "direct",
+          "issue": "Parental consent",
+          "decision": "Allowed one-parent consent with judicial bypass.",
+          "direction": "maintains_restriction",
+          "scope": "Minors; the bypass matters.",
+          "locator": "Joint opinion Part V-D.",
+          "survey_fit": "No selected question measures this particular consent-and-bypass rule.",
+          "comparisons": [],
+          "coverage_status": "no_matching_question"
+        }
+      ],
+      "interpretation_limit": "Mixed selected components, not one signed score. This is not exhaustive: reporting and emergency provisions are not separately analyzed. Votes differ by part."
+    },
+    {
+      "case_id": "2015-048",
+      "name": "Whole Woman\u2019s Health v. Hellerstedt",
+      "date": "2016-06-27",
+      "source": "https://www.law.cornell.edu/supremecourt/text/15-274",
+      "components": [
+        {
+          "component_id": "wwh-providers",
+          "policy_id": "general_access",
+          "comparison_fit": "contextual",
+          "issue": "Provider restrictions",
+          "decision": "Invalidated Texas admitting-privileges and surgical-center requirements.",
+          "direction": "expands",
+          "scope": "Removed the challenged provider barriers, not all abortion regulation.",
+          "locator": "Breyer opinion introduction and Parts IV\u2013V.",
+          "survey_fit": "General legality supplies context only; no selected question specifically measures either provider requirement.",
+          "comparisons": [
+            {
+              "source": "ANES",
+              "status": "no_prior_observation",
+              "observations": []
+            },
+            {
+              "source": "GSS",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "GSS",
+                  "year": 2014,
+                  "variable": "abany",
+                  "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+                  "weight": "wtssnrps",
+                  "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+                  "n": 1714,
+                  "weight_sum": 1720.9710370897083,
+                  "percent": {
+                    "support": 43.61251292537967,
+                    "oppose": 52.759071779005964,
+                    "neutral": 0.0,
+                    "unsure": 2.611804181844293,
+                    "nonresponse": 1.0166111137700726
+                  },
+                  "categories": [
+                    {
+                      "code": "1",
+                      "group": "support",
+                      "n": 746,
+                      "weight_sum": 750.5587159927895,
+                      "percent": 43.61251292537967
+                    },
+                    {
+                      "code": "2",
+                      "group": "oppose",
+                      "n": 907,
+                      "weight_sum": 907.9683447540625,
+                      "percent": 52.759071779005964
+                    },
+                    {
+                      "code": "d",
+                      "group": "unsure",
+                      "n": 43,
+                      "weight_sum": 44.948393515038106,
+                      "percent": 2.611804181844293
+                    },
+                    {
+                      "code": "n",
+                      "group": "nonresponse",
+                      "n": 18,
+                      "weight_sum": 17.495582827818055,
+                      "percent": 1.0166111137700726
+                    },
+                    {
+                      "code": "r",
+                      "group": "nonresponse",
+                      "n": 0,
+                      "weight_sum": 0.0,
+                      "percent": 0.0
+                    },
+                    {
+                      "code": "s",
+                      "group": "nonresponse",
+                      "n": 0,
+                      "weight_sum": 0.0,
+                      "percent": 0.0
+                    }
+                  ],
+                  "excluded_positive_weight": 824,
+                  "missing_or_zero_weight": 0
+                }
+              ]
+            },
+            {
+              "source": "PRRI",
+              "status": "no_prior_observation",
+              "observations": []
+            }
+          ],
+          "coverage_status": "see_source_comparisons"
+        }
+      ],
+      "interpretation_limit": "Historical ruling under the then-applicable standard. General support does not establish agreement with the medical-benefit assessment."
+    },
+    {
+      "case_id": "2021-019",
+      "name": "Dobbs v. Jackson Women\u2019s Health Organization",
+      "date": "2022-06-24",
+      "source": "https://www.supremecourt.gov/opinions/21pdf/19-1392_6j37.pdf",
+      "components": [
+        {
+          "component_id": "dobbs-roe",
+          "policy_id": "retain_roe",
+          "comparison_fit": "direct",
+          "issue": "Overruling Roe and Casey",
+          "decision": "Removed federal constitutional abortion protection by overruling Roe and Casey.",
+          "direction": "restricts",
+          "scope": "Removal of federal protection, not enactment of a nationwide abortion ban.",
+          "locator": "Majority Parts IV and VI.",
+          "survey_fit": "VOTER explicitly asks whether Roe should be overturned. Support is oriented toward retaining Roe. This matches that named component, not every aspect of Dobbs.",
+          "comparisons": [
+            {
+              "source": "VOTER",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "VOTER",
+                  "year": 2020,
+                  "variable": "roevwade_2020Nov",
+                  "wording": "As you may know, the 1973 Supreme Court Case Roe v. Wade established a woman's constitutional right to have an abortion. Would you like to see the Supreme Court overturn its Roe v. Wade decision, or not?",
+                  "weight": "weight_genpop_2020Nov",
+                  "denominator": "All positive-weight November-wave respondents, including not sure and skipped; no yes/no-only renormalization.",
+                  "fieldwork_start": "2020-11-13",
+                  "fieldwork_end": "2020-12-07",
+                  "n": 4943,
+                  "percent": {
+                    "support": 54.36078812201273,
+                    "oppose": 26.037781357950628,
+                    "neutral": 0,
+                    "unsure": 19.57708393281063,
+                    "nonresponse": 0.02434658722600607
+                  },
+                  "orientation": "Support = retain Roe; oppose = overturn Roe. Not general abortion legality."
+                }
+              ]
+            }
+          ],
+          "coverage_status": "see_source_comparisons"
+        },
+        {
+          "component_id": "dobbs-limit",
+          "policy_id": "gestational_limit",
+          "comparison_fit": "direct",
+          "issue": "Mississippi fifteen-week restriction",
+          "decision": "Reversed the judgment blocking Mississippi\u2019s law under the prior constitutional standard.",
+          "direction": "maintains_restriction",
+          "scope": "Fifteen-week rule with specified exceptions; distinct from the separate overruling component.",
+          "locator": "Majority Part VI; syllabus description of the law.",
+          "survey_fit": "No selected question asks about this fifteen-week rule with its exceptions.",
+          "comparisons": [],
+          "coverage_status": "no_matching_question"
+        }
+      ],
+      "interpretation_limit": "Five justices joined overruling Roe/Casey; Roberts concurred in the judgment without endorsing that step. The judgment\u2019s 6\u20133 split must not be assigned to every component."
+    }
+  ],
+  "limitations": [
+    "Explicit source-based legal coding is an input, not an automated legal classifier.",
+    "Contextual matches do not measure approval of the specific holding.",
+    "Mixed and unresolved components retain their labels; no scalar direction is inferred.",
+    "No pooling, confidence intervals, causal claims, or prediction."
+  ],
+  "input_sha256": {
+    "data/research/abortion-policy-components.json": "b0b2c5b84f36f8aacfffaff472bbe81beca25c41a6492f7f8126d45646e375be",
+    "data/research/abortion-policy-surveys.json": "f058246d95285dc22b12e3eccb5adab23fe717c77c7a50760c09677211741b3d",
+    "data/research/abortion-policy-mapping.json": "ab1651ac18468d02699e882fe824d287b432909428342c4fac0625dbd9da7e20"
+  },
+  "survey_provenance": {
+    "data/raw/rebuild/anes-20260205/sources.json": "dc31123a089f2fdb95fff880c7afa2d3b025ed5fd6d1418f5aa8931ed8a1c368",
+    "data/raw/rebuild/anes-20260205/anes_timeseries_cdf_stata_20260205.dta": "45323c30faee1e9e67c2351c4302c31472b117050bef240d9339a264e2f3e078",
+    "data/anes/response_mappings.json": "cc1b5f161c1907b2534dd8359013ea6de3b2905ba91d3f54614e31db11ebc6ca",
+    "data/raw/rebuild/anes-20260205/anes_timeseries_cdf_codebook_var_20260205.pdf": "0dbaa80807abac50229dbdde66055b1756eaefe9cb9f6140ffc1938c134d5123",
+    "data/manifests/gss-2024-r3a.json": "bb521484420a0df344315e1876f6720edf0fd3b797433852b8a9639ce4e18f35",
+    "data/raw/gss-2024-r3a/gss7224_r3a.dta": "a7622e03d9130e25968943b6f022f44dc0087baf0aa6b5cef150871152827344",
+    "data/prri/policy-batch-mappings.json": "eff3868c9a8095ead1ce2c4a3e7b017f8318e65048929e8fb35a3dfa771bd3cc",
+    "data/manifests/prri-avs-acquisition.json": "eb6be8dd08f161fcfbf8df3634e09177a0eeb737a70cc912b7f856ee4f47b755",
+    "data/manifests/prri-all-policy-documents.json": "34b02b1d31752de13285dce613a3fc5cb2604a74d31bc5ec5320898747402183",
+    "data/raw/prri-avs-2019/responses.dta": "15f5cdf2a243adf7b93fc0fa5390876b639c000214abb9abfd3efc102d3dcf74",
+    "data/raw/prri-avs-2020/responses.dta": "4cb1b4cb6788c9edd5e452d66b1243696b2067638ce899a1e85cf96ade990636",
+    "data/raw/prri-avs-2021/responses.dta": "f5c0af1dee38c51016065ba2976c4c46d565f819aff019e12b21beed236328bc",
+    "data/raw/prri-avs-2023/responses.dta": "77f8a295839f16997f037214a79c80139158afdceaf2045ee18cd07725a9b539",
+    "data/raw/prri-avs-2024/responses.dta": "f7560d89700dc19c8bfcb6751fb9936b748b5d35dd90292102dce645ebb34326",
+    "data/research/voter-roe-dobbs-comparison.json": "818f4b2a98b8ac9a8f038ae564e257e2370eada85ff6ddcbe1cf5f759e96f2bf",
+    "data/raw/voter/VOTER Panel Data Files/voter_panel.dta": "29382b5993748020e21dc0ef0749c65d76d87f729cac1fb2bdd11aab55d6e1f2",
+    "data/raw/voter/guide.pdf": "3a4fb03bcfe208937c5723a4f30239a9155930a818c21a708c8ac93395a981e5",
+    "data/manifests/voter-policy-batch.json": "77d9afc929283f908320bee48686edfab2801f116d25f1f50d91e0a4956804c6",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/compare_voter_roe_dobbs.py": "741c511e4204299454b114f1a5a70b99ff7ce9eefc7fe624c5772928a7dfdec2",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/abortion_policy_surveys.py": "13f11edaff75f179fbb9b1d75d995a72ea022a810fb914e1345bb6024ed997e1"
+  }
+}
