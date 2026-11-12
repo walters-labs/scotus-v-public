@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "timing_rule": "Latest earlier calendar year per source within 3 years; retain all same-year question variants.",
+  "timing_rule": "Latest eligible year per source within 3 years; dated fieldwork must end before the decision, otherwise an earlier calendar year is required. Retain all eligible question variants in that year.",
   "policies": {
     "same_sex_marriage": {
       "support_definition": "Support for allowing same-sex couples to marry legally / agreement with their right to marry; wording and denominators remain source-specific.",
@@ -62,6 +62,42 @@
           "variable": "view_gaymar_2020Nov"
         }
       ]
+    },
+    "marriage_targeted_1": {
+      "support_definition": "Federal recognition of same-sex marriages for federal purposes and benefits.",
+      "questions": [
+        {
+          "source": "Gallup",
+          "variable": "marriage_topline_1"
+        }
+      ]
+    },
+    "marriage_targeted_2": {
+      "support_definition": "Marriage benefits for federal employees legally married to same-sex partners.",
+      "questions": [
+        {
+          "source": "Gallup",
+          "variable": "marriage_topline_2"
+        }
+      ]
+    },
+    "marriage_targeted_3": {
+      "support_definition": "Requiring states to recognize lawful same-sex marriages from other states.",
+      "questions": [
+        {
+          "source": "ABC News/Washington Post",
+          "variable": "marriage_topline_3"
+        }
+      ]
+    },
+    "marriage_targeted_4": {
+      "support_definition": "Allowing states to prohibit same-sex marriages.",
+      "questions": [
+        {
+          "source": "ABC News/Washington Post",
+          "variable": "marriage_topline_4"
+        }
+      ]
     }
   },
   "cases": [
@@ -108,7 +144,8 @@
               "status": "no_prior_observation",
               "observations": []
             }
-          ]
+          ],
+          "coverage_status": "see_source_comparisons"
         }
       ]
     },
@@ -158,7 +195,8 @@
               "status": "not_comparable",
               "observations": []
             }
-          ]
+          ],
+          "coverage_status": "see_source_comparisons"
         }
       ],
       "practical_effect": "The district-court injunction against enforcement of Proposition 8 was left undisturbed; distinguish that consequence from a Supreme Court merits endorsement of marriage equality.",
@@ -409,7 +447,8 @@
               "status": "no_prior_observation",
               "observations": []
             }
-          ]
+          ],
+          "coverage_status": "see_source_comparisons"
         },
         {
           "issue": "Jurisdiction despite executive agreement with Windsor",
@@ -442,7 +481,116 @@
               "status": "not_comparable",
               "observations": []
             }
-          ]
+          ],
+          "coverage_status": "see_source_comparisons"
+        },
+        {
+          "issue": "Federal recognition of lawful same-sex marriages \u2014 targeted polling",
+          "decision": "DOMA section 3 is unconstitutional",
+          "direction": "expands",
+          "scope": "Federal treatment of marriages lawful under state law; not a nationwide state licensing requirement",
+          "locator": "Majority Part IV, final two paragraphs; syllabus holding 2",
+          "evidence": "This opinion and its holding are confined to those lawful marriages.",
+          "survey_fit": "Federal-recognition policy match; legislative remedy is not approval of constitutional reasoning.",
+          "component_id": "marriage_targeted_1",
+          "policy_id": "marriage_targeted_1",
+          "comparison_fit": "direct",
+          "comparisons": [
+            {
+              "source": "Gallup",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "Gallup",
+                  "year": 2013,
+                  "variable": "marriage_topline_1",
+                  "field_start": "2013-03-04",
+                  "field_end": "2013-03-05",
+                  "data_kind": "published_topline",
+                  "wording": "Federal recognition of same-sex marriages for federal purposes and benefits.",
+                  "wording_note": "Question summary (paraphrased). See the original report for exact wording and questionnaire context.",
+                  "denominator": "Published weighted percentages; includes no opinion. Rounded totals may equal 101%; values are not renormalized.",
+                  "weight": "Publisher-weighted topline; respondent-level weights unavailable",
+                  "source_url": "https://news.gallup.com/file/poll/161465/130322SameSexMarriage.pdf",
+                  "source_page": 2,
+                  "source_item": "1",
+                  "sample_n": 1023,
+                  "response_distribution": [
+                    {
+                      "code": "favor",
+                      "label": "Favor",
+                      "percent": 48
+                    },
+                    {
+                      "code": "against",
+                      "label": "Against",
+                      "percent": 49
+                    },
+                    {
+                      "code": "no_opinion",
+                      "label": "No opinion",
+                      "percent": 4
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "coverage_status": "see_source_comparisons"
+        },
+        {
+          "issue": "Federal recognition of lawful same-sex marriages \u2014 targeted polling",
+          "decision": "DOMA section 3 is unconstitutional",
+          "direction": "expands",
+          "scope": "Federal treatment of marriages lawful under state law; not a nationwide state licensing requirement",
+          "locator": "Majority Part IV, final two paragraphs; syllabus holding 2",
+          "evidence": "This opinion and its holding are confined to those lawful marriages.",
+          "survey_fit": "Narrower employee-benefits question; keep distinct from general federal recognition.",
+          "component_id": "marriage_targeted_2",
+          "policy_id": "marriage_targeted_2",
+          "comparison_fit": "contextual",
+          "comparisons": [
+            {
+              "source": "Gallup",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "Gallup",
+                  "year": 2013,
+                  "variable": "marriage_topline_2",
+                  "field_start": "2013-03-11",
+                  "field_end": "2013-03-12",
+                  "data_kind": "published_topline",
+                  "wording": "Marriage benefits for federal employees legally married to same-sex partners.",
+                  "wording_note": "Question summary (paraphrased). See the original report for exact wording and questionnaire context. Report gives full-survey n and split forms; item-level sample size is not established.",
+                  "denominator": "Published weighted percentages; includes no opinion. Rounded totals may equal 101%; values are not renormalized.",
+                  "weight": "Publisher-weighted topline; respondent-level weights unavailable",
+                  "source_url": "https://news.gallup.com/file/poll/161465/130322SameSexMarriage.pdf",
+                  "source_page": 1,
+                  "source_item": "1C",
+                  "sample_n": 1022,
+                  "response_distribution": [
+                    {
+                      "code": "favor",
+                      "label": "Favor",
+                      "percent": 54
+                    },
+                    {
+                      "code": "against",
+                      "label": "Against",
+                      "percent": 39
+                    },
+                    {
+                      "code": "no_opinion",
+                      "label": "No opinion",
+                      "percent": 8
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "coverage_status": "see_source_comparisons"
         }
       ],
       "separate_opinions": [
@@ -703,7 +851,8 @@
               "status": "no_prior_observation",
               "observations": []
             }
-          ]
+          ],
+          "coverage_status": "see_source_comparisons"
         },
         {
           "issue": "Recognition of lawful out-of-state same-sex marriages",
@@ -923,7 +1072,116 @@
               "status": "no_prior_observation",
               "observations": []
             }
-          ]
+          ],
+          "coverage_status": "see_source_comparisons"
+        },
+        {
+          "issue": "Recognition of lawful out-of-state same-sex marriages \u2014 targeted polling",
+          "decision": "States must recognize these marriages",
+          "direction": "expands",
+          "scope": "Interstate recognition",
+          "locator": "Majority Part V; syllabus holding c",
+          "survey_fit": "Direct interstate-recognition policy match.",
+          "component_id": "marriage_targeted_3",
+          "policy_id": "marriage_targeted_3",
+          "comparison_fit": "direct",
+          "comparisons": [
+            {
+              "source": "ABC News/Washington Post",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "ABC News/Washington Post",
+                  "year": 2015,
+                  "variable": "marriage_topline_3",
+                  "field_start": "2015-04-16",
+                  "field_end": "2015-04-20",
+                  "data_kind": "published_topline",
+                  "wording": "Requiring states to recognize lawful same-sex marriages from other states.",
+                  "wording_note": "Question summary (paraphrased). See the original report for exact wording and questionnaire context.",
+                  "denominator": "Published weighted percentages; includes no opinion. Rounded totals may equal 101%; values are not renormalized.",
+                  "weight": "Publisher-weighted topline; respondent-level weights unavailable",
+                  "source_url": "https://www.langerresearch.com/wp-content/uploads/1144a49GayMarriage.pdf",
+                  "source_page": 4,
+                  "source_item": "1c",
+                  "sample_n": 1016,
+                  "response_distribution": [
+                    {
+                      "code": "support",
+                      "label": "Support",
+                      "percent": 62
+                    },
+                    {
+                      "code": "oppose",
+                      "label": "Oppose",
+                      "percent": 36
+                    },
+                    {
+                      "code": "no_opinion",
+                      "label": "No opinion",
+                      "percent": 3
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "coverage_status": "see_source_comparisons"
+        },
+        {
+          "issue": "State licensing of same-sex marriages \u2014 targeted polling",
+          "decision": "States must permit same-sex couples to marry on equal terms",
+          "direction": "expands",
+          "scope": "Nationwide constitutional requirement",
+          "locator": "Majority Part III closing paragraph",
+          "evidence": "The Court now holds that same-sex couples may exercise the fundamental right to marry.",
+          "survey_fit": "Opposition to bans aligns with licensing access; preserve reverse wording.",
+          "component_id": "marriage_targeted_4",
+          "policy_id": "marriage_targeted_4",
+          "comparison_fit": "direct",
+          "comparisons": [
+            {
+              "source": "ABC News/Washington Post",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "ABC News/Washington Post",
+                  "year": 2015,
+                  "variable": "marriage_topline_4",
+                  "field_start": "2015-04-16",
+                  "field_end": "2015-04-20",
+                  "data_kind": "published_topline",
+                  "wording": "Allowing states to prohibit same-sex marriages.",
+                  "wording_note": "Question summary (paraphrased). See the original report for exact wording and questionnaire context.",
+                  "denominator": "Published weighted percentages; includes no opinion. Rounded totals may equal 101%; values are not renormalized.",
+                  "weight": "Publisher-weighted topline; respondent-level weights unavailable",
+                  "source_url": "https://www.langerresearch.com/wp-content/uploads/1144a49GayMarriage.pdf",
+                  "source_page": 4,
+                  "source_item": "1b",
+                  "sample_n": 1016,
+                  "response_distribution": [
+                    {
+                      "code": "support",
+                      "label": "Support",
+                      "percent": 36
+                    },
+                    {
+                      "code": "oppose",
+                      "label": "Oppose",
+                      "percent": 61
+                    },
+                    {
+                      "code": "no_opinion",
+                      "label": "No opinion",
+                      "percent": 4
+                    }
+                  ],
+                  "orientation": "Opposing this ban aligns with marriage access; support here means support for allowing bans."
+                }
+              ]
+            }
+          ],
+          "coverage_status": "see_source_comparisons"
         }
       ],
       "separate_opinions": [
@@ -1251,7 +1509,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "coverage_status": "see_source_comparisons"
         }
       ]
     }
@@ -1262,11 +1521,6 @@
     "Mixed and unresolved components retain their labels; no scalar direction is inferred.",
     "No pooling, confidence intervals, causal claims, or prediction."
   ],
-  "input_sha256": {
-    "data/research/marriage-case-components.json": "94b6ababe2d28ebf16017d01d799590e18ed0956409e32b00f122b95cbb307da",
-    "data/research/marriage-case-study.json": "ec71e1e1146ada1a4b29fda0971f05a5ac16f2ae106a6b62c8fc75994b85b47a",
-    "data/research/marriage-policy-mapping.json": "15de450530c59b3c8afaee92faeff83fe4dc67e7f8af5ab1e86073d405eef639"
-  },
   "survey_provenance": {
     "data/raw/gss-2024-r3a/gss7224_r3a.dta": "a7622e03d9130e25968943b6f022f44dc0087baf0aa6b5cef150871152827344",
     "data/raw/prri-avs-2011/responses.dta": "91538b9adfa34dede12cba29d822d0c65c33de66e23d24b1d2a388094062cb9f",
@@ -1298,6 +1552,15 @@
     "data/prri/policy-batch-mappings.json": "eff3868c9a8095ead1ce2c4a3e7b017f8318e65048929e8fb35a3dfa771bd3cc",
     "data/manifests/gss-2024-r3a.json": "bb521484420a0df344315e1876f6720edf0fd3b797433852b8a9639ce4e18f35",
     "data/manifests/ces-policy-v3.json": "dbe3b0f0bae8bdb19c91b241de1bcd58e5e6550d2adce820618745fcb21d15e8",
-    "data/manifests/voter-policy-batch.json": "77d9afc929283f908320bee48686edfab2801f116d25f1f50d91e0a4956804c6"
+    "data/manifests/voter-policy-batch.json": "77d9afc929283f908320bee48686edfab2801f116d25f1f50d91e0a4956804c6",
+    "data/raw/marriage-targeted-polls/gallup-2013-federal-recognition.pdf": "8652b4b6333597c809e425d9e93ec5b97fafc1bbc348a3a52c1d82200153a807",
+    "data/raw/marriage-targeted-polls/abc-post-2015-recognition.pdf": "38ba0458c74440e432d4dffe20e88298fd2f9602f3ac3b0a9fec382e3afba715"
+  },
+  "input_sha256": {
+    "data/research/marriage-targeted-poll-candidates.json": "b7db73a3ab5452a7b08a84d5f6d237a892fb933a5803e13ad4d0f262b4e4a162",
+    "data/research/marriage-case-study.json": "ec71e1e1146ada1a4b29fda0971f05a5ac16f2ae106a6b62c8fc75994b85b47a",
+    "data/research/marriage-case-components.json": "94b6ababe2d28ebf16017d01d799590e18ed0956409e32b00f122b95cbb307da",
+    "data/research/marriage-policy-mapping.json": "15de450530c59b3c8afaee92faeff83fe4dc67e7f8af5ab1e86073d405eef639",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/build_marriage_toplines.py": "41a38404a81b0888d56eb815d4c7ecb654ac858ef10f8f4e3acabfc050df75d4"
   }
 }

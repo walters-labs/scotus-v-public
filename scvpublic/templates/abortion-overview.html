@@ -1,0 +1,41 @@
+<section class="marriage-overview" aria-labelledby="abortion-question">
+<p class="eyebrow">Abortion · A closer look</p>
+<h2 id="abortion-question">Legal under what circumstances—and protected by whom?</h2>
+<p class="overview-lead">Abortion opinion is not one yes-or-no question. Support for legal access, public funding, specific restrictions and keeping Roe can point in different directions.</p>
+<div class="reading-guide"><div><h3>What the surveys tell us</h3><p>These sources ask about different policies. We keep their response choices intact: “legal in most cases” is not the same as “for any reason,” and neither directly answers whether a waiting period should be allowed.</p></div><div><h3>What the rulings tell us</h3><p>Roe established constitutional protection; Casey retained its core while allowing some restrictions; Dobbs removed that federal protection. Funding and provider requirements raise separate questions.</p></div></div>
+<section class="roe-comparison" aria-labelledby="roe-question">
+<p class="eyebrow">The closest comparison · Before Dobbs</p>
+<h3 id="roe-question">Keep Roe, or overturn it?</h3>
+{% set topline = study.roe_topline %}
+<p>In Gallup’s May 2022 survey, 58% did not want Roe overturned, 35% did, and 7% had no opinion. The Court overruled Roe and Casey on June 24.</p>
+<div class="roe-responses">{% for answer in topline.response_distribution %}<div class="opinion-row"><div><span>{{ answer.label }}</span><strong>{{ answer.percent }}%</strong></div><svg class="support-track" viewBox="0 0 100 2" preserveAspectRatio="none" aria-hidden="true"><rect width="100" height="2" fill="#eee"/><rect width="{{ answer.percent }}" height="2" fill="#333"/></svg></div>{% endfor %}</div>
+<p class="snapshot-note">Gallup · May 2–22, 2022 · Form A, 492 adults · Published topline. Fieldwork largely followed the leaked draft opinion, but ended before the ruling. <a href="{{ topline.source_url }}">Original report ↗</a></p>
+<details><summary>Earlier comparison: VOTER 2020</summary>
+<p>In November–December 2020, more respondents opposed overturning Roe than favored it. In June 2022, the Court overruled Roe and Casey.</p>
+{% set r = study.roe_observation %}
+<div class="roe-responses">{% for key,label in [('support','Retain Roe'),('oppose','Overturn Roe'),('unsure','Not sure'),('nonresponse','Skipped')] %}
+<div class="opinion-row"><div><span>{{ label }}</span><strong>{{ '%.1f'|format(r.percent[key]) }}%</strong></div><svg class="support-track" viewBox="0 0 100 2" preserveAspectRatio="none" aria-hidden="true"><rect width="100" height="2" fill="#eee"/><rect width="{{ r.percent[key] }}" height="2" fill="#333"/></svg></div>{% endfor %}</div>
+<p class="snapshot-note">VOTER · {{ r.fieldwork_start }} – {{ r.fieldwork_end }} · {{ r.n }} respondents. Skipped rounds to 0.0%; it is not exactly zero. This is a roughly 19-month-old observation, not opinion on decision day or evidence that opinion caused the ruling.</p>
+<details><summary>Question and denominator</summary><p>{{ r.wording }}</p><p>{{ r.denominator }}</p><p>Variable: {{ r.variable }} · Weight: {{ r.weight }}</p></details>
+</details><a class="evidence-link" href="#case-2021-019">Read the Dobbs comparison ↓</a>
+</section>
+<h3 class="snapshot-heading">Public opinion over time · 1972–2024</h3>
+<p class="snapshot-note">56 audited source/question-year observations, including the VOTER item above. Sources and wording variants remain separate. Missing years are not interpolated; later surveys describe later opinion, not what people thought before an earlier ruling.</p>
+<div class="abortion-series">
+{% for series in study.history %}<section class="opinion-snapshot"><p class="eyebrow">{{ series.source }}</p><h4>{{ series.title }}</h4>
+{% if series.source == 'ANES' %}<p class="snapshot-note">Original policy categories, including uncertainty. No binary support percentage is inferred. The two ANES wordings are kept separate, including both 1980 observations.</p>{% elif series.source == 'GSS' %}<p class="snapshot-note">Bars show “yes” to legal abortion for any reason. Standard ABANY form only; later grid-form answers are not merged.</p>{% else %}<p class="snapshot-note">Bars show “legal in all or most cases.” Expand a year for the separate all/most categories.</p>{% endif %}
+<details class="history-years"><summary>Explore {{ series.observations|length }} observations · {{ series.observations[0].year }}–{{ series.observations[-1].year }}</summary>
+{% for r in series.observations %}<div class="opinion-row"><div><span>{{ r.year }} · {{ r.variable }}</span>{% if r.percent is defined %}<strong>{{ '%.1f'|format(r.percent.support) }}%</strong>{% endif %}</div>
+{% if r.percent is defined %}<svg class="support-track" viewBox="0 0 100 2" preserveAspectRatio="none" aria-hidden="true"><rect width="100" height="2" fill="#eee"/><rect width="{{ r.percent.support }}" height="2" fill="#333"/></svg>{% endif %}
+<details><summary>Responses, wording and denominator</summary><p>{{ r.wording }}</p>
+<table><caption class="sr-only">{{ r.source }} {{ r.year }} response percentages</caption><thead><tr><th>Response</th><th>Percent</th></tr></thead><tbody>
+{% if r.response_distribution is defined %}{% for answer in r.response_distribution %}<tr><th>{{ answer.label }}</th><td>{{ '%.1f'|format(answer.percent) }}%</td></tr>{% endfor %}
+{% elif series.source == 'PRRI' %}{% for answer in r.categories %}<tr><th>{% if answer.code == '1' %}Legal in all cases{% elif answer.code == '2' %}Legal in most cases{% elif answer.code == '3' %}Illegal in most cases{% elif answer.code == '4' %}Illegal in all cases{% else %}{{ answer.group|capitalize }} ({{ answer.code }}){% endif %}</th><td>{{ '%.1f'|format(answer.percent) }}%</td></tr>{% endfor %}
+{% else %}{% for key,label in [('support','Yes'),('oppose','No'),('unsure','Unsure'),('nonresponse','Nonresponse')] %}<tr><th>{{ label }}</th><td>{{ '%.1f'|format(r.percent[key]) }}%</td></tr>{% endfor %}{% endif %}</tbody></table>
+<p>{{ r.denominator }}</p>{% if r.category_definition is defined %}<p>{{ r.category_definition }}</p>{% endif %}<p>Weight: {{ r.weight }}</p></details></div>{% endfor %}</details>
+</section>{% endfor %}</div>
+<h3 class="snapshot-heading">What changed in court?</h3>
+<p class="snapshot-note">Five selected historical decisions. Each policy outcome stands on its own; this is not a guide to current state law.</p>
+<ol class="ruling-timeline">{% for case in study.cases %}<li><time>{{ case.date[:4] }}</time><div><a href="#case-{{ case.case_id }}">{{ case.name }}</a>{% for component in case.components %}<p><strong>{{ component.issue }}:</strong> {{ component.decision }}</p>{% endfor %}</div></li>{% endfor %}</ol>
+<details class="methodology"><summary>Where the evidence is still thin</summary><p>The new 1992 Times Mirror questions address notification and waiting requirements. Parental consent remains contextual because the question omits judicial bypass. Funding restrictions in Harris, provider requirements in Hellerstedt, and Mississippi’s specific fifteen-week limit still lack matched questions. Broad legality preferences do not fill those gaps. Missing data below means no suitable question mapped here, not that no such poll exists.</p></details>
+</section><h2 class="evidence-heading">The evidence, decision by decision</h2>

@@ -1,0 +1,89 @@
+{
+  "status": "Verified published toplines; not integrated into serving",
+  "sources": [
+    {
+      "path": "data/raw/marriage-targeted-polls/gallup-2013-federal-recognition.pdf",
+      "url": "https://news.gallup.com/file/poll/161465/130322SameSexMarriage.pdf",
+      "sha256": "8652b4b6333597c809e425d9e93ec5b97fafc1bbc348a3a52c1d82200153a807"
+    },
+    {
+      "path": "data/raw/marriage-targeted-polls/abc-post-2015-recognition.pdf",
+      "url": "https://www.langerresearch.com/wp-content/uploads/1144a49GayMarriage.pdf",
+      "sha256": "38ba0458c74440e432d4dffe20e88298fd2f9602f3ac3b0a9fec382e3afba715"
+    }
+  ],
+  "records": [
+    {
+      "source": "Gallup",
+      "field_start": "2013-03-04",
+      "field_end": "2013-03-05",
+      "page": 2,
+      "item": "1",
+      "question_summary": "Federal recognition of same-sex marriages for federal purposes and benefits.",
+      "percent": {
+        "favor": 48,
+        "against": 49,
+        "no_opinion": 4
+      },
+      "sample_n": 1023,
+      "target_case": "Windsor",
+      "fit": "Federal-recognition policy match; legislative remedy is not approval of constitutional reasoning."
+    },
+    {
+      "source": "Gallup",
+      "field_start": "2013-03-11",
+      "field_end": "2013-03-12",
+      "page": 1,
+      "item": "1C",
+      "question_summary": "Marriage benefits for federal employees legally married to same-sex partners.",
+      "percent": {
+        "favor": 54,
+        "against": 39,
+        "no_opinion": 8
+      },
+      "sample_n": 1022,
+      "target_case": "Windsor",
+      "fit": "Narrower employee-benefits question; keep distinct from general federal recognition."
+    },
+    {
+      "source": "ABC News/Washington Post",
+      "field_start": "2015-04-16",
+      "field_end": "2015-04-20",
+      "page": 4,
+      "item": "1c",
+      "question_summary": "Requiring states to recognize lawful same-sex marriages from other states.",
+      "percent": {
+        "support": 62,
+        "oppose": 36,
+        "no_opinion": 3
+      },
+      "sample_n": 1016,
+      "target_case": "Obergefell recognition component",
+      "fit": "Direct interstate-recognition policy match."
+    },
+    {
+      "source": "ABC News/Washington Post",
+      "field_start": "2015-04-16",
+      "field_end": "2015-04-20",
+      "page": 4,
+      "item": "1b",
+      "question_summary": "Allowing states to prohibit same-sex marriages.",
+      "percent": {
+        "support": 36,
+        "oppose": 61,
+        "no_opinion": 4
+      },
+      "sample_n": 1016,
+      "target_case": "Obergefell licensing component",
+      "fit": "Opposition to bans aligns with licensing access; preserve reverse wording."
+    }
+  ],
+  "notes": [
+    "Question summaries are paraphrases; original wording and context are in the referenced PDF pages.",
+    "Published rounded percentages can total 101; do not normalize or invent residual categories.",
+    "Sample n is full survey size; Gallup March 11 report also describes split forms, so do not assign item-level precision without further verification.",
+    "Microdata and redistribution licenses have not been established. Publicly readable is not synonymous with open-licensed.",
+    "All four records precede their proposed rulings but are same-calendar-year; current earlier-year-only engine excludes them.",
+    "No suitable pre-Pavan birth-certificate question verified in this bounded search; adoption/parenting attitudes are not substitutes."
+  ]
+}

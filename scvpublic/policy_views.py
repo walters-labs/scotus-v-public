@@ -24,4 +24,24 @@ def load_study(topic):
                                         'Missing data' if not observations else
                                         'Direct comparison' if fit == 'direct' else 'Context only')
             component['display_direction'] = DIRECTIONS[component['direction']]
+    if topic == 'marriage':
+        history = json.loads((DATA / 'marriage-opinion-history.json').read_text())
+        records = history['survey_records']
+        study['history'] = [
+            {'source': source, 'observations': sorted(
+                [r for r in records if r['source'] == source],
+                key=lambda r: (r['year'], r['variable']))}
+            for source in sorted({r['source'] for r in records})]
+    if topic == 'abortion':
+        records = json.loads((DATA / 'abortion-opinion-history.json').read_text())['survey_records']
+        groups = [
+            ('ANES', 'VCF0837', 'When should abortion be permitted? · earlier wording'),
+            ('ANES', 'VCF0838', 'When should abortion be permitted? · later wording'),
+            ('GSS', 'abany', 'Legal abortion for any reason'),
+            ('PRRI', None, 'Abortion legal in all or most cases')]
+        study['history'] = [dict(source=source, title=title, observations=sorted(
+            [r for r in records if r['source'] == source and (variable is None or r['variable'] == variable)],
+            key=lambda r: r['year'])) for source, variable, title in groups]
+        study['roe_topline'] = next(r for c in study['cases'] for part in c['components'] for r in part['observations'] if r['source'] == 'Gallup')
+        study['roe_observation'] = next(r for r in records if r['source'] == 'VOTER')
     return study

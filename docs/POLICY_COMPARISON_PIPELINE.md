@@ -126,3 +126,43 @@ The new view selectors are `capital-punishment` and `affirmative-action`.
 it is liberal. The generated reports link the primary decisions and preserve
 scope, denominators, uncertainty responses, and gaps. These selected cases are
 worked examples, not a representative sample or a combined alignment estimate.
+
+## Marriage history overview
+
+The marriage page also shows all 28 audited observations in the existing
+marriage case-study input, spanning 1988–2024. These are grouped by source;
+variable identifiers and wording notes preserve distinctions such as GSS
+`marsame` versus `marsame1`. Missing years are not interpolated. This descriptive
+history includes post-decision observations; the case comparison engine still
+uses only the latest eligible earlier year. No matching rules or weights change.
+
+After regenerating `marriage-case-study.json`, run:
+
+```sh
+.venv/bin/python scripts/build_marriage_history.py
+```
+
+The compact `marriage-opinion-history.json` is explicitly packaged for serving.
+It preserves response shares, denominators, provenance and the input hash.
+
+
+## Organization-labeled published toplines
+
+Run `PYTHONPATH=. .venv/bin/python scripts/build_marriage_toplines.py` after
+building the marriage survey input. This is the final marriage comparison build;
+running the older baseline command alone omits the supplemental toplines.
+Four reviewed questions from Gallup and ABC News/Washington Post are attached
+as targeted polling components, with source URLs, PDF pages/items, verified
+fieldwork dates, paraphrased question summaries, and unmodified published totals.
+They are precomputed policy-view records, not respondent-level microdata or
+new general-search index entries. They do not enter the general marriage trend.
+
+Dated observations must end strictly before the decision; undated-year data still
+require an earlier year. Latest eligible year and all eligible variants within
+that year remain the selection rule. Original marriage comparisons are retained.
+Published integer toplines permit rounding error of half a percentage point per
+category; other response totals retain strict validation. Nothing is normalized.
+Gallup's employee-benefits question remains contextual, not equivalent to the
+broader federal-recognition question. ABC/Post's state-ban item retains its
+reverse direction. Full-survey n is not treated as item-level n for precision.
+Reports are publicly available; no open microdata license is asserted.

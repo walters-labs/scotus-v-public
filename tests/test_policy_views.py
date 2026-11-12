@@ -60,11 +60,47 @@ class PolicyViewsTests(unittest.TestCase):
         self.assertEqual([c['components'][0]['display_fit'] for c in affirmative],
                          ['Not comparable','Context only','Context only'])
 
+    def test_marriage_history_preserves_audited_observations(self):
+        import json
+        from scvpublic.policy_views import load_study
+        study=load_study('marriage')
+        records=[r for series in study['history'] for r in series['observations']]
+        original=json.loads(Path('data/research/marriage-case-study.json').read_text())['survey_records']
+        key=lambda r:(r['source'],r['year'],r['variable'])
+        self.assertEqual(sorted(records,key=key),sorted(original,key=key))
+        self.assertEqual(len(records),28)
+        self.assertEqual((min(r['year'] for r in records),max(r['year'] for r in records)),(1988,2024))
+        self.assertIn('history',load_study('abortion'))
+        for case in study['cases']:
+            for component in case['components']:
+                for observation in component['observations']:
+                    if observation.get('field_end'):
+                        self.assertLess(observation['field_end'],case['date'])
+                    else:
+                        self.assertLess(observation['year'],int(case['date'][:4]))
+        page=self.client.get('/policy-comparisons').get_data(as_text=True)
+        self.assertIn('Public opinion over time',page)
+        self.assertNotIn('style="width:',page)
+
+    def test_abortion_overview_preserves_response_scales(self):
+        import json
+        from scvpublic.policy_views import load_study
+        study=load_study('abortion')
+        rows=[r for series in study['history'] for r in series['observations']]+[study['roe_observation']]
+        original=json.loads(Path('data/research/abortion-policy-surveys.json').read_text())['survey_records']
+        key=lambda r:(r['source'],r['variable'],r['year'])
+        self.assertEqual(sorted(rows,key=key),sorted(original,key=key))
+        self.assertEqual(len(rows),56)
+        self.assertEqual(len([r for r in rows if r['source']=='ANES' and r['year']==1980]),2)
+        page=self.client.get('/policy-comparisons?topic=abortion').get_data(as_text=True)
+        for text in ['Retain Roe','Overturn Roe','19-month','Never permit','Spousal notification','Where the evidence is still thin','492 adults','Times Mirror']:
+            self.assertIn(text,page)
+
     def test_packaged_view_runs_without_research_code(self):
         import sys
         dest=Path(self.temp.name)/'release'
         subprocess.run([sys.executable,'-m','scripts.package_release',str(self.artifact),'--directory',str(dest)],check=True,capture_output=True)
         self.assertTrue((dest/'scvpublic/policy_views.py').exists())
-        self.assertEqual(len(list((dest/'data/research').iterdir())),4)
+        self.assertEqual(len(list((dest/'data/research').iterdir())),6)
         self.assertFalse((dest/'scripts/compare_policy.py').exists())
-        subprocess.run([sys.executable,'-c',"from scvpublic.web import create_app; c=create_app('artifacts/search.sqlite').test_client(); assert c.get('/policy-comparisons?topic=abortion').status_code == 200"],cwd=dest,check=True,capture_output=True)
+        subprocess.run([sys.executable,'-c',"from scvpublic.web import create_app; c=create_app('artifacts/search.sqlite').test_client(); assert all(c.get('/policy-comparisons?topic='+t).status_code == 200 for t in ['marriage','abortion','capital-punishment','affirmative-action'])"],cwd=dest,check=True,capture_output=True)

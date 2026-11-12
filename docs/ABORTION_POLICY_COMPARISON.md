@@ -1,6 +1,6 @@
 # Policy comparison report
 
-Latest earlier calendar year per source within 3 years; retain all same-year question variants.
+Latest eligible year per source within 3 years; dated fieldwork must end before the decision, otherwise an earlier calendar year is required. Retain all eligible question variants in that year.
 
 Offline research only. Shares retain each source’s denominator. No combined alignment score.
 
@@ -133,16 +133,28 @@ Invalidated the challenged husband-notification requirement.
 
 Married women subject to the challenged provision.
 
-No selected question directly asks about spousal notification.
+Direct broad notification-policy match; does not measure approval of every statutory exception or constitutional rationale.
 
 Source locator: Joint opinion Part V-C.
 
 | Source/year | Support | Oppose | Neutral | Unsure | Nonresponse |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| No matching question in this selection | — | — | — | — | — |
+| Times Mirror Center (Pew archive) 1992 (abortion_topline_41b): categories below | — | — | — | — | — |
 
 Zero denotes zero in retained categories; it does not prove the original questionnaire lacked other response options.
 
+
+**Times Mirror Center (Pew archive) 1992 (abortion_topline_41b) — original policy categories**
+
+| Answer | Percent |
+| --- | ---: |
+| Favor requirement | 69.0% |
+| Oppose requirement | 27.0% |
+| Do not know | 4.0% |
+
+Requiring married women to notify husbands in most cases before an abortion.
+
+Denominator: Published full item response distribution, including uncertainty; percentages retained as reported.
 
 ### Informed consent and waiting period
 
@@ -152,35 +164,59 @@ Allowed the challenged informed-consent and 24-hour waiting requirements.
 
 Facial challenge to these provisions; not approval of every possible waiting rule.
 
-No selected question directly asks about these requirements.
+Matches the waiting-and-information policy component, not every implementation detail or the legal standard.
 
 Source locator: Joint opinion Part V-B.
 
 | Source/year | Support | Oppose | Neutral | Unsure | Nonresponse |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| No matching question in this selection | — | — | — | — | — |
+| Times Mirror Center (Pew archive) 1992 (abortion_topline_41c): categories below | — | — | — | — | — |
 
 Zero denotes zero in retained categories; it does not prove the original questionnaire lacked other response options.
 
 
+**Times Mirror Center (Pew archive) 1992 (abortion_topline_41c) — original policy categories**
+
+| Answer | Percent |
+| --- | ---: |
+| Favor requirement | 81.0% |
+| Oppose requirement | 15.0% |
+| Do not know | 4.0% |
+
+A 24-hour wait to consider physician-provided information on abortion risks and alternatives.
+
+Denominator: Published full item response distribution, including uncertainty; percentages retained as reported.
+
 ### Parental consent
 
-**maintains_restriction · direct**
+**maintains_restriction · contextual**
 
 Allowed one-parent consent with judicial bypass.
 
 Minors; the bypass matters.
 
-No selected question measures this particular consent-and-bypass rule.
+Specific parental-consent preference, but the question omits judicial bypass; it does not measure approval of the full upheld rule.
 
 Source locator: Joint opinion Part V-D.
 
 | Source/year | Support | Oppose | Neutral | Unsure | Nonresponse |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| No matching question in this selection | — | — | — | — | — |
+| Times Mirror Center (Pew archive) 1992 (abortion_topline_41a): categories below | — | — | — | — | — |
 
 Zero denotes zero in retained categories; it does not prove the original questionnaire lacked other response options.
 
+
+**Times Mirror Center (Pew archive) 1992 (abortion_topline_41a) — original policy categories**
+
+| Answer | Percent |
+| --- | ---: |
+| Favor requirement | 73.0% |
+| Oppose requirement | 23.0% |
+| Do not know | 4.0% |
+
+Requiring at least one parent’s consent for an abortion before age 18.
+
+Denominator: Published full item response distribution, including uncertainty; percentages retained as reported.
 
 ## Whole Woman’s Health v. Hellerstedt (2016-06-27)
 
@@ -224,17 +260,30 @@ Removed federal constitutional abortion protection by overruling Roe and Casey.
 
 Removal of federal protection, not enactment of a nationwide abortion ban.
 
-VOTER explicitly asks whether Roe should be overturned. Support is oriented toward retaining Roe. This matches that named component, not every aspect of Dobbs.
+Asks about overturning Roe, matching the overruling component. Fieldwork was largely after the draft leak but before the judgment.
 
 Source locator: Majority Parts IV and VI.
 
 | Source/year | Support | Oppose | Neutral | Unsure | Nonresponse |
 | --- | ---: | ---: | ---: | ---: | ---: |
+| Gallup 2022 (abortion_topline_16): categories below | — | — | — | — | — |
 | VOTER 2020 (roevwade_2020Nov) | 54.4% | 26.0% | 0.0% | 19.6% | 0.0% |
 
 Zero denotes zero in retained categories; it does not prove the original questionnaire lacked other response options.
 
 - **VOTER 2020 (roevwade_2020Nov):** As you may know, the 1973 Supreme Court Case Roe v. Wade established a woman's constitutional right to have an abortion. Would you like to see the Supreme Court overturn its Roe v. Wade decision, or not? Denominator: All positive-weight November-wave respondents, including not sure and skipped; no yes/no-only renormalization.
+
+**Gallup 2022 (abortion_topline_16) — original policy categories**
+
+| Answer | Percent |
+| --- | ---: |
+| Yes, overturn | 35.0% |
+| No, do not overturn | 58.0% |
+| No opinion | 7.0% |
+
+Overturning Roe v. Wade.
+
+Denominator: Published full item response distribution, including uncertainty; percentages retained as reported.
 
 ### Mississippi fifteen-week restriction
 

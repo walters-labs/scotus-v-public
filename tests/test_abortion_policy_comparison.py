@@ -61,7 +61,21 @@ class AbortionPolicyTests(unittest.TestCase):
     def test_deterministic_saved_result_and_strict_timing(self):
         result=self.result()
         saved=load('abortion-policy-comparison')
-        self.assertEqual(result['cases'],saved['cases'])
+        def original_observations(data):
+            return [(c['case_id'],p['component_id'],r) for c in data['cases'] for p in c['components']
+                    for group in p['comparisons'] for r in group['observations'] if r.get('data_kind')!='published_topline']
+        self.assertEqual(original_observations(result),original_observations(saved))
+        new=[(c,p,r) for c in saved['cases'] for p in c['components'] for group in p['comparisons']
+             for r in group['observations'] if r.get('data_kind')=='published_topline']
+        self.assertEqual(len(new),4)
+        for case,component,r in new:
+            self.assertLess(r['field_end'],case['date'])
+            if component['policy_id']=='parental_consent':
+                self.assertEqual(component['comparison_fit'],'contextual')
+                self.assertIn('bypass',component['survey_fit'])
+        gallup=next(r for _,_,r in new if r['source']=='Gallup')
+        self.assertEqual(gallup['sample_n'],492)
+        self.assertEqual([a['percent'] for a in gallup['response_distribution']],[35,58,7])
         for case in result['cases']:
             year=int(case['date'][:4])
             for component in case['components']:

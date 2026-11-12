@@ -1,0 +1,149 @@
+{
+  "survey_records": [
+    {
+      "source": "Gallup",
+      "year": 2013,
+      "variable": "marriage_topline_1",
+      "field_start": "2013-03-04",
+      "field_end": "2013-03-05",
+      "data_kind": "published_topline",
+      "wording": "Federal recognition of same-sex marriages for federal purposes and benefits.",
+      "wording_note": "Question summary (paraphrased). See the original report for exact wording and questionnaire context.",
+      "denominator": "Published weighted percentages; includes no opinion. Rounded totals may equal 101%; values are not renormalized.",
+      "weight": "Publisher-weighted topline; respondent-level weights unavailable",
+      "source_url": "https://news.gallup.com/file/poll/161465/130322SameSexMarriage.pdf",
+      "source_page": 2,
+      "source_item": "1",
+      "sample_n": 1023,
+      "response_distribution": [
+        {
+          "code": "favor",
+          "label": "Favor",
+          "percent": 48
+        },
+        {
+          "code": "against",
+          "label": "Against",
+          "percent": 49
+        },
+        {
+          "code": "no_opinion",
+          "label": "No opinion",
+          "percent": 4
+        }
+      ]
+    },
+    {
+      "source": "Gallup",
+      "year": 2013,
+      "variable": "marriage_topline_2",
+      "field_start": "2013-03-11",
+      "field_end": "2013-03-12",
+      "data_kind": "published_topline",
+      "wording": "Marriage benefits for federal employees legally married to same-sex partners.",
+      "wording_note": "Question summary (paraphrased). See the original report for exact wording and questionnaire context. Report gives full-survey n and split forms; item-level sample size is not established.",
+      "denominator": "Published weighted percentages; includes no opinion. Rounded totals may equal 101%; values are not renormalized.",
+      "weight": "Publisher-weighted topline; respondent-level weights unavailable",
+      "source_url": "https://news.gallup.com/file/poll/161465/130322SameSexMarriage.pdf",
+      "source_page": 1,
+      "source_item": "1C",
+      "sample_n": 1022,
+      "response_distribution": [
+        {
+          "code": "favor",
+          "label": "Favor",
+          "percent": 54
+        },
+        {
+          "code": "against",
+          "label": "Against",
+          "percent": 39
+        },
+        {
+          "code": "no_opinion",
+          "label": "No opinion",
+          "percent": 8
+        }
+      ]
+    },
+    {
+      "source": "ABC News/Washington Post",
+      "year": 2015,
+      "variable": "marriage_topline_3",
+      "field_start": "2015-04-16",
+      "field_end": "2015-04-20",
+      "data_kind": "published_topline",
+      "wording": "Requiring states to recognize lawful same-sex marriages from other states.",
+      "wording_note": "Question summary (paraphrased). See the original report for exact wording and questionnaire context.",
+      "denominator": "Published weighted percentages; includes no opinion. Rounded totals may equal 101%; values are not renormalized.",
+      "weight": "Publisher-weighted topline; respondent-level weights unavailable",
+      "source_url": "https://www.langerresearch.com/wp-content/uploads/1144a49GayMarriage.pdf",
+      "source_page": 4,
+      "source_item": "1c",
+      "sample_n": 1016,
+      "response_distribution": [
+        {
+          "code": "support",
+          "label": "Support",
+          "percent": 62
+        },
+        {
+          "code": "oppose",
+          "label": "Oppose",
+          "percent": 36
+        },
+        {
+          "code": "no_opinion",
+          "label": "No opinion",
+          "percent": 3
+        }
+      ]
+    },
+    {
+      "source": "ABC News/Washington Post",
+      "year": 2015,
+      "variable": "marriage_topline_4",
+      "field_start": "2015-04-16",
+      "field_end": "2015-04-20",
+      "data_kind": "published_topline",
+      "wording": "Allowing states to prohibit same-sex marriages.",
+      "wording_note": "Question summary (paraphrased). See the original report for exact wording and questionnaire context.",
+      "denominator": "Published weighted percentages; includes no opinion. Rounded totals may equal 101%; values are not renormalized.",
+      "weight": "Publisher-weighted topline; respondent-level weights unavailable",
+      "source_url": "https://www.langerresearch.com/wp-content/uploads/1144a49GayMarriage.pdf",
+      "source_page": 4,
+      "source_item": "1b",
+      "sample_n": 1016,
+      "response_distribution": [
+        {
+          "code": "support",
+          "label": "Support",
+          "percent": 36
+        },
+        {
+          "code": "oppose",
+          "label": "Oppose",
+          "percent": 61
+        },
+        {
+          "code": "no_opinion",
+          "label": "No opinion",
+          "percent": 4
+        }
+      ],
+      "orientation": "Opposing this ban aligns with marriage access; support here means support for allowing bans."
+    }
+  ],
+  "provenance": [
+    {
+      "path": "data/raw/marriage-targeted-polls/gallup-2013-federal-recognition.pdf",
+      "url": "https://news.gallup.com/file/poll/161465/130322SameSexMarriage.pdf",
+      "sha256": "8652b4b6333597c809e425d9e93ec5b97fafc1bbc348a3a52c1d82200153a807"
+    },
+    {
+      "path": "data/raw/marriage-targeted-polls/abc-post-2015-recognition.pdf",
+      "url": "https://www.langerresearch.com/wp-content/uploads/1144a49GayMarriage.pdf",
+      "sha256": "38ba0458c74440e432d4dffe20e88298fd2f9602f3ac3b0a9fec382e3afba715"
+    }
+  ]
+}

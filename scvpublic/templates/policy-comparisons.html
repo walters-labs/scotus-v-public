@@ -5,7 +5,30 @@
 <nav class="page-nav" aria-label="Explore"><a href="/">Topic search</a><a href="/policy-comparisons" aria-current="page">Policy comparisons</a></nav>
 <section class="policy-intro"><h2>Policy comparisons</h2><p>Four worked examples pair specific rulings with earlier survey responses. These selected cases illustrate the comparison; they do not measure overall Court–public agreement.</p>
 <nav class="study-tabs" aria-label="Choose a policy">{% for key, name in topics.items() %}<a href="{{ url_for('policy_comparisons', topic=key) }}"{% if key == topic %} aria-current="page"{% endif %}>{{ name }}</a>{% endfor %}</nav>
-<details class="methodology"><summary>How to read this comparison</summary><p><strong>Direct comparison:</strong> a question addresses a named policy component. <strong>Context only:</strong> related preferences, not approval of the specific holding. <strong>Missing data:</strong> no suitable earlier observation in this selection. Procedural rulings can be <strong>not comparable</strong>.</p><p>We use the latest earlier survey year per source within three years, keeping tied question variants. Same-year surveys are excluded. Percentages retain each survey’s wording and denominator; they are not pooled. Court interpretations are explicit source-based assessments, not automated classifications. Votes are not treated as policy magnitude.</p><p>These are historical outcomes. No causal, predictive, or statistical-significance claim is made. Missing matches do not mean no relevant survey exists elsewhere.</p></details></section>
+<details class="methodology"><summary>How to read this comparison</summary><p><strong>Direct comparison:</strong> a question addresses a named policy component. <strong>Context only:</strong> related preferences, not approval of the specific holding. <strong>Missing data:</strong> no suitable earlier observation in this selection. Procedural rulings can be <strong>not comparable</strong>.</p><p>We use the latest eligible survey year per source within three years, keeping tied question variants. Same-year surveys are included only when verified fieldwork ends before the ruling. Percentages retain each survey’s wording and denominator; they are not pooled. Court interpretations are explicit source-based assessments, not automated classifications. Votes are not treated as policy magnitude.</p><p>These are historical outcomes. No causal, predictive, or statistical-significance claim is made. Missing matches do not mean no relevant survey exists elsewhere.</p></details></section>
+{% if topic == 'marriage' %}
+<section class="marriage-overview" aria-labelledby="marriage-question">
+<p class="eyebrow">Marriage equality · A closer look</p>
+<h2 id="marriage-question">Should same-sex couples be allowed to marry?</h2>
+<p class="overview-lead">Public support and legal protection changed over time. But permission to marry, recognition of a marriage, and equal treatment within marriage are different questions.</p>
+<div class="reading-guide"><div><h3>What the surveys tell us</h3><p>Support rises between the selected 2012 and 2016 observations in CES, GSS and PRRI. The levels differ across sources, whose wording and response categories are not identical.</p></div><div><h3>What the rulings tell us</h3><p>General marriage preferences match <a href="#case-2014-070">Obergefell’s licensing ruling</a>. Targeted Gallup and ABC/Post questions also address federal and interstate recognition. Birth-certificate rules still have only broad marriage-attitude context.</p></div></div>
+<h3 class="snapshot-heading">Public opinion over time · 1988–2024</h3>
+<p class="snapshot-note">Share supporting or agreeing with same-sex marriage in 28 audited source/question-year observations. Each bar runs from 0 to 100%. Sources are kept separate; missing years are not interpolated. This history includes surveys before and after the rulings; only eligible earlier surveys appear in the case comparisons below.</p>
+<div class="opinion-snapshots">
+{% for series in study.history %}<section class="opinion-snapshot"><h4>{{ series.source }}</h4>
+{% for observation in series.observations %}<div class="opinion-row"><div><span>{{ observation.year }} · {{ observation.variable }}</span><strong>{{ '%.1f'|format(observation.percent.support) }}%</strong></div><svg class="support-track" viewBox="0 0 100 2" preserveAspectRatio="none" aria-hidden="true"><rect width="100" height="2" fill="#eee"/><rect width="{{ observation.percent.support }}" height="2" fill="#333"/></svg><details><summary>Wording and denominator</summary><p>{{ observation.wording }}</p>{% if observation.wording_note is defined %}<p>{{ observation.wording_note }}</p>{% endif %}<p>{{ observation.denominator }}</p></details></div>{% endfor %}
+</section>{% endfor %}
+</div>
+<p class="snapshot-note">CES percentages exclude missing answers and use support/oppose respondents only. Other sources retain additional categories; differences between sources are not necessarily changes in opinion. See the response breakdowns below.</p>
+<details class="methodology"><summary>Why is VOTER lower in 2016?</summary><p>VOTER records 49.9% favor, 35.1% oppose, 14.6% unsure and 0.3% skipped, using its supplied cross-sectional weights. Among favor/oppose respondents only, support is 58.7%; CES reports 61.6% on that narrower denominator. This explains most of their apparent difference, but does not make the surveys equivalent.</p><p>We verified VOTER’s raw response counts and weights against its <a href="https://www.voterstudygroup.org/uploads/reports/Data/VOTER-Survey-Guide-2021Dec.pdf">survey guide</a>. It interviewed returning panelists in November–December 2016. Differences from GSS and PRRI remain; timing, question format and sample design may matter, but we have not isolated their effects. The bars retain the original denominators.</p></details>
+<h3 class="snapshot-heading">What changed in court?</h3>
+<p class="snapshot-note">Selected decisions, not a complete legal history. Court outcomes are described in words, not positioned on a numerical ideology scale.</p>
+<ol class="ruling-timeline">{% for case in study.cases %}<li><time>{{ case.date[:4] }}</time><div><a href="#case-{{ case.case_id }}">{{ case.name }}</a><p>{{ case.components[0].decision }}</p></div></li>{% endfor %}</ol>
+<a class="evidence-link" href="#case-2014-070">Explore the closest comparison: Obergefell ↓</a>
+</section>
+<h2 class="evidence-heading">The evidence, decision by decision</h2>
+{% endif %}
+{% if topic == 'abortion' %}{% include 'abortion-overview.html' %}{% endif %}
 <nav class="event-index" aria-label="Jump to a decision">{% for case in study.cases %}<a href="#case-{{ case.case_id }}">{{ case.date[:4] }} · {{ case.name }}</a>{% endfor %}</nav>
 <div class="policy-events">
 {% for case in study.cases %}
@@ -17,7 +40,7 @@
 <p class="fit-explanation">{{ component.survey_fit }}</p>
 {% if component.observations %}<div class="policy-surveys">
 {% for observation in component.observations %}
-<div class="policy-survey"><h4>{{ observation.source }} <span>{{ observation.year }}</span></h4><p class="survey-wording">{{ observation.wording }}</p>
+<div class="policy-survey"><h4>{{ observation.source }} <span>{{ observation.year }}</span></h4>{% if observation.data_kind is defined and observation.data_kind == 'published_topline' %}<p><strong>Published topline</strong> · {{ observation.field_start }} – {{ observation.field_end }}</p><p><a href="{{ observation.source_url }}">Original report ↗</a> · page {{ observation.source_page }}, item {{ observation.source_item }}</p>{% endif %}<p class="survey-wording">{{ observation.wording }}</p>
 {% if observation.orientation is defined %}<p><strong>{{ observation.orientation }}</strong></p>{% endif %}
 <div class="policy-table"><table><caption class="sr-only">{{ observation.source }} {{ observation.year }} weighted response percentages</caption><thead><tr><th scope="col">Response</th><th scope="col">Percent</th></tr></thead><tbody>
 {% if observation.response_distribution is defined %}
@@ -33,5 +56,5 @@
 </article>{% endfor %}
 {% if case.interpretation_limit is defined %}<p class="case-limit">{{ case.interpretation_limit }}</p>{% endif %}
 </section>{% endfor %}</div>
-<footer><p>Selected examples from ANES, GSS, CES, PRRI and VOTER. Each comparison preserves its source and question wording.</p><p><a href="/">Return to topic search</a> · <a href="https://github.com/walters-labs/scotus-v-public">Source code and methodology</a></p></footer>
+<footer><p>Selected examples from ANES, GSS, CES, PRRI and VOTER, with published toplines from Gallup, ABC News/Washington Post and the Times Mirror Center (Pew archive). Each comparison preserves its source and question wording.</p><p><a href="/">Return to topic search</a> · <a href="https://github.com/walters-labs/scotus-v-public">Source code and methodology</a></p></footer>
 </main></body></html>

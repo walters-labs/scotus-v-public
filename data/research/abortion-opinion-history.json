@@ -1,0 +1,3022 @@
+{
+  "survey_records": [
+    {
+      "source": "ANES",
+      "year": 1972,
+      "variable": "VCF0837",
+      "wording": "(1972,1976: Still on the subject of women\u2019s rights,)\n           There has been some discussion about abortion during recent years.\n           Which one of the opinions on this page (1972: card) best agrees with\n           your view? You can just tell me the number of the opinion you choose.",
+      "weight": "VCF0009z",
+      "denominator": "Positive-weight coded answers 1\u20134 and DK/other (9); code 0 combines missing/not-administered and is excluded. Not a full-sample denominator.",
+      "category_definition": "1. Abortion should never be permitted.\n           2. Abortion should be permitted only if the life and health of the woman is\n           in danger.\n           3. Abortion should be permitted if, due to personal reasons, the woman would\n           have di\ufb03culty in caring for the child.\n           4. Abortion should never be forbidden, since one should not require a woman\n           to have a child she doesn\u2019t want.\n           9. DK; other",
+      "response_distribution": [
+        {
+          "code": "1",
+          "label": "Never permit",
+          "percent": 10.921248142644874
+        },
+        {
+          "code": "2",
+          "label": "Only danger to life and health",
+          "percent": 45.65378900445765
+        },
+        {
+          "code": "3",
+          "label": "Personal difficulty caring for child",
+          "percent": 16.86478454680535
+        },
+        {
+          "code": "4",
+          "label": "Never forbid / unwanted child",
+          "percent": 23.84843982169391
+        },
+        {
+          "code": "9",
+          "label": "Do not know or other",
+          "percent": 2.711738484398217
+        }
+      ],
+      "n": 2692,
+      "weight_sum": 2692.0,
+      "excluded_positive_weight": 13
+    },
+    {
+      "source": "ANES",
+      "year": 1976,
+      "variable": "VCF0837",
+      "wording": "(1972,1976: Still on the subject of women\u2019s rights,)\n           There has been some discussion about abortion during recent years.\n           Which one of the opinions on this page (1972: card) best agrees with\n           your view? You can just tell me the number of the opinion you choose.",
+      "weight": "VCF0009z",
+      "denominator": "Positive-weight coded answers 1\u20134 and DK/other (9); code 0 combines missing/not-administered and is excluded. Not a full-sample denominator.",
+      "category_definition": "1. Abortion should never be permitted.\n           2. Abortion should be permitted only if the life and health of the woman is\n           in danger.\n           3. Abortion should be permitted if, due to personal reasons, the woman would\n           have di\ufb03culty in caring for the child.\n           4. Abortion should never be forbidden, since one should not require a woman\n           to have a child she doesn\u2019t want.\n           9. DK; other",
+      "response_distribution": [
+        {
+          "code": "1",
+          "label": "Never permit",
+          "percent": 10.662460567823343
+        },
+        {
+          "code": "2",
+          "label": "Only danger to life and health",
+          "percent": 43.764458464773924
+        },
+        {
+          "code": "3",
+          "label": "Personal difficulty caring for child",
+          "percent": 15.920084121976863
+        },
+        {
+          "code": "4",
+          "label": "Never forbid / unwanted child",
+          "percent": 26.01472134595163
+        },
+        {
+          "code": "9",
+          "label": "Do not know or other",
+          "percent": 3.6382754994742372
+        }
+      ],
+      "n": 1889,
+      "weight_sum": 1862.5613803087897,
+      "excluded_positive_weight": 359
+    },
+    {
+      "source": "ANES",
+      "year": 1978,
+      "variable": "VCF0837",
+      "wording": "(1972,1976: Still on the subject of women\u2019s rights,)\n           There has been some discussion about abortion during recent years.\n           Which one of the opinions on this page (1972: card) best agrees with\n           your view? You can just tell me the number of the opinion you choose.",
+      "weight": "VCF0009z",
+      "denominator": "Positive-weight coded answers 1\u20134 and DK/other (9); code 0 combines missing/not-administered and is excluded. Not a full-sample denominator.",
+      "category_definition": "1. Abortion should never be permitted.\n           2. Abortion should be permitted only if the life and health of the woman is\n           in danger.\n           3. Abortion should be permitted if, due to personal reasons, the woman would\n           have di\ufb03culty in caring for the child.\n           4. Abortion should never be forbidden, since one should not require a woman\n           to have a child she doesn\u2019t want.\n           9. DK; other",
+      "response_distribution": [
+        {
+          "code": "1",
+          "label": "Never permit",
+          "percent": 10.47786058746164
+        },
+        {
+          "code": "2",
+          "label": "Only danger to life and health",
+          "percent": 42.788250767207366
+        },
+        {
+          "code": "3",
+          "label": "Personal difficulty caring for child",
+          "percent": 16.133274879438844
+        },
+        {
+          "code": "4",
+          "label": "Never forbid / unwanted child",
+          "percent": 26.47961420429636
+        },
+        {
+          "code": "9",
+          "label": "Do not know or other",
+          "percent": 4.1209995615957915
+        }
+      ],
+      "n": 2281,
+      "weight_sum": 2281.0,
+      "excluded_positive_weight": 23
+    },
+    {
+      "source": "ANES",
+      "year": 1980,
+      "variable": "VCF0837",
+      "wording": "(1972,1976: Still on the subject of women\u2019s rights,)\n           There has been some discussion about abortion during recent years.\n           Which one of the opinions on this page (1972: card) best agrees with\n           your view? You can just tell me the number of the opinion you choose.",
+      "weight": "VCF0009z",
+      "denominator": "Positive-weight coded answers 1\u20134 and DK/other (9); code 0 combines missing/not-administered and is excluded. Not a full-sample denominator.",
+      "category_definition": "1. Abortion should never be permitted.\n           2. Abortion should be permitted only if the life and health of the woman is\n           in danger.\n           3. Abortion should be permitted if, due to personal reasons, the woman would\n           have di\ufb03culty in caring for the child.\n           4. Abortion should never be forbidden, since one should not require a woman\n           to have a child she doesn\u2019t want.\n           9. DK; other",
+      "response_distribution": [
+        {
+          "code": "1",
+          "label": "Never permit",
+          "percent": 9.5
+        },
+        {
+          "code": "2",
+          "label": "Only danger to life and health",
+          "percent": 43.5
+        },
+        {
+          "code": "3",
+          "label": "Personal difficulty caring for child",
+          "percent": 17.5
+        },
+        {
+          "code": "4",
+          "label": "Never forbid / unwanted child",
+          "percent": 26.785714285714285
+        },
+        {
+          "code": "9",
+          "label": "Do not know or other",
+          "percent": 2.7142857142857144
+        }
+      ],
+      "n": 1400,
+      "weight_sum": 1400.0,
+      "excluded_positive_weight": 214
+    },
+    {
+      "source": "ANES",
+      "year": 1980,
+      "variable": "VCF0838",
+      "wording": "ALL YEARS EXCEPT 2000 TELEPHONE:\n           There has been some discussion about abortion during recent years.\n           (RESPONDENT BOOKLET) Which one of the opinions on this page best agrees\n           with your view? You can just tell me the number of the opinion you\n           choose.\n           2000 TELEPHONE:\n           I am going to read you a short list of opinions. Please tell me which\n\n\n            one of the opinions best agrees with your view. You can just tell me the\n            number of the opinion you choose.",
+      "weight": "VCF0009z",
+      "denominator": "Positive-weight coded answers 1\u20134 and DK/other (9); code 0 combines missing/not-administered and is excluded. Not a full-sample denominator.",
+      "category_definition": "1. By law, abortion should never be permitted.\n            2. The law should permit abortion only in case of rape, incest, or when the\n            woman\u2019s life is in danger.\n            3. The law should permit abortion for reasons other than rape, incest, or\n            danger to the woman\u2019s life, but only after the need for the abortion has\n            been clearly established.\n            4. By law, a woman should always be able to obtain an abortion as a matter of\n            personal choice.\n            9. DK; other",
+      "response_distribution": [
+        {
+          "code": "1",
+          "label": "Never permit",
+          "percent": 11.097256857855362
+        },
+        {
+          "code": "2",
+          "label": "Only rape, incest, or danger to life",
+          "percent": 31.546134663341647
+        },
+        {
+          "code": "3",
+          "label": "Other reasons if need clearly established",
+          "percent": 18.32917705735661
+        },
+        {
+          "code": "4",
+          "label": "Always as personal choice",
+          "percent": 35.47381546134663
+        },
+        {
+          "code": "9",
+          "label": "Do not know or other",
+          "percent": 3.5536159600997506
+        }
+      ],
+      "n": 1604,
+      "weight_sum": 1604.0,
+      "excluded_positive_weight": 10
+    },
+    {
+      "source": "ANES",
+      "year": 1982,
+      "variable": "VCF0838",
+      "wording": "ALL YEARS EXCEPT 2000 TELEPHONE:\n           There has been some discussion about abortion during recent years.\n           (RESPONDENT BOOKLET) Which one of the opinions on this page best agrees\n           with your view? You can just tell me the number of the opinion you\n           choose.\n           2000 TELEPHONE:\n           I am going to read you a short list of opinions. Please tell me which\n\n\n            one of the opinions best agrees with your view. You can just tell me the\n            number of the opinion you choose.",
+      "weight": "VCF0009z",
+      "denominator": "Positive-weight coded answers 1\u20134 and DK/other (9); code 0 combines missing/not-administered and is excluded. Not a full-sample denominator.",
+      "category_definition": "1. By law, abortion should never be permitted.\n            2. The law should permit abortion only in case of rape, incest, or when the\n            woman\u2019s life is in danger.\n            3. The law should permit abortion for reasons other than rape, incest, or\n            danger to the woman\u2019s life, but only after the need for the abortion has\n            been clearly established.\n            4. By law, a woman should always be able to obtain an abortion as a matter of\n            personal choice.\n            9. DK; other",
+      "response_distribution": [
+        {
+          "code": "1",
+          "label": "Never permit",
+          "percent": 12.875536480686696
+        },
+        {
+          "code": "2",
+          "label": "Only rape, incest, or danger to life",
+          "percent": 29.89985693848355
+        },
+        {
+          "code": "3",
+          "label": "Other reasons if need clearly established",
+          "percent": 19.027181688125893
+        },
+        {
+          "code": "4",
+          "label": "Always as personal choice",
+          "percent": 35.407725321888414
+        },
+        {
+          "code": "9",
+          "label": "Do not know or other",
+          "percent": 2.7896995708154506
+        }
+      ],
+      "n": 1398,
+      "weight_sum": 1398.0,
+      "excluded_positive_weight": 20
+    },
+    {
+      "source": "ANES",
+      "year": 1984,
+      "variable": "VCF0838",
+      "wording": "ALL YEARS EXCEPT 2000 TELEPHONE:\n           There has been some discussion about abortion during recent years.\n           (RESPONDENT BOOKLET) Which one of the opinions on this page best agrees\n           with your view? You can just tell me the number of the opinion you\n           choose.\n           2000 TELEPHONE:\n           I am going to read you a short list of opinions. Please tell me which\n\n\n            one of the opinions best agrees with your view. You can just tell me the\n            number of the opinion you choose.",
+      "weight": "VCF0009z",
+      "denominator": "Positive-weight coded answers 1\u20134 and DK/other (9); code 0 combines missing/not-administered and is excluded. Not a full-sample denominator.",
+      "category_definition": "1. By law, abortion should never be permitted.\n            2. The law should permit abortion only in case of rape, incest, or when the\n            woman\u2019s life is in danger.\n            3. The law should permit abortion for reasons other than rape, incest, or\n            danger to the woman\u2019s life, but only after the need for the abortion has\n            been clearly established.\n            4. By law, a woman should always be able to obtain an abortion as a matter of\n            personal choice.\n            9. DK; other",
+      "response_distribution": [
+        {
+          "code": "1",
+          "label": "Never permit",
+          "percent": 12.874385337505588
+        },
+        {
+          "code": "2",
+          "label": "Only rape, incest, or danger to life",
+          "percent": 29.41439427805096
+        },
+        {
+          "code": "3",
+          "label": "Other reasons if need clearly established",
+          "percent": 19.40098345999106
+        },
+        {
+          "code": "4",
+          "label": "Always as personal choice",
+          "percent": 35.359856951274026
+        },
+        {
+          "code": "9",
+          "label": "Do not know or other",
+          "percent": 2.950379973178364
+        }
+      ],
+      "n": 2237,
+      "weight_sum": 2237.0,
+      "excluded_positive_weight": 20
+    },
+    {
+      "source": "ANES",
+      "year": 1986,
+      "variable": "VCF0838",
+      "wording": "ALL YEARS EXCEPT 2000 TELEPHONE:\n           There has been some discussion about abortion during recent years.\n           (RESPONDENT BOOKLET) Which one of the opinions on this page best agrees\n           with your view? You can just tell me the number of the opinion you\n           choose.\n           2000 TELEPHONE:\n           I am going to read you a short list of opinions. Please tell me which\n\n\n            one of the opinions best agrees with your view. You can just tell me the\n            number of the opinion you choose.",
+      "weight": "VCF0009z",
+      "denominator": "Positive-weight coded answers 1\u20134 and DK/other (9); code 0 combines missing/not-administered and is excluded. Not a full-sample denominator.",
+      "category_definition": "1. By law, abortion should never be permitted.\n            2. The law should permit abortion only in case of rape, incest, or when the\n            woman\u2019s life is in danger.\n            3. The law should permit abortion for reasons other than rape, incest, or\n            danger to the woman\u2019s life, but only after the need for the abortion has\n            been clearly established.\n            4. By law, a woman should always be able to obtain an abortion as a matter of\n            personal choice.\n            9. DK; other",
+      "response_distribution": [
+        {
+          "code": "1",
+          "label": "Never permit",
+          "percent": 13.065558633425669
+        },
+        {
+          "code": "2",
+          "label": "Only rape, incest, or danger to life",
+          "percent": 28.347183748845797
+        },
+        {
+          "code": "3",
+          "label": "Other reasons if need clearly established",
+          "percent": 18.005540166204987
+        },
+        {
+          "code": "4",
+          "label": "Always as personal choice",
+          "percent": 38.45798707294552
+        },
+        {
+          "code": "9",
+          "label": "Do not know or other",
+          "percent": 2.123730378578024
+        }
+      ],
+      "n": 2166,
+      "weight_sum": 2166.0,
+      "excluded_positive_weight": 10
+    },
+    {
+      "source": "ANES",
+      "year": 1988,
+      "variable": "VCF0838",
+      "wording": "ALL YEARS EXCEPT 2000 TELEPHONE:\n           There has been some discussion about abortion during recent years.\n           (RESPONDENT BOOKLET) Which one of the opinions on this page best agrees\n           with your view? You can just tell me the number of the opinion you\n           choose.\n           2000 TELEPHONE:\n           I am going to read you a short list of opinions. Please tell me which\n\n\n            one of the opinions best agrees with your view. You can just tell me the\n            number of the opinion you choose.",
+      "weight": "VCF0009z",
+      "denominator": "Positive-weight coded answers 1\u20134 and DK/other (9); code 0 combines missing/not-administered and is excluded. Not a full-sample denominator.",
+      "category_definition": "1. By law, abortion should never be permitted.\n            2. The law should permit abortion only in case of rape, incest, or when the\n            woman\u2019s life is in danger.\n            3. The law should permit abortion for reasons other than rape, incest, or\n            danger to the woman\u2019s life, but only after the need for the abortion has\n            been clearly established.\n            4. By law, a woman should always be able to obtain an abortion as a matter of\n            personal choice.\n            9. DK; other",
+      "response_distribution": [
+        {
+          "code": "1",
+          "label": "Never permit",
+          "percent": 12.493827160493828
+        },
+        {
+          "code": "2",
+          "label": "Only rape, incest, or danger to life",
+          "percent": 32.69135802469136
+        },
+        {
+          "code": "3",
+          "label": "Other reasons if need clearly established",
+          "percent": 18.271604938271604
+        },
+        {
+          "code": "4",
+          "label": "Always as personal choice",
+          "percent": 35.111111111111114
+        },
+        {
+          "code": "9",
+          "label": "Do not know or other",
+          "percent": 1.4320987654320987
+        }
+      ],
+      "n": 2025,
+      "weight_sum": 2025.0,
+      "excluded_positive_weight": 15
+    },
+    {
+      "source": "ANES",
+      "year": 1990,
+      "variable": "VCF0838",
+      "wording": "ALL YEARS EXCEPT 2000 TELEPHONE:\n           There has been some discussion about abortion during recent years.\n           (RESPONDENT BOOKLET) Which one of the opinions on this page best agrees\n           with your view? You can just tell me the number of the opinion you\n           choose.\n           2000 TELEPHONE:\n           I am going to read you a short list of opinions. Please tell me which\n\n\n            one of the opinions best agrees with your view. You can just tell me the\n            number of the opinion you choose.",
+      "weight": "VCF0009z",
+      "denominator": "Positive-weight coded answers 1\u20134 and DK/other (9); code 0 combines missing/not-administered and is excluded. Not a full-sample denominator.",
+      "category_definition": "1. By law, abortion should never be permitted.\n            2. The law should permit abortion only in case of rape, incest, or when the\n            woman\u2019s life is in danger.\n            3. The law should permit abortion for reasons other than rape, incest, or\n            danger to the woman\u2019s life, but only after the need for the abortion has\n            been clearly established.\n            4. By law, a woman should always be able to obtain an abortion as a matter of\n            personal choice.\n            9. DK; other",
+      "response_distribution": [
+        {
+          "code": "1",
+          "label": "Never permit",
+          "percent": 11.971472236372898
+        },
+        {
+          "code": "2",
+          "label": "Only rape, incest, or danger to life",
+          "percent": 32.70504330106979
+        },
+        {
+          "code": "3",
+          "label": "Other reasons if need clearly established",
+          "percent": 14.212939378502293
+        },
+        {
+          "code": "4",
+          "label": "Always as personal choice",
+          "percent": 39.531329597554766
+        },
+        {
+          "code": "9",
+          "label": "Do not know or other",
+          "percent": 1.5792154865002548
+        }
+      ],
+      "n": 1963,
+      "weight_sum": 1963.0,
+      "excluded_positive_weight": 17
+    },
+    {
+      "source": "ANES",
+      "year": 1992,
+      "variable": "VCF0838",
+      "wording": "ALL YEARS EXCEPT 2000 TELEPHONE:\n           There has been some discussion about abortion during recent years.\n           (RESPONDENT BOOKLET) Which one of the opinions on this page best agrees\n           with your view? You can just tell me the number of the opinion you\n           choose.\n           2000 TELEPHONE:\n           I am going to read you a short list of opinions. Please tell me which\n\n\n            one of the opinions best agrees with your view. You can just tell me the\n            number of the opinion you choose.",
+      "weight": "VCF0009z",
+      "denominator": "Positive-weight coded answers 1\u20134 and DK/other (9); code 0 combines missing/not-administered and is excluded. Not a full-sample denominator.",
+      "category_definition": "1. By law, abortion should never be permitted.\n            2. The law should permit abortion only in case of rape, incest, or when the\n            woman\u2019s life is in danger.\n            3. The law should permit abortion for reasons other than rape, incest, or\n            danger to the woman\u2019s life, but only after the need for the abortion has\n            been clearly established.\n            4. By law, a woman should always be able to obtain an abortion as a matter of\n            personal choice.\n            9. DK; other",
+      "response_distribution": [
+        {
+          "code": "1",
+          "label": "Never permit",
+          "percent": 10.409622064095128
+        },
+        {
+          "code": "2",
+          "label": "Only rape, incest, or danger to life",
+          "percent": 27.58959843614126
+        },
+        {
+          "code": "3",
+          "label": "Other reasons if need clearly established",
+          "percent": 13.911556134612525
+        },
+        {
+          "code": "4",
+          "label": "Always as personal choice",
+          "percent": 45.5950954279808
+        },
+        {
+          "code": "9",
+          "label": "Do not know or other",
+          "percent": 2.4941279371702945
+        }
+      ],
+      "n": 2467,
+      "weight_sum": 2469.5325,
+      "excluded_positive_weight": 18
+    },
+    {
+      "source": "ANES",
+      "year": 1994,
+      "variable": "VCF0838",
+      "wording": "ALL YEARS EXCEPT 2000 TELEPHONE:\n           There has been some discussion about abortion during recent years.\n           (RESPONDENT BOOKLET) Which one of the opinions on this page best agrees\n           with your view? You can just tell me the number of the opinion you\n           choose.\n           2000 TELEPHONE:\n           I am going to read you a short list of opinions. Please tell me which\n\n\n            one of the opinions best agrees with your view. You can just tell me the\n            number of the opinion you choose.",
+      "weight": "VCF0009z",
+      "denominator": "Positive-weight coded answers 1\u20134 and DK/other (9); code 0 combines missing/not-administered and is excluded. Not a full-sample denominator.",
+      "category_definition": "1. By law, abortion should never be permitted.\n            2. The law should permit abortion only in case of rape, incest, or when the\n            woman\u2019s life is in danger.\n            3. The law should permit abortion for reasons other than rape, incest, or\n            danger to the woman\u2019s life, but only after the need for the abortion has\n            been clearly established.\n            4. By law, a woman should always be able to obtain an abortion as a matter of\n            personal choice.\n            9. DK; other",
+      "response_distribution": [
+        {
+          "code": "1",
+          "label": "Never permit",
+          "percent": 13.19094661744107
+        },
+        {
+          "code": "2",
+          "label": "Only rape, incest, or danger to life",
+          "percent": 31.089018848471603
+        },
+        {
+          "code": "3",
+          "label": "Other reasons if need clearly established",
+          "percent": 14.169050787812397
+        },
+        {
+          "code": "4",
+          "label": "Always as personal choice",
+          "percent": 39.77691621494514
+        },
+        {
+          "code": "9",
+          "label": "Do not know or other",
+          "percent": 1.7740675313297842
+        }
+      ],
+      "n": 1769,
+      "weight_sum": 1769.7297,
+      "excluded_positive_weight": 26
+    },
+    {
+      "source": "ANES",
+      "year": 1996,
+      "variable": "VCF0838",
+      "wording": "ALL YEARS EXCEPT 2000 TELEPHONE:\n           There has been some discussion about abortion during recent years.\n           (RESPONDENT BOOKLET) Which one of the opinions on this page best agrees\n           with your view? You can just tell me the number of the opinion you\n           choose.\n           2000 TELEPHONE:\n           I am going to read you a short list of opinions. Please tell me which\n\n\n            one of the opinions best agrees with your view. You can just tell me the\n            number of the opinion you choose.",
+      "weight": "VCF0009z",
+      "denominator": "Positive-weight coded answers 1\u20134 and DK/other (9); code 0 combines missing/not-administered and is excluded. Not a full-sample denominator.",
+      "category_definition": "1. By law, abortion should never be permitted.\n            2. The law should permit abortion only in case of rape, incest, or when the\n            woman\u2019s life is in danger.\n            3. The law should permit abortion for reasons other than rape, incest, or\n            danger to the woman\u2019s life, but only after the need for the abortion has\n            been clearly established.\n            4. By law, a woman should always be able to obtain an abortion as a matter of\n            personal choice.\n            9. DK; other",
+      "response_distribution": [
+        {
+          "code": "1",
+          "label": "Never permit",
+          "percent": 13.039169563831827
+        },
+        {
+          "code": "2",
+          "label": "Only rape, incest, or danger to life",
+          "percent": 30.026497025215935
+        },
+        {
+          "code": "3",
+          "label": "Other reasons if need clearly established",
+          "percent": 15.768457285933614
+        },
+        {
+          "code": "4",
+          "label": "Always as personal choice",
+          "percent": 39.654026243531185
+        },
+        {
+          "code": "9",
+          "label": "Do not know or other",
+          "percent": 1.5118498814874464
+        }
+      ],
+      "n": 1709,
+      "weight_sum": 1710.4939,
+      "excluded_positive_weight": 5
+    },
+    {
+      "source": "ANES",
+      "year": 1998,
+      "variable": "VCF0838",
+      "wording": "ALL YEARS EXCEPT 2000 TELEPHONE:\n           There has been some discussion about abortion during recent years.\n           (RESPONDENT BOOKLET) Which one of the opinions on this page best agrees\n           with your view? You can just tell me the number of the opinion you\n           choose.\n           2000 TELEPHONE:\n           I am going to read you a short list of opinions. Please tell me which\n\n\n            one of the opinions best agrees with your view. You can just tell me the\n            number of the opinion you choose.",
+      "weight": "VCF0009z",
+      "denominator": "Positive-weight coded answers 1\u20134 and DK/other (9); code 0 combines missing/not-administered and is excluded. Not a full-sample denominator.",
+      "category_definition": "1. By law, abortion should never be permitted.\n            2. The law should permit abortion only in case of rape, incest, or when the\n            woman\u2019s life is in danger.\n            3. The law should permit abortion for reasons other than rape, incest, or\n            danger to the woman\u2019s life, but only after the need for the abortion has\n            been clearly established.\n            4. By law, a woman should always be able to obtain an abortion as a matter of\n            personal choice.\n            9. DK; other",
+      "response_distribution": [
+        {
+          "code": "1",
+          "label": "Never permit",
+          "percent": 12.434833473044964
+        },
+        {
+          "code": "2",
+          "label": "Only rape, incest, or danger to life",
+          "percent": 29.87248150279627
+        },
+        {
+          "code": "3",
+          "label": "Other reasons if need clearly established",
+          "percent": 16.324838000724586
+        },
+        {
+          "code": "4",
+          "label": "Always as personal choice",
+          "percent": 40.11834119350579
+        },
+        {
+          "code": "9",
+          "label": "Do not know or other",
+          "percent": 1.249505829928395
+        }
+      ],
+      "n": 1272,
+      "weight_sum": 1271.0705,
+      "excluded_positive_weight": 9
+    },
+    {
+      "source": "ANES",
+      "year": 2000,
+      "variable": "VCF0838",
+      "wording": "ALL YEARS EXCEPT 2000 TELEPHONE:\n           There has been some discussion about abortion during recent years.\n           (RESPONDENT BOOKLET) Which one of the opinions on this page best agrees\n           with your view? You can just tell me the number of the opinion you\n           choose.\n           2000 TELEPHONE:\n           I am going to read you a short list of opinions. Please tell me which\n\n\n            one of the opinions best agrees with your view. You can just tell me the\n            number of the opinion you choose.",
+      "weight": "VCF0009z",
+      "denominator": "Positive-weight coded answers 1\u20134 and DK/other (9); code 0 combines missing/not-administered and is excluded. Not a full-sample denominator.",
+      "category_definition": "1. By law, abortion should never be permitted.\n            2. The law should permit abortion only in case of rape, incest, or when the\n            woman\u2019s life is in danger.\n            3. The law should permit abortion for reasons other than rape, incest, or\n            danger to the woman\u2019s life, but only after the need for the abortion has\n            been clearly established.\n            4. By law, a woman should always be able to obtain an abortion as a matter of\n            personal choice.\n            9. DK; other",
+      "response_distribution": [
+        {
+          "code": "1",
+          "label": "Never permit",
+          "percent": 12.475095922645984
+        },
+        {
+          "code": "2",
+          "label": "Only rape, incest, or danger to life",
+          "percent": 30.812971289628194
+        },
+        {
+          "code": "3",
+          "label": "Other reasons if need clearly established",
+          "percent": 15.053520446324658
+        },
+        {
+          "code": "4",
+          "label": "Always as personal choice",
+          "percent": 39.427000337698416
+        },
+        {
+          "code": "9",
+          "label": "Do not know or other",
+          "percent": 2.231412003702727
+        }
+      ],
+      "n": 1797,
+      "weight_sum": 1798.3501,
+      "excluded_positive_weight": 10
+    },
+    {
+      "source": "ANES",
+      "year": 2004,
+      "variable": "VCF0838",
+      "wording": "ALL YEARS EXCEPT 2000 TELEPHONE:\n           There has been some discussion about abortion during recent years.\n           (RESPONDENT BOOKLET) Which one of the opinions on this page best agrees\n           with your view? You can just tell me the number of the opinion you\n           choose.\n           2000 TELEPHONE:\n           I am going to read you a short list of opinions. Please tell me which\n\n\n            one of the opinions best agrees with your view. You can just tell me the\n            number of the opinion you choose.",
+      "weight": "VCF0009z",
+      "denominator": "Positive-weight coded answers 1\u20134 and DK/other (9); code 0 combines missing/not-administered and is excluded. Not a full-sample denominator.",
+      "category_definition": "1. By law, abortion should never be permitted.\n            2. The law should permit abortion only in case of rape, incest, or when the\n            woman\u2019s life is in danger.\n            3. The law should permit abortion for reasons other than rape, incest, or\n            danger to the woman\u2019s life, but only after the need for the abortion has\n            been clearly established.\n            4. By law, a woman should always be able to obtain an abortion as a matter of\n            personal choice.\n            9. DK; other",
+      "response_distribution": [
+        {
+          "code": "1",
+          "label": "Never permit",
+          "percent": 14.07145494047943
+        },
+        {
+          "code": "2",
+          "label": "Only rape, incest, or danger to life",
+          "percent": 31.635270475135712
+        },
+        {
+          "code": "3",
+          "label": "Other reasons if need clearly established",
+          "percent": 17.623625459188922
+        },
+        {
+          "code": "4",
+          "label": "Always as personal choice",
+          "percent": 35.53442366116548
+        },
+        {
+          "code": "9",
+          "label": "Do not know or other",
+          "percent": 1.135225464030453
+        }
+      ],
+      "n": 1061,
+      "weight_sum": 1057.5168,
+      "excluded_positive_weight": 151
+    },
+    {
+      "source": "ANES",
+      "year": 2008,
+      "variable": "VCF0838",
+      "wording": "ALL YEARS EXCEPT 2000 TELEPHONE:\n           There has been some discussion about abortion during recent years.\n           (RESPONDENT BOOKLET) Which one of the opinions on this page best agrees\n           with your view? You can just tell me the number of the opinion you\n           choose.\n           2000 TELEPHONE:\n           I am going to read you a short list of opinions. Please tell me which\n\n\n            one of the opinions best agrees with your view. You can just tell me the\n            number of the opinion you choose.",
+      "weight": "VCF0009z",
+      "denominator": "Positive-weight coded answers 1\u20134 and DK/other (9); code 0 combines missing/not-administered and is excluded. Not a full-sample denominator.",
+      "category_definition": "1. By law, abortion should never be permitted.\n            2. The law should permit abortion only in case of rape, incest, or when the\n            woman\u2019s life is in danger.\n            3. The law should permit abortion for reasons other than rape, incest, or\n            danger to the woman\u2019s life, but only after the need for the abortion has\n            been clearly established.\n            4. By law, a woman should always be able to obtain an abortion as a matter of\n            personal choice.\n            9. DK; other",
+      "response_distribution": [
+        {
+          "code": "1",
+          "label": "Never permit",
+          "percent": 14.555294171191903
+        },
+        {
+          "code": "2",
+          "label": "Only rape, incest, or danger to life",
+          "percent": 27.032952445429295
+        },
+        {
+          "code": "3",
+          "label": "Other reasons if need clearly established",
+          "percent": 17.766879914587047
+        },
+        {
+          "code": "4",
+          "label": "Always as personal choice",
+          "percent": 39.731794989953926
+        },
+        {
+          "code": "9",
+          "label": "Do not know or other",
+          "percent": 0.9130784788378224
+        }
+      ],
+      "n": 1039,
+      "weight_sum": 1054.641,
+      "excluded_positive_weight": 1283
+    },
+    {
+      "source": "ANES",
+      "year": 2012,
+      "variable": "VCF0838",
+      "wording": "ALL YEARS EXCEPT 2000 TELEPHONE:\n           There has been some discussion about abortion during recent years.\n           (RESPONDENT BOOKLET) Which one of the opinions on this page best agrees\n           with your view? You can just tell me the number of the opinion you\n           choose.\n           2000 TELEPHONE:\n           I am going to read you a short list of opinions. Please tell me which\n\n\n            one of the opinions best agrees with your view. You can just tell me the\n            number of the opinion you choose.",
+      "weight": "VCF0009z",
+      "denominator": "Positive-weight coded answers 1\u20134 and DK/other (9); code 0 combines missing/not-administered and is excluded. Not a full-sample denominator.",
+      "category_definition": "1. By law, abortion should never be permitted.\n            2. The law should permit abortion only in case of rape, incest, or when the\n            woman\u2019s life is in danger.\n            3. The law should permit abortion for reasons other than rape, incest, or\n            danger to the woman\u2019s life, but only after the need for the abortion has\n            been clearly established.\n            4. By law, a woman should always be able to obtain an abortion as a matter of\n            personal choice.\n            9. DK; other",
+      "response_distribution": [
+        {
+          "code": "1",
+          "label": "Never permit",
+          "percent": 12.233316550333663
+        },
+        {
+          "code": "2",
+          "label": "Only rape, incest, or danger to life",
+          "percent": 27.567823190959547
+        },
+        {
+          "code": "3",
+          "label": "Other reasons if need clearly established",
+          "percent": 15.58322528607467
+        },
+        {
+          "code": "4",
+          "label": "Always as personal choice",
+          "percent": 44.313137805518195
+        },
+        {
+          "code": "9",
+          "label": "Do not know or other",
+          "percent": 0.30249716711391944
+        }
+      ],
+      "n": 5881,
+      "weight_sum": 5878.3691,
+      "excluded_positive_weight": 33
+    },
+    {
+      "source": "ANES",
+      "year": 2016,
+      "variable": "VCF0838",
+      "wording": "ALL YEARS EXCEPT 2000 TELEPHONE:\n           There has been some discussion about abortion during recent years.\n           (RESPONDENT BOOKLET) Which one of the opinions on this page best agrees\n           with your view? You can just tell me the number of the opinion you\n           choose.\n           2000 TELEPHONE:\n           I am going to read you a short list of opinions. Please tell me which\n\n\n            one of the opinions best agrees with your view. You can just tell me the\n            number of the opinion you choose.",
+      "weight": "VCF0009z",
+      "denominator": "Positive-weight coded answers 1\u20134 and DK/other (9); code 0 combines missing/not-administered and is excluded. Not a full-sample denominator.",
+      "category_definition": "1. By law, abortion should never be permitted.\n            2. The law should permit abortion only in case of rape, incest, or when the\n            woman\u2019s life is in danger.\n            3. The law should permit abortion for reasons other than rape, incest, or\n            danger to the woman\u2019s life, but only after the need for the abortion has\n            been clearly established.\n            4. By law, a woman should always be able to obtain an abortion as a matter of\n            personal choice.\n            9. DK; other",
+      "response_distribution": [
+        {
+          "code": "1",
+          "label": "Never permit",
+          "percent": 13.897662351095969
+        },
+        {
+          "code": "2",
+          "label": "Only rape, incest, or danger to life",
+          "percent": 26.713509956116745
+        },
+        {
+          "code": "3",
+          "label": "Other reasons if need clearly established",
+          "percent": 14.269069834808485
+        },
+        {
+          "code": "4",
+          "label": "Always as personal choice",
+          "percent": 44.888633507526734
+        },
+        {
+          "code": "9",
+          "label": "Do not know or other",
+          "percent": 0.23112435045208277
+        }
+      ],
+      "n": 4222,
+      "weight_sum": 4215.047,
+      "excluded_positive_weight": 48
+    },
+    {
+      "source": "ANES",
+      "year": 2020,
+      "variable": "VCF0838",
+      "wording": "ALL YEARS EXCEPT 2000 TELEPHONE:\n           There has been some discussion about abortion during recent years.\n           (RESPONDENT BOOKLET) Which one of the opinions on this page best agrees\n           with your view? You can just tell me the number of the opinion you\n           choose.\n           2000 TELEPHONE:\n           I am going to read you a short list of opinions. Please tell me which\n\n\n            one of the opinions best agrees with your view. You can just tell me the\n            number of the opinion you choose.",
+      "weight": "VCF0009z",
+      "denominator": "Positive-weight coded answers 1\u20134 and DK/other (9); code 0 combines missing/not-administered and is excluded. Not a full-sample denominator.",
+      "category_definition": "1. By law, abortion should never be permitted.\n            2. The law should permit abortion only in case of rape, incest, or when the\n            woman\u2019s life is in danger.\n            3. The law should permit abortion for reasons other than rape, incest, or\n            danger to the woman\u2019s life, but only after the need for the abortion has\n            been clearly established.\n            4. By law, a woman should always be able to obtain an abortion as a matter of\n            personal choice.\n            9. DK; other",
+      "response_distribution": [
+        {
+          "code": "1",
+          "label": "Never permit",
+          "percent": 11.13495399484021
+        },
+        {
+          "code": "2",
+          "label": "Only rape, incest, or danger to life",
+          "percent": 24.89904907746489
+        },
+        {
+          "code": "3",
+          "label": "Other reasons if need clearly established",
+          "percent": 12.576078678981075
+        },
+        {
+          "code": "4",
+          "label": "Always as personal choice",
+          "percent": 47.972273255917294
+        },
+        {
+          "code": "9",
+          "label": "Do not know or other",
+          "percent": 3.4176449927965367
+        }
+      ],
+      "n": 8209,
+      "weight_sum": 8223.132733042401,
+      "excluded_positive_weight": 71
+    },
+    {
+      "source": "ANES",
+      "year": 2024,
+      "variable": "VCF0838",
+      "wording": "ALL YEARS EXCEPT 2000 TELEPHONE:\n           There has been some discussion about abortion during recent years.\n           (RESPONDENT BOOKLET) Which one of the opinions on this page best agrees\n           with your view? You can just tell me the number of the opinion you\n           choose.\n           2000 TELEPHONE:\n           I am going to read you a short list of opinions. Please tell me which\n\n\n            one of the opinions best agrees with your view. You can just tell me the\n            number of the opinion you choose.",
+      "weight": "VCF0009z",
+      "denominator": "Positive-weight coded answers 1\u20134 and DK/other (9); code 0 combines missing/not-administered and is excluded. Not a full-sample denominator.",
+      "category_definition": "1. By law, abortion should never be permitted.\n            2. The law should permit abortion only in case of rape, incest, or when the\n            woman\u2019s life is in danger.\n            3. The law should permit abortion for reasons other than rape, incest, or\n            danger to the woman\u2019s life, but only after the need for the abortion has\n            been clearly established.\n            4. By law, a woman should always be able to obtain an abortion as a matter of\n            personal choice.\n            9. DK; other",
+      "response_distribution": [
+        {
+          "code": "1",
+          "label": "Never permit",
+          "percent": 5.907977642920514
+        },
+        {
+          "code": "2",
+          "label": "Only rape, incest, or danger to life",
+          "percent": 23.43200857978269
+        },
+        {
+          "code": "3",
+          "label": "Other reasons if need clearly established",
+          "percent": 20.203822300449488
+        },
+        {
+          "code": "4",
+          "label": "Always as personal choice",
+          "percent": 47.425697580029315
+        },
+        {
+          "code": "9",
+          "label": "Do not know or other",
+          "percent": 3.0304938968179926
+        }
+      ],
+      "n": 5245,
+      "weight_sum": 5263.443789504748,
+      "excluded_positive_weight": 276
+    },
+    {
+      "source": "GSS",
+      "year": 1977,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 1530,
+      "weight_sum": 1530.1444999257074,
+      "percent": {
+        "support": 36.53556728449908,
+        "oppose": 60.33875190461753,
+        "neutral": 0.0,
+        "unsure": 2.6359441831499324,
+        "nonresponse": 0.4897366277334626
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 558,
+          "weight_sum": 559.0469733204188,
+          "percent": 36.53556728449908
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 921,
+          "weight_sum": 923.2700935923231,
+          "percent": 60.33875190461753
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 44,
+          "weight_sum": 40.3337549395803,
+          "percent": 2.6359441831499324
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 7,
+          "weight_sum": 7.493678073385214,
+          "percent": 0.4897366277334626
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 1978,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 1532,
+      "weight_sum": 1532.0910000309113,
+      "percent": {
+        "support": 32.797805228176436,
+        "oppose": 63.63343997666278,
+        "neutral": 0.0,
+        "unsure": 2.9770206696094137,
+        "nonresponse": 0.5917341255513596
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 494,
+          "weight_sum": 502.49222210855885,
+          "percent": 32.797805228176436
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 990,
+          "weight_sum": 974.9222068925226,
+          "percent": 63.63343997666278
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 43,
+          "weight_sum": 45.6106657481458,
+          "percent": 2.9770206696094137
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 5,
+          "weight_sum": 9.065905281683994,
+          "percent": 0.5917341255513596
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 1980,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 1468,
+      "weight_sum": 1468.125899934569,
+      "percent": {
+        "support": 39.03753502007754,
+        "oppose": 56.83805953942005,
+        "neutral": 0.0,
+        "unsure": 3.718740357931937,
+        "nonresponse": 0.4056650825704724
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 578,
+          "weight_sum": 573.1201623257858,
+          "percent": 39.03753502007754
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 828,
+          "weight_sum": 834.4542731184567,
+          "percent": 56.83805953942005
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 59,
+          "weight_sum": 54.59579034611826,
+          "percent": 3.718740357931937
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 3,
+          "weight_sum": 5.95567414420806,
+          "percent": 0.4056650825704724
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 1982,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 1860,
+      "weight_sum": 1859.999999999514,
+      "percent": {
+        "support": 39.29907365890089,
+        "oppose": 56.123402326684705,
+        "neutral": 0.0,
+        "unsure": 4.086698831380565,
+        "nonresponse": 0.4908251830338295
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 678,
+          "weight_sum": 730.9627700553656,
+          "percent": 39.29907365890089
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 1082,
+          "weight_sum": 1043.8952832760629,
+          "percent": 56.123402326684705
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 89,
+          "weight_sum": 76.01259826365865,
+          "percent": 4.086698831380565
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 11,
+          "weight_sum": 9.129348404426844,
+          "percent": 0.4908251830338295
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 1983,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 1599,
+      "weight_sum": 1598.8596001086723,
+      "percent": {
+        "support": 31.40770299341516,
+        "oppose": 62.805713394149535,
+        "neutral": 0.0,
+        "unsure": 3.4881743029002936,
+        "nonresponse": 2.2984093095350135
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 519,
+          "weight_sum": 502.16507448383715,
+          "percent": 31.40770299341516
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 996,
+          "weight_sum": 1004.1751780190981,
+          "percent": 62.805713394149535
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 50,
+          "weight_sum": 55.77100971044511,
+          "percent": 3.4881743029002936
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 34,
+          "weight_sum": 36.74833789529202,
+          "percent": 2.2984093095350135
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 1984,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 1473,
+      "weight_sum": 1473.1635000992521,
+      "percent": {
+        "support": 36.93281948003052,
+        "oppose": 59.26160110048009,
+        "neutral": 0.0,
+        "unsure": 3.2460871273467444,
+        "nonresponse": 0.5594922921426446
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 548,
+          "weight_sum": 544.080816137356,
+          "percent": 36.93281948003052
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 872,
+          "weight_sum": 873.0202769866894,
+          "percent": 59.26160110048009
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 42,
+          "weight_sum": 47.82017074149257,
+          "percent": 3.2460871273467444
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 11,
+          "weight_sum": 8.242236233714117,
+          "percent": 0.5594922921426446
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 1985,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 1534,
+      "weight_sum": 1534.2054000532585,
+      "percent": {
+        "support": 38.139989615179594,
+        "oppose": 58.63263975576501,
+        "neutral": 0.0,
+        "unsure": 2.7979511602018885,
+        "nonresponse": 0.42941946885349586
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 547,
+          "weight_sum": 585.1457802558374,
+          "percent": 38.139989615179594
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 934,
+          "weight_sum": 899.5451253267204,
+          "percent": 58.63263975576501
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 48,
+          "weight_sum": 42.926317790670176,
+          "percent": 2.7979511602018885
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 5,
+          "weight_sum": 6.588176680030354,
+          "percent": 0.42941946885349586
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 1987,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 1819,
+      "weight_sum": 1818.9999999927952,
+      "percent": {
+        "support": 38.94381490651313,
+        "oppose": 56.14349274924496,
+        "neutral": 0.0,
+        "unsure": 4.334626647078842,
+        "nonresponse": 0.578065697163063
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 679,
+          "weight_sum": 708.387993146668,
+          "percent": 38.94381490651313
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 1051,
+          "weight_sum": 1021.2501331047208,
+          "percent": 56.14349274924496
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 75,
+          "weight_sum": 78.84685871005183,
+          "percent": 4.334626647078842
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 14,
+          "weight_sum": 10.515015031354467,
+          "percent": 0.578065697163063
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 1988,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 977,
+      "weight_sum": 977.9135020281955,
+      "percent": {
+        "support": 35.19346184936968,
+        "oppose": 59.83269698252133,
+        "neutral": 0.0,
+        "unsure": 4.339353155490038,
+        "nonresponse": 0.6344880126189445
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 338,
+          "weight_sum": 344.161615256128,
+          "percent": 35.19346184936968
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 598,
+          "weight_sum": 585.1120224196927,
+          "percent": 59.83269698252133
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 37,
+          "weight_sum": 42.43512040822364,
+          "percent": 4.339353155490038
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 4,
+          "weight_sum": 6.204743944151018,
+          "percent": 0.6344880126189445
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 504,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 1989,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 1033,
+      "weight_sum": 1037.1343820902161,
+      "percent": {
+        "support": 38.410025848256666,
+        "oppose": 57.43180631292023,
+        "neutral": 0.0,
+        "unsure": 3.840837765744125,
+        "nonresponse": 0.31733007307898325
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 399,
+          "weight_sum": 398.3635842420091,
+          "percent": 38.410025848256666
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 590,
+          "weight_sum": 595.645009526755,
+          "percent": 57.43180631292023
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 39,
+          "weight_sum": 39.834649028837994,
+          "percent": 3.840837765744125
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 5,
+          "weight_sum": 3.2911392926141447,
+          "percent": 0.31733007307898325
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 504,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 1990,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 917,
+      "weight_sum": 910.3011100388768,
+      "percent": {
+        "support": 41.40575594092341,
+        "oppose": 54.0898229649174,
+        "neutral": 0.0,
+        "unsure": 4.091321665622214,
+        "nonresponse": 0.41309942853697657
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 381,
+          "weight_sum": 376.917055950214,
+          "percent": 41.40575594092341
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 496,
+          "weight_sum": 492.38025886770646,
+          "percent": 54.0898229649174
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 36,
+          "weight_sum": 37.243346537420074,
+          "percent": 4.091321665622214
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 4,
+          "weight_sum": 3.760448683536354,
+          "percent": 0.41309942853697657
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 455,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 1991,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 993,
+      "weight_sum": 1002.350410754236,
+      "percent": {
+        "support": 39.358007580542655,
+        "oppose": 56.716061832787716,
+        "neutral": 0.0,
+        "unsure": 3.4679809282406864,
+        "nonresponse": 0.457949658428943
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 405,
+          "weight_sum": 394.50515064825265,
+          "percent": 39.358007580542655
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 546,
+          "weight_sum": 568.4936787445741,
+          "percent": 56.716061832787716
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 35,
+          "weight_sum": 34.76132107909909,
+          "percent": 3.4679809282406864
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 7,
+          "weight_sum": 4.590260282310131,
+          "percent": 0.457949658428943
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 524,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 1993,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 1075,
+      "weight_sum": 1076.9933805585429,
+      "percent": {
+        "support": 41.85949278169372,
+        "oppose": 52.34221708521279,
+        "neutral": 0.0,
+        "unsure": 5.309874138479927,
+        "nonresponse": 0.48841599461356994
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 458,
+          "weight_sum": 450.82396639422234,
+          "percent": 41.85949278169372
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 552,
+          "weight_sum": 563.7222132453244,
+          "percent": 52.34221708521279
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 59,
+          "weight_sum": 57.18699298741877,
+          "percent": 5.309874138479927
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 6,
+          "weight_sum": 5.260207931577318,
+          "percent": 0.48841599461356994
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 531,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 1994,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 1996,
+      "weight_sum": 2026.4243605852066,
+      "percent": {
+        "support": 44.349515091946344,
+        "oppose": 52.59438385326306,
+        "neutral": 0.0,
+        "unsure": 2.768833503307717,
+        "nonresponse": 0.2872675514828853
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 895,
+          "weight_sum": 898.7093776246134,
+          "percent": 44.349515091946344
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 1039,
+          "weight_sum": 1065.7854067022151,
+          "percent": 52.59438385326306
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 56,
+          "weight_sum": 56.10831661507238,
+          "percent": 2.768833503307717
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 6,
+          "weight_sum": 5.8212596433058375,
+          "percent": 0.2872675514828853
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 996,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 1996,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 1923,
+      "weight_sum": 1917.9280372089897,
+      "percent": {
+        "support": 41.60697382762354,
+        "oppose": 53.12507217643796,
+        "neutral": 0.0,
+        "unsure": 4.89918915651727,
+        "nonresponse": 0.36876483942121624
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 819,
+          "weight_sum": 797.9918164741983,
+          "percent": 41.60697382762354
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 1002,
+          "weight_sum": 1018.9006540594157,
+          "percent": 53.12507217643796
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 94,
+          "weight_sum": 93.96292242874733,
+          "percent": 4.89918915651727
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 8,
+          "weight_sum": 7.072644246628215,
+          "percent": 0.36876483942121624
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 981,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 1998,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 1882,
+      "weight_sum": 1881.4641410813083,
+      "percent": {
+        "support": 37.17297618200108,
+        "oppose": 57.09683497736843,
+        "neutral": 0.0,
+        "unsure": 5.379322890383336,
+        "nonresponse": 0.3508659502471548
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 728,
+          "weight_sum": 699.3962170370459,
+          "percent": 37.17297618200108
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 1050,
+          "weight_sum": 1074.256475791557,
+          "percent": 57.09683497736843
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 98,
+          "weight_sum": 101.21003121554104,
+          "percent": 5.379322890383336
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 6,
+          "weight_sum": 6.601417037164401,
+          "percent": 0.3508659502471548
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 950,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2000,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 1861,
+      "weight_sum": 1869.6911527132156,
+      "percent": {
+        "support": 36.093376429841236,
+        "oppose": 58.75766233968389,
+        "neutral": 0.0,
+        "unsure": 4.727891008077083,
+        "nonresponse": 0.42107022239779773
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 705,
+          "weight_sum": 674.8346658242186,
+          "percent": 36.093376429841236
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 1063,
+          "weight_sum": 1098.5868143061746,
+          "percent": 58.75766233968389
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 87,
+          "weight_sum": 88.39695988794088,
+          "percent": 4.727891008077083
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 6,
+          "weight_sum": 7.872712694881485,
+          "percent": 0.42107022239779773
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 956,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2002,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 924,
+      "weight_sum": 950.4261984907199,
+      "percent": {
+        "support": 39.83326693790025,
+        "oppose": 57.217203132142956,
+        "neutral": 0.0,
+        "unsure": 2.8801064790896445,
+        "nonresponse": 0.06942345086714258
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 387,
+          "weight_sum": 378.58580469254616,
+          "percent": 39.83326693790025
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 513,
+          "weight_sum": 543.8072886115394,
+          "percent": 57.217203132142956
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 23,
+          "weight_sum": 27.373286521696627,
+          "percent": 2.8801064790896445
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 1,
+          "weight_sum": 0.659818664937656,
+          "percent": 0.06942345086714258
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 1841,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2004,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssnrps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 898,
+      "weight_sum": 868.5299134307036,
+      "percent": {
+        "support": 36.888083430871454,
+        "oppose": 57.225551725177084,
+        "neutral": 0.0,
+        "unsure": 4.8313745737370315,
+        "nonresponse": 1.0549902702144325
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 346,
+          "weight_sum": 320.38403908839354,
+          "percent": 36.888083430871454
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 507,
+          "weight_sum": 497.02103485892303,
+          "percent": 57.225551725177084
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 35,
+          "weight_sum": 41.96193340279127,
+          "percent": 4.8313745737370315
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 10,
+          "weight_sum": 9.162906080595755,
+          "percent": 1.0549902702144325
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 1914,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2006,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssnrps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 2003,
+      "weight_sum": 2007.5306395980153,
+      "percent": {
+        "support": 38.178386485606026,
+        "oppose": 58.47627530554734,
+        "neutral": 0.0,
+        "unsure": 2.4478249558082874,
+        "nonresponse": 0.8975132530383367
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 784,
+          "weight_sum": 766.4428064026889,
+          "percent": 38.178386485606026
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 1155,
+          "weight_sum": 1173.929143654551,
+          "percent": 58.47627530554734
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 50,
+          "weight_sum": 49.14083599157795,
+          "percent": 2.4478249558082874
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 14,
+          "weight_sum": 18.017853549197476,
+          "percent": 0.8975132530383367
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 2507,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2008,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssnrps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 1352,
+      "weight_sum": 1358.0602054107553,
+      "percent": {
+        "support": 40.15734093442322,
+        "oppose": 56.04267761688906,
+        "neutral": 0.0,
+        "unsure": 3.014424027158233,
+        "nonresponse": 0.7855574215294852
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 550,
+          "weight_sum": 545.3608667815253,
+          "percent": 40.15734093442322
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 748,
+          "weight_sum": 761.093302761611,
+          "percent": 56.04267761688906
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 43,
+          "weight_sum": 40.93769313517626,
+          "percent": 3.014424027158233
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 11,
+          "weight_sum": 10.66834273244276,
+          "percent": 0.7855574215294852
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 671,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2010,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssnrps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 1281,
+      "weight_sum": 1271.5878304730873,
+      "percent": {
+        "support": 41.20750817245075,
+        "oppose": 55.22109446429103,
+        "neutral": 0.0,
+        "unsure": 2.4678202258715425,
+        "nonresponse": 1.1035771373866712
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 537,
+          "weight_sum": 523.9896591620866,
+          "percent": 41.20750817245075
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 693,
+          "weight_sum": 702.1847170619724,
+          "percent": 55.22109446429103
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 34,
+          "weight_sum": 31.380501670135992,
+          "percent": 2.4678202258715425
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 17,
+          "weight_sum": 14.032952578892173,
+          "percent": 1.1035771373866712
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 763,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2012,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssnrps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 1308,
+      "weight_sum": 1302.3497320672777,
+      "percent": {
+        "support": 40.812970814737234,
+        "oppose": 55.31624732561034,
+        "neutral": 0.0,
+        "unsure": 2.6328087169768777,
+        "nonresponse": 1.237973142675531
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 554,
+          "weight_sum": 531.5276160544266,
+          "percent": 40.812970814737234
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 694,
+          "weight_sum": 720.410998834759,
+          "percent": 55.31624732561034
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 40,
+          "weight_sum": 34.2883772713923,
+          "percent": 2.6328087169768777
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 20,
+          "weight_sum": 16.122739906699636,
+          "percent": 1.237973142675531
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 666,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2014,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssnrps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 1714,
+      "weight_sum": 1720.9710370897083,
+      "percent": {
+        "support": 43.61251292537967,
+        "oppose": 52.759071779005964,
+        "neutral": 0.0,
+        "unsure": 2.611804181844293,
+        "nonresponse": 1.0166111137700726
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 746,
+          "weight_sum": 750.5587159927895,
+          "percent": 43.61251292537967
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 907,
+          "weight_sum": 907.9683447540625,
+          "percent": 52.759071779005964
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 43,
+          "weight_sum": 44.948393515038106,
+          "percent": 2.611804181844293
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 18,
+          "weight_sum": 17.495582827818055,
+          "percent": 1.0166111137700726
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 824,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2016,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssnrps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 1890,
+      "weight_sum": 1909.6009227723468,
+      "percent": {
+        "support": 44.21542174181577,
+        "oppose": 52.007773341877034,
+        "neutral": 0.0,
+        "unsure": 2.296222519469052,
+        "nonresponse": 1.4805823968381542
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 837,
+          "weight_sum": 844.3381015893988,
+          "percent": 44.21542174181577
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 973,
+          "weight_sum": 993.1409196498344,
+          "percent": 52.007773341877034
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 52,
+          "weight_sum": 43.84868642068744,
+          "percent": 2.296222519469052
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 28,
+          "weight_sum": 28.273215112426325,
+          "percent": 1.4805823968381542
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 977,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2018,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssnrps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 1574,
+      "weight_sum": 1571.5932208927998,
+      "percent": {
+        "support": 47.842430731111925,
+        "oppose": 48.221801773043744,
+        "neutral": 0.0,
+        "unsure": 2.523019701659352,
+        "nonresponse": 1.4127477941849778
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 764,
+          "weight_sum": 751.8883980804885,
+          "percent": 47.842430731111925
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 760,
+          "weight_sum": 757.8505676575194,
+          "percent": 48.221801773043744
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 30,
+          "weight_sum": 39.65160659306812,
+          "percent": 2.523019701659352
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 20,
+          "weight_sum": 22.202648561723674,
+          "percent": 1.4127477941849778
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 774,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2021,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssnrps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 1357,
+      "weight_sum": 1330.9256012462029,
+      "percent": {
+        "support": 52.56078068262369,
+        "oppose": 45.28622153280569,
+        "neutral": 0.0,
+        "unsure": 0.25476956365709,
+        "nonresponse": 1.8982282209135297
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 749,
+          "weight_sum": 699.5448863199074,
+          "percent": 52.56078068262369
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 579,
+          "weight_sum": 602.7259162171815,
+          "percent": 45.28622153280569
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 4,
+          "weight_sum": 3.390793346895453,
+          "percent": 0.25476956365709
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 2,
+          "weight_sum": 1.809773962392755,
+          "percent": 0.13597859720319347
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 23,
+          "weight_sum": 23.45423139982574,
+          "percent": 1.7622496237103362
+        }
+      ],
+      "excluded_positive_weight": 2675,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2022,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssnrps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 1177,
+      "weight_sum": 1147.7454824939928,
+      "percent": {
+        "support": 54.780436183707344,
+        "oppose": 41.21997626937146,
+        "neutral": 0.0,
+        "unsure": 2.349362982343314,
+        "nonresponse": 1.6502245645778795
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 669,
+          "weight_sum": 628.7399815890057,
+          "percent": 54.780436183707344
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 467,
+          "weight_sum": 473.1004155168068,
+          "percent": 41.21997626937146
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 24,
+          "weight_sum": 26.964707497231526,
+          "percent": 2.349362982343314
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 10,
+          "weight_sum": 14.376455678504232,
+          "percent": 1.2525822055308746
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 7,
+          "weight_sum": 4.563922212444542,
+          "percent": 0.3976423590470049
+        }
+      ],
+      "excluded_positive_weight": 2367,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "GSS",
+      "year": 2024,
+      "variable": "abany",
+      "wording": "Whether it should be possible for a pregnant woman to obtain a legal abortion if she wants it for any reason (ABANY; item wording summarized).",
+      "weight": "wtssnrps",
+      "denominator": "Standard ABANY form only (ABANYG grid form is not merged). Positive-weight substantive, do-not-know and nonresponse item answers; inapplicable/unavailable/system missing excluded.",
+      "n": 2242,
+      "weight_sum": 2262.5466308323353,
+      "percent": {
+        "support": 55.23825800071685,
+        "oppose": 39.52878003299227,
+        "neutral": 0.0,
+        "unsure": 3.4198426574779752,
+        "nonresponse": 1.8131193088129085
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 1281,
+          "weight_sum": 1249.791345325692,
+          "percent": 55.23825800071685
+        },
+        {
+          "code": "2",
+          "group": "oppose",
+          "n": 859,
+          "weight_sum": 894.3570808455916,
+          "percent": 39.52878003299227
+        },
+        {
+          "code": "d",
+          "group": "unsure",
+          "n": 65,
+          "weight_sum": 77.37553482653493,
+          "percent": 3.4198426574779752
+        },
+        {
+          "code": "n",
+          "group": "nonresponse",
+          "n": 18,
+          "weight_sum": 19.923766021442148,
+          "percent": 0.8805902936954136
+        },
+        {
+          "code": "r",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        },
+        {
+          "code": "s",
+          "group": "nonresponse",
+          "n": 19,
+          "weight_sum": 21.09890381307484,
+          "percent": 0.9325290151174949
+        }
+      ],
+      "excluded_positive_weight": 1067,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "PRRI",
+      "year": 2019,
+      "variable": "Q51",
+      "wording": "Do you think abortion should be legal in all cases, legal in most cases, illegal in most cases, or illegal in all cases?",
+      "weight": "weight",
+      "denominator": "All positive-weight wave respondents; support means legal all/most, opposition illegal most/all. Unsure/refused/skipped retained.",
+      "n": 2527,
+      "weight_sum": 2527.0000000008,
+      "percent": {
+        "support": 58.94565079551755,
+        "oppose": 39.69646372956401,
+        "neutral": 0.0,
+        "unsure": 1.3578854749184461,
+        "nonresponse": 0.0
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 622,
+          "weight_sum": 618.4738725333,
+          "percent": 24.474628909105828
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 890,
+          "weight_sum": 871.0827230699,
+          "percent": 34.47102188641172
+        },
+        {
+          "code": "3",
+          "group": "oppose",
+          "n": 707,
+          "weight_sum": 726.6507908424,
+          "percent": 28.755472530358922
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 272,
+          "weight_sum": 276.478847604,
+          "percent": 10.940991199205085
+        },
+        {
+          "code": "9",
+          "group": "unsure",
+          "n": 36,
+          "weight_sum": 34.3137659512,
+          "percent": 1.3578854749184461
+        },
+        {
+          "code": "missing",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "PRRI",
+      "year": 2020,
+      "variable": "Q48",
+      "wording": "Do you think abortion should be legal or illegal?",
+      "weight": "weight",
+      "denominator": "All positive-weight wave respondents; support means legal all/most, opposition illegal most/all. Unsure/refused/skipped retained.",
+      "n": 2538,
+      "weight_sum": 2538.000000115,
+      "percent": {
+        "support": 59.57180249966479,
+        "oppose": 39.20707603691536,
+        "neutral": 0.0,
+        "unsure": 0.09294678183187986,
+        "nonresponse": 1.128174681587967
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 617,
+          "weight_sum": 556.461288512,
+          "percent": 21.925188671662177
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 946,
+          "weight_sum": 955.471058998,
+          "percent": 37.646613828002614
+        },
+        {
+          "code": "3",
+          "group": "oppose",
+          "n": 652,
+          "weight_sum": 676.120455798,
+          "percent": 26.639891874206626
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 295,
+          "weight_sum": 318.955134064,
+          "percent": 12.567184162708735
+        },
+        {
+          "code": "77",
+          "group": "unsure",
+          "n": 2,
+          "weight_sum": 2.358989323,
+          "percent": 0.09294678183187986
+        },
+        {
+          "code": "98",
+          "group": "nonresponse",
+          "n": 24,
+          "weight_sum": 25.821320791,
+          "percent": 1.0173885259980302
+        },
+        {
+          "code": "99",
+          "group": "nonresponse",
+          "n": 2,
+          "weight_sum": 2.811752629,
+          "percent": 0.11078615558993679
+        },
+        {
+          "code": "missing",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "PRRI",
+      "year": 2021,
+      "variable": "Q31",
+      "wording": "Do you think abortion should be legal or illegal?",
+      "weight": "KP_WEIGHT",
+      "denominator": "All positive-weight wave respondents; support means legal all/most, opposition illegal most/all. Unsure/refused/skipped retained.",
+      "n": 2508,
+      "weight_sum": 2507.9994,
+      "percent": {
+        "support": 60.017510371015234,
+        "oppose": 37.822365507742944,
+        "neutral": 0.0,
+        "unsure": 0.0,
+        "nonresponse": 2.1601241212418154
+      },
+      "categories": [
+        {
+          "code": "-1",
+          "group": "nonresponse",
+          "n": 46,
+          "weight_sum": 54.1759,
+          "percent": 2.1601241212418154
+        },
+        {
+          "code": "1",
+          "group": "support",
+          "n": 683,
+          "weight_sum": 683.189,
+          "percent": 27.240397266442724
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 828,
+          "weight_sum": 822.0498,
+          "percent": 32.77711310457251
+        },
+        {
+          "code": "3",
+          "group": "oppose",
+          "n": 693,
+          "weight_sum": 674.1807,
+          "percent": 26.88121456488387
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 258,
+          "weight_sum": 274.404,
+          "percent": 10.941150942859077
+        },
+        {
+          "code": "missing",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "PRRI",
+      "year": 2023,
+      "variable": "Q38",
+      "wording": "Do you think abortion should be legal or illegal?",
+      "weight": "KP_WEIGHT",
+      "denominator": "All positive-weight wave respondents; support means legal all/most, opposition illegal most/all. Unsure/refused/skipped retained.",
+      "n": 2525,
+      "weight_sum": 2524.9993,
+      "percent": {
+        "support": 60.21871372399984,
+        "oppose": 37.18378060540452,
+        "neutral": 0.0,
+        "unsure": 0.0,
+        "nonresponse": 2.597505670595632
+      },
+      "categories": [
+        {
+          "code": "1",
+          "group": "support",
+          "n": 695,
+          "weight_sum": 666.1551,
+          "percent": 26.382387511949013
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 888,
+          "weight_sum": 854.367,
+          "percent": 33.83632621205083
+        },
+        {
+          "code": "3",
+          "group": "oppose",
+          "n": 685,
+          "weight_sum": 713.514,
+          "percent": 28.257988031917474
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 206,
+          "weight_sum": 225.3762,
+          "percent": 8.925792573487051
+        },
+        {
+          "code": "99",
+          "group": "nonresponse",
+          "n": 51,
+          "weight_sum": 65.587,
+          "percent": 2.597505670595632
+        },
+        {
+          "code": "missing",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "PRRI",
+      "year": 2024,
+      "variable": "Q11A_A",
+      "wording": "Do you think the following should be legal or illegal? Abortion.",
+      "weight": "weight",
+      "denominator": "All positive-weight wave respondents; support means legal all/most, opposition illegal most/all. Unsure/refused/skipped retained.",
+      "n": 5352,
+      "weight_sum": 5352.0053,
+      "percent": {
+        "support": 62.2775653828295,
+        "oppose": 34.35835162569813,
+        "neutral": 0.0,
+        "unsure": 0.0,
+        "nonresponse": 3.364082991472374
+      },
+      "categories": [
+        {
+          "code": "-1",
+          "group": "nonresponse",
+          "n": 130,
+          "weight_sum": 180.0459,
+          "percent": 3.364082991472374
+        },
+        {
+          "code": "1",
+          "group": "support",
+          "n": 1348,
+          "weight_sum": 1343.2501,
+          "percent": 25.098071184645505
+        },
+        {
+          "code": "2",
+          "group": "support",
+          "n": 2118,
+          "weight_sum": 1989.8485,
+          "percent": 37.179494198183995
+        },
+        {
+          "code": "3",
+          "group": "oppose",
+          "n": 1435,
+          "weight_sum": 1461.4714,
+          "percent": 27.306987158626317
+        },
+        {
+          "code": "4",
+          "group": "oppose",
+          "n": 321,
+          "weight_sum": 377.3894,
+          "percent": 7.05136446707181
+        },
+        {
+          "code": "missing",
+          "group": "nonresponse",
+          "n": 0,
+          "weight_sum": 0.0,
+          "percent": 0.0
+        }
+      ],
+      "excluded_positive_weight": 0,
+      "missing_or_zero_weight": 0
+    },
+    {
+      "source": "VOTER",
+      "year": 2020,
+      "variable": "roevwade_2020Nov",
+      "wording": "As you may know, the 1973 Supreme Court Case Roe v. Wade established a woman's constitutional right to have an abortion. Would you like to see the Supreme Court overturn its Roe v. Wade decision, or not?",
+      "weight": "weight_genpop_2020Nov",
+      "denominator": "All positive-weight November-wave respondents, including not sure and skipped; no yes/no-only renormalization.",
+      "fieldwork_start": "2020-11-13",
+      "fieldwork_end": "2020-12-07",
+      "n": 4943,
+      "percent": {
+        "support": 54.36078812201273,
+        "oppose": 26.037781357950628,
+        "neutral": 0,
+        "unsure": 19.57708393281063,
+        "nonresponse": 0.02434658722600607
+      },
+      "orientation": "Support = retain Roe; oppose = overturn Roe. Not general abortion legality."
+    }
+  ],
+  "provenance": {
+    "data/raw/rebuild/anes-20260205/sources.json": "dc31123a089f2fdb95fff880c7afa2d3b025ed5fd6d1418f5aa8931ed8a1c368",
+    "data/raw/rebuild/anes-20260205/anes_timeseries_cdf_stata_20260205.dta": "45323c30faee1e9e67c2351c4302c31472b117050bef240d9339a264e2f3e078",
+    "data/anes/response_mappings.json": "cc1b5f161c1907b2534dd8359013ea6de3b2905ba91d3f54614e31db11ebc6ca",
+    "data/raw/rebuild/anes-20260205/anes_timeseries_cdf_codebook_var_20260205.pdf": "0dbaa80807abac50229dbdde66055b1756eaefe9cb9f6140ffc1938c134d5123",
+    "data/manifests/gss-2024-r3a.json": "bb521484420a0df344315e1876f6720edf0fd3b797433852b8a9639ce4e18f35",
+    "data/raw/gss-2024-r3a/gss7224_r3a.dta": "a7622e03d9130e25968943b6f022f44dc0087baf0aa6b5cef150871152827344",
+    "data/prri/policy-batch-mappings.json": "eff3868c9a8095ead1ce2c4a3e7b017f8318e65048929e8fb35a3dfa771bd3cc",
+    "data/manifests/prri-avs-acquisition.json": "eb6be8dd08f161fcfbf8df3634e09177a0eeb737a70cc912b7f856ee4f47b755",
+    "data/manifests/prri-all-policy-documents.json": "34b02b1d31752de13285dce613a3fc5cb2604a74d31bc5ec5320898747402183",
+    "data/raw/prri-avs-2019/responses.dta": "15f5cdf2a243adf7b93fc0fa5390876b639c000214abb9abfd3efc102d3dcf74",
+    "data/raw/prri-avs-2020/responses.dta": "4cb1b4cb6788c9edd5e452d66b1243696b2067638ce899a1e85cf96ade990636",
+    "data/raw/prri-avs-2021/responses.dta": "f5c0af1dee38c51016065ba2976c4c46d565f819aff019e12b21beed236328bc",
+    "data/raw/prri-avs-2023/responses.dta": "77f8a295839f16997f037214a79c80139158afdceaf2045ee18cd07725a9b539",
+    "data/raw/prri-avs-2024/responses.dta": "f7560d89700dc19c8bfcb6751fb9936b748b5d35dd90292102dce645ebb34326",
+    "data/research/voter-roe-dobbs-comparison.json": "818f4b2a98b8ac9a8f038ae564e257e2370eada85ff6ddcbe1cf5f759e96f2bf",
+    "data/raw/voter/VOTER Panel Data Files/voter_panel.dta": "29382b5993748020e21dc0ef0749c65d76d87f729cac1fb2bdd11aab55d6e1f2",
+    "data/raw/voter/guide.pdf": "3a4fb03bcfe208937c5723a4f30239a9155930a818c21a708c8ac93395a981e5",
+    "data/manifests/voter-policy-batch.json": "77d9afc929283f908320bee48686edfab2801f116d25f1f50d91e0a4956804c6",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/compare_voter_roe_dobbs.py": "741c511e4204299454b114f1a5a70b99ff7ce9eefc7fe624c5772928a7dfdec2",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/abortion_policy_surveys.py": "13f11edaff75f179fbb9b1d75d995a72ea022a810fb914e1345bb6024ed997e1"
+  },
+  "input_sha256": "f058246d95285dc22b12e3eccb5adab23fe717c77c7a50760c09677211741b3d",
+  "limitations": []
+}

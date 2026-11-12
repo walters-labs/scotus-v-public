@@ -103,3 +103,47 @@ state these selected holdings, but broad attitude questions often do not measure
 the specific policies decided. The defensible result is a small set of explicit
 comparisons with visible gaps. No general alignment rate, forecast, pooled
 percentage, or new production score is justified by this exercise.
+
+## Published overview
+
+The local policy page now introduces the named Roe-retention comparison, shows
+all nine selected legal components in its timeline, and offers the full 56
+observations in expandable source/question histories. ANES wording variants
+remain separate (including both 1980 questions); PRRI all/most categories remain
+available, and GSS is explicitly the standard ABANY form. The 2020 VOTER
+observation is not described as opinion on the 2022 decision date. No scores,
+raw responses, policy matches or legal interpretations were changed.
+
+After regenerating survey inputs, run:
+
+```sh
+.venv/bin/python scripts/build_abortion_history.py
+```
+
+The resulting abortion-opinion-history.json is included in native and Docker
+release packaging. Tests compare every history record with its audited input.
+
+## Targeted pre-decision toplines
+
+Four published toplines supplement the original 56 raw-derived observations:
+Gallup May 2–22, 2022 Q16 (Form A, n=492; 35 overturn, 58 not overturn, 7 no
+opinion), and Times Mirror April 30–May 3, 1992 Q41a–c (n=1,301).
+Times Mirror, not Pew, conducted the latter; Pew hosts the archived report.
+Parental consent is contextual because judicial bypass is absent from the item.
+Notification and waiting questions match the broad policy components, not all
+exceptions or constitutional reasoning. Original response direction is retained.
+Gallup fieldwork largely followed the draft leak: it is pre-judgment evidence,
+not an uncontaminated forecast. These are public aggregate reports, not new
+respondent-level files or assertions of open microdata licensing.
+
+Rebuild the final comparison with:
+
+```sh
+PYTHONPATH=. .venv/bin/python scripts/build_abortion_toplines.py
+```
+
+This must follow the baseline comparison build. Source hashes and locators live
+in `data/research/abortion-published-toplines.json`. Existing observations remain
+unchanged; the additional records are used only in the policy comparison, not
+the general search index or pooled history. The opening panel features Gallup;
+the earlier VOTER comparison remains accessible.

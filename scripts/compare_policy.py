@@ -13,7 +13,9 @@ GROUPS = {'support', 'oppose', 'neutral', 'unsure', 'nonresponse'}
 
 
 def compare(cases, surveys, mapping):
-    """Select latest strictly earlier calendar year per source, retaining ties.
+    """Select latest eligible year per source, retaining eligible variants.
+
+    Verified fieldwork must end before the ruling; otherwise require a prior year.
 
     Mapping explicitly lists source/variable pairs measuring each policy. All
     support shares must already be oriented toward the policy in the mapping.
@@ -52,8 +54,13 @@ def compare(cases, surveys, mapping):
             numbers = [c['percent'] for c in distribution]
         if any(not math.isfinite(v) or v < 0 or v > 100 for v in numbers):
             raise ValueError('Invalid response shares')
-        if not math.isclose(sum(numbers), 100, abs_tol=1e-6):
+        tolerance = len(numbers) * 0.5 if r.get('data_kind') == 'published_topline' else 1e-6
+        if abs(sum(numbers) - 100) > tolerance:
             raise ValueError('Response shares must sum to 100')
+        if 'field_start' in r or 'field_end' in r:
+            start, end = date.fromisoformat(r['field_start']), date.fromisoformat(r['field_end'])
+            if start > end or end.year != r['year']:
+                raise ValueError('Invalid fieldwork dates')
         if not r['denominator'] or not r['wording']:
             raise ValueError('Missing survey meaning/denominator')
     output = []
@@ -85,7 +92,9 @@ def compare(cases, surveys, mapping):
             comparisons = []
             for source in sources:
                 matched = [r for r in records if r['source'] == source]
-                eligible = [r for r in matched if year-age <= r['year'] < year]
+                eligible = [r for r in matched if year-age <= r['year'] <= year
+                            and (date.fromisoformat(r['field_end']) < date.fromisoformat(case['date'])
+                                 if r.get('field_end') else r['year'] < year)]
                 selected = []
                 if fit == 'not_comparable':
                     status = 'not_comparable'
@@ -101,7 +110,7 @@ def compare(cases, surveys, mapping):
             components.append({**deepcopy(component), 'comparisons': comparisons,
                                'coverage_status': 'no_matching_question' if not sources else 'see_source_comparisons'})
         output.append({**deepcopy(case), 'components': components})
-    return dict(schema_version=1, timing_rule=f'Latest earlier calendar year per source within {age} years; retain all same-year question variants.',
+    return dict(schema_version=1, timing_rule=f'Latest eligible year per source within {age} years; dated fieldwork must end before the decision, otherwise an earlier calendar year is required. Retain all eligible question variants in that year.',
                 policies=deepcopy(policies), cases=output,
                 limitations=['Explicit source-based legal coding is an input, not an automated legal classifier.',
                              'Contextual matches do not measure approval of the specific holding.',

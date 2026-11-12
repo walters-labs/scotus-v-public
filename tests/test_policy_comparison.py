@@ -21,6 +21,22 @@ class PolicyComparisonTests(unittest.TestCase):
         rows = self.run_comparison(records)['cases'][0]['components'][0]['comparisons'][0]['observations']
         self.assertEqual([(r['year'],r['variable']) for r in rows], [(2014,'q'),(2014,'q2')])
 
+    def test_verified_dates_and_rounding(self):
+        dated={**self.record,'year':2015,'field_start':'2015-04-16','field_end':'2015-04-20'}
+        rows=self.run_comparison([self.record,dated])['cases'][0]['components'][0]['comparisons'][0]['observations']
+        self.assertEqual(rows,[dated])
+        for end in ['2015-06-26','2015-06-27']:
+            rows=self.run_comparison([self.record,{**dated,'field_end':end}])['cases'][0]['components'][0]['comparisons'][0]['observations']
+            self.assertEqual(rows,[self.record])
+        with self.assertRaises(ValueError):
+            self.run_comparison([{**dated,'field_end':'2015-01-01'}])
+        rounded={k:v for k,v in dated.items() if k!='percent'}
+        rounded.update(data_kind='published_topline',response_distribution=[
+            dict(code='s',label='Support',percent=62),dict(code='o',label='Oppose',percent=36),dict(code='n',label='No opinion',percent=3)])
+        self.run_comparison([rounded])
+        with self.assertRaises(ValueError):
+            self.run_comparison([{k:v for k,v in rounded.items() if k!='data_kind'}])
+
     def test_stale_and_missing_distinguished(self):
         for records, status in [([{**self.record,'year':2011}], 'no_prior_observation'),([], 'no_matching_question')]:
             row=self.run_comparison(records)['cases'][0]['components'][0]['comparisons'][0]

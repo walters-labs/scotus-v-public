@@ -1,0 +1,160 @@
+{
+  "survey_records": [
+    {
+      "source": "Gallup",
+      "variable": "abortion_topline_16",
+      "year": 2022,
+      "field_start": "2022-05-02",
+      "field_end": "2022-05-22",
+      "data_kind": "published_topline",
+      "source_url": "https://news.gallup.com/file/poll/393293/2022_06_03%20Roe%20v.%20Wade.pdf",
+      "source_page": 2,
+      "source_item": "16",
+      "sample_n": 492,
+      "wording": "Overturning Roe v. Wade.",
+      "wording_note": "Paraphrased question summary; original wording and context are in the report. Form A half sample; fieldwork largely followed the draft-opinion leak.",
+      "weight": "Publisher-weighted topline; no respondent-level recalculation",
+      "denominator": "Published full item response distribution, including uncertainty; percentages retained as reported.",
+      "orientation": "Yes means overturning Roe.",
+      "response_distribution": [
+        {
+          "code": "0",
+          "label": "Yes, overturn",
+          "percent": 35
+        },
+        {
+          "code": "1",
+          "label": "No, do not overturn",
+          "percent": 58
+        },
+        {
+          "code": "2",
+          "label": "No opinion",
+          "percent": 7
+        }
+      ],
+      "policy_id": "retain_roe",
+      "case_id": "2021-019",
+      "comparison_fit": "direct",
+      "survey_fit": "Asks about overturning Roe, matching the overruling component. Fieldwork was largely after the draft leak but before the judgment."
+    },
+    {
+      "source": "Times Mirror Center (Pew archive)",
+      "variable": "abortion_topline_41a",
+      "year": 1992,
+      "field_start": "1992-04-30",
+      "field_end": "1992-05-03",
+      "data_kind": "published_topline",
+      "source_url": "https://www.pewresearch.org/wp-content/uploads/sites/4/legacy-pdf/19920509.pdf",
+      "source_page": 20,
+      "source_item": "41a",
+      "sample_n": 1301,
+      "wording": "Requiring at least one parent\u2019s consent for an abortion before age 18.",
+      "wording_note": "Paraphrased question summary; original wording and context are in the report. Original organization: Times Mirror Center for the People & the Press; report hosted by Pew.",
+      "weight": "Publisher-weighted topline; no respondent-level recalculation",
+      "denominator": "Published full item response distribution, including uncertainty; percentages retained as reported.",
+      "orientation": "Favor means favoring the restriction, not greater abortion access.",
+      "response_distribution": [
+        {
+          "code": "0",
+          "label": "Favor requirement",
+          "percent": 73
+        },
+        {
+          "code": "1",
+          "label": "Oppose requirement",
+          "percent": 23
+        },
+        {
+          "code": "2",
+          "label": "Do not know",
+          "percent": 4
+        }
+      ],
+      "policy_id": "parental_consent",
+      "case_id": "1991-117",
+      "comparison_fit": "contextual",
+      "survey_fit": "Specific parental-consent preference, but the question omits judicial bypass; it does not measure approval of the full upheld rule."
+    },
+    {
+      "source": "Times Mirror Center (Pew archive)",
+      "variable": "abortion_topline_41b",
+      "year": 1992,
+      "field_start": "1992-04-30",
+      "field_end": "1992-05-03",
+      "data_kind": "published_topline",
+      "source_url": "https://www.pewresearch.org/wp-content/uploads/sites/4/legacy-pdf/19920509.pdf",
+      "source_page": 20,
+      "source_item": "41b",
+      "sample_n": 1301,
+      "wording": "Requiring married women to notify husbands in most cases before an abortion.",
+      "wording_note": "Paraphrased question summary; original wording and context are in the report. Original organization: Times Mirror Center for the People & the Press; report hosted by Pew.",
+      "weight": "Publisher-weighted topline; no respondent-level recalculation",
+      "denominator": "Published full item response distribution, including uncertainty; percentages retained as reported.",
+      "orientation": "Favor means favoring the restriction, not greater abortion access.",
+      "response_distribution": [
+        {
+          "code": "0",
+          "label": "Favor requirement",
+          "percent": 69
+        },
+        {
+          "code": "1",
+          "label": "Oppose requirement",
+          "percent": 27
+        },
+        {
+          "code": "2",
+          "label": "Do not know",
+          "percent": 4
+        }
+      ],
+      "policy_id": "spousal_notification",
+      "case_id": "1991-117",
+      "comparison_fit": "direct",
+      "survey_fit": "Direct broad notification-policy match; does not measure approval of every statutory exception or constitutional rationale."
+    },
+    {
+      "source": "Times Mirror Center (Pew archive)",
+      "variable": "abortion_topline_41c",
+      "year": 1992,
+      "field_start": "1992-04-30",
+      "field_end": "1992-05-03",
+      "data_kind": "published_topline",
+      "source_url": "https://www.pewresearch.org/wp-content/uploads/sites/4/legacy-pdf/19920509.pdf",
+      "source_page": 20,
+      "source_item": "41c",
+      "sample_n": 1301,
+      "wording": "A 24-hour wait to consider physician-provided information on abortion risks and alternatives.",
+      "wording_note": "Paraphrased question summary; original wording and context are in the report. Original organization: Times Mirror Center for the People & the Press; report hosted by Pew.",
+      "weight": "Publisher-weighted topline; no respondent-level recalculation",
+      "denominator": "Published full item response distribution, including uncertainty; percentages retained as reported.",
+      "orientation": "Favor means favoring the restriction, not greater abortion access.",
+      "response_distribution": [
+        {
+          "code": "0",
+          "label": "Favor requirement",
+          "percent": 81
+        },
+        {
+          "code": "1",
+          "label": "Oppose requirement",
+          "percent": 15
+        },
+        {
+          "code": "2",
+          "label": "Do not know",
+          "percent": 4
+        }
+      ],
+      "policy_id": "waiting_period",
+      "case_id": "1991-117",
+      "comparison_fit": "direct",
+      "survey_fit": "Matches the waiting-and-information policy component, not every implementation detail or the legal standard."
+    }
+  ],
+  "provenance": {
+    "data/raw/abortion-targeted-polls/gallup-2022-roe.pdf": "f9bf9f0ab6f84fc42a5641ada32227e8edb18fa4d2654c0d3e185adb1de6e244",
+    "data/raw/abortion-targeted-polls/times-mirror-1992.pdf": "3780dc8a2a4b8fa672de60e2829ef86a5f38faa20c7642c3b9488c539ce8d075"
+  }
+}
