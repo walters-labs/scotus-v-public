@@ -1,189 +1,48 @@
-<h1 id="rebuilding-scotus-v-public-opinion">Rebuilding SCOTUS v. Public
-Opinion</h1>
-<p>In 2018, I built a Flask application for my capstone at The Data
-Incubator. The idea was to search Supreme Court opinions and
-public-opinion questions by topic, then compare their
-liberal-to-conservative scores over time.</p>
-<p>I recently dusted off that codebase and rebuilt it. <a
-href="https://svp.walterslabs.dev">SCOTUS v. Public Opinion</a> is
-running again, with more survey sources, better search, a simpler
-interface, and a reproducible deployment process. The <a
-href="https://github.com/walters-labs/scotus-v-public">code is public
-under the MIT license</a>.</p>
-<p>The biggest change is in how the app presents the comparison.
-Alongside the broad topic search, there are now <a
-href="https://svp.walterslabs.dev/policy-comparisons">ten policy
-comparisons</a> that ask a more specific question: what did a ruling
-change, and what had people actually been asked about that policy?</p>
+<h1 id="rebuilding-scotus-v-public-opinion">Rebuilding SCOTUS v. Public Opinion</h1>
+<p>In 2018, I built a Flask application for my capstone at The Data Incubator. The idea was to search Supreme Court opinions and public-opinion questions by topic, then compare their liberal-to-conservative scores over time.</p>
+<p>I recently dusted off that codebase and rebuilt it. <a href="https://svp.walterslabs.dev">SCOTUS v. Public Opinion</a> is running again, with more survey sources, better search, a simpler interface, and a reproducible deployment process. The <a href="https://github.com/walters-labs/scotus-v-public">code is public under the MIT license</a>.</p>
+<p>The biggest change is in how the app presents the comparison. Alongside the broad topic search, there are now <a href="https://svp.walterslabs.dev/policy-comparisons">ten policy comparisons</a> that ask a more specific question: what did a ruling change, and what had people actually been asked about that policy?</p>
 <h2 id="what-you-can-explore">What you can explore</h2>
-<p>The search lets you enter a phrase such as “birth control,”
-“immigration,” or “gun control” and browse related court cases and
-survey questions. Public-opinion sources include ANES, GSS, CES, PRRI,
-Nationscape, VOTER, U.S. observations from the World Values Survey, and
-a selected Pew wave. Coverage varies by topic and year; including a
-source does not mean every question in its archive is included.</p>
-<p>Court search combines TF-IDF with embeddings. TF-IDF gives weight to
-distinctive terms; embeddings help retrieve related language, such as
-“contraception” for “birth control.” The results provide a starting
-point for exploration. A document can be relevant to a topic without
-deciding the particular policy you have in mind.</p>
-<p>The policy comparisons take a more focused approach. They cover
-marriage equality, abortion, capital punishment, affirmative action,
-voter ID, handgun rights, contraception, medical marijuana, school
-religion, and campaign finance. They pair selected holdings with
-explicitly chosen survey questions, including published polling tables
-that are separate from the general search database.</p>
-<p>These are ten historical examples with different levels of evidence.
-They are not a comprehensive or representative sample of the Court’s
-work.</p>
-<h2 id="why-the-original-chart-wasnt-enough">Why the original chart
-wasn’t enough</h2>
-<p>The exploratory court chart uses the Supreme Court Database’s
-liberal/conservative direction coding and vote margin. That is a compact
-measure, but vote margin is not the size of a policy change. A 5–4
-ruling can establish a substantial protection; a unanimous decision can
-resolve a narrow procedural issue.</p>
-<p>A single case can also contain several outcomes. And a survey about a
-broad subject may say little about the specific question the Court
-decided.</p>
-<p>The detailed comparisons therefore separate legal components and
-retain the survey’s response categories. Each component identifies
-whether the available question is a close policy match, broader context,
-missing evidence, or not comparable because the ruling is procedural.
-Those distinctions are easier to understand through examples.</p>
-<h2 id="four-examples-worth-exploring">Four examples worth
-exploring</h2>
-<h3 id="marriage-equality-what-kind-of-recognition">Marriage equality:
-what kind of recognition?</h3>
-<p>The <a
-href="https://svp.walterslabs.dev/policy-comparisons?topic=marriage">marriage
-equality pane</a> is one of the most developed examples, with several
-sources and a separate history of public opinion.</p>
-<p>Questions about allowing same-sex couples to marry speak closely to
-the licensing requirement in Obergefell. Federal recognition in Windsor
-and recognition across state lines are distinct questions, so the pane
-separates them. General marriage support provides only broader context
-for equal treatment on birth certificates in Pavan.</p>
-<p>Hollingsworth is different again: its standing ruling should not be
-counted as a substantive vote for or against marriage equality. Showing
-it as procedural is more informative than forcing it onto the same
-scale.</p>
-<p>Even a close policy match does not mean respondents endorsed the
-Court’s constitutional reasoning.</p>
-<h3 id="abortion-a-ruling-can-move-in-several-directions">Abortion: a
-ruling can move in several directions</h3>
-<p>The <a
-href="https://svp.walterslabs.dev/policy-comparisons?topic=abortion">abortion
-pane</a> separates legal access, notification requirements, waiting
-periods, funding, and other restrictions.</p>
-<p>Casey illustrates why this matters. It retained core constitutional
-protection, invalidated spousal notification, and allowed other
-restrictions. One directional score loses that structure. Earlier
-questions about notification and waiting periods help address particular
-components.</p>
-<p>For Dobbs, the pane includes a 2020 VOTER question explicitly asking
-whether Roe should be overturned. About 54.4% opposed overturning it,
-26.0% favored doing so, and 19.6% were unsure. That provides a
-meaningful comparison with the Court’s 2022 decision to overrule Roe,
-while leaving a substantial time gap. It is not a decision-day approval
-poll or an answer about Mississippi’s particular fifteen-week
-restriction. The <a
-href="https://github.com/walters-labs/scotus-v-public/blob/master/docs/VOTER_ROE_DOBBS_CASE_STUDY.md">calculation
-is documented</a>.</p>
-<p>The broader abortion history is displayed separately from the earlier
-polling attached to rulings. Later surveys can describe subsequent
-opinion; they cannot stand in for what people said before a
-decision.</p>
-<h3 id="school-religion-who-is-speaking">School religion: who is
-speaking?</h3>
-<p>The <a
-href="https://svp.walterslabs.dev/policy-comparisons?topic=school-religion">school
-religion pane</a> contrasts school-sponsored prayer with access for a
-private religious group.</p>
-<p>Before Santa Fe, a 2000 Freedom Forum question asked about students
-leading prayer over a public-address system at school-sponsored events,
-including football games. That is a much closer comparison than a
-generic question about religion in schools, although it does not
-describe the full policy or its election procedure.</p>
-<p>Before Good News Club, Pew asked separate groups of respondents about
-after-hours school access for student religious organizations and
-religious organizations generally. Those questions help illuminate
-preferences about access, but omit details such as adult leadership,
-young children, and parental permission. Not objecting to access is also
-different from believing the Constitution requires it.</p>
-<p>A single pro-religion or anti-religion score would obscure the
-distinction between these two cases. The <a
-href="https://github.com/walters-labs/scotus-v-public/blob/master/docs/SCHOOL_RELIGION_SOURCES.md">source
-notes</a> preserve the question wording, fieldwork dates, and separate
-sample sizes.</p>
-<h3 id="campaign-finance-which-limits">Campaign finance: which
-limits?</h3>
-<p>The <a
-href="https://svp.walterslabs.dev/policy-comparisons?topic=campaign-finance">campaign
-finance pane</a> shows both a useful comparison and an unresolved
-gap.</p>
-<p>For McCutcheon, two earlier YouGov/HuffPost questions address total
-contributions across candidates and whether those limits violate free
-speech. They come from one sample, use an older dollar limit, and do not
-describe the full statutory structure. They are useful context, not an
-exact measure of approval of the ruling.</p>
-<p>Citizens United concerns independent spending. A broad question about
-campaign contributions cannot automatically answer that question, and
-the pane leaves disclosure without a matched earlier poll. The <a
-href="https://github.com/walters-labs/scotus-v-public/blob/master/docs/CAMPAIGN_FINANCE_SOURCES.md">source
-review</a> explains those boundaries.</p>
-<p>Sometimes the useful result is identifying precisely what the
-available evidence does not measure.</p>
+<p>The search lets you enter a phrase such as “birth control,” “immigration,” or “gun control” and browse related court cases and survey questions. Public-opinion sources include ANES, GSS, CES, PRRI, Nationscape, VOTER, U.S. observations from the World Values Survey, and a selected Pew wave. Coverage varies by topic and year; including a source does not mean every question in its archive is included.</p>
+<p>Court search combines TF-IDF with embeddings. TF-IDF gives weight to distinctive terms; embeddings help retrieve related language, such as “contraception” for “birth control.” The results provide a starting point for exploration. A document can be relevant to a topic without deciding the particular policy you have in mind.</p>
+<p>The policy comparisons take a more focused approach. They cover marriage equality, abortion, capital punishment, affirmative action, voter ID, handgun rights, contraception, medical marijuana, school religion, and campaign finance. They pair selected holdings with explicitly chosen survey questions, including published polling tables that are separate from the general search database.</p>
+<p>These are ten historical examples with different levels of evidence. They are not a comprehensive or representative sample of the Court’s work.</p>
+<h2 id="why-the-original-chart-wasnt-enough">Why the original chart wasn’t enough</h2>
+<p>The exploratory court chart uses the Supreme Court Database’s liberal/conservative direction coding and vote margin. That is a compact measure, but vote margin is not the size of a policy change. A 5–4 ruling can establish a substantial protection; a unanimous decision can resolve a narrow procedural issue.</p>
+<p>A single case can also contain several outcomes. And a survey about a broad subject may say little about the specific question the Court decided.</p>
+<p>The detailed comparisons therefore separate legal components and retain the survey’s response categories. Each component identifies whether the available question is a close policy match, broader context, missing evidence, or not comparable because the ruling is procedural. Those distinctions are easier to understand through examples.</p>
+<h2 id="four-examples-worth-exploring">Four examples worth exploring</h2>
+<h3 id="marriage-equality-what-kind-of-recognition">Marriage equality: what kind of recognition?</h3>
+<p>The <a href="https://svp.walterslabs.dev/policy-comparisons?topic=marriage">marriage equality pane</a> is one of the most developed examples, with several sources and a separate history of public opinion.</p>
+<p>Questions about allowing same-sex couples to marry speak closely to the licensing requirement in Obergefell. Federal recognition in Windsor and recognition across state lines are distinct questions, so the pane separates them. General marriage support provides only broader context for equal treatment on birth certificates in Pavan.</p>
+<p>Hollingsworth is different again: its standing ruling should not be counted as a substantive vote for or against marriage equality. Showing it as procedural is more informative than forcing it onto the same scale.</p>
+<p>Even a close policy match does not mean respondents endorsed the Court’s constitutional reasoning.</p>
+<h3 id="abortion-a-ruling-can-move-in-several-directions">Abortion: a ruling can move in several directions</h3>
+<p>The <a href="https://svp.walterslabs.dev/policy-comparisons?topic=abortion">abortion pane</a> separates legal access, notification requirements, waiting periods, funding, and other restrictions.</p>
+<p>Casey illustrates why this matters. It retained core constitutional protection, invalidated spousal notification, and allowed other restrictions. One directional score loses that structure. Earlier questions about notification and waiting periods help address particular components.</p>
+<p>For Dobbs, the pane includes a 2020 VOTER question explicitly asking whether Roe should be overturned. About 54.4% opposed overturning it, 26.0% favored doing so, and 19.6% were unsure. That provides a meaningful comparison with the Court’s 2022 decision to overrule Roe, while leaving a substantial time gap. It is not a decision-day approval poll or an answer about Mississippi’s particular fifteen-week restriction. The <a href="https://github.com/walters-labs/scotus-v-public/blob/master/docs/VOTER_ROE_DOBBS_CASE_STUDY.md">calculation is documented</a>.</p>
+<p>The broader abortion history is displayed separately from the earlier polling attached to rulings. Later surveys can describe subsequent opinion; they cannot stand in for what people said before a decision.</p>
+<h3 id="school-religion-who-is-speaking">School religion: who is speaking?</h3>
+<p>The <a href="https://svp.walterslabs.dev/policy-comparisons?topic=school-religion">school religion pane</a> contrasts school-sponsored prayer with access for a private religious group.</p>
+<p>Before Santa Fe, a 2000 Freedom Forum question asked about students leading prayer over a public-address system at school-sponsored events, including football games. That is a much closer comparison than a generic question about religion in schools, although it does not describe the full policy or its election procedure.</p>
+<p>Before Good News Club, Pew asked separate groups of respondents about after-hours school access for student religious organizations and religious organizations generally. Those questions help illuminate preferences about access, but omit details such as adult leadership, young children, and parental permission. Not objecting to access is also different from believing the Constitution requires it.</p>
+<p>A single pro-religion or anti-religion score would obscure the distinction between these two cases. The <a href="https://github.com/walters-labs/scotus-v-public/blob/master/docs/SCHOOL_RELIGION_SOURCES.md">source notes</a> preserve the question wording, fieldwork dates, and separate sample sizes.</p>
+<h3 id="campaign-finance-which-limits">Campaign finance: which limits?</h3>
+<p>The <a href="https://svp.walterslabs.dev/policy-comparisons?topic=campaign-finance">campaign finance pane</a> shows both a useful comparison and an unresolved gap.</p>
+<p>For McCutcheon, two earlier YouGov/HuffPost questions address total contributions across candidates and whether those limits violate free speech. They come from one sample, use an older dollar limit, and do not describe the full statutory structure. They are useful context, not an exact measure of approval of the ruling.</p>
+<p>Citizens United concerns independent spending. A broad question about campaign contributions cannot automatically answer that question, and the pane leaves disclosure without a matched earlier poll. The <a href="https://github.com/walters-labs/scotus-v-public/blob/master/docs/CAMPAIGN_FINANCE_SOURCES.md">source review</a> explains those boundaries.</p>
+<p>Sometimes the useful result is identifying precisely what the available evidence does not measure.</p>
 <h2 id="how-the-rebuild-works">How the rebuild works</h2>
-<p>Raw-data processing and artifact generation happen offline. The Flask
-service reads precomputed search artifacts and comparison records,
-keeping the app practical on a small VPS. Pinned dependencies, tests,
-checksums, and a release installer make rebuilding and deploying it much
-more manageable than the original setup.</p>
-<p>The policy pipeline keeps three things separate: sourced case
-components, survey observations, and explicit mappings between them.
-Legal interpretations and question mappings are reviewed inputs; the app
-does not automatically interpret every opinion. Survey records preserve
-weights and denominators where calculated from respondent data, or the
-published response shares where only polling tables are available.</p>
-<p>Timing is enforced in <a
-href="https://github.com/walters-labs/scotus-v-public/blob/master/scripts/compare_policy.py">the
-comparison code</a>:</p>
+<p>Raw-data processing and artifact generation happen offline. The Flask service reads precomputed search artifacts and comparison records, keeping the app practical on a small VPS. Pinned dependencies, tests, checksums, and a release installer make rebuilding and deploying it much more manageable than the original setup.</p>
+<p>The policy pipeline keeps three things separate: sourced case components, survey observations, and explicit mappings between them. Legal interpretations and question mappings are reviewed inputs; the app does not automatically interpret every opinion. Survey records preserve weights and denominators where calculated from respondent data, or the published response shares where only polling tables are available.</p>
+<p>Timing is enforced in <a href="https://github.com/walters-labs/scotus-v-public/blob/master/scripts/compare_policy.py">the comparison code</a>:</p>
 <pre class="python"><code>eligible = [r for r in matched if year-age &lt;= r[&#39;year&#39;] &lt;= year
             and (date.fromisoformat(r[&#39;field_end&#39;]) &lt; date.fromisoformat(case[&#39;date&#39;])
                  if r.get(&#39;field_end&#39;) else r[&#39;year&#39;] &lt; year)]</code></pre>
-<p>Here, <code>year</code> is the decision year and <code>age</code> is
-the allowed lookback, currently three years. If verified fieldwork dates
-are available, the survey must end before the decision. Otherwise, it
-must come from an earlier calendar year. The pipeline then retains the
-latest eligible year per source, including eligible question
-variants.</p>
-<p>That rule makes selection reproducible. It does not imply that
-opinion remained unchanged during the gap. Different wording,
-populations, and denominators also remain relevant even when two polls
-were conducted close together. The detailed panes preserve their
-separate distributions rather than pooling them into a ruling-approval
-score.</p>
-<h2 id="related-work-and-remaining-limits">Related work and remaining
-limits</h2>
-<p><a href="https://scotuspoll.hsites.harvard.edu/">SCOTUSPoll, the
-Supreme Court Public Opinion Project</a>, takes a complementary
-approach: surveying attitudes about major cases directly. Designing
-questions around case outcomes addresses a matching problem that this
-project encounters when using existing surveys. SCOTUSPoll data are not
-included in this app.</p>
-<p>This rebuild is an exploratory software project, not a peer-reviewed
-policy analysis. The comparisons do not establish an overall
-Court–public agreement rate, causal influence, or predictive accuracy.
-They do not estimate survey uncertainty, and some panes have much better
-evidence than others. The code’s MIT license also does not change the
-licenses or access conditions of the underlying datasets.</p>
-<p>There is room to add better-matched questions, fill historical gaps,
-and improve presentation. But the app is already clearer about what it
-is comparing than the original pair of trend lines was.</p>
-<p>If you’d like to try it, start with the <a
-href="https://svp.walterslabs.dev/policy-comparisons">policy
-comparisons</a>, explore a topic in <a
-href="https://svp.walterslabs.dev">the search</a>, or browse <a
-href="https://github.com/walters-labs/scotus-v-public">the source
-code</a>. Questions, corrections, and suggestions are welcome.</p>
+<p>Here, <code>year</code> is the decision year and <code>age</code> is the allowed lookback, currently three years. If verified fieldwork dates are available, the survey must end before the decision. Otherwise, it must come from an earlier calendar year. The pipeline then retains the latest eligible year per source, including eligible question variants.</p>
+<p>That rule makes selection reproducible. It does not imply that opinion remained unchanged during the gap. Different wording, populations, and denominators also remain relevant even when two polls were conducted close together. The detailed panes preserve their separate distributions rather than pooling them into a ruling-approval score.</p>
+<h2 id="related-work-and-remaining-limits">Related work and remaining limits</h2>
+<p><a href="https://scotuspoll.hsites.harvard.edu/">SCOTUSPoll, the Supreme Court Public Opinion Project</a>, takes a complementary approach: surveying attitudes about major cases directly. Designing questions around case outcomes addresses a matching problem that this project encounters when using existing surveys. SCOTUSPoll data are not included in this app.</p>
+<p>This rebuild is an exploratory software project, not a peer-reviewed policy analysis. The comparisons do not establish an overall Court–public agreement rate, causal influence, or predictive accuracy. They do not estimate survey uncertainty, and some panes have much better evidence than others. The code’s MIT license also does not change the licenses or access conditions of the underlying datasets.</p>
+<p>There is room to add better-matched questions, fill historical gaps, and improve presentation. But the app is already clearer about what it is comparing than the original pair of trend lines was.</p>
+<p>If you’d like to try it, start with the <a href="https://svp.walterslabs.dev/policy-comparisons">policy comparisons</a>, explore a topic in <a href="https://svp.walterslabs.dev">the search</a>, or browse <a href="https://github.com/walters-labs/scotus-v-public">the source code</a>. Questions, corrections, and suggestions are welcome.</p>
