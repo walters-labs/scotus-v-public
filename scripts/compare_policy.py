@@ -22,6 +22,9 @@ def compare(cases, surveys, mapping):
     age = mapping['max_prior_years']
     if type(age) is not int or age < 1:
         raise ValueError('max_prior_years must be a positive integer')
+    allow_dated = mapping.get('allow_same_year_with_dates', False)
+    if type(allow_dated) is not bool:
+        raise ValueError('allow_same_year_with_dates must be boolean')
     policies = mapping['policies']
     selectors = {}
     for policy, spec in policies.items():
@@ -37,6 +40,12 @@ def compare(cases, surveys, mapping):
         if key in seen or type(r['year']) is not int:
             raise ValueError('Duplicate observation or invalid year')
         seen.add(key)
+        if 'fieldwork_start' in r or 'fieldwork_end' in r:
+            if not all(r.get(k) for k in ('fieldwork_start', 'fieldwork_end')):
+                raise ValueError('Incomplete fieldwork dates')
+            start, end = date.fromisoformat(r['fieldwork_start']), date.fromisoformat(r['fieldwork_end'])
+            if start > end or end.year != r['year']:
+                raise ValueError('Invalid fieldwork interval or survey year')
         if ('percent' in r) == ('response_distribution' in r):
             raise ValueError('Provide exactly one response representation')
         if 'percent' in r:
@@ -85,7 +94,10 @@ def compare(cases, surveys, mapping):
             comparisons = []
             for source in sources:
                 matched = [r for r in records if r['source'] == source]
-                eligible = [r for r in matched if year-age <= r['year'] < year]
+                eligible = [r for r in matched if
+                            (year-age <= r['year'] < year) or
+                            (allow_dated and r['year'] == year and r.get('fieldwork_source') and
+                             r.get('fieldwork_end') and date.fromisoformat(r['fieldwork_end']) < date.fromisoformat(case['date']))]
                 selected = []
                 if fit == 'not_comparable':
                     status = 'not_comparable'
@@ -101,7 +113,10 @@ def compare(cases, surveys, mapping):
             components.append({**deepcopy(component), 'comparisons': comparisons,
                                'coverage_status': 'no_matching_question' if not sources else 'see_source_comparisons'})
         output.append({**deepcopy(case), 'components': components})
-    return dict(schema_version=1, timing_rule=f'Latest earlier calendar year per source within {age} years; retain all same-year question variants.',
+    timing = f'Latest earlier calendar year per source within {age} years; retain all same-year question variants.'
+    if allow_dated:
+        timing = f'Latest eligible survey year per source within {age} years; same-year observations require sourced fieldwork dates ending strictly before the ruling. Retain tied variants. This is fieldwork timing, not proof of pre-ruling publication.'
+    return dict(schema_version=1, timing_rule=timing,
                 policies=deepcopy(policies), cases=output,
                 limitations=['Explicit source-based legal coding is an input, not an automated legal classifier.',
                              'Contextual matches do not measure approval of the specific holding.',
@@ -133,6 +148,8 @@ def report(result):
                 if not comparison['observations']:
                     lines.append(f"| {comparison['source']}: {comparison['status'].replace('_', ' ')} | — | — | — | — | — |")
                 for r in comparison['observations']:
+                    if r.get('fieldwork_source'):
+                        notes.append(f"- {r['source']} fieldwork: {r['fieldwork_start']}–{r['fieldwork_end']}. [Survey source]({r['fieldwork_source']}).")
                     if 'response_distribution' in r:
                         lines.append(f"| {r['source']} {r['year']} ({r['variable']}): categories below | — | — | — | — | — |")
                         distributions += [f"**{r['source']} {r['year']} ({r['variable']}) — original policy categories**", '',

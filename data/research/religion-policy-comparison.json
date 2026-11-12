@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "timing_rule": "Latest eligible survey year per source within 3 years; same-year observations require sourced fieldwork dates ending strictly before the ruling. Retain tied variants. This is fieldwork timing, not proof of pre-ruling publication.",
+  "policies": {
+    "flag_access": {
+      "support_definition": "Original constitutional judgment options retained; no liberal/conservative recoding or binary support label.",
+      "questions": [
+        {
+          "source": "SCOTUSPoll",
+          "variable": "shurtleff_2022"
+        }
+      ]
+    },
+    "tuition": {
+      "support_definition": "Original constitutional judgment options retained; no liberal/conservative recoding or binary support label.",
+      "questions": [
+        {
+          "source": "SCOTUSPoll",
+          "variable": "carson_2022"
+        }
+      ]
+    }
+  },
+  "cases": [
+    {
+      "case_id": "2021-039",
+      "name": "Shurtleff v. Boston",
+      "date": "2022-05-02",
+      "source": "https://www.law.cornell.edu/supremecourt/text/20-1800",
+      "components": [
+        {
+          "component_id": "shurtleff-flag",
+          "policy_id": "flag_access",
+          "issue": "Religious viewpoint in a public flag program",
+          "decision": "Held that Boston\u2019s exclusion of the religious flag violated free speech.",
+          "direction": "expands",
+          "scope": "The program facilitated private expression; the Court did not require government itself to endorse a religious message.",
+          "locator": "Breyer majority opinion Parts II\u2013III.",
+          "comparison_fit": "direct",
+          "survey_fit": "The question addresses Boston\u2019s particular exclusion. The outcome corresponds to the violation answer, selected by 44.3%.",
+          "comparisons": [
+            {
+              "source": "SCOTUSPoll",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "SCOTUSPoll",
+                  "year": 2022,
+                  "variable": "shurtleff_2022",
+                  "wording": "Paraphrase: Did Boston violate a private religious group\u2019s First Amendment rights by refusing its flag-raising request?",
+                  "response_distribution": [
+                    {
+                      "code": "violation",
+                      "label": "Refusal violated First Amendment rights",
+                      "percent": 44.3
+                    },
+                    {
+                      "code": "no_violation",
+                      "label": "Refusal did not violate First Amendment rights",
+                      "percent": 55.7
+                    }
+                  ],
+                  "denominator": "Published two-option percentages; item N=2,132 of 2,158 survey respondents. No reconstruction of omitted answers or new weighting. Rounded publisher estimates, not raw counts.",
+                  "weight": "Published topline; respondent weights not loaded",
+                  "n": 2132,
+                  "fieldwork_start": "2022-03-30",
+                  "fieldwork_end": "2022-04-06",
+                  "fieldwork_source": "https://scotuspoll.hsites.harvard.edu/2022-survey-results",
+                  "source_url": "https://scotuspoll.hsites.harvard.edu/file_url/109",
+                  "source_page": 10,
+                  "attribution": "Stephen Jessee, Neil Malhotra, and Maya Sen, Supreme Court Public Opinion Project (SCOTUSPoll), 2022 and 2024",
+                  "wording_note": "Question and answer labels paraphrased; consult the linked PDF for exact wording and randomized option order."
+                }
+              ]
+            }
+          ],
+          "coverage_status": "see_source_comparisons"
+        }
+      ],
+      "interpretation_limit": "All nine justices agreed in the judgment, but the survey point estimate favored the other answer. Votes are not policy magnitude. Polling ended before the ruling; the report was published afterward."
+    },
+    {
+      "case_id": "2021-024",
+      "name": "Carson v. Makin",
+      "date": "2022-06-21",
+      "source": "https://www.law.cornell.edu/supremecourt/text/20-1088",
+      "components": [
+        {
+          "component_id": "carson-tuition",
+          "policy_id": "tuition",
+          "issue": "Religious schools in an existing tuition program",
+          "decision": "Invalidated Maine\u2019s exclusion of religious schools from otherwise available tuition assistance.",
+          "direction": "expands",
+          "scope": "Access to the existing program, not a requirement to establish private-school subsidies in every state.",
+          "locator": "Roberts majority opinion Parts II\u2013III.",
+          "comparison_fit": "direct",
+          "survey_fit": "The poll describes the Maine funding exclusion. The Court\u2019s result corresponds to the violation answer, selected by 48.7%.",
+          "comparisons": [
+            {
+              "source": "SCOTUSPoll",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "SCOTUSPoll",
+                  "year": 2022,
+                  "variable": "carson_2022",
+                  "wording": "Paraphrase: Is excluding religious schools from Maine\u2019s tuition assistance a free-exercise violation or a valid separation-of-church-and-state policy?",
+                  "response_distribution": [
+                    {
+                      "code": "violation",
+                      "label": "Exclusion violates free exercise",
+                      "percent": 48.7
+                    },
+                    {
+                      "code": "no_violation",
+                      "label": "Exclusion is a valid separation policy",
+                      "percent": 51.3
+                    }
+                  ],
+                  "denominator": "Published two-option percentages; item N=2,130 of 2,158 survey respondents. No reconstruction of omitted answers or new weighting. Rounded publisher estimates, not raw counts.",
+                  "weight": "Published topline; respondent weights not loaded",
+                  "n": 2130,
+                  "fieldwork_start": "2022-03-30",
+                  "fieldwork_end": "2022-04-06",
+                  "fieldwork_source": "https://scotuspoll.hsites.harvard.edu/2022-survey-results",
+                  "source_url": "https://scotuspoll.hsites.harvard.edu/file_url/109",
+                  "source_page": 6,
+                  "attribution": "Stephen Jessee, Neil Malhotra, and Maya Sen, Supreme Court Public Opinion Project (SCOTUSPoll), 2022 and 2024",
+                  "wording_note": "Question and answer labels paraphrased; consult the linked PDF for exact wording and randomized option order."
+                }
+              ]
+            }
+          ],
+          "coverage_status": "see_source_comparisons"
+        }
+      ],
+      "interpretation_limit": "The 48.7% versus 51.3% division is close; no statistically established disagreement or Court-wide alignment rate is inferred."
+    }
+  ],
+  "limitations": [
+    "Explicit source-based legal coding is an input, not an automated legal classifier.",
+    "Contextual matches do not measure approval of the specific holding.",
+    "Mixed and unresolved components retain their labels; no scalar direction is inferred.",
+    "No pooling, confidence intervals, causal claims, or prediction.",
+    "Published toplines, not independently reweighted microdata; exact question wording is in the source PDF.",
+    "These deliberately chosen examples are not a representative sample. Narrow percentage leads are not significance claims.",
+    "Direct match denotes the stated policy component, not endorsement of every rationale or factual qualification."
+  ],
+  "survey_provenance": {
+    "data/scotuspoll/policy-toplines.json": "18f97524713125404c42ad16d5a7ad21e8d775c3b5fa36d2f1df44e2e9f2c63a",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/build_scotuspoll_examples.py": "6094e9e4b87bbb68bf8bdf7316bae0053be4ffa643ab52ec3b5737448afa8756"
+  },
+  "input_sha256": {
+    "data/scotuspoll/policy-toplines.json": "18f97524713125404c42ad16d5a7ad21e8d775c3b5fa36d2f1df44e2e9f2c63a",
+    "data/research/religion-policy-components.json": "99f796e6015afc2fdfd10dce112c199ff37300e4e823645f00f3d10ab3c6aa7c",
+    "data/research/religion-policy-mapping.json": "d7a42be6e65674abab9e5ae71afd283e532da6b7b90e1c61c03931857298df98",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/build_scotuspoll_examples.py": "6094e9e4b87bbb68bf8bdf7316bae0053be4ffa643ab52ec3b5737448afa8756"
+  }
+}

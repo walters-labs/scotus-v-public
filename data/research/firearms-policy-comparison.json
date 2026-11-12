@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "timing_rule": "Latest eligible survey year per source within 3 years; same-year observations require sourced fieldwork dates ending strictly before the ruling. Retain tied variants. This is fieldwork timing, not proof of pre-ruling publication.",
+  "policies": {
+    "carry": {
+      "support_definition": "Original constitutional judgment options retained; no liberal/conservative recoding or binary support label.",
+      "questions": [
+        {
+          "source": "SCOTUSPoll",
+          "variable": "bruen_2022"
+        }
+      ]
+    },
+    "domestic_violence": {
+      "support_definition": "Original constitutional judgment options retained; no liberal/conservative recoding or binary support label.",
+      "questions": [
+        {
+          "source": "SCOTUSPoll",
+          "variable": "rahimi_2024"
+        }
+      ]
+    }
+  },
+  "cases": [
+    {
+      "case_id": "2021-013",
+      "name": "New York State Rifle & Pistol Association v. Bruen",
+      "date": "2022-06-23",
+      "source": "https://www.law.cornell.edu/supremecourt/text/20-843",
+      "components": [
+        {
+          "component_id": "bruen-carry",
+          "policy_id": "carry",
+          "issue": "Special-need requirement for public carry",
+          "decision": "Invalidated New York\u2019s special-need condition for a public-carry license.",
+          "direction": "expands",
+          "scope": "Protects public carry for ordinary self-defense; does not invalidate all objective licensing requirements.",
+          "locator": "Thomas majority opinion Parts II and IV; footnote 9.",
+          "comparison_fit": "direct",
+          "survey_fit": "The poll addresses this named licensing condition. Its simpler self-protection wording does not measure approval of the historical-tradition test.",
+          "comparisons": [
+            {
+              "source": "SCOTUSPoll",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "SCOTUSPoll",
+                  "year": 2022,
+                  "variable": "bruen_2022",
+                  "wording": "Paraphrase: Does New York\u2019s requirement to demonstrate a self-protection need for a concealed-carry license violate the Second Amendment?",
+                  "response_distribution": [
+                    {
+                      "code": "violation",
+                      "label": "Requirement violates the Second Amendment",
+                      "percent": 52.6
+                    },
+                    {
+                      "code": "no_violation",
+                      "label": "Requirement does not violate the Second Amendment",
+                      "percent": 47.4
+                    }
+                  ],
+                  "denominator": "Published two-option percentages; item N=2,133 of 2,158 survey respondents. No reconstruction of omitted answers or new weighting. Rounded publisher estimates, not raw counts.",
+                  "weight": "Published topline; respondent weights not loaded",
+                  "n": 2133,
+                  "fieldwork_start": "2022-03-30",
+                  "fieldwork_end": "2022-04-06",
+                  "fieldwork_source": "https://scotuspoll.hsites.harvard.edu/2022-survey-results",
+                  "source_url": "https://scotuspoll.hsites.harvard.edu/file_url/109",
+                  "source_page": 5,
+                  "attribution": "Stephen Jessee, Neil Malhotra, and Maya Sen, Supreme Court Public Opinion Project (SCOTUSPoll), 2022 and 2024",
+                  "wording_note": "Question and answer labels paraphrased; consult the linked PDF for exact wording and randomized option order."
+                }
+              ]
+            }
+          ],
+          "coverage_status": "see_source_comparisons"
+        }
+      ],
+      "interpretation_limit": "Direction refers to firearm rights, not liberal ideology. The 52.6% point estimate is a narrow lead, not a significance finding."
+    },
+    {
+      "case_id": "2023-012",
+      "name": "United States v. Rahimi",
+      "date": "2024-06-21",
+      "source": "https://www.law.cornell.edu/supremecourt/text/22-915",
+      "components": [
+        {
+          "component_id": "rahimi-disarm",
+          "policy_id": "domestic_violence",
+          "issue": "Temporary disarmament after a judicial threat finding",
+          "decision": "Allowed temporary disarmament following a court finding of a credible physical threat.",
+          "direction": "maintains_restriction",
+          "scope": "Facial challenge to the restraining-order statute; the Court\u2019s conclusion is narrower than a ban on everyone described as an abuser.",
+          "locator": "Roberts majority opinion Part II and concluding paragraph.",
+          "comparison_fit": "contextual",
+          "survey_fit": "The poll names domestic abusers broadly but omits the judicial finding and temporary duration. Its 74.0% estimate is related context, not exact approval of all statutory conditions.",
+          "comparisons": [
+            {
+              "source": "SCOTUSPoll",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "SCOTUSPoll",
+                  "year": 2024,
+                  "variable": "rahimi_2024",
+                  "wording": "Paraphrase: Does prohibiting firearm possession by domestic abusers violate their Second Amendment rights?",
+                  "response_distribution": [
+                    {
+                      "code": "violation",
+                      "label": "Prohibition violates the Second Amendment",
+                      "percent": 26.0
+                    },
+                    {
+                      "code": "no_violation",
+                      "label": "Prohibition does not violate the Second Amendment",
+                      "percent": 74.0
+                    }
+                  ],
+                  "denominator": "Published two-option percentages; item N=2,218 of 2,218 survey respondents. No reconstruction of omitted answers or new weighting. Rounded publisher estimates, not raw counts.",
+                  "weight": "Published topline; respondent weights not loaded",
+                  "n": 2218,
+                  "fieldwork_start": "2024-03-18",
+                  "fieldwork_end": "2024-03-25",
+                  "fieldwork_source": "https://scotuspoll.hsites.harvard.edu/2024-survey-results",
+                  "source_url": "https://scotuspoll.hsites.harvard.edu/file_url/111",
+                  "source_page": 15,
+                  "attribution": "Stephen Jessee, Neil Malhotra, and Maya Sen, Supreme Court Public Opinion Project (SCOTUSPoll), 2022 and 2024",
+                  "wording_note": "Question and answer labels paraphrased; consult the linked PDF for exact wording and randomized option order."
+                }
+              ]
+            }
+          ],
+          "coverage_status": "see_source_comparisons"
+        }
+      ],
+      "interpretation_limit": "Do not turn a broad group label in the poll into a conclusion about every restraining order or lifetime disarmament."
+    }
+  ],
+  "limitations": [
+    "Explicit source-based legal coding is an input, not an automated legal classifier.",
+    "Contextual matches do not measure approval of the specific holding.",
+    "Mixed and unresolved components retain their labels; no scalar direction is inferred.",
+    "No pooling, confidence intervals, causal claims, or prediction.",
+    "Published toplines, not independently reweighted microdata; exact question wording is in the source PDF.",
+    "These deliberately chosen examples are not a representative sample. Narrow percentage leads are not significance claims.",
+    "Direct match denotes the stated policy component, not endorsement of every rationale or factual qualification."
+  ],
+  "survey_provenance": {
+    "data/scotuspoll/policy-toplines.json": "18f97524713125404c42ad16d5a7ad21e8d775c3b5fa36d2f1df44e2e9f2c63a",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/build_scotuspoll_examples.py": "6094e9e4b87bbb68bf8bdf7316bae0053be4ffa643ab52ec3b5737448afa8756"
+  },
+  "input_sha256": {
+    "data/scotuspoll/policy-toplines.json": "18f97524713125404c42ad16d5a7ad21e8d775c3b5fa36d2f1df44e2e9f2c63a",
+    "data/research/firearms-policy-components.json": "f947dc3be65328f16da96cb3cfe1925fba62e70a253a565703a8dfcee1664a39",
+    "data/research/firearms-policy-mapping.json": "e9b022f6e8c44e1a21fb6c1319baa71013db8819f83620e40caf068e0b339028",
+    "/Users/jackson/GitHub/scotus-v-public/scripts/build_scotuspoll_examples.py": "6094e9e4b87bbb68bf8bdf7316bae0053be4ffa643ab52ec3b5737448afa8756"
+  }
+}

@@ -30,6 +30,12 @@ class PolicyViewsTests(unittest.TestCase):
         self.assertIn('Never permit',abortion)
         self.assertIn('Maintains protection',abortion)
         self.assertNotIn('SCDB decision direction',abortion)
+        for topic, value, name in [('firearms','52.6%','Bruen'),('religion','44.3%','Shurtleff')]:
+            page=self.client.get('/policy-comparisons?topic='+topic)
+            self.assertEqual(page.status_code,200)
+            html=page.get_data(as_text=True)
+            for text in [value,name,'2022-04-06','Survey methods','Published survey results','SCOTUSPoll']:
+                self.assertIn(text,html)
         self.assertEqual(self.client.get('/policy-comparisons?topic=../../.env').status_code,404)
 
     def test_packaged_view_runs_without_research_code(self):
@@ -37,6 +43,6 @@ class PolicyViewsTests(unittest.TestCase):
         dest=Path(self.temp.name)/'release'
         subprocess.run([sys.executable,'-m','scripts.package_release',str(self.artifact),'--directory',str(dest)],check=True,capture_output=True)
         self.assertTrue((dest/'scvpublic/policy_views.py').exists())
-        self.assertEqual(len(list((dest/'data/research').iterdir())),2)
+        self.assertEqual(len(list((dest/'data/research').iterdir())),4)
         self.assertFalse((dest/'scripts/compare_policy.py').exists())
         subprocess.run([sys.executable,'-c',"from scvpublic.web import create_app; c=create_app('artifacts/search.sqlite').test_client(); assert c.get('/policy-comparisons?topic=abortion').status_code == 200"],cwd=dest,check=True,capture_output=True)

@@ -1,0 +1,24 @@
+{
+  "max_prior_years": 3,
+  "allow_same_year_with_dates": true,
+  "policies": {
+    "flag_access": {
+      "support_definition": "Original constitutional judgment options retained; no liberal/conservative recoding or binary support label.",
+      "questions": [
+        {
+          "source": "SCOTUSPoll",
+          "variable": "shurtleff_2022"
+        }
+      ]
+    },
+    "tuition": {
+      "support_definition": "Original constitutional judgment options retained; no liberal/conservative recoding or binary support label.",
+      "questions": [
+        {
+          "source": "SCOTUSPoll",
+          "variable": "carson_2022"
+        }
+      ]
+    }
+  }
+}

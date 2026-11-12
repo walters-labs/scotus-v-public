@@ -3,9 +3,9 @@
 <body><main>
 <header><h1>SCOTUS v. Public Opinion</h1><p class="intro">What did a ruling change—and what did the public actually say?</p></header>
 <nav class="page-nav" aria-label="Explore"><a href="/">Topic search</a><a href="/policy-comparisons" aria-current="page">Policy comparisons</a></nav>
-<section class="policy-intro"><h2>Policy comparisons</h2><p>Two worked examples pair specific rulings with earlier survey responses. These selected cases illustrate the comparison; they do not measure overall Court–public agreement.</p>
+<section class="policy-intro"><h2>Policy comparisons</h2><p>Four worked examples pair specific rulings with earlier survey responses. These selected cases illustrate the comparison; they do not measure overall Court–public agreement.</p>
 <nav class="study-tabs" aria-label="Choose a policy">{% for key, name in topics.items() %}<a href="{{ url_for('policy_comparisons', topic=key) }}"{% if key == topic %} aria-current="page"{% endif %}>{{ name }}</a>{% endfor %}</nav>
-<details class="methodology"><summary>How to read this comparison</summary><p><strong>Direct comparison:</strong> a question addresses a named policy component. <strong>Context only:</strong> related preferences, not approval of the specific holding. <strong>Missing data:</strong> no suitable earlier observation in this selection. Procedural rulings can be <strong>not comparable</strong>.</p><p>We use the latest earlier survey year per source within three years, keeping tied question variants. Same-year surveys are excluded. Percentages retain each survey’s wording and denominator; they are not pooled. Court interpretations are explicit source-based assessments, not automated classifications. Votes are not treated as policy magnitude.</p><p>These are historical outcomes. No causal, predictive, or statistical-significance claim is made. Missing matches do not mean no relevant survey exists elsewhere.</p></details></section>
+<details class="methodology"><summary>How to read this comparison</summary><p><strong>Direct comparison:</strong> a question addresses a named policy component. <strong>Context only:</strong> related preferences, not approval of the specific holding. <strong>Missing data:</strong> no suitable earlier observation in this selection. Procedural rulings can be <strong>not comparable</strong>.</p><p>{{ study.timing_rule }} Percentages retain each survey’s wording and denominator; they are not pooled. Court interpretations are explicit source-based assessments, not automated classifications. Votes are not treated as policy magnitude.</p><p>These are historical outcomes. No causal, predictive, or statistical-significance claim is made. Missing matches do not mean no relevant survey exists elsewhere.</p></details></section>
 <nav class="event-index" aria-label="Jump to a decision">{% for case in study.cases %}<a href="#case-{{ case.case_id }}">{{ case.date[:4] }} · {{ case.name }}</a>{% endfor %}</nav>
 <div class="policy-events">
 {% for case in study.cases %}
@@ -17,7 +17,7 @@
 <p class="fit-explanation">{{ component.survey_fit }}</p>
 {% if component.observations %}<div class="policy-surveys">
 {% for observation in component.observations %}
-<div class="policy-survey"><h4>{{ observation.source }} <span>{{ observation.year }}</span></h4><p class="survey-wording">{{ observation.wording }}</p>
+<div class="policy-survey"><h4>{{ observation.source }} <span>{{ observation.year }}</span></h4><p class="survey-wording">{{ observation.wording }}</p>{% if observation.fieldwork_source is defined %}<p class="survey-timing">Fieldwork: {{ observation.fieldwork_start }}–{{ observation.fieldwork_end }} · <a href="{{ observation.fieldwork_source }}">Survey methods</a></p>{% endif %}
 {% if observation.orientation is defined %}<p><strong>{{ observation.orientation }}</strong></p>{% endif %}
 <div class="policy-table"><table><caption class="sr-only">{{ observation.source }} {{ observation.year }} weighted response percentages</caption><thead><tr><th scope="col">Response</th><th scope="col">Percent</th></tr></thead><tbody>
 {% if observation.response_distribution is defined %}
@@ -26,12 +26,12 @@
 {% for group, label in [('support','Support / agree'),('oppose','Oppose / disagree'),('neutral','Neutral'),('unsure','Unsure'),('nonresponse','Nonresponse')] %}
 {% if observation.percent[group] > 0 or group in ['support','oppose'] %}<tr><th scope="row">{{ label }}</th><td>{{ '%.1f'|format(observation.percent[group]) }}%</td></tr>{% endif %}
 {% endfor %}{% endif %}</tbody></table></div>
-<p class="survey-denominator">{{ observation.denominator }}</p><details><summary>Question details</summary>{% if observation.wording_note is defined %}<p>{{ observation.wording_note }}</p>{% endif %}<p>Variable: {{ observation.variable }} · Weight: {{ observation.weight }}</p><p>Zero or omitted categories do not establish that the original questionnaire lacked other answer options. Rounding may prevent totals of exactly 100%.</p></details>
+<p class="survey-denominator">{{ observation.denominator }}</p><details><summary>Question details</summary>{% if observation.source_url is defined %}<p><a href="{{ observation.source_url }}">Published survey results{% if observation.source_page is defined %}, page {{ observation.source_page }}{% endif %}</a></p>{% endif %}{% if observation.attribution is defined %}<p>{{ observation.attribution }}</p>{% endif %}{% if observation.wording_note is defined %}<p>{{ observation.wording_note }}</p>{% endif %}<p>Variable: {{ observation.variable }} · Weight: {{ observation.weight }}</p><p>Zero or omitted categories do not establish that the original questionnaire lacked other answer options. Rounding may prevent totals of exactly 100%.</p></details>
 </div>{% endfor %}</div>
 {% elif component.display_fit == 'Missing data' %}<p class="policy-gap">No matching earlier survey response in this selection.</p>{% else %}<p class="policy-gap">No policy-agreement score assigned.</p>{% endif %}
 <details class="component-evidence"><summary>Holding source and scope</summary><p>{{ component.locator }}</p></details>
 </article>{% endfor %}
 {% if case.interpretation_limit is defined %}<p class="case-limit">{{ case.interpretation_limit }}</p>{% endif %}
 </section>{% endfor %}</div>
-<footer><p>Selected examples from ANES, GSS, CES, PRRI and VOTER. Each comparison preserves its source and question wording.</p><p><a href="/">Return to topic search</a> · <a href="https://github.com/walters-labs/scotus-v-public">Source code and methodology</a></p></footer>
+<footer><p>Selected examples from ANES, GSS, CES, PRRI, VOTER and <a href="https://scotuspoll.hsites.harvard.edu/">SCOTUSPoll</a>. Each comparison preserves its source and question wording.</p><p><a href="/">Return to topic search</a> · <a href="https://github.com/walters-labs/scotus-v-public">Source code and methodology</a></p></footer>
 </main></body></html>

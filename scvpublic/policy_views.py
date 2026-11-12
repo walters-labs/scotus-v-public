@@ -1,8 +1,9 @@
-"""Read only the two published, precomputed policy examples."""
+"""Read only the published, precomputed policy examples."""
 import json
 from pathlib import Path
 
-STUDIES = {'marriage': 'Marriage equality', 'abortion': 'Abortion'}
+STUDIES = {'marriage': 'Marriage equality', 'abortion': 'Abortion',
+           'firearms': 'Firearm rights', 'religion': 'Religion in public programs'}
 DATA = Path(__file__).resolve().parent.parent / 'data' / 'research'
 DIRECTIONS = {'expands': 'Expands protection or access', 'restricts': 'Restricts protection or access',
               'maintains_protection': 'Maintains protection', 'maintains_restriction': 'Allows or maintains a restriction',

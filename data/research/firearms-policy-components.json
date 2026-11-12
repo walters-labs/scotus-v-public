@@ -1,0 +1,45 @@
+{
+  "status": "Selected source-based assessments; not a representative sample or automated legal classification",
+  "cases": [
+    {
+      "case_id": "2021-013",
+      "name": "New York State Rifle & Pistol Association v. Bruen",
+      "date": "2022-06-23",
+      "source": "https://www.law.cornell.edu/supremecourt/text/20-843",
+      "components": [
+        {
+          "component_id": "bruen-carry",
+          "policy_id": "carry",
+          "issue": "Special-need requirement for public carry",
+          "decision": "Invalidated New York\u2019s special-need condition for a public-carry license.",
+          "direction": "expands",
+          "scope": "Protects public carry for ordinary self-defense; does not invalidate all objective licensing requirements.",
+          "locator": "Thomas majority opinion Parts II and IV; footnote 9.",
+          "comparison_fit": "direct",
+          "survey_fit": "The poll addresses this named licensing condition. Its simpler self-protection wording does not measure approval of the historical-tradition test."
+        }
+      ],
+      "interpretation_limit": "Direction refers to firearm rights, not liberal ideology. The 52.6% point estimate is a narrow lead, not a significance finding."
+    },
+    {
+      "case_id": "2023-012",
+      "name": "United States v. Rahimi",
+      "date": "2024-06-21",
+      "source": "https://www.law.cornell.edu/supremecourt/text/22-915",
+      "components": [
+        {
+          "component_id": "rahimi-disarm",
+          "policy_id": "domestic_violence",
+          "issue": "Temporary disarmament after a judicial threat finding",
+          "decision": "Allowed temporary disarmament following a court finding of a credible physical threat.",
+          "direction": "maintains_restriction",
+          "scope": "Facial challenge to the restraining-order statute; the Court\u2019s conclusion is narrower than a ban on everyone described as an abuser.",
+          "locator": "Roberts majority opinion Part II and concluding paragraph.",
+          "comparison_fit": "contextual",
+          "survey_fit": "The poll names domestic abusers broadly but omits the judicial finding and temporary duration. Its 74.0% estimate is related context, not exact approval of all statutory conditions."
+        }
+      ],
+      "interpretation_limit": "Do not turn a broad group label in the poll into a conclusion about every restraining order or lifetime disarmament."
+    }
+  ]
+}

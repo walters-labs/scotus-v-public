@@ -97,3 +97,12 @@ A normal code release is sufficient; no search-index or embedding rebuild is
 needed. Regenerate the research outputs before packaging if their inputs change.
 `tests.test_policy_views` also boots an isolated packaged release to check that
 the page works without research scripts or raw data.
+
+## Four-topic extension
+
+The view now also supports `?topic=firearms` and `?topic=religion`. See
+`SCOTUSPOLL_POLICY_EXAMPLES.md` for selection, aggregate-data provenance and
+limitations. Those two mappings opt into `allow_same_year_with_dates`: sourced
+fieldwork must end strictly before a ruling. The original two mappings keep
+the earlier-year rule. Four precomputed outputs are included in packaging;
+research code and raw inputs remain excluded.
