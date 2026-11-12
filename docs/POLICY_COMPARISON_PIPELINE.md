@@ -83,3 +83,17 @@ This preserves multi-option questions without inventing a binary threshold.
 `maintains_protection` distinguishes retained rights from expanded rights.
 Policies with empty question lists render an explicit missing-question result.
 The original marriage observations remain unchanged.
+
+## App view
+
+`/policy-comparisons` presents the marriage example; `?topic=abortion` selects
+abortion. The view reads the two committed `*-policy-comparison.json` results,
+not raw surveys or research scripts. It retains direct/context/missing labels,
+original multi-option categories, visible denominators, and primary decision
+links. The general search and its scoring are unchanged.
+
+Both JSON files are explicitly included in release packaging and Docker builds.
+A normal code release is sufficient; no search-index or embedding rebuild is
+needed. Regenerate the research outputs before packaging if their inputs change.
+`tests.test_policy_views` also boots an isolated packaged release to check that
+the page works without research scripts or raw data.

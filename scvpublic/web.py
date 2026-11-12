@@ -3,7 +3,7 @@ import os
 from contextlib import closing
 import sqlite3
 from pathlib import Path
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, abort
 from .chart import chart, combine_sources
 from .court_details import load_details
 from .store import connect, metadata, search, survey_search, series, court_counts, survey_items
@@ -50,6 +50,15 @@ def create_app(artifact=None, hybrid_dir=None):
             return {'status': 'ok', 'dataset': info.get('dataset'), 'search_mode': app.config['SEARCH_MODE'], 'survey_search_mode': app.config['SURVEY_SEARCH_MODE']}
         except sqlite3.Error:
             return {'status': 'unavailable'}, 503
+
+    @app.get('/policy-comparisons')
+    def policy_comparisons():
+        from .policy_views import STUDIES, load_study
+        topic = request.args.get('topic', 'marriage')
+        if topic not in STUDIES:
+            abort(404)
+        return render_template('policy-comparisons.html', study=load_study(topic),
+                               topic=topic, topics=STUDIES)
 
     @app.get('/')
     def index():

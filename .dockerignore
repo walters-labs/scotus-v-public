@@ -5,3 +5,8 @@
 **/__pycache__
 
 !requirements-hybrid.txt
+
+!data/
+!data/research/
+!data/research/marriage-policy-comparison.json
+!data/research/abortion-policy-comparison.json

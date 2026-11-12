@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SCOTUS v. Public Opinion</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"><script src="{{ url_for('static', filename='view-selector.js') }}" defer></script></head>
-<body><main><header><h1>SCOTUS v. Public Opinion</h1><p class="intro">Explore Supreme Court decisions and public opinion on a topic over time.</p></header>
+<body><main><header><h1>SCOTUS v. Public Opinion</h1><p class="intro">Explore Supreme Court decisions and public opinion on a topic over time.</p></header><nav class="page-nav" aria-label="Explore"><a href="/" aria-current="page">Topic search</a><a href="/policy-comparisons">Policy comparisons</a></nav>
 {% if info.get('demo') %}<p class="notice"><strong>Demonstration data.</strong> These synthetic examples test the application. They are not research results.</p>{% endif %}
 <form class="topic-search" action="/" method="get"><div><label for="search-topic">Search a topic<input id="search-topic" name="q1" maxlength="100" value="{{ terms|select|join(' ') }}" placeholder="e.g. birth control" aria-describedby="search-help"></label><span id="search-help" class="search-help">Enter a topic or phrase, such as “birth control” or “civil rights”.</span></div><input type="hidden" name="view" value="{{ view }}"><button>Compare opinions <span aria-hidden="true">↗</span></button></form>
 <details class="methodology"><summary>Search methodology</summary>
