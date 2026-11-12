@@ -14,7 +14,7 @@
           "decision": "Rejected the claim that death is invariably unconstitutional as punishment for murder.",
           "direction": "maintains_permission",
           "scope": "Permits capital punishment under constitutional constraints; does not require a death sentence for every murder.",
-          "locator": "Opinion of Stewart, Powell and Stevens, Part III, 428 U.S. 168\u2013187.",
+          "locator": "Opinion of Stewart, Powell and Stevens, Part III, 428 U.S. 168–187.",
           "comparison_fit": "direct",
           "survey_fit": "GSS asks about the same broad punishment/offense pairing. This supports only a broad policy-direction comparison, not approval of the constitutional reasoning."
         },
@@ -22,10 +22,10 @@
           "component_id": "gregg-procedure",
           "policy_id": "sentencing",
           "issue": "Georgia sentencing safeguards",
-          "decision": "Sustained Georgia\u2019s guided capital-sentencing system.",
+          "decision": "Sustained Georgia’s guided capital-sentencing system.",
           "direction": "maintains_permission",
           "scope": "The specific safeguards and review process matter.",
-          "locator": "Opinion of Stewart, Powell and Stevens, Part IV, 428 U.S. 188\u2013207.",
+          "locator": "Opinion of Stewart, Powell and Stevens, Part IV, 428 U.S. 188–207.",
           "comparison_fit": "direct",
           "survey_fit": "The selected survey does not ask about these procedures; no agreement estimate is assigned."
         }
@@ -40,17 +40,17 @@
       "components": [
         {
           "component_id": "atkins-exemption",
-          "policy_id": "capital",
+          "policy_id": "intellectual_disability",
           "issue": "Exemption for intellectual disability",
           "decision": "Prohibited executing offenders with intellectual disability.",
           "direction": "expands",
           "scope": "A categorical limit on who may be executed, not abolition of capital punishment.",
-          "locator": "Stevens majority opinion Part IV, 536 U.S. 318\u2013321.",
-          "comparison_fit": "contextual",
-          "survey_fit": "GSS asks about murder convictions generally, not intellectual disability. A favorable answer does not imply opposition to this exemption."
+          "locator": "Stevens majority opinion Part IV, 536 U.S. 318–321.",
+          "comparison_fit": "direct",
+          "survey_fit": "The question addresses execution of the same broad offender category. Opposition aligns with the exemption’s policy direction, not necessarily the constitutional reasoning or clinical eligibility rules."
         }
       ],
-      "interpretation_limit": "No direct question on this offender category is included; broad death-penalty support cannot establish disagreement."
+      "interpretation_limit": "The survey does not define intellectual disability or measure respondents’ views on diagnostic criteria. It was completed before the ruling; it does not establish that opinion caused the decision."
     },
     {
       "case_id": "2004-024",
@@ -60,17 +60,17 @@
       "components": [
         {
           "component_id": "roper-age",
-          "policy_id": "capital",
+          "policy_id": "juveniles",
           "issue": "Age at the time of the offense",
           "decision": "Prohibited death sentences for offenses committed before age 18.",
           "direction": "expands",
           "scope": "Age at the offense, not age at trial or execution.",
-          "locator": "Kennedy majority opinion Parts III and V, 543 U.S. 568\u2013579.",
+          "locator": "Kennedy majority opinion Parts III and V, 543 U.S. 568–579.",
           "comparison_fit": "contextual",
-          "survey_fit": "GSS does not specify age at the offense; it cannot identify support for this juvenile-offender exemption."
+          "survey_fit": "The question explicitly names juveniles, a closer match than general murder questions. It does not specify under 18 at the time of the offense, so the comparison remains contextual."
         }
       ],
-      "interpretation_limit": "A general majority favoring capital punishment is not evidence that a majority favored executing juveniles."
+      "interpretation_limit": "The May 2002 observation predates Roper by almost three years. It is not a measurement of opinion in March 2005, and the undefined juvenile category is not an exact legal-age match."
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "timing_rule": "Latest earlier calendar year per source within 3 years; retain all same-year question variants.",
+  "timing_rule": "Latest eligible year per source within 3 years; dated fieldwork must end before the decision, otherwise an earlier calendar year is required. Retain all eligible question variants in that year.",
   "policies": {
     "capital": {
       "support_definition": "Favoring the death penalty for persons convicted of murder; not a liberal score.",
@@ -14,6 +14,24 @@
     "sentencing": {
       "support_definition": "Approval of the specific Georgia capital-sentencing system; no question selected.",
       "questions": []
+    },
+    "intellectual_disability": {
+      "support_definition": "Original categories retain support for execution; opposition corresponds to favoring the exemption. No ideological or pooled alignment score.",
+      "questions": [
+        {
+          "source": "Gallup",
+          "variable": "gallup_2002_disability"
+        }
+      ]
+    },
+    "juveniles": {
+      "support_definition": "Original categories retain support for execution; opposition corresponds to favoring the exemption. No ideological or pooled alignment score.",
+      "questions": [
+        {
+          "source": "Gallup",
+          "variable": "gallup_2002_juveniles"
+        }
+      ]
     }
   },
   "cases": [
@@ -131,82 +149,51 @@
       "components": [
         {
           "component_id": "atkins-exemption",
-          "policy_id": "capital",
+          "policy_id": "intellectual_disability",
           "issue": "Exemption for intellectual disability",
           "decision": "Prohibited executing offenders with intellectual disability.",
           "direction": "expands",
           "scope": "A categorical limit on who may be executed, not abolition of capital punishment.",
           "locator": "Stevens majority opinion Part IV, 536 U.S. 318\u2013321.",
-          "comparison_fit": "contextual",
-          "survey_fit": "GSS asks about murder convictions generally, not intellectual disability. A favorable answer does not imply opposition to this exemption.",
+          "comparison_fit": "direct",
+          "survey_fit": "The question addresses execution of the same broad offender category. Opposition aligns with the exemption\u2019s policy direction, not necessarily the constitutional reasoning or clinical eligibility rules.",
           "comparisons": [
             {
-              "source": "GSS",
+              "source": "Gallup",
               "status": "available",
               "observations": [
                 {
-                  "source": "GSS",
-                  "year": 2000,
-                  "variable": "cappun",
-                  "wording": "Do you favor or oppose the death penalty for persons convicted of murder?",
-                  "weight": "wtssps",
-                  "orientation": "Support means favoring the death penalty for murder; it is not the liberal endpoint.",
-                  "denominator": "Positive-weight substantive, do-not-know and item nonresponse answers; inapplicable/unavailable/system missing excluded.",
-                  "n": 2817,
-                  "weight_sum": 2816.9753999709305,
-                  "percent": {
-                    "support": 64.91932797738232,
-                    "oppose": 26.964594374867005,
-                    "neutral": 0.0,
-                    "unsure": 7.327624118513952,
-                    "nonresponse": 0.7884535292367268
-                  },
-                  "categories": [
+                  "source": "Gallup",
+                  "variable": "gallup_2002_disability",
+                  "year": 2002,
+                  "field_start": "2002-05-06",
+                  "field_end": "2002-05-09",
+                  "data_kind": "published_topline",
+                  "source_url": "https://news.gallup.com/poll/6031/Slim-Majority-Americans-Say-Death-Penalty-Applied-Fairly.aspx",
+                  "source_locator": "Offender-category battery, item C; May 6\u20139, 2002",
+                  "sample_n": 1012,
+                  "wording": "Favoring or opposing execution of people with intellectual disability.",
+                  "wording_note": "Paraphrased summary. The original category uses the historical term \u201cmentally retarded.\u201d Modern terminology is used in the summary. Mental illness is a different item and is not substituted. The question does not define clinical eligibility for the exemption. Offender categories were asked in random order. The article gives a full national sample of 1,012 and no smaller base for this battery; its general-murder question has a separate 475-person base.",
+                  "weight": "Published national telephone-survey topline; no recalculation.",
+                  "denominator": "National adult survey, n=1,012; battery has no separate restricted base reported. No opinion retained.",
+                  "orientation": "Opposition to execution supports an exemption; favor means support for execution, not for the ruling.",
+                  "response_distribution": [
+                    {
+                      "code": "0",
+                      "label": "Favor execution",
+                      "percent": 13
+                    },
                     {
                       "code": "1",
-                      "group": "support",
-                      "n": 1764,
-                      "weight_sum": 1828.7614989493059,
-                      "percent": 64.91932797738232
+                      "label": "Oppose execution",
+                      "percent": 82
                     },
                     {
                       "code": "2",
-                      "group": "oppose",
-                      "n": 801,
-                      "weight_sum": 759.5859902419489,
-                      "percent": 26.964594374867005
-                    },
-                    {
-                      "code": "d",
-                      "group": "unsure",
-                      "n": 228,
-                      "weight_sum": 206.41736882087477,
-                      "percent": 7.327624118513952
-                    },
-                    {
-                      "code": "n",
-                      "group": "nonresponse",
-                      "n": 24,
-                      "weight_sum": 22.210541958801205,
-                      "percent": 0.7884535292367268
-                    },
-                    {
-                      "code": "r",
-                      "group": "nonresponse",
-                      "n": 0,
-                      "weight_sum": 0.0,
-                      "percent": 0.0
-                    },
-                    {
-                      "code": "s",
-                      "group": "nonresponse",
-                      "n": 0,
-                      "weight_sum": 0.0,
-                      "percent": 0.0
+                      "label": "No opinion",
+                      "percent": 5
                     }
-                  ],
-                  "excluded_positive_weight": 0,
-                  "missing_or_zero_weight": 0
+                  ]
                 }
               ]
             }
@@ -214,7 +201,7 @@
           "coverage_status": "see_source_comparisons"
         }
       ],
-      "interpretation_limit": "No direct question on this offender category is included; broad death-penalty support cannot establish disagreement."
+      "interpretation_limit": "The survey does not define intellectual disability or measure respondents\u2019 views on diagnostic criteria. It was completed before the ruling; it does not establish that opinion caused the decision."
     },
     {
       "case_id": "2004-024",
@@ -224,82 +211,51 @@
       "components": [
         {
           "component_id": "roper-age",
-          "policy_id": "capital",
+          "policy_id": "juveniles",
           "issue": "Age at the time of the offense",
           "decision": "Prohibited death sentences for offenses committed before age 18.",
           "direction": "expands",
           "scope": "Age at the offense, not age at trial or execution.",
           "locator": "Kennedy majority opinion Parts III and V, 543 U.S. 568\u2013579.",
           "comparison_fit": "contextual",
-          "survey_fit": "GSS does not specify age at the offense; it cannot identify support for this juvenile-offender exemption.",
+          "survey_fit": "The question explicitly names juveniles, a closer match than general murder questions. It does not specify under 18 at the time of the offense, so the comparison remains contextual.",
           "comparisons": [
             {
-              "source": "GSS",
+              "source": "Gallup",
               "status": "available",
               "observations": [
                 {
-                  "source": "GSS",
-                  "year": 2004,
-                  "variable": "cappun",
-                  "wording": "Do you favor or oppose the death penalty for persons convicted of murder?",
-                  "weight": "wtssnrps",
-                  "orientation": "Support means favoring the death penalty for murder; it is not the liberal endpoint.",
-                  "denominator": "Positive-weight substantive, do-not-know and item nonresponse answers; inapplicable/unavailable/system missing excluded.",
-                  "n": 1340,
-                  "weight_sum": 1336.987741104067,
-                  "percent": {
-                    "support": 63.590891201963274,
-                    "oppose": 29.628319693709564,
-                    "neutral": 0.0,
-                    "unsure": 5.688733850199449,
-                    "nonresponse": 1.0920552541277246
-                  },
-                  "categories": [
+                  "source": "Gallup",
+                  "variable": "gallup_2002_juveniles",
+                  "year": 2002,
+                  "field_start": "2002-05-06",
+                  "field_end": "2002-05-09",
+                  "data_kind": "published_topline",
+                  "source_url": "https://news.gallup.com/poll/6031/Slim-Majority-Americans-Say-Death-Penalty-Applied-Fairly.aspx",
+                  "source_locator": "Offender-category battery, item D; May 6\u20139, 2002",
+                  "sample_n": 1012,
+                  "wording": "Favoring or opposing the death penalty for juveniles.",
+                  "wording_note": "Paraphrased summary. The category is \u201cJuveniles\u201d; no numeric age or age-at-offense qualification is provided. Do not silently rewrite it as under 18 at the time of the crime. The original 2002 release prints 5% no opinion; retain that value rather than the inconsistent 3% in the later Gallup trend table. Offender categories were asked in random order. The article gives a full national sample of 1,012 and no smaller base for this battery; its general-murder question has a separate 475-person base.",
+                  "weight": "Published national telephone-survey topline; no recalculation.",
+                  "denominator": "National adult survey, n=1,012; battery has no separate restricted base reported. No opinion retained.",
+                  "orientation": "Opposition to execution supports an exemption; favor means support for execution, not for the ruling.",
+                  "response_distribution": [
+                    {
+                      "code": "0",
+                      "label": "Favor execution",
+                      "percent": 26
+                    },
                     {
                       "code": "1",
-                      "group": "support",
-                      "n": 855,
-                      "weight_sum": 850.2024198290736,
-                      "percent": 63.590891201963274
+                      "label": "Oppose execution",
+                      "percent": 69
                     },
                     {
                       "code": "2",
-                      "group": "oppose",
-                      "n": 402,
-                      "weight_sum": 396.1270022000189,
-                      "percent": 29.628319693709564
-                    },
-                    {
-                      "code": "d",
-                      "group": "unsure",
-                      "n": 68,
-                      "weight_sum": 76.05767420120402,
-                      "percent": 5.688733850199449
-                    },
-                    {
-                      "code": "n",
-                      "group": "nonresponse",
-                      "n": 15,
-                      "weight_sum": 14.600644873770545,
-                      "percent": 1.0920552541277246
-                    },
-                    {
-                      "code": "r",
-                      "group": "nonresponse",
-                      "n": 0,
-                      "weight_sum": 0.0,
-                      "percent": 0.0
-                    },
-                    {
-                      "code": "s",
-                      "group": "nonresponse",
-                      "n": 0,
-                      "weight_sum": 0.0,
-                      "percent": 0.0
+                      "label": "No opinion",
+                      "percent": 5
                     }
-                  ],
-                  "excluded_positive_weight": 1472,
-                  "missing_or_zero_weight": 0
+                  ]
                 }
               ]
             }
@@ -307,16 +263,20 @@
           "coverage_status": "see_source_comparisons"
         }
       ],
-      "interpretation_limit": "A general majority favoring capital punishment is not evidence that a majority favored executing juveniles."
+      "interpretation_limit": "The May 2002 observation predates Roper by almost three years. It is not a measurement of opinion in March 2005, and the undefined juvenile category is not an exact legal-age match."
     }
   ],
   "limitations": [
     "Explicit source-based legal coding is an input, not an automated legal classifier.",
     "Contextual matches do not measure approval of the specific holding.",
     "Mixed and unresolved components retain their labels; no scalar direction is inferred.",
-    "No pooling, confidence intervals, causal claims, or prediction.",
-    "Selected cases are not a representative sample. Broad attitudes do not establish agreement with narrower offender categories or admissions programs."
+    "No pooling, confidence intervals, causal claims, or prediction."
   ],
+  "input_sha256": {
+    "data/research/capital-punishment-policy-components.json": "c3ac38bab5959b8694dda4109ab96777417132518166c797467476e368520440",
+    "data/research/capital-punishment-policy-surveys.json": "75ba1d65d792a7b61d9c9839ff5d02d45e287d46786aa9a445f1661812f02dda",
+    "data/research/capital-punishment-policy-mapping.json": "769d774f9fa32116db1f37595916a1e2245042d68420ef54939c0c050c32bfd1"
+  },
   "survey_provenance": {
     "data/manifests/gss-2024-r3a.json": "bb521484420a0df344315e1876f6720edf0fd3b797433852b8a9639ce4e18f35",
     "data/raw/gss-2024-r3a/gss7224_r3a.dta": "a7622e03d9130e25968943b6f022f44dc0087baf0aa6b5cef150871152827344",
@@ -332,6 +292,7 @@
     "artifacts/court-details.sqlite": "64ec1377c7206d70228dcd9080bc93f6a584a6c379446cf68fab866ebf8e7a36",
     "/Users/jackson/GitHub/scotus-v-public/scripts/build_existing_survey_examples.py": "a7d1a15e0ae1ce1bf5f50d3c2e96e70a9e45758b9d5d1ba25615ea7517b85987",
     "data/research/capital-punishment-policy-components.json": "2ddfb8b36e8fc8d3c924d4ad890437b764bb6667f750b105d7e1588d718b4606",
-    "data/research/capital-punishment-policy-mapping.json": "49d5f8075be82c03338d8cbd82f570e0605a8eeb2d5be7eff72dcd799df7b6cf"
+    "data/research/capital-punishment-policy-mapping.json": "49d5f8075be82c03338d8cbd82f570e0605a8eeb2d5be7eff72dcd799df7b6cf",
+    "data/raw/policy-toplines/gallup-capital-2002.html": "4f69ec6ae1d2728dd5afef338c39f7d2a15c562d7ac24a7900941139af7dd6d6"
   }
 }

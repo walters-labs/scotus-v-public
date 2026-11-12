@@ -261,3 +261,11 @@ Neither panel estimates agreement with the specific legal holding.
 topline. `make school-religion-policy` selects the closer 2001 Gallup after-hours
 observation for Good News Club. See `POLICY_QUALITY_REVIEW.md` for the ten-panel
 assessment and limits; adding records does not upgrade contextual matches to direct.
+
+## Capital-punishment exemption questions
+
+`make capital-punishment-policy` verifies the Gallup source snapshot and rebuilds
+all three selected decisions. Separate policy selectors prevent generic GSS murder
+responses from standing in for disability or juvenile questions. See
+`CAPITAL_PUNISHMENT_SOURCES.md` for the original-release discrepancy, sample bases,
+wording limits and direction of the response categories.

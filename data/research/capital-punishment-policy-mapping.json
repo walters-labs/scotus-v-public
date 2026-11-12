@@ -13,6 +13,24 @@
     "sentencing": {
       "support_definition": "Approval of the specific Georgia capital-sentencing system; no question selected.",
       "questions": []
+    },
+    "intellectual_disability": {
+      "support_definition": "Original categories retain support for execution; opposition corresponds to favoring the exemption. No ideological or pooled alignment score.",
+      "questions": [
+        {
+          "source": "Gallup",
+          "variable": "gallup_2002_disability"
+        }
+      ]
+    },
+    "juveniles": {
+      "support_definition": "Original categories retain support for execution; opposition corresponds to favoring the exemption. No ideological or pooled alignment score.",
+      "questions": [
+        {
+          "source": "Gallup",
+          "variable": "gallup_2002_juveniles"
+        }
+      ]
     }
   }
 }

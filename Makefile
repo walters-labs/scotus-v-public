@@ -177,3 +177,8 @@ campaign-finance-policy:
 affirmative-action-policy:
 	$(PY) -m scvpublic.download data/manifests/affirmative-action-toplines.json
 	$(PY) -m scripts.compare_policy --cases data/research/affirmative-action-policy-components.json --surveys data/research/affirmative-action-policy-surveys.json --mapping data/research/affirmative-action-policy-mapping.json --output data/research/affirmative-action-policy-comparison.json --report docs/AFFIRMATIVE_ACTION_POLICY_COMPARISON.md
+
+.PHONY: capital-punishment-policy
+capital-punishment-policy:
+	$(PY) -m scvpublic.download data/manifests/capital-punishment-toplines.json
+	$(PY) -m scripts.compare_policy --cases data/research/capital-punishment-policy-components.json --surveys data/research/capital-punishment-policy-surveys.json --mapping data/research/capital-punishment-policy-mapping.json --output data/research/capital-punishment-policy-comparison.json --report docs/CAPITAL_PUNISHMENT_POLICY_COMPARISON.md

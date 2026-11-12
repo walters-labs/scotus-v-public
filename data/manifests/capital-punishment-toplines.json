@@ -1,0 +1,11 @@
+{
+  "description": "Gallup original May 20, 2002 release, retrieved November 12, 2026. Publisher rights retained. HTML checksum changes require source review.",
+  "files": [
+    {
+      "path": "policy-toplines/gallup-capital-2002.html",
+      "url": "https://news.gallup.com/poll/6031/Slim-Majority-Americans-Say-Death-Penalty-Applied-Fairly.aspx",
+      "sha256": "4f69ec6ae1d2728dd5afef338c39f7d2a15c562d7ac24a7900941139af7dd6d6",
+      "bytes": 106675
+    }
+  ]
+}

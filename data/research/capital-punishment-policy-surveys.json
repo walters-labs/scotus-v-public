@@ -191,6 +191,72 @@
       ],
       "excluded_positive_weight": 1472,
       "missing_or_zero_weight": 0
+    },
+    {
+      "source": "Gallup",
+      "variable": "gallup_2002_disability",
+      "year": 2002,
+      "field_start": "2002-05-06",
+      "field_end": "2002-05-09",
+      "data_kind": "published_topline",
+      "source_url": "https://news.gallup.com/poll/6031/Slim-Majority-Americans-Say-Death-Penalty-Applied-Fairly.aspx",
+      "source_locator": "Offender-category battery, item C; May 6–9, 2002",
+      "sample_n": 1012,
+      "wording": "Favoring or opposing execution of people with intellectual disability.",
+      "wording_note": "Paraphrased summary. The original category uses the historical term “mentally retarded.” Modern terminology is used in the summary. Mental illness is a different item and is not substituted. The question does not define clinical eligibility for the exemption. Offender categories were asked in random order. The article gives a full national sample of 1,012 and no smaller base for this battery; its general-murder question has a separate 475-person base.",
+      "weight": "Published national telephone-survey topline; no recalculation.",
+      "denominator": "National adult survey, n=1,012; battery has no separate restricted base reported. No opinion retained.",
+      "orientation": "Opposition to execution supports an exemption; favor means support for execution, not for the ruling.",
+      "response_distribution": [
+        {
+          "code": "0",
+          "label": "Favor execution",
+          "percent": 13
+        },
+        {
+          "code": "1",
+          "label": "Oppose execution",
+          "percent": 82
+        },
+        {
+          "code": "2",
+          "label": "No opinion",
+          "percent": 5
+        }
+      ]
+    },
+    {
+      "source": "Gallup",
+      "variable": "gallup_2002_juveniles",
+      "year": 2002,
+      "field_start": "2002-05-06",
+      "field_end": "2002-05-09",
+      "data_kind": "published_topline",
+      "source_url": "https://news.gallup.com/poll/6031/Slim-Majority-Americans-Say-Death-Penalty-Applied-Fairly.aspx",
+      "source_locator": "Offender-category battery, item D; May 6–9, 2002",
+      "sample_n": 1012,
+      "wording": "Favoring or opposing the death penalty for juveniles.",
+      "wording_note": "Paraphrased summary. The category is “Juveniles”; no numeric age or age-at-offense qualification is provided. Do not silently rewrite it as under 18 at the time of the crime. The original 2002 release prints 5% no opinion; retain that value rather than the inconsistent 3% in the later Gallup trend table. Offender categories were asked in random order. The article gives a full national sample of 1,012 and no smaller base for this battery; its general-murder question has a separate 475-person base.",
+      "weight": "Published national telephone-survey topline; no recalculation.",
+      "denominator": "National adult survey, n=1,012; battery has no separate restricted base reported. No opinion retained.",
+      "orientation": "Opposition to execution supports an exemption; favor means support for execution, not for the ruling.",
+      "response_distribution": [
+        {
+          "code": "0",
+          "label": "Favor execution",
+          "percent": 26
+        },
+        {
+          "code": "1",
+          "label": "Oppose execution",
+          "percent": 69
+        },
+        {
+          "code": "2",
+          "label": "No opinion",
+          "percent": 5
+        }
+      ]
     }
   ],
   "provenance": {
@@ -208,6 +274,7 @@
     "artifacts/court-details.sqlite": "64ec1377c7206d70228dcd9080bc93f6a584a6c379446cf68fab866ebf8e7a36",
     "/Users/jackson/GitHub/scotus-v-public/scripts/build_existing_survey_examples.py": "a7d1a15e0ae1ce1bf5f50d3c2e96e70a9e45758b9d5d1ba25615ea7517b85987",
     "data/research/capital-punishment-policy-components.json": "2ddfb8b36e8fc8d3c924d4ad890437b764bb6667f750b105d7e1588d718b4606",
-    "data/research/capital-punishment-policy-mapping.json": "49d5f8075be82c03338d8cbd82f570e0605a8eeb2d5be7eff72dcd799df7b6cf"
+    "data/research/capital-punishment-policy-mapping.json": "49d5f8075be82c03338d8cbd82f570e0605a8eeb2d5be7eff72dcd799df7b6cf",
+    "data/raw/policy-toplines/gallup-capital-2002.html": "4f69ec6ae1d2728dd5afef338c39f7d2a15c562d7ac24a7900941139af7dd6d6"
   }
 }

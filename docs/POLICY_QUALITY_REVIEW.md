@@ -31,7 +31,7 @@ not included in these counts. “Missing” excludes procedural components.
 | --- | ---: | ---: | --- |
 | Marriage equality | 5 | 14 / 6 | Strong featured example. Licensing, federal recognition and interstate recognition have specific comparisons. Birth certificates remain broader context; Baker has no earlier poll. Additional data are optional for the current claims. |
 | Abortion | 5 | 9 / 5 | Strong featured example. Casey notification/waiting questions and Dobbs/Roe questions do useful work. Hyde funding and the fifteen-week rule remain missing; provider restrictions have only general context. Do not describe the entire legal history as covered. |
-| Capital punishment | 3 | 3 / 1 | Partial. Gregg has a broad punishment/offense match. General murder questions cannot measure the Atkins or Roper exemptions. Obtain disability- and age-specific earlier questions before featuring those as substantive comparisons. |
+| Capital punishment | 3 | 3 / 2 | Improved after review. Gregg retains GSS; Atkins and Roper now use targeted May 2002 Gallup questions. Disability matches the broad category; “juveniles” leaves age-at-offense unspecified. The two targeted questions share one survey, so independent corroboration and an exact age question would strengthen this further. |
 | Affirmative action | 3 | 3 / 3 | Improved, still limited. Added Pew 2023 admissions/diversity question; existing CES combines employment and admissions, VOTER is broader still. Fisher 2013 is procedural. Seek an admissions-specific pre-2016 question next; do not connect differing wordings into a trend. |
 | Voter ID | 1 | 1 / 1 | Adequate narrow snapshot, not a deep panel. Pew measures photo-ID preference but not Indiana’s exemptions, burdens or facial-challenge standard. Another independent contemporary poll would strengthen it; a large sample alone does not establish robustness. |
 | Handgun rights | 2 | 3 / 2 | Adequate policy context. Possession and sales must stay separate; neither tests incorporation. Storage is missing. The 2008 Pew row is reused, not new evidence for 2010. Prioritize home possession/storage questions over generic gun-control polls. |
@@ -66,7 +66,7 @@ pre-ruling comparisons; different denominators are not pooled.
 
 - Existing recorded input hashes checked where present; no mismatch found.
   New source snapshots are checksum-pinned. This does not establish that every
-  older artifact has complete provenance; capital punishment lacks input hashes.
+  older artifact has complete provenance; capital punishment now has input hashes following its targeted-poll rebuild.
 - Comparison observations checked for eligible year/date, nonduplicated identifiers,
   retained response shares and explicit contextual/procedural labels.
 - Unknown historical Gallup item sample sizes remain unknown. No modern sample
@@ -84,10 +84,10 @@ pre-ruling comparisons; different denominators are not pooled.
 
 ## Next work, in order
 
-1. Fix the strongest gap: targeted capital-punishment exemption questions. Gallup’s
-   [2004 review](https://news.gallup.com/poll/14371/Americans-Death-Penalty.aspx)
-   identifies earlier targeted polling; verify complete categories, dates and bases
-   before importing. A lead is not yet data in the app.
+1. Capital-punishment exemption questions have now been added from the original
+   May 2002 Gallup release (see `CAPITAL_PUNISHMENT_SOURCES.md`). The juvenile
+   wording remains contextual. Further work should seek corroboration, not repeat
+   general murder questions.
 2. Improve campaign finance’s question fit, with a stop rule: if no suitable earlier
    evidence is obtainable, defer the panel rather than pad it with generic polls.
 3. Review the remaining contextual panels for publication wording and layout;

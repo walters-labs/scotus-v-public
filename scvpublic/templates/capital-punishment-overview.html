@@ -1,4 +1,18 @@
 <section class="marriage-overview" aria-labelledby="capital-punishment-question">
-<p class="eyebrow">Capital punishment · A closer look</p><h2 id="capital-punishment-question">Support for execution—and exceptions to it?</h2>
-<p class="overview-lead">General support for the death penalty does not tell us whether people support executing juveniles or people with intellectual disability.</p><div class="reading-guide"><div><h3>What the surveys measure</h3><p>GSS asks about the death penalty for murder convictions. That broadly matches Gregg’s permissibility question.</p></div><div><h3>What the cases decide</h3><p>Atkins and Roper concern exemptions for particular groups. Their survey cards show general background only, not opposition to those exemptions.</p></div></div>
-<p class="snapshot-note">The exemption comparisons still need targeted questions. These three observations are not presented as a continuous trend.</p></section><h2 class="evidence-heading">The rulings and the earlier polls</h2>
+<p class="eyebrow">Capital punishment · A closer look</p>
+<h2 id="capital-punishment-question">Supporting the death penalty does not mean supporting every execution</h2>
+<p class="overview-lead">The Court allowed capital punishment under safeguards in Gregg, then excluded particular groups in Atkins and Roper. Earlier surveys let us compare these different policy questions separately.</p>
+<div class="reading-guide">
+<div><h3>The general policy</h3><p>GSS’s 1975 question asks about execution for murder convictions. It broadly matches Gregg’s permissibility question, but does not measure support for Georgia’s sentencing procedures.</p></div>
+<div><h3>The exemptions</h3><p>Gallup asked separately about intellectual disability and juveniles in May 2002. Majorities opposed execution for both groups. That policy direction is consistent with the later exemptions, without establishing agreement with the Court’s reasoning.</p></div>
+</div>
+<h3 class="snapshot-heading">The targeted questions · Gallup, May 6–9, 2002</h3>
+<div class="policy-table"><table><caption class="sr-only">Earlier opinions about execution of specific groups</caption><thead><tr><th scope="col">Group in the question</th><th scope="col">Favor execution</th><th scope="col">Oppose execution</th><th scope="col">No opinion</th></tr></thead><tbody>
+{% for case in study.cases[1:] %}{% set observation = case.components[0].observations[0] %}
+<tr><th scope="row"><a href="#case-{{ case.case_id }}">{{ 'Intellectual disability' if loop.first else 'Juveniles' }}</a></th>{% for answer in observation.response_distribution %}<td>{{ '%.0f'|format(answer.percent) }}%</td>{% endfor %}</tr>
+{% endfor %}</tbody></table></div>
+<p class="snapshot-note">Two questions from one national survey of 1,012 adults, not independent replications or a time trend. These are group-level results; they do not show which individual respondents supported both general capital punishment and an exemption.</p>
+<details class="methodology"><summary>How closely do the questions match?</summary><p><strong>Atkins:</strong> the survey names the relevant disability category, using historical terminology, but does not define clinical eligibility. <strong>Roper:</strong> “juveniles” is not explicitly defined as under 18 at the time of the offense. That comparison remains contextual, and the poll predates Roper by almost three years.</p><p>The 1975 GSS and 2002 Gallup results come from different surveys and periods. They cannot establish a change over time or a causal effect on the Court.</p></details>
+<h3 class="snapshot-heading">Three rulings, different questions</h3>
+<ol class="ruling-timeline">{% for case in study.cases %}<li><time>{{ case.date[:4] }}</time><div><a href="#case-{{ case.case_id }}">{{ case.name }}</a><p>{{ case.components[0].decision }}</p></div></li>{% endfor %}</ol>
+</section><h2 class="evidence-heading">The rulings and the earlier polls</h2>

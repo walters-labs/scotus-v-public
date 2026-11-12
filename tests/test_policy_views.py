@@ -17,6 +17,38 @@ class PolicyViewsTests(unittest.TestCase):
             publish(self.artifact,'Demo',True,demo_matrices())
         self.client=create_app(self.artifact).test_client()
 
+    def test_capital_exemption_polls_and_timing(self):
+        import json
+        from copy import deepcopy
+        from scripts.compare_policy import compare
+        root=Path('data/research')
+        cases=json.loads((root/'capital-punishment-policy-components.json').read_text())['cases']
+        rows=json.loads((root/'capital-punishment-policy-surveys.json').read_text())['survey_records']
+        mapping=json.loads((root/'capital-punishment-policy-mapping.json').read_text())
+        result=compare(cases,rows,mapping)
+        self.assertEqual(result['cases'],json.loads((root/'capital-punishment-policy-comparison.json').read_text())['cases'])
+        for index,values in [(1,[13,82,5]),(2,[26,69,5])]:
+            selected=result['cases'][index]['components'][0]['comparisons'][0]['observations']
+            self.assertEqual(len(selected),1)
+            row=selected[0]
+            self.assertEqual(row['sample_n'],1012)
+            self.assertEqual([x['percent'] for x in row['response_distribution']],values)
+            self.assertEqual(row['response_distribution'][0]['label'],'Favor execution')
+            self.assertEqual(row['field_end'],'2002-05-09')
+        # No generic GSS response may stand in for either exemption question.
+        without=[r for r in rows if r['source']!='Gallup']
+        reduced=compare(cases,without,mapping)
+        for case in reduced['cases'][1:]:
+            self.assertFalse(case['components'][0]['comparisons'][0]['observations'])
+        late=deepcopy(rows)
+        for row in late:
+            if row['variable']=='gallup_2002_disability':
+                row.update(field_start='2002-06-20',field_end='2002-06-20')
+        self.assertFalse(compare(cases,late,mapping)['cases'][1]['components'][0]['comparisons'][0]['observations'])
+        html=self.client.get('/policy-comparisons?topic=capital-punishment').get_data(as_text=True)
+        for text in ['82%','69%','almost three years','not independent replications','Missing data']:
+            self.assertIn(text,html)
+
     def test_all_panels_observation_integrity(self):
         from datetime import date
         from scvpublic.policy_views import STUDIES, load_study
@@ -223,9 +255,10 @@ class PolicyViewsTests(unittest.TestCase):
             return [(r['source'],r['year']) for r in component['observations']]
         capital=load_study('capital-punishment')['cases']
         self.assertEqual([observations(c['components'][0]) for c in capital],
-                         [[('GSS',1975)],[('GSS',2000)],[('GSS',2004)]])
+                         [[('GSS',1975)],[('Gallup',2002)],[('Gallup',2002)]])
         self.assertEqual(capital[0]['components'][1]['display_fit'],'Missing data')
-        self.assertEqual(capital[1]['components'][0]['display_fit'],'Context only')
+        self.assertEqual(capital[1]['components'][0]['display_fit'],'Direct comparison')
+        self.assertEqual(capital[2]['components'][0]['display_fit'],'Context only')
         affirmative=load_study('affirmative-action')['cases']
         self.assertEqual([observations(c['components'][0]) for c in affirmative],
                          [[],[('CES',2014)],[('VOTER',2020)]])

@@ -1,6 +1,6 @@
 # Policy comparison report
 
-Latest earlier calendar year per source within 3 years; retain all same-year question variants.
+Latest eligible year per source within 3 years; dated fieldwork must end before the decision, otherwise an earlier calendar year is required. Retain all eligible question variants in that year.
 
 Offline research only. Shares retain each source’s denominator. No combined alignment score.
 
@@ -53,33 +53,44 @@ Zero denotes zero in retained categories; it does not prove the original questio
 
 [Decision source](https://www.law.cornell.edu/supremecourt/text/536/304)
 
-No direct question on this offender category is included; broad death-penalty support cannot establish disagreement.
+The survey does not define intellectual disability or measure respondents’ views on diagnostic criteria. It was completed before the ruling; it does not establish that opinion caused the decision.
 
 ### Exemption for intellectual disability
 
-**expands · contextual**
+**expands · direct**
 
 Prohibited executing offenders with intellectual disability.
 
 A categorical limit on who may be executed, not abolition of capital punishment.
 
-GSS asks about murder convictions generally, not intellectual disability. A favorable answer does not imply opposition to this exemption.
+The question addresses execution of the same broad offender category. Opposition aligns with the exemption’s policy direction, not necessarily the constitutional reasoning or clinical eligibility rules.
 
 Source locator: Stevens majority opinion Part IV, 536 U.S. 318–321.
 
 | Source/year | Support | Oppose | Neutral | Unsure | Nonresponse |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| GSS 2000 (cappun) | 64.9% | 27.0% | 0.0% | 7.3% | 0.8% |
+| Gallup 2002 (gallup_2002_disability): categories below | — | — | — | — | — |
 
 Zero denotes zero in retained categories; it does not prove the original questionnaire lacked other response options.
 
-- **GSS 2000 (cappun):** Do you favor or oppose the death penalty for persons convicted of murder? Denominator: Positive-weight substantive, do-not-know and item nonresponse answers; inapplicable/unavailable/system missing excluded.
+
+**Gallup 2002 (gallup_2002_disability) — original policy categories**
+
+| Answer | Percent |
+| --- | ---: |
+| Favor execution | 13.0% |
+| Oppose execution | 82.0% |
+| No opinion | 5.0% |
+
+Favoring or opposing execution of people with intellectual disability.
+
+Denominator: National adult survey, n=1,012; battery has no separate restricted base reported. No opinion retained.
 
 ## Roper v. Simmons (2005-03-01)
 
 [Decision source](https://www.law.cornell.edu/supremecourt/text/543/551)
 
-A general majority favoring capital punishment is not evidence that a majority favored executing juveniles.
+The May 2002 observation predates Roper by almost three years. It is not a measurement of opinion in March 2005, and the undefined juvenile category is not an exact legal-age match.
 
 ### Age at the time of the offense
 
@@ -89,17 +100,28 @@ Prohibited death sentences for offenses committed before age 18.
 
 Age at the offense, not age at trial or execution.
 
-GSS does not specify age at the offense; it cannot identify support for this juvenile-offender exemption.
+The question explicitly names juveniles, a closer match than general murder questions. It does not specify under 18 at the time of the offense, so the comparison remains contextual.
 
 Source locator: Kennedy majority opinion Parts III and V, 543 U.S. 568–579.
 
 | Source/year | Support | Oppose | Neutral | Unsure | Nonresponse |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| GSS 2004 (cappun) | 63.6% | 29.6% | 0.0% | 5.7% | 1.1% |
+| Gallup 2002 (gallup_2002_juveniles): categories below | — | — | — | — | — |
 
 Zero denotes zero in retained categories; it does not prove the original questionnaire lacked other response options.
 
-- **GSS 2004 (cappun):** Do you favor or oppose the death penalty for persons convicted of murder? Denominator: Positive-weight substantive, do-not-know and item nonresponse answers; inapplicable/unavailable/system missing excluded.
+
+**Gallup 2002 (gallup_2002_juveniles) — original policy categories**
+
+| Answer | Percent |
+| --- | ---: |
+| Favor execution | 26.0% |
+| Oppose execution | 69.0% |
+| No opinion | 5.0% |
+
+Favoring or opposing the death penalty for juveniles.
+
+Denominator: National adult survey, n=1,012; battery has no separate restricted base reported. No opinion retained.
 
 ## Limits
 
@@ -107,4 +129,3 @@ Zero denotes zero in retained categories; it does not prove the original questio
 - Contextual matches do not measure approval of the specific holding.
 - Mixed and unresolved components retain their labels; no scalar direction is inferred.
 - No pooling, confidence intervals, causal claims, or prediction.
-- Selected cases are not a representative sample. Broad attitudes do not establish agreement with narrower offender categories or admissions programs.
