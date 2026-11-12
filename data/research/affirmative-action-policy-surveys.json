@@ -440,6 +440,74 @@
           "percent": 1
         }
       ]
+    },
+    {
+      "source": "Pew Research Center",
+      "variable": "pew_2014_C127",
+      "year": 2014,
+      "field_start": "2014-02-27",
+      "field_end": "2014-03-16",
+      "data_kind": "published_topline",
+      "source_url": "https://assets.pewresearch.org/wp-content/uploads/sites/5/legacy-questionnaires/4-22-14%20Affirmative%20Action%20Topline.pdf",
+      "source_page": 3,
+      "source_item": "C127",
+      "sample_n": 3335,
+      "wording": "Whether affirmative-action programs intended to increase Black and minority representation on college campuses are good or bad.",
+      "wording_note": "Paraphrased summary. Asked all respondents. This describes a representation goal, not explicit race-based selection criteria or the Texas program. Published percentages total 101 because of rounding; do not calculate uncertainty as the residual 7%.",
+      "weight": "Published weighted national telephone-survey topline; no recalculation.",
+      "denominator": "National sample of 3,335 adults; uncertainty retained in the published categories.",
+      "orientation": "Policy preferences under this wording, not approval of Fisher or its constitutional reasoning.",
+      "response_distribution": [
+        {
+          "code": "0",
+          "label": "Good thing",
+          "percent": 63
+        },
+        {
+          "code": "1",
+          "label": "Bad thing",
+          "percent": 30
+        },
+        {
+          "code": "2",
+          "label": "Don’t know / refused",
+          "percent": 8
+        }
+      ]
+    },
+    {
+      "source": "Gallup",
+      "variable": "gallup_2013_Q24",
+      "year": 2013,
+      "field_start": "2013-06-13",
+      "field_end": "2013-07-05",
+      "data_kind": "published_topline",
+      "source_url": "https://news.gallup.com/file/poll/163679/Affirmative_Action_130724.pdf",
+      "source_page": 3,
+      "source_item": "24",
+      "sample_n": 4373,
+      "wording": "Choosing admission based only on merit despite low minority enrollment, or considering race and ethnicity for diversity even if some minority applicants otherwise would not be admitted.",
+      "wording_note": "Paraphrased summary. The rotated alternatives frame a trade-off between merit and racial/ethnic consideration; this is survey wording, not the app’s claim that the two are mutually exclusive. National weighted results include oversamples of Black and Hispanic adults recontacted from Gallup Daily. Fieldwork straddles Fisher I (2013), so it cannot serve as earlier opinion for that ruling.",
+      "weight": "Published weighted national telephone-survey topline; no recalculation.",
+      "denominator": "National sample of 4,373 adults; uncertainty retained in the published categories.",
+      "orientation": "Policy preferences under this wording, not approval of Fisher or its constitutional reasoning.",
+      "response_distribution": [
+        {
+          "code": "0",
+          "label": "Merit alone",
+          "percent": 67
+        },
+        {
+          "code": "1",
+          "label": "Consider race / ethnicity for diversity",
+          "percent": 28
+        },
+        {
+          "code": "2",
+          "label": "No opinion",
+          "percent": 5
+        }
+      ]
     }
   ],
   "provenance": {
@@ -460,6 +528,8 @@
     "data/research/capital-punishment-policy-mapping.json": "49d5f8075be82c03338d8cbd82f570e0605a8eeb2d5be7eff72dcd799df7b6cf",
     "data/research/affirmative-action-policy-components.json": "db52ea740f98be011b1da26b00ca90943a35b8c9a58938a11e69bbe64eef3969",
     "data/research/affirmative-action-policy-mapping.json": "ef25cab135ecf5c2150f899da7a8b75221e015c291386f7517fb54b8762d5180",
-    "data/raw/policy-toplines/pew-admissions-2023.pdf": "f44e04d9579929ed2e6f657804396a895e2e4e9c9994fa6516e26be4a39de4a2"
+    "data/raw/policy-toplines/pew-admissions-2023.pdf": "f44e04d9579929ed2e6f657804396a895e2e4e9c9994fa6516e26be4a39de4a2",
+    "data/raw/policy-toplines/pew-admissions-2014.pdf": "e1483671dc3a3b8ea0dfdba385d4777dbe7dd5c4f6a068001ccf1d7edc194bf1",
+    "data/raw/policy-toplines/gallup-admissions-2013.pdf": "a1a52295d1e03959cefff3c48b19c5022858e2881a9a8867f5c309311c0d41db"
   }
 }

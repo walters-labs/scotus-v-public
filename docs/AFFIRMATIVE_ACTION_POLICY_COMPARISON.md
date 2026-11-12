@@ -34,7 +34,7 @@ Zero denotes zero in retained categories; it does not prove the original questio
 
 [Decision source](https://www.law.cornell.edu/supremecourt/text/14-981)
 
-The selected CES item is useful background, not an estimate of approval of Fisher. Same-year VOTER 2016 is excluded.
+Different wording, years and survey designs prevent interpreting the percentages as a trend or an isolated wording effect. The 2013 Gallup and 2014 Pew fieldwork preceded Fisher II; Gallup’s June–July 2016 survey straddled the decision and is not used.
 
 ### Texas admissions program
 
@@ -42,20 +42,43 @@ The selected CES item is useful background, not an estimate of approval of Fishe
 
 Upheld the challenged race-conscious admissions plan under equal protection.
 
-The particular program and record, not permission for every racial preference.
+Race as one factor in holistic review alongside a percentage-admission pathway; the Court upheld this particular program and record, not every racial preference.
 
-CES combines employment and college admissions and describes correcting past discrimination. It does not isolate Texas’s diversity rationale or admissions design.
+Pew asks about increasing campus representation; Gallup asks about considering race against a merit-only alternative. Both concern higher education, but neither describes Texas’s percentage pathway, holistic review, or constitutional test. Keep the two questions separate and contextual.
 
 Source locator: Kennedy majority opinion Parts II–III.
 
 | Source/year | Support | Oppose | Neutral | Unsure | Nonresponse |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| CES 2014 (affirmative_action_race) | 37.5% | 62.5% | 0.0% | 0.0% | 0.0% |
-| VOTER: no prior observation | — | — | — | — | — |
+| Gallup 2013 (gallup_2013_Q24): categories below | — | — | — | — | — |
+| Pew Research Center 2014 (pew_2014_C127): categories below | — | — | — | — | — |
 
 Zero denotes zero in retained categories; it does not prove the original questionnaire lacked other response options.
 
-- **CES 2014 (affirmative_action_race):** Affirmative action programs give preference to racial minorities in employment and college admissions in order to correct for past discrimination. Do you support or oppose affirmative action? Denominator: Conditional on the four support/oppose answers in the harmonized file; original reasons for missing answers unavailable. Employment and college admissions are combined in the question.
+
+**Gallup 2013 (gallup_2013_Q24) — original policy categories**
+
+| Answer | Percent |
+| --- | ---: |
+| Merit alone | 67.0% |
+| Consider race / ethnicity for diversity | 28.0% |
+| No opinion | 5.0% |
+
+Choosing admission based only on merit despite low minority enrollment, or considering race and ethnicity for diversity even if some minority applicants otherwise would not be admitted.
+
+Denominator: National sample of 4,373 adults; uncertainty retained in the published categories.
+
+**Pew Research Center 2014 (pew_2014_C127) — original policy categories**
+
+| Answer | Percent |
+| --- | ---: |
+| Good thing | 63.0% |
+| Bad thing | 30.0% |
+| Don’t know / refused | 8.0% |
+
+Whether affirmative-action programs intended to increase Black and minority representation on college campuses are good or bad.
+
+Denominator: National sample of 3,335 adults; uncertainty retained in the published categories.
 
 ## Students for Fair Admissions v. Harvard / UNC (2023-06-29)
 

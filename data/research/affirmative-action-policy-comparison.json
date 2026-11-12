@@ -35,6 +35,19 @@
           "variable": "pew_2023_COLL_RE"
         }
       ]
+    },
+    "admissions_earlier": {
+      "support_definition": "Separate campus-representation and admissions-criteria questions; original categories retained without a combined support score.",
+      "questions": [
+        {
+          "source": "Pew Research Center",
+          "variable": "pew_2014_C127"
+        },
+        {
+          "source": "Gallup",
+          "variable": "gallup_2013_Q24"
+        }
+      ]
     }
   },
   "cases": [
@@ -79,80 +92,100 @@
       "components": [
         {
           "component_id": "fisher-plan",
-          "policy_id": "admissions",
+          "policy_id": "admissions_earlier",
           "issue": "Texas admissions program",
           "decision": "Upheld the challenged race-conscious admissions plan under equal protection.",
           "direction": "maintains_permission",
-          "scope": "The particular program and record, not permission for every racial preference.",
+          "scope": "Race as one factor in holistic review alongside a percentage-admission pathway; the Court upheld this particular program and record, not every racial preference.",
           "locator": "Kennedy majority opinion Parts II\u2013III.",
           "comparison_fit": "contextual",
-          "survey_fit": "CES combines employment and college admissions and describes correcting past discrimination. It does not isolate Texas\u2019s diversity rationale or admissions design.",
+          "survey_fit": "Pew asks about increasing campus representation; Gallup asks about considering race against a merit-only alternative. Both concern higher education, but neither describes Texas\u2019s percentage pathway, holistic review, or constitutional test. Keep the two questions separate and contextual.",
           "comparisons": [
             {
-              "source": "CES",
+              "source": "Gallup",
               "status": "available",
               "observations": [
                 {
-                  "source": "CES",
-                  "year": 2014,
-                  "variable": "affirmative_action_race",
-                  "wording": "Affirmative action programs give preference to racial minorities in employment and college admissions in order to correct for past discrimination. Do you support or oppose affirmative action?",
-                  "weight": "weight",
-                  "denominator": "Conditional on the four support/oppose answers in the harmonized file; original reasons for missing answers unavailable. Employment and college admissions are combined in the question.",
-                  "n": 56003,
-                  "weight_sum": 56031.17310159552,
-                  "percent": {
-                    "support": 37.50795492531231,
-                    "oppose": 62.492045074687695,
-                    "neutral": 0.0,
-                    "unsure": 0.0,
-                    "nonresponse": 0.0
-                  },
-                  "categories": [
+                  "source": "Gallup",
+                  "variable": "gallup_2013_Q24",
+                  "year": 2013,
+                  "field_start": "2013-06-13",
+                  "field_end": "2013-07-05",
+                  "data_kind": "published_topline",
+                  "source_url": "https://news.gallup.com/file/poll/163679/Affirmative_Action_130724.pdf",
+                  "source_page": 3,
+                  "source_item": "24",
+                  "sample_n": 4373,
+                  "wording": "Choosing admission based only on merit despite low minority enrollment, or considering race and ethnicity for diversity even if some minority applicants otherwise would not be admitted.",
+                  "wording_note": "Paraphrased summary. The rotated alternatives frame a trade-off between merit and racial/ethnic consideration; this is survey wording, not the app\u2019s claim that the two are mutually exclusive. National weighted results include oversamples of Black and Hispanic adults recontacted from Gallup Daily. Fieldwork straddles Fisher I (2013), so it cannot serve as earlier opinion for that ruling.",
+                  "weight": "Published weighted national telephone-survey topline; no recalculation.",
+                  "denominator": "National sample of 4,373 adults; uncertainty retained in the published categories.",
+                  "orientation": "Policy preferences under this wording, not approval of Fisher or its constitutional reasoning.",
+                  "response_distribution": [
+                    {
+                      "code": "0",
+                      "label": "Merit alone",
+                      "percent": 67
+                    },
                     {
                       "code": "1",
-                      "group": "support",
-                      "n": 8116,
-                      "weight_sum": 7612.223343554311,
-                      "percent": 13.58569332423552
+                      "label": "Consider race / ethnicity for diversity",
+                      "percent": 28
                     },
                     {
                       "code": "2",
-                      "group": "support",
-                      "n": 14161,
-                      "weight_sum": 13403.923807515856,
-                      "percent": 23.922261601076794
-                    },
-                    {
-                      "code": "3",
-                      "group": "oppose",
-                      "n": 14135,
-                      "weight_sum": 14287.21622583381,
-                      "percent": 25.498691951225585
-                    },
-                    {
-                      "code": "4",
-                      "group": "oppose",
-                      "n": 19591,
-                      "weight_sum": 20727.80972469155,
-                      "percent": 36.993353123462114
+                      "label": "No opinion",
+                      "percent": 5
                     }
-                  ],
-                  "excluded_positive_weight": 197,
-                  "missing_or_zero_weight": 0
+                  ]
                 }
               ]
             },
             {
-              "source": "VOTER",
-              "status": "no_prior_observation",
-              "observations": []
+              "source": "Pew Research Center",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "Pew Research Center",
+                  "variable": "pew_2014_C127",
+                  "year": 2014,
+                  "field_start": "2014-02-27",
+                  "field_end": "2014-03-16",
+                  "data_kind": "published_topline",
+                  "source_url": "https://assets.pewresearch.org/wp-content/uploads/sites/5/legacy-questionnaires/4-22-14%20Affirmative%20Action%20Topline.pdf",
+                  "source_page": 3,
+                  "source_item": "C127",
+                  "sample_n": 3335,
+                  "wording": "Whether affirmative-action programs intended to increase Black and minority representation on college campuses are good or bad.",
+                  "wording_note": "Paraphrased summary. Asked all respondents. This describes a representation goal, not explicit race-based selection criteria or the Texas program. Published percentages total 101 because of rounding; do not calculate uncertainty as the residual 7%.",
+                  "weight": "Published weighted national telephone-survey topline; no recalculation.",
+                  "denominator": "National sample of 3,335 adults; uncertainty retained in the published categories.",
+                  "orientation": "Policy preferences under this wording, not approval of Fisher or its constitutional reasoning.",
+                  "response_distribution": [
+                    {
+                      "code": "0",
+                      "label": "Good thing",
+                      "percent": 63
+                    },
+                    {
+                      "code": "1",
+                      "label": "Bad thing",
+                      "percent": 30
+                    },
+                    {
+                      "code": "2",
+                      "label": "Don\u2019t know / refused",
+                      "percent": 8
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "coverage_status": "see_source_comparisons"
         }
       ],
-      "interpretation_limit": "The selected CES item is useful background, not an estimate of approval of Fisher. Same-year VOTER 2016 is excluded."
+      "interpretation_limit": "Different wording, years and survey designs prevent interpreting the percentages as a trend or an isolated wording effect. The 2013 Gallup and 2014 Pew fieldwork preceded Fisher II; Gallup\u2019s June\u2013July 2016 survey straddled the decision and is not used."
     },
     {
       "case_id": "2022-009",
@@ -314,9 +347,9 @@
     "No pooling, confidence intervals, causal claims, or prediction."
   ],
   "input_sha256": {
-    "data/research/affirmative-action-policy-components.json": "10793f89e7d41db7f5c79812a56a2f4725b0bbb98b5624427624c192a30716e0",
-    "data/research/affirmative-action-policy-surveys.json": "478951ac2afb3f081bc60f5d49c1465cd695ee5875f4c2605418e226e8d36e9d",
-    "data/research/affirmative-action-policy-mapping.json": "d1d0e8beeab4a1f963eadd1d2166e947c97bb27e5cd24888d42fe4909815d187"
+    "data/research/affirmative-action-policy-components.json": "fdc15f8060a1bca8ecfd83dcda295ef9ad9b40f6f11e811816278f74e8fb9146",
+    "data/research/affirmative-action-policy-surveys.json": "e5b4f93d0d64f91891cf2d91190293bb0dd0badb6e9f1305c491e2f5743ad1f5",
+    "data/research/affirmative-action-policy-mapping.json": "7f96bce101942432e36c2447c402ce65c048788fb569de2aca0e5d908b68fad1"
   },
   "survey_provenance": {
     "data/manifests/gss-2024-r3a.json": "bb521484420a0df344315e1876f6720edf0fd3b797433852b8a9639ce4e18f35",
@@ -336,6 +369,8 @@
     "data/research/capital-punishment-policy-mapping.json": "49d5f8075be82c03338d8cbd82f570e0605a8eeb2d5be7eff72dcd799df7b6cf",
     "data/research/affirmative-action-policy-components.json": "db52ea740f98be011b1da26b00ca90943a35b8c9a58938a11e69bbe64eef3969",
     "data/research/affirmative-action-policy-mapping.json": "ef25cab135ecf5c2150f899da7a8b75221e015c291386f7517fb54b8762d5180",
-    "data/raw/policy-toplines/pew-admissions-2023.pdf": "f44e04d9579929ed2e6f657804396a895e2e4e9c9994fa6516e26be4a39de4a2"
+    "data/raw/policy-toplines/pew-admissions-2023.pdf": "f44e04d9579929ed2e6f657804396a895e2e4e9c9994fa6516e26be4a39de4a2",
+    "data/raw/policy-toplines/pew-admissions-2014.pdf": "e1483671dc3a3b8ea0dfdba385d4777dbe7dd5c4f6a068001ccf1d7edc194bf1",
+    "data/raw/policy-toplines/gallup-admissions-2013.pdf": "a1a52295d1e03959cefff3c48b19c5022858e2881a9a8867f5c309311c0d41db"
   }
 }

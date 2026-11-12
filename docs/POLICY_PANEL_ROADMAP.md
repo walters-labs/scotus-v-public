@@ -14,7 +14,7 @@ should not be described as equally deep yet.
 | Marriage equality | Multi-source history and component-specific polls | Publication review |
 | Abortion | Multi-source history and targeted questions | Publication review |
 | Capital punishment | GSS general policy plus targeted Gallup exemption questions | Seek independent corroboration and exact age-at-offense wording |
-| Affirmative action | Admissions-specific Pew 2023 plus earlier contextual comparisons | Find admissions-specific pre-2016 evidence |
+| Affirmative action | Gallup 2013 / Pew 2014 higher-education questions and Pew 2023 admissions | Seek questions specifying the actual selection mechanism; preserve wording differences |
 | Voter ID | One verified pre-Crawford poll | Add independently sourced context/history if available |
 | Handgun rights | Three distinct observations, two decisions | Seek specific storage evidence; do not conflate sales and possession |
 | Contraception | Two pre-Hobby Lobby sources plus legal timeline | Further coverage history; earlier access polls remain missing |

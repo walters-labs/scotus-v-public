@@ -34,6 +34,19 @@
           "variable": "pew_2023_COLL_RE"
         }
       ]
+    },
+    "admissions_earlier": {
+      "support_definition": "Separate campus-representation and admissions-criteria questions; original categories retained without a combined support score.",
+      "questions": [
+        {
+          "source": "Pew Research Center",
+          "variable": "pew_2014_C127"
+        },
+        {
+          "source": "Gallup",
+          "variable": "gallup_2013_Q24"
+        }
+      ]
     }
   }
 }

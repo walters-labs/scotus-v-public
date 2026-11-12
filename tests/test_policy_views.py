@@ -49,6 +49,35 @@ class PolicyViewsTests(unittest.TestCase):
         for text in ['82%','69%','almost three years','not independent replications','Missing data']:
             self.assertIn(text,html)
 
+    def test_fisher_targeted_polling_dates_and_categories(self):
+        import json
+        from copy import deepcopy
+        from scripts.compare_policy import compare
+        root=Path('data/research')
+        cases=json.loads((root/'affirmative-action-policy-components.json').read_text())['cases']
+        rows=json.loads((root/'affirmative-action-policy-surveys.json').read_text())['survey_records']
+        mapping=json.loads((root/'affirmative-action-policy-mapping.json').read_text())
+        result=compare(cases,rows,mapping)
+        self.assertEqual(result['cases'],json.loads((root/'affirmative-action-policy-comparison.json').read_text())['cases'])
+        selected=[r for s in result['cases'][1]['components'][0]['comparisons'] for r in s['observations']]
+        self.assertEqual([r['sample_n'] for r in selected],[4373,3335])
+        self.assertEqual([[v['percent'] for v in r['response_distribution']] for r in selected],[[67,28,5],[63,30,8]])
+        # No residual-imputation or re-normalization of Pew's published rounding.
+        self.assertEqual(sum(v['percent'] for v in selected[1]['response_distribution']),101)
+        # Even if requested for Fisher I, fieldwork ended after that judgment.
+        earlier=deepcopy(cases)
+        earlier[0]['components'][0].update(policy_id='admissions_earlier',direction='unresolved',comparison_fit='contextual')
+        self.assertFalse(any(s['observations'] for s in compare(earlier,rows,mapping)['cases'][0]['components'][0]['comparisons']))
+        late=deepcopy(rows)
+        for r in late:
+            if r['variable']=='gallup_2013_Q24':
+                r.update(year=2016,field_start='2016-06-07',field_end='2016-07-01')
+        gallup=next(s for s in compare(cases,late,mapping)['cases'][1]['components'][0]['comparisons'] if s['source']=='Gallup')
+        self.assertFalse(gallup['observations'])
+        html=self.client.get('/policy-comparisons?topic=affirmative-action').get_data(as_text=True)
+        for text in ['63%', '28%', '101%', 'not averaged', 'straddled']:
+            self.assertIn(text,html)
+
     def test_all_panels_observation_integrity(self):
         from datetime import date
         from scvpublic.policy_views import STUDIES, load_study
@@ -96,7 +125,7 @@ class PolicyViewsTests(unittest.TestCase):
         self.assertEqual(pew['observations'][0]['sample_n'],5079)
         self.assertEqual([x['percent'] for x in pew['observations'][0]['response_distribution']],[11,22,21,29,16,1])
         for case in study['cases'][:-1]:
-            self.assertFalse(any(r['source']=='Pew Research Center' for p in case['components'] for r in p['observations']))
+            self.assertFalse(any(r['variable']=='pew_2023_COLL_RE' for p in case['components'] for r in p['observations']))
 
     def test_new_context_panels_reproduce_and_preserve_limits(self):
         import json
@@ -261,7 +290,7 @@ class PolicyViewsTests(unittest.TestCase):
         self.assertEqual(capital[2]['components'][0]['display_fit'],'Context only')
         affirmative=load_study('affirmative-action')['cases']
         self.assertEqual([observations(c['components'][0]) for c in affirmative],
-                         [[],[('CES',2014)],[('VOTER',2020)]])
+                         [[],[('Gallup',2013),('Pew Research Center',2014)],[('VOTER',2020)]])
         self.assertEqual([c['components'][0]['display_fit'] for c in affirmative],
                          ['Not comparable','Context only','Context only'])
 

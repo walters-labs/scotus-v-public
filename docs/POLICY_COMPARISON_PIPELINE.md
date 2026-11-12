@@ -269,3 +269,11 @@ all three selected decisions. Separate policy selectors prevent generic GSS murd
 responses from standing in for disability or juvenile questions. See
 `CAPITAL_PUNISHMENT_SOURCES.md` for the original-release discrepancy, sample bases,
 wording limits and direction of the response categories.
+
+## Earlier affirmative-action polling
+
+The affirmative-action target also packages Gallup 2013 Q24 and Pew 2014 C127
+for Fisher II, under their own policy selector. The 2023 Pew question remains
+separate. See `AFFIRMATIVE_ACTION_SOURCES.md` for bases, rounding, wording and
+fieldwork exclusions; the former CES item stays in research inputs but is not
+used as a substitute for these higher-education questions.

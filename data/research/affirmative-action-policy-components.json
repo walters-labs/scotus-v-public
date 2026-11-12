@@ -29,17 +29,17 @@
       "components": [
         {
           "component_id": "fisher-plan",
-          "policy_id": "admissions",
+          "policy_id": "admissions_earlier",
           "issue": "Texas admissions program",
           "decision": "Upheld the challenged race-conscious admissions plan under equal protection.",
           "direction": "maintains_permission",
-          "scope": "The particular program and record, not permission for every racial preference.",
+          "scope": "Race as one factor in holistic review alongside a percentage-admission pathway; the Court upheld this particular program and record, not every racial preference.",
           "locator": "Kennedy majority opinion Parts II–III.",
           "comparison_fit": "contextual",
-          "survey_fit": "CES combines employment and college admissions and describes correcting past discrimination. It does not isolate Texas’s diversity rationale or admissions design."
+          "survey_fit": "Pew asks about increasing campus representation; Gallup asks about considering race against a merit-only alternative. Both concern higher education, but neither describes Texas’s percentage pathway, holistic review, or constitutional test. Keep the two questions separate and contextual."
         }
       ],
-      "interpretation_limit": "The selected CES item is useful background, not an estimate of approval of Fisher. Same-year VOTER 2016 is excluded."
+      "interpretation_limit": "Different wording, years and survey designs prevent interpreting the percentages as a trend or an isolated wording effect. The 2013 Gallup and 2014 Pew fieldwork preceded Fisher II; Gallup’s June–July 2016 survey straddled the decision and is not used."
     },
     {
       "case_id": "2022-009",
