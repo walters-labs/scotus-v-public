@@ -1,0 +1,23 @@
+{
+  "description": "Publisher sources retrieved 2026-11-12; rights retained. HTML snapshots may change; checksum mismatches require source review.",
+  "files": [
+    {
+      "path": "policy-toplines/gallup-school-religion.pdf",
+      "url": "https://news.gallup.com/file/poll/177407/Views_on_Prayer_in_Schools140925%20.pdf",
+      "sha256": "beab351ba17d1678d3bb1f4e42c57f1d4a44205fe3be6c58318fae121fe3ebde",
+      "bytes": 134119
+    },
+    {
+      "path": "policy-toplines/gallup-school-prayer-2000.html",
+      "url": "https://news.gallup.com/poll/2803/supreme-court-prohibits-studentled-prayer-school.aspx",
+      "sha256": "640c6aeaffefef6dd480b42481c6861176b4f347596807c8a8561d5e7ec5542a",
+      "bytes": 82725
+    },
+    {
+      "path": "policy-toplines/gallup-school-2001.html",
+      "url": "https://news.gallup.com/poll/1951/Use-Schools-Student-Religious-Meetings-Acceptable-Most-Americans.aspx",
+      "sha256": "60a65180e12ba6796c300dfb8d2960d67766a1288763b14800a4bfc06dc0f6e7",
+      "bytes": 104261
+    }
+  ]
+}

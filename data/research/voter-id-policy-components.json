@@ -1,0 +1,25 @@
+{
+  "status": "Selected source-based interpretation; not independent ground truth.",
+  "cases": [
+    {
+      "case_id": "crawford-2008",
+      "name": "Crawford v. Marion County Election Board",
+      "date": "2008-04-28",
+      "source": "https://www.law.cornell.edu/supct/html/07-21.ZS.html",
+      "components": [
+        {
+          "component_id": "crawford-photo-id",
+          "policy_id": "photo_id",
+          "issue": "Photo identification for in-person voting",
+          "decision": "Indiana’s photo-ID requirement remained in place after the Court rejected the facial challenge.",
+          "direction": "maintains_restriction",
+          "scope": "The judgment did not establish that every voter-ID law or every application of this law is constitutional.",
+          "locator": "Stevens opinion, Parts III–IV; Scalia concurrence in the judgment; syllabus identifies the separate opinions.",
+          "comparison_fit": "contextual",
+          "survey_fit": "The poll asks about photo ID generally. It does not specify Indiana’s exemptions, provisional-ballot process, or burdens on voters who lack qualifying identification."
+        }
+      ],
+      "interpretation_limit": "Six justices agreed on the judgment, not one rationale. Stevens, Roberts and Kennedy relied on the record and the broad challenge; Scalia, Thomas and Alito concurred separately. Souter and Ginsburg dissented, as did Breyer separately. Public policy support does not settle the constitutional question."
+    }
+  ]
+}

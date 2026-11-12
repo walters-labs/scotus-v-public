@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "timing_rule": "Latest eligible year per source within 3 years; dated fieldwork must end before the decision, otherwise an earlier calendar year is required. Retain all eligible question variants in that year.",
+  "policies": {
+    "medical_use": {
+      "support_definition": "Medical availability, kept distinct from general legalization and federal legal authority; contextual only.",
+      "questions": [
+        {
+          "source": "Pew Research Center",
+          "variable": "pew_2001_q33"
+        },
+        {
+          "source": "Gallup",
+          "variable": "gallup_2003_medical_use"
+        }
+      ]
+    }
+  },
+  "cases": [
+    {
+      "case_id": "oakland-2001",
+      "name": "United States v. Oakland Cannabis Buyers\u2019 Cooperative",
+      "date": "2001-05-14",
+      "source": "https://www.law.cornell.edu/supct/html/00-151.ZS.html",
+      "components": [
+        {
+          "component_id": "oakland-2001-holding",
+          "policy_id": "medical_use",
+          "issue": "Medical necessity as a defense for distribution",
+          "decision": "The Court rejected a medical-necessity exception to the federal prohibitions on manufacturing and distributing marijuana.",
+          "direction": "maintains_restriction",
+          "scope": "A statutory question about the distributor\u2019s defense, not a scientific judgment about medical benefit.",
+          "locator": "Thomas opinion, Part II; Stevens concurrence.",
+          "comparison_fit": "contextual",
+          "survey_fit": "The poll asks about physician-directed medical use, not whether courts can recognize this defense under the statute.",
+          "comparisons": [
+            {
+              "source": "Gallup",
+              "status": "no_prior_observation",
+              "observations": []
+            },
+            {
+              "source": "Pew Research Center",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "Pew Research Center",
+                  "variable": "pew_2001_q33",
+                  "year": 2001,
+                  "field_start": "2001-02-14",
+                  "field_end": "2001-02-19",
+                  "data_kind": "published_topline",
+                  "source_url": "https://assets.pewresearch.org/wp-content/uploads/sites/5/legacy-pdf/16.pdf",
+                  "source_page": 32,
+                  "source_item": "33",
+                  "sample_n": 1513,
+                  "wording": "Allowing doctors to prescribe marijuana for medical treatment, separately from non-medical use.",
+                  "wording_note": "Paraphrased summary. Asked all respondents. National telephone sample with an African-American oversample; published weights adjust the sample. Methodology on PDF page 24; question on page 32 (printed page 31).",
+                  "weight": "Published national weighted topline; no recalculation.",
+                  "denominator": "All 1,513 adults; don\u2019t know/refused retained. Original percentages.",
+                  "orientation": "Support concerns medically directed use, not general legalization.",
+                  "response_distribution": [
+                    {
+                      "code": "0",
+                      "label": "Should be allowed",
+                      "percent": 73
+                    },
+                    {
+                      "code": "1",
+                      "label": "Should not be allowed",
+                      "percent": 21
+                    },
+                    {
+                      "code": "2",
+                      "label": "Don\u2019t know / refused",
+                      "percent": 6
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "coverage_status": "see_source_comparisons"
+        }
+      ],
+      "interpretation_limit": "The judgment was unanimous among eight participating justices; three concurred separately. The holding addressed manufacture and distribution, not every possible patient-possession defense."
+    },
+    {
+      "case_id": "raich-2005",
+      "name": "Gonzales v. Raich",
+      "date": "2005-06-06",
+      "source": "https://www.law.cornell.edu/supremecourt/text/03-1454",
+      "components": [
+        {
+          "component_id": "raich-2005-holding",
+          "policy_id": "medical_use",
+          "issue": "Federal authority over state-authorized medical use",
+          "decision": "The Court held that Congress could prohibit local cultivation and use even when medically recommended and permitted by state law.",
+          "direction": "maintains_restriction",
+          "scope": "Federal power to enforce the Controlled Substances Act, not an instruction that Congress must prohibit medical use.",
+          "locator": "Stevens majority opinion, Parts III\u2013IV; Scalia concurrence.",
+          "comparison_fit": "contextual",
+          "survey_fit": "Support for medical use provides context. It does not answer the Commerce Clause question or directly measure approval of federal enforcement.",
+          "comparisons": [
+            {
+              "source": "Gallup",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "Gallup",
+                  "variable": "gallup_2003_medical_use",
+                  "year": 2003,
+                  "field_start": "2003-11-10",
+                  "field_end": "2003-11-12",
+                  "data_kind": "published_topline",
+                  "source_url": "https://news.gallup.com/poll/1657/marijuana.aspx",
+                  "source_locator": "Marijuana Pain Suffering table \u00b7 November 10\u201312, 2003 row",
+                  "sample_n": 1004,
+                  "wording": "Making marijuana legally available for doctors to prescribe to relieve pain and suffering.",
+                  "wording_note": "Paraphrased summary. The historical table gives all three categories. The December 16, 2003 Gallup article verifies field dates and the national adult telephone sample. The later October 2005 poll is after Raich and excluded.",
+                  "methodology_url": "https://news.gallup.com/poll/10126/medicinal-marijuana-what-doctor-ordered.aspx",
+                  "weight": "Published national topline; no recalculation.",
+                  "denominator": "National sample of 1,004 adults; full response distribution includes no opinion. Original percentages.",
+                  "orientation": "Favor concerns medical availability, not general legalization or the scope of federal power.",
+                  "response_distribution": [
+                    {
+                      "code": "0",
+                      "label": "Favor medical availability",
+                      "percent": 75
+                    },
+                    {
+                      "code": "1",
+                      "label": "Oppose medical availability",
+                      "percent": 22
+                    },
+                    {
+                      "code": "2",
+                      "label": "No opinion",
+                      "percent": 3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "source": "Pew Research Center",
+              "status": "no_prior_observation",
+              "observations": []
+            }
+          ],
+          "coverage_status": "see_source_comparisons"
+        }
+      ],
+      "interpretation_limit": "The judgment was 6\u20133, with a separate concurrence. The 2001 Pew poll falls outside the three-year comparison window and is not reused here."
+    }
+  ],
+  "limitations": [
+    "Explicit source-based legal coding is an input, not an automated legal classifier.",
+    "Contextual matches do not measure approval of the specific holding.",
+    "Mixed and unresolved components retain their labels; no scalar direction is inferred.",
+    "No pooling, confidence intervals, causal claims, or prediction."
+  ],
+  "input_sha256": {
+    "data/research/medical-marijuana-policy-components.json": "fd7e2d3f0f8c9b7b8a5b5c0676de5e38379c1d7f91833de097bd2597a156031b",
+    "data/research/medical-marijuana-policy-surveys.json": "870d01b6b970b17815f92daa8bda2207ea4051b741b8539e8f549f4b98149fee",
+    "data/research/medical-marijuana-policy-mapping.json": "387ad98b29b9a517077632e8cc43773783940647c5d6458b786a22c37d2c211e"
+  },
+  "survey_provenance": {
+    "data/raw/policy-toplines/pew-medical-marijuana-2001.pdf": "601fd3342cba32f8ea4f816ef9cf1128f25c4a1057a8bd5530d7213f23b16a6a",
+    "data/raw/policy-toplines/gallup-medical-marijuana-2003.html": "c1145ff971cf99135c3442f9f117bd156990f28607527952c0fb76b9e2b655de",
+    "data/raw/policy-toplines/gallup-marijuana-trends.html": "deed7350e687330569f64a83959601f5db74ffb3ea4b7304feb5fe379dfe964c"
+  }
+}

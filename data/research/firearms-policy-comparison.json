@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "timing_rule": "Latest eligible year per source within 3 years; dated fieldwork must end before the decision, otherwise an earlier calendar year is required. Retain all eligible question variants in that year.",
+  "policies": {
+    "handgun_bans": {
+      "support_definition": "Original ban-support categories retained separately for possession and sales. Context only; no combined score.",
+      "questions": [
+        {
+          "source": "Gallup",
+          "variable": "handgun_possession_ban"
+        },
+        {
+          "source": "Pew Research Center",
+          "variable": "handgun_sales_ban"
+        }
+      ]
+    },
+    "functional_home_firearm": {
+      "support_definition": "No reviewed question about keeping a lawful home firearm usable for self-defense.",
+      "questions": []
+    }
+  },
+  "cases": [
+    {
+      "case_id": "heller-2008",
+      "name": "District of Columbia v. Heller",
+      "date": "2008-06-26",
+      "source": "https://www.law.cornell.edu/supct/html/07-290.ZS.html",
+      "components": [
+        {
+          "component_id": "heller-possession",
+          "policy_id": "handgun_bans",
+          "issue": "Keeping a handgun at home",
+          "decision": "The Court invalidated D.C.\u2019s handgun ban and recognized an individual right to keep a firearm for self-defense at home.",
+          "direction": "expands",
+          "scope": "The right is not unlimited. This did not invalidate all firearm regulation.",
+          "locator": "Scalia majority opinion, Parts II\u2013III.",
+          "comparison_fit": "contextual",
+          "survey_fit": "Gallup asks about possession generally; Pew asks about sales. Neither isolates D.C.\u2019s home-possession rule or asks whether the Constitution protects it.",
+          "comparisons": [
+            {
+              "source": "Gallup",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "Gallup",
+                  "variable": "handgun_possession_ban",
+                  "year": 2007,
+                  "field_start": "2007-10-04",
+                  "field_end": "2007-10-07",
+                  "data_kind": "published_topline",
+                  "source_url": "https://news.gallup.com/file/poll/196727/161026Guns.pdf",
+                  "source_page": 3,
+                  "source_item": "21 (historical row)",
+                  "wording": "Whether handgun possession should be banned, with exceptions for police and other authorized people.",
+                  "wording_note": "Paraphrased summary. Dates and percentages come from the historical table in the 2016 report, not its 2016 sample. Historical sample size is not supplied in that table.",
+                  "weight": "Published national topline; no respondent-level recalculation.",
+                  "denominator": "Published full response distribution, including no opinion. Original percentages retained; historical sample size not stated in this table.",
+                  "orientation": "Opposing the ban favors allowing possession; it does not imply opposition to all gun regulation.",
+                  "response_distribution": [
+                    {
+                      "code": "0",
+                      "label": "Should ban possession",
+                      "percent": 30
+                    },
+                    {
+                      "code": "1",
+                      "label": "Should not ban possession",
+                      "percent": 68
+                    },
+                    {
+                      "code": "2",
+                      "label": "No opinion",
+                      "percent": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "source": "Pew Research Center",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "Pew Research Center",
+                  "variable": "handgun_sales_ban",
+                  "year": 2008,
+                  "field_start": "2008-04-23",
+                  "field_end": "2008-04-27",
+                  "data_kind": "published_topline",
+                  "source_url": "https://www.pewresearch.org/wp-content/uploads/sites/4/legacy-pdf/419.pdf",
+                  "source_page": 7,
+                  "source_item": "27",
+                  "sample_n": 1502,
+                  "wording": "Favoring or opposing a ban on handgun sales.",
+                  "wording_note": "Paraphrased summary. Nationwide telephone survey of 1,502 adults; asked all respondents. PDF page 5 documents methodology; page 7 (printed page 6) gives Q27. Sales are distinct from possession.",
+                  "weight": "Published national topline; no respondent-level recalculation.",
+                  "denominator": "All 1,502 adults, including don\u2019t know/refused responses. Original percentages retained.",
+                  "orientation": "Favor means favoring the sales ban; oppose means opposing it.",
+                  "response_distribution": [
+                    {
+                      "code": "0",
+                      "label": "Favor sales ban",
+                      "percent": 36
+                    },
+                    {
+                      "code": "1",
+                      "label": "Oppose sales ban",
+                      "percent": 59
+                    },
+                    {
+                      "code": "2",
+                      "label": "Don\u2019t know / refused",
+                      "percent": 5
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "coverage_status": "see_source_comparisons"
+        },
+        {
+          "component_id": "heller-functional",
+          "policy_id": "functional_home_firearm",
+          "issue": "Keeping a firearm usable for self-defense",
+          "decision": "The Court also invalidated the requirement that lawful firearms at home remain inoperable when needed for self-defense.",
+          "direction": "expands",
+          "scope": "This is not a ruling against every safe-storage requirement.",
+          "locator": "Scalia majority opinion, Part III.",
+          "comparison_fit": "contextual",
+          "survey_fit": "Neither selected question addresses storage or immediate usability for self-defense.",
+          "comparisons": [],
+          "coverage_status": "no_matching_question"
+        }
+      ],
+      "interpretation_limit": "The judgment was 5\u20134. The two components concern different rules; broad handgun preferences cannot answer both."
+    },
+    {
+      "case_id": "mcdonald-2010",
+      "name": "McDonald v. City of Chicago",
+      "date": "2010-06-28",
+      "source": "https://www.law.cornell.edu/supct/html/08-1521.ZS.html",
+      "components": [
+        {
+          "component_id": "mcdonald-states",
+          "policy_id": "handgun_bans",
+          "issue": "Applying the right to state and local governments",
+          "decision": "The Court held that the right recognized in Heller applies against state and local governments, reversing and remanding.",
+          "direction": "expands",
+          "scope": "The case extended the constitutional protection; it did not resolve every local firearm rule.",
+          "locator": "Alito opinion, Parts III\u2013IV; Thomas concurrence.",
+          "comparison_fit": "contextual",
+          "survey_fit": "Earlier opposition to handgun bans provides policy context, not an answer to the constitutional incorporation question. Pew\u2019s 2008 observation is reused background, not a new 2010 measurement.",
+          "comparisons": [
+            {
+              "source": "Gallup",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "Gallup",
+                  "variable": "handgun_possession_ban",
+                  "year": 2009,
+                  "field_start": "2009-10-01",
+                  "field_end": "2009-10-04",
+                  "data_kind": "published_topline",
+                  "source_url": "https://news.gallup.com/file/poll/196727/161026Guns.pdf",
+                  "source_page": 3,
+                  "source_item": "21 (historical row)",
+                  "wording": "Whether handgun possession should be banned, with exceptions for police and other authorized people.",
+                  "wording_note": "Paraphrased summary. Dates and percentages come from the historical table in the 2016 report, not its 2016 sample. Historical sample size is not supplied in that table.",
+                  "weight": "Published national topline; no respondent-level recalculation.",
+                  "denominator": "Published full response distribution, including no opinion. Original percentages retained; historical sample size not stated in this table.",
+                  "orientation": "Opposing the ban favors allowing possession; it does not imply opposition to all gun regulation.",
+                  "response_distribution": [
+                    {
+                      "code": "0",
+                      "label": "Should ban possession",
+                      "percent": 28
+                    },
+                    {
+                      "code": "1",
+                      "label": "Should not ban possession",
+                      "percent": 71
+                    },
+                    {
+                      "code": "2",
+                      "label": "No opinion",
+                      "percent": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "source": "Pew Research Center",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "Pew Research Center",
+                  "variable": "handgun_sales_ban",
+                  "year": 2008,
+                  "field_start": "2008-04-23",
+                  "field_end": "2008-04-27",
+                  "data_kind": "published_topline",
+                  "source_url": "https://www.pewresearch.org/wp-content/uploads/sites/4/legacy-pdf/419.pdf",
+                  "source_page": 7,
+                  "source_item": "27",
+                  "sample_n": 1502,
+                  "wording": "Favoring or opposing a ban on handgun sales.",
+                  "wording_note": "Paraphrased summary. Nationwide telephone survey of 1,502 adults; asked all respondents. PDF page 5 documents methodology; page 7 (printed page 6) gives Q27. Sales are distinct from possession.",
+                  "weight": "Published national topline; no respondent-level recalculation.",
+                  "denominator": "All 1,502 adults, including don\u2019t know/refused responses. Original percentages retained.",
+                  "orientation": "Favor means favoring the sales ban; oppose means opposing it.",
+                  "response_distribution": [
+                    {
+                      "code": "0",
+                      "label": "Favor sales ban",
+                      "percent": 36
+                    },
+                    {
+                      "code": "1",
+                      "label": "Oppose sales ban",
+                      "percent": 59
+                    },
+                    {
+                      "code": "2",
+                      "label": "Don\u2019t know / refused",
+                      "percent": 5
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "coverage_status": "see_source_comparisons"
+        }
+      ],
+      "interpretation_limit": "Five justices agreed on the result. Four relied on due process; Thomas used the Privileges or Immunities Clause. General policy preferences do not adjudicate that distinction."
+    }
+  ],
+  "limitations": [
+    "Explicit source-based legal coding is an input, not an automated legal classifier.",
+    "Contextual matches do not measure approval of the specific holding.",
+    "Mixed and unresolved components retain their labels; no scalar direction is inferred.",
+    "No pooling, confidence intervals, causal claims, or prediction."
+  ],
+  "input_sha256": {
+    "data/research/firearms-policy-components.json": "6918b393bc383bc2d64a32ffa46844143ad1c11643eb4e8880d273518243529b",
+    "data/research/firearms-policy-surveys.json": "69432593b3bdab415cc39d1ff76a314cc84f858d62a057f2b4f27b3f8b36a0ee",
+    "data/research/firearms-policy-mapping.json": "5987ff263ab98eaacff6939afccaf1f930d0512cf577454932a948c717972f07"
+  },
+  "survey_provenance": {
+    "data/raw/policy-toplines/pew-handguns-2008.pdf": "545d1e59f76db938c8e4e9288a2dcc047e46e895763064c322f0dbc9bd0aac41",
+    "data/raw/policy-toplines/gallup-handguns.pdf": "d8c621c9998aabfa2c1b89c838d6dc6939ff17c2d8964e22b62ab760a32c9242"
+  }
+}

@@ -34,9 +34,9 @@
           "decision": "Upheld the challenged race-conscious admissions plan under equal protection.",
           "direction": "maintains_permission",
           "scope": "The particular program and record, not permission for every racial preference.",
-          "locator": "Kennedy majority opinion Parts II\u2013III.",
+          "locator": "Kennedy majority opinion Parts II–III.",
           "comparison_fit": "contextual",
-          "survey_fit": "CES combines employment and college admissions and describes correcting past discrimination. It does not isolate Texas\u2019s diversity rationale or admissions design."
+          "survey_fit": "CES combines employment and college admissions and describes correcting past discrimination. It does not isolate Texas’s diversity rationale or admissions design."
         }
       ],
       "interpretation_limit": "The selected CES item is useful background, not an estimate of approval of Fisher. Same-year VOTER 2016 is excluded."
@@ -53,10 +53,21 @@
           "issue": "Harvard and UNC admissions programs",
           "decision": "Invalidated the challenged race-conscious admissions programs.",
           "direction": "restricts",
-          "scope": "Limits those uses of race; does not prohibit considering an individual\u2019s account of how race affected their life. Military academies were not decided.",
-          "locator": "Roberts majority opinion Parts III\u2013VI; footnote 4.",
+          "scope": "Limits those uses of race; does not prohibit considering an individual’s account of how race affected their life. Military academies were not decided.",
+          "locator": "Roberts majority opinion Parts III–VI; footnote 4.",
           "comparison_fit": "contextual",
           "survey_fit": "VOTER combines women and racial minorities and does not specify admissions. Its 2020 responses do not directly measure approval of the 2023 holdings."
+        },
+        {
+          "component_id": "sffa-2023-admissions-poll",
+          "policy_id": "admissions_diversity",
+          "issue": "Admissions and diversity — targeted polling",
+          "decision": "Invalidated the challenged race-conscious admissions programs.",
+          "direction": "restricts",
+          "scope": "Limits those uses of race; does not prohibit considering an individual’s account of how race affected their life. Military academies were not decided.",
+          "locator": "Roberts majority opinion Parts III–VI; footnote 4.",
+          "comparison_fit": "contextual",
+          "survey_fit": "The question isolates race and ethnicity in selective-college admissions for diversity. It does not describe Harvard’s or UNC’s particular programs, so this remains context rather than a case-approval estimate."
         }
       ],
       "interpretation_limit": "The two companion cases are one displayed event, not two independent survey comparisons. Broad affirmative-action opinion cannot establish exact-case agreement."

@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "timing_rule": "Latest eligible year per source within 3 years; dated fieldwork must end before the decision, otherwise an earlier calendar year is required. Retain all eligible question variants in that year.",
+  "policies": {
+    "photo_id": {
+      "support_definition": "Favoring a general photo-ID requirement; contextual to Indiana\u2019s particular law, not approval of the holding.",
+      "questions": [
+        {
+          "source": "Pew Research Center",
+          "variable": "pew_2006_q57"
+        }
+      ]
+    }
+  },
+  "cases": [
+    {
+      "case_id": "crawford-2008",
+      "name": "Crawford v. Marion County Election Board",
+      "date": "2008-04-28",
+      "source": "https://www.law.cornell.edu/supct/html/07-21.ZS.html",
+      "components": [
+        {
+          "component_id": "crawford-photo-id",
+          "policy_id": "photo_id",
+          "issue": "Photo identification for in-person voting",
+          "decision": "Indiana\u2019s photo-ID requirement remained in place after the Court rejected the facial challenge.",
+          "direction": "maintains_restriction",
+          "scope": "The judgment did not establish that every voter-ID law or every application of this law is constitutional.",
+          "locator": "Stevens opinion, Parts III\u2013IV; Scalia concurrence in the judgment; syllabus identifies the separate opinions.",
+          "comparison_fit": "contextual",
+          "survey_fit": "The poll asks about photo ID generally. It does not specify Indiana\u2019s exemptions, provisional-ballot process, or burdens on voters who lack qualifying identification.",
+          "comparisons": [
+            {
+              "source": "Pew Research Center",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "Pew Research Center",
+                  "variable": "pew_2006_q57",
+                  "year": 2006,
+                  "field_start": "2006-10-17",
+                  "field_end": "2006-10-22",
+                  "data_kind": "published_topline",
+                  "source_url": "https://www.pewresearch.org/wp-content/uploads/sites/4/legacy-pdf/293.pdf",
+                  "source_page": 47,
+                  "source_item": "57",
+                  "sample_n": 2006,
+                  "wording": "Should voters have to present official photo identification at the polls on Election Day?",
+                  "wording_note": "Paraphrased question summary. Original question gives a driver\u2019s license as an example. PDF page 47 (printed page 46), Q57, asked all respondents. Nationwide telephone survey of adults, including an oversample in competitive congressional districts; methodology on PDF page 15 and sample/date header on page 20.",
+                  "weight": "Published national topline; no respondent-level recalculation or new weighting.",
+                  "denominator": "All 2,006 adults in the survey, including don\u2019t know/refused responses; not just registered voters. Published percentages retained without normalization.",
+                  "orientation": "Support means favoring a photo-ID requirement.",
+                  "response_distribution": [
+                    {
+                      "code": "yes",
+                      "label": "Should show photo ID",
+                      "percent": 78
+                    },
+                    {
+                      "code": "no",
+                      "label": "Should not have to do this",
+                      "percent": 18
+                    },
+                    {
+                      "code": "unsure",
+                      "label": "Don\u2019t know / refused",
+                      "percent": 4
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "coverage_status": "see_source_comparisons"
+        }
+      ],
+      "interpretation_limit": "Six justices agreed on the judgment, not one rationale. Stevens, Roberts and Kennedy relied on the record and the broad challenge; Scalia, Thomas and Alito concurred separately. Souter and Ginsburg dissented, as did Breyer separately. Public policy support does not settle the constitutional question."
+    }
+  ],
+  "limitations": [
+    "Explicit source-based legal coding is an input, not an automated legal classifier.",
+    "Contextual matches do not measure approval of the specific holding.",
+    "Mixed and unresolved components retain their labels; no scalar direction is inferred.",
+    "No pooling, confidence intervals, causal claims, or prediction."
+  ],
+  "input_sha256": {
+    "data/research/voter-id-policy-components.json": "91030cee9e5bb837d01f37ea4217a09f022e82a5c2c537703ef67fbfbecdf290",
+    "data/research/voter-id-policy-surveys.json": "393f99911ecf6d554dc928f90ea1c0509d6070732120b860bc7fd27c5f598c83",
+    "data/research/voter-id-policy-mapping.json": "bee8a4c6a0fad77968a2e87424b621b3aebb7274fa249a52ee0a57541e63bc0e"
+  },
+  "survey_provenance": {
+    "data/raw/policy-toplines/pew-voter-id-2006.pdf": "d2feea7effcd48ce2b8f9a9fd894e3c59e56391b05f8c904ad12bc49306cd7c0"
+  }
+}

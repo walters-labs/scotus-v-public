@@ -1,0 +1,18 @@
+{
+  "max_prior_years": 3,
+  "policies": {
+    "medical_use": {
+      "support_definition": "Medical availability, kept distinct from general legalization and federal legal authority; contextual only.",
+      "questions": [
+        {
+          "source": "Pew Research Center",
+          "variable": "pew_2001_q33"
+        },
+        {
+          "source": "Gallup",
+          "variable": "gallup_2003_medical_use"
+        }
+      ]
+    }
+  }
+}

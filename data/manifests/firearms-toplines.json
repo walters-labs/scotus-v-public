@@ -1,0 +1,17 @@
+{
+  "description": "Published Pew and Gallup toplines. Publisher rights retained; not open microdata.",
+  "files": [
+    {
+      "path": "policy-toplines/pew-handguns-2008.pdf",
+      "url": "https://www.pewresearch.org/wp-content/uploads/sites/4/legacy-pdf/419.pdf",
+      "sha256": "545d1e59f76db938c8e4e9288a2dcc047e46e895763064c322f0dbc9bd0aac41",
+      "bytes": 60415
+    },
+    {
+      "path": "policy-toplines/gallup-handguns.pdf",
+      "url": "https://news.gallup.com/file/poll/196727/161026Guns.pdf",
+      "sha256": "d8c621c9998aabfa2c1b89c838d6dc6939ff17c2d8964e22b62ab760a32c9242",
+      "bytes": 305617
+    }
+  ]
+}

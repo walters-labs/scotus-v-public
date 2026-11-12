@@ -1,0 +1,14 @@
+{
+  "max_prior_years": 3,
+  "policies": {
+    "photo_id": {
+      "support_definition": "Favoring a general photo-ID requirement; contextual to Indiana’s particular law, not approval of the holding.",
+      "questions": [
+        {
+          "source": "Pew Research Center",
+          "variable": "pew_2006_q57"
+        }
+      ]
+    }
+  }
+}

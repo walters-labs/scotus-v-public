@@ -1,0 +1,8 @@
+<section class="marriage-overview" aria-labelledby="school-religion-question">
+<p class="eyebrow">School religion · A closer look</p>
+<h2 id="school-religion-question">Who is speaking—the school or a private group?</h2><p class="overview-lead">Two rulings distinguish school-sponsored prayer from religious expression in an after-school forum. A single pro-religion or anti-religion score would hide that distinction.</p>
+<div class="reading-guide"><div><h3>The public-policy questions</h3><p>Gallup asked about graduation prayer in 1999 and after-hours religious groups in 2001, before the respective rulings. These are different questions, not a trend.</p></div><div><h3>The legal questions</h3><p>Santa Fe concerned a school prayer policy at football games. Good News Club concerned equal access for a private religious club.</p></div></div>
+<p class="snapshot-note">Graduation differs from football; student groups differ from an adult-led club. These are contextual comparisons, not approval ratings for either decision. This selected history does not describe every later change in school-religion law.</p>
+<h3 class="snapshot-heading">Two decisions, distinct questions</h3>
+<ol class="ruling-timeline">{% for case in study.cases %}<li><time>{{ case.date[:4] }}</time><div><a href="#case-{{ case.case_id }}">{{ case.name }}</a><p>{{ case.components[0].decision }}</p></div></li>{% endfor %}</ol>
+</section><h2 class="evidence-heading">The rulings and the earlier polls</h2>

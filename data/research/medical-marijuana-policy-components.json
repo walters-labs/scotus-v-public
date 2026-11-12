@@ -1,0 +1,45 @@
+{
+  "status": "Selected source-based interpretations; not independent ground truth or a complete legal history.",
+  "cases": [
+    {
+      "case_id": "oakland-2001",
+      "name": "United States v. Oakland Cannabis Buyers’ Cooperative",
+      "date": "2001-05-14",
+      "source": "https://www.law.cornell.edu/supct/html/00-151.ZS.html",
+      "components": [
+        {
+          "component_id": "oakland-2001-holding",
+          "policy_id": "medical_use",
+          "issue": "Medical necessity as a defense for distribution",
+          "decision": "The Court rejected a medical-necessity exception to the federal prohibitions on manufacturing and distributing marijuana.",
+          "direction": "maintains_restriction",
+          "scope": "A statutory question about the distributor’s defense, not a scientific judgment about medical benefit.",
+          "locator": "Thomas opinion, Part II; Stevens concurrence.",
+          "comparison_fit": "contextual",
+          "survey_fit": "The poll asks about physician-directed medical use, not whether courts can recognize this defense under the statute."
+        }
+      ],
+      "interpretation_limit": "The judgment was unanimous among eight participating justices; three concurred separately. The holding addressed manufacture and distribution, not every possible patient-possession defense."
+    },
+    {
+      "case_id": "raich-2005",
+      "name": "Gonzales v. Raich",
+      "date": "2005-06-06",
+      "source": "https://www.law.cornell.edu/supremecourt/text/03-1454",
+      "components": [
+        {
+          "component_id": "raich-2005-holding",
+          "policy_id": "medical_use",
+          "issue": "Federal authority over state-authorized medical use",
+          "decision": "The Court held that Congress could prohibit local cultivation and use even when medically recommended and permitted by state law.",
+          "direction": "maintains_restriction",
+          "scope": "Federal power to enforce the Controlled Substances Act, not an instruction that Congress must prohibit medical use.",
+          "locator": "Stevens majority opinion, Parts III–IV; Scalia concurrence.",
+          "comparison_fit": "contextual",
+          "survey_fit": "Support for medical use provides context. It does not answer the Commerce Clause question or directly measure approval of federal enforcement."
+        }
+      ],
+      "interpretation_limit": "The judgment was 6–3, with a separate concurrence. The 2001 Pew poll falls outside the three-year comparison window and is not reused here."
+    }
+  ]
+}

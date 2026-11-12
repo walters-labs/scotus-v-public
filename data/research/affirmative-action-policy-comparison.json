@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "timing_rule": "Latest earlier calendar year per source within 3 years; retain all same-year question variants.",
+  "timing_rule": "Latest eligible year per source within 3 years; dated fieldwork must end before the decision, otherwise an earlier calendar year is required. Retain all eligible question variants in that year.",
   "policies": {
     "admissions": {
       "support_definition": "General affirmative-action support; source-specific combined populations and policy areas make this contextual only.",
@@ -24,6 +24,15 @@
         {
           "source": "VOTER",
           "variable": "affirmativeaction_2020Sep"
+        }
+      ]
+    },
+    "admissions_diversity": {
+      "support_definition": "Race and ethnicity in selective-college admissions for diversity; contextual to the specific challenged programs.",
+      "questions": [
+        {
+          "source": "Pew Research Center",
+          "variable": "pew_2023_COLL_RE"
         }
       ]
     }
@@ -224,6 +233,75 @@
             }
           ],
           "coverage_status": "see_source_comparisons"
+        },
+        {
+          "component_id": "sffa-2023-admissions-poll",
+          "policy_id": "admissions_diversity",
+          "issue": "Admissions and diversity \u2014 targeted polling",
+          "decision": "Invalidated the challenged race-conscious admissions programs.",
+          "direction": "restricts",
+          "scope": "Limits those uses of race; does not prohibit considering an individual\u2019s account of how race affected their life. Military academies were not decided.",
+          "locator": "Roberts majority opinion Parts III\u2013VI; footnote 4.",
+          "comparison_fit": "contextual",
+          "survey_fit": "The question isolates race and ethnicity in selective-college admissions for diversity. It does not describe Harvard\u2019s or UNC\u2019s particular programs, so this remains context rather than a case-approval estimate.",
+          "comparisons": [
+            {
+              "source": "Pew Research Center",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "Pew Research Center",
+                  "variable": "pew_2023_COLL_RE",
+                  "year": 2023,
+                  "field_start": "2023-03-27",
+                  "field_end": "2023-04-02",
+                  "data_kind": "published_topline",
+                  "source_url": "https://www.pewresearch.org/politics/wp-content/uploads/sites/4/2023/06/PP_2023.06.08_college-admissions_REPORT.pdf",
+                  "source_page": 32,
+                  "source_item": "COLL_RE",
+                  "sample_n": 5079,
+                  "wording": "Considering race and ethnicity in selective-college admissions to increase student diversity.",
+                  "wording_note": "Paraphrased summary. Asked all Wave 125 respondents. The question describes admissions and diversity specifically, but does not describe the Harvard or UNC programs. Methodology and full topline are in the report.",
+                  "weight": "Published weighted American Trends Panel topline; no recalculation.",
+                  "denominator": "All 5,079 U.S. adults in the probability-based online panel survey; not sure and no answer retained.",
+                  "orientation": "Approval of the described admissions policy, not approval of the constitutional reasoning.",
+                  "response_distribution": [
+                    {
+                      "code": "0",
+                      "label": "Strongly approve",
+                      "percent": 11
+                    },
+                    {
+                      "code": "1",
+                      "label": "Somewhat approve",
+                      "percent": 22
+                    },
+                    {
+                      "code": "2",
+                      "label": "Somewhat disapprove",
+                      "percent": 21
+                    },
+                    {
+                      "code": "3",
+                      "label": "Strongly disapprove",
+                      "percent": 29
+                    },
+                    {
+                      "code": "4",
+                      "label": "Not sure",
+                      "percent": 16
+                    },
+                    {
+                      "code": "5",
+                      "label": "No answer",
+                      "percent": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "coverage_status": "see_source_comparisons"
         }
       ],
       "interpretation_limit": "The two companion cases are one displayed event, not two independent survey comparisons. Broad affirmative-action opinion cannot establish exact-case agreement."
@@ -233,9 +311,13 @@
     "Explicit source-based legal coding is an input, not an automated legal classifier.",
     "Contextual matches do not measure approval of the specific holding.",
     "Mixed and unresolved components retain their labels; no scalar direction is inferred.",
-    "No pooling, confidence intervals, causal claims, or prediction.",
-    "Selected cases are not a representative sample. Broad attitudes do not establish agreement with narrower offender categories or admissions programs."
+    "No pooling, confidence intervals, causal claims, or prediction."
   ],
+  "input_sha256": {
+    "data/research/affirmative-action-policy-components.json": "10793f89e7d41db7f5c79812a56a2f4725b0bbb98b5624427624c192a30716e0",
+    "data/research/affirmative-action-policy-surveys.json": "478951ac2afb3f081bc60f5d49c1465cd695ee5875f4c2605418e226e8d36e9d",
+    "data/research/affirmative-action-policy-mapping.json": "d1d0e8beeab4a1f963eadd1d2166e947c97bb27e5cd24888d42fe4909815d187"
+  },
   "survey_provenance": {
     "data/manifests/gss-2024-r3a.json": "bb521484420a0df344315e1876f6720edf0fd3b797433852b8a9639ce4e18f35",
     "data/raw/gss-2024-r3a/gss7224_r3a.dta": "a7622e03d9130e25968943b6f022f44dc0087baf0aa6b5cef150871152827344",
@@ -253,6 +335,7 @@
     "data/research/capital-punishment-policy-components.json": "2ddfb8b36e8fc8d3c924d4ad890437b764bb6667f750b105d7e1588d718b4606",
     "data/research/capital-punishment-policy-mapping.json": "49d5f8075be82c03338d8cbd82f570e0605a8eeb2d5be7eff72dcd799df7b6cf",
     "data/research/affirmative-action-policy-components.json": "db52ea740f98be011b1da26b00ca90943a35b8c9a58938a11e69bbe64eef3969",
-    "data/research/affirmative-action-policy-mapping.json": "ef25cab135ecf5c2150f899da7a8b75221e015c291386f7517fb54b8762d5180"
+    "data/research/affirmative-action-policy-mapping.json": "ef25cab135ecf5c2150f899da7a8b75221e015c291386f7517fb54b8762d5180",
+    "data/raw/policy-toplines/pew-admissions-2023.pdf": "f44e04d9579929ed2e6f657804396a895e2e4e9c9994fa6516e26be4a39de4a2"
   }
 }

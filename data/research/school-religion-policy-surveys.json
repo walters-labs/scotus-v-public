@@ -1,0 +1,111 @@
+{
+  "provenance": {
+    "data/raw/policy-toplines/gallup-school-religion.pdf": "beab351ba17d1678d3bb1f4e42c57f1d4a44205fe3be6c58318fae121fe3ebde",
+    "data/raw/policy-toplines/gallup-school-prayer-2000.html": "640c6aeaffefef6dd480b42481c6861176b4f347596807c8a8561d5e7ec5542a",
+    "data/raw/policy-toplines/gallup-school-2001.html": "60a65180e12ba6796c300dfb8d2960d67766a1288763b14800a4bfc06dc0f6e7"
+  },
+  "survey_records": [
+    {
+      "source": "Gallup",
+      "variable": "gallup_1999_graduation",
+      "year": 1999,
+      "field_start": "1999-06-25",
+      "field_end": "1999-06-27",
+      "data_kind": "published_topline",
+      "source_url": "https://news.gallup.com/file/poll/177407/Views_on_Prayer_in_Schools140925%20.pdf",
+      "source_locator": "Historical June 25–27, 1999 row, item C",
+      "wording": "Permitting student prayer within the official graduation program.",
+      "wording_note": "Paraphrased question. The source marks no opinion with an asterisk (less than 0.5%). The numeric zero is a lower bound for validation, not an observed zero. The 2000 article verifies the 1999 sample; the PDF’s 2014 sample does not apply.",
+      "weight": "Published national topline; no recalculation.",
+      "denominator": "National sample of 1,016 adults; original response shares retained.",
+      "orientation": "Policy context only; not approval of the specific holding.",
+      "response_distribution": [
+        {
+          "code": "0",
+          "label": "Favor",
+          "percent": 83
+        },
+        {
+          "code": "1",
+          "label": "Oppose",
+          "percent": 17
+        },
+        {
+          "code": "2",
+          "label": "No opinion",
+          "percent": 0,
+          "percent_upper_bound": 0.5
+        }
+      ],
+      "sample_n": 1016,
+      "methodology_url": "https://news.gallup.com/poll/2803/supreme-court-prohibits-studentled-prayer-school.aspx"
+    },
+    {
+      "source": "Gallup",
+      "variable": "gallup_1999_afterhours",
+      "year": 1999,
+      "field_start": "1999-06-25",
+      "field_end": "1999-06-27",
+      "data_kind": "published_topline",
+      "source_url": "https://news.gallup.com/file/poll/177407/Views_on_Prayer_in_Schools140925%20.pdf",
+      "source_locator": "Historical June 25–27, 1999 row, item A",
+      "wording": "Allowing student religious groups to use school facilities after hours.",
+      "wording_note": "Paraphrased question. The linked article verifies the historical sample. These are two questions in the same survey, not independent replications.",
+      "weight": "Published national topline; no recalculation.",
+      "denominator": "National sample of 1,016 adults; original response shares retained.",
+      "orientation": "Policy context only; not approval of the specific holding.",
+      "response_distribution": [
+        {
+          "code": "0",
+          "label": "Favor",
+          "percent": 78
+        },
+        {
+          "code": "1",
+          "label": "Oppose",
+          "percent": 21
+        },
+        {
+          "code": "2",
+          "label": "No opinion",
+          "percent": 1
+        }
+      ],
+      "sample_n": 1016,
+      "methodology_url": "https://news.gallup.com/poll/2803/supreme-court-prohibits-studentled-prayer-school.aspx"
+    },
+    {
+      "source": "Gallup",
+      "variable": "gallup_2001_afterhours",
+      "year": 2001,
+      "field_start": "2001-02-09",
+      "field_end": "2001-02-11",
+      "data_kind": "published_topline",
+      "source_url": "https://news.gallup.com/poll/1951/Use-Schools-Student-Religious-Meetings-Acceptable-Most-Americans.aspx",
+      "source_locator": "After-hours religious groups table, February 9–11, 2001",
+      "wording": "Allowing student religious groups to use school facilities after hours.",
+      "wording_note": "Paraphrased question. Article reports the full national sample of 1,016 adults. This later pre-ruling observation supersedes the 1999 after-hours question for Good News Club.",
+      "weight": "Published national topline; no recalculation.",
+      "denominator": "National sample of 1,016 adults; original response shares retained.",
+      "orientation": "Policy context only; not approval of the specific holding.",
+      "response_distribution": [
+        {
+          "code": "0",
+          "label": "Favor",
+          "percent": 72
+        },
+        {
+          "code": "1",
+          "label": "Oppose",
+          "percent": 26
+        },
+        {
+          "code": "2",
+          "label": "No opinion",
+          "percent": 2
+        }
+      ],
+      "sample_n": 1016
+    }
+  ]
+}

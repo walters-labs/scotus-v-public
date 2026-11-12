@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "timing_rule": "Latest eligible year per source within 3 years; dated fieldwork must end before the decision, otherwise an earlier calendar year is required. Retain all eligible question variants in that year.",
+  "policies": {
+    "contraceptive_access": {
+      "support_definition": "Legal access to contraception; no verified earlier survey retained.",
+      "questions": []
+    },
+    "nonprofit_accommodation": {
+      "support_definition": "Procedural outcome; no policy-agreement assignment.",
+      "questions": []
+    },
+    "employer_coverage": {
+      "support_definition": "Coverage despite employer religious objections; retain original categories separately, without pooling.",
+      "questions": [
+        {
+          "source": "KFF (Kaiser Family Foundation)",
+          "variable": "kff_2014_may_q14"
+        },
+        {
+          "source": "YouGov / Huffington Post",
+          "variable": "yougov_2014_june_q3"
+        }
+      ]
+    }
+  },
+  "cases": [
+    {
+      "case_id": "griswold-1965",
+      "name": "Griswold v. Connecticut",
+      "date": "1965-06-07",
+      "source": "https://www.law.cornell.edu/supremecourt/text/381/479",
+      "components": [
+        {
+          "component_id": "griswold-1965-holding",
+          "policy_id": "contraceptive_access",
+          "issue": "Married couples\u2019 use of contraception",
+          "decision": "The Court invalidated Connecticut\u2019s prohibition on contraceptive use as applied to married couples.",
+          "direction": "expands",
+          "scope": "Legal use and marital privacy, not insurance coverage.",
+          "locator": "Douglas opinion, 381 U.S. 479, 485\u2013486.",
+          "comparison_fit": "contextual",
+          "survey_fit": "No suitably timed access question has been verified for this selection. Modern insurance questions cannot describe opinion in 1965.",
+          "comparisons": [],
+          "coverage_status": "no_matching_question"
+        }
+      ]
+    },
+    {
+      "case_id": "eisenstadt-1972",
+      "name": "Eisenstadt v. Baird",
+      "date": "1972-03-22",
+      "source": "https://www.law.cornell.edu/supremecourt/text/405/438",
+      "components": [
+        {
+          "component_id": "eisenstadt-1972-holding",
+          "policy_id": "contraceptive_access",
+          "issue": "Access for unmarried people",
+          "decision": "The Court invalidated unequal contraceptive-access rules for married and unmarried people.",
+          "direction": "expands",
+          "scope": "Equal protection in access, not a requirement that employers pay.",
+          "locator": "Brennan opinion, 405 U.S. 438, 446\u2013455.",
+          "comparison_fit": "contextual",
+          "survey_fit": "No verified earlier survey in this selection measures the married/unmarried distinction.",
+          "comparisons": [],
+          "coverage_status": "no_matching_question"
+        }
+      ]
+    },
+    {
+      "case_id": "hobby-lobby-2014",
+      "name": "Burwell v. Hobby Lobby Stores",
+      "date": "2014-06-30",
+      "source": "https://www.law.cornell.edu/supremecourt/text/13-354",
+      "components": [
+        {
+          "component_id": "hobby-lobby-2014-holding",
+          "policy_id": "employer_coverage",
+          "issue": "Religious objections to employer coverage",
+          "decision": "The Court held that applying the contraceptive mandate to the objecting closely held companies violated RFRA.",
+          "direction": "restricts",
+          "scope": "This limited enforcement of the employer mandate; it did not prohibit contraceptive use or invalidate the entire coverage requirement.",
+          "locator": "Alito majority opinion, Parts III\u2013V, especially V.B.",
+          "comparison_fit": "contextual",
+          "survey_fit": "Both polls address religious objections and employee coverage. They do not isolate closely held corporations, the four disputed methods, or alternative ways to provide coverage.",
+          "comparisons": [
+            {
+              "source": "KFF (Kaiser Family Foundation)",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "KFF (Kaiser Family Foundation)",
+                  "variable": "kff_2014_may_q14",
+                  "year": 2014,
+                  "field_start": "2014-05-13",
+                  "field_end": "2014-05-19",
+                  "data_kind": "published_topline",
+                  "source_url": "https://www.kff.org/wp-content/uploads/2014/05/8594-t.pdf",
+                  "source_page": 8,
+                  "source_item": "14",
+                  "sample_n": 1505,
+                  "wording": "Should for-profit employers cover birth control despite owners\u2019 religious objections?",
+                  "wording_note": "Paraphrased summary and response labels. KFF explicitly contrasts the owners\u2019 religious beliefs with employees paying for contraception themselves. National telephone survey; weighted for demographics and telephone selection. Methodology: PDF page 2.",
+                  "weight": "Published survey topline; no respondent-level recalculation.",
+                  "denominator": "Full national sample of 1,505 adults; published categories include other responses and uncertainty.",
+                  "orientation": "Requiring coverage favors employee insurance coverage; it is not a question about banning contraception.",
+                  "response_distribution": [
+                    {
+                      "code": "0",
+                      "label": "Do not require coverage; employees pay",
+                      "percent": 41
+                    },
+                    {
+                      "code": "1",
+                      "label": "Require coverage despite religious objections",
+                      "percent": 53
+                    },
+                    {
+                      "code": "2",
+                      "label": "Neither / other",
+                      "percent": 2
+                    },
+                    {
+                      "code": "3",
+                      "label": "Don\u2019t know / refused",
+                      "percent": 4
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "source": "YouGov / Huffington Post",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "YouGov / Huffington Post",
+                  "variable": "yougov_2014_june_q3",
+                  "year": 2014,
+                  "field_start": "2014-06-20",
+                  "field_end": "2014-06-23",
+                  "data_kind": "published_topline",
+                  "source_url": "https://ygo-assets-websites-editorial-emea.yougov.net/documents/tabs_HP_contraception_20140623_QixhoOM.pdf",
+                  "source_page": 3,
+                  "source_item": "3",
+                  "sample_n": 993,
+                  "wording": "Should private businesses with religious objections provide employee health plans covering contraception?",
+                  "wording_note": "Paraphrased summary and response labels. The published table reports an unweighted item base of 993, whereas the release describes 1,000 adults interviewed. No adjustment is made to include the seven respondents absent from the item base.",
+                  "weight": "Published survey topline; no respondent-level recalculation.",
+                  "denominator": "Published item response distribution, including unsure responses; unweighted item n=993, not the full 1,000-person survey.",
+                  "orientation": "Requiring coverage favors employee insurance coverage; it is not a question about banning contraception.",
+                  "response_distribution": [
+                    {
+                      "code": "0",
+                      "label": "Yes, require coverage",
+                      "percent": 40
+                    },
+                    {
+                      "code": "1",
+                      "label": "No, do not require coverage",
+                      "percent": 44
+                    },
+                    {
+                      "code": "2",
+                      "label": "Not sure",
+                      "percent": 16
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "coverage_status": "see_source_comparisons"
+        }
+      ],
+      "interpretation_limit": "The 5\u20134 judgment concerned statutory religious protections. The direction label describes the coverage mandate only, not a numerical balance between religious liberty and employee access."
+    },
+    {
+      "case_id": "zubik-2016",
+      "name": "Zubik v. Burwell",
+      "date": "2016-05-16",
+      "source": "https://www.law.cornell.edu/supremecourt/text/14-1418",
+      "components": [
+        {
+          "component_id": "zubik-2016-holding",
+          "policy_id": "nonprofit_accommodation",
+          "issue": "Accommodation for religious nonprofits",
+          "decision": "The Court vacated the judgments and remanded to allow consideration of an accommodation.",
+          "direction": "no_merits_ruling",
+          "scope": "The Court expressly did not decide the merits of the RFRA challenge.",
+          "locator": "Per curiam opinion, paragraphs beginning \u201cIn light of the positions\u201d and \u201cThe Court expresses no view\u201d.",
+          "comparison_fit": "not_comparable",
+          "survey_fit": "General preferences about coverage cannot turn this remand into approval or rejection of an exemption.",
+          "comparisons": [],
+          "coverage_status": "no_matching_question"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Explicit source-based legal coding is an input, not an automated legal classifier.",
+    "Contextual matches do not measure approval of the specific holding.",
+    "Mixed and unresolved components retain their labels; no scalar direction is inferred.",
+    "No pooling, confidence intervals, causal claims, or prediction."
+  ],
+  "input_sha256": {
+    "data/research/contraception-policy-components.json": "f495b2dca723bee596af97cd119d549fa4385db7ed443b2b331f2e764f5ed8e2",
+    "data/research/contraception-policy-surveys.json": "1ed21f253106f5dc457e0411c4b9ae30d8667f7a208efb6e1faaced0c351975e",
+    "data/research/contraception-policy-mapping.json": "38c2632bad0af8cea3419cabab53084471cfa09ce5581bf81fc37bb2b5490e81"
+  },
+  "survey_provenance": {
+    "data/raw/policy-toplines/kff-contraception-2014.pdf": "51eae4f3262598bee36f1f45902fba92e3e9c252c9a212fbe64731c757b73922",
+    "data/raw/policy-toplines/yougov-contraception-2014.pdf": "cc32660e9cab1ef58459fd094af961085801cabfabfa73b101c0ab0a7551fc31"
+  }
+}

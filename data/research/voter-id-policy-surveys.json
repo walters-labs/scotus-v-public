@@ -1,0 +1,41 @@
+{
+  "provenance": {
+    "data/raw/policy-toplines/pew-voter-id-2006.pdf": "d2feea7effcd48ce2b8f9a9fd894e3c59e56391b05f8c904ad12bc49306cd7c0"
+  },
+  "survey_records": [
+    {
+      "source": "Pew Research Center",
+      "variable": "pew_2006_q57",
+      "year": 2006,
+      "field_start": "2006-10-17",
+      "field_end": "2006-10-22",
+      "data_kind": "published_topline",
+      "source_url": "https://www.pewresearch.org/wp-content/uploads/sites/4/legacy-pdf/293.pdf",
+      "source_page": 47,
+      "source_item": "57",
+      "sample_n": 2006,
+      "wording": "Should voters have to present official photo identification at the polls on Election Day?",
+      "wording_note": "Paraphrased question summary. Original question gives a driver’s license as an example. PDF page 47 (printed page 46), Q57, asked all respondents. Nationwide telephone survey of adults, including an oversample in competitive congressional districts; methodology on PDF page 15 and sample/date header on page 20.",
+      "weight": "Published national topline; no respondent-level recalculation or new weighting.",
+      "denominator": "All 2,006 adults in the survey, including don’t know/refused responses; not just registered voters. Published percentages retained without normalization.",
+      "orientation": "Support means favoring a photo-ID requirement.",
+      "response_distribution": [
+        {
+          "code": "yes",
+          "label": "Should show photo ID",
+          "percent": 78
+        },
+        {
+          "code": "no",
+          "label": "Should not have to do this",
+          "percent": 18
+        },
+        {
+          "code": "unsure",
+          "label": "Don’t know / refused",
+          "percent": 4
+        }
+      ]
+    }
+  ]
+}

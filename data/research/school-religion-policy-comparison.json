@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "timing_rule": "Latest eligible year per source within 3 years; dated fieldwork must end before the decision, otherwise an earlier calendar year is required. Retain all eligible question variants in that year.",
+  "policies": {
+    "official_prayer": {
+      "support_definition": "Original policy categories retained; contextual only, no alignment score.",
+      "questions": [
+        {
+          "source": "Gallup",
+          "variable": "gallup_1999_graduation"
+        }
+      ]
+    },
+    "private_groups": {
+      "support_definition": "Original policy categories retained; contextual only, no alignment score.",
+      "questions": [
+        {
+          "source": "Gallup",
+          "variable": "gallup_1999_afterhours"
+        },
+        {
+          "source": "Gallup",
+          "variable": "gallup_2001_afterhours"
+        }
+      ]
+    }
+  },
+  "cases": [
+    {
+      "case_id": "santa-fe-2000",
+      "name": "Santa Fe Independent School District v. Doe",
+      "date": "2000-06-19",
+      "source": "https://www.law.cornell.edu/supct/html/99-62.ZO.html",
+      "components": [
+        {
+          "component_id": "santa-fe-prayer",
+          "policy_id": "official_prayer",
+          "issue": "School-sponsored prayer at football games",
+          "decision": "The Court invalidated the school\u2019s student-led, student-selected prayer policy before football games.",
+          "direction": "restricts",
+          "scope": "The school policy and public-address setting mattered; this was not a ban on students praying privately.",
+          "locator": "Stevens opinion, Parts II\u2013IV.",
+          "comparison_fit": "contextual",
+          "survey_fit": "The poll asks about graduation, not football games, and omits the election and public-address arrangements. It is contextual, not a measure of approval of this ruling.",
+          "comparisons": [
+            {
+              "source": "Gallup",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "Gallup",
+                  "variable": "gallup_1999_graduation",
+                  "year": 1999,
+                  "field_start": "1999-06-25",
+                  "field_end": "1999-06-27",
+                  "data_kind": "published_topline",
+                  "source_url": "https://news.gallup.com/file/poll/177407/Views_on_Prayer_in_Schools140925%20.pdf",
+                  "source_locator": "Historical June 25\u201327, 1999 row, item C",
+                  "wording": "Permitting student prayer within the official graduation program.",
+                  "wording_note": "Paraphrased question. The source marks no opinion with an asterisk (less than 0.5%). The numeric zero is a lower bound for validation, not an observed zero. The 2000 article verifies the 1999 sample; the PDF\u2019s 2014 sample does not apply.",
+                  "weight": "Published national topline; no recalculation.",
+                  "denominator": "National sample of 1,016 adults; original response shares retained.",
+                  "orientation": "Policy context only; not approval of the specific holding.",
+                  "response_distribution": [
+                    {
+                      "code": "0",
+                      "label": "Favor",
+                      "percent": 83
+                    },
+                    {
+                      "code": "1",
+                      "label": "Oppose",
+                      "percent": 17
+                    },
+                    {
+                      "code": "2",
+                      "label": "No opinion",
+                      "percent": 0,
+                      "percent_upper_bound": 0.5
+                    }
+                  ],
+                  "sample_n": 1016,
+                  "methodology_url": "https://news.gallup.com/poll/2803/supreme-court-prohibits-studentled-prayer-school.aspx"
+                }
+              ]
+            }
+          ],
+          "coverage_status": "see_source_comparisons"
+        }
+      ]
+    },
+    {
+      "case_id": "good-news-2001",
+      "name": "Good News Club v. Milford Central School",
+      "date": "2001-06-11",
+      "source": "https://www.law.cornell.edu/supct/html/99-2036.ZS.html",
+      "components": [
+        {
+          "component_id": "good-news-access",
+          "policy_id": "private_groups",
+          "issue": "Religious viewpoint in an after-school forum",
+          "decision": "Excluding the club because of its religious viewpoint violated the Free Speech Clause.",
+          "direction": "expands",
+          "scope": "Access for a private club in a limited public forum, not school-led religious instruction.",
+          "locator": "Syllabus, holdings 1\u20132; Thomas opinion, Parts II\u2013IV.",
+          "comparison_fit": "contextual",
+          "survey_fit": "The question describes student religious groups. The case involved an adult-led Christian club for children aged 6\u201312, so the match is contextual.",
+          "comparisons": [
+            {
+              "source": "Gallup",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "Gallup",
+                  "variable": "gallup_2001_afterhours",
+                  "year": 2001,
+                  "field_start": "2001-02-09",
+                  "field_end": "2001-02-11",
+                  "data_kind": "published_topline",
+                  "source_url": "https://news.gallup.com/poll/1951/Use-Schools-Student-Religious-Meetings-Acceptable-Most-Americans.aspx",
+                  "source_locator": "After-hours religious groups table, February 9\u201311, 2001",
+                  "wording": "Allowing student religious groups to use school facilities after hours.",
+                  "wording_note": "Paraphrased question. Article reports the full national sample of 1,016 adults. This later pre-ruling observation supersedes the 1999 after-hours question for Good News Club.",
+                  "weight": "Published national topline; no recalculation.",
+                  "denominator": "National sample of 1,016 adults; original response shares retained.",
+                  "orientation": "Policy context only; not approval of the specific holding.",
+                  "response_distribution": [
+                    {
+                      "code": "0",
+                      "label": "Favor",
+                      "percent": 72
+                    },
+                    {
+                      "code": "1",
+                      "label": "Oppose",
+                      "percent": 26
+                    },
+                    {
+                      "code": "2",
+                      "label": "No opinion",
+                      "percent": 2
+                    }
+                  ],
+                  "sample_n": 1016
+                }
+              ]
+            }
+          ],
+          "coverage_status": "see_source_comparisons"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Explicit source-based legal coding is an input, not an automated legal classifier.",
+    "Contextual matches do not measure approval of the specific holding.",
+    "Mixed and unresolved components retain their labels; no scalar direction is inferred.",
+    "No pooling, confidence intervals, causal claims, or prediction."
+  ],
+  "input_sha256": {
+    "data/research/school-religion-policy-components.json": "06ed6a700e68b16372fef6aec50c51bb74fb73c5e791d860cdc1d4439813ee11",
+    "data/research/school-religion-policy-surveys.json": "9cfb8fa5d741f345283fa5a38c69625cc1c1a63b946bf0a2ef0379ab6d6c5292",
+    "data/research/school-religion-policy-mapping.json": "b10637ef110520bc5c09443029a958972db8bcccfbc5ca964a829fbdc77f05b9"
+  },
+  "survey_provenance": {
+    "data/raw/policy-toplines/gallup-school-religion.pdf": "beab351ba17d1678d3bb1f4e42c57f1d4a44205fe3be6c58318fae121fe3ebde",
+    "data/raw/policy-toplines/gallup-school-prayer-2000.html": "640c6aeaffefef6dd480b42481c6861176b4f347596807c8a8561d5e7ec5542a",
+    "data/raw/policy-toplines/gallup-school-2001.html": "60a65180e12ba6796c300dfb8d2960d67766a1288763b14800a4bfc06dc0f6e7"
+  }
+}

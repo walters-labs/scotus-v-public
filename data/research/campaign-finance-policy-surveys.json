@@ -1,0 +1,75 @@
+{
+  "provenance": {
+    "data/raw/policy-toplines/gallup-campaign-2009.html": "270f261cb23c3978acab0458cb544491f0d774fa08772b7c8ff4a64031d7d903",
+    "data/raw/policy-toplines/gallup-campaign-2009-priority.gif": "40d6235b8974f2b60248531abd3a38137edb3bff9d36aacdc8daef555cfd07a6",
+    "data/raw/policy-toplines/gallup-campaign-2013.pdf": "c00bf359bdeb0c7c8d7d915fe0f70904b12ad0f235784bedc6b9a964d4552efe"
+  },
+  "survey_records": [
+    {
+      "source": "Gallup",
+      "variable": "gallup_2009_priority",
+      "year": 2009,
+      "field_start": "2009-10-01",
+      "field_end": "2009-10-02",
+      "data_kind": "published_topline",
+      "source_url": "https://news.gallup.com/poll/125333/public-agrees-court-campaign-money-free-speech.aspx",
+      "source_locator": "Priority chart, national adults",
+      "wording": "Prioritizing contribution limits or the freedom of individuals, corporations and unions to support campaigns.",
+      "wording_note": "Paraphrased question. Gallup/First Amendment Center. Chart prints 52% and 41% only. The 7% remainder is calculated as 100−52−41; its response category is not reported, so it is not labeled unsure. Survey total was 1,023, with split forms; the item base is not identified here. Published after Citizens United, but fielded before it.",
+      "weight": "Published national topline; no recalculation.",
+      "denominator": "National adult telephone sample; original response shares retained.",
+      "orientation": "Policy context only; not approval of the specific holding.",
+      "response_distribution": [
+        {
+          "code": "0",
+          "label": "Prioritize contribution limits",
+          "percent": 52
+        },
+        {
+          "code": "1",
+          "label": "Prioritize freedom to support campaigns",
+          "percent": 41
+        },
+        {
+          "code": "2",
+          "label": "Remainder not shown in chart",
+          "percent": 7,
+          "derived": true
+        }
+      ]
+    },
+    {
+      "source": "Gallup",
+      "variable": "gallup_2013_candidate_limits",
+      "year": 2013,
+      "field_start": "2013-06-15",
+      "field_end": "2013-06-16",
+      "data_kind": "published_topline",
+      "source_url": "https://news.gallup.com/file/poll/163220/130624CampaignFinance.pdf",
+      "source_locator": "PDF page 2, item 1: candidate fundraising and spending",
+      "wording": "Voting for a law limiting how much House and Senate candidates can raise and spend.",
+      "wording_note": "Paraphrased question. Published percentages total 101 due to rounding; retained without renormalization.",
+      "weight": "Published national topline; no recalculation.",
+      "denominator": "National sample of 1,015 adults; original response shares retained.",
+      "orientation": "Policy context only; not approval of the specific holding.",
+      "response_distribution": [
+        {
+          "code": "0",
+          "label": "Vote for limits",
+          "percent": 79
+        },
+        {
+          "code": "1",
+          "label": "Vote against limits",
+          "percent": 19
+        },
+        {
+          "code": "2",
+          "label": "No opinion",
+          "percent": 3
+        }
+      ],
+      "sample_n": 1015
+    }
+  ]
+}

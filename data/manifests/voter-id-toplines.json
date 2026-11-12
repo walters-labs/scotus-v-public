@@ -1,0 +1,11 @@
+{
+  "description": "Publicly available Pew report; publisher retains rights. Not an open microdata license.",
+  "files": [
+    {
+      "path": "policy-toplines/pew-voter-id-2006.pdf",
+      "url": "https://www.pewresearch.org/wp-content/uploads/sites/4/legacy-pdf/293.pdf",
+      "sha256": "d2feea7effcd48ce2b8f9a9fd894e3c59e56391b05f8c904ad12bc49306cd7c0",
+      "bytes": 255372
+    }
+  ]
+}

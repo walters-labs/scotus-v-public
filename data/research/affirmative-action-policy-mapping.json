@@ -25,6 +25,15 @@
           "variable": "affirmativeaction_2020Sep"
         }
       ]
+    },
+    "admissions_diversity": {
+      "support_definition": "Race and ethnicity in selective-college admissions for diversity; contextual to the specific challenged programs.",
+      "questions": [
+        {
+          "source": "Pew Research Center",
+          "variable": "pew_2023_COLL_RE"
+        }
+      ]
     }
   }
 }

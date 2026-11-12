@@ -6,7 +6,7 @@ COPY requirements.txt requirements-hybrid.txt ./
 ARG REQUIREMENTS=requirements.txt
 RUN pip install --no-cache-dir -r ${REQUIREMENTS} && useradd --uid 10001 --create-home app
 COPY scvpublic ./scvpublic
-COPY data/research/abortion-opinion-history.json data/research/marriage-opinion-history.json data/research/marriage-policy-comparison.json data/research/abortion-policy-comparison.json data/research/capital-punishment-policy-comparison.json data/research/affirmative-action-policy-comparison.json ./data/research/
+COPY data/research/abortion-opinion-history.json data/research/marriage-opinion-history.json data/research/marriage-policy-comparison.json data/research/abortion-policy-comparison.json data/research/capital-punishment-policy-comparison.json data/research/affirmative-action-policy-comparison.json data/research/voter-id-policy-comparison.json data/research/firearms-policy-comparison.json data/research/contraception-policy-comparison.json data/research/medical-marijuana-policy-comparison.json data/research/school-religion-policy-comparison.json data/research/campaign-finance-policy-comparison.json ./data/research/
 USER 10001
 EXPOSE 8000
 HEALTHCHECK --interval=30s --timeout=5s --start-period=15s CMD python -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/healthz', timeout=3)"

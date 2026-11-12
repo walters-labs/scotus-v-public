@@ -1,0 +1,22 @@
+{
+  "max_prior_years": 3,
+  "policies": {
+    "handgun_bans": {
+      "support_definition": "Original ban-support categories retained separately for possession and sales. Context only; no combined score.",
+      "questions": [
+        {
+          "source": "Gallup",
+          "variable": "handgun_possession_ban"
+        },
+        {
+          "source": "Pew Research Center",
+          "variable": "handgun_sales_ban"
+        }
+      ]
+    },
+    "functional_home_firearm": {
+      "support_definition": "No reviewed question about keeping a lawful home firearm usable for self-defense.",
+      "questions": []
+    }
+  }
+}

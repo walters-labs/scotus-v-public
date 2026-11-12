@@ -1,0 +1,23 @@
+{
+  "description": "Publisher reports and dated HTML snapshots, retrieved 2026-11-12. HTML may change; checksum mismatches require source review, not automatic acceptance. Publisher rights retained.",
+  "files": [
+    {
+      "path": "policy-toplines/pew-medical-marijuana-2001.pdf",
+      "url": "https://assets.pewresearch.org/wp-content/uploads/sites/5/legacy-pdf/16.pdf",
+      "sha256": "601fd3342cba32f8ea4f816ef9cf1128f25c4a1057a8bd5530d7213f23b16a6a",
+      "bytes": 280413
+    },
+    {
+      "path": "policy-toplines/gallup-medical-marijuana-2003.html",
+      "url": "https://news.gallup.com/poll/10126/medicinal-marijuana-what-doctor-ordered.aspx",
+      "sha256": "c1145ff971cf99135c3442f9f117bd156990f28607527952c0fb76b9e2b655de",
+      "bytes": 79213
+    },
+    {
+      "path": "policy-toplines/gallup-marijuana-trends.html",
+      "url": "https://news.gallup.com/poll/1657/marijuana.aspx",
+      "sha256": "deed7350e687330569f64a83959601f5db74ffb3ea4b7304feb5fe379dfe964c",
+      "bytes": 115564
+    }
+  ]
+}

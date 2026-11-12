@@ -52,6 +52,12 @@ def compare(cases, surveys, mapping):
             if not codes or len(codes) != len(set(codes)) or any(not c['label'] for c in distribution):
                 raise ValueError('Invalid response distribution')
             numbers = [c['percent'] for c in distribution]
+            for category in distribution:
+                if 'percent_upper_bound' in category:
+                    bound = category['percent_upper_bound']
+                    if (r.get('data_kind') != 'published_topline' or
+                            not math.isfinite(bound) or not 0 <= category['percent'] < bound <= 100):
+                        raise ValueError('Invalid response upper bound')
         if any(not math.isfinite(v) or v < 0 or v > 100 for v in numbers):
             raise ValueError('Invalid response shares')
         tolerance = len(numbers) * 0.5 if r.get('data_kind') == 'published_topline' else 1e-6
@@ -146,7 +152,7 @@ def report(result):
                         lines.append(f"| {r['source']} {r['year']} ({r['variable']}): categories below | — | — | — | — | — |")
                         distributions += [f"**{r['source']} {r['year']} ({r['variable']}) — original policy categories**", '',
                                           '| Answer | Percent |', '| --- | ---: |']
-                        distributions += [f"| {c['label']} | {c['percent']:.1f}% |" for c in r['response_distribution']]
+                        distributions += [f"| {c['label']} | " + (f"<{c['percent_upper_bound']}%" if 'percent_upper_bound' in c else f"{c['percent']:.1f}%") + ' |' for c in r['response_distribution']]
                         distributions += ['', r['wording'], '', 'Denominator: '+r['denominator'], '']
                         continue
                     percentages = ' | '.join(f"{r['percent'][g]:.1f}%" for g in ['support','oppose','neutral','unsure','nonresponse'])

@@ -1,0 +1,54 @@
+{
+  "status": "Selected source-based interpretations; not a complete legal history.",
+  "cases": [
+    {
+      "case_id": "citizens-united-2010",
+      "name": "Citizens United v. Federal Election Commission",
+      "date": "2010-01-21",
+      "source": "https://www.law.cornell.edu/supct/html/08-205.ZS.html",
+      "components": [
+        {
+          "component_id": "citizens-independent",
+          "policy_id": "contribution_priority",
+          "issue": "Independent corporate and union spending",
+          "decision": "The Court invalidated restrictions on independent corporate and union election spending.",
+          "direction": "expands",
+          "scope": "Independent expenditures differ from donations directly to candidates; the ruling did not legalize unrestricted direct corporate donations.",
+          "locator": "Kennedy opinion, Part III.",
+          "comparison_fit": "contextual",
+          "survey_fit": "The survey contrasts contribution limits with freedom to support campaigns. It does not isolate independent expenditures; no agreement rate with the holding can be calculated."
+        },
+        {
+          "component_id": "citizens-disclosure",
+          "policy_id": "disclosure",
+          "issue": "Disclosure and disclaimers",
+          "decision": "The Court upheld the challenged disclosure and disclaimer requirements.",
+          "direction": "maintains_restriction",
+          "scope": "This separate part of the decision prevents treating the entire judgment as eliminating campaign-finance regulation.",
+          "locator": "Kennedy opinion, Part IV.",
+          "comparison_fit": "contextual",
+          "survey_fit": "No earlier question about these disclosure requirements is included; leave this component unscored."
+        }
+      ]
+    },
+    {
+      "case_id": "mccutcheon-2014",
+      "name": "McCutcheon v. Federal Election Commission",
+      "date": "2014-04-02",
+      "source": "https://www.law.cornell.edu/supremecourt/text/12-536",
+      "components": [
+        {
+          "component_id": "mccutcheon-aggregate",
+          "policy_id": "candidate_limits",
+          "issue": "Aggregate donor limits",
+          "decision": "The Court struck down the total a donor could contribute across candidates and committees.",
+          "direction": "expands",
+          "scope": "Per-recipient base limits were not struck down. Four justices joined Roberts’s reasoning; Thomas supplied the fifth vote with a separate rationale.",
+          "locator": "Roberts opinion, Parts II–IV; Thomas concurrence.",
+          "comparison_fit": "contextual",
+          "survey_fit": "The poll addresses candidate fundraising and spending, not the aggregate donor cap. This is broad regulatory context and a weak match to the legal question."
+        }
+      ]
+    }
+  ]
+}

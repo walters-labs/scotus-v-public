@@ -1,0 +1,27 @@
+{
+  "max_prior_years": 3,
+  "policies": {
+    "official_prayer": {
+      "support_definition": "Original policy categories retained; contextual only, no alignment score.",
+      "questions": [
+        {
+          "source": "Gallup",
+          "variable": "gallup_1999_graduation"
+        }
+      ]
+    },
+    "private_groups": {
+      "support_definition": "Original policy categories retained; contextual only, no alignment score.",
+      "questions": [
+        {
+          "source": "Gallup",
+          "variable": "gallup_1999_afterhours"
+        },
+        {
+          "source": "Gallup",
+          "variable": "gallup_2001_afterhours"
+        }
+      ]
+    }
+  }
+}

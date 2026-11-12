@@ -1,0 +1,82 @@
+{
+  "status": "Selected source-based interpretations; not independent ground truth or a complete legal history.",
+  "cases": [
+    {
+      "case_id": "griswold-1965",
+      "name": "Griswold v. Connecticut",
+      "date": "1965-06-07",
+      "source": "https://www.law.cornell.edu/supremecourt/text/381/479",
+      "components": [
+        {
+          "component_id": "griswold-1965-holding",
+          "policy_id": "contraceptive_access",
+          "issue": "Married couples’ use of contraception",
+          "decision": "The Court invalidated Connecticut’s prohibition on contraceptive use as applied to married couples.",
+          "direction": "expands",
+          "scope": "Legal use and marital privacy, not insurance coverage.",
+          "locator": "Douglas opinion, 381 U.S. 479, 485–486.",
+          "comparison_fit": "contextual",
+          "survey_fit": "No suitably timed access question has been verified for this selection. Modern insurance questions cannot describe opinion in 1965."
+        }
+      ]
+    },
+    {
+      "case_id": "eisenstadt-1972",
+      "name": "Eisenstadt v. Baird",
+      "date": "1972-03-22",
+      "source": "https://www.law.cornell.edu/supremecourt/text/405/438",
+      "components": [
+        {
+          "component_id": "eisenstadt-1972-holding",
+          "policy_id": "contraceptive_access",
+          "issue": "Access for unmarried people",
+          "decision": "The Court invalidated unequal contraceptive-access rules for married and unmarried people.",
+          "direction": "expands",
+          "scope": "Equal protection in access, not a requirement that employers pay.",
+          "locator": "Brennan opinion, 405 U.S. 438, 446–455.",
+          "comparison_fit": "contextual",
+          "survey_fit": "No verified earlier survey in this selection measures the married/unmarried distinction."
+        }
+      ]
+    },
+    {
+      "case_id": "hobby-lobby-2014",
+      "name": "Burwell v. Hobby Lobby Stores",
+      "date": "2014-06-30",
+      "source": "https://www.law.cornell.edu/supremecourt/text/13-354",
+      "components": [
+        {
+          "component_id": "hobby-lobby-2014-holding",
+          "policy_id": "employer_coverage",
+          "issue": "Religious objections to employer coverage",
+          "decision": "The Court held that applying the contraceptive mandate to the objecting closely held companies violated RFRA.",
+          "direction": "restricts",
+          "scope": "This limited enforcement of the employer mandate; it did not prohibit contraceptive use or invalidate the entire coverage requirement.",
+          "locator": "Alito majority opinion, Parts III–V, especially V.B.",
+          "comparison_fit": "contextual",
+          "survey_fit": "Both polls address religious objections and employee coverage. They do not isolate closely held corporations, the four disputed methods, or alternative ways to provide coverage."
+        }
+      ],
+      "interpretation_limit": "The 5–4 judgment concerned statutory religious protections. The direction label describes the coverage mandate only, not a numerical balance between religious liberty and employee access."
+    },
+    {
+      "case_id": "zubik-2016",
+      "name": "Zubik v. Burwell",
+      "date": "2016-05-16",
+      "source": "https://www.law.cornell.edu/supremecourt/text/14-1418",
+      "components": [
+        {
+          "component_id": "zubik-2016-holding",
+          "policy_id": "nonprofit_accommodation",
+          "issue": "Accommodation for religious nonprofits",
+          "decision": "The Court vacated the judgments and remanded to allow consideration of an accommodation.",
+          "direction": "no_merits_ruling",
+          "scope": "The Court expressly did not decide the merits of the RFRA challenge.",
+          "locator": "Per curiam opinion, paragraphs beginning “In light of the positions” and “The Court expresses no view”.",
+          "comparison_fit": "not_comparable",
+          "survey_fit": "General preferences about coverage cannot turn this remand into approval or rejection of an exemption."
+        }
+      ]
+    }
+  ]
+}

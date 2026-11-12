@@ -27,7 +27,7 @@ def main():
                'hybrid.py', 'encoding.py', 'survey_search.py', 'survey_topics.py',
                'court_details.py', 'policy_views.py')]
     paths += [Path('data/research') / f'{topic}-policy-comparison.json'
-              for topic in ('marriage', 'abortion', 'capital-punishment', 'affirmative-action')]
+              for topic in ('marriage', 'abortion', 'capital-punishment', 'affirmative-action', 'voter-id', 'firearms', 'contraception', 'medical-marijuana', 'school-religion', 'campaign-finance')]
     paths += [Path('data/research/marriage-opinion-history.json'), Path('data/research/abortion-opinion-history.json')]
     paths += [p for folder in ('scvpublic/templates', 'scvpublic/static')
               for p in Path(folder).rglob('*') if p.is_file()]

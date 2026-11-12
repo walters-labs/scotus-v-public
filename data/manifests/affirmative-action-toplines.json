@@ -1,0 +1,11 @@
+{
+  "description": "Publisher source; rights retained. Reviewed snapshot pinned by checksum.",
+  "files": [
+    {
+      "path": "policy-toplines/pew-admissions-2023.pdf",
+      "url": "https://www.pewresearch.org/politics/wp-content/uploads/sites/4/2023/06/PP_2023.06.08_college-admissions_REPORT.pdf",
+      "sha256": "f44e04d9579929ed2e6f657804396a895e2e4e9c9994fa6516e26be4a39de4a2",
+      "bytes": 1136138
+    }
+  ]
+}

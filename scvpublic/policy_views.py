@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 
 STUDIES = {'marriage': 'Marriage equality', 'abortion': 'Abortion', 'capital-punishment': 'Capital punishment',
-           'affirmative-action': 'Affirmative action'}
+           'affirmative-action': 'Affirmative action', 'voter-id': 'Voter ID', 'firearms': 'Handgun rights', 'contraception': 'Contraception', 'medical-marijuana': 'Medical marijuana', 'school-religion': 'School religion', 'campaign-finance': 'Campaign finance'}
 DATA = Path(__file__).resolve().parent.parent / 'data' / 'research'
 DIRECTIONS = {'expands': 'Expands protection or access', 'restricts': 'Restricts protection or access',
               'maintains_protection': 'Maintains protection', 'maintains_restriction': 'Allows or maintains a restriction',

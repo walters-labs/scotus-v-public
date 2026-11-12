@@ -1,6 +1,6 @@
 # Policy comparison report
 
-Latest earlier calendar year per source within 3 years; retain all same-year question variants.
+Latest eligible year per source within 3 years; dated fieldwork must end before the decision, otherwise an earlier calendar year is required. Retain all eligible question variants in that year.
 
 Offline research only. Shares retain each source’s denominator. No combined alignment score.
 
@@ -84,10 +84,43 @@ Zero denotes zero in retained categories; it does not prove the original questio
 
 - **VOTER 2020 (affirmativeaction_2020Sep):** Do you generally favor or oppose affirmative action programs for women and racial minorities? Denominator: Positive-weight administered-wave answers, including unsure/skipped; not-asked/system missing excluded. The question combines women and racial minorities and does not isolate college admissions.
 
+### Admissions and diversity — targeted polling
+
+**restricts · contextual**
+
+Invalidated the challenged race-conscious admissions programs.
+
+Limits those uses of race; does not prohibit considering an individual’s account of how race affected their life. Military academies were not decided.
+
+The question isolates race and ethnicity in selective-college admissions for diversity. It does not describe Harvard’s or UNC’s particular programs, so this remains context rather than a case-approval estimate.
+
+Source locator: Roberts majority opinion Parts III–VI; footnote 4.
+
+| Source/year | Support | Oppose | Neutral | Unsure | Nonresponse |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Pew Research Center 2023 (pew_2023_COLL_RE): categories below | — | — | — | — | — |
+
+Zero denotes zero in retained categories; it does not prove the original questionnaire lacked other response options.
+
+
+**Pew Research Center 2023 (pew_2023_COLL_RE) — original policy categories**
+
+| Answer | Percent |
+| --- | ---: |
+| Strongly approve | 11.0% |
+| Somewhat approve | 22.0% |
+| Somewhat disapprove | 21.0% |
+| Strongly disapprove | 29.0% |
+| Not sure | 16.0% |
+| No answer | 1.0% |
+
+Considering race and ethnicity in selective-college admissions to increase student diversity.
+
+Denominator: All 5,079 U.S. adults in the probability-based online panel survey; not sure and no answer retained.
+
 ## Limits
 
 - Explicit source-based legal coding is an input, not an automated legal classifier.
 - Contextual matches do not measure approval of the specific holding.
 - Mixed and unresolved components retain their labels; no scalar direction is inferred.
 - No pooling, confidence intervals, causal claims, or prediction.
-- Selected cases are not a representative sample. Broad attitudes do not establish agreement with narrower offender categories or admissions programs.

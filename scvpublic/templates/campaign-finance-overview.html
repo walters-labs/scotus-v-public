@@ -1,0 +1,8 @@
+<section class="marriage-overview" aria-labelledby="campaign-finance-question">
+<p class="eyebrow">Campaign finance · A closer look</p>
+<h2 id="campaign-finance-question">Which money, which limit?</h2><p class="overview-lead">Independent advertising, direct donations, aggregate donor caps and disclosure are different legal questions. The earlier surveys provide broad context rather than direct tests of the holdings.</p>
+<div class="reading-guide"><div><h3>The public-policy questions</h3><p>Gallup asked about contribution limits versus free speech in 2009, and limits on candidates’ fundraising and spending in 2013.</p></div><div><h3>The legal questions</h3><p>Citizens United protected independent corporate and union spending while preserving disclosure requirements. McCutcheon struck down aggregate donor limits, not per-recipient caps.</p></div></div>
+<p class="snapshot-note">This is one of the thinner comparisons. Neither question isolates the disputed restriction. The 2009 chart leaves 7% unreported; that remainder is shown without guessing its meaning. The 2013 total is 101% because of published rounding.</p>
+<h3 class="snapshot-heading">Two decisions, distinct questions</h3>
+<ol class="ruling-timeline">{% for case in study.cases %}<li><time>{{ case.date[:4] }}</time><div><a href="#case-{{ case.case_id }}">{{ case.name }}</a><p>{{ case.components[0].decision }}</p></div></li>{% endfor %}</ol>
+</section><h2 class="evidence-heading">The rulings and the earlier polls</h2>

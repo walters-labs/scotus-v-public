@@ -1,0 +1,43 @@
+{
+  "status": "Selected source-based interpretations; not a complete legal history.",
+  "cases": [
+    {
+      "case_id": "santa-fe-2000",
+      "name": "Santa Fe Independent School District v. Doe",
+      "date": "2000-06-19",
+      "source": "https://www.law.cornell.edu/supct/html/99-62.ZO.html",
+      "components": [
+        {
+          "component_id": "santa-fe-prayer",
+          "policy_id": "official_prayer",
+          "issue": "School-sponsored prayer at football games",
+          "decision": "The Court invalidated the school’s student-led, student-selected prayer policy before football games.",
+          "direction": "restricts",
+          "scope": "The school policy and public-address setting mattered; this was not a ban on students praying privately.",
+          "locator": "Stevens opinion, Parts II–IV.",
+          "comparison_fit": "contextual",
+          "survey_fit": "The poll asks about graduation, not football games, and omits the election and public-address arrangements. It is contextual, not a measure of approval of this ruling."
+        }
+      ]
+    },
+    {
+      "case_id": "good-news-2001",
+      "name": "Good News Club v. Milford Central School",
+      "date": "2001-06-11",
+      "source": "https://www.law.cornell.edu/supct/html/99-2036.ZS.html",
+      "components": [
+        {
+          "component_id": "good-news-access",
+          "policy_id": "private_groups",
+          "issue": "Religious viewpoint in an after-school forum",
+          "decision": "Excluding the club because of its religious viewpoint violated the Free Speech Clause.",
+          "direction": "expands",
+          "scope": "Access for a private club in a limited public forum, not school-led religious instruction.",
+          "locator": "Syllabus, holdings 1–2; Thomas opinion, Parts II–IV.",
+          "comparison_fit": "contextual",
+          "survey_fit": "The question describes student religious groups. The case involved an adult-led Christian club for children aged 6–12, so the match is contextual."
+        }
+      ]
+    }
+  ]
+}

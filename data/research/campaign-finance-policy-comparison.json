@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "timing_rule": "Latest eligible year per source within 3 years; dated fieldwork must end before the decision, otherwise an earlier calendar year is required. Retain all eligible question variants in that year.",
+  "policies": {
+    "contribution_priority": {
+      "support_definition": "Original policy categories retained; contextual only, no alignment score.",
+      "questions": [
+        {
+          "source": "Gallup",
+          "variable": "gallup_2009_priority"
+        }
+      ]
+    },
+    "disclosure": {
+      "support_definition": "Original policy categories retained; contextual only, no alignment score.",
+      "questions": []
+    },
+    "candidate_limits": {
+      "support_definition": "Original policy categories retained; contextual only, no alignment score.",
+      "questions": [
+        {
+          "source": "Gallup",
+          "variable": "gallup_2013_candidate_limits"
+        }
+      ]
+    }
+  },
+  "cases": [
+    {
+      "case_id": "citizens-united-2010",
+      "name": "Citizens United v. Federal Election Commission",
+      "date": "2010-01-21",
+      "source": "https://www.law.cornell.edu/supct/html/08-205.ZS.html",
+      "components": [
+        {
+          "component_id": "citizens-independent",
+          "policy_id": "contribution_priority",
+          "issue": "Independent corporate and union spending",
+          "decision": "The Court invalidated restrictions on independent corporate and union election spending.",
+          "direction": "expands",
+          "scope": "Independent expenditures differ from donations directly to candidates; the ruling did not legalize unrestricted direct corporate donations.",
+          "locator": "Kennedy opinion, Part III.",
+          "comparison_fit": "contextual",
+          "survey_fit": "The survey contrasts contribution limits with freedom to support campaigns. It does not isolate independent expenditures; no agreement rate with the holding can be calculated.",
+          "comparisons": [
+            {
+              "source": "Gallup",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "Gallup",
+                  "variable": "gallup_2009_priority",
+                  "year": 2009,
+                  "field_start": "2009-10-01",
+                  "field_end": "2009-10-02",
+                  "data_kind": "published_topline",
+                  "source_url": "https://news.gallup.com/poll/125333/public-agrees-court-campaign-money-free-speech.aspx",
+                  "source_locator": "Priority chart, national adults",
+                  "wording": "Prioritizing contribution limits or the freedom of individuals, corporations and unions to support campaigns.",
+                  "wording_note": "Paraphrased question. Gallup/First Amendment Center. Chart prints 52% and 41% only. The 7% remainder is calculated as 100\u221252\u221241; its response category is not reported, so it is not labeled unsure. Survey total was 1,023, with split forms; the item base is not identified here. Published after Citizens United, but fielded before it.",
+                  "weight": "Published national topline; no recalculation.",
+                  "denominator": "National adult telephone sample; original response shares retained.",
+                  "orientation": "Policy context only; not approval of the specific holding.",
+                  "response_distribution": [
+                    {
+                      "code": "0",
+                      "label": "Prioritize contribution limits",
+                      "percent": 52
+                    },
+                    {
+                      "code": "1",
+                      "label": "Prioritize freedom to support campaigns",
+                      "percent": 41
+                    },
+                    {
+                      "code": "2",
+                      "label": "Remainder not shown in chart",
+                      "percent": 7,
+                      "derived": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "coverage_status": "see_source_comparisons"
+        },
+        {
+          "component_id": "citizens-disclosure",
+          "policy_id": "disclosure",
+          "issue": "Disclosure and disclaimers",
+          "decision": "The Court upheld the challenged disclosure and disclaimer requirements.",
+          "direction": "maintains_restriction",
+          "scope": "This separate part of the decision prevents treating the entire judgment as eliminating campaign-finance regulation.",
+          "locator": "Kennedy opinion, Part IV.",
+          "comparison_fit": "contextual",
+          "survey_fit": "No earlier question about these disclosure requirements is included; leave this component unscored.",
+          "comparisons": [],
+          "coverage_status": "no_matching_question"
+        }
+      ]
+    },
+    {
+      "case_id": "mccutcheon-2014",
+      "name": "McCutcheon v. Federal Election Commission",
+      "date": "2014-04-02",
+      "source": "https://www.law.cornell.edu/supremecourt/text/12-536",
+      "components": [
+        {
+          "component_id": "mccutcheon-aggregate",
+          "policy_id": "candidate_limits",
+          "issue": "Aggregate donor limits",
+          "decision": "The Court struck down the total a donor could contribute across candidates and committees.",
+          "direction": "expands",
+          "scope": "Per-recipient base limits were not struck down. Four justices joined Roberts\u2019s reasoning; Thomas supplied the fifth vote with a separate rationale.",
+          "locator": "Roberts opinion, Parts II\u2013IV; Thomas concurrence.",
+          "comparison_fit": "contextual",
+          "survey_fit": "The poll addresses candidate fundraising and spending, not the aggregate donor cap. This is broad regulatory context and a weak match to the legal question.",
+          "comparisons": [
+            {
+              "source": "Gallup",
+              "status": "available",
+              "observations": [
+                {
+                  "source": "Gallup",
+                  "variable": "gallup_2013_candidate_limits",
+                  "year": 2013,
+                  "field_start": "2013-06-15",
+                  "field_end": "2013-06-16",
+                  "data_kind": "published_topline",
+                  "source_url": "https://news.gallup.com/file/poll/163220/130624CampaignFinance.pdf",
+                  "source_locator": "PDF page 2, item 1: candidate fundraising and spending",
+                  "wording": "Voting for a law limiting how much House and Senate candidates can raise and spend.",
+                  "wording_note": "Paraphrased question. Published percentages total 101 due to rounding; retained without renormalization.",
+                  "weight": "Published national topline; no recalculation.",
+                  "denominator": "National sample of 1,015 adults; original response shares retained.",
+                  "orientation": "Policy context only; not approval of the specific holding.",
+                  "response_distribution": [
+                    {
+                      "code": "0",
+                      "label": "Vote for limits",
+                      "percent": 79
+                    },
+                    {
+                      "code": "1",
+                      "label": "Vote against limits",
+                      "percent": 19
+                    },
+                    {
+                      "code": "2",
+                      "label": "No opinion",
+                      "percent": 3
+                    }
+                  ],
+                  "sample_n": 1015
+                }
+              ]
+            }
+          ],
+          "coverage_status": "see_source_comparisons"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Explicit source-based legal coding is an input, not an automated legal classifier.",
+    "Contextual matches do not measure approval of the specific holding.",
+    "Mixed and unresolved components retain their labels; no scalar direction is inferred.",
+    "No pooling, confidence intervals, causal claims, or prediction."
+  ],
+  "input_sha256": {
+    "data/research/campaign-finance-policy-components.json": "114f9af482e12aed261ec2401623bc54ddc15ef3a55825f404ea178a4f0b82a1",
+    "data/research/campaign-finance-policy-surveys.json": "a8a8402389c9e63f02840474ec5a18ecd9397299c2756ae067a540445d3e52e9",
+    "data/research/campaign-finance-policy-mapping.json": "a95df29ae3a62ce3b9e6f3c9236596b8d5939af9f96b945e78da470497dfa4cb"
+  },
+  "survey_provenance": {
+    "data/raw/policy-toplines/gallup-campaign-2009.html": "270f261cb23c3978acab0458cb544491f0d774fa08772b7c8ff4a64031d7d903",
+    "data/raw/policy-toplines/gallup-campaign-2009-priority.gif": "40d6235b8974f2b60248531abd3a38137edb3bff9d36aacdc8daef555cfd07a6",
+    "data/raw/policy-toplines/gallup-campaign-2013.pdf": "c00bf359bdeb0c7c8d7d915fe0f70904b12ad0f235784bedc6b9a964d4552efe"
+  }
+}

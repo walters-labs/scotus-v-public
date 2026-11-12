@@ -1,0 +1,56 @@
+{
+  "status": "Selected source-based interpretations, not representative or independently validated ground truth.",
+  "cases": [
+    {
+      "case_id": "heller-2008",
+      "name": "District of Columbia v. Heller",
+      "date": "2008-06-26",
+      "source": "https://www.law.cornell.edu/supct/html/07-290.ZS.html",
+      "components": [
+        {
+          "component_id": "heller-possession",
+          "policy_id": "handgun_bans",
+          "issue": "Keeping a handgun at home",
+          "decision": "The Court invalidated D.C.’s handgun ban and recognized an individual right to keep a firearm for self-defense at home.",
+          "direction": "expands",
+          "scope": "The right is not unlimited. This did not invalidate all firearm regulation.",
+          "locator": "Scalia majority opinion, Parts II–III.",
+          "comparison_fit": "contextual",
+          "survey_fit": "Gallup asks about possession generally; Pew asks about sales. Neither isolates D.C.’s home-possession rule or asks whether the Constitution protects it."
+        },
+        {
+          "component_id": "heller-functional",
+          "policy_id": "functional_home_firearm",
+          "issue": "Keeping a firearm usable for self-defense",
+          "decision": "The Court also invalidated the requirement that lawful firearms at home remain inoperable when needed for self-defense.",
+          "direction": "expands",
+          "scope": "This is not a ruling against every safe-storage requirement.",
+          "locator": "Scalia majority opinion, Part III.",
+          "comparison_fit": "contextual",
+          "survey_fit": "Neither selected question addresses storage or immediate usability for self-defense."
+        }
+      ],
+      "interpretation_limit": "The judgment was 5–4. The two components concern different rules; broad handgun preferences cannot answer both."
+    },
+    {
+      "case_id": "mcdonald-2010",
+      "name": "McDonald v. City of Chicago",
+      "date": "2010-06-28",
+      "source": "https://www.law.cornell.edu/supct/html/08-1521.ZS.html",
+      "components": [
+        {
+          "component_id": "mcdonald-states",
+          "policy_id": "handgun_bans",
+          "issue": "Applying the right to state and local governments",
+          "decision": "The Court held that the right recognized in Heller applies against state and local governments, reversing and remanding.",
+          "direction": "expands",
+          "scope": "The case extended the constitutional protection; it did not resolve every local firearm rule.",
+          "locator": "Alito opinion, Parts III–IV; Thomas concurrence.",
+          "comparison_fit": "contextual",
+          "survey_fit": "Earlier opposition to handgun bans provides policy context, not an answer to the constitutional incorporation question. Pew’s 2008 observation is reused background, not a new 2010 measurement."
+        }
+      ],
+      "interpretation_limit": "Five justices agreed on the result. Four relied on due process; Thomas used the Privileges or Immunities Clause. General policy preferences do not adjudicate that distinction."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "provenance": {
+    "data/raw/policy-toplines/pew-handguns-2008.pdf": "545d1e59f76db938c8e4e9288a2dcc047e46e895763064c322f0dbc9bd0aac41",
+    "data/raw/policy-toplines/gallup-handguns.pdf": "d8c621c9998aabfa2c1b89c838d6dc6939ff17c2d8964e22b62ab760a32c9242"
+  },
+  "survey_records": [
+    {
+      "source": "Gallup",
+      "variable": "handgun_possession_ban",
+      "year": 2007,
+      "field_start": "2007-10-04",
+      "field_end": "2007-10-07",
+      "data_kind": "published_topline",
+      "source_url": "https://news.gallup.com/file/poll/196727/161026Guns.pdf",
+      "source_page": 3,
+      "source_item": "21 (historical row)",
+      "wording": "Whether handgun possession should be banned, with exceptions for police and other authorized people.",
+      "wording_note": "Paraphrased summary. Dates and percentages come from the historical table in the 2016 report, not its 2016 sample. Historical sample size is not supplied in that table.",
+      "weight": "Published national topline; no respondent-level recalculation.",
+      "denominator": "Published full response distribution, including no opinion. Original percentages retained; historical sample size not stated in this table.",
+      "orientation": "Opposing the ban favors allowing possession; it does not imply opposition to all gun regulation.",
+      "response_distribution": [
+        {
+          "code": "0",
+          "label": "Should ban possession",
+          "percent": 30
+        },
+        {
+          "code": "1",
+          "label": "Should not ban possession",
+          "percent": 68
+        },
+        {
+          "code": "2",
+          "label": "No opinion",
+          "percent": 2
+        }
+      ]
+    },
+    {
+      "source": "Gallup",
+      "variable": "handgun_possession_ban",
+      "year": 2009,
+      "field_start": "2009-10-01",
+      "field_end": "2009-10-04",
+      "data_kind": "published_topline",
+      "source_url": "https://news.gallup.com/file/poll/196727/161026Guns.pdf",
+      "source_page": 3,
+      "source_item": "21 (historical row)",
+      "wording": "Whether handgun possession should be banned, with exceptions for police and other authorized people.",
+      "wording_note": "Paraphrased summary. Dates and percentages come from the historical table in the 2016 report, not its 2016 sample. Historical sample size is not supplied in that table.",
+      "weight": "Published national topline; no respondent-level recalculation.",
+      "denominator": "Published full response distribution, including no opinion. Original percentages retained; historical sample size not stated in this table.",
+      "orientation": "Opposing the ban favors allowing possession; it does not imply opposition to all gun regulation.",
+      "response_distribution": [
+        {
+          "code": "0",
+          "label": "Should ban possession",
+          "percent": 28
+        },
+        {
+          "code": "1",
+          "label": "Should not ban possession",
+          "percent": 71
+        },
+        {
+          "code": "2",
+          "label": "No opinion",
+          "percent": 1
+        }
+      ]
+    },
+    {
+      "source": "Pew Research Center",
+      "variable": "handgun_sales_ban",
+      "year": 2008,
+      "field_start": "2008-04-23",
+      "field_end": "2008-04-27",
+      "data_kind": "published_topline",
+      "source_url": "https://www.pewresearch.org/wp-content/uploads/sites/4/legacy-pdf/419.pdf",
+      "source_page": 7,
+      "source_item": "27",
+      "sample_n": 1502,
+      "wording": "Favoring or opposing a ban on handgun sales.",
+      "wording_note": "Paraphrased summary. Nationwide telephone survey of 1,502 adults; asked all respondents. PDF page 5 documents methodology; page 7 (printed page 6) gives Q27. Sales are distinct from possession.",
+      "weight": "Published national topline; no respondent-level recalculation.",
+      "denominator": "All 1,502 adults, including don’t know/refused responses. Original percentages retained.",
+      "orientation": "Favor means favoring the sales ban; oppose means opposing it.",
+      "response_distribution": [
+        {
+          "code": "0",
+          "label": "Favor sales ban",
+          "percent": 36
+        },
+        {
+          "code": "1",
+          "label": "Oppose sales ban",
+          "percent": 59
+        },
+        {
+          "code": "2",
+          "label": "Don’t know / refused",
+          "percent": 5
+        }
+      ]
+    }
+  ]
+}

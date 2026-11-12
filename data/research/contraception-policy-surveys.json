@@ -1,0 +1,81 @@
+{
+  "provenance": {
+    "data/raw/policy-toplines/kff-contraception-2014.pdf": "51eae4f3262598bee36f1f45902fba92e3e9c252c9a212fbe64731c757b73922",
+    "data/raw/policy-toplines/yougov-contraception-2014.pdf": "cc32660e9cab1ef58459fd094af961085801cabfabfa73b101c0ab0a7551fc31"
+  },
+  "survey_records": [
+    {
+      "source": "KFF (Kaiser Family Foundation)",
+      "variable": "kff_2014_may_q14",
+      "year": 2014,
+      "field_start": "2014-05-13",
+      "field_end": "2014-05-19",
+      "data_kind": "published_topline",
+      "source_url": "https://www.kff.org/wp-content/uploads/2014/05/8594-t.pdf",
+      "source_page": 8,
+      "source_item": "14",
+      "sample_n": 1505,
+      "wording": "Should for-profit employers cover birth control despite owners’ religious objections?",
+      "wording_note": "Paraphrased summary and response labels. KFF explicitly contrasts the owners’ religious beliefs with employees paying for contraception themselves. National telephone survey; weighted for demographics and telephone selection. Methodology: PDF page 2.",
+      "weight": "Published survey topline; no respondent-level recalculation.",
+      "denominator": "Full national sample of 1,505 adults; published categories include other responses and uncertainty.",
+      "orientation": "Requiring coverage favors employee insurance coverage; it is not a question about banning contraception.",
+      "response_distribution": [
+        {
+          "code": "0",
+          "label": "Do not require coverage; employees pay",
+          "percent": 41
+        },
+        {
+          "code": "1",
+          "label": "Require coverage despite religious objections",
+          "percent": 53
+        },
+        {
+          "code": "2",
+          "label": "Neither / other",
+          "percent": 2
+        },
+        {
+          "code": "3",
+          "label": "Don’t know / refused",
+          "percent": 4
+        }
+      ]
+    },
+    {
+      "source": "YouGov / Huffington Post",
+      "variable": "yougov_2014_june_q3",
+      "year": 2014,
+      "field_start": "2014-06-20",
+      "field_end": "2014-06-23",
+      "data_kind": "published_topline",
+      "source_url": "https://ygo-assets-websites-editorial-emea.yougov.net/documents/tabs_HP_contraception_20140623_QixhoOM.pdf",
+      "source_page": 3,
+      "source_item": "3",
+      "sample_n": 993,
+      "wording": "Should private businesses with religious objections provide employee health plans covering contraception?",
+      "wording_note": "Paraphrased summary and response labels. The published table reports an unweighted item base of 993, whereas the release describes 1,000 adults interviewed. No adjustment is made to include the seven respondents absent from the item base.",
+      "weight": "Published survey topline; no respondent-level recalculation.",
+      "denominator": "Published item response distribution, including unsure responses; unweighted item n=993, not the full 1,000-person survey.",
+      "orientation": "Requiring coverage favors employee insurance coverage; it is not a question about banning contraception.",
+      "response_distribution": [
+        {
+          "code": "0",
+          "label": "Yes, require coverage",
+          "percent": 40
+        },
+        {
+          "code": "1",
+          "label": "No, do not require coverage",
+          "percent": 44
+        },
+        {
+          "code": "2",
+          "label": "Not sure",
+          "percent": 16
+        }
+      ]
+    }
+  ]
+}

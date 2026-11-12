@@ -1,0 +1,26 @@
+{
+  "max_prior_years": 3,
+  "policies": {
+    "contraceptive_access": {
+      "support_definition": "Legal access to contraception; no verified earlier survey retained.",
+      "questions": []
+    },
+    "nonprofit_accommodation": {
+      "support_definition": "Procedural outcome; no policy-agreement assignment.",
+      "questions": []
+    },
+    "employer_coverage": {
+      "support_definition": "Coverage despite employer religious objections; retain original categories separately, without pooling.",
+      "questions": [
+        {
+          "source": "KFF (Kaiser Family Foundation)",
+          "variable": "kff_2014_may_q14"
+        },
+        {
+          "source": "YouGov / Huffington Post",
+          "variable": "yougov_2014_june_q3"
+        }
+      ]
+    }
+  }
+}

@@ -18,6 +18,26 @@ serve:
 inspect:
 	$(PY) -m scvpublic.inspect $(ARTIFACT)
 
+.PHONY: voter-id-policy
+voter-id-policy:
+	$(PY) -m scvpublic.download data/manifests/voter-id-toplines.json
+	$(PY) -m scripts.compare_policy --cases data/research/voter-id-policy-components.json --surveys data/research/voter-id-policy-surveys.json --mapping data/research/voter-id-policy-mapping.json --output data/research/voter-id-policy-comparison.json --report docs/VOTER_ID_POLICY_COMPARISON.md
+
+.PHONY: firearms-policy
+firearms-policy:
+	$(PY) -m scvpublic.download data/manifests/firearms-toplines.json
+	$(PY) -m scripts.compare_policy --cases data/research/firearms-policy-components.json --surveys data/research/firearms-policy-surveys.json --mapping data/research/firearms-policy-mapping.json --output data/research/firearms-policy-comparison.json --report docs/FIREARMS_POLICY_COMPARISON.md
+
+.PHONY: contraception-policy
+contraception-policy:
+	$(PY) -m scvpublic.download data/manifests/contraception-toplines.json
+	$(PY) -m scripts.compare_policy --cases data/research/contraception-policy-components.json --surveys data/research/contraception-policy-surveys.json --mapping data/research/contraception-policy-mapping.json --output data/research/contraception-policy-comparison.json --report docs/CONTRACEPTION_POLICY_COMPARISON.md
+
+.PHONY: medical-marijuana-policy
+medical-marijuana-policy:
+	$(PY) -m scvpublic.download data/manifests/medical-marijuana-toplines.json
+	$(PY) -m scripts.compare_policy --cases data/research/medical-marijuana-policy-components.json --surveys data/research/medical-marijuana-policy-surveys.json --mapping data/research/medical-marijuana-policy-mapping.json --output data/research/medical-marijuana-policy-comparison.json --report docs/MEDICAL_MARIJUANA_POLICY_COMPARISON.md
+
 .PHONY: anes
 anes:
 	$(PY) -m scvpublic.anes
@@ -142,3 +162,18 @@ SCDB_ISSUES_BUNDLE ?= artifacts/semantic-scdb-issues
 .PHONY: enrich-scdb-issues
 enrich-scdb-issues:
 	$(PY) -m scvpublic.scdb_metadata --artifact $(HYBRID_ARTIFACT) --archive $(SCDB_ISSUES_ARCHIVE) --output $(SCDB_ISSUES_ARTIFACT) --bundle $(HYBRID_BUNDLE) --output-bundle $(SCDB_ISSUES_BUNDLE)
+
+.PHONY: school-religion-policy
+school-religion-policy:
+	$(PY) -m scvpublic.download data/manifests/school-religion-toplines.json
+	$(PY) -m scripts.compare_policy --cases data/research/school-religion-policy-components.json --surveys data/research/school-religion-policy-surveys.json --mapping data/research/school-religion-policy-mapping.json --output data/research/school-religion-policy-comparison.json --report docs/SCHOOL_RELIGION_POLICY_COMPARISON.md
+
+.PHONY: campaign-finance-policy
+campaign-finance-policy:
+	$(PY) -m scvpublic.download data/manifests/campaign-finance-toplines.json
+	$(PY) -m scripts.compare_policy --cases data/research/campaign-finance-policy-components.json --surveys data/research/campaign-finance-policy-surveys.json --mapping data/research/campaign-finance-policy-mapping.json --output data/research/campaign-finance-policy-comparison.json --report docs/CAMPAIGN_FINANCE_POLICY_COMPARISON.md
+
+.PHONY: affirmative-action-policy
+affirmative-action-policy:
+	$(PY) -m scvpublic.download data/manifests/affirmative-action-toplines.json
+	$(PY) -m scripts.compare_policy --cases data/research/affirmative-action-policy-components.json --surveys data/research/affirmative-action-policy-surveys.json --mapping data/research/affirmative-action-policy-mapping.json --output data/research/affirmative-action-policy-comparison.json --report docs/AFFIRMATIVE_ACTION_POLICY_COMPARISON.md

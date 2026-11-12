@@ -1,0 +1,15 @@
+<section class="marriage-overview" aria-labelledby="medical-marijuana-question">
+<p class="eyebrow">Medical marijuana · A closer look</p>
+<h2 id="medical-marijuana-question">Medical use—and who has the authority to permit it?</h2>
+<p class="overview-lead">Earlier polls showed broad support for medically directed marijuana use. The Court’s decisions addressed different questions: a defense under federal law, and Congress’s power to enforce that law.</p>
+<div class="reading-guide">
+<div><h3>The public-policy question</h3><p>Could doctors be allowed to prescribe marijuana for patients? Pew and Gallup asked about medical use specifically. These are not general-legalization polls.</p></div>
+<div><h3>The legal questions</h3><p>Oakland Cannabis concerned medical necessity as a defense for manufacture and distribution. Raich concerned federal authority over local activity permitted by state law.</p></div>
+</div>
+<h3 class="snapshot-heading">Strong medical-use support does not settle the legal issue</h3>
+<p>It is possible to favor a change in drug policy while accepting Congress’s authority over it. These comparisons show the tension between the policy preference and the restriction left in place; they do not establish that respondents rejected the Court’s reasoning.</p>
+<p class="snapshot-note">Two historical snapshots, from different sources. No pooled score or continuous trend is inferred. “Prescribe” describes the survey wording, not a statement about what federal law allowed.</p>
+<h3 class="snapshot-heading">Two decisions, two questions</h3>
+<ol class="ruling-timeline">{% for case in study.cases %}<li><time>{{ case.date[:4] }}</time><div><a href="#case-{{ case.case_id }}">{{ case.name }}</a><p>{{ case.components[0].decision }}</p></div></li>{% endfor %}</ol>
+</section>
+<h2 class="evidence-heading">The rulings and the earlier polls</h2>

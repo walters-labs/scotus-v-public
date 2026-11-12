@@ -1,0 +1,23 @@
+{
+  "description": "Publisher sources retrieved 2026-11-12; rights retained. HTML snapshots may change; checksum mismatches require source review.",
+  "files": [
+    {
+      "path": "policy-toplines/gallup-campaign-2009.html",
+      "url": "https://news.gallup.com/poll/125333/public-agrees-court-campaign-money-free-speech.aspx",
+      "sha256": "270f261cb23c3978acab0458cb544491f0d774fa08772b7c8ff4a64031d7d903",
+      "bytes": 86058
+    },
+    {
+      "path": "policy-toplines/gallup-campaign-2009-priority.gif",
+      "url": "https://content.gallup.com/origin/gallupinc/GallupSpaces/Production/Cms/POLL/rhrtyrm1secsbrzrvxwgca.gif",
+      "sha256": "40d6235b8974f2b60248531abd3a38137edb3bff9d36aacdc8daef555cfd07a6",
+      "bytes": 19074
+    },
+    {
+      "path": "policy-toplines/gallup-campaign-2013.pdf",
+      "url": "https://news.gallup.com/file/poll/163220/130624CampaignFinance.pdf",
+      "sha256": "c00bf359bdeb0c7c8d7d915fe0f70904b12ad0f235784bedc6b9a964d4552efe",
+      "bytes": 181866
+    }
+  ]
+}

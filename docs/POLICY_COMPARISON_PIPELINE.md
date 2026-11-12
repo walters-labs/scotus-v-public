@@ -166,3 +166,98 @@ Gallup's employee-benefits question remains contextual, not equivalent to the
 broader federal-recognition question. ABC/Post's state-ban item retains its
 reverse direction. Full-survey n is not treated as item-level n for precision.
 Reports are publicly available; no open microdata license is asserted.
+
+## Voter ID
+
+`make voter-id-policy` downloads the checksum-pinned Pew October 2006 report
+and rebuilds the fifth panel with the existing comparison engine. The reviewed
+Q57 record keeps the 78/18/4 distribution and all-adult base (2,006), rather than
+the registered-voter subset. PDF pages 15, 20 and 47 document methodology,
+dates/base and answers. The report includes a competitive-district oversample;
+we use the published national percentages, without recalculating weights.
+
+The Crawford comparison is contextual: general photo-ID preferences do not
+measure approval of the specific Indiana law or constitutional reasoning.
+Separate opinions and the facial-challenge scope remain visible. No scalar
+alignment score or historical trend is generated from this single observation.
+This published topline serves the policy panel only, not the general search index.
+Only `voter-id-policy-comparison.json` is packaged; the source PDF and research
+inputs remain build-time files. The publicly available report retains publisher
+rights; the project's MIT license does not relicense it.
+
+## Handgun rights
+
+`make firearms-policy` verifies/downloads two publisher PDFs and rebuilds the
+sixth panel. Three distinct records are retained: Gallup possession-ban polls
+from October 2007 and October 2009, and Pew's April 2008 sales-ban poll. The
+2016 Gallup report is a historical table: its publication date and sample size
+are not the field dates or sample sizes of the earlier rows. PDF page 3, item
+21 was visually checked. Pew PDF page 7, Q27 was also visually checked; its
+full adult base and field dates are documented on page 5.
+
+Heller uses Gallup 2007 and Pew 2008; McDonald uses Gallup 2009 and reuses Pew
+2008 as background. These are contextual comparisons, not exact-case approval
+or a pooled score. Possession and sales remain separate question types. Heller's
+functional-firearm component has no selected matching survey and displays a
+gap. McDonald describes incorporation and remand rather than pretending to
+resolve every local regulation. Only the generated comparison JSON ships.
+The records do not alter general search or its charts.
+
+## Contraception
+
+`make contraception-policy` checks/downloads KFF May 2014 and YouGov/Huffington
+Post June 2014 PDFs and rebuilds the seventh comparison. Both questions address
+coverage despite employers' religious objections, before Hobby Lobby. KFF Q14
+(PDF page 8) and YouGov Q3 (page 3) were visually verified. KFF's base is 1,505
+adults; YouGov's table gives item n=993, distinct from the release's 1,000
+interviewees. All response categories remain intact. KFF's forced-choice
+trade-off and YouGov's wording differ; the page does not infer a trend, pool
+the results, or attribute their discrepancy to a proven cause.
+
+Griswold and Eisenstadt are access milestones with explicitly missing earlier
+survey data. Zubik is a no-merits remand and receives no agreement comparison.
+Modern CES access questions and PRRI nonprofit/church questions are not
+substituted for pre-Hobby Lobby questions about objecting private employers.
+Only the generated JSON and templates ship; general search is unaffected.
+
+## Medical marijuana
+
+`make medical-marijuana-policy` rebuilds the eighth panel. Pew February 2001
+Q33 (PDF page 32, visually verified) supplies 73/21/6 before Oakland Cannabis.
+Gallup November 2003 supplies 75/22/3 before Raich; its original December 16
+article verifies dates and n=1,004, and its historical medical-use table verifies
+all categories. The source article and table are retained as hashed HTML
+snapshots retrieved November 12, 2026. Live HTML may change; a checksum failure
+requires source review and an explicit manifest update, never silent acceptance.
+The committed reviewed records can rebuild the view independently of retrieval.
+
+Pew's weighted adult sample is 1,513 and includes an oversample; the item is
+asked of all respondents. The 2001 poll is too old for Raich's three-year window.
+Gallup's October 2005 poll is after Raich and is not included. Both comparisons
+are contextual: physician-directed availability does not answer questions of
+statutory defenses or federal constitutional authority. General legalization
+questions are excluded. The display supports a named HTML table locator as well
+as PDF page/item references. General search and its curves are unchanged.
+
+## School religion and campaign finance
+
+Rebuild with `make school-religion-policy campaign-finance-policy`.
+The manifests pin publisher snapshots; reviewed survey JSON and component files
+are inputs, and the comparison builder enforces earlier fieldwork. These records
+are specific to policy panels, not added to keyword-search artifacts.
+
+School religion distinguishes official prayer from private after-school access.
+Gallup’s 1999 asterisk is preserved as `<0.5%`; the numeric lower bound is only
+used for validation, never presented as an observed zero or pooled.
+Campaign finance distinguishes independent spending, disclosure and aggregate
+donor caps. Its surveys provide broad context only. The 2009 chart’s unprinted
+7% is explicitly a calculated remainder, not an inferred “unsure” category;
+its item sample is unknown. The 2013 published 101% total is retained as rounding.
+Neither panel estimates agreement with the specific legal holding.
+
+## Quality review additions
+
+`make affirmative-action-policy` now includes the reviewed Pew 2023 admissions
+topline. `make school-religion-policy` selects the closer 2001 Gallup after-hours
+observation for Good News Club. See `POLICY_QUALITY_REVIEW.md` for the ten-panel
+assessment and limits; adding records does not upgrade contextual matches to direct.

@@ -1,0 +1,17 @@
+{
+  "description": "Public reports; publisher rights retained. Not an open microdata license.",
+  "files": [
+    {
+      "path": "policy-toplines/kff-contraception-2014.pdf",
+      "url": "https://www.kff.org/wp-content/uploads/2014/05/8594-t.pdf",
+      "sha256": "51eae4f3262598bee36f1f45902fba92e3e9c252c9a212fbe64731c757b73922",
+      "bytes": 670798
+    },
+    {
+      "path": "policy-toplines/yougov-contraception-2014.pdf",
+      "url": "https://ygo-assets-websites-editorial-emea.yougov.net/documents/tabs_HP_contraception_20140623_QixhoOM.pdf",
+      "sha256": "cc32660e9cab1ef58459fd094af961085801cabfabfa73b101c0ab0a7551fc31",
+      "bytes": 46695
+    }
+  ]
+}

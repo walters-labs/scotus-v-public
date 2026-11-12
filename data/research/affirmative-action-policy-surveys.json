@@ -391,6 +391,55 @@
       ],
       "excluded_positive_weight": 0,
       "missing_or_zero_weight": 6617
+    },
+    {
+      "source": "Pew Research Center",
+      "variable": "pew_2023_COLL_RE",
+      "year": 2023,
+      "field_start": "2023-03-27",
+      "field_end": "2023-04-02",
+      "data_kind": "published_topline",
+      "source_url": "https://www.pewresearch.org/politics/wp-content/uploads/sites/4/2023/06/PP_2023.06.08_college-admissions_REPORT.pdf",
+      "source_page": 32,
+      "source_item": "COLL_RE",
+      "sample_n": 5079,
+      "wording": "Considering race and ethnicity in selective-college admissions to increase student diversity.",
+      "wording_note": "Paraphrased summary. Asked all Wave 125 respondents. The question describes admissions and diversity specifically, but does not describe the Harvard or UNC programs. Methodology and full topline are in the report.",
+      "weight": "Published weighted American Trends Panel topline; no recalculation.",
+      "denominator": "All 5,079 U.S. adults in the probability-based online panel survey; not sure and no answer retained.",
+      "orientation": "Approval of the described admissions policy, not approval of the constitutional reasoning.",
+      "response_distribution": [
+        {
+          "code": "0",
+          "label": "Strongly approve",
+          "percent": 11
+        },
+        {
+          "code": "1",
+          "label": "Somewhat approve",
+          "percent": 22
+        },
+        {
+          "code": "2",
+          "label": "Somewhat disapprove",
+          "percent": 21
+        },
+        {
+          "code": "3",
+          "label": "Strongly disapprove",
+          "percent": 29
+        },
+        {
+          "code": "4",
+          "label": "Not sure",
+          "percent": 16
+        },
+        {
+          "code": "5",
+          "label": "No answer",
+          "percent": 1
+        }
+      ]
     }
   ],
   "provenance": {
@@ -410,6 +459,7 @@
     "data/research/capital-punishment-policy-components.json": "2ddfb8b36e8fc8d3c924d4ad890437b764bb6667f750b105d7e1588d718b4606",
     "data/research/capital-punishment-policy-mapping.json": "49d5f8075be82c03338d8cbd82f570e0605a8eeb2d5be7eff72dcd799df7b6cf",
     "data/research/affirmative-action-policy-components.json": "db52ea740f98be011b1da26b00ca90943a35b8c9a58938a11e69bbe64eef3969",
-    "data/research/affirmative-action-policy-mapping.json": "ef25cab135ecf5c2150f899da7a8b75221e015c291386f7517fb54b8762d5180"
+    "data/research/affirmative-action-policy-mapping.json": "ef25cab135ecf5c2150f899da7a8b75221e015c291386f7517fb54b8762d5180",
+    "data/raw/policy-toplines/pew-admissions-2023.pdf": "f44e04d9579929ed2e6f657804396a895e2e4e9c9994fa6516e26be4a39de4a2"
   }
 }
